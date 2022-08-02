@@ -1,0 +1,214 @@
+= Use Case - Core Banking Foundation
+
+Core banking foundation enables a 360 view of your customer’s financial information. It delivers accurate account balance data and transaction history to enable your tellers and support representatives to effectively engage with customers.
+
+This use case leverages a generic Core Banking system, with Salesforce Financial Services Cloud as the system of engagement. The APIs and templates enable you to accelerate time to value. Use the assets as they are, or extend them to suit the needs of your own organization. For example, you can reuse the APIs provided to expose data to additional channels, such as mobile applications, and consumers.
+
+== Description
+
+The use case covered in this version of the solution allows for the display of a customer’s financial summary from multiple systems. There are two views supported in this solution:
+
+* Customer view
+* Customer Service Representative (CSR) view
+
+=== Glossary
+
+[%header%autowidth.spread]
+|===
+|Term	|Definition
+|CIM	|The Cloud Information Model defines a set of standard data structures that can be used as canonical representations of common entities for integrating systems.
+|FINS	|Abbreviated term referring to the Financial and Insurance industries, consisting of the Banking, Insurance, and Wealth Management domains.
+|MDM	|A Master Data Management (MDM) solution provides an accurate, consistent and complete copy of master data for use by enterprise applications and business partners. Most solutions include data quality tools and workflow processes for managing conflicting updates.
+|===
+
+== Solution Overview
+
+The purpose of this solution is to get a holistic view of the financial summary of the customer, either from a mobile application, a generic Core Banking system, or from Salesforce Financial Services Cloud. While the assets built for this solution will be relevant for many different banking and financial industries, we will focus specifically on Retail Banking to ensure we are building and testing against a set of real use cases.
+
+=== Before You Begin
+
+The xref:setup-guide.adoc[Accelerators] setup guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+
+=== Goals
+
+* Support for viewing Demand Deposit accounts associated with a customer (e.g., savings and checking) from Core Banking and FSC.
+* Support for viewing Credit Card and Bank Card information associated with a customer
+* Support for managing controls and limits for Credit Cards and Bank Cards
+* Full two-way synchronization of Customers, Accounts, Transactions, and Cards between multiple systems
+
+=== Use Case Considerations
+
+* Must support a comprehensive view of Accounts for a given customer.
+* Must be able to retrieve transactions for a given account.
+* Must provide support for a customer to dispute a transaction.
+* A generic Core Banking system will represent the system of record for financial data.
+* MDM will provide the golden copy of the customer profile, along with account, transaction, and card information replicated from Core Banking.
+
+=== Technical Considerations
+
+* Use CIM as the canonical model, where applicable (e.g., for Customers).
+* A custom canonical model for financial accounts, transactions and cards has been created.
+
+== Assumptions and Constraints
+
+. The Core Banking system must be polled to pick up changes to customer and account information.
+. The Credit Card system must be polled to pick up changes to credit card information.
+. The customer is only able to view the banking summary and credit card information.
+. A generic MySQL database will be used as the back end for the generic systems.
+
+== High-Level Architecture
+
+The following diagram represents the portion of the overall solution that pertains to the Core Banking Enhancements use case
+
+image::fins-core-bank-foundation-arch.png[Core Banking Enhancements Solution Diagram]
+
+== Sequence Diagrams
+
+The sequence diagrams illustrate the processing sequences for the integrations and data synchronization activities included in this release.
+
+=== Customer Update Sync from Core Banking
+
+The following sequence diagram describes the process of synchronizing updates made to customers in the Core Banking System to downstream systems:
+
+image::fins-customer-update-sync-core-sequence.png[Core banking customer update sync diagram]
+
+=== Customer Update Sync from FSC
+
+The following sequence diagram describes the process of synchronizing updates made to customers in Salesforce Financial Services Cloud to downstream systems:
+
+image::fins-customer-update-sync-fsc-sequence.png[Diagram for customer update sync from Financial Services Cloud]
+
+=== Financial Accounts Sync from Core Banking
+
+The following sequence diagram describes the process of synchronizing updates made to financial accounts (including accounts, transactions, and cards) in the Core Banking System to downstream systems:
+
+image::fins-financial-accts-sync-core-sequence.png[Diagram for financial accounts sync from core banking]
+
+=== Financial Accounts Sync from FSC
+
+The following sequence diagram describes the process of synchronizing updates made to financial accounts (including accounts, transactions, and cards) in Salesforce Financial Services Cloud to downstream systems:
+
+image::fins-financial-accts-sync-fsc-sequence.png[Diagram for financial accounts sync from Financial Services Cloud]
+
+=== On-Demand Sync of Specific Entities
+
+The Poller Process APIs included in this release will support on-demand synchronization of specific entities to ensure all downstream systems are up-to-date. These requests must be processed in a synchronous fashion, and support any valid global or external identifier. Since all entities will follow a similar process, the following diagram has been made generic as it applies to all pollers:
+
+image::fins-on-demand-sync-sequence.png[Diagram for on-demand sync of specific entities]
+
+== Systems Involved
+
+* Core Banking System (generic)
+* Credit Card System (generic)
+* MDM (generic)
+* Salesforce Financial Services Cloud (FSC)
+
+== Core Banking Foundation Views
+
+=== Customer view
+
+==== End-to-End Scenario
+
+* A customer logs into the Mobile App to check their balance and transaction history.
+* The customer views their account information across multiple products from the Bank.
+* The customer reviews transactions for an account and chooses to dispute one.
+* The customer calls the Bank to talk to their Customer Service Representative.
+
+==== Workflow
+
+This view allows customers to:
+
+* View their latest financial summary.
+* Retrieve account transactions.
+* Dispute a transaction.
+
+==== Successful Outcome
+
+. Customer logs into the Mobile App to check their balance and credits.
+. Customer selects an account to view transactions.
+. Customer can filter transactions by date, amounts, and check numbers.
+. Customer chooses to dispute a transaction.
+
+== Customer Service Representative View
+
+=== End-to-End Scenario
+
+* The Customer Service Representative (CSR) pulls up the single view of the Customer from within the Financial Services Cloud.
+* The CSR performs an action to sync the latest data from the underlying systems (including FIS, Credit Card System API).
+* The CSR extracts information on the disputed transaction and discusses it with the customer.
+* The CSR resolves the disputed transaction and ends the call.
+
+=== Workflow
+
+This view allows CSRs to:
+
+* View the customer’s financial summary.
+* Refresh the customer's financial information from back-end systems.
+* Resolve a disputed transaction.
+
+=== Successful Outcome
+
+. CSR logs into FSC to lookup a particular customer.
+. CSR selects financial accounts to display financial summary for the customer including bank accounts and credit cards.
+. CSR chooses to refresh the information from back-end systems.
+. CSR views transactions for an account.
+. CSR resolves a disputed transaction and saves it.
+
+== Downloadable Assets
+
+=== FINS System APIs
+
+[%header%autowidth.spread]
+|===
+|Asset Name |API Specification Link |Implementation Template Link
+|Core Banking Accounts System API | API Specification | Implementation Template
+|Core Banking Customers System API | API Specification | Implementation Template
+|Credit Card System API | API Specification | Implementation Template
+|MDM Accounts System API | API Specification | Implementation Template
+|MDM Customers System API | API Specification | Implementation Template
+|Salesforce Customers System API | API Specification | Implementation Template
+|Salesforce Financial System API | API Specification | Implementation Template
+|===
+
+=== FINS Process APIs
+
+%header%autowidth.spread]
+|===
+|Asset Name |API Specification Link |Implementation Template Link
+|Bank Accounts Process API | API Specification | Implementation Template
+|Core Banking Poller Process API | API Specification | Implementation Template
+|Credit Card Poller Process API | API Specification | Implementation Template
+|Customers Process API | API Specification | Implementation Template
+|===
+
+=== FINS Experience APIs
+
+%header%autowidth.spread]
+|===
+|Asset Name |API Specification Link |Implementation Template Link
+|Mobile Experience API | API Specification | Implementation Template
+|Salesforce Financial Experience API | API Specification | Implementation Template
+|===
+
+=== FINS Listeners
+
+[%header%autowidth.spread]
+|===
+|Listener Name |Implementation Template Link
+|Salesforce Topic Listener | Implementation Template
+|===
+
+=== Custom Components
+
+[%header%autowidth.spread]
+|===
+|Custom Component Name |Source Link
+|FINS Banking Library | Source
+|FINS Common Resources | Source
+|FINS Financial Account Sync Lightning Web Component | Source
+|ID Graph Lightning Web Component | Source
+|===
+
+= See Also
+
+* xref:https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%201%20-%20Core%20banking%20foundation/#downloadable-assets[Downloadable Assets]

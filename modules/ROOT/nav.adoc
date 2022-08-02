@@ -1,2 +1,29 @@
-.xref:index.adoc[]
-* xref:index.adoc[Overview]
+.xref:index.adoc[MuleSoft Accelerators]
+* xref:index.adoc[MuleSoft Accelerators]
+* xref:setup-guide.adoc[MuleSoft Accelerators - Setup Guide]
+
+//Financial Services
+** xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+*** xref:fins-prereqs.adoc[Prerequisites]
+*** xref:fins-use-case-address-change-banking.adoc[Use Case - Core Banking Foundation]
+*** xref:fins-use-case-customer-onboarding.adoc[Use Case - Customer Onboarding - Banking]
+*** xref:fins-use-case-client-onboarding.adoc[Use Case - Client Onboarding - Wealth Management]
+*** xref:fins-use-case-payments-mod.adoc[Use Case - Payments Modernization]
+*** xref:fins-use-case-address-change-ins.adoc[Use Case - Address Change Orchestration - Insurance]
+*** xref:fins-use-case-core-banking.adoc[Use Case - Address Change Orchestration - Banking]
+*** xref:fins-payments-mod-demo-setup.adoc[Payments Modernization Demo Setup Guide]
+*** xref:fins-upgrade-notes.adoc[Upgrade Notes]
+*** xref:fins-release-notes.adoc[Release Notes]
+
+//Healthcare
+** xref:hc-landing-page.adoc[MuleSoft Accelerator for Healthcare]
+
+
+
+//Manufacturing
+** xref:mfg-landing-page.adoc[MuleSoft Accelerator for Manufacturing]
+
+
+
+//Retail
+** xref:retail-landing-page.adoc[MuleSoft Accelerator for Retail]

@@ -1,0 +1,139 @@
+= Use Case - Address Change Orchestration - Banking
+
+Streamline and accelerate coverage confirmation and premium calculations after postal address change
+
+== Overview
+
+Banking procedures are inherently complex, especially behind the scenes processes that result from postal address changes. Manual procedures across multiple disparate systems hinder banks’ ability to provide informed customer service. Banks need a solution that supports making faster adjustments and delivering timely and accurate information to customers.
+
+This use case accelerates banking IT teams’ ability to deliver a streamlined address change orchestration  and management solution. The solution also supports customer service teams’ ability to upsell and cross-sell personalized banking products and services.
+
+Ultimately, banks will be able to meet the growing demands of digital-first consumers in the hyper-competitive banking industry.
+
+== Use Case Description
+
+The address change orchestration  solution integrates key data from multiple systems into a bank’s central customer repository through an address change that is initiated via Financial Services Cloud (FSC). Marketing Cloud enables the bank to provide tailored offers to cross-sell and upsell bank products based on the client’s new address. This solutions helps streamline a common bank process while enabling tailored customer engagement and excellent support.
+
+=== Glossary
+
+[%header%autowidth.spread]
+|===
+|Term	|Definition
+|BIAN	|The Banking Industry Architecture Network is the banking technology standard.
+|CIM	|The Cloud Information Model (CIM) defines a set of standard data structures that can be used as canonical representations of common entities for integrating systems.
+|FINS	|Abbreviated term referring to the Financial and Insurance industries, consisting of the Banking, Insurance, and Wealth Management domains.
+|FSC	|The Salesforce Financial Services Cloud suite of applications. This includes Retail Banking, basic Insurance capabilities, and Wealth & Asset Management.
+|MDM	|A Master Data Management (MDM) solution provides an accurate, consistent, and complete copy of master data for use by enterprise applications and business partners. Most solutions include data quality tools and workflow processes for managing conflicting updates.
+|===
+
+=== Before You Begin
+
+The Accelerators set up guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+
+== API-Led Diagram
+
+//placeholder - cannot find this image - image::api-led-diagram-for-banking.png[API-led diagram for banking]
+
+== High-Level Architecture
+
+The following diagram represents the portion of the overall solution that pertains to the Postal Address Change use case.
+
+image:fins-arch-diagram-postal-address-change.png[Architecture diagram for postal address change in financial accelerator]
+
+Note that custom code or Lightning Web Components must be added to the Salesforce organizations to call the appropriate Experience APIs to verify a postal address.
+
+== Technical Considerations and Constraints
+
+The following lists the technical considerations and constraints for this solution design:
+
+* Only changes to a postal address of an existing customer follows the new address change process.
+* By default, the Customers Process API implementation has all target systems enabled to support all use cases provided by this accelerator; unneeded targets can be disabled by modifying the application properties, as appropriate.
+
+== Processing Views
+
+This section provides more detailed processing sequence diagrams for address verification and change execution.
+
+=== Address Verification
+
+The address verification process provides a means for applications to ensure an address change is valid before attempting to process it. This helps prevent invalid addresses from being stored and replicated across multiple systems.
+
+image:fins-fsc-address-verification-seq-diagram.png[Sequence diagram for postal address change processes
+
+=== Address Change Execution
+
+The process of handling a postal address change as part of a general customer profile or individual party update is performed by the Customers Process API. The sequence diagram below shows how an additional update notification for a postal address change is handled by the Customer Addresses Process API.
+
+image:fins-change-execution-sequence-diagram.png[Sequence diagram for executing an address change]
+
+=== Customer Profile Synchronization
+
+The following sequence diagram describes the process when a profile change has been initiated from Salesforce FSC for Banking; the process is similar if the change is initiated from Salesforce Insurance or another connected system.
+
+image:.png[Sequence diagram for synchronizing customer profiles]
+
+=== Individual Subscriber Synchronization
+
+The diagram below describes the sequence of steps to synchronize individual parties as subscribers to Marketing Cloud with Salesforce FSC as the update origination but applies to other update sources as well.
+
+image:.png[Sequence diagram for synchronizing individual subscriber]
+
+=== Postal Address Change - Banking
+
+The following activity diagram illustrates the address change process for existing Banking customers.
+
+image:.png[Activity diagram for postal address change processes - banking]
+
+== Downloadable Assets
+
+=== FINS System APIs
+
+[%header%autowidth.spread]
+|===
+|Asset Name |API Specification Link |Implementation Template Link
+|Accelerator Slack System API | API Specification | Implementation Template
+|Address Validation System API | API Specification | Implementation Template
+|Core Banking Customers System API | API Specification | Implementation Template
+|CoreLogic System API | API Specification | Implementation Template
+|MDM Customers System API | API Specification | Implementation Template
+|Salesforce Marketing System API | API Specification | Implementation Template
+|Salesforce Customers System API | API Specification | Implementation Template
+|Salesforce Financial System API | API Specification | Implementation Template
+|===
+
+=== FINS Process APIs
+
+[%header%autowidth.spread]
+|===
+|Asset Name |API Specification Link |Implementation Template Link
+|Customer Addresses Process API | API Specification | Implementation Template
+|Customers Process API | API Specification | Implementation Template
+|===
+
+=== FINS Experience APIs
+
+[%header%autowidth.spread]
+|===
+|Asset Name |API Specification Link |Implementation Template Link
+|Salesforce Financial Experience API | API Specification | Implementation Template
+|===
+
+=== FINS Listeners
+
+[%header%autowidth.spread]
+|===
+|Listener Name |Implementation Template Link
+|Salesforce Marketing Listener | Implementation Template
+|Salesforce Topic Listener | Implementation Template
+|===
+
+=== Custom Components
+
+[%header%autowidth.spread]
+|===
+|Custom Component Name |Source Link
+|Accelerator CIM Global Library | Source
+|Accelerator Common Core | Source
+|Accelerator POM Parent | Source
+|FINS Banking Library | Source
+|FINS Common Resources | Source
+|===

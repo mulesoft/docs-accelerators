@@ -1,1 +1,28 @@
-= Overview
+= MuleSoft Accelerators
+
+Accelerators are a collection of technical assets (predominantly API specifications and implementation templates) and documentation to accelerate the implementation of multiple use cases supporting a larger business or industry problem.
+
+Accelerators are designed as modular building blocks. Customers can change the patterns, mappings, and endpoints to suit their needs. They represent best practices we recommend to customers in accomplishing these use cases. Customers will save hours of discovery, design, development, and testing each time they use an accelerator asset.
+
+To access any of the links described within the following Accelerators, you must log into the xref:https://anypoint.mulesoft.com/home/organizations/75e44c75-9534-4f82-b916-0636467ddca0/[Anypoint Platform].
+
+[%header%autowidth.spread]
+|===
+|Accelerator |Description
+|image:fs-icon.png[25%,25%]
+
+MuleSoft Accelerator for Financial Services |Boosts time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architecture for financial services.
+|image:hc-icon.png[30%,30%]
+
+MuleSoft Accelerator for Healthcare | Equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey. With our pre-built APIs, connectors, implementation templates, and reference architectures, IT teams can spend more time innovating rather than building from scratch.
+|image:mfg-icon.png[40%,40%]
+
+MuleSoft Accelerator for Manufacturing| Delivers seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
+|image:retail-icon.png[25%,25%]
+
+MuleSoft Accelerator for Retail |Includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives.
+|===
+
+Give the assets a try, and if you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the xref:https://help.mulesoft.com/s/forum[MuleSoft Forum], and submit ideas in the xref:https://help.mulesoft.com/s/ideas[Ideas Portal]. We look forward to hearing from you!
+
+For more accelerators, visit xref:https://www.mulesoft.com/exchange/[Anypoint Exchange].

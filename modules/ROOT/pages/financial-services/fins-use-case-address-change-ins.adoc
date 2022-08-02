@@ -1,0 +1,92 @@
+= Use Case - Address Change Orchestration - Insurance
+
+Streamline and accelerate coverage confirmation and premium calculations after postal address change
+
+Overview
+Policyholder postal address changes are inherently complex, causing multiple downstream events that impact insurance coverage and premiums. Manual processes spread across multiple systems can burden and slow down the customer service experience. Insurance carriers need a fast and highly integrated home change solution that streamlines policyholder premium updates and communications.
+
+This use case accelerates insurance  IT teams’ ability to deliver a home-policy change  solution that can also be extended to other forms of insurance coverage, like auto, boat, and other property. Insurers will be able to validate policyholder addresses faster and reduce manual tasks associated with policy changes and risk calculations.
+
+Ultimately, insurers will be able to deliver faster home postal address change policy updates, and new quote generation, as well as improve the customer service experience.
+
+Use case description
+The address change orchestration solution integrates and connects data from Salesforce for Insurance (SFI) to complete policy and quote impacts. Address change initiation can be executed within Financial Services Cloud (FSC) or other CRM systems. CoreLogic supports insurers’ core platform by retrieving and analyzing physical locations and other details associated with the postal addresses.
+
+The solution also helps communicate important information, including policy and quote updates and address validation confirmations through Slack to customer service representatives and policyholders.
+
+Glossary
+Term	Definition
+BIAN	The Banking Industry Architecture Network is the banking technology standard.
+CIM	The Cloud Information Model (CIM) defines a set of standard data structures that can be used as canonical representations of common entities for integrating systems.
+FINS	Abbreviated term referring to the Financial and Insurance industries, consisting of the Banking, Insurance, and Wealth Management domains.
+FSC	The Salesforce Financial Services Cloud suite of applications. This includes Retail Banking, basic Insurance capabilities, and Wealth & Asset Management.
+MDM	A Master Data Management (MDM) solution provides an accurate, consistent, and complete copy of master data for use by enterprise applications and business partners. Most solutions include data quality tools and workflow processes for managing conflicting updates.
+SFI	The Salesforce Insurance CRM (formerly Vlocity) solution provides more comprehensive policy and claims administration over FSC Insurance.
+WAM	Wealth & Asset Management is a sub-vertical of FINS.
+Before you begin
+bulb.png	The Accelerators set up guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+API-led diagram
+API-led diagram for insurance
+High-level architecture
+The following diagram represents the portion of the overall solution that pertains to the Postal Address Change use case.
+
+Architecture diagram for postal address change in financial accelerator
+Note that custom code or Lightning Web Components must be added to the Salesforce organizations to call the appropriate Experience APIs to verify a postal address.
+
+Technical considerations and constraints
+The following lists the technical considerations and constraints for this solution design:
+
+SFI is the system of record for Insurance, while FSC Wealth is the system of record for Wealth & Asset Management.
+Only changes to a postal address of an existing customer follows the new address change process.
+Only customer profile information will be synchronized with FSC Wealth.
+An Integration Procedure must be created in SFI for the generation of a new property quote.
+By default, the Customers Process API implementation has all target systems enabled to support all use cases provided by this accelerator; unneeded targets can be disabled by modifying the application properties, as appropriate.
+Processing views
+This section provides more detailed processing sequence diagrams for address verification and change execution.
+
+Address verification
+The address verification process provides a means for applications to ensure an address change is valid before attempting to process it. This helps prevent invalid addresses from being stored and replicated across multiple systems. The following sequence diagram shows Salesforce FSC as the starting point but it applies to Salesforce Insurance as well (with a different Experience API).
+
+Sequence diagram for postal address change processes
+Address change execution
+The process of handling a postal address change as part of a general customer profile or individual party update is performed by the Customers Process API. The sequence diagram below shows how an additional update notification for a postal address change is handled by the Customer Addresses Process API.
+
+Sequence diagram for executing an address change
+Customer profile synchronization
+The following sequence diagram describes the process when a profile change has been initiated from Salesforce FSC for Banking; the process is similar if the change is initiated from Salesforce Insurance or another connected system.
+
+Sequence diagram for synchronizing customer profiles
+Postal address change - Insurance
+The following activity diagram illustrates the address change process for existing Insurance customers.
+
+Activity diagram for postal address change processes - insurance
+Downloadable assets
+FINS System APIs
+
+Accelerator Slack System API | API Specification | Implementation Template
+Address Validation System API | API Specification | Implementation Template
+CoreLogic System API | API Specification | Implementation Template
+MDM Customers System API | API Specification | Implementation Template
+Salesforce Marketing System API | API Specification | Implementation Template
+Salesforce Customers System API | API Specification | Implementation Template
+Salesforce Financial System API | API Specification | Implementation Template
+Salesforce Insurance System API | API Specification | Implementation Template
+FINS Process APIs
+
+Customer Addresses Process API | API Specification | Implementation Template
+Customers Process API | API Specification | Implementation Template
+FINS Experience APIs
+
+Salesforce Financial Experience API | API Specification | Implementation Template
+Salesforce Insurance Experience API | API Specification | Implementation Template
+FINS Listeners
+
+Salesforce Marketing Listener | Implementation Template
+Salesforce Topic Listener | Implementation Template
+Custom components
+
+Accelerator CIM Global Library | Source
+Accelerator Common Core | Source
+Accelerator POM Parent | Source
+FINS Common Resources | Source
+FINS Insurance Library | Source

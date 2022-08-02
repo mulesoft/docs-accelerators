@@ -1,0 +1,45 @@
+= Payments Modernization Demo Setup Guide
+
+== Overview
+
+* A Docker runtime will be required to deploy containers needed by the solution.
+* A generic core banking system will be used as the primary system of record.
+* Moov.io containers will be used to simulate the processing of ACH and Fedwire messages.
+* A third-party Java library will be used to simulate the processing of SWIFT messages.
+* A custom process will be used to simulate incoming payment confirmations.
+* A xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-frontend-webui-src/[Payments Front-end Web UI] has been built to demonstrate the functionality implemented by this use case.
+* MultiChain Wallet Node is used to support processing of BlockChain Transactions.
+
+== Setup
+
+This guide sets up a demo environment with the supported backend services used by the provided API implementations. When these APIs are adopted by a MuleSoft customer, it is expected that the customer will replace these example backend services with their preferred services.
+
+The following containerized services are deployed on docker. For demo purposes, it is recommended to deploy all containers on a single Docker node.
+
+* moov.io ACH service
+* moov.io Fedwire service
+* Payments Front-end Web UI
+* Blockchain based on MultiChain
+
+The Payments Front-end Web UI can also be run locally, outside of a container, by following the instructions provided in its README file.
+
+=== Payments Front-End Web UI Recommended Setup:
+
+. Install Docker and its dependencies on the server of your choice.
+. Configure the Payments Front-end Web UI by modifying the following properties in the .env file:
+.. `REACT_APP_PAYMENTS_WEBUI_EXP_API_ENDPOINT` should point to an instance of the Payments Web UI Experience API
+.. `REACT_APP_PAYMENTS_WEBUI_EXP_API_WEBSOCKET_ENDPOINT` should point to an instance of the Payments Web UI Experience API
+. Build the docker image by running its docker-build.sh script.
+. Start the docker container by running the docker-run.sh script on the machine running the Docker server, or use a Docker administration UI to manage the containers.
+. Update `https.cors.allow-url` property in the Payments Web UI Experience API with the Payments Front-end Web UI endpoint to allow CORS.
+
+=== Moov.io Recommended Setup:
+
+The moov.io images are provided pre-built as-is. They can be started on the Docker server by using the included docker-run.sh scripts.
+
+=== MultiChain Setup:
+
+To run the MultiChain node as a docker container, perform the following steps:
+
+. Use the Dockerfile from the scripts folder in the Blockchain System API to build the MultiChain image.
+. Run the `docker-run.sh` script to deploy the container and setup network ports. Run `docker-exec.sh` to create MultiChain and configure the json-rpc service to interact with the MultiChain container.
