@@ -209,6 +209,6 @@ This view allows CSRs to:
 |ID Graph Lightning Web Component | Source
 |===
 
-= See Also
+== See Also
 
-* xref:https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%201%20-%20Core%20banking%20foundation/#downloadable-assets[Downloadable Assets]
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%201%20-%20Core%20banking%20foundation/#downloadable-assets[Downloadable Assets]
