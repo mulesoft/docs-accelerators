@@ -25,4 +25,4 @@ MuleSoft Accelerator for Retail |Includes pre-built APIs, connectors, integratio
 
 Give the assets a try, and if you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the xref:https://help.mulesoft.com/s/forum[MuleSoft Forum], and submit ideas in the xref:https://help.mulesoft.com/s/ideas[Ideas Portal]. We look forward to hearing from you!
 
-For more accelerators, visit xref:https://www.mulesoft.com/exchange/[Anypoint Exchange].
+For more accelerators, visit https://www.mulesoft.com/exchange/[Anypoint Exchange].
