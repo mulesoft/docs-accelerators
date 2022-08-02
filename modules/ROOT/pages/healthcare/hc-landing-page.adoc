@@ -6,7 +6,7 @@ image:hc-landing-page-main-diagram.png[Healthcare app network diagram]
 
 == Healthcare and Life Sciences Solutions
 
-The Accelerator for Healthcare consists of pre-built APIs, integration templates, and prescriptive architecture to speed up the time to market for digital transformation projects. The following provides a quick reference of the business, integration, and technology solutions that the accelerator supports. The xref:https://www.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/2.15/pages/home/#use-cases[use case section] has additional details about each use case:
+The Accelerator for Healthcare consists of pre-built APIs, integration templates, and prescriptive architecture to speed up the time to market for digital transformation projects. The following provides a quick reference of the business, integration, and technology solutions that the accelerator supports. The https://www.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/2.15/pages/home/#use-cases[use case section] has additional details about each use case:
 
 [%header%autowidth.spread]
 |===
@@ -26,7 +26,7 @@ The Accelerator for Healthcare consists of pre-built APIs, integration templates
 |Interoperability | |
 |===
 
-For solutions related to life sciences, the xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/[Accelerator for Life Sciences] helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
+For solutions related to life sciences, the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/[Accelerator for Life Sciences] helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
 
 == Use Cases
 

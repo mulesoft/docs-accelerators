@@ -4,7 +4,7 @@ Accelerators are a collection of technical assets (predominantly API specificati
 
 Accelerators are designed as modular building blocks. Customers can change the patterns, mappings, and endpoints to suit their needs. They represent best practices we recommend to customers in accomplishing these use cases. Customers will save hours of discovery, design, development, and testing each time they use an accelerator asset.
 
-To access any of the links described within the following Accelerators, you must log into the xref:https://anypoint.mulesoft.com/home/organizations/75e44c75-9534-4f82-b916-0636467ddca0/[Anypoint Platform].
+To access any of the links described within the following Accelerators, you must log into the https://anypoint.mulesoft.com/home/organizations/75e44c75-9534-4f82-b916-0636467ddca0/[Anypoint Platform].
 
 [%header%autowidth.spread]
 |===
@@ -23,6 +23,6 @@ MuleSoft Accelerator for Manufacturing| Delivers seamless connectivity between S
 MuleSoft Accelerator for Retail |Includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives.
 |===
 
-Give the assets a try, and if you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the xref:https://help.mulesoft.com/s/forum[MuleSoft Forum], and submit ideas in the xref:https://help.mulesoft.com/s/ideas[Ideas Portal]. We look forward to hearing from you!
+Give the assets a try, and if you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum], and submit ideas in the https://help.mulesoft.com/s/ideas[Ideas Portal]. We look forward to hearing from you!
 
 For more accelerators, visit https://www.mulesoft.com/exchange/[Anypoint Exchange].
