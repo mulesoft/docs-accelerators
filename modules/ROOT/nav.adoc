@@ -1,6 +1,6 @@
 .xref:index.adoc[MuleSoft Accelerators]
 * xref:index.adoc[MuleSoft Accelerators]
-* xref:setup-guide.adoc[MuleSoft Accelerators - Setup Guide]
+** xref:setup-guide.adoc[MuleSoft Accelerators - Setup Guide]
 ** xref:financial-services/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
 *** xref:financial-services/fins-prereqs.adoc[Prerequisites]
 *** xref:financial-services/fins-use-case-address-change-banking.adoc[Use Case - Core Banking Foundation]
