@@ -21,7 +21,7 @@ Once configured, applications can be deployed individually to your own CloudHub 
 
 The following table provides more information about the types of accelerator assets provided and how they fit into the overall solution.
 
-%header%autowidth.spread]
+[%header%autowidth.spread]
 |===
 |Type	|Purpose	|Example
 |API Spec Fragments	|Shared RAML specifications reused by multiple APIs. These define standard characteristics, data types and response codes common across most APIs.	|Accelerator Global Resources
