@@ -1,4 +1,4 @@
-.xref:index.adoc[MuleSoft Accelerators]
+.xref:index.adoc[Accelerators]
 * xref:index.adoc[MuleSoft Accelerators]
 * xref:setup-guide.adoc[MuleSoft Accelerators - Setup Guide]
 * xref:financial-services/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
