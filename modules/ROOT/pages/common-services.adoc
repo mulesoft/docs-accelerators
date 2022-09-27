@@ -1,0 +1,24 @@
+= MuleSoft Accelerators - Common Services
+
+This asset is used in the following MuleSoft Accelerators:
+
+* MuleSoft Accelerator for Financial Services — Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement (e.g., CRM and ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
+* MuleSoft Accelerator for Retail — Includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives.
+* MuleSoft Accelerator for SAP — Includes components and use cases for SAP ECC, S/4HANA, and Salesforce, and enables organizations to easily expose SAP ERP data for consumption by all.
+* MuleSoft Accelerators for Salesforce Clouds — Includes pre-built APIs, connectors, and integration templates that help unlock business-critical data from external systems such as SAP, ServiceNow, and Jira, which accelerates implementation of essential integration use cases for Service Cloud and Commerce Cloud. These assets guide you to adopt best practices synthesized from thousands of customer implementations and can be used as-is or extended to meet your company's unique needs.
+* MuleSoft Accelerator for Manufacturing — Includes pre-built APIs, connectors, integration templates, and reference architecture to simplify connectivity between SAP S/4HANA, and Salesforce Manufacturing Cloud.
+
+== Common Components
+
+The MuleSoft Accelerators leverage a number of common components, referred to here as "common services". These services include the following:
+
+* Common Scheduler – unified scheduling
+* Notification Services – send notifications
+* Security Services – API security policies
+
+The notification and scheduler services can be configured and installed as independent applications. The notification services consists of multiple applications, depending on which notification targets are selected. One or more security policies can be applied using API Manager.
+
+== See Also
+
+* API Template Project – Generic implementation template that allows you to quickly create implementations for new API specifications.
+* Accelerators setup guide – Detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.

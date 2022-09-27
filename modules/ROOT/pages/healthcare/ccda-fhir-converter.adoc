@@ -1,0 +1,10 @@
+C-CDA to FHIR converter
+The C-CDA to FHIR converter comes with a ready to use template for CDA to FHIR conversion. This template can be extended or modified to meet specific conversion requirements.
+
+Functional diagram
+CDA to FHIR converter functional diagram
+Advantages
+Accelerates efforts to standardize on FHIR and enables more comprehensive view into patients
+Follows best practices prescribed by HL7 and removes manual work associated with conversion
+Solution can be extended to support additional CDA documents
+Highly performant with underlying DataWeave engine
