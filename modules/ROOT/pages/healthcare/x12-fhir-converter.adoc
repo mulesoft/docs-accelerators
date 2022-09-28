@@ -1,14 +1,17 @@
-X12 to FHIR converter
-The X12 to FHIR converter comes with a ready to use template for X12 to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
+= X12 to FHIR converter
 
-Functional diagram
-X12 to FHIR converter functional diagram
-Advantages
-Removes manual work associated with X12 and FHIR conversion
-X12 connector is preconfigured for this use case to easily read & write X12 EDI events
-Supports multiple X12 message formats and use cases:
-270 and 271 (Eligibility Verification Inquiry)
-278, 278i, and 275 (Prior Authorization)
-837 (Claims)
-Solution can be extended to support any custom fields and segments
-Highly performant with underlying DataWeave engine
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-to-x12-sys-api/[X12 to FHIR converter] comes with a ready to use template for https://x12.org/[X12] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
+
+== Functional diagram
+//image placeholder with text [X12 to FHIR converter functional diagram]
+
+== Advantages
+
+* Removes manual work associated with X12 and FHIR conversion
+* X12 connector is preconfigured for this use case to easily read & write X12 EDI events
+* Supports multiple X12 message formats and use cases:
+** 270 and 271 (Eligibility Verification Inquiry)
+** 278, 278i, and 275 (Prior Authorization)
+** 837 (Claims)
+* Solution can be extended to support any custom fields and segments
+* Highly performant with underlying DataWeave engine
