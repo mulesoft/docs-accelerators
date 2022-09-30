@@ -1,4 +1,4 @@
-= Release notes
+= Release Notes
 
 == v1.2
 6 September 2022

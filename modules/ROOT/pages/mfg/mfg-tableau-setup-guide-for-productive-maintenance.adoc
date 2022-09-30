@@ -1,5 +1,7 @@
-Tableau setup guide for productive maintenance
-Prerequisite
+= Tableau Setup Guide for Productive Maintenance
+
+== Prerequisite
+
 Users should have an Amazon Redshift connection.
 Download and install Tableau Desktop.
 Users should have access toTableau Online.

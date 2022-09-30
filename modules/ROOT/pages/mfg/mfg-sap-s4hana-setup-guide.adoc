@@ -1,5 +1,7 @@
-SAP S4HANA setup guide for sales rebate management
-Communication arrangements
+= SAP S4HANA Setup Guide for Sales Rebate Management
+
+== Communication Arrangements
+
 Below are the configuration arrangements required for this use case:
 
 Communication Arrangement	Service Name	Protocol
