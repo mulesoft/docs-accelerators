@@ -1,4 +1,4 @@
-= C-CDA to FHIR converter
+= C-CDA to FHIR Converter
 
 The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-ccda-to-fhir-sys-api/[C-CDA to FHIR converter] comes with a ready to use template for https://www.hl7.org/implement/standards/product_brief.cfm?product_id=496[CDA] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements.
 

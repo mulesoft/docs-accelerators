@@ -1,4 +1,4 @@
-= FHIR R4 assets
+= FHIR R4 Assets
 
 The following are a collection of assets to support MuleSoft customers who are developing Fast Healthcare Interoperability Resources (FHIR) APIs using MuleSoft. Visit the official HL7 website for more information.
 
