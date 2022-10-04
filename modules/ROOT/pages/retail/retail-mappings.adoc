@@ -1,0 +1,143 @@
+= Mappings
+
+Customer profile sync
+Sales order sync
+Product sync
+Customer profile sync
+Source-type mappings
+The following table summarizes how representations of a customer or individual from each system will be mapped to CIM types:
+
+Source System	Source Type	CIM Types	Mapping Notes
+B2C Commerce	Customer Profile	Individual
+Customer
+Contact Address
+Contact Email
+Contact Phone	One B2C customer profile will map to multiple CIM objects
+B2B Commerce
+Sales Cloud
+Service Cloud	Person Account	Individual
+CustomerContact Address
+Contact Email
+Contact Phone	Person Account is represented as record type, mapping to Account and Contact
+Account	OrganizationCustomerContact Address
+Contact Email
+Contact Phone	Account is mapped separately from Contacts
+Contact	Individual
+Contact Address
+Contact Email
+Contact Phone	Similar mappings as for Person Accounts but at the Individual level only
+Marketing Cloud	Subscriber	Individual	Requires a data extension
+SAP	Customer	IndividualCustomer
+Contact Address
+Contact Email
+Contact Phone
+Target-type mappings
+The following table summarizes how representations of a customer or individual from each system will be mapped from CIM types:
+
+Target System	CIM Type	Target Types	Mapping Notes
+B2C Commerce	Customer
+Individual
+Contact Address
+Contact Email
+Contact Phone	Customer	Relevant fields only
+MDM	All Types	Corresponding type	1:1 mappings; use join tables for relationships
+B2B Commerce
+Sales Cloud
+Service Cloud	CustomerIndividual
+Contact Address
+Contact Email
+Contact Phone	PersonAccount	Relevant fields only
+CustomerOrganization
+Contact Address
+Contact Email
+Contact Phone	Account	Address fields mapped directly
+Individual
+Contact Address
+Contact Email
+Contact Phone	Contact	Similar mappings as for Person Accounts but at the Individual level only
+Marketing Cloud	Individual	Subscriber	Relevant fields only
+SAP	CustomerIndividual
+Contact Address
+Contact Email
+Contact Phone	Customer	Relevant fields only
+Sales order sync
+Source-type mapping
+The following table summarizes how representations of a sales order from each system will be mapped to CIM types:
+
+Source system	Source type	CIM Types	Mapping notes
+B2C Commerce	Order	SalesOrder
+SalesOrderProduct	Order line items added as sales order products
+OFBiz	Order
+OrderLineItem	SalesOrder
+SalesOrderProduct	TBD
+SAP	Order	SalesOrder
+SalesOrderProduct	Order line items added as sales order products
+Salesforce	TBD	SalesOrder	TBD
+Target-type mapping
+The following table summarizes how representations of a sales order from each system will be mapped from CIM types:
+
+Target system	CIM type	Target Types	Mapping notes
+B2C Commerce	SalesOrder	Order	Order status update only
+OFBiz	SalesOrder
+SalesOrderPRoduct	Order
+OrderLineItems	Order status update only
+SAP	SalesOrder
+SalesOrderProduct	Order
+OrderLineItems	Relevant fields only
+Salesforce	SalesOrder	TBD	TBD
+Product sync
+Source-type mapping
+The following table summarizes how representations of a product from each system will be mapped to CIM types:
+
+Source System	Source Type	CIM Types	Mapping Notes
+B2C Commerce	Product	Product
+ProductCategory
+ProductCatalog
+PriceBook	Relevant fields only
+OFBiz	Product	Product
+ProductCategory
+ProductCatalog
+PriceBook	Relevant fields only
+SAP S/4HANA	Product	Product
+ProductCategory
+ProductCatalog
+PriceBook	Relevant fields only
+Salesforce	Product
+Pricebook	Product
+ProductCategory
+ProductCatalog
+PriceBook	Relevant fields only
+PIM	Product
+ProductCategory
+ProductCatalog
+PriceBook	Product
+ProductCategory
+ProductCatalog
+PriceBook	1:1 mappings; use join tables for relationships
+Target-type mapping
+The following table summarizes how representations of a product from each system will be mapped from CIM types:
+
+Target System	CIM Type	Target Types	Mapping Notes
+B2C Commerce	Product
+ProductCategory
+ProductCatalog
+PriceBook	Product	Relevant fields only
+OFBiz	Product
+ProductCategory
+ProductCatalog
+PriceBook	Product
+ProductCategory
+ProductCatalog
+PriceBook	Relevant fields only
+SAP S/4HANA	Product
+PriceBook	Product
+PricingCondition	Relevant fields only
+Salesforce	Product
+ProductCategory
+ProductCatalog
+PriceBook	Product
+PriceBook	Relevant fields only
+PIM	Product
+ProductCategory
+ProductCatalog
+PriceBook	Product	Relevant fields only
