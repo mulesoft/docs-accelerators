@@ -35,38 +35,46 @@ OCAPI is the other set of APIs used by the implementation template. These settin
 
 Access to the following resources and methods of the Shop APIs is required:
 
-Resource	Methods
-/customers	POST
-/customers/*	GET/PATCH
-/customers/*/addresses	GET/POST
-/customers/*/addresses/*	GET/PATCH/DELETE
-/customers/*/baskets	GET
-/customers/*/orders	GET
-/orders/*	GET/PATCH
-/order_search	POST
-/product_lists	GET
-/product_lists/*	GET/PATCH
-/product_lists/*/items	GET/POST
-/product_lists/*/items/*	PATCH/DELETE
-/product_search	GET
-/product_search/availability	GET
-/product_search/images	GET
-/product_search/prices	GET
-/product_search/variations	GET
-/products/*	GET
-/products/*/images	GET
-/products/*/availability	GET
-/products/*/prices	GET
-/products/*/variations	GET
-Data APIs
+[%header%autowidth.spread]
+|===
+|Resource	|Methods
+|/customers	|POST
+|/customers/*	|GET/PATCH
+|/customers/*/addresses	|GET/POST
+|/customers/*/addresses/*	|GET/PATCH/DELETE
+|/customers/*/baskets	|GET
+|/customers/*/orders	|GET
+|/orders/*	|GET/PATCH
+|/order_search	|POST
+|/product_lists	|GET
+|/product_lists/*	|GET/PATCH
+|/product_lists/*/items	|GET/POST
+|/product_lists/*/items/*	|PATCH/DELETE
+|/product_search	|GET
+|/product_search/availability	|GET
+|/product_search/images	|GET
+|/product_search/prices	|GET
+|/product_search/variations	|GET
+|/products/*	|GET
+|/products/*/images	|GET
+|/products/*/availability	|GET
+|/products/*/prices	|GET
+|/products/*/variations	|GET
+|===
+
+== Data APIs
+
 Access to the following resources and methods of the Data APIs is required:
 
-Resource	Method
-/products/*	GET/PUT/PATCH
-/products/*/variation_attributes/*	GET/PUT
-/products/*/variation_attributes/*/values/*	GET/PUT
-/products/*/variations/*	GET/PUT
-/product_search	POST
-/inventory_lists/*/product_inventory_records/*	GET/PATCH/PUT
-/catalogs/*/categories/*/products/*	GET/PATCH/PUT
-/sites/*/orders/**	PUT/PATCH
+[%header%autowidth.spread]
+|===
+|Resource	|Method
+|/products/*	|GET/PUT/PATCH
+|/products/*/variation_attributes/*	|GET/PUT
+|/products/*/variation_attributes/*/values/*	|GET/PUT
+|/products/*/variations/*	|GET/PUT
+|/product_search	|POST
+|/inventory_lists/*/product_inventory_records/*	|GET/PATCH/PUT
+|/catalogs/*/categories/*/products/*	|GET/PATCH/PUT
+|/sites/*/orders/**	|PUT/PATCH
+|===

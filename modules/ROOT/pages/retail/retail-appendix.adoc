@@ -1,61 +1,74 @@
 = Appendix
 
-Overview
-CIM usage guidelines
-Interpretation of identifiers
-Enumerations
-Composition
-Representation of numbers
-CIM usage guidelines
+== CIM Usage Guidelines
+
 The physical representations of the Cloud Information Model (e.g,. RAML, DDL) implement a highly-normalized view of objects and relationships, where enumerated values are defined as separate entities. In our solution, these relationships will be simplified to reduce complexity and overall development effort. This section clarifies our use of the model in more detail.
 
-Audience
+== Audience
+
 The primary audience for this document primarily includes architects, consultants, developers, and testers engaged in architecting, designing, developing, and testing API-based solutions.
 
-Glossary
+== Glossary
+
 The following table defines general terms and acronyms referenced in this document:
 
-Term	Definition
-MDM	A Master Data Management solution provides an accurate, consistent, and complete copy of master data for use by enterprise applications and business partners. Most solutions include data quality tools and workflow processes for managing conflicting updates.
-CIM	The Cloud Information Model defines a set of standard data structures that can be used as canonical representations of common entities for integrating systems.
-Interpretation of identifiers
+[%header%autowidth.spread]
+|===
+|Term	|Definition
+|MDM	|A Master Data Management solution provides an accurate, consistent, and complete copy of master data for use by enterprise applications and business partners. Most solutions include data quality tools and workflow processes for managing conflicting updates.
+|CIM	|The Cloud Information Model defines a set of standard data structures that can be used as canonical representations of common entities for integrating systems.
+|===
+
+== Interpretation of Identifiers
+
 For the MuleSoft Accelerator for Retail, the MDM System API is responsible for generating and maintaining universal identifiers for all entities. Also known as "master", or "global"identifiers, these values represent the unique ID for any given instance of an entity. They are therefore assigned to the id property of any given CIM object (e.g., Customer.id) in all Experience and Process APIs. All other system identifiers are treated as external, and thus may be found in the externalIds property (where supported).
 
 For System APIs, however, the id property of any given CIM object will be set to the identifier understood by that system on all request/response messages. If supported, the universal identifier will be found in the externalIds property with an external ID type of "MDM". The intent behind this approach is to keep the interpretation of the identifiers for a target system as being from the perspective of that system, rather than from MDM.
 
 The following table provides some examples involving a sales order, published from B2C Commerce, to help clarify ID usage:
 
-API	Message	CIM ID Type	External ID Type
-B2C Commerce Experience API	Order Update	MDM	SALESFORCE_B2C
-Orders Process API	MDM Order Retrieve	MDM	SALESFORCE_B2C
-Orders Process API	ERP Order Create	MDM	SALESFORCE_B2C
-ERP Orders Process API	SAP ECC Order Create	SAP_ECC	MDM
-ERP Orders Process API	SAP S/4HANA Order Create	SAP_HANA	MDM
-SAP S/4HANA Orders System API	Order Retrieve	SAP_HANA	MDM
-OMS System API	Order Retrieve	OFBIZ	MDM
-Enumerations
+[%header%autowidth.spread]
+|===
+|API	|Message	|CIM ID Type	|External ID Type
+|B2C Commerce Experience API	|Order Update	|MDM	|SALESFORCE_B2C
+|Orders Process API	|MDM Order Retrieve	|MDM	|SALESFORCE_B2C
+|Orders Process API	|ERP Order Create	|MDM	|SALESFORCE_B2C
+|ERP Orders Process API	|SAP ECC Order Create	|SAP_ECC	|MDM
+|ERP Orders Process API	|SAP S/4HANA Order Create	|SAP_HANA	|MDM
+|SAP S/4HANA Orders System API	|Order Retrieve	|SAP_HANA	|MDM
+|OMS System API	|Order Retrieve	|OFBIZ	|MDM
+|===
+
+== Enumerations
+
 In CIM, some enumerations are defined as plain strings while others are defined as complex types (e.g., to normalize the structure). For our purposes, all properties that represent enumerations can be treated as strings instead of complex types thanks to the addition of a string union to the definition. Where string/type unions are defined as being arrays, it is expected that the contents of the array will be a single string identifying the enumerated value.
 
-Enumeration types
+== Enumeration Types
+
 For our purposes we support two distinct types of enumerations: those used as discriminators for polymorphism and those that represent coded values. For example, the partyType property is used as the discriminator for Party, and thus will contain an actual type name (e.g., Individual). Something like a status field, on the other hand, represents a static value and thus would have a predefined list of upper-case codes (e.g,. ACTIVE). This distinction helps to quickly identify coded values vs. discriminator types in messages.
 
-Enumeration example
+== Enumeration Example
+
 In the following example, contactPointType is an enumeration, which identifies the type of ContactPoint the snippet represents:
 
-{
+`{
     contactPoints: [{
         "id": "bbafefc5-8cb4-11eb-b4c8-0233bdd64096",
         "contactPointType": [ "ContactPointEmail" ],
         "emailAddress": "traisley@flcx.com"
     }]
-}
+}`
+
 When creating sample messages it can help clarify that a property represents an enumeration by putting the entire definition on a single line, as shown above.
 
-Predefined enumeration list
+== Predefined Enumeration List
+
 The following table lists all fields, which represent enumerated values relevant to the Customer Profile Sync solution, along with the values allowed:
 
-Type	Property	Allowable values
-ExternalId	externalIdType	FIS
+[%header%autowidth.spread]
+|===
+|Type	|Property	|Allowable values
+|ExternalId	|externalIdType	|FIS
 JIRA
 OFBIZ
 MDM
@@ -66,16 +79,16 @@ SALESFORCE_CORE
 SALESFORCE_FSC
 SALESFORCE_MARKETING
 SERVICENOW
-status	VALID
+|status	|VALID
 INVALID
-ContactPoint	contactPointType	ContactPointAddress
+|ContactPoint	|contactPointType	|ContactPointAddress
 ContactPointEmail
 ContactPointPhone
-Customer	customerStatus	ACTIVE
+|Customer	|customerStatus	|ACTIVE
 INACTIVE
-Party	partyType	Individual
+|Party	|partyType	|Individual
 Organization
-PartyRelatedParty	partyRelationshipTye	AGENT
+|PartyRelatedParty	|partyRelationshipTye	|AGENT
 BUYER
 CHILD
 CLIENT
@@ -86,11 +99,11 @@ SPOUSE
 SUPPLIER
 USER
 VENDOR
-PartyRole	partyRoleType	Customer
+|PartyRole	|partyRoleType	|Customer
 Employee
-Product	type	MASTER
+|Product	|type	|MASTER
 VARIANT
-SalesOrder	salesOrderType	ADD_ON
+|SalesOrder	|salesOrderType	|ADD_ON
 CANCELLATION
 INITIAL
 JOURNAL
@@ -98,7 +111,7 @@ RENEWAL
 RETURN
 SUBSCRIPTION
 UPGRADE
-salesOrderStatus	CANCELLED
+|salesOrderStatus	|CANCELLED
 CREATED
 CONFIRMED
 DELIVERED
@@ -110,18 +123,22 @@ PICKUP_AVAILABLE
 PROCESSING
 REJECTED
 RETURNED
-SalesOrderProduct	salesOrderProductStatus	ACTIVE
+|SalesOrderProduct	|salesOrderProductStatus	|ACTIVE
 DISCONTINUED
 INACTIVE
 NOT_SELLING
 OUT_OF_STOCK
-Composition
+|===
+
+== Composition
+
 In the version of the CIM RAML libraries created for use by Accelerator assets, objects have been structured to support a great deal of flexibility when it comes to composition. Put simply, applications have the ability to represent entities either as flat structures, where references to other entities are provided as strings, or as tree structures, where child or referenced entities are embedded as part of other objects.
 
-Composition example
+== Composition Example
+
 For example, a flat representation of a Customer instance might look like this, where only a key reference to the associated party is provided:
 
-{
+`{
     "id": "5550ae29-8caf-11eb-b4c8-0233bdd64096",
     "customerNumber": "00002496",
     "customerStatus": "ACTIVE",
@@ -129,10 +146,11 @@ For example, a flat representation of a Customer instance might look like this, 
         "54d59448-8caf-11eb-b4c8-0233bdd64096"
     ],
     "partyRoleType": "Customer"
-}
+}`
+
 However, the same definition of the model also supports a more complete representation of a Customer, such as the following:
 
-{
+`{
     "id": "ed3a2956-8b0d-11eb-b4c8-0233bdd64096",
     "partyRoleType": "Customer",
     "party": [{
@@ -160,14 +178,18 @@ However, the same definition of the model also supports a more complete represen
     }],
     "customerNumber": "1234446",
     "customerStatus": "Screened"
-}
+}`
+
 Individual applications may therefore choose to support arbitrary levels of composition in API requests and responses while still remaining valid against the model definition.
 
-Representation of numbers
+== Representation of Numbers
+
 In CIM, all numeric properties are defined as integers. This means that, to accurately capture decimal amounts (e.g., dollars and cents), values need to be multiplied and divided by the desired precision factor when assigning or reading numeric values, respectively. For example, the dollar amount of a sales order would need to be multiplied by 100 when assigning it to a CIM structure, as follows:
 
-    grandTotalAmount: round(payload.orderTotalGross * 100)
+    `grandTotalAmount: round(payload.orderTotalGross * 100)`
+
 The amount is rounded to more accurately reflect the precision in the event there are more than 2 decimals. Conversely, when this value is read from the CIM structure to be written to a back-end system expecting dollar amounts, it would need to be divided by 100 like so:
 
-    Order_Total: payload.grandTotalAmount / 100
+    `Order_Total: payload.grandTotalAmount / 100`
+
 Since we are converting the value back to 2-decimal precision in this case, rounding is not required.
