@@ -2,36 +2,34 @@
 
 The following provides guidance on Salesforce CDP setup required for the Personalization with CDP use case.
 
-CDP provisioning
-Connect data
-Create a data stream
-Data modeling and data mapping
-Identity resolution
-Create and activate segments
-Calculated insights
-CDP provisioning
-Log in to your Salesforce CDP instance with the link provided in your admin email and use the credentials provided. If this was deployed in our existing Salesforce instance, please use your current Salesforce Admin password.
-Click the Setup gear icon and then CDP Setup.
-If you don’t see this option, either refresh your page or log out and back in with your admin user credentials.
-Click Get Started. Setup can take a few minutes. Your Salesforce CDP instance is considered as successfully set up if you see a green tick mark for all the steps. If not, correct the issue and finish the setup.
-rcg-cdp-setup-cdp-provisioning.png
-Connect data
+== CDP Provisioning
+
+. Log in to your Salesforce CDP instance with the link provided in your admin email and use the credentials provided. If this was deployed in our existing Salesforce instance, please use your current Salesforce Admin password.
+. Click the Setup gear icon and then CDP Setup. If you don’t see this option, either refresh your page or log out and back in with your admin user credentials.
+. Click Get Started. Setup can take a few minutes. Your Salesforce CDP instance is considered as successfully set up if you see a green tick mark for all the steps. If not, correct the issue and finish the setup.
+
+//image placeholder for rcg-cdp-setup-cdp-provisioning.png
+
+== Connect Data
+
 Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object.
 
 Salesforce CDP has connectors for: Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, for Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
 
 The Personalization with CDP use case uses the following connectors:
 
-Salesforce CRM - to connect data from Salesforce CRM instance to CDP
-Ingestion API - to connect data from external source systems like Snowflake and Azure via MuleSoft’s Salesforce CDP connector.
-Salesforce CRM Connector
+* Salesforce CRM - to connect data from Salesforce CRM instance to CDP
+* Ingestion API - to connect data from external source systems like Snowflake and Azure via MuleSoft’s Salesforce CDP connector.
+
+=== Salesforce CRM Connector
+
 In Salesforce CDP, you can establish a connection to your Salesforce CRM org. Follow the below steps to establish a connection.
 
-In Salesforce CDP, select Setup gear icon and then CDP Setup.
-Select Salesforce CRM.
-To connect a Salesforce org to Salesforce CDP, click New. You can connect the Salesforce org that has Salesforce CDP provisioned, or you can Connect Another Org (external orgs).
-To connect your Salesforce orgs to Salesforce CDP, click Connect. If connecting an external Salesforce org, enter your user credentials to establish the connection with Salesforce CDP.
-After you connect your Salesforce org, you can view the connection details.
+. In Salesforce CDP, select Setup gear icon and then CDP Setup.
+. Select Salesforce CRM.
+. To connect a Salesforce org to Salesforce CDP, click New. You can connect the Salesforce org that has Salesforce CDP provisioned, or you can Connect Another Org (external orgs).
+. To connect your Salesforce orgs to Salesforce CDP, click Connect. If connecting an external Salesforce org, enter your user credentials to establish the connection with Salesforce CDP.
+. After you connect your Salesforce org, you can view the connection details.
 Connector Name: The name of the Salesforce org that is connected to Salesforce CDP.
 Connector Type: Identifies the name of the data connection type.
 Status: Shows the org’s status.
@@ -40,7 +38,8 @@ Updated: The date and timestamp of when the Salesforce org was connected to Sale
 Your Salesforce org is now connected.
 After the connection is established, the Salesforce CDP admin can either use bundles that can automatically deploy data or set up their own data streams.
 
-Ingestion API
+=== Ingestion API
+
 You can push data from an external system into Salesforce CDP via the Ingestion API.
 This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
 
@@ -93,10 +92,12 @@ Your updated schema file only includes changed objects, so you don’t have to p
 A date field must be present for objects that are intended for profile or engagement category. Objects of type other don’t impose this same requirement.
 Example Schema: Refer to this link for an example schema.
 
-Create a data stream
+== Create a Data Stream
+
 Data streams are the connections and associated data ingested into Salesforce CDP. Salesforce CDP includes many data streams that can operate on different refresh schedules. Check Data Stream Schedule in Salesforce CDP to know about how and when these data streams update.
 
-Create a data stream using Salesforce CRM Starter Bundle
+=== Create a Data Stream Using Salesforce CRM Starter Bundle
+
 Create a data stream using a starter bundle to begin the flow of data from a Salesforce CRM source. Note: You can configure only one starter bundle at a time. For more details on Salesforce CRM Starter Data Bundles, see Salesforce CRM Starter Data Bundles.
 
 For Personalization with CDP use case, we have created data streams using the Service Cloud starter bundle.
@@ -112,7 +113,8 @@ For Personalization with CDP use case, we have created data streams using the Se
 10. Click Review Mappings.
 11. Review how Data Source Objects are mapped to Data Model Objects.
 
-Create a Salesforce CRM data stream
+=== Create a Salesforce CRM Data Stream
+
 Create a data stream to begin the flow of data from a Salesforce CRM data source. Add additional permissions to your Salesforce CDP Salesforce Connector Integration permission set in your Salesforce CRM org to ingest standard and custom objects and fields into Salesforce CDP. Note: You if you are prompted with an error stating those objects cannot be added, you might need to Enable Object and Field Permissions to Access Salesforce CRM in Salesforce CDP (see below for further details).
 
 For Personalization with CDP use case, we have created data streams for Salesforce CRM objects Orders and Products after enabling permissions to ingest data.
@@ -146,7 +148,9 @@ Data Stream Name: Defaults to Object Label and Salesforce org ID, but can be edi
 Ongoing Refresh Settings: Frequency and timing of new data retrieval. The Frequency is hourly and is set automatically.
 Click Deploy. Your Salesforce CRM data stream is now created.
 To create more data streams, repeat steps 6 through 10.
-Create an Ingestion API data stream
+
+=== Create an Ingestion API Data Stream
+
 After uploading the schema file, create a data stream from your source objects.
 
 In Salesforce CDP, select Data Streams.
@@ -184,8 +188,10 @@ Refer to this link for details on configuration and operations for Salesforce CD
 
 For Personalization with CDP use case, refer CDP System API specification and implementation template.
 
-Data modeling and data mapping
-Data cleansing and preparation
+== Data Modeling and Data Mapping
+
+=== Data Cleansing and Preparation
+
 Cleaning and preparing your data is critical for success in using Salesforce CDP’ segmentation and activation capabilities.
 
 Formula Expression Library
@@ -193,7 +199,9 @@ When you create a Salesforce CDP data stream, you can choose to generate more fi
 Formula Expression Use Cases
 These use cases are examples of using formula expression functionality in Salesforce CDP.
 Working with Dates and CDP
-Data mapping
+
+=== Data Mapping
+
 After creating your data streams, you must associate your data source objects (DSOs) to data model objects (DMOs). Only mapped fields and objects with relationships can be used for Segmentation and Activation.
 
 On the Data Stream detail page or after deploying your data streams, click Start Data Mapping.
@@ -210,11 +218,14 @@ For the Personalization with CDP use case, we mapped to Custom DMO for our MuleS
 
 Data Mapping
 
-rcg-cdp-setup-custom-dmo-webengagement.png
+//image placeholder for rcg-cdp-setup-custom-dmo-webengagement.png
+
 Data Relationships
 
-rcg-cdp-setup-webengagement-data-relationships.png
-Identity Resolution
+//image placeholder for rcg-cdp-setup-webengagement-data-relationships.png
+
+== Identity Resolution
+
 Use Identity Resolution to match and reconcile data about people into a comprehensive view of your customer called a unified profile. Identity Resolution uses matching and reconciliation rulesets to link the most relevant data from all the associated profiles of each unified profile. Identity Resolution is powered by rulesets to create unified profiles in Salesforce CDP.
 
 Access Identity Resolution from Salesforce CDP after mapping entities to the CIM. Entities must be mapped before you can create rulesets. Additional Information can be found here.
@@ -224,13 +235,13 @@ Identity Resolution Object Examples
 Anonymous and Known Profiles in Identity Resolution
 Optimize Identity Resolution
 Profile Explorer in Salesforce CDP
+
 For the Personalization with CDP use case, we are leveraging the Fuzzy Name and Normalized Email Match Rule; leveraging Fuzzy First Name, Exact Last Name, and Normalized Email Address.
 
-rcg-cdp-setup-identity-match-rules.png
+//image placeholder for rcg-cdp-setup-identity-match-rules.png
 
+//image placeholder for rcg-cdp-setup-identity-match-rules-criteria.png
 
-
-rcg-cdp-setup-identity-match-rules-criteria.png
 To create your Identity Resolution Rules, follow the steps below:
 
 Go to the Identity Resolution Tab in the main Menu.
@@ -248,8 +259,10 @@ Once run, review the Identity Resolution Summary and Processing History Screens 
 
 Add applicable Individual Reconciliation Rules
 
-Create and activate segments
-Segmentation
+== Create and Activate Segments
+
+=== Segmentation
+
 Creating segments is simple in CDP.
 
 In Salesforce CDP, click Segments.
@@ -266,8 +279,10 @@ Segment On: Segment On defines the target entity (object) used to build your seg
 
 For the Personalization with CDP use case, we have created a few Segments. All Segments that we have created have been segmented on Unified Individual. For this segment, we wanted to create an audience wherein there were no Web Page Views in the last 365 Days. We grabbed updated Date from our Attribute Library and dragged it over the the canvas. And for the operator we selected ‘Greater Than Last Number of Days’ and keyed in 365 for the number of days. And for the Publish Schedule we updated it to reflect a Publish Schedule of every 24 hours.
 
-rcg-cdp-setup-segment-nowebpageviews.png
-Activation Targets
+//image placeholder for rcg-cdp-setup-segment-nowebpageviews.png
+
+=== Activation Targets
+
 Create activation targets, build, and activate data segments with Salesforce CDP.
 
 For Personalization with CDP use case, we have created Cloud File Storage (S3) Activation Target and Marketing Cloud Activation Target.
@@ -317,7 +332,8 @@ To add or remove business units (BU) to receive the published segments, click th
 Save your changes.
 Your Marketing Cloud activation target is created.
 
-Activation
+=== Activation
+
 Activation is the process that materializes and publishes a segment to activation platforms. An activation target is used to store authentication and authorization information for a given activation platform. You can publish your segments, include contact points, and additional attributes to the activation targets.
 
 View, change, and delete your Activations in Salesforce CDP for publishing of segments to activation platforms. Navigate to an Activation record to view details and publish history for that Activation.
@@ -352,13 +368,14 @@ Enter a name and description for your activation. IMPORTANT: You can’t include
 Click Save.
 Your segment publishes on the next publish scheduled for the selected activation target.
 
-Calculated Insights
+== Calculated Insights
+
 The Calculated Insights feature lets you define and calculate multi-dimensional metrics from your entire digital state stored in Salesforce CDP.
 
-Calculated Insights can be built Using Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the CDP Help Documentation. Also check Processing Calculated Insights for the Calculated Insights schedule.
+Calculated Insights can be built Using Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the CDP Help Documentation. Also check https://help.salesforce.com/s/articleView?id=sf.c360_a_processing_calculated_insights.htm&type=5[Processing Calculated Insights] for the Calculated Insights schedule.
 
 For the Personalization with CDP use case, we created Calculated Insights to gain visibility across our Loyalty and Sales Order data. Examples of Calculated Insights are available in our CDP Help Documentation and in our CDP Salesforce GitHub Instance.
 
 Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
 
-rcg-cdp-setup-calculated-insights.png
+//image placeholder for rcg-cdp-setup-calculated-insights.png
