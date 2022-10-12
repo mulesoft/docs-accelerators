@@ -1,0 +1,312 @@
+= Release Notes
+
+== v2.16
+26 July 2022
+
+This release provides a support to additional CDA document types in convert C-CDA messages to FHIR use case.
+
+== v2.15
+23 June 2022
+
+This release provides Healthcare organizations with a reference implementations to convert FHIR R4 resources from HL7 FHIR JSON format to RAML specification and convert C-CDA messages to FHIR.
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|FHIR RAML auto-generator | API specification | Implementation Template
+|C-CDA to FHIR System API | API specification | Implementation Template
+|===
+
+== v2.14.1
+26 May 2022
+
+This minor release includes an upgrade to the dependencies on the assets that perform FHIR resource validation.
+
+[%header%autowidth.spread]
+|===
+|API Name |Implementation Template Link
+|Health Cloud Administration System API | Implementation Template
+|Health Cloud Clinical System API | Implementation Template
+|Health Cloud Diagnostics System API | Implementation Template
+|Health Cloud Medications System API | Implementation Template
+|Health Cloud Financial System API | Implementation Template
+|Cerner Administration System API | Implementation Template
+|Cerner Clinical System API | Implementation Template
+|Cerner Diagnostics System API | Implementation Template
+|Cerner Medications System API | Implementation Template
+|Cerner Workflow System API | Implementation Template
+|Cerner Financial System API | Implementation Template
+|Epic Administration System API | Implementation Template
+|Epic Clinical System API | Implementation Template
+|Epic Diagnostics System API | Implementation Template
+|Epic Medications System API | Implementation Template
+|Epic Financial System API | Implementation Template
+|Benefits Verification Process API | Implementation Template
+|Benefits Eligibility Verification System API | Implementation Template
+|CRD Clinical Decision Support System API | Implementation Template
+|DTR System API | Implementation Template
+|Prior Authorization System API | Implementation Template
+|HL7 V2 to FHIR System API |Implementation Template
+|X12 to FHIR System API | Implementation Template
+|===
+
+== v2.14
+19 April 2022
+
+This release provides Healthcare organizations with a reference implementation to convert X12 messages to FHIR.
+
+* API specification and implementation template for the X12 to FHIR System API.
+
+== v2.13
+18 January 2022
+
+This release provides an end-to-end solution for prior authorization, which includes CRD, DTR, and PAS API specifications and implementation templates to automate the prior authorization process for more immediate authorizations:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|CRD Clinical Decision Support System API | API Specification | Implementation Template
+|DTR System API | API Specification | Implementation Template
+|Prior Authorization System API | API Specification | Implementation Template
+|===
+
+== v2.12.1
+9 December 2021
+
+This minor release includes an upgrade to the assets to be EMR agnostic, which allows customers to choose any EMR as a System of Record:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|Patient Sync Process API | API Specification | Implementation Template
+|===
+
+== v2.12
+9 November 2021
+
+This release provides an end-to-end solution for prior authorization support, which automates the prior authorization process for more immediate authorizations. The following assets are also available:
+
+[%header%autowidth.spread]
+|===
+|Prior Authorization System API | API Specification | Implementation Template
+|Aidbox Administration System API | API Specification | Implementation Template
+|===
+
+== v2.11
+14 September 2021
+
+This release provides an end-to-end solution for benefits and eligibility verification using Health Cloud, Epic, and Cerner as the reference backend systems:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|Benefits Verification Process API | API Specification | Implementation Template
+|Cerner Financial System API | API Specification | Implementation Template
+|Epic Financial System API | API Specification | Implementation Template
+|Benefits Eligibility Verification System API | API Specification | Implementation Template
+|Health Cloud Financial System API | API Specification | Implementation Template
+|Health Cloud Benefits Verification Lightning Web Component | Source |
+|===
+
+== v2.10
+28 July 2021
+
+The focus of the 2.10 release is to provide assets for the patient sync capabilities:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Asset Link
+|Patient sync Lightning Web Component | | Source
+|Patient Sync Process API | API Specification | Implementation Template
+|===
+
+The following assets were also enhanced and improved for this release:
+
+[%header%autowidth.spread]
+|===
+|Name |Link
+|FHIR R4 Location Library | API Specification Fragment
+|FHIR R4 Procedure Library | API Specification Fragment
+|FHIR R4 Administration API | API Specification
+|FHIR R4 Clinical API | API Specification
+|Epic FHIR R4 Administration API | API Specification
+|Epic FHIR R4 Clinical API | API Specification
+|Epic FHIR R4 Medications API | API Specification
+|Cerner FHIR R4 Administration API | API Specification
+|Cerner Administration System API | Implementation Template
+|Health Cloud Clinical System API | Implementation Template
+|Health Cloud Diagnostics System API | Implementation Template
+|Health Cloud Medications System API | Implementation Template
+|Health Cloud Administration System API | Implementation Template
+|===
+
+The following assets are modified to support XML format for existing Epic System APIs:
+
+[%header%autowidth.spread]
+|===
+|API Name |Implementation Template Link
+|Epic Clinical System API | Implementation Template
+|Epic Diagnostics System API | Implementation Template
+|Epic Medications System API | Implementation Template
+|Epic Administration System API | Implementation Template
+|===
+
+The following assets are modified to support updated API specifications for existing Cerner System APIs:
+
+[%header%autowidth.spread]
+|===
+|API Name |Implementation Template Link
+|Cerner Administration System API | Implementation Template
+|Cerner Clinical System API | Implementation Template
+|Cerner Medications System API | Implementation Template
+|===
+
+== v2.9
+22 June 2021
+
+This release provides API specifications and implementation templates for the Appointment Scheduling use case described here:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|Appointment Scheduling Process API | API Specification | Implementation Template
+|Cerner Workflow System API | API Specification | Implementation Template
+|Epic Workflow System API | API Specification | Implementation Template
+|===
+
+It also includes the following Cerner assets for Patient 360:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|Cerner Administration System API | API Specification | Implementation Template
+|Cerner Clinical System API | API Specification | Implementation Template
+|Cerner Diagnostics System API | API Specification | Implementation Template
+|Cerner Medications System API | API Specification | Implementation Template
+|===
+
+The following assets were also enhanced and improved for this release:
+
+[%header%autowidth.spread]
+|===
+|Name |API Specification Link |Implementation Template Link
+|Epic Administration System API | API Specification | Implementation Template
+|Epic Clinical System API | API Specification | Implementation Template
+|Epic Diagnostics System API | API Specification | Implementation Template
+|Epic Medications System API | API Specification | Implementation Template
+|FHIR R4 Administration API | API Specification |
+|FHIR R4 Clinical API | API Specification |
+|FHIR R4 Diagnostics API | API Specification |
+|FHIR R4 Medications API | API Specification |
+|FHIR R4 Workflow API | API Specification |
+|HL7 V2 ADT Process API | |
+|HL7 V2 ORU Process API | |
+|===
+
+== v2.8
+18 May 2021
+
+This release includes:
+
+Implementation templates added for the following Health Cloud and Epic APIs for Patient 360:
+
+* Epic Clinical System API
+* Epic Diagnostics System API
+* Epic Medications System API
+* Health Cloud Clinical System API
+* Health Cloud Diagnostics System API
+* Health Cloud Medications System API
+
+Enhancements and improvements made to the following templates:
+
+* Epic Administration System API
+* Health Cloud Administration System API
+
+Updated the following templates to support the Spring 2021 release of the Health Cloud data model:
+
+* HL7 V2 ADT Process API
+* HL7 V2 ORU Process API
+
+Additional updates and improvements:
+
+* HL7 V2 to FHIR System API
+* FHIR R4 Capability Statement API
+
+== v2.7
+6 April 2021
+
+This release includes:
+
+* Implementation templates for the Administration API for Patient 360:
+** Health Cloud Administration System API - Supports the Spring 2021 release of the Health Cloud data model.
+** EPIC Administration System API - Supports the Patient resource currently. Additional resources will be supported in the next release.
+* Reference implementation for SMART on FHIR with Okta.
+
+== v2.6
+2 March 2021
+
+This release includes:
+
+* API specifications for Patient 360 to support the Spring 2021 release of the Health Cloud data model.
+* Added support for the ORU message type in the HL7 v2 to FHIR converter.
+
+== v2.5
+5 February 2021
+
+This release provides Healthcare organizations with a reference implementation to convert HL7 v2 messages to FHIR to integrate with different systems using the guidelines provided by the HL7 v2 to FHIR Implementation Guide.
+
+* API specification and implementation template for HL7 v2 to FHIR System API
+
+== v2.4
+24 November 2020
+
+The focus of release 2.4 is on providing the API specifications and implementation templates for CMS Interoperability and Patient Access final rule. The release contains the following assets:
+
+* API specification and implementation template for Patient Access API - Clinical Data as per the US Core Implementation Guide.
+* API specification and implementation template for Patient Access API - Claims and Encounter Data as per the CARIN Implementation Guide for Blue Button.
+Minor bug fixes.
+
+== v2.3
+22 October 2020
+
+The focus of release 2.3 is on providing the API specifications and implementation templates for CMS Interoperability and Patient Access final rule. The release contains the following assets:
+
+* API specification and implementation template for Formulary API as per the DaVinci PDEX US Drug Formulary Implementation Guide.
+* API specification and implementation template for Provider Directory API as per the DaVinci PDEX Plan Net Implementation Guide.
+Minor bug fixes.
+
+== v2.2
+18 September 2020
+
+The focus of release 2.2 is on providing the implementation template for Electronic Laboratory Reporting to CalREDIE. The release contains the following assets:
+
+* Implementation template for Electronic Laboratory Reporting, which is the notifiable condition to CalREDIE.
+* API policy to return FHIR compliant OperationOutcome response.
+* Minor bug fixes.
+
+== v2.1.1
+21 August 2020
+
+The focus of release 2.1.1 is on providing mapping and cosmetic fixes in the implementation templates. The release includes the following fixes:
+
+* Mapping for additional fields in the patient resource, such as the shipping address, the billing address, the phone number and the gender.
+* Minor bug fixes.
+
+== v2.1
+31 July 2020
+
+The focus of release 1.1 is on providing API specifications and RAML library assets for all 145 FHIR resources. These assets will help healthcare providers and payers in meeting CMS interoperability rules.
+
+* NEW: API specifications for resources in the following FHIR modules:
+** Foundation
+** FHIR Exchange
+** Terminology
+** Conformance
+** Security and Privacy
+** Implementation Support
+** Administration
+** Clinical
+** Diagnostic
+** Medications
+** Workflow
+** Financial

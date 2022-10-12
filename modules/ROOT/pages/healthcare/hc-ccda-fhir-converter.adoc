@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-ccda-to-fhir-sy
 
 == Functional diagram
 
-//image placeholder with text [CDA to FHIR converter functional diagram]
+//image placeholder with text [CDA to FHIR converter functional diagram] - NEED IMAGE LOCATION
 
 == Advantages
 
