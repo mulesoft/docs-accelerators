@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-to-x12-sys
 
 == Functional diagram
 
-image:hls-x12-fhir-fx-diagram.png [X12 to FHIR converter functional diagram]
+image:hls-x12-fhir-fx-diagram.png[X12 to FHIR converter functional diagram]
 
 == Advantages
 
