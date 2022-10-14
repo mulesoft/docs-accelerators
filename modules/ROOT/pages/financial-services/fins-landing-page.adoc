@@ -4,6 +4,8 @@ Boost time-to-value in your customer 360 initiatives with pre-built APIs, templa
 
 Financial services customers expect highly personalized products and services. MuleSoft Accelerator for Financial services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
 
+image:fins-functional-view-diagram.png[Functional view diagram for financial services accelerator]
+
 == Use Cases
 
 === Use Case 1 - Core Banking Foundation
