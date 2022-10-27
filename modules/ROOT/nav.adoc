@@ -3,6 +3,8 @@
 * xref:setup-guide.adoc[MuleSoft Accelerators - Setup Guide]
 * xref:financial-services/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
 ** xref:financial-services/fins-prereqs.adoc[Prerequisites]
+** xref:financial-services/fins-bian-assets.adoc[BIAN Assets]
+** xref:financial-services/fins-marketing-cloud-setup-guide.adoc[Marketing Cloud Setup Guide]
 ** xref:financial-services/fins-payments-mod-demo-setup.adoc[Payments Modernization Demo Setup Guide]
 ** xref:financial-services/fins-upgrade-notes.adoc[Upgrade Notes]
 ** xref:financial-services/fins-release-notes.adoc[Release Notes]

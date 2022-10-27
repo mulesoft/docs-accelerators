@@ -36,7 +36,7 @@ Accelerates the delivery and development of a home address validation solution f
 
 == API-led Diagram
 
-placeholder for fins-functional-view-diagram image - need in .png format
+//placeholder for fins-functional-view-diagram image - need in .png format
 
 == Available Assets
 
