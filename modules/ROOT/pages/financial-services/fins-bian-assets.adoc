@@ -1,0 +1,66 @@
+= BIAN Assets
+
+This solution provides a collection of BIAN-compliant assets that allow MuleSoft and Salesforce Financial Services Cloud Banking customers accelerate innovation and composability, at scale.
+
+* BIAN methodologies enable interoperability and best practices between multiple players in the banking industry.
+* BIAN assists banks with improving their architectural maturity and implementing their digital banking initiatives, like Open Banking
+* BIAN APIs are not required; however, they are available to simplify digital transformation.
+
+The following table lists the BIAN API specifications and implementation template starter assets that are made available as part of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services].
+
+[%header%autowidth.spread]
+|===
+|Category	|Business Domain	|Service Domain	|API Dpecification	|Implementation Template
+|Products Domain	|Loans and Deposits	|Loan	|FINS BIAN Loan Process API - Specification	|FINS BIAN Loan Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Leasing	|FINS BIAN Leasing Process API - Specification	|FINS BIAN Leasing Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Current Account	|FINS BIAN Current Account Process API - Specification	|FINS BIAN Current Account Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Corporate Current Account	|FINS BIAN Corporate Current Account Process API - Specification	|FINS BIAN Corporate Current Account Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Consumer Loan	|FINS BIAN Consumer Loan Process API - Specification	|FINS BIAN Consumer Loan Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Corporate Loan	|FINS BIAN Corporate Loan Process API - Specification	|FINS BIAN Corporate Loan Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Term Deposit	|FINS BIAN Term Deposit Process API - Specification	|FINS BIAN Term Deposit Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Corporate Lease	|FINS BIAN Corporate Lease Process API - Specification	|FINS BIAN Corporate Lease Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Merchandising Loan	|FINS BIAN Merchandising Loan Process API - Specification	|FINS BIAN Merchandising Loan Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Mortgage Loan	|FINS BIAN Mortgage Loan Process API - Specification	|FINS BIAN Mortgage Loan Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Fiduciary Agreement	|FINS BIAN Fiduciary Agreement Process API - Specification	|FINS BIAN Fiduciary Agreement Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Savings Account	|FINS BIAN Savings Account Process API - Specification	|FINS BIAN Savings Account Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Virtual Account	|FINS BIAN Virtual Account Process API - Specification	|FINS BIAN Virtual Account Process API - Implementation Template
+|Products Domain	|Loans and Deposits	|Standing Order	|FINS BIAN Standing Order Process API - Specification	|FINS BIAN Standing Order Process API - Implementation Template
+|Products Domain	|Cards	|Credit Card	|FINS BIAN Credit Card Process API - Specification	|FINS BIAN Credit Card Process API - Implementation Template
+|Products Domain	|Cards	|Card Authorization	|FINS BIAN Card Authorization Process API - Specification	|FINS BIAN Card Authorization Process API - Implementation Template
+|Products Domain	|Cards	|Merchant Relations	|FINS BIAN Merchant Relations Process API - Specification	|FINS BIAN Merchant Relations Process API - Implementation Template
+|Products Domain	|Cards	|Card Network Partipant Facility	|FINS BIAN Card Network Partipant Facility Process API - Specification	|FINS BIAN Card Network Partipant Facility Process API - Implementation Template
+|Products Domain	|Cards	|Merchant Acquiring Facility	|FINS BIAN Merchant Acquiring Facility Process API - Specification	|FINS BIAN Merchant Acquiring Facility Process API - Implementation Template
+|Products Domain	|Cards	|Card Capture	FINS BIAN Card Capture Process API - Specification	|FINS BIAN Card Capture Process API - Implementation Template
+|Customer Domain	|Sales	|Prospect Camapign Execution	|FINS BIAN Prospect Camapign Execution Process API - Specification	|FINS BIAN Prospect Camapign Execution Process API - Implementation Template
+|Customer Domain	|Sales	|Lead and Opportunity Management	|FINS BIAN Lead and Opportunity Management Process API - Specification	|FINS BIAN Lead and Opportunity Management Process API - Implementation Template
+|Customer Domain	|Sales	|Party Lifecycle Management	|FINS BIAN Party Lifecycle Management Process API - Specification	|FINS BIAN Party Lifecycle Management Process API - Implementation Template
+|Customer Domain	|Sales	|Customer Campaign Execution	|FINS BIAN Customer Campaign Execution Process API - Specification	|FINS BIAN Customer Campaign Execution Process API - Implementation Template
+|Customer Domain	|Sales	|Customer Offer	|FINS BIAN Customer Offer Process API - Specification	|FINS BIAN Customer Offer Process API - Implementation Template
+|Customer Domain	|Sales	|Underwriting	|FINS BIAN Underwriting Process API - Specification	|FINS BIAN Underwriting Process API - Implementation Template
+|Customer Domain	|Sales	|Commission Agreement	|FINS BIAN Commission Agreement Process API - Specification	|FINS BIAN Commission Agreement Process API - Implementation Template
+|Customer Domain	|Sales	|Commissions	|FINS BIAN Commissions Process API - Specification	|FINS BIAN Commissions Process API - Implementation Template
+|Customer Domain	|Sales	|Product Matching	|FINS BIAN Product Matching Process API - Specification	|FINS BIAN Product Matching Process API - Implementation Template
+|Customer Domain	|Sales	|Product Expert Sales Support	|FINS BIAN Product Expert Sales Support Process API - Specification	|FINS BIAN Product Expert Sales Support Process API - Implementation Template
+|Customer Domain	|Sales	|Product Sales Support	|FINS BIAN Product Sales Support Process API - Specification	|FINS BIAN Product Sales Support Process API - Implementation Template
+|Customer Domain	|Sales	|Sales Product	|FINS BIAN Sales Product Process API - Specification	|FINS BIAN Sales Product Process API - Implementation Template
+|Channels	|Servicing	|Servicing Issue	|FINS BIAN Servicing Issue Process API - Specification	|FINS BIAN Servicing Issue Process API - Implementation Template
+|Channels	|Servicing	|Customer Case Management	|FINS BIAN Customer Case Management Process API - Specification	|FINS BIAN Customer Case Management Process API - Implementation Template
+|Channels	|Servicing	|Case Root Cause Analysis	|FINS BIAN Case Root Cause Analysis Process API - Specification	|FINS BIAN Case Root Cause Analysis Process API - Implementation Template
+|Channels	|Servicing	|Customer Case	|FINS BIAN Customer Case Process API - Specification	|FINS BIAN Customer Case Process API - Implementation Template
+|Channels	|Servicing	|Servicing Order	|FINS BIAN Servicing Order Process API - Specification	|FINS BIAN Servicing Order Process API - Implementation Template
+|Channels	|Servicing	|Servicing Mandate	|FINS BIAN Servicing Mandate Process API - Specification	|FINS BIAN Servicing Mandate Process API - Implementation Template
+|Channels	|Servicing	|Payment Execution	|FINS BIAN Payment Execution Process API - Specification	|FINS BIAN Payment Execution Process API - Implementation Template
+|Channels	|Servicing	|Payment Initiation	|FINS BIAN Payment Initiation Process API - Specification	|FINS BIAN Payment Initiation Process API - Implementation Template
+|Channels	|Servicing	|Payment Order	|FINS BIAN Payment Order Process API - Specification	|FINS BIAN Payment Order Process API - Implementation Template
+|Sales and Service	|Customer Management	|Party Reference Data Directory	|FINS BIAN Party Reference Data Directory Process API - Specification	|FINS BIAN Party Reference Data Directory Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Party Authentication	|FINS BIAN Party Authentication Process API - Specification	|FINS BIAN Party Authentication Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Transaction Authorization	|FINS BIAN Transaction Authorization Process API - Specification	|FINS BIAN Transaction Authorization Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Point of Service	|FINS BIAN Point of Service Process API - Specification	|FINS BIAN Point of Service Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Service Event History	|FINS BIAN Service Event History Process API - Specification	|FINS BIAN Service Event History Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Contact Routing	|FINS BIAN Contact Routing Process API - Specification	|FINS BIAN Contact Routing Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Session Dialogue	|FINS BIAN Session Dialogue Process API - Specification	|FINS BIAN Session Dialogue Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Interactive Help	|FINS BIAN Interactive Help Process API - Specification	|FINS BIAN Interactive Help Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Contact Handler	|FINS BIAN Contact Handler Process API - Specification	|FINS BIAN Contact Handler Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Customer Workbench	|FINS BIAN Customer Workbench Process API - Specification	|FINS BIAN Customer Workbench Process API - Implementation Template
+|Sales and Service	|Cross Channel	|Servicing Activity Analysis	|FINS BIAN Servicing Activity Analysis Process API - Specification	|FINS BIAN Servicing Activity Analysis Process API - Implementation Template
+|===
