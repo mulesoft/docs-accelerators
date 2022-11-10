@@ -1,0 +1,149 @@
+This release simplifies the deployment of applications to CloudHub by leveraging Maven profiles to consolidate the required settings and credentials needed for all deployments. Additional profiles can also be created to support non-CloudHub deployments.
+
+== Configuring the deployment profile
+
+The default `settings-accelerators.xml` file, provided by the "Accelerator Common Resources - Source" asset, defines a single deployment profile called `CloudHub-DEV`. The key properties that can be configured are described in the following table:
+
+|===
+| Property Name | Description | Mandatory
+
+| cloudhub.mavenServerId
+| Maven server entry providing credentials for target Anypoint instance
+| yes
+
+| cloudhub.region
+| Target deployment region
+| yes
+
+| cloudhub.businessGroupId
+| ID (not name) of the target business group
+| yes
+
+| cloudhub.environment
+| Exact name of the target deployment environment (case-sensitive)
+| yes
+
+| cloudhub.applicationName
+| Constructs the deployed application name from app/env properties
+| yes
+
+| cloudhub.muleVersion
+| Target Mule runtime version
+| yes
+
+| cloudhub.applyLatestPatch
+| Set to true to automatically apply latest patches on deployment
+| no
+
+| cloudhub.workerType
+| Worker size (translates to vCores)
+| yes
+
+| cloudhub.workers
+| Number of workers
+| yes
+
+| cloudhub.objectStoreV2
+| Set to true to use ObjectStore V2
+| no
+
+| cloudhub.persistentQueues
+| Set true to use persistent queues
+| no
+
+| cloudhub.skipDeploymentVerification
+| Set to false to wait for application to be fully deployed before continuing
+| no
+
+| cloudhub.deploymentTimeout
+| Amount of time (in milliseconds) to wait for complete application deployment
+| no
+
+| mule.environment
+| Specifies the configuration properties files to use
+| yes
+
+| mule.encryptionKey
+| If secured properties are used an encryption key is required
+| no
+
+| anypoint.platform.clientId
+| Client ID of the target environment or business group
+| yes
+
+| anypoint.platform.clientSecret
+| Client secret of the target environment or business group
+| yes
+
+| anypoint.platform.enableMonitoring
+| Set to true to enable monitoring and visualization
+| no
+|===
+
+Note that the above template is generic: many accelerators provide their own version of the common resources project, which will contain a similar template specialized for that accelerator.
+
+== Application naming
+
+The default setting for the `cloudhub.applicationName` property constructs the application name base on the following segments:
+
+* Global Prefix (default is `org-`)
+* Maven artifact ID (from project pom.xml)
+* API compliance version (from project pom.xml)
+* Target environment name (hard-coded for profile)
+
+An example of a deployed application name using the default settings is `org-notifications-prc-api-v1-dev`.
+
+*Important note*: Since CloudHub application names must be _globally_ unique, it is highly recommended to set the `global.cloudhub.appPrefix` property (defined in the `global-settings` profile) to a short, 2-4 character abbreviation unique to your organization. Do not exceed 4 characters or deployments may fail when using the CloudHub 1.0 runtime (see below).
+
+== Deploying applications
+
+Once appropriate values have been defined for the properties for the environment profile, individual applications can be deployed to that environment simply by specifying the profile name on the Maven command line. For example, the command `mvn clean deploy -DskipTests -PCloudHub-DEV` uses the settings in the `CloudHub-DEV` profile to build and deploy the application.
+
+The common build project also includes some Maven configuration files to assist in deploying multiple applications - in the correct order - at once. To deploy all components of the MuleSoft Accelerator for Service Cloud, for example, you can run the following command from within the `accelerator-common-resources` project directory:
+
+----
+mvn -f servicecloud-build-pom.xml clean package mule:deploy -DskipTests -PCloudHub-DEV
+----
+
+*Important note*: For the above command to work, you must have already downloaded the dependent projects and imported them into Studio with the names corresponding to the entries in the build files.
+
+In this example, the following projects must be located in the Studio workspace as peers to the common build project:
+
+* accelerator-jira-sys-api
+* accelerator-oms-sys-api
+* accelerator-salesforce-odata-api
+* accelerator-salesforce-sys-api
+* accelerator-servicenow-sys-api
+* accelerator-case-prc-api
+* accelerator-customers-prc-api
+* accelerator-case-listener
+* accelerator-salesforce-topic-listener
+* accelerator-jira-exp-api
+* accelerator-salesforce-exp-api
+* accelerator-servicenow-exp-api
+
+Use the given build configs as a starting point; you can always adjust the module references to suit your own needs.
+
+== Importing projects into Anypoint Studio
+
+If you choose to import accelerator projects into Anypoint Studio, be aware that Studio may automatically make modifications to the application `pom.xml` files, which could impact deployment. In particular, be sure to cancel the prompt to "Upgrade your workspace" when importing projects. If you run into trouble, check the `pom.xml` file and verify the configuration of the `mule-maven-plugin` looks something like this:
+
+----
+<plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>mule-maven-plugin</artifactId>
+    <extensions>true</extensions>
+    <configuration>
+        <cloudHubDeployment>
+        ...
+        </cloudHubDeployment>
+        <classifier>${mule.app.classifier}</classifier>
+    </configuration>
+</plugin>
+----
+
+Make sure there is no `<version>` element included, and that the `<classifier>` element contains the property reference indicated above.
+
+== Troubleshooting
+
+If deployment fails due to an `unauthorized` error, it is possible that the complete application name exceeds the 42 character limit on CloudHub deployment names. Adjust either the prefix, the artifactId value in the project pom.xml, or the deployment name pattern to ensure the complete application name does not exceed 42 characters in length.
