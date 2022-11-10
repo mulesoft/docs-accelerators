@@ -138,7 +138,7 @@ To create each of these custom fields and enable visibility for them on page lay
 . Select the Fields & Relationships page.
 . Click the New button and create the field as specified above.
 . Once the field has been created, click the Set Field-Level Security button.
-. Enable for desired profile, or tick the master checkbox next to Visible to enable visibility for all profiles.
+. Enable for desired profile, or tick the checkbox next to Visible to enable visibility for all profiles.
 
 Repeat these steps for each custom field in the above list.
 
