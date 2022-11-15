@@ -69,3 +69,8 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 | Accelerator assets use dependency management defined in the parent Maven config
 | To update the version of a dependency, either add a `<version>` tag directly to the application's `pom.xml` file or update the version in the parent and redeploy it; be sure to update the version of the parent POM, and to reference the new version in the application.
 |===
+
+== See Also
+
+* xref:accel-build-environment.adoc[Build environment]
+* The xref:index.adoc[MuleSoft Accelerators] main page

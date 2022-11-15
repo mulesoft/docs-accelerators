@@ -1,4 +1,4 @@
-= MuleSoft Accelerators - Setup Guide
+= MuleSoft Accelerators Setup Guide
 
 This guide will help you configure your local build environment to ensure success in downloading, modifying, and deploying accelerator assets.
 
@@ -28,3 +28,7 @@ The following table provides more information about the types of accelerator ass
 == Obtaining accelerator assets
 
 All accelerator assets are available from the main Anypoint Exchange site and are freely downloadable by customers with current subscriptions. Refer to the sections in the page navigation menu on the left for more information about configuring, building, and deploying these assets.
+
+== See Also
+
+* The xref:index.adoc[MuleSoft Accelerators] main page.

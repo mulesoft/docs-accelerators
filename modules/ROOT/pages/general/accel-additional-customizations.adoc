@@ -4,7 +4,7 @@ The following customizations can be made to better tailor the accelerator compon
 
 All Accelerator projects inherit from a parent Maven POM. In addition to some global settings and repository references, this config also defines the versions of all MuleSoft connectors and modules used by applications.
 
-See the xref:../shared/accelerator-pom-parent.adoc[Customizations guide] to make changes to the POM parent file.
+See the xref:../accel/accelerator-pom-parent.adoc[Customizations guide] to make changes to the POM parent file.
 
 == Common core library
 
@@ -61,3 +61,10 @@ The `common.notifications.send` property, defined in the common core library, is
 The default setting is "none". To enable the sending of notifications for a single application, you can override the value of this property at deployment time, either by adding the property to the `cloudHubDeployment` section in the application `pom.xml` file or by setting set it directly in Runtime Manager.
 
 To change the default behavior for all applications, modify the property value in the common core library, deploy the new version to Exchange, and then update all applications to reference the new version of the library.
+
+== See Also
+
+* xref:accel-build-environment.adoc[Build environment]
+* xref:accel-application-deployment.adoc[Application deployment]
+* xref:accel-application-testing.adoc[Application testing]
+* The xref:index.adoc[MuleSoft Accelerators] main page

@@ -1,0 +1,192 @@
+= Marketing Cloud Setup Guide
+
+This guide provides the setup instructions for Marketing Cloud for the following use cases that are part of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services]:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use case 2b - Client onboarding - Wealth management]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Use case 5 - Optimize customer experiences with CDP]
+
+== Setup Instructions for https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use Case 2b - Client Onboarding - Wealth Management]
+
+Log into Marketing Cloud as the administrator and perform the steps outlined below.
+
+=== Create Data Extensions
+
+This is needed to capture data for the email and online submission form (HTML).
+
+. Navigate to *Audience Builder*, click *Contact Builder*.
+. Navigate to *Data Extensions* at the top navigation.
+. Click *Create*.
+
+==== Create the Data Extension (for example, wam_onboarding) for the Email
+
+Create the following attributes:
+
+* EmailAddress
+* FirstName
+** Nullable = yes
+* LastName
+** Nullable = yes
+* PersonName
+** Nullable = yes
+* GlobalPartyId
+** Nullable = yes
+* SubcriberId
+* CreatedBy
+* UpdatedBy
+* CompanyName
+* State
+* CreatedDate
+* UpdatedDate
+
+==== Create the data extension for the onboarding form (for example, wam_onboarding_form)
+
+* First Name
+* Last Name
+* Email Address
+
+==== Create the email
+
+The email is the template that is populated and sent to prospective clients so they can provide their details through the onboarding form created above.
+
+. Navigate to Email Studio
+. Click Email
+. Click Content at the top nav
+. Click Create, Email Message
+Click Select Creation Option, click Template
+Select a desired template
+Input the following fields:
+Name
+Description
+Location = Content Builder
+Click Next, add the content including Subject and Preheader
+
+Create the email journey via Journey Builder
+Journey Builder is used to trigger emails to a list of email addresses. The following steps outline the process to create a journey to send emails to prospective clients. The journey is configured to resend the email in 5 days if a prospective client does not respond to the first email.
+
+Navigate to Journey Builder, click Journey Builder
+Click Create New Journey
+Drag and drop Data Extension as the starting event
+Select the data extension created above (e.g wam_onboarding)
+Drag and drop Email as the next event
+Select the email created in Email Studio
+Drag and drop Wait by Duration as the next step
+Configure the desired duration (e.g. 5 days)
+Drag and drop a Decision Split. This event type will decide what actions to take if the user submits or doesn’t submit the online form
+Configure the Filter Criteria to be Email Address is not null
+Configure Remainder to be that all remaining people will be sent down this path
+For the Remainder Path
+Drag and drop an email event and select the desired email
+Drag and drop Wait by Duration
+Configure the desired duration (e.g. 1 minute)
+For the Form Submitted path
+Drag and drop Wait by Duration
+Configure the desired duration (e.g. 1 minute)
+Create the online submission form.
+This is the form that the client will submit so that the Salesforce Wealth Experience API will be invoked to create a lead in FSC:
+
+Navigate to Web Studio and click Cloudpages
+Create a Collection
+Under Add Content, click a Landing Page. This is where the WAM Onboarding Form will be created
+Create the WAM Onboarding Form via HTML
+Drag and drop the HTML object into the content body
+Input the following code, save, and then publish
+        `<h1> WAM Onboarding Form </h1>
+        <h2> Please fill out the following fields to completion: </h2>
+        <form action="https://mcwqh6t79hz1ztf2d-090xpy55-q.pub.sfmc-content.com/toq02t51ydg" method="post">
+            <table>
+                <tr>
+                    <th style="text-align:right">First Name:<span
+                    style="color:red"><b>*</b></span>
+                    </th>
+                    <td>
+                      <input type="text" name="firstName">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align:right">Last Name:<span style="color:red"><b>*</b></span>
+                    </th>
+                    <td><input type="text" name="lastName">
+                    </td>
+                </tr>
+                <tr>
+                    <th style="text-align:right">Email Address:<span style="color:red"><b>*</b></span>
+                    </th>
+                    <td>
+                        <input type="text" name="emailAddress">
+                    </td>
+                </tr>
+            </table>
+            <br><br> <input type="submit" value="Submit Onboarding Form" />
+        </form>`
+Create the confirmation landing page
+This is the page that the user will see once they submit the onboarding form.
+
+Click Add Content, click Landing Page
+Drag and drop the Code Snippet object into the content body
+Input the following code, save, and then publish
+
+`%%[SET @firstName = RequestParameter('firstName')
+
+SET @lastName = RequestParameter('lastName')
+
+SET @emailAddress = RequestParameter('emailAddress')
+
+SET @var0 = '{"firstName": "'
+SET @var1 = '","lastName": "'
+SET @var2 = '","emailAddress": "'
+SET @var4 = '"}'
+SET @content = Concat(@var0, @firstName, @var1,
+@lastName, @var2, @emailAddress, @var4)
+
+SET @return_code2DEFAULT3 =
+
+HTTPPost("https://<replace with path to Salesforce Wealth Experience API>/api/leads","application/json", @content, @response_data2,"Authorization",@Bearer)
+
+]%%`
+
+Add a Free Form object below the code snippet objectEnter text: “Thanks for your submission!”
+Setup instructions for Use case 5 - Optimize customer experiences with CDP
+Log into Marketing Cloud as the administrator and perform the steps outlined below.
+
+Prerequisites
+Please refer to the Salesforce CDP setup guide for instructions on how to publish and activate a CDP segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the CDP segment.
+
+Check data extension in Marketing Cloud
+Ensure the newly created data extension from CDP is active within Marketing cloud.
+
+Navigate to Contact Builder
+Click Data Extension at the top navigation
+Search for the Data Extension
+Confirm that the segment is created and shared with the CDP segment and proceed to the next step
+Create the email in Marketing Cloud
+Navigate to Email Studio
+Click Email to create the email to send out to prospective clients
+Click Content at the top navigation
+Click Create Email Message
+Click Select Creation Option, click Template
+Select the desired Template
+Input the following fields
+Name
+Description
+Location = Content Builder
+Click Next, then add the content of your email including Subject and Preheader
+Click Save
+Create a multi-step journey via Journey Builder
+Navigate to Journey Builder, click Journey Builder
+Click Create Multi-Step Journey
+Link the Data Extension shared with CDP
+Set the Schedule
+Set the start date
+Set the time zone
+Set the cadence for the Journey (i.e. timing)
+Set the Evaluate New Record Only equal to True
+Select the email message
+Set the Subject
+Select the Sender Profile
+Set the Wait period to 1 minute
+Save and activate the journey
+
+== See Also
+
+* xref:fins-prerequisites.adoc[Prerequisites]
+* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
