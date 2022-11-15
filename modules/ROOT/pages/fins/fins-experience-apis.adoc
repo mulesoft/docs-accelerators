@@ -1,3 +1,7 @@
 = FINS Experience APIs
 
+<<<<<<< HEAD
 include::partial$fins-experience-apis-fragment.adoc[]
+=======
+include::../../_partials/fins/fins-experience-apis-fragment.adoc[]
+>>>>>>> 1148e9a (Update common-services.adoc)

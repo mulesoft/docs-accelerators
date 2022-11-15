@@ -1,14 +1,6 @@
-<<<<<<< HEAD
-= Build Environment
-
-All Mule applications run under the Java Runtime Environment (JRE). Application components are built and deployed using Maven, a popular software management tool used in DevOps environments. MuleSoft also provides an Eclipse-based Integrated Development Environment (IDE) called Anypoint Studio, which is used for developing Mule applications in a graphical environment. While Studio can also be used for building, testing, and deploying applications, the instructions provided in the Accelerator documentation assume the use of Maven from the command line (except where noted).
-
-== Software Requirements
-=======
 All Mule applications run under the Java Runtime Environment (JRE). Application components are built and deployed using Maven, a popular software management tool used in DevOps environments. MuleSoft also provides an Eclipse-based Integrated Development Environment (IDE) called Anypoint Studio, which is used for developing Mule applications in a graphical environment. While Studio can also be used for building, testing, and deploying applications, the instructions provided in the Accelerator documentation assume the use of Maven from the command line (except where noted).
 
 == Software requirements
->>>>>>> 2a7111a (Squashing unverified commits from history)
 
 The MuleSoft Accelerators for Salesforce Clouds are built on Mule 4 and Studio 7. Assets may work with other versions of Mule and Studio, but no assurances can be given. Here is a list of the minimum software requirements for working with Accelerator assets:
 
@@ -16,31 +8,14 @@ The MuleSoft Accelerators for Salesforce Clouds are built on Mule 4 and Studio 7
 * Mule Runtime 4.4.0 or higher (included with Studio)
 * Latest AdoptOpenJDK 8 release (included with Studio)
 * Latest Maven 3.8.x release (for command-line deployments)
-<<<<<<< HEAD
-* Postman 9.x or higher (for API testing)
-
-== Workstation Setup
-=======
 * Latest Postman 9.x release (for API testing)
 
 == Workstation setup
->>>>>>> 2a7111a (Squashing unverified commits from history)
 
 Perform the following steps to prepare your workstation for building, deploying, and testing Accelerator assets. These instructions assume some basic knowledge of using Maven and Eclipse-based products.
 
 === Installing
 
-<<<<<<< HEAD
-. Download and install the latest 64-bit version of the OpenJDK 8 release from https://adoptopenjdk.net[^]. On Windows, add or update the `JAVA_HOME` environment variable to point to the installation root directory (for example, `C:\Program Files\Java\jdk1.8.0_265`) and append `%JAVA_HOME%\bin` to the `PATH` variable.
-. Download and install the latest Apache Maven 3.8.x release from http://maven.apache.org/download.cgi[^]. Add or update the `MAVEN_HOME` environment variable to point to the installation root directory (for example, `C:\Utilities\apache-maven-3.8.4`) and append `%MAVEN_HOME%\bin` (`$MAVEN_HOME/bin` on Linux/MacOS) to the `PATH` variable.
-. Download and install the latest 64-bit version of the Anypoint Studio 7 release from https://www.mulesoft.com/lp/dl/studio[^]. Do not install the product under a folder containing spaces in the name.
-. Launch Studio and create a new workspace for the accelerator assets. Do not locate the workspace under a folder containing spaces in the name.
-
-=== Configuring the Accelerator Build
-
-. Download the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-resources-src[Accelerator Common Resources^] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
-. Import the project folder into Studio using the `accel/Existing Projects into Workspace` wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-resources`, you can select the project in the `Package Explorer` view and press `F2` to rename it: +
-=======
 . Download and install the latest 64-bit version of the OpenJDK 8 release from https://adoptopenjdk.net[^]. On Windows, add or update the `JAVA_HOME` environment variable to point to the installation root directory (e.g., `C:\Program Files\Java\jdk1.8.0_265``) and append `%JAVA_HOME%\bin` to the `PATH` variable.
 . Download and install the latest Apache Maven 3.8.x release from http://maven.apache.org/download.cgi[^]. Add or update the `MAVEN_HOME` environment variable to point to the installation root directory (e.g., `C:\Utilities\apache-maven-3.8.4`) and append `%MAVEN_HOME%\bin` (`$MAVEN_HOME/bin` on Linux/MacOS) to the `PATH` variable.
 . Download and install the latest 64-bit version of the Anypoint Studio 7 release from https://www.mulesoft.com/lp/dl/studio[^]. Do not install the product under a folder containing spaces in the name.
@@ -50,17 +25,12 @@ Perform the following steps to prepare your workstation for building, deploying,
 
 . Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
 . Import the project folder into Studio using the `General/Existing Projects into Workspace` wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-resources`, you can select the project in the `Package Explorer` view and press `F2` to rename it: +
->>>>>>> 2a7111a (Squashing unverified commits from history)
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-doc-setupguide_01.png[sfc-doc-setupguide_01.png,599]
 . Copy the contents of the `settings-accelerators.xml` file to your local Maven `settings.xml` file, which is usually located under `$HOME/.m2` on Linux/MacOS hosts and `%USERPROFILE%\.m2` on Windows hosts; create a new file if it does not exist. If the file already exists, make sure to merge the contents of the `settings-accelerators.xml` with the existing. You may also choose to keep the file separate and specify the `-s <filename>` option when running Maven commands; in Studio you will also need to override the user settings path (under `Anypoint Studio/Maven/User Settings` in the Preferences dialog). _Note: This step is optional, if the project is intended to build only in Anypoint Studio_
 . For now, update the `server` entries to specify your own usernames and passwords for the two Exchange repositories (`anypoint-exchange-v2` and `accelerator-exchange`). If you want to run MUnit tests from the command line, you will also need to provide separate credentials for the MuleSoft Nexus EE repository (`mule-enterprise`).
 
-<<<<<<< HEAD
-== Testing the Configuration
-=======
 == Testing the configuration
->>>>>>> 2a7111a (Squashing unverified commits from history)
 
 _Having proper values in the Maven settings file is critical for being able to resolve, build and deploy components using Maven_.
 
@@ -68,11 +38,7 @@ To verify your workstation setup, import any Accelerator implementation template
 
 Once the project has been imported, verify that the project name in Studio matches the `name` element in the `pom.xml` file. If it does not (which is usually the case when importing from a downloaded archive), press `F2` to rename it accordingly; this will make it easier to use the build scripts later on. Ignore any warnings or errors for now.
 
-<<<<<<< HEAD
-Open your favorite shell and navigate to the project root folder (for example, `C:\workspaces\accelerators\accelerator-jira-sys-api`). Run the command `mvn clean`. If the command completes successfully (the message `BUILD SUCCESS` appears) then you are good to go. If any errors are reported, they must be resolved before continuing; consult the Troubleshooting section below for help with some common issues.
-=======
 Open your favorite shell and navigate to the project root folder (e.g., `C:\workspaces\accelerators\accelerator-jira-sys-api`). Run the command `mvn clean`. If the command completes successfully (the message `BUILD SUCCESS` appears) then you are good to go. If any errors are reported, they must be resolved before continuing; consult the Troubleshooting section below for help with some common issues.
->>>>>>> 2a7111a (Squashing unverified commits from history)
 
 In Studio, close the project, wait until Studio has finished processing any tasks, and then open it again. Ensure the project builds with no errors.
 
@@ -104,6 +70,7 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 | To update the version of a dependency, either add a `<version>` tag directly to the application's `pom.xml` file or update the version in the parent and redeploy it; be sure to update the version of the parent POM, and to reference the new version in the application.
 |===
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 == See Also
 
@@ -111,3 +78,10 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 * The xref:index.adoc[MuleSoft Accelerators] main page
 =======
 >>>>>>> 2a7111a (Squashing unverified commits from history)
+=======
+
+== See Also
+
+* xref:accel-build-environment.adoc[Build environment]
+* The xref:index.adoc[MuleSoft Accelerators] main page
+>>>>>>> 1148e9a (Update common-services.adoc)

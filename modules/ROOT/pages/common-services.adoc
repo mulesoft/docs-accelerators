@@ -1,3 +1,5 @@
+= MuleSoft Accelerators - Common Services
+
 The MuleSoft Accelerators leverage a number of common components, referred to here as "common services". These services include the following:
 
 * Common Scheduler – unified scheduling
@@ -113,6 +115,7 @@ An easier way to apply policies to all APIs is to deploy them as Automated polic
 
 == See Also
 
-* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project] is a generic implementation template that allows you to quickly create implementations for new API specifications.
-* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-archetype-api-template-src/[Maven Archetype Plugin] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
-* The xref:setup-guide.adoc[Setup Guide] provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
+* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
+* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-archetype-api-template-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
+* The xref:setup-guide.adoc[MuleSoft Accelerators Setup Guide] provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
+* The xref:index.adoc[MuleSoft Accelerators] main page.

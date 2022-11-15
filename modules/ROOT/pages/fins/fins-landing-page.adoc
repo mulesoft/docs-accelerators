@@ -36,6 +36,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 === FINS System APIs
 
+<<<<<<< HEAD
 include::partial$fins-system-apis-fragment.adoc[]
 
 === FINS Process APIs
@@ -85,4 +86,32 @@ A number of shared assets and common services are also used by this accelerator.
 
 * Required xref:fins/fins-prerequisites.adoc[Prerequisites] for this accelerator
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange
+=======
+include::../../_partials/fins/fins-system-apis-fragment.adoc[]
+
+=== FINS Process APIs
+
+include::../../_partials/fins/fins-process-apis-fragment.adoc[]
+
+=== FINS Experience APIs
+
+include::../../_partials/fins/fins-experience-apis-fragment.adoc[]
+
+=== FINS Listeners
+
+include::../../_partials/fins/fins-listeners-fragment.adoc[]
+
+=== FINS Custom Components
+
+include::../../_partials/fins/fins-custom-components-fragment.adoc[]
+
+=== Accelerator Shared assets
+
+include::../../_partials/fins/fins-shared-assets-fragment.adoc[]
+
+== See Also
+
+* Required xref:fins-prerequisites.adoc[Prerequisites] for this accelerator
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services] on Anypoint Exchange
+>>>>>>> 1148e9a (Update common-services.adoc)
 * Documentation home page for xref:index.adoc[MuleSoft Accelerators]

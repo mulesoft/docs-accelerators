@@ -2,4 +2,8 @@
 
 A number of shared assets and common services are also used by this accelerator.
 
+<<<<<<< HEAD
 include::partial$fins-shared-assets-fragment.adoc[]
+=======
+include::../../_partials/fins/fins-shared-assets-fragment.adoc[]
+>>>>>>> 1148e9a (Update common-services.adoc)

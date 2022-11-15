@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-= Application Testing
-
-=======
->>>>>>> 2a7111a (Squashing unverified commits from history)
 All application projects include MUnit test suites, which provide basic unit test cases, and functional tests, defined in a Postman collection.
 
 == Postman tests
@@ -28,4 +23,14 @@ Before importing the project collection into your Postman workspace you will nee
 == MUnit tests
 
 From the command line, running any Maven goal that includes the testing phase will automatically execute the MUnit tests. This includes the goals `test`, `package` and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (e.g., `mvn package -DskipTests`). Note: case matters.
+<<<<<<< HEAD
 >>>>>>> 2a7111a (Squashing unverified commits from history)
+=======
+
+== See Also
+
+* xref:accel-build-environment.adoc[Build environment]
+* xref:accel-application-deployment.adoc[Application deployment]
+* xref:accel-additional-customizations.adoc[Additional customizations]
+* The xref:index.adoc[MuleSoft Accelerators] main page
+>>>>>>> 1148e9a (Update common-services.adoc)

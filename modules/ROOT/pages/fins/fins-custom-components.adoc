@@ -1,4 +1,8 @@
 
 = FINS Custom Components
 
+<<<<<<< HEAD
 include::partial$fins-custom-components-fragment.adoc[]
+=======
+include::../../_partials/fins/fins-custom-components-fragment.adoc[]
+>>>>>>> 1148e9a (Update common-services.adoc)

@@ -1,0 +1,22 @@
+= Title
+// Replace with actual asset title
+
+This asset is a shared component of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[MuleSoft Accelerators^], which accelerate the implementation of essential integration use cases.
+
+[cols="10,90"]
+|===
+| image:https://www.mulesoft.com/ext/solutions/draft/images/bulb.png[bulb.png]
+| The xref:../../setup-guide.adoc[Accelerators setup guide] provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+|===
+
+== Summary
+
+// Add brief summary describing this asset
+
+== Using this asset
+
+// Add a summary of how to use this asset
+
+== See also
+
+* xref:index.adoc[MuleSoft Accelerators]

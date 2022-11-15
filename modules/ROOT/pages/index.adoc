@@ -14,18 +14,21 @@ To access any of the links described within the following Accelerators, you must
 |Accelerator |Description
 |image:fs-icon.png[30%,30%]
 
-xref:financial-services/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services] |Boosts time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architecture for financial services.
+xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services] |Boosts time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architecture for financial services.
 |image:hc-icon.png[30%,30%]
 
-xref:healthcare/hc-landing-page.adoc[MuleSoft Accelerator for Healthcare] | Equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey. With our pre-built APIs, connectors, implementation templates, and reference architectures, IT teams can spend more time innovating rather than building from scratch.
+xref:hls/hc-landing-page.adoc[MuleSoft Accelerator for Healthcare] | Equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey. With our pre-built APIs, connectors, implementation templates, and reference architectures, IT teams can spend more time innovating rather than building from scratch.
 |image:mfg-icon.png[30%,30%]
 
 xref:mfg/mfg-landing-page.adoc[MuleSoft Accelerator for Manufacturing] | Delivers seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
 |image:retail-icon.png[30%,30%]
 
-xref:retail/retail-landing-page.adoc[MuleSoft Accelerator for Retail] |Includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives.
+xref:rcg/retail-landing-page.adoc[MuleSoft Accelerator for Retail] |Includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives.
 |===
 
 Give the assets a try, and if you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas in the https://help.mulesoft.com/s/ideas[Ideas Portal^]. We look forward to hearing from you!
 
-For more accelerators, visit us on https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
+== See Also
+
+* For more accelerators, visit us on https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
+
