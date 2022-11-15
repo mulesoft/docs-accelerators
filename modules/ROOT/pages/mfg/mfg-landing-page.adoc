@@ -10,26 +10,55 @@ MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers
 
 == Use Cases
 
-The following use cases are supported by the MuleSoft Accelerator for Manufacturing:
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/1.1/pages/Use%20case%201%20-%20Run-rate%20business%20management/[Use case 1 - Run-rate business management] — Syncing data from SAP S/4HANA and PIM systems into Manufacturing Cloud can be challenging and time consuming. This solution seamlessly sends customer and order data from SAP into Manufacturing Cloud. It also sends product data and price lists from a PIM system into Salesforce Manufacturing Cloud. As a result, it enables sales teams to have a complete view of customer sales agreements.Visibility into sales agreements provides predictability, which is critical to manage any manufacturing business. This precision in predictability helps manufacturers and their customers with their run-rate business:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/1.1/pages/Use%20case%202%20-%20Sales%20rebate%20management/[Use case 2 - Sales rebate management] — Manually uploading sales rebate payout details from Salesforce Rebate Management to SAP can be error prone. This solution seamlessly syncs customer and sales order data between SAP and Salesforce Manufacturing Cloud, and creates a credit memo in SAP in line with program guidelines and calculations. As a result, sales teams can trust that aggregate customer sales order data will trigger the correct sales rebate payouts and accounting teams will benefit from seamless documentation and tracking of sales rebate payments.Manufacturing companies can reliably trust unified data to make informed rebate management decisions to drive future growth.
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Run-rate%20business%20management/[Run-rate business management^] — This solution seamlessly sends customer and order data from SAP into Manufacturing Cloud. It also sends product data and price lists from a PIM system into Salesforce Manufacturing Cloud.
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%202%20-%20Sales%20rebate%20management/[Sales rebate management^] — This solution seamlessly syncs customer and sales order data between SAP and Salesforce Manufacturing Cloud, and creates a credit memo in SAP in line with program guidelines and calculations.
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%203%20-%20Total%20productive%20maintenance/[Total productive maintenance^] - This solution seamlessly aggregates factory floor equipment data, like temperature and vibration, into a data visualization tool. This data visualization tool can model the data, and a business user can pre-define business criteria to trigger equipment maintenance work orders in a servicing case management system.
-
-=== Shared Use Cases
-
-The following use cases provided by the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/[MuleSoft Accelerator for SAP^] are also leveraged by this accelerator:
+== Available Assets
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%202%20-%20Procure-to-pay/[Procure-to-pay^] - Streamline your procure-to-pay process with pre-built APIs, implementation templates, and connectors to seamlessly move supplier, invoice, and goods receipt data.
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%203a%20-%20Quote-to-cash%20-%20Salesforce%20and%20SAP%20S4HANA/[Quote-to-cash: Salesforce and SAP S/4HANA^] - Sync order, inventory, and customer data from opportunity to close between Salesforce Sales Cloud (including CPQ) and SAP S/4HANA.
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%203b%20-%20Quote-to-cash%20-%20B2B%20EDI/[Quote-to-cash: B2B EDI^] - Enable the sales order/purchase order and post-purchase order transaction flows between businesses, with one business serving as the buyer and the other as the supplier.
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%204%20-%20Real-time%20and%20bulk%20data%20lakes%20integration/[Real-time and bulk data lakes integration^] - Send sales order, inventory, and customer information from source systems to common data lake storage repositories.
 
-== See Also
+MFG Salesforce Customers System API
+MFG Salesforce Manufacture System API
+MFG Salesforce Orders System API
+MFG Salesforce Products System API
+MFG SAP S/4HANA Customers System API
+MFG SAP S/4HANA Orders System API
+Manufacturing MDM System API
+PIM System API
+MFG Salesforce Rebate System API
+MFG SAP S/4HANA Credit Memo System API
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-* xref:prerequisites.adoc[Prerequisites]
-* xref:release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing on Exchange^]
+=== Process APIs
+
+MFG Bulk Load Process API
+MFG Customers Process API
+MFG Orders Process API
+MFG Products Process API
+PIM Sync Process API
+MFG Rebate Process API
+
+=== Experience APIs
+
+MFG Bulk Load Experience API
+MFG Salesforce Experience API
+
+==== Accelerator Listeners
+
+MFG SAP Event Listener
+MFG Salesforce Topic Listener
+
+=== Custom components
+
+Accelerator Common Core
+POM Parent
+ID Graph Lightning Web Component
+MFG Rebate Library
+Common Services (can be used across any use case)
