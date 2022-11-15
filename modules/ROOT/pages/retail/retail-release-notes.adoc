@@ -35,8 +35,8 @@ Made the following improvements in this release:
 
 Enhanced customer sync to support Organizations
 Retrofitted all System APIs to reflect the following:
-Renamed "master" query parameters in API specs
-Renamed "master" custom fields in back-end systems
+Renamed query parameters in API specs
+Renamed custom fields in back-end systems
 Revised object structure on published B2C Commerce orders
 Made additional bug fixes and additional enhancements
 

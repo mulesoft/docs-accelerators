@@ -43,7 +43,7 @@ Below are all the configuration arrangements that are required for this use case
 |===
 |Communication Arrangement	|Service Name
 |SAP_COM_0008	|Business Partner - Replicate from SAP S/4HANA Cloud to Client
-|SAP_COM_0009	|Product Master - Replicate from SAP S/4HANA Cloud to Client
+|SAP_COM_0009	|Product Catalog  - Replicate from SAP S/4HANA Cloud to Client
 |SAP_COM_0287	|Sales Order Bulk Replication Integration
 |===
 

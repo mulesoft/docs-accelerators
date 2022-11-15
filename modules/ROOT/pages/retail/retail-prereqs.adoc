@@ -11,7 +11,7 @@ Service accounts are needed for the applications below, with the versions used d
 
 Additional resources used:
 
-* Master Data Management System (MDM) - MySQL 8.x used as MDM
+* Global Data Management System (GDM) - MySQL 8.x used as GDM
 * Order Management System (OMS) - Apache OFBiz used as OMS
 * Product Information Management (PIM) - Oracle 11g used as PIM
 
