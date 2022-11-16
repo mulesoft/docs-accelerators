@@ -34,17 +34,29 @@ Accelerates the delivery and development of a home address validation solution f
 
 Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
 
-include::fins-system-apis.adoc[]
+=== FINS System APIs
 
-include::fins-process-apis.adoc[]
+include::../../_partials/financial-services/fins-system-apis-fragment.adoc[]
 
-include::fins-experience-apis.adoc[]
+=== FINS Process APIs
 
-include::fins-listeners.adoc[]
+include::../../_partials/financial-services/fins-process-apis-fragment.adoc[]
 
-include::fins-custom-components.adoc[]
+=== FINS Experience APIs
 
-include::fins-shared-assets.adoc[]
+include::../../_partials/financial-services/fins-experience-apis-fragment.adoc[]
+
+=== FINS Listeners
+
+include::../../_partials/financial-services/fins-listeners-fragment.adoc[]
+
+=== FINS Custom Components
+
+include::../../_partials/financial-services/fins-custom-components-fragment.adoc[]
+
+=== Accelerator Shared assets
+
+include::../../_partials/financial-services/fins-shared-assets-fragment.adoc[]
 
 == See Also
 

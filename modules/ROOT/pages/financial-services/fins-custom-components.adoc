@@ -1,8 +1,4 @@
-=== FINS Custom Components
 
-[%hardbreaks]
-xref:custom-components/fins financial-account-sync-lwc.adoc[FINS Financial Account Sync Lightning Web Component]
-xref:custom-components/fins-common-resources.adoc[FINS Common Resources]
-xref:custom-components/fins-fraud-analysis-application.adoc[FINS Fraud Analysis Application]
-xref:custom-components/fins-open-banking-library.adoc[FINS Open Banking Library]
-xref:custom-components/fins-payments-frontend-webui.adoc[FINS Payments Frontend Web UI]
+= FINS Custom Components
+
+include::../../_partials/financial-services/fins-custom-components-fragment.adoc[]
