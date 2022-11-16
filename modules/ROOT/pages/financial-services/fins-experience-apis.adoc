@@ -1,33 +1,13 @@
-== FINS Experience APIs
+=== FINS Experience APIs
 
-=== Asset Name
-
-
-=== DocuSign Experience API
-
-
-=== Mobile Experience API
-
-
-=== Open Banking Accounts Experience API
-
-
-=== Open Banking ASPSP Experience API
-
-
-=== Open Banking PISP Domestic Experience API
-
-
-=== Open Banking PISP International Experience API | API Specification
-
-
-=== Payments Web UI Experience API
-
-
-=== Salesforce Financial Experience API
-
-
-=== Salesforce Insurance Experience API
-
-
-=== Salesforce Wealth Experience API
+[%hardbreaks]
+xref:core-assets.adoc#docusign_experience_api[DocuSign Experience API]
+xref:core-assets.adoc#mobile_experience_api[Mobile Experience API]
+xref:core-assets.adoc#open_banking_accounts_experience_api[Open Banking Accounts Experience API]
+xref:core-assets.adoc#open_banking_aspsp_experience_api[Open Banking ASPSP Experience API]
+xref:core-assets.adoc#open_banking_pisp_domestic_experience_api[Open Banking PISP Domestic Experience API]
+xref:core-assets.adoc#open_banking_pisp_international_experience_api[Open Banking PISP International Experience API | API Specification]
+xref:core-assets.adoc#payments_web_ui_experience_api[Payments Web UI Experience API]
+xref:core-assets.adoc#salesforce_financial_experience_api[Salesforce Financial Experience API]
+xref:core-assets.adoc#salesforce_insurance_experience_api[Salesforce Insurance Experience API]
+xref:core-assets.adoc#salesforce_wealth_experience_api[Salesforce Wealth Experience API]

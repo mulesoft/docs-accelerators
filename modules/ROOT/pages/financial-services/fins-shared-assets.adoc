@@ -1,0 +1,20 @@
+=== Shared assets
+
+A number of shared assets and common services are also used by this accelerator.
+
+==== System APIs
+
+[%hardbreaks]
+xref:../shared/accel-assets.adoc#accelerator_email_system_api[Accelerator Email System API]
+xref:../shared/accel-assets.adoc#accelerator_notifications_system_api[Accelerator Notifications System API]
+xref:../shared/accel-assets.adoc#accelerator_slack_system_api[Accelerator Slack System API]
+xref:../shared/accel-assets.adoc#accelerator_sms_system_api[Accelerator SMS System API]
+
+==== Custom Components
+
+[%hardbreaks]
+xref:core-assets.adoc#accelerator_cim_global_library[Accelerator CIM Global Library]
+xref:core-assets.adoc#accelerator_cim_market_library[Accelerator CIM Market Library]
+xref:core-assets.adoc#accelerator_common_core[Accelerator Common Core]
+xref:core-assets.adoc#accelerator_knit_maven_plugin[Accelerator Knit Maven Plugin]
+xref:core-assets.adoc#accelerator_pom_parent[Accelerator POM Parent]

@@ -28,4 +28,7 @@ xref:retail/retail-landing-page.adoc[MuleSoft Accelerator for Retail] |Includes 
 
 Give the assets a try, and if you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas in the https://help.mulesoft.com/s/ideas[Ideas Portal^]. We look forward to hearing from you!
 
-For more accelerators, visit us on https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
+== See Also
+
+* For more accelerators, visit us on https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
+

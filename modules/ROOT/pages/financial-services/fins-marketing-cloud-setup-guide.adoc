@@ -185,3 +185,8 @@ Set the Subject
 Select the Sender Profile
 Set the Wait period to 1 minute
 Save and activate the journey
+
+== See Also
+
+* xref:fins-prerequisites.adoc[Prerequisites]
+* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
