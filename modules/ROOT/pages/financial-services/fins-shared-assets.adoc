@@ -5,16 +5,22 @@ A number of shared assets and common services are also used by this accelerator.
 ==== System APIs
 
 [%hardbreaks]
-xref:../shared/accel-assets.adoc#accelerator_email_system_api[Accelerator Email System API]
-xref:../shared/accel-assets.adoc#accelerator_notifications_system_api[Accelerator Notifications System API]
-xref:../shared/accel-assets.adoc#accelerator_slack_system_api[Accelerator Slack System API]
-xref:../shared/accel-assets.adoc#accelerator_sms_system_api[Accelerator SMS System API]
+xref:../shared/accelerator-email-system-api.adoc[Accelerator Email System API]
+xref:../shared/accelerator-slack-system-api.adoc[Accelerator Slack System API]
+xref:../shared/accelerator-sms-system-api.adoc[Accelerator SMS System API]
+
+==== Process APIs
+
+[%hardbreaks]
+xref:../shared/accelerator-notifications-process-api.adoc[Accelerator Notifications Process API]
 
 ==== Custom Components
 
 [%hardbreaks]
-xref:core-assets.adoc#accelerator_cim_global_library[Accelerator CIM Global Library]
-xref:core-assets.adoc#accelerator_cim_market_library[Accelerator CIM Market Library]
-xref:core-assets.adoc#accelerator_common_core[Accelerator Common Core]
-xref:core-assets.adoc#accelerator_knit_maven_plugin[Accelerator Knit Maven Plugin]
-xref:core-assets.adoc#accelerator_pom_parent[Accelerator POM Parent]
+xref:../shared/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
+xref:../shared/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
+xref:../shared/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
+xref:../shared/accelerator-common-core.adoc[Accelerator Common Core]
+xref:../shared/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
+xref:../shared/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
+xref:../shared/accelerator-pom-parent.adoc[Accelerator POM Parent]

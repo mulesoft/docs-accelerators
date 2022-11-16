@@ -1,13 +1,8 @@
 === FINS Custom Components
 
 [%hardbreaks]
-xref:core-assets.adoc#custom_component_name[Custom Component Name]
-xref:core-assets.adoc#fins_banking_library[FINS Banking Library]
-xref:core-assets.adoc#fins_common_library[FINS Common Library]
-xref:core-assets.adoc#fins_common_resources[FINS Common Resources]
-xref:core-assets.adoc#fins_open_banking_library[FINS Open Banking Library]
-xref:core-assets.adoc#fins financial_account_sync_lightning_web_component[FINS Financial Account Sync Lightning Web Component]
-xref:core-assets.adoc#fins_fraud_analysis_application[FINS Fraud Analysis Application]
-xref:core-assets.adoc#fins_insurance_library[FINS Insurance Library]
-xref:core-assets.adoc#id graph_lightning_web_component[ID Graph Lightning Web Component]
-xref:core-assets.adoc#fins payments_frontend_web_ui[FINS Payments Frontend Web UI]
+xref:custom-components/fins financial-account-sync-lwc.adoc[FINS Financial Account Sync Lightning Web Component]
+xref:custom-components/fins-common-resources.adoc[FINS Common Resources]
+xref:custom-components/fins-fraud-analysis-application.adoc[FINS Fraud Analysis Application]
+xref:custom-components/fins-open-banking-library.adoc[FINS Open Banking Library]
+xref:custom-components/fins-payments-frontend-webui.adoc[FINS Payments Frontend Web UI]

@@ -1,6 +1,7 @@
 .xref:index.adoc[MuleSoft Accelerators]
 * xref:index.adoc[MuleSoft Accelerators]
 * xref:setup-guide.adoc[Setup Guide]
+** xref:general/accel-getting-started.adoc[Getting Started]
 ** xref:general/accel-build-environment.adoc[Build Environment]
 ** xref:general/accel-application-deployment.adoc[Application Deployment]
 ** xref:general/accel-application-testing.adoc[Application Testing]
