@@ -1,21 +1,16 @@
-= MuleSoft Accelerators - Setup Guide
+= MuleSoft Accelerators Setup Guide
 
-//version number placeholder, determine how to include 2.0.x
-
-This asset is used in the following MuleSoft Accelerators:
-
-* xref:financial-services/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services] — Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement (e.g., CRM and ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
-* xref:healthcare/hc-landing-page.adoc[MuleSoft Accelerator for Healthcare] — Includes pre-built APIs, connectors, implementation templates, and a prescriptive end-to-end reference architecture to enable EHR connectivity, power a Patient 360, and bring patient demographics information and COVID-19 lab results from any EHR into Health Cloud using HL7 V2 or FHIR standards.
-* xref:mfg/mfg-landing-page.adoc[MuleSoft Accelerator for Manufacturing] — includes pre-built APIs, connectors, integration templates, and reference architecture to simplify connectivity between SAP S/4HANA, and Salesforce Manufacturing Cloud.
-* xref:retail/retail-landing-page.adoc[MuleSoft Accelerator for Retail] — Includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives.
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/[MuleSoft Accelerator for SAP] — Includes components and use cases for SAP ECC, S/4HANA, and Salesforce, and enables organizations to easily expose SAP ERP data for consumption by all.
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-clouds/[MuleSoft Accelerators for Salesforce Clouds] — Includes pre-built APIs, connectors, and integration templates that help unlock business-critical data from external systems such as SAP, ServiceNow, and Jira, which accelerates implementation of essential integration use cases for Service Cloud and Commerce Cloud. These assets guide you to adopt best practices synthesized from thousands of customer implementations and can be used as-is or extended to meet your company's unique needs.
+This guide will help you configure your local build environment to ensure success in downloading, modifying, and deploying accelerator assets.
 
 == Quick Start
 
-To get started, you must set up your local build environment with the required software and Maven build configuration. Next, download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, and so on) - be sure to read and follow the instructions specified in the use case page(s) carefully. In many instances, additional details are provided in the README.md of individual projects.
+To get started, you must set up your local build environment with the required software and Maven build configuration. Next, download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, and so on) - be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
 
-Once configured, applications can be deployed individually to your own CloudHub instance, either manually or by using simple Maven commands. There are also some helper profiles available for deploying multiple components at once.
+Once configured, applications can be deployed individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once.
+
+== Next Steps
+
+Ensure your xref:accel-build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:accel-application-deployment.adoc[Application Deployment], xref:accel-application-testing.adoc[Application Testing] and xref:accel-additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets.
 
 == Asset Types
 
@@ -27,11 +22,13 @@ The following table provides more information about the types of accelerator ass
 |API Spec Fragments	|Shared RAML specifications reused by multiple APIs. These define standard characteristics, data types and response codes common across most APIs.	|Accelerator Global Resources
 |REST APIs	|RAML specifications describing the resources and methods an API makes available to consumers. They are categorized into layers - System, Process, Experience - as per MuleSoft's API-led approach.	|Accelerator OMS System API
 |Templates	|Runtime implementations of individual APIs and other integrations. These must be customized and deployed to your own Mule runtime environment (e.g., CloudHub) to implement desired use cases.	|Accelerator OMS System API - Implementation Template
-|Custom	|Documentation and downloadable components that do not fit into other categories.	|Accelerator POM Parent
+|Custom	assets |Documentation and other downloadable components that do not fit into other categories.	|Accelerator POM Parent - Source
 |===
 
 == Obtaining accelerator assets
 
-All accelerator assets are available from the main Anypoint Exchange site and are freely downloadable. For API specification and implementation project names referenced in this document, search for each asset in Exchange or visit the solution landing page to see the full list of assets.
+All accelerator assets are available from the main Anypoint Exchange site and are freely downloadable by customers with current subscriptions. Refer to the sections in the page navigation menu on the left for more information about configuring, building, and deploying these assets.
 
-//Is this necessary to include? "Refer to the sections in the page navigation menu on the left for more information about configuring, building, and deploying applications."
+== See Also
+
+* The xref:index.adoc[MuleSoft Accelerators] main page.

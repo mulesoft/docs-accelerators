@@ -1,0 +1,50 @@
+= FINS Address Validation System API
+
+This asset is a component of the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^], which accelerates the implementation of essential integration use cases.
+
+The solution boosts time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architectures for financial services. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
+
+[cols="10,90"]
+|===
+| image:https://www.mulesoft.com/ext/solutions/draft/images/bulb.png[bulb.png]
+| The xref:../../setup-guide.adoc[Accelerators setup guide] provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+|===
+
+== Summary
+
+The FINS Address Validation System API supports the following functionalities:
+
+* Validates a postal addresses by integrating with USPS Shipping API
+
+== Using this asset
+
+The implementation template for this API can be imported directly into Anypoint Studio from Exchange. Ensure the required prerequisites are available and the mandatory property overrides are in place before attempting to run or deploy the application.
+
+=== Anypoint Exchange assets
+
+* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-address-validation-sys-api-spec/[API Specification^]
+* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-address-validation-sys-api/[Implementation Template^]
+
+=== Prerequisite setup
+
+This System API relies on USPS Web Tools Application Programming Interface to validate US addresses. Use https://registration.shippingapis.com/[this link^] to register for the USPS Web Tool API. Once registered, configure the validation service as per the instructions provided. The `fins-address-validation-sys-api.username` property must then be overridden with the username obtained over the email.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+| `fins-address-validation-sys-api.host` | USPS Shipping API host name
+| `fins-address-validation-sys-api.port` | USPS Shipping API port
+| `fins-address-validation-sys-api.username` | Username that is used to register in the USPS Shipping API
+|===
+
+== See also
+
+* xref:../../general/accel-build-environment.adoc[Build environment]
+* xref:../../general/accel-application-deployment.adoc[Application deployment]
+* xref:../../general/accel-application-testing.adoc[Application testing]
+* xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

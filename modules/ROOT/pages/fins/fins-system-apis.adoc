@@ -1,0 +1,3 @@
+= FINS System APIs
+
+include::../../_partials/fins/fins-system-apis-fragment.adoc[]
