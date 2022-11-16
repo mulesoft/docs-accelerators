@@ -14,8 +14,8 @@ April 28, 2022
 
 Introduces the Address change orchestration use case. There are two extensions of this use case:
 
-* xref:financial-services/fins-use-case-address-change-banking.adoc[Use case 4a - Address change orchestration: Insurance] — Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
-* xref:financial-services/fins-use-case-address-change-ins.adoc[Use case 4b - Address change orchestration: Banking] — Enhance your customer service teams’ upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
+* xref:fins/fins-use-case-address-change-banking.adoc[Use case 4a - Address change orchestration: Insurance] — Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
+* xref:fins/fins-use-case-address-change-ins.adoc[Use case 4b - Address change orchestration: Banking] — Enhance your customer service teams’ upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
 
 == v1.3
 March 21, 2022

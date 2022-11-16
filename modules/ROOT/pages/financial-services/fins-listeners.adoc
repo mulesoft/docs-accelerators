@@ -1,3 +1,0 @@
-= FINS Listeners
-
-include::../../_partials/financial-services/fins-listeners-fragment.adoc[]

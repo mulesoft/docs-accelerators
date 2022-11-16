@@ -1,4 +1,0 @@
-
-= FINS Custom Components
-
-include::../../_partials/financial-services/fins-custom-components-fragment.adoc[]

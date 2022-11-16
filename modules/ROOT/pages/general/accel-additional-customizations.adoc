@@ -4,7 +4,7 @@ The following customizations can be made to better tailor the accelerator compon
 
 All Accelerator projects inherit from a parent Maven POM. In addition to some global settings and repository references, this config also defines the versions of all MuleSoft connectors and modules used by applications.
 
-See the xref:../shared/accelerator-pom-parent.adoc[Customizations guide] to make changes to the POM parent file.
+See the xref:../accel/accelerator-pom-parent.adoc[Customizations guide] to make changes to the POM parent file.
 
 == Common core library
 

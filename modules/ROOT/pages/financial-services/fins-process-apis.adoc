@@ -1,3 +1,0 @@
-= FINS Process APIs
-
-include::../../_partials/financial-services/fins-process-apis-fragment.adoc[]
