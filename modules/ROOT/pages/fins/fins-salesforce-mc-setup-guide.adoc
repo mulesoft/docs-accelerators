@@ -1,11 +1,6 @@
-This guide provides the setup instructions for Marketing Cloud for the following use cases that are part of the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services]:
+= Salesforce Marketing Cloud Setup Guide
 
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use case 2b - Client onboarding - Wealth management]
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration - Insurance]
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Use case 4b - Address change orchestration - Banking]
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Use case 5 - Optimize customer experiences with CDP]
-
-The steps listed below are specific to use case with an asumption that the Salesforce Marketing Cloud has been provisioned and access is granted appropriately.
+This guide provides the setup instructions for Marketing Cloud to support the default MuleSoft Accelerator for Financial Services functionality. The steps listed below are specific to use case with an asumption that the Salesforce Marketing Cloud has been provisioned and access is granted appropriately.
 
 == Setup instructions for https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use case 2b - Client onboarding - Wealth management]
 

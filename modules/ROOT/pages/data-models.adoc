@@ -1,0 +1,18 @@
+= MuleSoft Accelerators Data Models
+
+The use of good, comprehensive canonical data models in API specifications is key for maximizing the reuse and flexibility of the interfaces and limiting the amount of data transformation logic required between the Experience, Process, and System layer in an API-led approach. Many organizations struggle with this, however, often ending up with disparate object definitions for the same entities across different APIs. This leads to brittle and often complex data transformations, which become difficult to maintain over time.
+
+The MuleSoft Solutions team has therefore developed common data models for use in Process and System API definitions, adopting industry standards wherever possible. The following table summarizes the data models in use across the various accelerators.
+
+[%header%autowidth.spread^]
+|===
+| Data Model | Accelerators using the model
+| Cloud Information Model (CIM) | Financial Services, Retail & Consumer Goods, Manufacturing 
+| FHIR | Healthcare & Life Sciences
+| HL7 | Healthcare & Life Sciences
+|===
+
+== See Also
+
+* The xref:cim/cim-landing-page.adoc[Cloud Information Model] home page.
+* The xref:index.adoc[MuleSoft Accelerators] main page.

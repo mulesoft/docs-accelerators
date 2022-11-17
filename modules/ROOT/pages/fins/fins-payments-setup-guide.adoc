@@ -1,4 +1,4 @@
-= Payments Modernization Setup Guide
+= Payments Modernization Demo Setup Guide
 
 This guide provides instructions for setting up all the components required to run the Payments Modernization use case demo.
 

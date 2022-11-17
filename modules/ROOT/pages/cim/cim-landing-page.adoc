@@ -1,0 +1,52 @@
+= Cloud Information Model for MuleSoft Accelerators
+
+The Cloud Information Model (CIM) an application-agnostic data model that simplifies integration and accelerates innovation. The use of CIM as a canonical model in the MuleSoft accelerators reduces barriers to cross-product integration and extends the value proposition of our solutions by exposing a common model across our business processes and system APIs.
+
+== Overview
+
+CIM was produced to deliver a standards-based solution for connecting enterprise products. With CIM, you can create seamless and tailored personal experiences across cloud-native applications.
+
+To accelerate digital transformation and deliver personalized engagements to customers across every channel, many companies adopt multiple cloud and on-premise applications. Each comes with its own data model, which forces developers to build, test, and manage custom code that is necessary to map and translate data across different systems. Instead of accelerating digital transformation, this process slows innovation and leads to brittle integrations.
+
+CIM is a modern, open specification to help ease the pain of integrating data. CIM provides a defined standard to communicate easily between different data formats.
+
+== History of CIM
+
+The original distribution of CIM was produced by an open consortium formed to deliver a standards-based solution for connecting enterprise products. Although it was adopted by MuleSoft for use in various accelerators, limited adoption by other companies led to the consortium being halted and the primary website archived. The version of CIM created and maintained by the MuleSoft Solutions team is now known as the Cloud Information Model for MuleSoft Accelerators.
+
+== Organization
+
+The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity.
+
+The following subject areas are currently supported - follow the links or refer to the tabs on the left for more details on each domain.
+
+|===
+| Name | Description
+
+| xref:cim-finance.adoc[Finance]
+| Entities related to finances, such as payments and payment methods.
+
+| xref:cim-fulfill.adoc[Fulfill]
+| Entities related to the fulfillment of goods and services, such as shipments.
+
+| xref:cim-market.adoc[Market]
+| Entities related to the marketing and promotion of goods and services, such as customers, suppliers, and contact information
+
+| xref:cim-produce.adoc[Produce]
+| Entities related to actual goods and services, such as products and catalogs
+
+| xref:cim-sell.adoc[Sell]
+| Entities related to the selling of goods and services, such as sales orders and channels
+|===
+
+== Implementation
+
+The version of CIM used by the MuleSoft Accelerators is represented as a set of RAML library fragments. There is a core library for each domain, plus extension libraries that aggregate data types from multiple core libraries for a more complete representation of the model. The entities in each core library are logically grouped into related entities within that Subject Area. Each core library provides a set of examples and JSON schemas, which can be useful for defining metadata types when developing applications in Anypoint Studio.
+
+Refer to the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-cim-global-library[Accelerator CIM Global Library^] home page to get started with using the model.
+
+== See Also
+
+* The xref:cim-usage-guide.adoc[Usage guide] provides some helpful guidelines on how to use and interpret the model.
+* The xref:cim-customizations.adoc[Model customizations] page describes the customizations and extensions that have been made to the original Cloud Information Model for use by the MuleSoft Accelerators.
+* xref:../data-models.adoc[Accelerator Data Models]
