@@ -36,7 +36,6 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 === FINS System APIs
 
-<<<<<<< HEAD
 include::partial$fins-system-apis-fragment.adoc[]
 
 === FINS Process APIs
@@ -57,61 +56,10 @@ include::partial$fins-custom-components-fragment.adoc[]
 
 === Accelerator Shared assets
 
-A number of shared assets and common services are also used by this accelerator.
-
-==== Accelerator System APIs
-
-[%hardbreaks]
-* xref:../accel/system-apis/accelerator-email-system-api.adoc[Accelerator Email System API]
-* xref:../accel/system-apis/accelerator-slack-system-api.adoc[Accelerator Slack System API]
-* xref:../accel/system-apis/accelerator-sms-system-api.adoc[Accelerator SMS System API]
-
-==== Accelerator Process APIs
-
-[%hardbreaks]
-* xref:../accel/process-apis/accelerator-notifications-process-api.adoc[Accelerator Notifications Process API]
-
-==== Accelerator Custom Components
-
-[%hardbreaks]
-* xref:../accel/api-libraries/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
-* xref:../accel/api-libraries/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
-* xref:../accel/api-libraries/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
-* xref:../accel/shared-components/accelerator-common-core.adoc[Accelerator Common Core]
-* xref:../accel/shared-components/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
-* xref:../accel/shared-components/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
-* xref:../accel/shared-components/accelerator-pom-parent.adoc[Accelerator POM Parent]
-
-== See Also
-
-* Required xref:fins/fins-prerequisites.adoc[Prerequisites] for this accelerator
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange
-=======
-include::../../_partials/fins/fins-system-apis-fragment.adoc[]
-
-=== FINS Process APIs
-
-include::../../_partials/fins/fins-process-apis-fragment.adoc[]
-
-=== FINS Experience APIs
-
-include::../../_partials/fins/fins-experience-apis-fragment.adoc[]
-
-=== FINS Listeners
-
-include::../../_partials/fins/fins-listeners-fragment.adoc[]
-
-=== FINS Custom Components
-
-include::../../_partials/fins/fins-custom-components-fragment.adoc[]
-
-=== Accelerator Shared assets
-
-include::../../_partials/fins/fins-shared-assets-fragment.adoc[]
+include::partial$fins-shared-assets-fragment.adoc[]
 
 == See Also
 
 * Required xref:fins-prerequisites.adoc[Prerequisites] for this accelerator
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services] on Anypoint Exchange
->>>>>>> 1148e9a (Update common-services.adoc)
 * Documentation home page for xref:index.adoc[MuleSoft Accelerators]

@@ -1,6 +1,0 @@
-[%hardbreaks]
-xref:listeners/payments-ach-listener.adoc[Payments ACH Listener]
-xref:listeners/payments-fedwire-listener.adoc[Payments Fedwire Listener]
-xref:listeners/payments-swift-listener.adoc[Payments SWIFT Listener]
-xref:listeners/salesforce-marketing-listener.adoc[Salesforce Marketing Listener]
-xref:listeners/salesforce-topic-listener.adoc[Salesforce Topic Listener]
