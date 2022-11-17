@@ -36,27 +36,27 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 === FINS System APIs
 
-include::../../_partials/fins/fins-system-apis-fragment.adoc[]
+include::partial$fins-system-apis-fragment.adoc[]
 
 === FINS Process APIs
 
-include::../../_partials/fins/fins-process-apis-fragment.adoc[]
+include::partial$fins-process-apis-fragment.adoc[]
 
 === FINS Experience APIs
 
-include::../../_partials/fins/fins-experience-apis-fragment.adoc[]
+include::partial$fins-experience-apis-fragment.adoc[]
 
 === FINS Listeners
 
-include::../../_partials/fins/fins-listeners-fragment.adoc[]
+include::partial$fins-listeners-fragment.adoc[]
 
 === FINS Custom Components
 
-include::../../_partials/fins/fins-custom-components-fragment.adoc[]
+include::partial$fins-custom-components-fragment.adoc[]
 
 === Accelerator Shared assets
 
-include::../../_partials/fins/fins-shared-assets-fragment.adoc[]
+include::partial$fins-shared-assets-fragment.adoc[]
 
 == See Also
 
