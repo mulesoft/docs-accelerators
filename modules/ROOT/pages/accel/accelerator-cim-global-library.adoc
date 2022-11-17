@@ -1,5 +1,4 @@
-= Title
-// Replace with actual asset title
+= Accelerator CIM Global Library
 
 This asset is a shared component of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[MuleSoft Accelerators^], which accelerate the implementation of essential integration use cases.
 

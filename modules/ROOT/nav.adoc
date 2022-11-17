@@ -7,6 +7,8 @@
 ** xref:general/accel-application-testing.adoc[Application Testing]
 ** xref:general/accel-additional-customizations.adoc[Additional Customizations]
 * xref:common-services.adoc[Common Services]
+* xref:data-models.adoc[Data Models]
+** xref:cim/cim-landing-page.adoc[Cloud Information Model]
 * xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
 ** xref:fins/fins-release-notes.adoc[Release Notes]
 ** xref:fins/fins-upgrade-notes.adoc[Upgrade Notes]

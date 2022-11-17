@@ -1,6 +1,6 @@
 = Salesforce CDP Setup Guide
 
-The following provides guidance on Salesforce CDP setup required for the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case.
+The following provides guidance on Salesforce CDP setup required to support the default MuleSoft Accelerator for Financial Services functionality.
 
 * <<cdp-provisioning,CDP provisioning>>
 * <<connect-data,Connect data>>
