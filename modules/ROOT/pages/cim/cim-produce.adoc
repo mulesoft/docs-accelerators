@@ -1,0 +1,19 @@
+= Produce Subject Area
+
+Handling of material that you will be buying, moving and selling. For example, product and inventory product.
+
+== Model diagrams
+
+The following diagrams show the entities and relationships in this subject area, organized by entity group.
+
+=== Product
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Product.png[alt="Product Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/Product.png"]
+
+== Implementation
+
+https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-cim-produce-library[CIM Produce Library^]
+
+== See Also
+
+* xref:cim/cim-landing-page.adoc[CIM Home Page]

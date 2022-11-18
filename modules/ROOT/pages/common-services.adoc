@@ -1,4 +1,4 @@
-= MuleSoft Accelerators - Common Services
+= MuleSoft Accelerators Common Services
 
 The MuleSoft Accelerators leverage a number of common components, referred to here as "common services". These services include the following:
 
