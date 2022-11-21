@@ -1,14 +1,6 @@
 [%hardbreaks]
-<<<<<<< HEAD
-* xref:./listeners/payments-ach-listener.adoc[FINS Payments ACH Listener]
-* xref:./listeners/payments-fedwire-listener.adoc[FINS Payments Fedwire Listener]
-* xref:./listeners/payments-swift-listener.adoc[FINS Payments SWIFT Listener]
-* xref:./listeners/salesforce-marketing-listener.adoc[FINS Salesforce Marketing Listener]
-* xref:./listeners/salesforce-topic-listener.adoc[FINS Salesforce Topic Listener]
-=======
-xref:listeners/payments-ach-listener.adoc[Payments ACH Listener]
-xref:listeners/payments-fedwire-listener.adoc[Payments Fedwire Listener]
-xref:listeners/payments-swift-listener.adoc[Payments SWIFT Listener]
-xref:listeners/salesforce-marketing-listener.adoc[Salesforce Marketing Listener]
-xref:listeners/salesforce-topic-listener.adoc[Salesforce Topic Listener]
->>>>>>> d130194 (updates to fins partials)
+xref:./listeners/payments-ach-listener.adoc[Payments ACH Listener]
+xref:./listeners/payments-fedwire-listener.adoc[Payments Fedwire Listener]
+xref:./listeners/payments-swift-listener.adoc[Payments SWIFT Listener]
+xref:./listeners/salesforce-marketing-listener.adoc[Salesforce Marketing Listener]
+xref:./listeners/salesforce-topic-listener.adoc[Salesforce Topic Listener]
