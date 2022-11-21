@@ -1,4 +1,4 @@
 
 = FINS Custom Components
 
-include::../../_partials/fins/fins-custom-components-fragment.adoc[]
+include::partial$fins-custom-components-fragment.adoc[]
