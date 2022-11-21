@@ -1,7 +1,3 @@
 = FINS System APIs
 
-<<<<<<< HEAD
 include::partial$fins-system-apis-fragment.adoc[]
-=======
-include::../../_partials/fins/fins-system-apis-fragment.adoc[]
->>>>>>> 1148e9a (Update common-services.adoc)
