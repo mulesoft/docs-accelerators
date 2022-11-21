@@ -60,6 +60,6 @@ include::partial$fins-shared-assets-fragment.adoc[]
 
 == See Also
 
-* Required xref:fins-prerequisites.adoc[Prerequisites] for this accelerator
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services] on Anypoint Exchange
+* Required xref:fins/fins-prerequisites.adoc[Prerequisites] for this accelerator
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange
 * Documentation home page for xref:index.adoc[MuleSoft Accelerators]
