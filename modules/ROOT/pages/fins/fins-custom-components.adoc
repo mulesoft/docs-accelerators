@@ -1,0 +1,4 @@
+
+= FINS Custom Components
+
+include::partial$fins-custom-components-fragment.adoc[]

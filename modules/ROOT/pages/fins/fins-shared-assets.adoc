@@ -1,0 +1,5 @@
+= Accelerator Shared assets
+
+A number of shared assets and common services are also used by this accelerator.
+
+include::partial$fins-shared-assets-fragment.adoc[]
