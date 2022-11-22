@@ -1,3 +1,7 @@
 = FINS System APIs
 
 include::partial$fins-system-apis-fragment.adoc[]
+
+== See Also
+
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

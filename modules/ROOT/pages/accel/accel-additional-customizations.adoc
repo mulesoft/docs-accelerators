@@ -66,7 +66,8 @@ To change the default behavior for all applications, modify the property value i
 
 == See Also
 
-* xref:general/accel-build-environment.adoc[Build environment]
-* xref:general/accel-application-deployment.adoc[Application deployment]
-* xref:general/accel-application-testing.adoc[Application testing]
-* The xref:../index.adoc[MuleSoft Accelerators] main page
+* xref:../getting-started.adoc[Getting Started]
+* xref:./accel-build-environment.adoc[Build Environment]
+* xref:./accel-application-deployment.adoc[Application Deployment]
+* xref:./accel-application-testing.adoc[Application Testing]
+* xref:../index.adoc[MuleSoft Accelerators]

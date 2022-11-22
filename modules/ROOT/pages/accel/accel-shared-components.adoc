@@ -1,0 +1,10 @@
+= Accelerator Shared Components
+
+The following assets are also shared across multiple accelerators.
+
+include::partial$accel-shared-components-fragment.adoc[]
+
+== See Also
+
+* xref:./accel-common-assets.adoc[Accelerator Common Assets]
+* xref:../index.adoc[MuleSoft Accelerators]

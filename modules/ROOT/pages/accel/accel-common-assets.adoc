@@ -1,0 +1,23 @@
+= Accelerator Common Assets
+
+The following assets may be used by one or more accelerators. They can also be downloaded and used independently.
+
+== Accelerator System APIs
+
+include::partial$accel-system-apis-fragment.adoc[]
+
+== Accelerator Process APIs
+
+include::partial$accel-process-apis-fragment.adoc[]
+
+== Accelerator API Libraries
+
+include::partial$accel-api-libraries-fragment.adoc[]
+
+== Accelerator Shared Components
+
+include::partial$accel-shared-components-fragment.adoc[]
+
+== See Also
+
+* xref:../index.adoc[MuleSoft Accelerators]

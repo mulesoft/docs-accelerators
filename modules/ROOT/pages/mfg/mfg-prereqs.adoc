@@ -18,7 +18,7 @@ Most of the implementation templates also contain details on requirements specif
 
 == Anypoint MQ Configuration
 
-The Anypoint-MQ-Queues-Exchanges Postman collection in the manufacturing-common-resources project will pre-create all MQ destinations required by the accelerator components.
+The Anypoint-MQ-Queues-Exchanges Postman collection in the `manufacturing-common-resources` project will pre-create all MQ destinations required by the accelerator components.
 
 The collection requires the dev environment template to be imported into your Postman workspace and assigned proper values first. The following MQ destinations will be created upon successful execution.
 

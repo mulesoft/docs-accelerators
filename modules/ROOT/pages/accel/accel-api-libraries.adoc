@@ -1,0 +1,10 @@
+= Accelerator API Libraries
+
+The following RAML libraries are available for use in all accelerators.
+
+include::partial$accel-api-libraries-fragment.adoc[]
+
+== See Also
+
+* xref:./accel-common-assets.adoc[Accelerator Common Assets]
+* xref:../index.adoc[MuleSoft Accelerators]

@@ -1,0 +1,2 @@
+[%hardbreaks]
+xref:./process-apis/accelerator-notifications-process-api.adoc[Accelerator Notifications Process API]

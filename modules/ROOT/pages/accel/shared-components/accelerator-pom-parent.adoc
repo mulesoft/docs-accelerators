@@ -12,7 +12,7 @@ This asset is a shared component of the https://anypoint.mulesoft.com/exchange/o
 
 The `accelerator-pom-parent` project is used for storing common configurations, constants, common dependencies, and resources used across all the child projects. It provides a single Maven configuration file (POM), which is used as the parent by most other accelerator projects.
 
-== Using this asset
+== Using this Asset
 
 To view the source code for this project, download the asset and extract the contents to a temporary folder. The archive contains a single project folder, which can be moved/copied to the desired location or imported into Studio as an existing general project.
 
@@ -22,13 +22,13 @@ To make changes to the POM Parent file:
 
 . Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Accelerator POM Parent - Source^] asset and extract the archive to a temporary directory.
 . Import the extracted `accelerator-pom-parent` folder into Studio using the `Existing Projects into Workspace` wizard (select the `Copy projects into workspace` option, if desired).
-. Before making any changes, edit the `pom.xml` file and increment the version number of the actual artifact (e.g., `<version>2.0.1</version>`). *It is important to update the version number to avoid having stale references in your local Maven repository.*
+. Before making any changes, edit the `pom.xml` file and increment the version number of the actual artifact (for example, `<version>2.0.1</version>`). *It is important to update the version number to avoid having stale references in your local Maven repository.*
 
 === Deploying new versions
 
 To make your changes available to other applications:
 
-. Edit the install script for your platform (e.g., `install.cmd` for Windows) and update the value of the `VERSION` variable to match the one in the `pom.xml` file.
+. Edit the install script for your platform (such as `install.cmd` for Windows) and update the value of the `VERSION` variable to match the one in the `pom.xml` file.
 . Run the install script from the command line to have Maven install the updated version in the local repository.
 . In each application you wish to update, change the value of the parent version to match the new POM.
 
@@ -36,8 +36,9 @@ To make the new version available to other developers:
 
 . Deploy it to your own Anypoint Exchange instance.
 . Edit the `pom.xml` file again and set the `groupId` value to the Business Group ID of the target Anypoint instance.
-. Update the deploy script (e.g., `deploy.sh` on Linux/MacOS) to set the `VERSION` variable as described above and then run the script. Each application that needs to use the new version must change the `groupId` value in the parent to match the one you used for parent POM deployment.
+. Update the deploy script (such as `deploy.sh` on Linux/MacOS) to set the `VERSION` variable as described above and then run the script. Each application that needs to use the new version must change the `groupId` value in the parent to match the one you used for parent POM deployment.
 
-== See also
+== See Also
 
-* xref:../../index.adoc[MuleSoft Accelerators]
+* xref:/getting-started.adoc[Getting Started]
+* xref:/index.adoc[MuleSoft Accelerators]

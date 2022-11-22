@@ -1,4 +1,10 @@
 [%hardbreaks]
+<<<<<<< HEAD
 * xref:./system-apis/accelerator-email-system-api.adoc[Accelerator Email System API]
 * xref:./system-apis/accelerator-slack-system-api.adoc[Accelerator Slack System API]
 * xref:./system-apis/accelerator-sms-system-api.adoc[Accelerator SMS System API]
+=======
+xref:./system-apis/accelerator-email-system-api.adoc[Accelerator Email System API]
+xref:./system-apis/accelerator-slack-system-api.adoc[Accelerator Slack System API]
+xref:./system-apis/accelerator-sms-system-api.adoc[Accelerator SMS System API]
+>>>>>>> 7d02cc2 (quick start section updates)
