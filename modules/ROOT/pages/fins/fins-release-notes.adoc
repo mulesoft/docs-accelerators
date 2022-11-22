@@ -65,5 +65,5 @@ This accelerator also introduces the Core banking foundation use case, which all
 
 == See Also
 
-* xref:fins-upgrade-notes.adoc[Upgrade Notes]
-* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:fins/fins-upgrade-notes.adoc[Upgrade Notes]
+* xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

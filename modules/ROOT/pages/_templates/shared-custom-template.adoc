@@ -6,7 +6,7 @@ This asset is a shared component of the https://anypoint.mulesoft.com/exchange/o
 [cols="10,90"]
 |===
 | image:https://www.mulesoft.com/ext/solutions/draft/images/bulb.png[bulb.png]
-| The xref:../../setup-guide.adoc[Accelerators setup guide] provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+| The xref:../../getting-started.adoc[Getting started guide] provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
 |===
 
 == Summary
@@ -19,4 +19,4 @@ This asset is a shared component of the https://anypoint.mulesoft.com/exchange/o
 
 == See also
 
-* xref:index.adoc[MuleSoft Accelerators]
+* xref:../index.adoc[MuleSoft Accelerators]
