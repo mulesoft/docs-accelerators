@@ -4,9 +4,13 @@ This guide will help you configure your local build environment to ensure succes
 
 == Quick Start
 
-To get started, you must set up your local build environment with the required software and Maven build configuration. Next, download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, and so on) - be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
+To get started:
 
-Once configured, applications can be deployed individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once. The following instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel-build-environment.adoc[Build environment configuration] guide.
+. Set up your xref:accel/accel-build-environment.adoc[local build environment] with the required software and Maven build configuration.
+. Download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, etc.). Be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
+. Deploy the applications individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once.
+
+These instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel/accel-build-environment.adoc[build environment configuration] guide.
 
 === Asset Types
 
