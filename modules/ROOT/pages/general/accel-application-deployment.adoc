@@ -1,10 +1,10 @@
-= Application deployment
+= Application Deployment
 
 Each Accelerator implementation template in Exchange includes Bash and Windows scripts for building and deploying the APIs to CloudHub. These scripts depend on repositories, global settings, deployment profiles, and associated properties configured in the Maven `settings.xml` file.
 
 Many templates can also be run from Anypoint Studio without having to customize the Run/Debug profiles. However, some templates make use of hidden deployment properties to protect sensitive information such as passwords and secret keys. These properties must be supplied to the runtime by updating the configuration profile and adding them as VM arguments.
 
-== Running the application from Anypoint Studio
+== Running the Application from Anypoint Studio
 
 The following instructions are for running applications from Studio but apply to debugging as well.
 
@@ -20,7 +20,7 @@ The following instructions are for running applications from Studio but apply to
 
 To debug an application, choose `+Debug As -> Mule Application (configure)+` in the second step instead.
 
-== Deployment instructions for CloudHub
+== Deployment Instructions for CloudHub
 
 The following instructions apply to CloudHub deployments only.
 
@@ -32,7 +32,7 @@ The following instructions apply to CloudHub deployments only.
 
 See below for more detailed steps on configuring CloudHub deployments using Maven profiles.
 
-=== Configuring the deployment profile
+=== Configuring the Deployment Profile
 
 The default `settings-accelerators.xml` file, provided by the "Accelerator Common Resources - Source" asset, defines a single deployment profile called `CloudHub-DEV`. The key properties that can be configured are described in the following table:
 
@@ -114,7 +114,7 @@ The default `settings-accelerators.xml` file, provided by the "Accelerator Commo
 
 Note that the above template is generic: many accelerators provide their own version of the common resources project, which will contain a similar template specialized for that accelerator.
 
-=== Application naming
+=== Application Naming
 
 The default setting for the `cloudhub.applicationName` property constructs the application name base on the following segments:
 
@@ -127,7 +127,7 @@ An example of a deployed application name using the default settings is `org-not
 
 *Important note*: Since CloudHub application names must be _globally_ unique, it is highly recommended to set the `global.cloudhub.appPrefix` property (defined in the `global-settings` profile) to a short, 2-4 character abbreviation unique to your organization. Do not exceed 4 characters or deployments may fail when using the CloudHub 1.0 runtime (see below).
 
-=== Deploying applications using Maven profiles
+=== Deploying Applications Using Maven Profiles
 
 Once appropriate values have been defined for the properties for the environment profile, individual applications can be deployed to that environment simply by specifying the profile name on the Maven command line. For example, the command `mvn clean deploy -DskipTests -PCloudHub-DEV` uses the settings in the `CloudHub-DEV` profile to build and deploy the application.
 
@@ -135,7 +135,7 @@ Once appropriate values have been defined for the properties for the environment
 
 The following sections provide some solutions to common deployment issues.
 
-=== Error deploying project imported into Anypoint Studio
+=== Error Deploying Project Imported into Anypoint Studio
 
 If you choose to import accelerator projects into Anypoint Studio, be aware that Studio may automatically make modifications to the application `pom.xml` files, which could impact deployment. In particular, be sure to cancel the prompt to "Upgrade your workspace" when importing projects. If you run into trouble, check the `pom.xml` file and verify the configuration of the `mule-maven-plugin` looks something like this:
 
@@ -155,13 +155,13 @@ If you choose to import accelerator projects into Anypoint Studio, be aware that
 
 Make sure there is no `<version>` element included, and that the `<classifier>` element contains the property reference indicated above.
 
-=== Unauthorized error
+=== Unauthorized Error
 
 If deployment fails due to an `unauthorized` error, it is possible that the complete application name exceeds the 42 character limit on CloudHub deployment names. Adjust either the prefix, the `artifactId` value in the project pom.xml, or the deployment name pattern to ensure the complete application name does not exceed 42 characters in length.
 
 == See Also
 
-* xref:accel-build-environment.adoc[Build environment]
-* xref:accel-application-testing.adoc[Application testing]
-* xref:accel-additional-customizations.adoc[Additional customizations]
+* xref:general/accel-build-environment.adoc[Build environment]
+* xref:general/accel-application-testing.adoc[Application testing]
+* xref:general/accel-additional-customizations.adoc[Additional customizations]
 * The xref:index.adoc[MuleSoft Accelerators] main page.
