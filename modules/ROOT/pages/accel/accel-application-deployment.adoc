@@ -159,7 +159,7 @@ If deployment fails due to an `unauthorized` error, it is possible that the comp
 
 == See Also
 
-* xref:general/accel-build-environment.adoc[Build environment]
-* xref:general/accel-application-testing.adoc[Application testing]
-* xref:general/accel-additional-customizations.adoc[Additional customizations]
-* The xref:index.adoc[MuleSoft Accelerators] main page.
+* xref:accel-build-environment.adoc[Build environment]
+* xref:accel-application-testing.adoc[Application testing]
+* xref:accel-additional-customizations.adoc[Additional customizations]
+* The xref:../index.adoc[MuleSoft Accelerators] main page.

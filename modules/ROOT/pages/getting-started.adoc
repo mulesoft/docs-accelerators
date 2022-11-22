@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 = Getting Started with MuleSoft Accelerators
+=======
+= Getting started with MuleSoft Accelerators
+>>>>>>> ac8dd28 (Update fins-release-notes.adoc)
 
 This guide will help you configure your local build environment to ensure success in downloading, modifying, and deploying accelerator assets.
 
 == Quick Start
 
+<<<<<<< HEAD
 To get started:
 
 . Set up your xref:build-environment.adoc[local build environment] with the required software and Maven build configuration.
@@ -11,6 +16,11 @@ To get started:
 . Deploy the applications individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once.
 
 These instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel/accel-build-environment.adoc[build environment configuration] guide.
+=======
+To get started, you must set up your local build environment with the required software and Maven build configuration. Next, download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, and so on) - be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
+
+Once configured, applications can be deployed individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once. The following instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel-build-environment.adoc[Build environment configuration] guide.
+>>>>>>> ac8dd28 (Update fins-release-notes.adoc)
 
 === Asset Types
 
@@ -21,11 +31,19 @@ The following table provides more information about the types of accelerator ass
 |Type	|Purpose	|Example
 |API Spec Fragments	|Shared RAML specifications reused by multiple APIs. These define standard characteristics, data types and response codes common across most APIs.	|Accelerator Global Resources
 |REST APIs	|RAML specifications describing the resources and methods an API makes available to consumers. They are categorized into layers - System, Process, Experience - as per MuleSoft's API-led approach.	|Accelerator OMS System API
+<<<<<<< HEAD
 |Templates	|Runtime implementations of individual APIs and other integrations. These must be customized and deployed to your own Mule runtime environment (for example, CloudHub) to implement desired use cases.	|Accelerator OMS System API - Implementation Template
 |Custom	assets |Documentation and other downloadable components that do not fit into other categories.	|Accelerator POM Parent - Source
 |===
 
 === Obtaining Accelerator Assets
+=======
+|Templates	|Runtime implementations of individual APIs and other integrations. These must be customized and deployed to your own Mule runtime environment (e.g., CloudHub) to implement desired use cases.	|Accelerator OMS System API - Implementation Template
+|Custom	assets |Documentation and other downloadable components that do not fit into other categories.	|Accelerator POM Parent - Source
+|===
+
+=== Obtaining accelerator assets
+>>>>>>> ac8dd28 (Update fins-release-notes.adoc)
 
 All accelerator assets are available from the main Anypoint Exchange site and are freely downloadable by customers with current subscriptions. Refer to the sections in the page navigation menu on the left for more information about configuring, building, and deploying these assets.
 
@@ -60,7 +78,11 @@ As above, you can safely cancel out of the `Update your Workspace` dialog, if pr
 
 === Next Steps
 
+<<<<<<< HEAD
 Ensure your xref:build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:application-deployment.adoc[Application Deployment], xref:application-testing.adoc[Application Testing] and xref:additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets. For more information about accelerators, see xref:index.adoc[MuleSoft Accelerators].
+=======
+Ensure your xref:accel-build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:accel-application-deployment.adoc[Application Deployment], xref:accel-application-testing.adoc[Application Testing] and xref:accel-additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets.
+>>>>>>> ac8dd28 (Update fins-release-notes.adoc)
 
 == See Also
 

@@ -4,10 +4,6 @@
 
 MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers with foundational assets for common use cases to accelerate their digital transformation journey. Our pre-built APIs, implementation templates, reference architecture, and connectors allow IT teams to spend more time innovating, and less time building common integrations from scratch.
 
-Transparency is key to eliminating waste and managing costs in a manufacturing environment. Manufacturing companies have the data to make critical decisions, but are inhibited from making timely decisions due to siloed and disconnected data.
-
-MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers with foundational assets for common use cases to accelerate their digital transformation journey. Our pre-built APIs, implementation templates, reference architecture, and connectors allow IT teams to spend more time innovating, and less time building common integrations from scratch.
-
 == Use Cases
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/1.1/pages/Use%20case%201%20-%20Run-rate%20business%20management/[Use case 1 - Run-rate business management] — Syncing data from SAP S/4HANA and PIM systems into Manufacturing Cloud can be challenging and time consuming. This solution seamlessly sends customer and order data from SAP into Manufacturing Cloud. It also sends product data and price lists from a PIM system into Salesforce Manufacturing Cloud. As a result, it enables sales teams to have a complete view of customer sales agreements.Visibility into sales agreements provides predictability, which is critical to manage any manufacturing business. This precision in predictability helps manufacturers and their customers with their run-rate business:

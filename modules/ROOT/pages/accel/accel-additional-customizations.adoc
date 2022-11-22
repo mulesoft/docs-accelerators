@@ -63,23 +63,10 @@ The `common.notifications.send` property, defined in the common core library, is
 The default setting is "none". To enable the sending of notifications for a single application, you can override the value of this property at deployment time, either by adding the property to the `cloudHubDeployment` section in the application `pom.xml` file or by setting set it directly in Runtime Manager.
 
 To change the default behavior for all applications, modify the property value in the common core library, deploy the new version to Exchange, and then update all applications to reference the new version of the library.
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 == See Also
 
 * xref:general/accel-build-environment.adoc[Build environment]
 * xref:general/accel-application-deployment.adoc[Application deployment]
 * xref:general/accel-application-testing.adoc[Application testing]
-* The xref:index.adoc[MuleSoft Accelerators] main page
-=======
->>>>>>> 2a7111a (Squashing unverified commits from history)
-=======
-
-== See Also
-
-* xref:general/accel-build-environment.adoc[Build environment]
-* xref:general/accel-application-deployment.adoc[Application deployment]
-* xref:general/accel-application-testing.adoc[Application testing]
-* The xref:index.adoc[MuleSoft Accelerators] main page
->>>>>>> 1148e9a (Update common-services.adoc)
+* The xref:../index.adoc[MuleSoft Accelerators] main page
