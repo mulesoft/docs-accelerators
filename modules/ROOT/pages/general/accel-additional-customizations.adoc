@@ -1,12 +1,14 @@
+= Additional Customizations
+
 The following customizations can be made to better tailor the accelerator components to suit your needs.
 
-== Maven POM parent
+== Maven POM Parent
 
 All Accelerator projects inherit from a parent Maven POM. In addition to some global settings and repository references, this config also defines the versions of all MuleSoft connectors and modules used by applications.
 
 See the xref:../accel/accelerator-pom-parent.adoc[Customizations guide] to make changes to the POM parent file.
 
-== Common core library
+== Common Core Library
 
 It is a best practice in MuleSoft application development to place common flows, configuration settings, and other resources into a shared library. The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Accelerator Common Core Library - Source^] asset contains the source used by most implementation templates created for the accelerators. It is referenced as a Maven dependency only and is _not_ an application you can run.
 
@@ -14,7 +16,7 @@ If you need to make changes to it you will need to download the asset, extract t
 
 In order for applications to reference the new version, you must either install the updated library into your local Maven repository or deploy it to your own Exchange instance. The process is similar to that described for the POM Parent, described above. In each application, update the `accelerator-common-core.version` property in the POM file to use the new library when building.
 
-== Configurable properties
+== Configurable Properties
 
 In all applications, including the common core library, MuleSoft property files are located under the `src/main/resources/config` folder and are in YAML format. Each project has a `config-local.yaml` file, which holds configuration properties suitable for running the application from Anypoint Studio. The `config-dev.yaml` file contains properties for deployment to the DEV environment.
 
@@ -36,7 +38,7 @@ common.notifications.send=email
 
 For local deployments, prefix the above with `-M-D` on the command line.
 
-== Encryption keys
+== Encryption Keys
 
 For convenience, passwords, secrets, hostnames, URLs have been converted to plain-text so that it's easy to paste into Studio's "Run Configurations". This also eases CloudHub deployment by using "hidden" properties not stored in any files. However, all components do support the use of encrypted properties out-of-the-box.
 
@@ -44,7 +46,7 @@ To use secure properties, set an `encryption-key` (called "mule.key" in configur
 
 Refer to the https://docs.mulesoft.com/runtime-manager/secure-application-properties[MuleSoft documentation^] for more information.
 
-== Application messages
+== Application Messages
 
 Use `+application-msgs.********+` properties in YAML across all projects to configure the log messages as per the requirement. For example, `${application-msgs.before-post-inventory-call}` is used by the Logger before the HTTP POST inventory call to B2C Commerce.
 
@@ -64,7 +66,7 @@ To change the default behavior for all applications, modify the property value i
 
 == See Also
 
-* xref:accel-build-environment.adoc[Build environment]
-* xref:accel-application-deployment.adoc[Application deployment]
-* xref:accel-application-testing.adoc[Application testing]
+* xref:general/accel-build-environment.adoc[Build environment]
+* xref:general/accel-application-deployment.adoc[Application deployment]
+* xref:general/accel-application-testing.adoc[Application testing]
 * The xref:index.adoc[MuleSoft Accelerators] main page
