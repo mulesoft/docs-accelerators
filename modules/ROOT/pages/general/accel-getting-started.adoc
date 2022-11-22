@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 = Getting Started
 
 These instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel-build-environment.adoc[Build environment configuration] guide.
 
 == Import Directly from Anypoint Exchange
-=======
-= Getting started
-
-These instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel-build-environment.adoc[Build environment configuration] guide.
-
-== Import directly from Anypoint Exchange
->>>>>>> 1148e9a (Update common-services.adoc)
 
 All accelerator templates can be imported into Anypoint Studio directly from Exchange if your Anypoint credentials have been provided; refer to the Studio documentation for more details.
 
@@ -24,11 +16,7 @@ All accelerator templates can be imported into Anypoint Studio directly from Exc
 
 If it appears, you can safely cancel out of the `Update your Workspace` dialog as well as the subsequent `Are you sure?` prompt: our templates will work correctly with or without the suggested changes.
 
-<<<<<<< HEAD
 == Download and Import Manually
-=======
-== Download and import manually
->>>>>>> 1148e9a (Update common-services.adoc)
 
 The following instructions assume you are viewing this page from your browser:
 
@@ -45,15 +33,8 @@ As above, you can safely cancel out of the `Update your Workspace` dialog, if pr
 
 == See Also
 
-<<<<<<< HEAD
-* xref:general/accel-build-environment.adoc[Build environment]
-* xref:general/accel-application-deployment.adoc[Application deployment]
-* xref:general/accel-application-testing.adoc[Application testing]
-* xref:general/accel-additional-customizations.adoc[Additional customizations]
-=======
 * xref:accel-build-environment.adoc[Build environment]
 * xref:accel-application-deployment.adoc[Application deployment]
 * xref:accel-application-testing.adoc[Application testing]
 * xref:accel-additional-customizations.adoc[Additional customizations]
->>>>>>> 1148e9a (Update common-services.adoc)
 * The xref:index.adoc[MuleSoft Accelerators] main page
