@@ -3,29 +3,13 @@
 MuleSoft Accelerator for Retail includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives
 home.
 
-The MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster. Retail IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to create customer 360 profiles.
-
-Shoppers expect seamless and personalized experience across retail channels. Retailers have the data but disconnected systems prevent them from effectively leveraging the information. This portfolio of solutions helps retail IT teams ramp up faster without needing to start from scratch.
-
-//Functional diagram for the Retail accelerator
-
 == Use Cases
 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Use case 1 - Customer profile sync] — The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. Each of the following use cases is an extension of use case 1:
-** Use case 1a - Customer profile sync from B2C Commerce
-** Use case 1b - Customer profile sync from Salesforce
-** Use case 1c - Customer profile sync from Marketing Cloud
-** Use case 1d - Customer profile sync from SAP
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%202%20-%20Sales%20order%20sync/[Use case 2 - Sales order sync] — The Sales order sync use case enables retail developers to create and update sales orders across relevant applications. Each of the following is an extension of use case 2:
-** Sales order creation sync from B2C Commerce
-** Sales order update sync from SAP S/4HANA
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Use case 1 - Customer profile sync] — The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%202%20-%20Sales%20order%20sync/[Use case 2 - Sales order sync] — The Sales order sync use case enables retail developers to create and update sales orders across relevant applications. 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.6/pages/Use%20case%203%20-%20Product%20sync/[Use case 3 - Product sync] — The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Use case 4 - Real-time inventory management] — The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.6/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Use case 5 - Deliver relevancy with CDP] — The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format. Access to this information helps retailers create intelligent customer segmentation for personalized communications and promotions.
-
-== API-Led Diagram
-
-//API-led diagram for the Retail accelerator
 
 == Available Assets
 

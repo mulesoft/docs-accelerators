@@ -1,9 +1,6 @@
-= Title
-// Replace with actual API title
+= Accelerator SMS System API
 
-This asset is a component of the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^], which accelerates the implementation of essential integration use cases.
-
-The solution boosts time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architectures for financial services. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
+This asset is a shared component of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[MuleSoft Accelerators^], which accelerate the implementation of essential integration use cases.
 
 [cols="10,90"]
 |===
@@ -37,7 +34,7 @@ At a minimum, the following properties must be customized to reflect the target 
 
 == See also
 
-* xref:../../accel/accel-build-environment.adoc[Build environment]
-* xref:../../accel/accel-application-deployment.adoc[Application deployment]
-* xref:../../accel/accel-application-testing.adoc[Application testing]
-* xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:../accel-build-environment.adoc[Build environment]
+* xref:../accel-application-deployment.adoc[Application deployment]
+* xref:../accel-application-testing.adoc[Application testing]
+* xref:../../index.adoc[MuleSoft Accelerators]

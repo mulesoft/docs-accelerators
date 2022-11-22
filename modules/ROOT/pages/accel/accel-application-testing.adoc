@@ -14,7 +14,7 @@ From the command line, running any Maven goal that includes the testing phase wi
 
 == See Also
 
-* xref:general/accel-build-environment.adoc[Build environment]
-* xref:general/accel-application-deployment.adoc[Application deployment]
-* xref:general/accel-additional-customizations.adoc[Additional customizations]
-* The xref:index.adoc[MuleSoft Accelerators] main page
+* xref:accel-build-environment.adoc[Build environment]
+* xref:accel-application-deployment.adoc[Application deployment]
+* xref:accel-additional-customizations.adoc[Additional customizations]
+* The xref:../index.adoc[MuleSoft Accelerators] main page

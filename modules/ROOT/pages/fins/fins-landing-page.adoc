@@ -1,8 +1,6 @@
 = MuleSoft Accelerator for Financial Services
 
-Boost time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architecture for financial services.
-
-Financial services customers expect highly personalized products and services. MuleSoft Accelerator for Financial services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
+MuleSoft Accelerator for Financial services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
 
 == Use Cases
 
@@ -14,9 +12,9 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerato
 
 Accelerates the delivery and development of an enhanced onboarding solution to streamline banking loan origination and wealth management client account opening procedures. There are two extensions for this use case:
 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Use Case 2a - Customer Onboarding - Banking^] — Create an easy and straightforward onboarding experience by empowering consumers to apply for a loan via a digital channel.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Use Case 2a - Customer Onboarding - Banking^]
 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use Case 2b - Client Onboarding - Wealth management^] — Accelerate the delivery and development of a streamlined and automated client onboarding solution. Wealth management client service teams will be able to reduce the risk of manual errors by integrating systems and digitizing workflows. The result is a client 360 data model that delivers an enhanced experience for both the client and financial advisor.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use Case 2b - Client Onboarding - Wealth management^]
 
 === Use Case 3 - Payments Modernization
 
@@ -26,9 +24,9 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerato
 
 Accelerates the delivery and development of a home address validation solution for streamlining downstream processes impacted by postal address changes. There are two extensions for this use case:
 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use Case 4a - Address Change Orchestration: Insurance^] — Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use Case 4a - Address Change Orchestration: Insurance^]
 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Use Case 4b - Address Change Orchestration: Banking^] — Enhance your customer service teams’ upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Use Case 4b - Address Change Orchestration: Banking^]
 
 == Available Assets
 
@@ -56,10 +54,33 @@ include::partial$fins-custom-components-fragment.adoc[]
 
 === Shared Accelerator Assets
 
-include::partial$fins-shared-assets-fragment.adoc[]
+A number of shared assets and common services are also used by this accelerator.
+
+==== Accelerator System APIs
+
+[%hardbreaks]
+xref:../accel/system-apis/accelerator-email-system-api.adoc[Accelerator Email System API]
+xref:../accel/system-apis/accelerator-slack-system-api.adoc[Accelerator Slack System API]
+xref:../accel/system-apis/accelerator-sms-system-api.adoc[Accelerator SMS System API]
+
+==== Accelerator Process APIs
+
+[%hardbreaks]
+xref:../accel/process-apis/accelerator-notifications-process-api.adoc[Accelerator Notifications Process API]
+
+==== Accelerator Custom Components
+
+[%hardbreaks]
+xref:../accel/api-libraries/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
+xref:../accel/api-libraries/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
+xref:../accel/api-libraries/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
+xref:../accel/shared-components/accelerator-common-core.adoc[Accelerator Common Core]
+xref:../accel/shared-components/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
+xref:../accel/shared-components/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
+xref:../accel/shared-components/accelerator-pom-parent.adoc[Accelerator POM Parent]
 
 == See Also
 
-* Required xref:fins/fins-prerequisites.adoc[Prerequisites] for this accelerator
+* Required xref:fins-prerequisites.adoc[Prerequisites] for this accelerator
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange
 * Documentation home page for xref:index.adoc[MuleSoft Accelerators]
