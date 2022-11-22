@@ -1,8 +1,8 @@
-= Getting started
+= Getting Started
 
 These instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel-build-environment.adoc[Build environment configuration] guide.
 
-== Import directly from Anypoint Exchange
+== Import Directly from Anypoint Exchange
 
 All accelerator templates can be imported into Anypoint Studio directly from Exchange if your Anypoint credentials have been provided; refer to the Studio documentation for more details.
 
@@ -16,7 +16,7 @@ All accelerator templates can be imported into Anypoint Studio directly from Exc
 
 If it appears, you can safely cancel out of the `Update your Workspace` dialog as well as the subsequent `Are you sure?` prompt: our templates will work correctly with or without the suggested changes.
 
-== Download and import manually
+== Download and Import Manually
 
 The following instructions assume you are viewing this page from your browser:
 
@@ -33,8 +33,8 @@ As above, you can safely cancel out of the `Update your Workspace` dialog, if pr
 
 == See Also
 
-* xref:accel-build-environment.adoc[Build environment]
-* xref:accel-application-deployment.adoc[Application deployment]
-* xref:accel-application-testing.adoc[Application testing]
-* xref:accel-additional-customizations.adoc[Additional customizations]
+* xref:general/accel-build-environment.adoc[Build environment]
+* xref:general/accel-application-deployment.adoc[Application deployment]
+* xref:general/accel-application-testing.adoc[Application testing]
+* xref:general/accel-additional-customizations.adoc[Additional customizations]
 * The xref:index.adoc[MuleSoft Accelerators] main page
