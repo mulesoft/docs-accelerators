@@ -16,7 +16,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/accel-scheduling-serv
 
 The service may be built in two different ways, depending on the target deployment platform. The Anypoint Platform offers operational advantages to applications deployed in CloudHub when dealing with schedules.
 
-=== High-level workflow
+=== High-level Workflow
 
 The following is a high level description of the workflow for the scheduler process:
 
@@ -24,7 +24,7 @@ The following is a high level description of the workflow for the scheduler proc
 . The scheduling service calls the job configured for this event and updates the schedule status to "TRIGGERED" with a current timestamp. A Trigger ID and CALLBACK URL are generated.
 . Once the process completes, it does a call-back to the scheduling status service through the callback URLs to report the execution status.
 
-For service configuration details please refer to the xref:setup-guide.adoc[Setup Guide] as well as the implementation template for the services itself.
+For service configuration details please refer to the xref:./getting-started.adoc[Getting Started] guide as well as the implementation template for the services itself.
 
 == Notification Services
 
@@ -34,7 +34,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/accel-notification-se
 
 As you can see, the API offloads incoming requests directly to a queue in order to avoid blocking calling apps.
 
-=== High-level workflow
+=== High-level Workflow
 
 The following is a high level description of the workflow for the notification process:
 
@@ -46,7 +46,7 @@ The following is a high level description of the workflow for the notification p
 . A queue subscriber receives the message and routes it to the appropriate System API based on the `NOTIFICATION\_TYPE`.
 . The System API synchronously processes the message and posts it to the back-end service.
 
-For service configuration details please refer to the xref:setup-guide.adoc[Setup Guide] as well as the individual RAML specifications and implementation templates for the individual services themselves.
+For service configuration details please refer to the xref:./getting-started.adoc[Getting Started] guide as well as the individual RAML specifications and implementation templates for the individual services themselves.
 
 == Security Services
 
@@ -117,5 +117,5 @@ An easier way to apply policies to all APIs is to deploy them as Automated polic
 
 * The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
 * The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-archetype-api-template-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
-* The xref:getting-started.adoc[Getting started guide] provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
-* The xref:index.adoc[MuleSoft Accelerators] main page.
+* The xref:./getting-started.adoc[Getting Started] guide provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
+* The xref:./index.adoc[MuleSoft Accelerators] main page.

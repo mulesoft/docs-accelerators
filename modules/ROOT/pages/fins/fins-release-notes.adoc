@@ -1,5 +1,14 @@
 = Release Notes
 
+== v1.6
+13 September 2022
+
+=== Optimize customer experiences with CDP use case
+This use case  provides support for ingesting data from multiple sources into CDP to optimize customer experiences by using the results of CDP activations by providing Customer Service Representatives (CSRs) with marketing insights
+
+=== BIAN compliant assets
+This solution provides BIAN-compliant assets, including API specs and implementation templates. Discover and use over 50 assets in key business domains including servicing, sales, cards, loans, and deposits.
+
 == v1.5
 July 15, 2022
 
@@ -65,5 +74,5 @@ This accelerator also introduces the Core banking foundation use case, which all
 
 == See Also
 
-* xref:fins/fins-upgrade-notes.adoc[Upgrade Notes]
-* xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:./fins-upgrade-notes.adoc[Upgrade Notes]
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

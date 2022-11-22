@@ -2,6 +2,10 @@
 
 This page provides some basic information for those upgrading to newer releases of the MuleSoft Accelerator for Financial Services.
 
+== Upgrading from Release 1.5 to Release 1.6
+
+There were no breaking changes introduced by this release. The existing Salesforce Customers System API was enhanced to support the posting of messages to chatter feeds; all other APIs included in this release were net new.
+
 == Upgrading from Release 1.4 to Release 1.5
 
 The following changes introduced in this release may impact existing deployments:
@@ -98,7 +102,7 @@ The following steps should be performed when upgrading existing installations to
 . Create a new database schema for the Credit Card System.
 . Apply the schema creation script found in the Credit Card System API implementation project.
 . Undeploy the existing MDM and FIS System APIs.
-. Execute the Anypoint-MQ-Configuration Postman collection in the fins-common-resources project to create required MQ destinations.
+. Execute the Anypoint-MQ-Configuration Postman collection in the `fins-common-resources` project to create required MQ destinations.
 . Deploy/redeploy all implementation assets required for both use cases.
 
 === Verification Steps
@@ -113,4 +117,4 @@ The following tests can be done to ensure proper deployment of all components fo
 
 == See Also
 
-* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

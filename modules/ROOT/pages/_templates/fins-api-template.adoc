@@ -1,9 +1,7 @@
 = Title
 // Replace with actual API title
 
-This asset is a component of the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^], which accelerates the implementation of essential integration use cases.
-
-The solution boosts time-to-value in your customer 360 initiatives with pre-built APIs, templates, and reference architectures for financial services. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
+This asset is a component of the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^], which accelerates the implementation of essential integration use cases.
 
 [cols="10,90"]
 |===
@@ -15,29 +13,27 @@ The solution boosts time-to-value in your customer 360 initiatives with pre-buil
 
 // Add brief summary describing this API
 
-== Using this asset
+== Using this Asset
 
 The implementation template for this API can be imported directly into Anypoint Studio from Exchange. Ensure the required prerequisites are available and the mandatory property overrides are in place before attempting to run or deploy the application.
 
-=== Anypoint Exchange assets
+=== Anypoint Exchange Assets
 
 // Replace with correct links
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/api-spec/[API Specification^]
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/api/[Implementation Template^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
 
-=== Prerequisite setup
+=== Prerequisite Setup
 
 // List prerequisites specific to this asset
 
-=== Mandatory property overrides
+=== Mandatory Property Overrides
 
 At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
 
 // Insert table of deployment properties
 
-== See also
+== See Also
 
-* xref:../../accel/accel-build-environment.adoc[Build environment]
-* xref:../../accel/accel-application-deployment.adoc[Application deployment]
-* xref:../../accel/accel-application-testing.adoc[Application testing]
-* xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:/getting-started.adoc[Getting Started]
+* xref:/fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

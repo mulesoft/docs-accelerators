@@ -4,9 +4,13 @@ This guide will help you configure your local build environment to ensure succes
 
 == Quick Start
 
-To get started, you must set up your local build environment with the required software and Maven build configuration. Next, download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, and so on) - be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
+To get started:
 
-Once configured, applications can be deployed individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once. The following instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel-build-environment.adoc[Build environment configuration] guide.
+. Set up your xref:accel/accel-build-environment.adoc[local build environment] with the required software and Maven build configuration.
+. Download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, etc.). Be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
+. Deploy the applications individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once.
+
+Refer to the sections below for more details on obtaining and using accelerator assets.
 
 === Asset Types
 
@@ -24,6 +28,8 @@ The following table provides more information about the types of accelerator ass
 === Obtaining accelerator assets
 
 All accelerator assets are available from the main Anypoint Exchange site and are freely downloadable by customers with current subscriptions. Refer to the sections in the page navigation menu on the left for more information about configuring, building, and deploying these assets.
+
+The following instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel/accel-build-environment.adoc[build environment configuration] guide.
 
 ==== Import Directly from Anypoint Exchange
 
@@ -56,7 +62,7 @@ As above, you can safely cancel out of the `Update your Workspace` dialog, if pr
 
 === Next Steps
 
-Ensure your xref:accel-build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:accel-application-deployment.adoc[Application Deployment], xref:accel-application-testing.adoc[Application Testing] and xref:accel-additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets.
+Ensure your xref:accel/accel-build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:accel/accel-application-deployment.adoc[Application Deployment], xref:accel/accel-application-testing.adoc[Application Testing] and xref:accel/accel-additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets.
 
 == See Also
 
@@ -64,4 +70,4 @@ Ensure your xref:accel-build-environment.adoc[Build Environment] is configured c
 * xref:accel/accel-application-deployment.adoc[Application deployment]
 * xref:accel/accel-application-testing.adoc[Application testing]
 * xref:accel/accel-additional-customizations.adoc[Additional customizations]
-* xref:index.adoc[MuleSoft Accelerators]
+* xref:./index.adoc[MuleSoft Accelerators]

@@ -2,7 +2,7 @@
 
 This page describes the customizations and extensions that have been made to the original CIM RAML library.
 
-== General customizations
+== General Customizations
 
 * All types have been refactored into separate RAML libraries, corresponding to the latest Subject Areas defined by the consortium.
 * In each library, types are organized according to the entity groups defined in the model. These types are then published via the main library file for quick reference.
@@ -23,11 +23,11 @@ This page describes the customizations and extensions that have been made to the
 * A `nil` union was also added to optional, non-string scalar properties to support a ternary state model (i.e., set to a value, set to an empty/null value, not present at all).
 * Many properties were changed from mandatory to optional to avoid unnecessary hard-coding of values - particularly where no reasonable default values could be identified.
 
-== Additions made to core CIM types
+== Additions Made to Core CIM Types
 
 The core CIM model continues to evolve and expand. When one or more accelerator assets require additional types, which are not currently included in the official model, an assessment is made to determine whether or not it is reasonable to expect that they would be added (at least in some form) in future releases of the model. If an appropriate subject area and entity group can be identified for these types, they have been added to the core libraries. All other types must be defined outside of the CIM libraries.
 
-== Type extensions
+== Type Extensions
 
 The primary objective of creating CIM type extensions is to re-introduce type composition - in a controlled fashion - to make original core types "whole" for applications that need them. The following rules applied to all core types for which one or more properties had composition removed to reduce external dependencies:
 
@@ -42,4 +42,5 @@ The primary objective of creating CIM type extensions is to re-introduce type co
 
 == See Also
 
-* xref:cim-landing-page.adoc[CIM Home Page]
+* xref:./cim-subject-areas.adoc[CIM Subject Areas]
+* xref:./cim-landing-page.adoc[CIM Home Page]

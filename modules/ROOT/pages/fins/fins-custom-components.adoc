@@ -2,3 +2,7 @@
 = FINS Custom Components
 
 include::partial$fins-custom-components-fragment.adoc[]
+
+== See Also
+
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

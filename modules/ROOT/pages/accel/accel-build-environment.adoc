@@ -25,8 +25,8 @@ Perform the following steps to prepare your workstation for building, deploying,
 
 === Configuring the Accelerator Build
 
-. Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
-. Import the project folder into Studio using the `accel/Existing Projects into Workspace` wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-resources`, you can select the project in the `Package Explorer` view and press `F2` to rename it: +
+. Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-build-src[Accelerator Common Build^] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-build`.
+. Import the project folder into Studio using the `accel/Existing Projects into Workspace` wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-build`, you can select the project in the `Package Explorer` view and press `F2` to rename it: +
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-doc-setupguide_01.png[sfc-doc-setupguide_01.png,599]
 . Copy the contents of the `settings-accelerators.xml` file to your local Maven `settings.xml` file, which is usually located under `$HOME/.m2` on Linux/MacOS hosts and `%USERPROFILE%\.m2` on Windows hosts; create a new file if it does not exist. If the file already exists, make sure to merge the contents of the `settings-accelerators.xml` with the existing. You may also choose to keep the file separate and specify the `-s <filename>` option when running Maven commands; in Studio you will also need to override the user settings path (under `Anypoint Studio/Maven/User Settings` in the Preferences dialog). _Note: This step is optional, if the project is intended to build only in Anypoint Studio_
@@ -53,7 +53,7 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 
 | Maven cannot find one or more dependencies
 | Credentials provided for the `server` entries may be invalid; if they are correct, it is possible Maven cached an earlier attempt to download the dependencies
-| First verify your credentials and then add then run `mvn clean -U` to force Maven to update all dependencies. You can also force an update by removing cached dependencies from the `.m2/repository` folder. If all else fails, download the POM Parent and Common Core assets and install them locally as per the xref:accel-additional-customizations.adoc[Additional customization] page.
+| First verify your credentials and then add then run `mvn clean -U` to force Maven to update all dependencies. You can also force an update by removing cached dependencies from the `.m2/repository` folder. If all else fails, download the POM Parent and Common Core assets and install them locally as per the xref:./accel-additional-customizations.adoc[Additional customizations] page.
 
 | Studio reports "null" version errors
 | Studio is not resolving the parent POM correctly
@@ -74,5 +74,8 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 
 == See Also
 
-* xref:accel-build-environment.adoc[Build environment]
-* The xref:../index.adoc[MuleSoft Accelerators] main page
+* xref:../getting-started.adoc[Getting Started]
+* xref:./accel-application-deployment.adoc[Application Deployment]
+* xref:./accel-additional-customizations.adoc[Additional Customizations]
+* xref:./accel-application-testing.adoc[Application Testing]
+* xref:../index.adoc[MuleSoft Accelerators]
