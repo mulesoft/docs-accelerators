@@ -62,3 +62,8 @@ July 27, 2021
 This is the first release of the MuleSoft Accelerator for Financial Services.
 
 This accelerator also introduces the Core banking foundation use case, which allows for the display of a customer’s financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
+
+== See Also
+
+* xref:fins/fins-upgrade-notes.adoc[Upgrade Notes]
+* xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
