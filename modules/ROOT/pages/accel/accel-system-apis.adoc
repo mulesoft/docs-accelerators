@@ -1,0 +1,7 @@
+= Accelerator System APIs
+
+include::partial$accel-system-apis-fragment.adoc[]
+
+== See Also
+
+* xref:../index.adoc[MuleSoft Accelerators]

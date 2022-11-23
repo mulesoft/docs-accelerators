@@ -10,7 +10,7 @@ The following provides guidance on Salesforce CDP setup required to support the 
 * <<calculated-insights,Calculated insights>>
 * <<create-and-activate-segments,Create and activate segments>>
 
-== CDP provisioning
+== CDP Provisioning
 
 . Log in to your Salesforce CDP instance with the link provided in your admin email and use the credentials provided. If this was deployed in your existing Salesforce instance, please use your current Salesforce Admin password.
 . Click the Setup gear icon and then CDP Setup.
@@ -19,7 +19,7 @@ The following provides guidance on Salesforce CDP setup required to support the 
 
 image::https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-cdp-provisioning.png[fins-cdp-setup-cdp-provisioning.png,75%]
 
-== Connect data
+== Connect Data
 
 Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object.
 
@@ -105,11 +105,11 @@ When updating your schema, be aware that:
 
 Example Schema: Refer to https://help.salesforce.com/s/articleView?id=sf.c360_a_connect_an_ingestion_source.htm&type=5[this link] for an example schema.
 
-== Create a data stream
+== Create Data Streams
 
 Data streams are the connections and associated data ingested into Salesforce CDP. Salesforce CDP includes many data streams that can operate on different refresh schedules. Check https://help.salesforce.com/s/articleView?id=c360_a_data_stream_schedule.htm&type=5&language=en_US[Data Stream Schedule in Salesforce CDP] to know about how and when these data streams update.
 
-=== Create a Salesforce CRM data stream
+=== Create a Salesforce CRM Data Stream
 
 Create a data stream to begin the flow of data from a Salesforce CRM data source. Add additional permissions to your Salesforce CDP Salesforce Connector Integration permission set in your Salesforce CRM org (such as your Salesforce FSC Banking instance) to ingest standard and custom objects and fields into Salesforce CDP. Note: if you are prompted with an error stating those objects cannot be added, you might need to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce CRM in Salesforce CDP] (see below for further details).
 
@@ -156,7 +156,7 @@ For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator
 | FINS_Banking-Contact
 |===
 
-=== Create an Ingestion API data stream
+=== Create an Ingestion API Data Stream
 
 After uploading the schema file, create a data stream from your source objects.
 
@@ -214,9 +214,9 @@ Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce 
 
 For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API] specification and https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API] implementation template assets.
 
-== Data modeling and data mapping
+== Data Modeling and Mapping
 
-=== Data cleansing and preparation
+=== Data Cleansing and Preparation
 
 Cleaning and preparing your data is critical for success in using Salesforce CDP`' segmentation and activation capabilities.
 
@@ -236,7 +236,7 @@ These use cases are examples of using formula expression functionality in Salesf
 
 NOTE: Formula fields can be created at the time of data stream creation or later. Click the `New Formula Field` at the time of DataStrem creation (Step 6) or Click the DataStream from recently viewed data streams list. Click `Add Source Fields` on the data stream page.
 
-=== Data mapping
+=== Data Mapping
 
 After creating your data streams, you must associate your data source objects (DSOs) to data model objects (DMOs). Only mapped fields and objects with relationships can be used for Segmentation and Activation.
 
@@ -294,7 +294,7 @@ NOTE: The names given to DMO are critical as they are used for Calculated Insigh
 
 Below are the DMOs and relationships that needs to be maintained when Data mappings are done between Data Stream and DMOs.
 
-*Data Relationships between DMOs*
+*Data Relationships Between DMOs*
 
 |===
 | Object | Cardinality | Related Object
@@ -1465,7 +1465,7 @@ Examples of Calculated Insights are available in our CDP Help Documentation and 
 
 For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Calculated Insights to gain visibility across our Account (FinancialAccount and ExternalFinancialAccount), WebEngagement along with Customer Profile info.
 
-*Cross-selling money market account*
+*Cross-selling Money Market Account*
 
 For `Cross-selling money market account` segment (created in later steps) create two Calculated Insights:
 
@@ -1497,7 +1497,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-calcula
  +
 </br>
 
-*Up-selling mortgage account*
+*Up-selling Mortgage Account*
 
 For `Up-selling mortgage account` segment (created in later steps) create three Calculated Insights:
 
@@ -1538,7 +1538,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-calcula
  +
 </br>
 
-== Create and activate segments
+== Create and Activate Segments
 
 === Segmentation
 

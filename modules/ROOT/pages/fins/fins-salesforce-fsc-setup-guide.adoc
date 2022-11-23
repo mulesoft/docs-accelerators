@@ -2,7 +2,7 @@
 
 This page describes how to configure an existing Salesforce Financial Services Cloud (FSC) instance to support the default MuleSoft Accelerator for Financial Services functionality. These instructions assume that the required FSC packages have been deployed to the target Salesforce instance and that the appropriate permissions have already been assigned.
 
-== Record types
+== Record Types
 
 The following record types must exist in the corresponding objects for the accelerator assets to function correctly.
 
@@ -104,7 +104,7 @@ The steps for creating the `Financial Account Transfer Transaction` record type 
 
 The new record type can be verified as above.
 
-== Custom fields
+== Custom Fields
 
 The following fields must be created in the corresponding objects.
 
@@ -410,9 +410,9 @@ The following fields must be created in the corresponding objects.
 
 *Unique fields should be case-sensitive
 
-=== Create via Apex script
+=== Create via Apex Script
 
-An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[Common Resources project]. Download this project and follow the steps below.
+An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project]. Download this project and follow the steps below.
 
 . Click on Salesforce Setup icon and select `Developer Console` to open a new console window
 . Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
@@ -424,7 +424,7 @@ An Apex class called `CustomFieldUtility` can be used to create custom fields pr
 
 Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
 
-=== Create manually via Salesforce
+=== Create Manually via Salesforce
 
 To create each of these custom fields and enable visibility for them on page layouts:
 
@@ -440,7 +440,7 @@ Repeat these steps for each custom field in the above list.
 
 TIP: Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles it may be more efficient to go to the `+Users -> Profiles -> {profile} -> Object Settings+` for each object and adjust the permissions for multiple fields at once.
 
-=== Additional notes
+=== Additional Notes
 
 * The *Card Type* picklist values are *DebitCard* and *CreditCard*.
 * The *Credit Card Type* picklist values are *Amex*, *Discover*, *Mastercard*, *Visa*, and *Other*.
@@ -459,7 +459,7 @@ When the Financial Services Cloud feature is added to the Salesforce instance, t
 . Search for `Financial Accounts` and Select it.
 . Click `Add 1 Nav Item` and then click *Save*.
 
-== Enable transaction status
+== Enable Transaction Status
 
 The default implementation of the solution requires the enablement of additional values for the transaction status picklist in the target FSC instance. This can be done as follows:
 
@@ -470,7 +470,7 @@ The default implementation of the solution requires the enablement of additional
 . Scroll down to the `Values` section and click *New*.
 . Enter the values for `Cancelled` and `Initial` on separate lines and click *Save*.
 
-== Enable transaction types
+== Enable Transaction Types
 
 The default implementation of the solution also requires the enablement of additional transaction types. The steps are similar to those above:
 
@@ -501,7 +501,7 @@ To display a specific page layout based on the record type, a Workflow rule is c
 . In `Specify New Field Value`, select `Financial Account Transfer Transaction` from the record type dropdown.
 . Click *Save*.
 
-== Enable multiple currencies
+== Enable Multiple Currencies
 
 The default implementation of the solution requires the enablement of multiple currency support in the target FSC instance. This can be done as follows:
 
@@ -512,12 +512,12 @@ The default implementation of the solution requires the enablement of multiple c
 
 If desired, click the *Currency Setup* button to add support for additional currency codes (e.g., EUR).
 
-== Create PushTopics
+== Create Push Topics
 
-The following PushTopics must be created in order to capture updates from Salesforce. The Apex scripts to create these PushTopics are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template].
+The following Push Topics must be created in order to capture updates from Salesforce. The Apex scripts to create these Push Topics are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template].
 
 |===
-| Salesforce Object | Apex script location | PushTopic name
+| Salesforce Object | Apex script location | Push Topic name
 
 | Account
 | /src/test/resources/scripts/accounts-push-topic.apxc
@@ -552,7 +552,7 @@ The following PushTopics must be created in order to capture updates from Salesf
 | Cards
 |===
 
-Follow the below steps to create the above PushTopics
+Follow the below steps to create the above Push Topics
 
 . Edit the above scripts to set the `LastModifiedBy` and `RecordType` conditions to the correct IDs from your org (see *Additional notes*, below)
 . Click on Salesforce Setup icon.
@@ -560,14 +560,14 @@ Follow the below steps to create the above PushTopics
 . Copy and paste the script from the `Apex script location` column in the above table and execute.
 . Repeat above step #3 for all the Salesforce objects in the above table.
 
-=== Additional notes
+=== Additional Notes
 
-* All the PushTopics created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
-* The PushTopics Accounts, and AccountAddresses also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Account' and sObjectType='Account'` in the Developer Console.
-* The PushTopic Households also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
-* If creation of the PushTopic fails due to a missing field error it is most likely a permissions problem. Check the field level permissions for the object under Profile Settings for the same profile used by the service account.
+* All the Push Topics created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
+* The Push Topics Accounts, and AccountAddresses also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Account' and sObjectType='Account'` in the Developer Console.
+* The Push Topic Households also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
+* If creation of the Push Topic fails due to a missing field error it is most likely a permissions problem. Check the field level permissions for the object under Profile Settings for the same profile used by the service account.
 
-== Adding Mailing Address to Person Account details page
+== Adding Mailing Address to Person Account details Page
 
 The following instructions assume that https://help.salesforce.com/s/articleView?id=sf.account_person_enable.htm&type=5[support for Person Accounts] is already enabled. Perform the following actions to enable Mailing Address on the Person Account detail page.
 
@@ -580,7 +580,7 @@ The following instructions assume that https://help.salesforce.com/s/articleView
 . Drag the field from the palette and drop it in the `Address Information` section of the layout
 . Click the *Save* button.
 
-== Creating Contacts that are not associated with an Account
+== Creating Contacts not Associated with an Account
 
 These instructions assume that the Salesforce FSC instance includes access to the `Contact` object.
 
@@ -592,7 +592,7 @@ These instructions assume that the Salesforce FSC instance includes access to th
 . Deselect the `Required` checkbox and confirm your changes.
 . Click the *Save* button.
 
-== Adding fields to the Opportunity page layout
+== Adding Fields to Opportunity Page
 
 Perform the following actions to enable custom fields in Opportunity default page.
 
@@ -606,7 +606,7 @@ Perform the following actions to enable custom fields in Opportunity default pag
 . Repeat the last two steps to add the `Document Signatues Recieved`, `Ach Transfer Auth Document Id`, and `Asset Transfer Auth Document Id` fields.
 . Click the *Save* button.
 
-== Configure Connected App for authentication
+== Configure Connected App for Authentication
 
 Follow the below steps to generate the `Consumer Key` and `Consumer Secret` values required for Salesforce authentication.
 
@@ -632,9 +632,9 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 . Verify your identity by entering the verification code that was emailed to you.
 . Copy the key and secret values and update your `settings.xml` file as described above.
 
-Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[Common Resources project] for a sample `settings.xml` file that can be used as a starting point.
+Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project] for a sample `settings.xml` file that can be used as a starting point.
 
-== Generating security token for service account
+== Generating Security Token for Service Account
 
 A token needs to be generated for the service account used by the Mule applications in order to connect to the FSC instance.
 
@@ -646,7 +646,7 @@ A token needs to be generated for the service account used by the Mule applicati
 
 NOTE: If the option to reset your security token is not available, it is likely that one or more Login IP Ranges are in effect. These can be temporarily removed from the settings page of the profile assigned to the service account user.
 
-== ContactPoints Mappings
+== Contact Point Mappings
 
 The following table lists the conditions used to assign ContactPoints in Salesforce:
 

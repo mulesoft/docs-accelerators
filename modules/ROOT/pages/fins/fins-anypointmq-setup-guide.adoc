@@ -1,12 +1,12 @@
 = Anypoint MQ Setup Guide
 
-The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[Common Resources project].
+The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources project].
 
-== Environment settings
+== Environment Settings
 
-The collection requires the `dev` environment to be created and assigned proper values reflecting your target Anypoint org before running any of the requests. A template for this environment, which can be imported directly into your Postman workspace, has been provided in the Common Resources project.
+The collection requires the `dev` environment to be created and assigned proper values reflecting your target Anypoint org before running any of the requests. A template for this environment, which can be imported directly into your Postman workspace, has also been provided in the FINS Common Resources project.
 
-== Running the collection
+== Running the Collection
 
 The collection itself defines variables that must be overridden prior to running any requests. The contents of the collection have been organized into separate folders, which should be executed in the following order:
 
@@ -17,7 +17,7 @@ The collection itself defines variables that must be overridden prior to running
 
 Requests in the `Verification` folder can be run to validate the results of the above operations. If desired, objects created by the collection can be cleaned up by running requests found in the `Deletions` folder.
 
-== Destinations created
+== Verify Destinations
 
 The following MQ destinations will be created on successful execution.
 

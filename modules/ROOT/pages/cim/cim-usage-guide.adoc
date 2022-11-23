@@ -233,5 +233,5 @@ Since we are converting the value back to 2-decimal precision in this case, roun
 
 == See Also
 
-* xref:./cim-subject-areas.adoc[CIM Subject Areas] page
+* xref:./cim-subject-areas.adoc[CIM Subject Areas]
 * xref:./cim-landing-page.adoc[CIM Home Page]

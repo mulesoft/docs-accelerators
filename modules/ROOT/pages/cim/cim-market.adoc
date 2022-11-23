@@ -16,5 +16,5 @@ https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-
 
 == See Also
 
-* xref:./cim-subject-areas.adoc[CIM Subject Areas] page
+* xref:./cim-subject-areas.adoc[CIM Subject Areas]
 * xref:./cim-landing-page.adoc[CIM Home Page]

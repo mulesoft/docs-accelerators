@@ -102,7 +102,7 @@ The following steps should be performed when upgrading existing installations to
 . Create a new database schema for the Credit Card System.
 . Apply the schema creation script found in the Credit Card System API implementation project.
 . Undeploy the existing MDM and FIS System APIs.
-. Execute the Anypoint-MQ-Configuration Postman collection in the fins-common-resources project to create required MQ destinations.
+. Execute the Anypoint-MQ-Configuration Postman collection in the `fins-common-resources` project to create required MQ destinations.
 . Deploy/redeploy all implementation assets required for both use cases.
 
 === Verification Steps
