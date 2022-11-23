@@ -25,7 +25,7 @@ Connectors are specialized data streams that communicate with external sources t
 
 Salesforce CDP has connectors for Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
 
-The https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case uses the following connectors:
+The https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case uses the following connectors:
 
 * Salesforce CRM - to connect data from a Salesforce CRM instance to CDP
 * Ingestion API - to connect data from external source systems like Snowflake, Databricks, and Amazon S3 via MuleSoft's Salesforce CDP connector.
@@ -48,7 +48,7 @@ In Salesforce CDP, you can establish a connection to other Salesforce CRM orgs. 
 
 After the connection is established, the Salesforce CDP admin can either use bundles that can automatically deploy data or set up their own data streams.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, the name of the Connector used is `Salesforce FSC Banking`. This name will appear under `Salesforce Org` drop down while creating a new Data Stream.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, the name of the Connector used is `Salesforce FSC Banking`. This name will appear under `Salesforce Org` drop down while creating a new Data Stream.
 
 === Ingestion API
 
@@ -61,14 +61,14 @@ Follow the steps in each section below to setup and configure ingestion API to p
 . In Salesforce CDP, select CDP Setup.
 . Click Ingestion API.
 . Click New, enter a name (for example, FINS_Banking-Data-Connector) for the API source, then click Save. On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. *Note:* Ingestion API schemas have set requirements - review the schema requirements before ingestion.
-. Click Upload Schema and navigate to the location of the file you want to use. Select the file and click Open. For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case the schema file `mule-cdp-connector-schema.yaml` is available under `/src/test/resources/cdp-schema` of the Implementation Template https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-snowflake-financial-sys-api[FINS Salesforce CDP System API]
+. Click Upload Schema and navigate to the location of the file you want to use. Select the file and click Open. For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case the schema file `mule-cdp-connector-schema.yaml` is available under `/src/test/resources/cdp-schema` of the Implementation Template https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-snowflake-financial-sys-api[FINS Salesforce CDP System API]
 . Preview all the detected objects and their attributes in your schema.
 . Click Save. The connector page reflects the updated status.
 . After the schema file is uploaded, you can create data streams to begin sending data from your source system.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to CDP through MuleSoft's Salesforce CDP connector using the Ingestion API. The name of the Connector used is `Salesforce FSC Banking`, which will appear under `Ingestion API` drop down while creating a new Data Stream.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to CDP through MuleSoft's Salesforce CDP connector using the Ingestion API. The name of the Connector used is `Salesforce FSC Banking`, which will appear under `Ingestion API` drop down while creating a new Data Stream.
 
-The schema used for the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case can be found in the implementation template https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API]. The following objects are to be added:
+The schema used for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case can be found in the implementation template https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API]. The following objects are to be added:
 
 * FinancialAccount
 * FinancialTransaction
@@ -144,7 +144,7 @@ To create data streams from Salesforce CRM data source:
 . Click Deploy. Your Salesforce CRM data stream is now created.
 . To create more data streams, repeat steps 6 through 10.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create two data streams from Salesforce CRM (Salesforce Financial Service Cloud instance).
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create two data streams from Salesforce CRM (Salesforce Financial Service Cloud instance).
 
 |===
 | Object in Salesforce CRM | Name of the DataStream
@@ -167,7 +167,7 @@ After uploading the schema file, create a data stream from your source objects.
 . Check the objects found in the schema you want to use and click Next.
 . At the New Data Stream dialog box, configure the following:
  ** Primary Key: A true Primary Key needs to be leveraged for CDP. If one does not exist, you will need to create a Formula Field for the Primay Key.
- ** Category: Choose between Profile and Engagement. *Note:* For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, the category for all the objects in the schema are Profile.
+ ** Category: Choose between Profile and Engagement. *Note:* For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, the category for all the objects in the schema are Profile.
  ** Record Modified Date: To order Profile modifications, use the Record Modified Date. *Note:* A record modified field that indicates when each incoming record was last modified is required for Engagement object types. While the field requirement is optional for Profile and Other objects, it is encourage to provide the record modified field to ensure incoming records are processed in the right order.
  ** Date Time Field: Used to represent when Engagement from an external source occurred at ingestion.
  ** Click the `New Formula Field` (Optional).
@@ -176,7 +176,7 @@ After uploading the schema file, create a data stream from your source objects.
 . Click Deploy. If you have only created one data stream, the data stream's record page appears. If you've created multiple data streams, the view refreshes to show all recently viewed data streams.
 . Map the data for the data stream before use. Wait up to one hour for your data to appear in your data stream.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, add schema for the following objects and create a seperate data stream for each of the objects by repeating steps 5 through 9. At step 6, click `New Formula field` with `Field Label` as `PartyType` with `Formula Return` Type as `Text`. Under `Transformation Formula`, apply the formula to return `Individual` as Text (for example: IF(sourceField['globalPartyId'],'Individual','Individual'))
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, add schema for the following objects and create a seperate data stream for each of the objects by repeating steps 5 through 9. At step 6, click `New Formula field` with `Field Label` as `PartyType` with `Formula Return` Type as `Text`. Under `Transformation Formula`, apply the formula to return `Individual` as Text (for example: IF(sourceField['globalPartyId'],'Individual','Individual'))
 
 |===
 | Schema Object in Ingestion API | Name of the DataStream
@@ -212,7 +212,7 @@ The MuleSoft Connector for Salesforce CDP provides customers a pipeline to send 
 
 Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, refer to the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API] specification and https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API] implementation template assets.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API] specification and https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API] implementation template assets.
 
 == Data modeling and data mapping
 
@@ -260,7 +260,7 @@ Objects in the data model created by the customer for CDP implementation are cal
 +
 When mapping your party area data, complete the required fields and relationships to successfully use Identity Resolution, Segmentation, and Activation.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, map the Data Streams to Data Model Objects (DMO) as per the below table.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, map the Data Streams to Data Model Objects (DMO) as per the below table.
 
 |===
 | Data Stream Name | Custom Data Model Object (DMO) | Standard Data Model Object (DMO)
@@ -1429,7 +1429,7 @@ Access Identity Resolution from Salesforce CDP after mapping entities to the CIM
 * https://help.salesforce.com/s/articleView?id=c360_a_resolution_troubleshooting.htm&type=5&language=en_US[Optimize Identity Resolution]
 * https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Salesforce CDP]
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, use the Custom Match Rules leveraging Identification Number of Party Identification Object for Global Party Id Match followed by Normalized Email Address.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, use the Custom Match Rules leveraging Identification Number of Party Identification Object for Global Party Id Match followed by Normalized Email Address.
 
 image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-identity-match-rules.png[fins-cdp-setup-identity-match-rules.png,90%]
  +
@@ -1463,7 +1463,7 @@ Calculated Insights can be built Using Calculated Insights Builder, ANSI SQL, Sa
 
 Examples of Calculated Insights are available in our CDP Help Documentation and in our CDP Salesforce GitHub Instance. Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Calculated Insights to gain visibility across our Account (FinancialAccount and ExternalFinancialAccount), WebEngagement along with Customer Profile info.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Calculated Insights to gain visibility across our Account (FinancialAccount and ExternalFinancialAccount), WebEngagement along with Customer Profile info.
 
 *Cross-selling money market account*
 
@@ -1557,7 +1557,7 @@ TIP: Leave the Publish Schedule as *Don't Refresh for now*, and then fill it in 
 
 Segment On: Segment On defines the target entity (object) used to build your segment. For example, you can build a segment on Unified Individual or Account or Individual. You can choose any entity marked as type Profile during ingestion.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Segments on Individual.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Segments on Individual.
 
 *Cross-selling money market account:*
 
@@ -1609,7 +1609,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-segmen
 
 Create activation targets to build, and activate data segments with Salesforce CDP.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create a Cloud File Storage (S3) Activation Target and a Marketing Cloud Activation Target.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create a Cloud File Storage (S3) Activation Target and a Marketing Cloud Activation Target.
 
 *Activation Target - Cloud File Storage (S3)*
 
@@ -1647,8 +1647,8 @@ Before creating an activation target, configure the Marketing Cloud connector in
 . Click Setup gear icon and then CDP Setup.
 . Select Marketing Cloud.
 . Enter the Credentials to authenticate your Marketing Cloud account. You can proceed with the next step in the setup only if the authentication is successful.
-. Data Source setup - this step is optional. This needs to be set up if you are planning to ingest data from Marketing Cloud into Salesforce CDP. *Note:* For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, this step is skipped.
-. Select Business Units to activate -  this step is optional. To add or remove business units (BU), click the arrows between the two columns. *Note:* For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, select business units to publish segments to Marketing Cloud.
+. Data Source setup - this step is optional. This needs to be set up if you are planning to ingest data from Marketing Cloud into Salesforce CDP. *Note:* For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, this step is skipped.
+. Select Business Units to activate -  this step is optional. To add or remove business units (BU), click the arrows between the two columns. *Note:* For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, select business units to publish segments to Marketing Cloud.
 
 Create an activation target in Salesforce CDP to publish segments to Marketing Cloud business units.
 
@@ -1697,7 +1697,7 @@ After you create a segment in Salesforce CDP, you can publish a segment to an ac
 
 Your segment publishes on the next publish scheduled for the selected activation target.
 
-For the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Activations to both Activation Targets S3 and Marketing Cloud.
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP] use case, create Activations to both Activation Targets S3 and Marketing Cloud.
 
 *Cross-selling money market account/Up-selling mortgage account*
 
@@ -1718,5 +1718,5 @@ Below are steps to create an Activation with an Activiation Target:
 
 == See Also
 
-* xref:fins-prerequisites.adoc[Prerequisites]
-* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:./fins-prerequisites.adoc[Prerequisites]
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

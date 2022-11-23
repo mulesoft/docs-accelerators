@@ -1,4 +1,4 @@
-= CIM Usage Guidelines
+= CIM Usage Guide
 
 The physical representations of the Cloud Information Model (CIM), such as RAML and DDL, implement a highly-normalized view of objects and relationships, where enumerated values are defined as separate entities. In our accelerator solutions, these relationships will be simplified to reduce complexity and overall development effort. This document describes our use of the model in more detail.
 
@@ -233,4 +233,5 @@ Since we are converting the value back to 2-decimal precision in this case, roun
 
 == See Also
 
-* xref:cim-landing-page.adoc[CIM Home Page]
+* xref:./cim-subject-areas.adoc[CIM Subject Areas] page
+* xref:./cim-landing-page.adoc[CIM Home Page]

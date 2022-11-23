@@ -412,7 +412,7 @@ The following fields must be created in the corresponding objects.
 
 === Create via Apex script
 
-An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-common-resources-src[Common Resources project]. Download this project and follow the steps below.
+An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[Common Resources project]. Download this project and follow the steps below.
 
 . Click on Salesforce Setup icon and select `Developer Console` to open a new console window
 . Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
@@ -514,7 +514,7 @@ If desired, click the *Currency Setup* button to add support for additional curr
 
 == Create PushTopics
 
-The following PushTopics must be created in order to capture updates from Salesforce. The Apex scripts to create these PushTopics are located in the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template].
+The following PushTopics must be created in order to capture updates from Salesforce. The Apex scripts to create these PushTopics are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template].
 
 |===
 | Salesforce Object | Apex script location | PushTopic name
@@ -632,7 +632,7 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 . Verify your identity by entering the verification code that was emailed to you.
 . Copy the key and secret values and update your `settings.xml` file as described above.
 
-Download the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-common-resources-src[Common Resources project] for a sample `settings.xml` file that can be used as a starting point.
+Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[Common Resources project] for a sample `settings.xml` file that can be used as a starting point.
 
 == Generating security token for service account
 
@@ -709,3 +709,8 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 |===
 
 *The default values for all the flags is `false`
+
+== See Also
+
+* xref:./fins-prerequisites.adoc[Prerequisites]
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

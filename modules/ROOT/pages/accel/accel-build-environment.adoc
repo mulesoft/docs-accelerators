@@ -53,7 +53,7 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 
 | Maven cannot find one or more dependencies
 | Credentials provided for the `server` entries may be invalid; if they are correct, it is possible Maven cached an earlier attempt to download the dependencies
-| First verify your credentials and then add then run `mvn clean -U` to force Maven to update all dependencies. You can also force an update by removing cached dependencies from the `.m2/repository` folder. If all else fails, download the POM Parent and Common Core assets and install them locally as per the xref:accel-additional-customizations.adoc[Additional customization] page.
+| First verify your credentials and then add then run `mvn clean -U` to force Maven to update all dependencies. You can also force an update by removing cached dependencies from the `.m2/repository` folder. If all else fails, download the POM Parent and Common Core assets and install them locally as per the xref:./accel-additional-customizations.adoc[Additional customization] page.
 
 | Studio reports "null" version errors
 | Studio is not resolving the parent POM correctly
@@ -74,5 +74,8 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 
 == See Also
 
-* xref:accel-build-environment.adoc[Build environment]
-* The xref:../index.adoc[MuleSoft Accelerators] main page
+* xref:../getting-started.adoc[Getting Started]
+* xref:./accel-application-deployment.adoc[Application Deployment]
+* xref:./accel-additional-customizations.adoc[Additional Customizations]
+* xref:./accel-application-testing.adoc[Application Testing]
+* xref:../index.adoc[MuleSoft Accelerators]

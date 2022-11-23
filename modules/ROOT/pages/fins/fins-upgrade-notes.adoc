@@ -2,6 +2,10 @@
 
 This page provides some basic information for those upgrading to newer releases of the MuleSoft Accelerator for Financial Services.
 
+== Upgrading from Release 1.5 to Release 1.6
+
+There were no breaking changes introduced by this release. The existing Salesforce Customers System API was enhanced to support the posting of messages to chatter feeds; all other APIs included in this release were net new.
+
 == Upgrading from Release 1.4 to Release 1.5
 
 The following changes introduced in this release may impact existing deployments:
@@ -113,4 +117,4 @@ The following tests can be done to ensure proper deployment of all components fo
 
 == See Also
 
-* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

@@ -16,37 +16,17 @@ The original distribution of CIM was produced by an open consortium formed to de
 
 == Organization
 
-The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity.
-
-The following subject areas are currently supported - follow the links or refer to the tabs on the left for more details on each domain.
-
-|===
-| Name | Description
-
-| xref:cim-finance.adoc[Finance]
-| Entities related to finances, such as payments and payment methods.
-
-| xref:cim-fulfill.adoc[Fulfill]
-| Entities related to the fulfillment of goods and services, such as shipments.
-
-| xref:cim-market.adoc[Market]
-| Entities related to the marketing and promotion of goods and services, such as customers, suppliers, and contact information
-
-| xref:cim-produce.adoc[Produce]
-| Entities related to actual goods and services, such as products and catalogs
-
-| xref:cim-sell.adoc[Sell]
-| Entities related to the selling of goods and services, such as sales orders and channels
-|===
+The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity. Refer to the xref:./cim-subject-areas.adoc[CIM Subject Areas] page for the list of subject areas that are currently supported.
 
 == Implementation
 
 The version of CIM used by the MuleSoft Accelerators is represented as a set of RAML library fragments. There is a core library for each domain, plus extension libraries that aggregate data types from multiple core libraries for a more complete representation of the model. The entities in each core library are logically grouped into related entities within that Subject Area. Each core library provides a set of examples and JSON schemas, which can be useful for defining metadata types when developing applications in Anypoint Studio.
 
-Refer to the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-cim-global-library[Accelerator CIM Global Library^] home page to get started with using the model.
+Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library[Accelerator CIM Global Library^] home page to get started with using the model.
 
 == See Also
 
-* The xref:cim-usage-guide.adoc[Usage guide] provides some helpful guidelines on how to use and interpret the model.
-* The xref:cim-customizations.adoc[Model customizations] page describes the customizations and extensions that have been made to the original Cloud Information Model for use by the MuleSoft Accelerators.
+* The xref:./cim-usage-guide.adoc[Usage Guide] provides some helpful guidelines on how to use and interpret the model.
+* The xref:./cim-customizations.adoc[Model Customizations] page describes the customizations and extensions that have been made to the original Cloud Information Model for use by the MuleSoft Accelerators.
+* xref:./cim-subject-areas.adoc[CIM Subject Areas]
 * xref:../data-models.adoc[Accelerator Data Models]

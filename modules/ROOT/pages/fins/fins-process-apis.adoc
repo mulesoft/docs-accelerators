@@ -1,3 +1,519 @@
 = FINS Process APIs
 
-include::partial$fins-process-apis-fragment.adoc[]
+These assets are components of the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^], which accelerates the implementation of essential integration use cases.
+
+[cols="10,90"]
+|===
+| image:https://www.mulesoft.com/ext/solutions/draft/images/bulb.png[bulb.png]
+| The xref:../../getting-started.adoc[Getting started guide] provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+|===
+
+//include::partial$fins-process-apis-fragment.adoc[]
+
+== FINS Bank Accounts Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Bank Loans Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Core Banking Poller Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Credit Card Poller Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Customer Addresses Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Customer Leads Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Customers Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Notifications Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments Initiation Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments InterBank International Execution Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments InterBank National Execution Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments IntraBank International Execution Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments IntraBank National Execution Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments Order Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments Remittances Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments Router Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Payments Simulator Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== FINS Reconciliation Process API
+
+Brief summary describing this API.
+
+=== Anypoint Exchange assets
+
+Refer to the following links to download the assets for this API:
+//Replace with correct links:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+
+=== Prerequisite setup
+
+Prerequisites specific to this asset.
+
+=== Mandatory property overrides
+
+At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
+
+[%header%autowidth.spread]
+|===
+| Property Name | Description
+| `api.autodiscoveryID` | Required if using API Manager to secure this API
+// Complete the table of mandatory property overrides
+|===
+
+== See Also
+
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

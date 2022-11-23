@@ -1,6 +1,6 @@
 = Anypoint MQ Setup Guide
 
-The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-common-resources-src/[Common Resources project].
+The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[Common Resources project].
 
 == Environment settings
 
@@ -105,5 +105,5 @@ Note that the `accelerator-notification` destinations may already exist in your 
 
 == See Also
 
-* xref:fins-prerequisites.adoc[Prerequisites]
-* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:./fins-prerequisites.adoc[Prerequisites]
+* xref:./fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

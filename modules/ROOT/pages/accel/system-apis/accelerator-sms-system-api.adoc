@@ -19,8 +19,8 @@ The implementation template for this API can be imported directly into Anypoint 
 === Anypoint Exchange assets
 
 // Replace with correct links
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/api-spec/[API Specification^]
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/api/[Implementation Template^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
 
 === Prerequisite setup
 

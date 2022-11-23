@@ -15,4 +15,4 @@ The MuleSoft Solutions team has therefore developed common data models for use i
 == See Also
 
 * The xref:cim/cim-landing-page.adoc[Cloud Information Model] home page.
-* The xref:index.adoc[MuleSoft Accelerators] main page.
+* The xref:./index.adoc[MuleSoft Accelerators] main page.
