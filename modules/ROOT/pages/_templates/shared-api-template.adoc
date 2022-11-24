@@ -35,7 +35,5 @@ At a minimum, the following properties must be customized to reflect the target 
 
 == See Also
 
-* xref:../accel/accel-build-environment.adoc[Build environment]
-* xref:../accel/accel-application-deployment.adoc[Application deployment]
-* xref:../accel/accel-application-testing.adoc[Application testing]
-* xref:./index.adoc[MuleSoft Accelerators]
+* xref:/getting-started.adoc[Getting Started]
+* xref:/index.adoc[MuleSoft Accelerators]

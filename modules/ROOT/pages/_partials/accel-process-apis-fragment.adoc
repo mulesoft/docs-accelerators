@@ -1,2 +1,2 @@
 [%hardbreaks]
-xref:./process-apis/accelerator-notifications-prc.adoc[Accelerator Notifications Process API]
+xref:./process-apis/accelerator-notifications-prc-api.adoc[Accelerator Notifications Process API]

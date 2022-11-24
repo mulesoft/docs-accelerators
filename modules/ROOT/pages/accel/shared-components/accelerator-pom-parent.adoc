@@ -40,4 +40,5 @@ To make the new version available to other developers:
 
 == See Also
 
-* xref:../../index.adoc[MuleSoft Accelerators]
+* xref:/getting-started.adoc[Getting Started]
+* xref:/index.adoc[MuleSoft Accelerators]

@@ -11,7 +11,7 @@
 *** xref:accel//system-apis/accelerator-slack-system-api.adoc[Accelerator Slack System API]
 *** xref:accel//system-apis/accelerator-sms-system-api.adoc[Accelerator SMS System API]
 ** xref:accel/accel-process-apis.adoc[Accelerator Process APIs]
-*** xref:accel/process-apis/.adoc[Accelerator Notifications Process API]
+*** xref:accel/process-apis/accelerator-notifications-prc-api.adoc[Accelerator Notifications Process API]
 ** xref:accel/accel-api-libraries.adoc[Accelerator API Libraries]
 *** xref:accel/api-libraries/accelerator-cim-global-library.adoc[CIM Global Library]
 *** xref:accel/api-libraries/accelerator-cim-market-library.adoc[CIM Market Library]

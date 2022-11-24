@@ -18,4 +18,4 @@ This asset is a shared component of the https://anypoint.mulesoft.com/exchange/o
 
 == See Also
 
-* xref:../../index.adoc[MuleSoft Accelerators]
+* xref:/index.adoc[MuleSoft Accelerators]
