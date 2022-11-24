@@ -13,10 +13,10 @@ This asset is a shared component of the https://anypoint.mulesoft.com/exchange/o
 
 // Add brief summary describing this asset
 
-== Using this asset
+== Using this Asset
 
 // Add a summary of how to use this asset
 
-== See also
+== See Also
 
 * xref:../index.adoc[MuleSoft Accelerators]

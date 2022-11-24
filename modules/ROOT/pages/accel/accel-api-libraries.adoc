@@ -6,4 +6,5 @@ include::partial$accel-api-libraries-fragment.adoc[]
 
 == See Also
 
+* xref:./accel-common-assets.adoc[Accelerator Common Assets]
 * xref:../index.adoc[MuleSoft Accelerators]

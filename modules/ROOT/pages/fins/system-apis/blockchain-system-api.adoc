@@ -13,10 +13,11 @@ This asset is a component of the https://www.mulesoft.com/exchange/org.mule.exam
 
 // Add brief summary describing this asset
 
-== Using this asset
+== Using this Asset
 
 // Add a summary of how to use this asset
 
-== See also
+== See Also
 
+* xref:../../getting-started.adoc[Getting Started]
 * xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

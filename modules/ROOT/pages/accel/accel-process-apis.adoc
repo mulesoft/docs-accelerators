@@ -4,4 +4,5 @@ include::partial$accel-process-apis-fragment.adoc[]
 
 == See Also
 
+* xref:./accel-common-assets.adoc[Accelerator Common Assets]
 * xref:../index.adoc[MuleSoft Accelerators]

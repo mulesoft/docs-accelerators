@@ -10,31 +10,137 @@ This asset is a component of the https://www.mulesoft.com/exchange/org.mule.exam
 
 == Summary
 
-// Add brief summary describing this API
+The FINS Customers Process API is used to orchestrate the Customer, Individual, Organization, and Household creation and update to/from the Salesforce FSC Banking, Salesforce FSC Insurance, Salesforce FSC Wealth, Salesforce Marketing, LOS, and Core Banking systems. 
 
-== Using this asset
+This API uses the Accelerator Global Party Process API to maintain a global representation of a customer, which can provide a 360 degree view of the customer by storing identifiers representing the customer in various systems. A unique global ID is generated for each customer to uniquely identify the profiles being synchronized across all target systems. 
+
+The Cloud Information Model (CIM) is leveraged to interact with each of the System APIs that have been developed for Customer sync use cases.
+
+== Business Process
+
+The following sequence diagram describes the process of synchronizing updates made to customers in Salesforce Financial Services Cloud to downstream systems:
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/fins-customer-update-sync-fsc-sequence.png[FSC Customer Sync]
+
+== Using this Asset
 
 The implementation template for this API can be imported directly into Anypoint Studio from Exchange. Ensure the required prerequisites are available and the mandatory property overrides are in place before attempting to run or deploy the application.
 
-=== Anypoint Exchange assets
+=== Anypoint Exchange Assets
 
-// Replace with correct links
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/api-spec/[API Specification^]
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/api/[Implementation Template^]
+Refer to the following links to download the assets for this API:
 
-=== Prerequisite setup
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-customers-prc-api-spec/[API Specification^]
 
-// List prerequisites specific to this asset
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-customers-prc-api/[Implementation Template^]
 
-=== Mandatory property overrides
+=== Prerequisite Setup
+
+The implementation template has the following dependencies:
+
+* Anypoint MQ Destinations
+* Accelerator Global Party Process API
+* FINS Salesforce Customers System API (supports multiple deployments for separate FSC instances)
+* FINS Salesforce Marketing System API
+* FINS Core Banking Customers System API
+* FINS Loan Origination System API
+
+Please review the use cases described on the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] solution pages for more information about dependencies on other APIs and services.
+
+==== Anypoint MQ Destinations
+
+In addition to the Anypoint MQ client application credentials, the following destinations must be created and made accessible to this API:
+
+* fins-partyrole-update-queue
+* fins-partyrole-update-dl-queue
+* fins-party-update-queue
+* fins-party-update-dl-queue
+
+The xref:./custom-components/fins-common-resources.adoc[FINS Common Resources] asset contains a Postman collection, which can be used to create the destinations and client application required for use by accelerator applications.
+
+==== API Dependencies
+
+The following table lists all endpoints used by this API (assuming all syncronization targets are enabled).
+
+[%header%autowidth.spread]
+|===
+| API name | Endpoint | Action
+| Accelerator Global Party Process API | get:/individuals | Search a individual party
+| Accelerator Global Party Process API | get:/customers | Search a customer party role
+| Accelerator Global Party Process API | get:/organizations | Search an organization party
+| Accelerator Global Party Process API | get:households | Search an household party
+| Accelerator Global Party Process API | put:/individuals | Create or update an individual party
+| Accelerator Global Party Process API | put:/customers | Create or update a customer party role
+| Accelerator Global Party Process API | put:/organizations | Create or update an organization party
+| Accelerator Global Party Process API | put:/households | Create or update household party
+| Accelerator Global Party Process API | put:/parties/{partyId}/contactPoints | Update contact points for a party
+| Accelerator Global Party Process API | put:/parties/{partyId}/externalIds | Update external IDs for a party
+| Accelerator Global Party Process API | put:/partyRoles/{partyRoleId}/externalIds | Update external IDs for a party role
+| Accelerator Global Party Process API | get:/individuals/{individualId} | Retrieve an existing individual party
+| Accelerator Global Party Process API | get:/customers/{customerId} | Retrieve an existing customer party role
+| Accelerator Global Party Process API | get:/organizations/{organizationId} | Retrieve an existing organization party
+| Accelerator Global Party Process API | get:/households/{householdId} | Retrieve an existing household party
+| FINS Salesforce Customers System API | get:/customers | Search for an existing customer
+| FINS Salesforce Customers System API | post:/customers | Create a new  customer
+| FINS Salesforce Customers System API | patch:/customers/{customerId} | Update an existing customer
+| FINS Salesforce Customers System API | get:/customers/{customerId} | Retrieve an existing customer
+| FINS Salesforce Marketing System API | get:/subscribers | Search for an existing subscriber or individual party
+| FINS Salesforce Marketing System API | post:/subscribers | Create a new subscriber or individual party
+| FINS Salesforce Marketing System API | patch:/subscribers/{subscriberId} | Update an existing subscriber or individual party
+| FINS Salesforce Marketing System API | get:/subscribers/{subscriberId} | Retrieve an existing subscriber or individual party
+| FINS Core Banking Customers System API | get:/customers | Search for an existing customer
+| FINS Core Banking Customers System API | post:/customers | Create a new  customer
+| FINS Core Banking Customers System API | patch:/customers/{customerId} | Update an existing customer
+| FINS Core Banking Customers System API | get:/customers/{customerId} | Retrieve an existing customer
+| FINS Core Banking Customers System API | get:/customers/{customerId}/contactPoints | Retrieve contact points of an existing customer
+| FINS Core Banking Customers System API | put:/customers/{customerId}/contactPoints | Update contact points of an existing customer
+| FINS Loan Origination System API | get:/customers | Search for an existing customer
+| FINS Loan Origination System API | post:/customers | Create a new  customer
+| FINS Loan Origination System API | patch:/customers/{customerId} | Update an existing customer
+| FINS Loan Origination System API | get:/customers/{customerId} | Retrieve an existing customer
+|===
+
+=== Mandatory Property Overrides
 
 At a minimum, the following properties must be customized to reflect the target deployment environment before attempting to run or deploy the application.
 
-// Insert table of deployment properties
+[%header%autowidth.spread]
+|===
+|Property Name | Description
+|api.autodiscoveryID | Required if using API Manager to secure this API
+|anypoint-mq.server-url | Anypoint MQ URL where the  message Exchange, Topics, queues have been created
+|anypoint-mq.client-id | Anypoint MQ Client Id to access messages from MQ
+|anypoint-mq.client-secret | Anypoint MQ Client Secret to access messages from MQ
+|global-party-prc.host | Accelerator Global Party Process API Hostname
+|global-party-prc.port | Accelerator Global Party Process API Port
+|global-party-prc.base-path | Accelerator Global Party Process API Base path
+|salesforce-fsc-banking-sys.host | Hostname of FINS Salesforce Customers System API that is pointing to FSC Banking
+|salesforce-fsc-banking-sys.port | Port of FINS Salesforce Customers System API that is pointing to FSC Banking
+|salesforce-fsc-banking-sys.base-path | Base Path of FINS Salesforce Customers System API that is pointing to FSC Banking
+|salesforce-fsc-banking-sys.enabled | Flag to enable or disable sync to FINS Salesforce Customers System API that is pointing to FSC Banking
+|salesforce-fsc-insurance-sys.host | Hostname of FINS Salesforce Customers System API that is pointing to FSC Insurance
+|salesforce-fsc-insurance-sys.port | Port of FINS Salesforce Customers System API that is pointing to FSC Insurance
+|salesforce-fsc-insurance-sys.base-path | Base Path of FINS Salesforce Customers System API that is pointing to FSC Insurance
+|salesforce-fsc-insurance-sys.enabled | Flag to enable or disable sync to FINS Salesforce Customers System API that is pointing to FSC Insurance
+|salesforce-fsc-wealth-sys.host | Hostname of FINS Salesforce Customers System API that is pointing to FSC Wealth
+|salesforce-fsc-wealth-sys.port | Port of FINS Salesforce Customers System API that is pointing to FSC Wealth
+|salesforce-fsc-wealth-sys.base-path | Base Path of FINS Salesforce Customers System API that is pointing to FSC Wealth
+|salesforce-fsc-wealth-sys.enabled | Flag to enable or disable sync to FINS Salesforce Customers System API that is pointing to FSC Wealth
+|core-banking-sys.host | FINS Core Banking Customers System API Hostname
+|core-banking-sys.port | FINS Core Banking Customers System API Port
+|core-banking-sys.base-path | FINS Core Banking Customers System API Base path
+|core-banking-sys.enabled | Flag to enable or disable sync to FINS Core Banking Customers System API
+|los-sys.host | Loan Origination System API Hostname
+|los-sys.port | Loan Origination System API Port
+|los-sys.base-path | Loan Origination System API Base path
+|los-sys.enabled | Flag to enable or disable sync to Loan Origination System API
+|marketing-sys.host | FINS Salesforce Marketing System API Hostname
+|marketing-sys.port | FINS Salesforce Marketing System API Port
+|marketing-sys.base-path | FINS Salesforce Marketing System API path
+|marketing-sys.enabled | Flag to enable or disable sync to FINS Salesforce Marketing System API
+|===
 
-== See also
+== See Also
 
-* xref:../../accel/accel-build-environment.adoc[Build environment]
-* xref:../../accel/accel-application-deployment.adoc[Application deployment]
-* xref:../../accel/accel-application-testing.adoc[Application testing]
+* xref:../../getting-started.adoc[Getting Started]
 * xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
