@@ -143,4 +143,4 @@ At a minimum, the following properties must be customized to reflect the target 
 == See Also
 
 * xref:../../getting-started.adoc[Getting Started]
-* xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:/fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]

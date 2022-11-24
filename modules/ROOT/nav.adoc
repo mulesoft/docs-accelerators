@@ -101,7 +101,7 @@
 *** xref:fins/listeners/salesforce-marketing-listener.adoc[FINS Salesforce Marketing Listener]
 *** xref:fins/listeners/salesforce-topic-listener.adoc[FINS Salesforce Topic Listener]
 ** xref:fins/fins-custom-components.adoc[FINS Custom Components]
-*** xref:fins/custom-components/fins financial-account-sync-lwc.adoc[FINS Financial Account Sync Lightning Web Component]
+*** xref:fins/custom-components/fins-financial-account-sync-lwc.adoc[FINS Financial Account Sync LWC]
 *** xref:fins/custom-components/fins-common-resources.adoc[FINS Common Resources]
 *** xref:fins/custom-components/fins-fraud-analysis-application.adoc[FINS Fraud Analysis Application]
 *** xref:fins/custom-components/fins-open-banking-library.adoc[FINS Open Banking Library]

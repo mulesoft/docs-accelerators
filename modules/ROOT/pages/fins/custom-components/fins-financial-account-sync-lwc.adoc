@@ -19,4 +19,4 @@ This asset is a component of the https://www.mulesoft.com/exchange/org.mule.exam
 
 == See Also
 
-* xref:../fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
+* xref:/fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
