@@ -140,6 +140,568 @@ At a minimum, the following properties must be customized to reflect the target 
 |marketing-sys.enabled | Flag to enable or disable sync to FINS Salesforce Marketing System API
 |===
 
+== Data Mappings
+
+This section provides information generated from the DataWeave scripts included in the project, such as function definitions, variable definitions, and data mapping tables.
+
+=== map-customer-create-request
+
+Customer Create Mapping for a System (Salesforce,CoreBanking and LOS)
+
+> Source: `./src/main/resources/dwl/map-customer-create-request.dwl`
+
+==== Mapping Tables
+
+Maps customer profiles of SourceSystem to MDM in CIM format which is further used for creation of Customer in other systems (Salesforce,Core Banking etc.,). The object structure is same with only exception of Global Customer Id being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored to uniquely identify the customer.
+
+|===
+| MDM | System | Description
+
+| id
+| id
+| The id will be null for creating a new Customer
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party
+| party
+| The Party
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in SAP ECC
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in a System
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be updated in a System
+|===
+
+=== map-salesforce-customer-create-request
+
+Create Customer Mapping for Salesforce
+
+> Source: `./src/main/resources/dwl/map-salesforce-customer-create-request.dwl`
+
+==== Mapping Tables
+
+Maps customer profiles from SourceSystem to MDM in CIM format which is further used to create a Customer in Salesforce. The object structure is same with only exception of GlobalCustomerId being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce to uniquely identify the customer.
+
+|===
+| MDM | Salesforce | Description
+
+| id
+| id
+| The id will be null for creating a new Customer in Salesforce
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party
+| party
+| The Party
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Salesforce
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in Salesforce
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be stored in Salesforce
+|===
+
+=== map-salesforce-customer-update-request
+
+Update Customer Mapping for Salesforce
+
+> Source: `./src/main/resources/dwl/map-salesforce-customer-update-request.dwl`
+
+==== Mapping Tables
+
+Maps customer profiles from SourceSystem to MDM in CIM format which is further used to update a Customer in Salesforce. The object structure is same with only exception of GlobalCustomerId being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce to uniquely identify the customer.
+
+|===
+| MDM | Salesforce | Description
+
+| id
+| id
+| The id of the Customer in Salesforce
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party.id
+| null
+| The id of the Party
+
+| party.partyType
+| Party
+| The type of Party
+
+| party.personName
+| firstName lastName
+| The full name of the Party
+
+| party.firstName
+| firstName
+| The first name of the Party
+
+| party.lastName
+| lastName
+| The last name of the Party
+
+| party.externalIds
+| externalIds
+| The GlobalPartyId of Customer as in MDM.This will not be stored in Salesforce
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Salesforce
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in Salesforce
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be updated in Salesforce
+|===
+
+=== map-salesforce-individual-create-request
+
+Create Contact Mapping for Salesforce
+
+> Source: `./src/main/resources/dwl/map-salesforce-individual-create-request.dwl`
+
+==== Mapping Tables
+
+Maps Individual profiles from SourceSystem to MDM in CIM format which is further used to create an Individual in Salesforce. The object structure is same with only exception of GlobalPartyId being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce to uniquely identify the Contact.
+
+|===
+| MDM | Salesforce | Description
+
+| id
+| id
+| The id will be null for creating a new Contact in Salesforce
+
+| partyType
+| partyType
+| The Party type for the Contact - Set as Individual
+
+| contactPoints
+| contactPoints
+| The ContactPoints associated with the Individual
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Salesforce
+
+| personName
+| personName
+| The Name of the Contact to be stored in Salesforce
+
+| firstName
+| firstName
+| The First Name of the Contact to be stored in Salesforce
+
+| lastName
+| lastName
+| The Last Name of the Contact to be stored in Salesforce
+|===
+
+=== map-salesforce-individual-update-request
+
+Update Contact Mapping for Salesforce
+
+> Source: `./src/main/resources/dwl/map-salesforce-individual-update-request.dwl`
+
+==== Mapping Tables
+
+Maps Individual profiles of SourceSystem to MDM in CIM format which is further used to update a Contact in Salesforce. The object structure is same with only exception of GlobalPartyId being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce to uniquely identify the Contact.
+
+|===
+| MDM | Salesforce | Description
+
+| id
+| id
+| The id will be null for creating a new Contact in Salesforce
+
+| partyType
+| partyType
+| The Party type for the Contact - Set as Individual
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Salesforce
+
+| personName
+| personName
+| The Name of the Contact to be stored in Salesforce
+
+| firstName
+| firstName
+| The First Name of the Contact to be stored in Salesforce
+
+| lastName
+| lastName
+| The Last Name of the Contact to be stored in Salesforce
+|===
+
+=== map-salesforce-household-create-request
+
+Create Household Mapping for Salesforce
+
+> Source: `./src/main/resources/dwl/map-salesforce-household-create-request.dwl`
+
+==== Mapping Tables
+
+Maps Household profiles from SourceSystem to MDM in CIM format which is further used to create an Household in Salesforce. The object structure is same with only exception of GlobalPartyId being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce to uniquely identify the Contact.
+
+|===
+| MDM | Salesforce | Description
+
+| id
+| id
+| The id will be null for creating a new Contact in Salesforce
+
+| partyType
+| partyType
+| The Party type for the Contact - Set as Household
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Salesforce
+
+| name
+| name
+| The Name of the Household to be stored in Salesforce
+|===
+
+=== map-salesforce-household-update-request
+
+Update Household Mapping for Salesforce
+
+> Source: `./src/main/resources/dwl/map-salesforce-household-update-request.dwl`
+
+==== Mapping Tables
+
+Maps Household profiles from SourceSystem to MDM in CIM format which is further used to update an Household in Salesforce. The object structure is same with only exception of GlobalPartyId being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce to uniquely identify the Contact.
+
+|===
+| MDM | Salesforce | Description
+
+| id
+| id
+| The id will be null for creating a new Contact in Salesforce
+
+| partyType
+| partyType
+| The Party type for the Contact - Set as Household
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Salesforce
+
+| name
+| name
+| The Name of the Household to be stored in Salesforce
+|===
+
+=== map-subscriber-create-request
+
+Individual/Subscriber Creation Mapping for Salesforce Marketing
+
+> Source: `./src/main/resources/dwl/map-subscriber-create-request.dwl`
+
+==== Mapping Tables
+
+Maps Individual associated with Customer Profile of SourceSystem (Salesforce) to MDM in CIM format which is further used for creation of Subscriber in Salesforce Marketing. The object structure is same with only exception of Global Customer Id being sent as an ExternalId with ExternalIdType as MDM. This Id will be stored in Salesforce Marketing to uniquely identify an Individual.
+
+|===
+| MDM | Salesforce Marketing | Description
+
+| id
+| id
+| The id will be null for creating a new Subscriber in Salesforce Marketing
+
+| partyType
+| Individual
+| The type of party - default as Individual
+
+| personName
+| firstName lastName
+| The full name of the individual
+
+| firstName
+| firstName
+| The first name of the individual
+
+| lastName
+| lastName
+| The last name of the individual
+
+| externalIds
+| externalIds
+| The GlobalPartyId of an Individual as in MDM.This will not be stored in Salesforce Marketing
+
+| contactPoints
+| contactPoints
+| The ContactPoints  of an Individual used for creating a Subscriber in Salesforce Marketing Cloud. ContactPointEmailAddress is only used by Salesforce Marketing Cloud
+|===
+
+=== map-subscriber-update-request
+
+Individual/Subscriber Update Mapping for Salesforce Marketing
+
+> Source: `./src/main/resources/dwl/map-subscriber-update-request.dwl`
+
+==== Mapping Tables
+
+Maps Individual associated with Customer Profile of SourceSystem (Salesforce) to MDM in CIM format which is further used for creation of Subscriber in Salesforce Marketing. The object structure is same with only exception of GlobalPartyId being sent as an ExternalId to be stored in Salesforce Marketing to uniquely identify an Individual.
+
+|===
+| MDM | Salesforce Marketing | Description
+
+| id
+| id
+| The id will be GlobalPartyId for updating an existing Subscriber in Salesforce Marketing
+
+| partyType
+| Individual
+| The type of party - default as Individual
+
+| personName
+| firstName lastName
+| The full name of the individual
+
+| firstName
+| firstName
+| The first name of the individual
+
+| lastName
+| lastName
+| The last name of the individual
+
+| externalIds
+| externalIds
+| The GlobalPartyId of an Individual as in MDM.This will not be stored in Salesforce Marketing
+
+| contactPoints
+| contactPoints
+| The ContactPoints  of an Individual used for creating a Subscriber in Salesforce Marketing Cloud. ContactPointEmailAddress is only used by Salesforce Marketing Cloud
+|===
+
+=== map-core-banking-customer-create-request
+
+Customer Create Mapping for Core Banking
+
+> Source: `./src/main/resources/dwl/map-core-banking-customer-create-request.dwl`
+
+==== Mapping Tables
+
+Maps customer profiles of SourceSystem to CIM format which is further used for creation of Customer in Core Banking. The object structure is same with only exception of Global Customer Id being sent as an ExternalId with ExternalIdType as MDM.
+
+|===
+| MDM | Core Banking | Description
+
+| id
+| id
+| The id will be null for creating a new Customer in Core Banking
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party
+| party
+| The Party
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Core Banking
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in Core Banking
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be updated in Core Banking
+|===
+
+=== map-core-banking-customer-update-request
+
+Customer Update Mapping for Core Banking
+
+> Source: `./src/main/resources/dwl/map-core-banking-customer-update-request.dwl`
+
+=== Mapping Tables
+
+Maps customer profiles of SourceSystem in CIM format which is further used for creation of Customer in Core Banking. The object structure is same with only exception of Global Customer Id being sent as an ExternalId with ExternalIdType as MDM.
+
+|===
+| MDM | Core Banking | Description
+
+| id
+| id
+| The id will be Global Customer Id to update an existing Customer in Core Banking
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party.id
+| null
+| The id of the Party
+
+| party.partyType
+| Party
+| The type of Party
+
+| party.personName
+| firstName lastName
+| The full name of the Party
+
+| party.firstName
+| firstName
+| The first name of the Party
+
+| party.lastName
+| lastName
+| The last name of the Party
+
+| party.externalIds
+| externalIds
+| The GlobalPartyId of Customer as in MDM.This will not be stored in Core Banking
+
+| party.contactPoints
+| contactPoints
+| The contactPoints of Customer as in MDM.
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in Core Banking
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in Core Banking
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be updated in Core Banking
+|===
+
+=== map-los-customer-create-request
+
+Customer Create Mapping for Loan Origination System (LOS)
+
+> Source: `./src/main/resources/dwl/map-los-customer-create-request.dwl`
+
+==== Mapping Tables
+
+Maps customer profiles of SourceSystem to CIM format which is further used for creation of Customer in LOS. The object structure is same with only exception of Global Customer Id being sent as an ExternalId with ExternalIdType as MDM.
+
+|===
+| MDM | Core Banking | Description
+
+| id
+| id
+| The id will be null for creating a new Customer in LOS
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party
+| party
+| The Party
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in LOS
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in LOS
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be updated in LOS
+|===
+
+=== map-los-customer-update-request
+
+Customer Update Mapping for Loan Origination System (LOS)
+
+> Source: `./src/main/resources/dwl/map-los-customer-update-request.dwl`
+
+==== Mapping Tables
+
+Maps customer profiles of SourceSystem in CIM format which is further used for creation of Customer in LOS. The object structure is same with only exception of Global Customer Id being sent as an ExternalId with ExternalIdType as MDM.
+
+|===
+| MDM | LOS | Description
+
+| id
+| id
+| The id will be Global Customer Id to update an existing Customer in LOS
+
+| partyRoleType
+| partyRoleType
+| The type of party role - usually Customer
+
+| party.id
+| null
+| The id of the Party
+
+| party.partyType
+| Party
+| The type of Party
+
+| party.personName
+| firstName lastName
+| The full name of the Party
+
+| party.firstName
+| firstName
+| The first name of the Party
+
+| party.lastName
+| lastName
+| The last name of the Party
+
+| party.externalIds
+| externalIds
+| The GlobalPartyId of Customer as in MDM.This will not be stored in LOS
+
+| party.contactPoints
+| contactPoints
+| The contactPoints of Customer as in LOS.
+
+| externalIds
+| externalIds
+| The Global Customer Id of Customer as in MDM that will need to be stored in LOS
+
+| customerNumber
+| customerNumber
+| The Customer Number to be stored in LOS
+
+| customerStatus
+| customerStatus
+| The Status of Customer to be updated in LOS
+|===
+
 == See Also
 
 * xref:../../getting-started.adoc[Getting Started]

@@ -1,10 +1,11 @@
 = Salesforce Marketing Cloud Setup Guide
+:fins-version: 1.6
 
 This guide provides the setup instructions for Marketing Cloud to support the default MuleSoft Accelerator for Financial Services functionality. The steps listed below are specific to use case with an asumption that the Salesforce Marketing Cloud has been provisioned and access is granted appropriately.
 
 == Setup Instructions for Client Onboarding
 
-These instructions are for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Client Onboarding - Wealth Management] use case. Log into Marketing Cloud as the administrator and perform the steps outlined below.
+These instructions are for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Client Onboarding - Wealth Management^] use case. Log into Marketing Cloud as the administrator and perform the steps outlined below.
 
 === Create the Data Extensions
 
@@ -84,7 +85,7 @@ Journey Builder is used to trigger emails to a list of email addresses. The foll
 
 === Create the Online Submission Form
 
-This is the form that the client will submit so that the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-wealth-exp-api/[Salesforce Wealth Experience API] will be invoked to create a lead in FSC:
+This is the form that the client will submit so that the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-wealth-exp-api/[Salesforce Wealth Experience API^] will be invoked to create a lead in FSC:
 
 * Navigate to Web Studio and click Cloudpages
 * Create a Collection
@@ -158,7 +159,7 @@ Enter text: `“Thanks for your submission!”`
 
 == Setup Instructions for Address Change Orchestration.
 
-These instructions are for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Address change orchestration - Insurance] and https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Address change orchestration - Banking] use cases. Log into Marketing Cloud as the administrator and perform the steps outlined below.
+These instructions are for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Address change orchestration - Insurance^] and https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Address change orchestration - Banking^] use cases. Log into Marketing Cloud as the administrator and perform the steps outlined below.
 
 === Create Installed Package.
 
@@ -236,11 +237,11 @@ Use Journey Builder to create a journey for sending the email.
 
 == Setup Instructions for Optimize Customer Experiences
 
-These instructions are for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize customer experiences with CDP] use case. Log into Marketing Cloud as the administrator and perform the steps outlined below.
+These instructions are for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize customer experiences with CDP^] use case. Log into Marketing Cloud as the administrator and perform the steps outlined below.
 
 === Prerequisites
 
-Please refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Salesforce%20CDP%20setup%20guide/[Salesforce CDP setup guide] for instructions on how to publish and activate a CDP segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the CDP segment.
+Please refer to the xref:./fins-salesforce-cdp-setup-guide.adoc[Salesforce CDP setup guide] for instructions on how to publish and activate a CDP segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the CDP segment.
 
 === Check Data Extension
 

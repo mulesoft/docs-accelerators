@@ -412,7 +412,7 @@ The following fields must be created in the corresponding objects.
 
 === Create via Apex Script
 
-An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project]. Download this project and follow the steps below.
+An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project^]. Download this project and follow the steps below.
 
 . Click on Salesforce Setup icon and select `Developer Console` to open a new console window
 . Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
@@ -514,7 +514,7 @@ If desired, click the *Currency Setup* button to add support for additional curr
 
 == Create Push Topics
 
-The following Push Topics must be created in order to capture updates from Salesforce. The Apex scripts to create these Push Topics are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template].
+The following Push Topics must be created in order to capture updates from Salesforce. The Apex scripts to create these Push Topics are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template^].
 
 |===
 | Salesforce Object | Apex script location | Push Topic name
@@ -569,7 +569,7 @@ Follow the below steps to create the above Push Topics
 
 == Adding Mailing Address to Person Account details Page
 
-The following instructions assume that https://help.salesforce.com/s/articleView?id=sf.account_person_enable.htm&type=5[support for Person Accounts] is already enabled. Perform the following actions to enable Mailing Address on the Person Account detail page.
+The following instructions assume that https://help.salesforce.com/s/articleView?id=sf.account_person_enable.htm&type=5[support for Person Accounts^] is already enabled. Perform the following actions to enable Mailing Address on the Person Account detail page.
 
 . Click the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
@@ -632,7 +632,7 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 . Verify your identity by entering the verification code that was emailed to you.
 . Copy the key and secret values and update your `settings.xml` file as described above.
 
-Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project] for a sample `settings.xml` file that can be used as a starting point.
+Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
 
 == Generating Security Token for Service Account
 

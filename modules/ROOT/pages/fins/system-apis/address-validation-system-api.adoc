@@ -40,6 +40,45 @@ At a minimum, the following properties must be customized to reflect the target 
 | `fins-address-validation-sys-api.username` | Username that is used to register in the USPS Shipping API
 |===
 
+== Data Mappings
+
+This document provides information generated from the DataWeave scripts included in the project, such as function definitions, variable definitions, and data mapping tables.
+
+=== postal-address-validation-usps-request
+
+Mapping of a single ContactPointAddress to XML format that is used by USPS WebTools API to validate US Postal Address.
+USPS WebTools API takes XML input of address as a query parameter and this transforms creates the XML
+
+> Source: `./src/main/resources/dwl/postal-address-validation-usps-request.dwl`
+
+==== Mapping Tables
+
+Maps ContactPointAddress JSON of CIM to an XML format that is accepted by the USPS Web Tools API (ShippingAPI)
+
+|===
+| CIM Spec field | USPS XML Field used by Web Tools API | Description
+
+| addressLine1
+| Address2
+| addressLine1 is mapped to Address2 field as its the main field needed for validation that holds house and street number
+
+| addressLine2
+| Address1
+| addressLine2 is mapped to Address1 and its the unit or apartment number
+
+| cityName
+| City
+| city of the address
+
+| stateProvinceName
+| State
+| State code of the address (abbreviated 2 chars)
+
+| postalCodeText
+| Zip5
+| 5 Digit Zip Code for the address
+|===
+
 == See Also
 
 * xref:../../getting-started.adoc[Getting Started]
