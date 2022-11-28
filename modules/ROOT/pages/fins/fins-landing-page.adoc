@@ -71,13 +71,13 @@ xref:../accel/process-apis/accelerator-notifications-process-api.adoc[Accelerato
 ==== Accelerator Custom Components
 
 [%hardbreaks]
-xref:../accel/api-libraries/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
-xref:../accel/api-libraries/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
-xref:../accel/api-libraries/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
-xref:../accel/shared-components/accelerator-common-core.adoc[Accelerator Common Core]
-xref:../accel/shared-components/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
-xref:../accel/shared-components/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
-xref:../accel/shared-components/accelerator-pom-parent.adoc[Accelerator POM Parent]
+* xref:../accel/api-libraries/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
+* xref:../accel/api-libraries/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
+* xref:../accel/api-libraries/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
+* xref:../accel/shared-components/accelerator-common-core.adoc[Accelerator Common Core]
+* xref:../accel/shared-components/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
+* xref:../accel/shared-components/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
+* xref:../accel/shared-components/accelerator-pom-parent.adoc[Accelerator POM Parent]
 
 == See Also
 
