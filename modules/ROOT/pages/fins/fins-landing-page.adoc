@@ -56,7 +56,30 @@ include::partial$fins-custom-components-fragment.adoc[]
 
 === Accelerator Shared assets
 
-include::partial$fins-shared-assets-fragment.adoc[]
+A number of shared assets and common services are also used by this accelerator.
+
+==== Accelerator System APIs
+
+[%hardbreaks]
+xref:../accel/system-apis/accelerator-email-system-api.adoc[Accelerator Email System API]
+xref:../accel/system-apis/accelerator-slack-system-api.adoc[Accelerator Slack System API]
+xref:../accel/system-apis/accelerator-sms-system-api.adoc[Accelerator SMS System API]
+
+==== Accelerator Process APIs
+
+[%hardbreaks]
+xref:../accel/process-apis/accelerator-notifications-process-api.adoc[Accelerator Notifications Process API]
+
+==== Accelerator Custom Components
+
+[%hardbreaks]
+* xref:../accel/api-libraries/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
+* xref:../accel/api-libraries/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
+* xref:../accel/api-libraries/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
+* xref:../accel/shared-components/accelerator-common-core.adoc[Accelerator Common Core]
+* xref:../accel/shared-components/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
+* xref:../accel/shared-components/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
+* xref:../accel/shared-components/accelerator-pom-parent.adoc[Accelerator POM Parent]
 
 == See Also
 
