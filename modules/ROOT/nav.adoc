@@ -1,4 +1,4 @@
-.xref:index.adoc[MuleSoft Accelerators]
+.MuleSoft Accelerators
 * xref:index.adoc[MuleSoft Accelerators Overview]
 * xref:getting-started.adoc[Getting Started]
 ** xref:accel/accel-build-environment.adoc[Build Environment]
@@ -25,8 +25,8 @@
 * xref:data-models.adoc[Data Models]
 ** xref:cim/cim-landing-page.adoc[Cloud Information Model]
 *** xref:cim/cim-usage-guide.adoc[CIM Usage Guide]
-*** xref:cim/cim-customizations.adoc[CIM Customizations]
 *** xref:cim/cim-subject-areas.adoc[CIM Subject Areas]
+*** xref:cim/cim-customizations.adoc[CIM Customizations]
 **** xref:cim/cim-finance.adoc[Finance]
 **** xref:cim/cim-fulfill.adoc[Fulfill]
 **** xref:cim/cim-market.adoc[Market]
