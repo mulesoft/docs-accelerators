@@ -1,4 +1,6 @@
-= MuleSoft Accelerators
+:imagesdir: ../assets/images
+
+= MuleSoft Accelerators Overview
 
 Accelerators are a collection of technical assets (predominantly API specifications and implementation templates) and documentation to accelerate the implementation of multiple use cases supporting a larger business or industry problem.
 
