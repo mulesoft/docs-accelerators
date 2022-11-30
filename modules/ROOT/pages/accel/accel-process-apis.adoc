@@ -1,5 +1,7 @@
 = Accelerator Process APIs
 
+The following APIs represent the reusable business processes that are leveraged by multiple accelerators. These correspond to the Process layer in MuleSoft's API-led approach.
+
 include::partial$accel-process-apis-fragment.adoc[]
 
 == See Also

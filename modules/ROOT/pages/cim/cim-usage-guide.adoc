@@ -67,95 +67,23 @@ When creating sample messages it can help to clarify that a property represents 
 
 === Predefined enumeration list
 
-The following table identifies all fields that have predefined enumerations used in various accelerator use cases along with the current list of allowable values.+++<table>++++++<tr>++++++<td>++++++<strong>+++Type+++</strong>++++++</td>+++
-   +++<td>++++++<strong>+++Property+++</strong>++++++</td>+++
-   +++<td>++++++<strong>+++Allowable values+++</strong>++++++</td>++++++</tr>+++
-  +++<tr>++++++<td rowspan="2">+++ExternalId+++</td>+++
-   +++<td>+++externalIdType+++</td>+++
-   +++<td>+++DOCUSIGN+++<br>++++++</br>+++
-FIS+++<br>++++++</br>+++
-HOGAN+++<br>++++++</br>+++
-LOS+++<br>++++++</br>+++
-JIRA+++<br>++++++</br>+++
-OFBIZ+++<br>++++++</br>+++
-MDM+++<br>++++++</br>+++
-SAP_ECC+++<br>++++++</br>+++
-SAP_4HANA+++<br>++++++</br>+++
-SALESFORCE_B2C+++<br>++++++</br>+++
-SALESFORCE_CORE+++<br>++++++</br>+++
-SALESFORCE_FSC_BANKING+++<br>++++++</br>+++
-SALESFORCE_FSC_INSURANCE+++<br>++++++</br>+++
-SALESFORCE_FSC_WEALTH+++<br>++++++</br>+++
-SALESFORCE_MARKETING+++<br>++++++</br>+++
-SERVICENOW+++<br>++++++</br>+++
-PIM+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++status+++</td>+++
-   +++<td>+++VALID+++<br>++++++</br>+++
-INVALID+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++ContactPoint+++</td>+++
-   +++<td>+++contactPointType+++</td>+++
-   +++<td>+++ContactPointAddress+++<br>++++++</br>+++
-ContactPointEmail+++<br>++++++</br>+++
-ContactPointPhone+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++Customer+++</td>+++
-   +++<td>+++customerStatus+++</td>+++
-   +++<td>+++ACTIVE+++<br>++++++</br>+++
-INACTIVE+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++Party+++</td>+++
-   +++<td>+++partyType+++</td>+++
-   +++<td>+++Individual+++<br>++++++</br>+++
-Organization+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++PartyRelatedParty+++</td>+++
-   +++<td>+++partyRelationshipType+++</td>+++
-   +++<td>+++AGENT+++<br>++++++</br>+++
-BUYER+++<br>++++++</br>+++
-CHILD+++<br>++++++</br>+++
-CLIENT+++<br>++++++</br>+++
-OTHER+++<br>++++++</br>+++
-RELATION+++<br>++++++</br>+++
-SPONSOR+++<br>++++++</br>+++
-SPOUSE+++<br>++++++</br>+++
-SUPPLIER+++<br>++++++</br>+++
-USER+++<br>++++++</br>+++
-VENDOR+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++PartyRole+++</td>+++
-   +++<td>+++partyRoleType+++</td>+++
-   +++<td>+++Customer+++<br>++++++</br>+++
-Employee+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++Product+++</td>+++
-   +++<td>+++type+++</td>+++
-   +++<td>+++MASTER+++<br>++++++</br>+++
-VARIANT+++</td>++++++</tr>+++
-  +++<tr>++++++<td rowspan="2">+++SalesOrder+++</td>+++
-   +++<td>+++salesOrderType+++</td>+++
-   +++<td>+++ADD_ON+++<br>++++++</br>+++
-CANCELLATION+++<br>++++++</br>+++
-INITIAL+++<br>++++++</br>+++
-JOURNAL+++<br>++++++</br>+++
-RENEWAL+++<br>++++++</br>+++
-RETURN+++<br>++++++</br>+++
-SUBSCRIPTION+++<br>++++++</br>+++
-UPGRADE+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++salesOrderStatus+++</td>+++
-   +++<td>+++CANCELLED+++<br>++++++</br>+++
-CREATED+++<br>++++++</br>+++
-CONFIRMED+++<br>++++++</br>+++
-DELIVERED+++<br>++++++</br>+++
-IN_CART+++<br>++++++</br>+++
-IN_TRANSIT+++<br>++++++</br>+++
-INVOICED, LOST+++<br>++++++</br>+++
-PARTIALLY_SHIPPED+++<br>++++++</br>+++
-PICKUP_AVAILABLE+++<br>++++++</br>+++
-PROCESSING+++<br>++++++</br>+++
-REJECTED+++<br>++++++</br>+++
-RETURNED+++</td>++++++</tr>+++
-  +++<tr>++++++<td>+++SalesOrderProduct+++</td>+++
-   +++<td>+++salesOrderProductStatus+++</td>+++
-   +++<td>+++ACTIVE+++<br>++++++</br>+++
-DISCONTINUED+++<br>++++++</br>+++
-INACTIVE+++<br>++++++</br>+++
-NOT_SELLING+++<br>++++++</br>+++
-OUT_OF_STOCK+++</td>++++++</tr>++++++</table>+++
+The following table identifies all fields that have predefined enumerations used in various accelerator use cases along with the current list of allowable values.
+
+[%header%autowidth.spread]
+|===
+|Type |Property |Allowable values
+.2+|ExternalId |externalIdType |DOCUSIGN, FIS, HOGAN, LOS, JIRA, OFBIZ, MDM, SAP_ECC, SAP_4HANA, SALESFORCE_B2C, SALESFORCE_CORE, SALESFORCE_FSC_BANKING, SALESFORCE_FSC_INSURANCE, SALESFORCE_FSC_WEALTH, SALESFORCE_MARKETING, SERVICENOW, PIM
+|status |VALID, INVALID
+|ContactPoint |contactPointType |ContactPointAddress, ContactPointEmail, ContactPointPhone
+|Customer |customerStatus |ACTIVE, INACTIVE
+|Party |partyType |Individual, Organization
+|PartyRelatedParty |partyRelationshipType |AGENT, BUYER, CHILD, CLIENT, OTHER, RELATION, SPONSOR, SPOUSE, SUPPLIER, USER, VENDOR
+|PartyRole |partyRoleType |Customer, Employee
+|Product |type |MASTER, VARIANT
+.2+|SalesOrder |salesOrderType |ADD_ON, CANCELLATION, INITIAL, JOURNAL, RENEWAL, RETURN, SUBSCRIPTION, UPGRADE
+|salesOrderStatus |CANCELLED, CREATED, CONFIRMED, DELIVERED, IN_CART, IN_TRANSIT, INVOICED, LOST, PARTIALLY_SHIPPED, PICKUP_AVAILABLE, PROCESSING, REJECTED, RETURNED
+|SalesOrderProduct |salesOrderProductStatus |ACTIVE, DISCONTINUED, INACTIVE, NOT_SELLING, OUT_OF_STOCK
+|===
 
 == Composition
 
