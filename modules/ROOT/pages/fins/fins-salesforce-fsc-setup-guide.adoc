@@ -48,7 +48,7 @@ Follow the same steps but this time enable the `Lead` record type on the `Lead` 
 To create the `Blockchain Account` record type in the Financial Account object, first create a page layout for it based on an existing layout.
 
 . Select the `Object Manager` tab from the Setup home page.
-. Select the `FinServ__FinancialAccount__c` object.
+. Select the `+FinServ__FinancialAccount__c+` object.
 . Select `Page Layouts` from the left nav and click *New*.
 . Select an existing page layout (e.g., "Financial Account (Savings Account) Layout").
 . Set the `Page Layout Name` field to "Financial Account (Blockchain Account) Layout".
@@ -85,7 +85,7 @@ The standard record type *Financial Account Transaction* supports the transactio
 
 The steps for creating the `Financial Account Transfer Transaction` record type are similar to those above, but for the `Financial Transaction` object instead.
 
-. In the Object Manager, select the `FinServ__FinancialAccountTransaction__c` object.
+. In the Object Manager, select the `+FinServ__FinancialAccountTransaction__c+` object.
 . Select `Page Layouts` from the left nav and click *New*.
 . Select an existing page layout (e.g., "Financial Account Transaction Layout").
 . Set the `Page Layout Name` field to "Financial Account Transfer Transaction Layout".
@@ -108,6 +108,7 @@ The new record type can be verified as above.
 
 The following fields must be created in the corresponding objects.
 
+[%header%autowidth.spread]
 |===
 | Salesforce Object | Field Label | Field Name | Data Type | Length | Unique* | ExternalId
 
@@ -223,7 +224,7 @@ The following fields must be created in the corresponding objects.
 | Y
 | Y
 
-| FinServ__Card__c
+| +FinServ__Card__c+
 | Card Type
 | Card_Type
 | Picklist
@@ -231,7 +232,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__Card__c
+| +FinServ__Card__c+
 | Cardholder Name
 | Cardholder_Name__c
 | Text
@@ -239,7 +240,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__Card__c
+| +FinServ__Card__c+
 | Credit Card Type
 | Credit_Card_Type__c
 | Picklist
@@ -247,7 +248,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__Card__c
+| +FinServ__Card__c+
 | Global Card ID
 | Global_Card_Id__c
 | Text
@@ -255,7 +256,7 @@ The following fields must be created in the corresponding objects.
 | Y
 | Y
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Global Account ID
 | Global_Account_Id__c
 | Text
@@ -263,7 +264,7 @@ The following fields must be created in the corresponding objects.
 | Y
 | Y
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Initial Transaction ID
 | Initial_Transaction_Id__c
 | Text
@@ -271,7 +272,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Last Payment Amount
 | LastPaymentAmount__c
 | Currency
@@ -279,7 +280,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Last Payment Date
 | LastPaymentDate__c
 | Date
@@ -287,7 +288,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Last Statement Date
 | LastStatementDate__c
 | Date
@@ -295,7 +296,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Last Transaction Amount
 | LastTransactionAmount__c
 | Currency
@@ -303,7 +304,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Last Transaction Type
 | LastTransactionType__c
 | Picklist
@@ -311,7 +312,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Last Transaction ID
 | Last_Transaction_Id__c
 | Text
@@ -319,7 +320,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Maximum Monthly Withdrawals
 | Maximum_Monthly_Withdrawals__c
 | Number
@@ -327,7 +328,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | Monthly Withdrawal Limit
 | Monthly_Withdrawal_Limit__c
 | Number
@@ -335,7 +336,7 @@ The following fields must be created in the corresponding objects.
 | N
 | N
 
-| FinServ__FinancialAccountTransaction__c
+| +FinServ__FinancialAccountTransaction__c+
 | Debit Financial Account
 | Debit_Financial_Account__c
 | Lookup
@@ -343,7 +344,7 @@ The following fields must be created in the corresponding objects.
 | -
 | -
 
-| FinServ__FinancialAccountTransaction__c
+| +FinServ__FinancialAccountTransaction__c+
 | Credit Financial Account
 | Credit_Financial_Account__c
 | Lookup
@@ -351,7 +352,7 @@ The following fields must be created in the corresponding objects.
 | -
 | -
 
-| FinServ__FinancialAccountTransaction__c
+| +FinServ__FinancialAccountTransaction__c+
 | Global Transaction ID
 | Global_Transaction_Id__c
 | Text
@@ -359,7 +360,7 @@ The following fields must be created in the corresponding objects.
 | Y
 | Y
 
-| FinServ__FinancialAccountTransaction__c
+| +FinServ__FinancialAccountTransaction__c+
 | Originator ID
 | Originator_Id__c
 | Text
@@ -465,7 +466,7 @@ The default implementation of the solution requires the enablement of additional
 
 . Click the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
-. Find and select the `FinServ__FinancialAccountTransaction__c` Salesforce object.
+. Find and select the `+FinServ__FinancialAccountTransaction__c+` Salesforce object.
 . Navigate to `Fields and Relationships` and select the `FinServ__TransactionStatus__c` picklist field.
 . Scroll down to the `Values` section and click *New*.
 . Enter the values for `Cancelled` and `Initial` on separate lines and click *Save*.
@@ -476,7 +477,7 @@ The default implementation of the solution also requires the enablement of addit
 
 . Click the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
-. Find and select the `FinServ__FinancialAccountTransaction__c` Salesforce object.
+. Find and select the `+FinServ__FinancialAccountTransaction__c+` Salesforce object.
 . Navigate to `Fields and Relationships` and select the `FinServ__TransactionType__c` picklist field.
 . Scroll down to the `Values` section and click *New*.
 . Enter the values for `Payment` and `Transfer` on separate lines and click *Save*.
@@ -488,7 +489,7 @@ To display a specific page layout based on the record type, a Workflow rule is c
 . Click the Salesforce Setup icon.
 . Navigate to `+Process Automation -> Workflow Rules+`.
 . Click the *New Rule* button.
-. Select `FinServ__FinancialAccountTransaction__c` from the *Object* dropdown.
+. Select `+FinServ__FinancialAccountTransaction__c+` from the *Object* dropdown.
 . Enter *Rule Name* as `Transfer Transaction Type` and description as `Defines a transaction that represents a generic transfer from one account to another`.
 . Set `Evaluation Criteria` as ``created, and any time it``s edited to subsequently meet criteria`.
 . In the `Rule Criteria` section, select `criteria are met`.
@@ -539,15 +540,15 @@ The following Push Topics must be created in order to capture updates from Sales
 | /src/test/resources/scripts/opportunities-push-topic.apxc
 | Opportunities
 
-| FinServ__FinancialAccount__c
+| +FinServ__FinancialAccount__c+
 | /src/test/resources/scripts/financial-accounts-push-topic.apxc
 | FinancialAccounts
 
-| FinServ__FinancialAccountTransaction__c
+| +FinServ__FinancialAccountTransaction__c+
 | /src/test/resources/scripts/transactions-push-topic.apxc
 | Transactions
 
-| FinServ__Card__c
+| +FinServ__Card__c+
 | /src/test/resources/scripts/cards-push-topic.apxc
 | Cards
 |===

@@ -4,7 +4,8 @@
 13 September 2022
 
 === Optimize customer experiences with CDP use case
-This use case  provides support for ingesting data from multiple sources into CDP to optimize customer experiences by using the results of CDP activations by providing Customer Service Representatives (CSRs) with marketing insights
+
+Introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize customer experiences with CDP^] use case, which provides support for ingesting data from multiple sources into CDP to optimize customer experiences by using the results of CDP activations by providing Customer Service Representatives (CSRs) with marketing insights.
 
 === BIAN compliant assets
 This solution provides BIAN-compliant assets, including API specs and implementation templates. Discover and use over 50 assets in key business domains including servicing, sales, cards, loans, and deposits.
@@ -12,24 +13,25 @@ This solution provides BIAN-compliant assets, including API specs and implementa
 == v1.5
 July 15, 2022
 
-=== Client Onboarding - Wealth Management Use Case
+=== Client Onboarding - Wealth Management use case
 
-This use case enables a streamlined and automated client onboarding solution. Wealth management client service teams will be able to reduce the risk of manual errors by integrating systems and digitizing workflows
+Introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Client Onboarding - Wealth management^] use case.
 
 == v1.4
 April 28, 2022
 
-=== Address Change Orchestration Use Case
+=== Address Change Orchestration use case
 
 Introduces the Address change orchestration use case. There are two extensions of this use case:
 
-* xref:fins/fins-use-case-address-change-banking.adoc[Use case 4a - Address change orchestration: Insurance] — Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
-* xref:fins/fins-use-case-address-change-ins.adoc[Use case 4b - Address change orchestration: Banking] — Enhance your customer service teams’ upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Address Change Orchestration: Insurance^]
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Address Change Orchestration: Banking^]
 
 == v1.3
 March 21, 2022
 
-=== Minor Updates
+=== Minor updates
 
 A few assets were updated to correct minor issues, including:
 
@@ -39,14 +41,14 @@ A few assets were updated to correct minor issues, including:
 
 January 28, 2022
 
-=== Payments Modernization Use Case
+=== Payments Modernization use case
 
-Introduces the Payments modernization use case, which accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
+Introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%203%20-%20Payments%20modernization/[Payments Modernization use case^] use case, which accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
 
 == v1.2
 November 16, 2021
 
-=== Core Banking Enhancements
+=== Core Banking enhancements
 
 This release includes the following enhancements:
 
@@ -59,18 +61,16 @@ See the Upgrade notes for more information.
 == v1.1
 September 9, 2021
 
-=== Customer Onboarding Use Case
+=== Customer Onboarding use case
 
-Introduces the Customer onboarding - Banking use case, which allows leverages Salesforce Financial Services Cloud as the system of engagement, DocuSign as the document management system, and Equifax as the credit analysis system.
+Introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer Onboarding - Banking^] use case, which leverages Salesforce Financial Services Cloud as the system of engagement and DocuSign as the document management system.
 
 == v1.0
 July 27, 2021
 
-=== Initial Release
+=== Initial release
 
-This is the first release of the MuleSoft Accelerator for Financial Services.
-
-This accelerator also introduces the Core banking foundation use case, which allows for the display of a customer’s financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
+This is the first release of the MuleSoft Accelerator for Financial Services. This accelerator introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core Banking Foundation^] use case, which allows for the display of a customer’s financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
 
 == See Also
 

@@ -1,6 +1,6 @@
 = Accelerator Shared Components
 
-The following assets are also shared across multiple accelerators.
+The following non-application components are shared across multiple accelerators.
 
 include::partial$accel-shared-components-fragment.adoc[]
 

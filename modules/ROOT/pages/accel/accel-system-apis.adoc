@@ -1,5 +1,7 @@
 = Accelerator System APIs
 
+The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
+
 include::partial$accel-system-apis-fragment.adoc[]
 
 == See Also
