@@ -73,9 +73,7 @@ The following table identifies all fields that have predefined enumerations used
 |===
 |Type |Property |Allowable values
 .2+|ExternalId |externalIdType |DOCUSIGN, FIS, HOGAN, LOS, JIRA, OFBIZ, MDM, SAP_ECC, SAP_4HANA, SALESFORCE_B2C, SALESFORCE_CORE, SALESFORCE_FSC_BANKING, SALESFORCE_FSC_INSURANCE, SALESFORCE_FSC_WEALTH, SALESFORCE_MARKETING, SERVICENOW, PIM
-
 |status |VALID, INVALID
-
 |ContactPoint |contactPointType |ContactPointAddress, ContactPointEmail, ContactPointPhone
 |Customer |customerStatus |ACTIVE, INACTIVE
 |Party |partyType |Individual, Organization
@@ -83,9 +81,7 @@ The following table identifies all fields that have predefined enumerations used
 |PartyRole |partyRoleType |Customer, Employee
 |Product |type |MASTER, VARIANT
 .2+|SalesOrder |salesOrderType |ADD_ON, CANCELLATION, INITIAL, JOURNAL, RENEWAL, RETURN, SUBSCRIPTION, UPGRADE
-
 |salesOrderStatus |CANCELLED, CREATED, CONFIRMED, DELIVERED, IN_CART, IN_TRANSIT, INVOICED, LOST, PARTIALLY_SHIPPED, PICKUP_AVAILABLE, PROCESSING, REJECTED, RETURNED
-
 |SalesOrderProduct |salesOrderProductStatus |ACTIVE, DISCONTINUED, INACTIVE, NOT_SELLING, OUT_OF_STOCK
 |===
 
