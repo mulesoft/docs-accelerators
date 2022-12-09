@@ -8,13 +8,12 @@ Accelerators are designed as modular building blocks: customers can change the p
 
 To access any of the asset links described within the following Accelerators, you must log into the https://anypoint.mulesoft.com/home/[Anypoint Platform^].
 
-[%header%autowidth.spread]
+[%autowidth.spread]
 |===
-|Icon |Accelerator Name | Description
-|image:fs-icon.png[Financial Services,80%,80%] | xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services] | Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement (e.g., CRM and ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
-|image:hc-icon.png[Healthcare,80%,80%] | xref:hls/hc-landing-page.adoc[MuleSoft Accelerator for Healthcare] | Enable EHR connectivity, power a Patient 360, and bring patient demographics information and COVID-19 lab results from any EHR into Health Cloud using HL7 V2 or FHIR standards.
-|image:mfg-icon.png[Manufacturing,80%,80%] | xref:mfg/mfg-landing-page.adoc[MuleSoft Accelerator for Manufacturing] | Provides seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
-|image:retail-icon.png[Retail,80%,80%] | xref:rcg/retail-landing-page.adoc[MuleSoft Accelerator for Retail] | Enable retail IT teams to jumpstart digital transformation initiatives.
+.^|image:fs-icon.png[Financial Services,80%,80%] .^| xref:fins/fins-landing-page.adoc[MuleSoft Accelerator for Financial Services] .^| Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement (e.g., CRM and ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
+.^|image:hc-icon.png[Healthcare,80%,80%] .^| xref:hls/hc-landing-page.adoc[MuleSoft Accelerator for Healthcare] .^| Enable EHR connectivity, power a Patient 360, and bring patient demographics information and COVID-19 lab results from any EHR into Health Cloud using HL7 V2 or FHIR standards.
+.^|image:mfg-icon.png[Manufacturing,80%,80%] .^| xref:mfg/mfg-landing-page.adoc[MuleSoft Accelerator for Manufacturing] .^| Provides seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
+.^|image:retail-icon.png[Retail,80%,80%] .^| xref:rcg/retail-landing-page.adoc[MuleSoft Accelerator for Retail] .^| Enable retail IT teams to jumpstart digital transformation initiatives.
 |===
 
 If you have any questions or feedback, please let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas in the https://help.mulesoft.com/s/ideas[Ideas Portal^].
