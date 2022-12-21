@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [cols="40,30,30",width=100%]
 |===
 |Accelerator Customers Process API | https://{anypoint-url}/accel-customers-prc-api-spec[API Specification^] | https://{anypoint-url}/accel-customers-prc-api[Implementation Template^]
@@ -5,3 +6,7 @@
 |Accelerator Global Party Process API | https://{anypoint-url}/accel-global-party-prc-api-spec[API Specification^] | https://{anypoint-url}/accel-global-party-prc-api[Implementation Template^]
 |Accelerator Notifications Process API | https://{anypoint-url}/accelerator-notifications-prc-api[API Specification^] | https://{anypoint-url}/accel-notifications-prc-api[Implementation Template^]
 |===
+=======
+[%hardbreaks]
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-notifications-process-api[Accelerator Notifications Process API]
+>>>>>>> e45997f (Update index.adoc)

@@ -269,7 +269,13 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-64.png
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301]
 
+[start=18]
+. Copy and paste the code from `ZBAPI_CUSTOMER_CD.txt`.
+
+. Activate the entire function group by right-clicking on it in the tree and selecting "Activate".
+
+//image placeholder for retail-2.2-bapi-65.png
+
 == See Also 
 
-* xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Retail]

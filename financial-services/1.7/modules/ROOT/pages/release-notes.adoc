@@ -1,0 +1,85 @@
+= Release Notes
+
+== v1.7
+13 December 2022
+
+=== Unlocking Jack Henry SilverLake core use case
+
+This use case introduces the Jack Henry SilverLake core, which allows customers to connect Salesforce Financial Services Cloud data with the Jack Henry SilverLake core.
+
+== v1.6
+13 September 2022
+
+=== Optimize customer experiences with CDP use case
+
+Introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize customer experiences with CDP^] use case, which provides support for ingesting data from multiple sources into CDP to optimize customer experiences by using the results of CDP activations by providing Customer Service Representatives (CSRs) with marketing insights.
+
+=== BIAN compliant assets
+This solution provides BIAN-compliant assets, including API specs and implementation templates. Discover and use over 50 assets in key business domains including servicing, sales, cards, loans, and deposits.
+
+== v1.5
+July 15, 2022
+
+=== Client Onboarding - Wealth Management use case
+
+Introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Client Onboarding - Wealth management^] use case.
+
+== v1.4
+April 28, 2022
+
+=== Address Change Orchestration use case
+
+Introduces the Address change orchestration use case. There are two extensions of this use case:
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Address Change Orchestration: Insurance^]
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Address Change Orchestration: Banking^]
+
+== v1.3
+March 21, 2022
+
+=== Minor updates
+
+A few assets were updated to correct minor issues, including:
+
+* Database creation scripts
+* Visualizer layer assignments
+* Documentation updates
+
+January 28, 2022
+
+=== Payments Modernization use case
+
+Introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%203%20-%20Payments%20modernization/[Payments Modernization use case^] use case, which accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
+
+== v1.2
+November 16, 2021
+
+=== Core Banking enhancements
+
+This release includes the following enhancements:
+
+* Added more information to both the customer accounts sync and customer onboarding use cases
+* Added credit card functionality
+* Added full two-way synchronization capabilities between customer accounts, transactions, and credit cards
+
+See the Upgrade notes for more information.
+
+== v1.1
+September 9, 2021
+
+=== Customer Onboarding use case
+
+Introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer Onboarding - Banking^] use case, which leverages Salesforce Financial Services Cloud as the system of engagement and DocuSign as the document management system.
+
+== v1.0
+July 27, 2021
+
+=== Initial release
+
+This is the first release of the MuleSoft Accelerator for Financial Services. This accelerator introduces the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core Banking Foundation^] use case, which allows for the display of a customer’s financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
+
+== See Also
+
+* xref:upgrade-notes.adoc[Upgrade Notes]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

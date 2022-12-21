@@ -1,4 +1,0 @@
-[%hardbreaks]
-xref:./api-libraries/accelerator-cim-global-library.adoc[CIM Global Library]
-xref:./api-libraries/accelerator-cim-market-library.adoc[CIM Market Library]
-xref:./api-libraries/accelerator-cim-fins-library.adoc[CIM FINS Extension Library]

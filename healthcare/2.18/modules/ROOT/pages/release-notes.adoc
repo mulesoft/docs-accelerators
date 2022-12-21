@@ -283,6 +283,10 @@ The focus of release 2.1.1 is on providing mapping and cosmetic fixes in the imp
 The focus of release 1.1 is on providing API specifications and RAML library assets for all 145 https://www.hl7.org/fhir/resourcelist.html[FHIR resources]. These assets will help healthcare providers and payers in meeting CMS interoperability rules.
 
 * NEW: API specifications for resources in the following FHIR modules:
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:modules/ROOT/pages/hls/hc-release-notes.adoc
+>>>>>>> e45997f (Update index.adoc)
  ** Foundation
  ** FHIR Exchange
  ** Terminology
@@ -299,3 +303,24 @@ The focus of release 1.1 is on providing API specifications and RAML library ass
 == See Also
 
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]
+<<<<<<< HEAD
+=======
+========
+** Foundation
+** FHIR Exchange
+** Terminology
+** Conformance
+** Security and Privacy
+** Implementation Support
+** Administration
+** Clinical
+** Diagnostic
+** Medications
+** Workflow
+** Financial
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+>>>>>>>> e45997f (Update index.adoc):healthcare/2.18/modules/ROOT/pages/release-notes.adoc
+>>>>>>> e45997f (Update index.adoc)

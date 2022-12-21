@@ -87,9 +87,22 @@ ij> alter table Order_Header alter column external_Id set data type varchar(100)
 ij> exit;
 ----
 
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:modules/ROOT/pages/rcg/retail-ofbiz-setup-config.adoc
+>>>>>>> e45997f (Update index.adoc)
 Restart OFBiz to pick up the changes.
 
 == See Also 
 
 * xref:prerequisites.adoc[Prerequisites]
+<<<<<<< HEAD
+=======
+========
+Restart OFBiz to pick up the change.
+
+== See Also 
+
+>>>>>>>> e45997f (Update index.adoc):retail/2.7/modules/ROOT/pages/ofbiz-setup-config.adoc
+>>>>>>> e45997f (Update index.adoc)
 * xref:index.adoc[MuleSoft Accelerator for Retail]

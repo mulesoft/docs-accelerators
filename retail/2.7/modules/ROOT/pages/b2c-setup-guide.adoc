@@ -143,5 +143,13 @@ Access to the following resources and methods of the Data APIs is required:
 
 == See Also 
 
+<<<<<<< HEAD
 * xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Retail]
+=======
+<<<<<<<< HEAD:modules/ROOT/pages/rcg/retail-b2c-setup-guide.adoc
+* xref:prerequisites.adoc[Prerequisites]
+========
+>>>>>>>> e45997f (Update index.adoc):retail/2.7/modules/ROOT/pages/b2c-setup-guide.adoc
+* xref:index.adoc[MuleSoft Accelerator for Retail]
+>>>>>>> e45997f (Update index.adoc)

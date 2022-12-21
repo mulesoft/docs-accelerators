@@ -15,4 +15,12 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/hls-ccda-fhir-fx-diagr
 
 == See Also
 
+<<<<<<< HEAD
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]
+=======
+<<<<<<<< HEAD:modules/ROOT/pages/hls/hc-ccda-fhir-converter.adoc
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]
+========
+* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+>>>>>>>> e45997f (Update index.adoc):healthcare/2.18/modules/ROOT/pages/ccda-fhir-converter.adoc
+>>>>>>> e45997f (Update index.adoc)

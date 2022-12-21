@@ -1,0 +1,3 @@
+.xref:index.adoc[Consumer Goods]
+* xref:index.adoc[MuleSoft Accelerator for Consumer Goods Overview]
+* xref:prerequisites.adoc[Prerequisites]

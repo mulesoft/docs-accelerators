@@ -1,0 +1,9 @@
+= FINS Experience APIs
+
+The following APIs are provided for use by external systems to interact with functionality provided by the FINS use cases. These correspond to the Experience layer in MuleSoft's API-led approach.
+
+include::partial$experience-apis-fragment.adoc[]
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

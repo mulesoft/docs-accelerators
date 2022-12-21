@@ -52,9 +52,16 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-ale
 . Users can provide the recipient details in the *Recipients* field and click on *Create Alert*.
 . An alert will be sent to the recipient.
 
+<<<<<<< HEAD
 image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-email-alert.png[mfg-email-alert.png]
 
 == See Also
 
 * xref:prerequisites.adoc[Prerequisites]
+=======
+//image placeholder for mfg-email-alert.png
+
+== See Also
+
+>>>>>>> e45997f (Update index.adoc)
 * xref:index.adoc[MuleSoft Accelerator for Manufacturing]

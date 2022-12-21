@@ -29,7 +29,15 @@ This release also includes the following enhancements:
 
 This is the first release of the MuleSoft Accelerator for Manufacturing.
 
+<<<<<<< HEAD
 This release introduces the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Run-rate%20business%20management/[Run-rate business management^] use case, which helps streamline sales agreements and account forecasts in Salesforce Manufacturing Cloud.
+=======
+<<<<<<<< HEAD:modules/ROOT/pages/mfg/mfg-release-notes.adoc
+This release introduces the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Run-rate%20business%20management/[Run-rate business management^] use case, which helps streamline sales agreements and account forecasts in Salesforce Manufacturing Cloud.
+========
+This release introduces the Run-rate business management use case, which helps streamline sales agreements and account forecasts in Salesforce Manufacturing Cloud.
+>>>>>>>> e45997f (Update index.adoc):manufacturing/1.3/modules/ROOT/pages/release-notes.adoc
+>>>>>>> e45997f (Update index.adoc)
 
 == See Also
 

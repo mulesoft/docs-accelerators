@@ -1,0 +1,9 @@
+= FINS Listeners
+
+The following applications listen for events published by external systems and ingest them in support of the FINS use cases. While these do not expose APIs as such, they loosely correspond to the Experience layer in MuleSoft's API-led approach because the source events are from systems external to the MuleSoft integration platform.
+
+include::partial$listeners-fragment.adoc[]
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]
