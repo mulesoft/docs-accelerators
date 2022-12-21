@@ -1,0 +1,9 @@
+= FINS Process APIs
+
+The following APIs represent the core business processes that orchestrate the FINS use cases. These correspond to the Process layer in MuleSoft's API-led approach.
+
+include::partial$process-apis-fragment.adoc[]
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

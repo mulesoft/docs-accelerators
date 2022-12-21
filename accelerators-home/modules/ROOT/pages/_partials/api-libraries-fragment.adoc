@@ -1,0 +1,2 @@
+[%hardbreaks]
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-global-resources[Accelerator Global Resources]

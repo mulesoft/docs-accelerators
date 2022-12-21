@@ -1,0 +1,1723 @@
+= Salesforce CDP Setup Guide
+:fins-version: 1.7
+
+The following provides guidance on Salesforce CDP setup required to support the default MuleSoft Accelerator for Financial Services functionality.
+
+* <<cdp-provisioning,CDP provisioning>>
+* <<connect-data,Connect data>>
+* <<create-a-data-stream,Create a data stream>>
+* <<data-modeling-and-data-mapping,Data modeling and data mapping>>
+* <<identity-resolution,Identity resolution>>
+* <<calculated-insights,Calculated insights>>
+* <<create-and-activate-segments,Create and activate segments>>
+
+== CDP Provisioning
+
+. Log in to your Salesforce CDP instance with the link provided in your admin email and use the credentials provided. If this was deployed in your existing Salesforce instance, please use your current Salesforce Admin password.
+. Click the Setup gear icon and then CDP Setup.
+ ** If you don't see this option, either refresh your page or log out and back in with your admin user credentials.
+. Click Get Started. Setup can take a few minutes. The Salesforce CDP instance is considered to be successfully set up if there is a green tick mark for all the steps. If not, correct any issues reported and finish the setup.
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-cdp-provisioning.png[fins-cdp-setup-cdp-provisioning.png,75%]
+
+== Connect Data
+
+Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object.
+
+Salesforce CDP has connectors for Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
+
+The https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case uses the following connectors:
+
+* Salesforce CRM - to connect data from a Salesforce CRM instance to CDP
+* Ingestion API - to connect data from external source systems like Snowflake, Databricks, and Amazon S3 via MuleSoft's Salesforce CDP connector.
+
+=== Salesforce CRM Connector
+
+In Salesforce CDP, you can establish a connection to other Salesforce CRM orgs. Follow the below steps to create one of these connections.
+
+. In Salesforce CDP, select the Setup gear icon and then CDP Setup.
+. Select Salesforce CRM.
+. To connect a Salesforce org to Salesforce CDP, click New. You can connect the Salesforce org that has Salesforce CDP provisioned, or you can Connect Another org (external orgs).
+. To connect your Salesforce orgs to Salesforce CDP, click Connect. If connecting an external Salesforce org, enter your user credentials to establish the connection with Salesforce CDP.
+. After you connect your Salesforce org (for example, Salesforce FSC Banking), you can view the connection details.
+ ** Connector Name: The name of the Salesforce org that is connected to Salesforce CDP.
+ ** Connector Type: Identifies the name of the data connection type.
+ ** Status: Shows the org's status.
+ ** Org Id: The Salesforce org identifier connected to Salesforce CDP.
+ ** Updated: The date and timestamp of when the Salesforce org was connected to Salesforce CDP.
+. Your Salesforce org is now connected.
+
+After the connection is established, the Salesforce CDP admin can either use bundles that can automatically deploy data or set up their own data streams.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the name of the Connector used is `Salesforce FSC Banking`. This name will appear under `Salesforce Org` drop down while creating a new Data Stream.
+
+=== Ingestion API
+
+You can push data from an external system into Salesforce CDP via the Ingestion API. This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
+
+Follow the steps in each section below to setup and configure ingestion API to push data from external systems.
+
+*Set up an Ingestion API Connector*
+
+. In Salesforce CDP, select CDP Setup.
+. Click Ingestion API.
+. Click New, enter a name (for example, FINS_Banking-Data-Connector) for the API source, then click Save. On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. *Note:* Ingestion API schemas have set requirements - review the schema requirements before ingestion.
+. Click Upload Schema and navigate to the location of the file you want to use. Select the file and click Open. For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case the schema file `mule-cdp-connector-schema.yaml` is available under `/src/test/resources/cdp-schema` of the Implementation Template https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-snowflake-financial-sys-api[FINS Salesforce CDP System API^]
+. Preview all the detected objects and their attributes in your schema.
+. Click Save. The connector page reflects the updated status.
+. After the schema file is uploaded, you can create data streams to begin sending data from your source system.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to CDP through MuleSoft's Salesforce CDP connector using the Ingestion API. The name of the Connector used is `Salesforce FSC Banking`, which will appear under `Ingestion API` drop down while creating a new Data Stream.
+
+The schema used for the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case can be found in the implementation template https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^]. The following objects are to be added:
+
+* FinancialAccount
+* FinancialTransaction
+* ExternalFinancialAccount
+* WebEngagement
+
+*Schema requirements*
+
+To create an ingestion API source in Salesforce CDP, the schema file you upload must meet specific requirements:
+
+* Uploaded schemas have to be in valid OpenAPI format with a .yml or .yaml extension. OpenAPI version 3 is supported (3.0.0, 3.0.1, 3.0.2).
+* Objects cannot have nested objects.
+* Each schema must have at least one object. Each object must have at least one field.
+* Objects cannot have more than 1000 fields.
+* Objects cannot be longer than 80 characters.
+* Object names must contain only a-z, A-Z, 0-9, _, -. No unicode characters.
+* Field names must contain only a-z, A-Z, 0-9, _, -. No unicode characters.
+* Field names cannot be any of these reserved words: date_id, location_id, dat_account_currency, dat_exchange_rate, pacing_period, pacing_end_date, row_count, version. Field names cannot contain string __.
+* Field names cannot exceed 80 characters.
+* Fields meet the following type and format:
+ ** For text or boolean type: string
+ ** For number type: number
+ ** For date type: string; format: date-string
+* Object names cannot be duplicated; case-insensitive.
+* Objects cannot have duplicate field names; case-insensitive.
+* Date strings in your object payloads must be in ISO 8601 UTC Zulu with format``yyyy-MM-dd'T'HH:mm:ss.SSS'Z``.
+
+When updating your schema, be aware that:
+
+* Existing field data types cannot be changed.
+* Upon updating an object, all the existing fields for that object must be present.
+* Your updated schema file only includes changed objects, so you don't have to provide a comprehensive list of objects each time.
+* A date field must be present for objects that are intended for profile or engagement category. Objects of type `other` do not impose this same requirement.
+
+Example Schema: Refer to https://help.salesforce.com/s/articleView?id=sf.c360_a_connect_an_ingestion_source.htm&type=5[this link^] for an example schema.
+
+== Create Data Streams
+
+Data streams are the connections and associated data ingested into Salesforce CDP. Salesforce CDP includes many data streams that can operate on different refresh schedules. Check https://help.salesforce.com/s/articleView?id=c360_a_data_stream_schedule.htm&type=5&language=en_US[Data Stream Schedule in Salesforce CDP^] to know about how and when these data streams update.
+
+=== Create a Salesforce CRM Data Stream
+
+Create a data stream to begin the flow of data from a Salesforce CRM data source. Add additional permissions to your Salesforce CDP Salesforce Connector Integration permission set in your Salesforce CRM org (such as your Salesforce FSC Banking instance) to ingest standard and custom objects and fields into Salesforce CDP. Note: if you are prompted with an error stating those objects cannot be added, you might need to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce CRM in Salesforce CDP^] (see below for further details).
+
+To add permissions for objects and their fields:
+
+. In the Salesforce org containing the objects and fields you want to ingest into Salesforce CDP, from Setup in the Quick Find box, enter Permission, and select Permission Sets.
+. Select the Salesforce CDP Salesforce Connector Integration permission set. *Note:* The permission set is available only after you connect your CRM org to Salesforce CDP.
+. From Apps, select Object Settings.
+. Select the object to ingest into Salesforce CDP.
+. To change object permissions, click Edit.
+. Enable Read and View All permissions for the object and Read Access for each field.
+. Click Save.
+
+Repeat these steps for all objects and fields you want to ingest into Salesforce CDP.
+
+To create data streams from Salesforce CRM data source:
+
+. In Salesforce CDP, navigate to Data Streams.
+. Click New.
+. Select the Salesforce CRM data source and click Next.
+. To create your data stream, select a Salesforce org. If you have only one Salesforce org connected to Salesforce CDP, it will be selected by default.
+. Select the All Objects tab and select the object. Click Next.
+. Review the fields to include in your data stream. All fields are preselected by default. The number of fields available for the object is shown in parentheses.
+. Deselect any of the fields not required for your data stream in the Header Label.
+. If needed, add these formula fields and then click Next:
+ ** Field Label: The display name for a data stream field.
+ ** Field API Name: The programmatic reference for a data stream field.
+ ** Formula Return Type: The data type corresponding to the newly derived field. Options include Number, Text, and Date.
+. Fill in deployment details.
+ ** Data Stream Name: Defaults to Object Label and Salesforce org ID, but can be edited.
+ ** Ongoing Refresh Settings: Frequency and timing of new data retrieval. The Frequency is hourly and is set automatically.
+. Click Deploy. Your Salesforce CRM data stream is now created.
+. To create more data streams, repeat steps 6 through 10.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, create two data streams from Salesforce CRM (Salesforce Financial Service Cloud instance).
+
+|===
+| Object in Salesforce CRM | Name of the DataStream
+
+| Account
+| FINS_Banking-Account
+
+| Contact
+| FINS_Banking-Contact
+|===
+
+=== Create an Ingestion API Data Stream
+
+After uploading the schema file, create a data stream from your source objects.
+
+. In Salesforce CDP, select Data Streams.
+. In recently viewed data streams, click New.
+. Click Ingestion API.
+. If you have more than one Ingestion API configured, select the one you want from the dropdown.
+. Check the objects found in the schema you want to use and click Next.
+. At the New Data Stream dialog box, configure the following:
+ ** Primary Key: A true Primary Key needs to be leveraged for CDP. If one does not exist, you will need to create a Formula Field for the Primay Key.
+ ** Category: Choose between Profile and Engagement. *Note:* For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the category for all the objects in the schema are Profile.
+ ** Record Modified Date: To order Profile modifications, use the Record Modified Date. *Note:* A record modified field that indicates when each incoming record was last modified is required for Engagement object types. While the field requirement is optional for Profile and Other objects, it is encourage to provide the record modified field to ensure incoming records are processed in the right order.
+ ** Date Time Field: Used to represent when Engagement from an external source occurred at ingestion.
+ ** Click the `New Formula Field` (Optional).
+. Click Next.
+. On the final summary screen, review the list of data streams that Salesforce CDP created.
+. Click Deploy. If you have only created one data stream, the data stream's record page appears. If you've created multiple data streams, the view refreshes to show all recently viewed data streams.
+. Map the data for the data stream before use. Wait up to one hour for your data to appear in your data stream.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, add schema for the following objects and create a seperate data stream for each of the objects by repeating steps 5 through 9. At step 6, click `New Formula field` with `Field Label` as `PartyType` with `Formula Return` Type as `Text`. Under `Transformation Formula`, apply the formula to return `Individual` as Text (for example: IF(sourceField['globalPartyId'],'Individual','Individual'))
+
+|===
+| Schema Object in Ingestion API | Name of the DataStream
+
+| FinancialAccount
+| FINS_Banking-Data-Connector-FinancialAccount
+
+| FinancialTransaction
+| FINS_Banking-Data-Connector-FinancialTransaction
+
+| ExternalFinancial Account
+| FINS_Banking-Data-Connector-ExternalFinancialAccount
+
+| WebEngagement
+| FINS_Banking-Data-Connector-WebEngagement
+|===
+
+*Create a Connected App for Salesforce CDP Ingestion API*
+
+Before you can send data into Salesforce CDP using Ingestion API via Mulesoft's Salesforce CDP connector, you must configure a Connected App. Refer this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[link^] for more details on creating a connected app.
+
+As part of your Connected App set up for Ingestion API, you must select the following OAuth scopes:
+
+* Access and manage your Salesforce CDP Ingestion API data (`cdp_ingest_api`)
+* Manage Salesforce CDP profile data (`cdp_profile_api`)
+* Perform ANSI SQL queries on Salesforce CDP data (`cdp_query_api`)
+* Manage user data via APIs (`api`)
+* Perform requests on your behalf at any time (`refresh_token`, `offline_access`).
+
+*Configure Mulesoft's Salesforce CDP Connector*
+
+The MuleSoft Connector for Salesforce CDP provides customers a pipeline to send data into Salesforce CDP. This connector works with the Salesforce CDP Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
+
+Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation^] for additional details on configuration and available operations.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API^] specification and https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api-spec/[FINS Salesforce CDP System API^] implementation template assets.
+
+== Data Modeling and Mapping
+
+=== Data Cleansing and Preparation
+
+Cleaning and preparing your data is critical for success in using Salesforce CDP`' segmentation and activation capabilities.
+
+* {blank}
++
+https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_library.htm&type=5[Formula Expression Library^]
++
+When you create a Salesforce CDP data stream, you can choose to generate more fields. These supplemental fields can be hard-coded or derived from other fields in the data stream.
+* {blank}
++
+https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_use_cases.htm&type=5[Formula Expression Use Cases^]
++
+These use cases are examples of using formula expression functionality in Salesforce CDP.
+* {blank}
++
+https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and CDP^]
+
+NOTE: Formula fields can be created at the time of data stream creation or later. Click the `New Formula Field` at the time of DataStrem creation (Step 6) or Click the DataStream from recently viewed data streams list. Click `Add Source Fields` on the data stream page.
+
+=== Data Mapping
+
+After creating your data streams, you must associate your data source objects (DSOs) to data model objects (DMOs). Only mapped fields and objects with relationships can be used for Segmentation and Activation.
+
+On the Data Stream detail page or after deploying your data streams, click Start Data Mapping.
+
+On the Data Streams mapping canvas, you can see both your DSOs and target DMOs. To map one to another, click the name of a DSO and connect it to the desired DMO. For example, you can map the DSO firstname to the target First Name field using this method.
+
+* {blank}
++
+https://help.salesforce.com/s/articleView?id=sf.c360_a_data_mapping_views.htm&type=5[Data Mapper Views^]
++
+Select table view or visual view when mapping your data in Salesforce CDP.
+* {blank}
++
+https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_objects.htm&type=5[Data Model Objects^]
++
+Objects in the data model created by the customer for CDP implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
+* {blank}
++
+https://help.salesforce.com/s/articleView?id=sf.c360_a_required_data_mappings.htm&type=5[Required Data Mappings^]
++
+When mapping your party area data, complete the required fields and relationships to successfully use Identity Resolution, Segmentation, and Activation.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, map the Data Streams to Data Model Objects (DMO) as per the below table.
+
+|===
+| Data Stream Name | Custom Data Model Object (DMO) | Standard Data Model Object (DMO)
+
+| FINS_Banking-Account
+|
+| Account, Individual, Contact Point Phone, Contact Point Email, Contact Point Address, Party Identification
+
+| FINS_Banking-Contact
+|
+| AccountContact, Individual, Contact Point Phone, Contact Point Email, Contact Point Address, Party Identification
+
+| FINS_Banking-Data-Connector-FinancialAccount
+| FINS_Banking_FinancialAccount
+| Individual, Party Identification
+
+| FINS_Banking-Data-Connector-FinancialTransaction
+| FINS_Banking_FinancialTransaction
+| Individual, Party Identification
+
+| FINS_Banking-Data-Connector-ExternalFinancialAccount
+| FINS_Banking_ExternalFinancialAccount
+| Individual, Party Identification, Contact Point Email
+
+| FINS_Banking-Data-Connector-WebEngagement
+| FINS_Banking_WebEngagement
+| Individual, Party Identification, Contact Point Email
+|===
+
+NOTE: The names given to DMO are critical as they are used for Calculated Insights that are used to create Segments in later steps.
+
+Below are the DMOs and relationships that needs to be maintained when Data mappings are done between Data Stream and DMOs.
+
+*Data Relationships Between DMOs*
+
+|===
+| Object | Cardinality | Related Object
+
+| Account
+| N:1
+| Contact Point Phone
+
+| Account
+| N:1
+| Individual
+
+| Account
+| N:1
+| Contact Point Address
+
+| Account Contact
+| N:1
+| Account
+
+| Account Contact
+| N:1
+| Contact Point Address
+
+| Account Contact
+| N:1
+| Contact Point Phone
+
+| Account Contact
+| N:1
+| Contact Point Email
+
+| Account Contact
+| N:1
+| Contact Point Phone
+
+| Account Contact
+| N:1
+| Individual
+
+| Contact Point Address
+| N:1
+| Individual
+
+| Contact Point Address
+| N:1
+| Account
+
+| Contact Point Email
+| N:1
+| Account
+
+| Contact Point Email
+| N:1
+| Individual
+
+| Contact Point Phone
+| N:1
+| Account
+
+| Contact Point Phone
+| N:1
+| Individual
+
+| FINS_Banking_ExternalFinancialAccount
+| N:1
+| Individual
+
+| FINS_Banking_ExternalFinancialAccount
+| N:1
+| Account
+
+| FINS_Banking_FinancialAccount
+| N:1
+| Individual
+
+| FINS_Banking_FinancialAccount
+| N:1
+| Account
+
+| FINS_Banking_FinancialTransaction
+| N:1
+| Individual
+
+| FINS_Banking_FinancialTransaction
+| N:1
+| Account
+
+| FINS_Banking_WebEngagement
+| N:1
+| Individual
+
+| FINS_Banking_WebEngagement
+| N:1
+| Account
+
+| Party Identification
+| N:1
+| Individual
+|===
+
+Below of Data Mappings between Data Streams and DMOs. In case of Custom Model Data Objects (DMO) the schema of the DMO is also defined:
+
+*Data Mappings of FINS_Banking-Account Data Stream to Account, Individual, Contact Point Address, Contact Point Email, Contact Point Phone, and Party Identification DMOs*
+
+|===
+| FINS_Banking-Account | Account | Contact Point Address | Contact Point Email | Contact Point Phone | Individual | Party Identification
+
+| Account Description
+| Account Description
+|
+|
+|
+|
+|
+
+| Account ID
+| Account Id
+| Contact Point Address Id
+| Contact Point Email Id
+| Contact Point Phone Id
+|
+|
+
+| Account Name
+| Account Name
+|
+|
+|
+|
+|
+
+| Account Number
+| Account Number
+|
+|
+|
+|
+|
+
+| Account Type
+| Account Type
+|
+|
+|
+|
+|
+
+| Active Leads
+|
+|
+|
+|
+|
+|
+
+| Created Date
+| Created Date
+|
+|
+|
+|
+|
+
+| Email
+|
+|
+| Email Address
+|
+|
+|
+
+| First Name
+|
+|
+|
+|
+| First Name
+|
+
+| Global Party Id
+| Party
+| Party
+| Contact Point Email Id,Party
+| Party
+| Individual Id, Global Party
+| Party Identification Id, Identification Number, Party
+
+| Last Modified Date
+| Last Modified Date
+|
+|
+|
+| Last Name
+|
+
+| Last Name
+|
+|
+|
+|
+|
+|
+
+| Mailing City
+|
+| City
+|
+|
+|
+|
+
+| Mailing Country
+|
+| Country
+|
+|
+|
+|
+
+| Mailing Latitude
+|
+| Geo Latitude
+|
+|
+|
+|
+
+| Mailing Longitude
+|
+| Geo Longitude
+|
+|
+|
+|
+
+| Mailing State/Province
+|
+| State Province
+|
+|
+|
+|
+
+| Mailing Street
+|
+| Address Line 1
+|
+|
+|
+|
+
+| Mailing Zip/Postal Code
+|
+| Postal Code
+|
+|
+|
+|
+
+| Mobile
+|
+|
+|
+| Formatted E164 Phone Number
+|
+|
+
+| Parent Account ID
+| Parent Account
+|
+|
+|
+|
+|
+
+| PartyType
+|
+|
+|
+|
+|
+| Identification Name, Party Identification Type
+|===
+
+*Data Mappings of FINS_Banking-Contact Data Stream to Account Contact, Individual, Contact Point Email, Contact Point Phone, and Party Identification DMOs*
+
+|===
+| FINS_Banking-Contact | Account Contact | Contact Point Email | Contact Point Phone | Individual | Party Identification
+
+| Contact Id
+| Account Contact Id
+|
+|
+|
+|
+
+| Account ID
+| Account Id
+| Contact Point Email Id
+| Contact Point Phone Id
+|
+|
+
+| Created Date
+| Created Date
+|
+|
+|
+|
+
+| Email
+|
+| Email Address
+|
+|
+|
+
+| First Name
+|
+|
+|
+| First Name
+|
+
+| Global Individual Id
+| Individual
+| Contact Point Email Id, Party
+| Party
+| Individual Id, Global Party
+| Party Identification Id, Identification Number, Party
+
+| Last Modified Date
+| Last Modified Date
+|
+|
+| Last Name
+|
+
+| Last Name
+|
+|
+|
+|
+|
+
+| Business Phone
+| Business Phone
+|
+| Formatted E164 Phone Number
+|
+|
+
+| PartyType
+|
+|
+|
+|
+| Identification Name, Party Identification Type
+|===
+
+*Schema of FINS_Banking_FinancialAccount Custom DMO*
+
+|===
+| Field Name | Field API Name | Data Type | Primary Key
+
+| accountBalance
+| accountBalance__c
+| Number
+|
+
+| accountCurrency
+| accountCurrency__c
+| Text
+|
+
+| accountNumber
+| accountNumber__c
+| Text
+|
+
+| accountType
+| accountType__c
+| Text
+|
+
+| availableBalance
+| availableBalance__c
+| Number
+|
+
+| createdBy
+| createdBy__c
+| Text
+|
+
+| createdDate
+| createdDate__c
+| DateTime
+|
+
+| depositAccountType
+| depositAccountType__c
+| Text
+|
+
+| globalAccountId
+| globalAccountId__c
+| Text
+| Yes
+
+| institutionId
+| institutionId__c
+| Text
+|
+
+| isDeleted
+| isDeleted__c
+| Text
+|
+
+| loanDurationMonths
+| loanDurationMonths__c
+| Number
+|
+
+| name
+| name__c
+| Text
+|
+
+| openedDate
+| openedDate__c
+| DateTime
+|
+
+| primaryAccountOwner
+| primaryAccountOwner__c
+| Text
+|
+
+| taxIdentificationNumber
+| taxIdentificationNumber__c
+| Text
+|
+
+| updatedBy
+| updatedBy__c
+| Text
+|
+
+| updatedDate
+| updatedDate__c
+| DateTime
+|
+
+| Data Source
+| DataSource__c
+| Text
+|
+
+| Data Source Object
+| DataSourceObject__c
+| Text
+|
+|===
+
+*Data Mappings of FINS_Banking-Data-Connector-FinancialAccount Data Stream to FINS_Banking_FinancialAccount, Individual, and Party Identification DMOs*
+
+|===
+| FINS_Banking-Data-Connector-FinancialAccount | FINS_Banking_FinancialAccount | Individual | Party Identification
+
+| accountBalance
+| accountBalance
+|
+|
+
+| accountCurrency
+| accountCurrency
+|
+|
+
+| accountNumber
+| accountNumber
+|
+|
+
+| accountType
+| accountType
+|
+|
+
+| availableBalance
+| availableBalance
+|
+|
+
+| createdBy
+| createdBy
+|
+|
+
+| createdDate
+| createdDate
+|
+|
+
+| depositAccountType
+| depositAccountType
+|
+|
+
+| globalAccountId
+| globalAccountId
+|
+|
+
+| institutionId
+| institutionId
+|
+|
+
+| isDeleted
+| isDeleted
+|
+|
+
+| loanDurationMonths
+| loanDurationMonths
+|
+|
+
+| name
+| name
+| First Name, Last Name
+|
+
+| openedDate
+| openedDate
+|
+|
+
+| primaryAccountOwner
+| primaryAccountOwner
+| Individual Id, Global Party
+| Party Identification Id, Identification Number, Party
+
+| taxIdentificationNumber
+| taxIdentificationNumber
+|
+|
+
+| updatedBy
+| updatedBy
+|
+|
+
+| updatedDate
+| updatedDate
+|
+|
+
+| Data Source
+| Data Source
+|
+|
+
+| Data Source Object
+| Data Source Object
+|
+|
+
+| partyType
+|
+|
+| Identification Name, Party Identification Type
+|===
+
+*Schema of FINS_Banking_FinancialTransaction Custom DMO*
+
+|===
+| Field Name | Field API Name | Data Type | Primary Key
+
+| accountId
+| accountId__c
+| Text
+|
+
+| accountOwnerId
+| accountOwnerId__c
+| Text
+|
+
+| createdBy
+| createdBy__c
+| Text
+|
+
+| createdDate
+| createdDate__c
+| DateTime
+|
+
+| creditAccountId
+| creditAccountId__c
+| Text
+|
+
+| debitAccountId
+| debitAccountId__c
+| Text
+|
+
+| description
+| description__c
+| Text
+|
+
+| globalTransactionId
+| globalTransactionId__c
+| Text
+| Yes
+
+| isDeleted
+| isDeleted__c
+| Text
+|
+
+| isDisputed
+| isDisputed__c
+| Text
+|
+
+| name
+| name__c
+| Text
+|
+
+| transactionAmount
+| transactionAmount__c
+| Number
+|
+
+| transactionDate
+| transactionDate__c
+| DateTime
+|
+
+| transactionNumber
+| transactionNumber__c
+| Number
+|
+
+| transactionStatus
+| transactionStatus__c
+| Text
+|
+
+| transactionSubType
+| transactionSubType__c
+| Text
+|
+
+| transactionType
+| transactionType__c
+| Text
+|
+
+| updatedBy
+| updatedBy__c
+| Text
+|
+
+| updatedDate
+| updatedDate__c
+| DateTime
+|
+
+| Data Source Object
+| DataSourceObject__c
+| Text
+|
+
+| Data Source
+| DataSource__c
+| Text
+|
+|===
+
+*Data Mappings of FINS_Banking-Data-Connector-FinancialTransaction Data Stream to FINS_Banking_FinancialTransaction, Individual, and Party Identification DMOs*
+
+|===
+| FINS_Banking-Data-Connector-FinancialTransaction | FINS_Banking_FinancialTransaction | Individual | Party Identification
+
+| accountId
+| accountId
+|
+|
+
+| accountOwnerId
+| accountOwnerId
+| Individual Id, Global Party
+| Party Identification Id, Identification Number, Party
+
+| createdBy
+| createdBy
+|
+|
+
+| createdDate
+| createdDate
+|
+|
+
+| creditAccountId
+| creditAccountId
+|
+|
+
+| debitAccountId
+| debitAccountId
+|
+|
+
+| description
+| description
+|
+|
+
+| globalTransactionId
+| globalTransactionId
+|
+|
+
+| id
+|
+|
+|
+
+| isDeleted
+| isDeleted
+|
+|
+
+| isDisputed
+| isDisputed
+|
+|
+
+| name
+| name
+|
+|
+
+| transactionAmount
+| transactionAmount
+|
+|
+
+| transactionDate
+| transactionDate
+|
+|
+
+| transactionNumber
+| transactionNumber
+|
+|
+
+| transactionStatus
+| transactionStatus
+|
+|
+
+| transactionSubType
+| transactionSubType
+|
+|
+
+| transactionType
+| transactionType
+|
+|
+
+| updatedBy
+| updatedBy
+|
+|
+
+| updatedDate
+| updatedDate
+|
+|
+
+| Data Source Object
+| Data Source Object
+|
+|
+
+| Data Source
+| Data Source
+|
+|
+
+| PartyType
+|
+|
+| Identification Name, Party Identification Type
+|===
+
+*Schema of FINS_Banking_ExternalFinancialAccount Custom DMO*
+
+|===
+| Field Name | Field API Name | Data Type | Primary Key
+
+| accountStatus
+| accountStatus__c
+| Text
+|
+
+| accountType
+| accountType__c
+| Text
+|
+
+| ageOfAccount
+| ageOfAccount__c
+| Number
+|
+
+| averageDailyBalance
+| averageDailyBalance__c
+| Number
+|
+
+| emailAddress
+| emailAddress__c
+| Text
+|
+
+| individualId
+| individualId__c
+| Text
+| Yes
+
+| institutionName
+| institutionName__c
+| Text
+|
+
+| lengthOfTimeAsClient
+| lengthOfTimeAsClient__c
+| Number
+|
+
+| totalNumberOfAccounts
+| totalNumberOfAccounts__c
+| Number
+|
+
+| Data Source Object
+| DataSourceObject__c
+| Text
+|
+
+| Data Source
+| DataSource__c
+| Text
+|
+|===
+
+*Data Mappings of FINS_Banking-Data-Connector-ExternalFinancialAccount Data stream to FINS_Banking_ExternalFinancialAccount, Individual, Contact Point Email, and Party Identification DMOs*
+
+|===
+| FINS_Banking-Data-Connector-ExternalFinancialAccount | FINS_Banking_ExternalFinancialAccount | Individual | Party Identification | Contact Point Email
+
+| accountStatus
+| accountStatus
+|
+|
+|
+
+| accountType
+| accountType
+|
+|
+|
+
+| ageOfAccount
+| ageOfAccount
+|
+|
+|
+
+| averageDailyBalance
+| averageDailyBalance
+|
+|
+|
+
+| emailAddress
+| emailAddress
+|
+|
+| Email Address
+
+| individualId
+| individualId
+| Individual Id, Global Party
+| Party Identification Id, Identification Number, Party
+| Contact Point Email Id, Party
+
+| institutionName
+| institutionName
+|
+|
+|
+
+| lengthOfTimeAsClient
+| lengthOfTimeAsClient
+|
+|
+|
+
+| totalNumberOfAccounts
+| totalNumberOfAccounts
+|
+|
+|
+
+| Data Source Object
+| Data Source Object
+|
+|
+|
+
+| Data Source
+| Data Source
+|
+|
+|
+
+| PartyType
+|
+|
+| Identification Name, Party Identification Type
+|
+|===
+
+*Schema of FINS_Banking_WebEngagement Custom DMO*
+
+|===
+| Field Name | Field API Name | Data Type | Primary Key
+
+| channelType
+| channelType__c
+| Text
+|
+
+| createdBy
+| createdBy__c
+| Text
+|
+
+| createdDate
+| createdDate__c
+| DateTime
+|
+
+| emailAddress
+| emailAddress__c
+| Text
+|
+
+| individualId
+| individualId__c
+| Text
+|
+
+| isDeleted
+| isDeleted__c
+| Text
+|
+
+| pagesPerSession
+| pagesPerSession__c
+| Number
+|
+
+| sessionId
+| sessionId__c
+| Text
+| Primary Key
+
+| timeBetweenChannels
+| timeBetweenChannels__c
+| Number
+|
+
+| timeInChannel
+| timeInChannel__c
+| Number
+|
+
+| updatedBy
+| updatedBy__c
+| Text
+|
+
+| updatedDate
+| updatedDate__c
+| DateTime
+|
+
+| Data Source Object
+| DataSourceObject__c
+| Text
+|
+
+| Data Source
+| DataSource__c
+| Text
+|
+|===
+
+*Data Mappings of FINS_Banking-Data-Connector-WebEngagement Data stream to FINS_Banking_WebEngagement, Individual, Contact Point Email, and Party Identification DMOs*
+
+|===
+| FINS_Banking-Data-Connector-WebEngagement | FINS_Banking_WebEngagement | Individual | Party Identification | Contact Point Email
+
+| channelType
+| channelType
+|
+|
+|
+
+| createdBy
+| createdBy
+|
+|
+|
+
+| createdDate
+| createdDate
+|
+|
+|
+
+| emailAddress
+| emailAddress
+|
+|
+| Email Address
+
+| individualId
+| individualId
+| Individual Id, Global Party
+| Party Identification Id, Identification Number, Party
+| Contact Point Email Id, Party
+
+| isDeleted
+| isDeleted
+|
+|
+|
+
+| pagesPerSession
+| pagesPerSession
+|
+|
+|
+
+| sessionId
+| sessionId
+|
+|
+|
+
+| timeBetweenChannels
+| timeBetweenChannels
+|
+|
+|
+
+| timeInChannel
+| timeInChannel
+|
+|
+|
+
+| updatedBy
+| updatedBy
+|
+|
+|
+
+| updatedDate
+| updatedDate
+|
+|
+|
+
+| Data Source Object
+| Data Source Object
+|
+|
+|
+
+| Data Source
+| Data Source
+|
+|
+|
+
+| PartyType
+|
+|
+| Identification Name, Party Identification Type
+|
+|===
+
+== Identity Resolution
+
+Use Identity Resolution to match and reconcile data about people into a comprehensive view of your customer called a _unified profile_. Identity Resolution uses matching and reconciliation rulesets to link the most relevant data from all the associated profiles of each unified profile. Identity Resolution is powered by rulesets to create unified profiles in Salesforce CDP.
+
+Access Identity Resolution from Salesforce CDP after mapping entities to the CIM. Entities must be mapped before you can create rulesets. Additional Information can be found here.
+
+* https://help.salesforce.com/s/articleView?id=c360_a_individual_ruleset.htm&type=5&language=en_US[Individual Entity Ruleset^]
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_partyidentifier.htm&type=5[Party Identifier in Identity Resolution Match Rules^]
+* https://help.salesforce.com/s/articleView?id=c360_a_unified_individual.htm&type=5&language=en_US[Identity Resolution Object Examples^]
+* https://help.salesforce.com/s/articleView?id=c360_a_identity_resolution_summary_anonymous_vs_known_profiles.htm&type=5&language=en_US[Anonymous and Known Profiles in Identity Resolution^]
+* https://help.salesforce.com/s/articleView?id=c360_a_resolution_troubleshooting.htm&type=5&language=en_US[Optimize Identity Resolution^]
+* https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Salesforce CDP^]
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, use the Custom Match Rules leveraging Identification Number of Party Identification Object for Global Party Id Match followed by Normalized Email Address.
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-identity-match-rules.png[fins-cdp-setup-identity-match-rules.png,90%]
+ +
+</br>
+image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-id-match-rules-party-id.png[fins-cdp-setup-id-match-rules-party-id.png,75%]
+ +
+</br>
+image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-id-match-rules-email-address.png[fins-cdp-setup-id-match-rules-email-address.png,75%]
+
+To create your Identity Resolution Rules, follow the steps below:
+
+. Go to the Identity Resolution Tab in the main Menu.
+. Click New in the upper right corner.
+. Select Individual from the drop-down for the Entity. Do not add a Ruleset ID for your Primary Ruleset.
+. Create a Ruleset Name. If you are using more than one Ruleset for testing, having the name reference the rules included will help differentiate the rulesets.
+. Add a Rule Description (optional).
+. Click Save to save the ruleset.
+. Click the Configure button to configure your Match Rules.
+. Click the Configure button nest to Match Rule 1 to configure your Match Rules.
+. Add the desired Match Rules.
+. Click the Next button and  dd the desired criteria for you Match Rules.
+. Click the Next button. Click Add Match Rule to add any additional rules or click Save to complete Match Rules.
+
+Once run, review the https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.c360_a_resolution_summary.htm[Identity Resolution Summary^] and Processing History Screens to validation your Identity Resolution Rules. Also add applicable https://help.salesforce.com/s/articleView?id=sf.c360_a_reconciliation_rules.htm&type=5[Individual Reconciliation Rules^].
+
+== Calculated Insights
+
+The Calculated Insights feature lets you define and calculate multi-dimensional metrics from your entire digital state stored in Salesforce CDP.
+
+Calculated Insights can be built Using Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the CDP Help Documentation. Also check https://help.salesforce.com/s/articleView?id=sf.c360_a_processing_calculated_insights.htm&type=5[Processing Calculated Insights^] for the Calculated Insights schedule.
+
+Examples of Calculated Insights are available in our CDP Help Documentation and in our CDP Salesforce GitHub Instance. Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, create Calculated Insights to gain visibility across our Account (FinancialAccount and ExternalFinancialAccount), WebEngagement along with Customer Profile info.
+
+*Cross-selling Money Market Account*
+
+For `Cross-selling money market account` segment (created in later steps) create two Calculated Insights:
+
+* `Cross Sell Account Summary Metrics v1` that provides metrics on Account Balances, Age of the Account
+* `Cross Sell Account Type Metrics v1` that provides metrics on Count of Account based on Account Types of the Customer.
+
+To create your Calculated Insights, follow the steps below:
+
+. Click Calculated Insights, Click New.
+. Click Create with SQL, Click Next.
+. Enter Calculated Insight Name as `Cross Sell Account Summary Metrics v1`.
+. In the Expression field enter the below query.
++
+----
+ SELECT INDV.si_individual_id__c AS individual_id__c, MAX(MONTHS_BETWEEN(CURRENT_DATE(),FINS_Banking_FinancialAccount__dlm.openedDate__c)) AS max_age__c, COUNT(FINS_Banking_FinancialAccount__dlm.globalAccountId__c) As count_of_accounts__c,SUM(FINS_Banking_FinancialAccount__dlm.accountBalance__c) as all_account_balances__c FROM FINS_Banking_FinancialAccount__dlm LEFT JOIN (SELECT ssot__Individual__dlm.ssot__Id__c AS si_individual_id__c , APPROX_COUNT_DISTINCT(ssot__Individual__dlm.ssot__Id__c ) AS si_count__c FROM ssot__Individual__dlm GROUP BY ssot__Individual__dlm.ssot__Id__c ) AS INDV ON FINS_Banking_FinancialAccount__dlm.primaryAccountOwner__c=INDV.si_individual_id__c WHERE ((FINS_Banking_FinancialAccount__dlm.depositAccountType__c='SAVINGS') or (FINS_Banking_FinancialAccount__dlm.depositAccountType__c='CHECKING')) GROUP BY individual_id__c
+----
+
+. Click Save.
+. Create another Calculated Insight Name as `Cross Sell Account Type Metrics v1`.
+. In the Expression field enter the below query. Click Save.
++
+----
+ SELECT INDV.ss_individual_id__c AS individual_id__c,COUNT(FINS_Banking_FinancialAccount__dlm.depositAccountType__c) AS count_deposit_account_type__c, FINS_Banking_FinancialAccount__dlm.depositAccountType__c As deposit_account_type__c FROM FINS_Banking_FinancialAccount__dlm LEFT JOIN ( SELECT ssot__Individual__dlm.ssot__Id__c AS ss_individual_id__c, APPROX_COUNT_DISTINCT(ssot__Individual__dlm.ssot__Id__c ) AS ss_count__c FROM ssot__Individual__dlm GROUP BY ssot__Individual__dlm.ssot__Id__c ) AS INDV ON FINS_Banking_FinancialAccount__dlm.primaryAccountOwner__c=INDV.ss_individual_id__c GROUP BY individual_id__c,deposit_account_type__c
+----
++
+{blank} +
+</br>
+image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-calculated-insights-cross-sell.png[fins-cdp-setup-calculated-insights-cross-sell.png,85%]
+ +
+</br>
+
+*Up-selling Mortgage Account*
+
+For `Up-selling mortgage account` segment (created in later steps) create three Calculated Insights:
+
+* `Upsell Account Summary Metrics v1` that provides metrics on Total Account Balances, Age of the Accounts.
+* `Upsell Account Type Metrics v1` that provides metrics on Count of Account based on Account Types of the Customer.
+* `Upsell Web Engagement Metrics v1` that provides metrics on the Web Engagement data of the Customer.
+
+To create your Calculated Insights, follow the steps below:
+
+. Click Calculated Insights, Click New.
+. Click Create with SQL, Click Next.
+. Enter Calculated Insight Name as `Upsell Account Summary Metrics v1`.
+. In the Expression field enter the below query.
++
+----
+ SELECT INDV.si_individual_id__c AS individual_id__c, (SUM(IFNULL(S.ext_o_daily_balance__c,S.inv_o_daily_bal__c))) AS total_balance__c, (MAX(IFNULL(S.ext_o_time_as_client__c,S.inv_o_acc_opened_date__c))) AS time_as_client__c FROM ( SELECT FEA.ext_daily_balance__c AS ext_o_daily_balance__c,FEA.ext_indv__c AS ext_o_indv__c, FEA.ext_time_as_client__c AS ext_o_time_as_client__c, FA.inv_daily_bal__c AS inv_o_daily_bal__c, FA.int_indv__c AS int_o_indv__c, FA.int_acc_opened_date__c AS inv_o_acc_opened_date__c FROM ( SELECT SUM(FINS_Banking_ExternalFinancialAccount__dlm.averageDailyBalance__c) AS ext_daily_balance__c, FINS_Banking_ExternalFinancialAccount__dlm.individualId__c AS ext_indv__c, (MAX(IFNULL(FINS_Banking_ExternalFinancialAccount__dlm.lengthOfTimeAsClient__c,0))*12) AS ext_time_as_client__c FROM FINS_Banking_ExternalFinancialAccount__dlm WHERE FINS_Banking_ExternalFinancialAccount__dlm.accountType__c='Savings' OR FINS_Banking_ExternalFinancialAccount__dlm.accountType__c='Checking' OR FINS_Banking_ExternalFinancialAccount__dlm.accountType__c='Money Market' GROUP BY FINS_Banking_ExternalFinancialAccount__dlm.individualId__c) AS FEA FULL JOIN ( SELECT SUM(FINS_Banking_FinancialAccount__dlm.accountBalance__c) AS inv_daily_bal__c, FINS_Banking_FinancialAccount__dlm.primaryAccountOwner__c AS int_indv__c, (MONTHS_BETWEEN(CURRENT_DATE(),MAX(FINS_Banking_FinancialAccount__dlm.openedDate__c))) AS int_acc_opened_date__c FROM FINS_Banking_FinancialAccount__dlm WHERE FINS_Banking_FinancialAccount__dlm.depositAccountType__c IS NOT NULL GROUP BY FINS_Banking_FinancialAccount__dlm.primaryAccountOwner__c) AS FA ON FEA.ext_indv__c= FA.int_indv__c) AS S LEFT JOIN (SELECT ssot__Individual__dlm.ssot__Id__c AS si_individual_id__c , APPROX_COUNT_DISTINCT(ssot__Individual__dlm.ssot__Id__c ) AS si_count__c FROM ssot__Individual__dlm GROUP BY ssot__Individual__dlm.ssot__Id__c ) AS INDV ON IFNULL(S.ext_o_indv__c,S.int_o_indv__c)=INDV.si_individual_id__c group by individual_id__c
+----
+
+. Click Save.
+. Create another Calculated Insight Name as `Upsell Account Type Metrics v1`.
+. In the Expression field enter the below query. Click Save.
++
+----
+ SELECT SUM(IFNULL(S.i_count_type__c ,S.e_count_type__c)) AS count__c, IFNULL(S.i_deposit_account_type__c,S.e_deposit_account_type__c) AS account_type__c,INDV.si_individual_id__c id__c FROM ( SELECT FA.count_type__c AS i_count_type__c, FA.deposit_account_type__c as i_deposit_account_type__c, FA.individual_id__c AS i_individual_id__c,FEA.count_type__c AS e_count_type__c, FEA.deposit_account_type__c as e_deposit_account_type__c, FEA.individual_id__c AS e_individual_id__c FROM ( SELECT IFNULL(COUNT(FINS_Banking_ExternalFinancialAccount__dlm.accountType__c),0) as count_type__c, SUBSTRING(UPPER(FINS_Banking_ExternalFinancialAccount__dlm.accountType__c),0,5) AS deposit_account_type__c, FINS_Banking_ExternalFinancialAccount__dlm.individualId__c AS individual_id__c FROM FINS_Banking_ExternalFinancialAccount__dlm group by SUBSTRING(UPPER(FINS_Banking_ExternalFinancialAccount__dlm.accountType__c),0,5),FINS_Banking_ExternalFinancialAccount__dlm.individualId__c) AS FEA FULL JOIN (SELECT IFNULL(COUNT(FINS_Banking_FinancialAccount__dlm.depositAccountType__c),0) AS count_type__c, SUBSTRING(UPPER(FINS_Banking_FinancialAccount__dlm.depositAccountType__c),0,5) AS deposit_account_type__c, FINS_Banking_FinancialAccount__dlm.primaryAccountOwner__c AS individual_id__c FROM FINS_Banking_FinancialAccount__dlm group by SUBSTRING(UPPER(FINS_Banking_FinancialAccount__dlm.depositAccountType__c),0,5), FINS_Banking_FinancialAccount__dlm.primaryAccountOwner__c ) AS FA ON FEA.individual_id__c = FA.individual_id__c ) AS S LEFT JOIN (SELECT ssot__Individual__dlm.ssot__Id__c AS si_individual_id__c , APPROX_COUNT_DISTINCT(ssot__Individual__dlm.ssot__Id__c ) AS si_count__c FROM ssot__Individual__dlm GROUP BY ssot__Individual__dlm.ssot__Id__c ) AS INDV ON S.i_individual_id__c=INDV.si_individual_id__c GROUP BY id__c, account_type__c
+----
+
+. Click Save.
+. Create another Calculated Insight Name as `Upsell Web Engagement Metrics v1`.
+. In the Expression field enter the below query. Click Save.
++
+----
+ SELECT I.ss_individual_id__c AS individual_id__c, FINS_Banking_WebEngagement__dlm.channelType__c AS channel_type__c, SUM(FINS_Banking_WebEngagement__dlm.timeInChannel__c) AS total_time_spent__c, SUM(FINS_Banking_WebEngagement__dlm.pagesPerSession__c) AS total_pages_visited__c FROM FINS_Banking_WebEngagement__dlm LEFT JOIN ( SELECT ssot__Individual__dlm.ssot__Id__c AS ss_individual_id__c, APPROX_COUNT_DISTINCT(ssot__Individual__dlm.ssot__Id__c ) AS ss_count__c FROM ssot__Individual__dlm GROUP BY ssot__Individual__dlm.ssot__Id__c ) AS I ON FINS_Banking_WebEngagement__dlm.individualId__c=I.ss_individual_id__c GROUP BY channel_type__c, individual_id__c
+----
++
+{blank} +
+</br>
+image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-calculated-insights-up-sell.png[fins-cdp-setup-calculated-insights-up-sell.png,85%]
+ +
+</br>
+
+== Create and Activate Segments
+
+=== Segmentation
+
+Creating segments is simple in CDP.
+
+. In Salesforce CDP, click Segments.
+. When you see the list of already created segments, if any, click New.
+. Fill in all desired fields under Segment Details. Segment On, Segment Name, and Publish Schedule are required.
+ ** Segment On: Identifies the entity that your segment builds on.
+ ** Segment Name: Give your Segment a unique name that's easy to remember and recognize.
+ ** Segment Description: Provide detail about a segment's use, contents, or timeframes for later review.
+ ** Publish Schedule: Determines when and how often your segment publishes to activation targets.
+. Save your changes.
+
+TIP: Leave the Publish Schedule as *Don't Refresh for now*, and then fill it in after you complete your segment filters. Segment can be scheduled to publish every 12 or 24 hours.
+
+Segment On: Segment On defines the target entity (object) used to build your segment. For example, you can build a segment on Unified Individual or Account or Individual. You can choose any entity marked as type Profile during ingestion.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, create Segments on Individual.
+
+*Cross-selling money market account:*
+
+For `Cross-selling money market account`, to aggregrate data use the Calculated Insights created earlier and filter the data with the criteria mentioned in the below steps:
+
+. Select the `all_account_balances__c` from our Attribute Library by accessing the `Cross Sell Account Summary Metrics v1` Calculated Insights on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than or Equal To` and key in `3000` for the account balances.
+. Click Done.
+. Next, select the `max_age__c` from our Attribute Library by accessing the `Cross Sell Account Summary Metrics v1` Calculated Insights on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than` and key in `12` for the months of age.
+. Click Done.
+. Next, select the `count_deposit_account_type__c` from our Attribute Library by accessing the `Cross Sell Account Type Metrics v1` Calculated on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than or Equal To` and key in `1` for the count.
+. Add the dimension by selecting the `deposit_account_type__c` attribute, choose `Contains` as the Operator and key in `SAVINGS`.
+. Click Done.
+. Finally, select the `count_deposit_account_type__c` from our Attribute Library by accessing the `Cross Sell Account Type Metrics v1` Calculated Insights on the `Individual` and drag it over the the canvas.
+. For the operator, select `Has No Value`.
+. Add the dimension by selecting the `deposit_account_type__c` attribute, choose `Contains` as Operator and key in `MONEY_MARKET`.
+. Click Done.
+
+For the Publish Schedule, we update it to reflect a Publish Schedule of every 12 hours.
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-segment-cross-sell.png[fins-cdp-setup-segment-cross-sell.png,85%]
+
+*Up-selling mortgage account:*
+
+For `Up-selling mortgage account`, to aggregrate data use the Calculated Insights created earlier and filter the data with the criteria mentioned in the below steps:
+
+. Select the `all_account_balances__c` from our Attribute Library by accessing the `Upsell Account Summary Metrics v1` Calculated Insights on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than or Equal To` and key in `10000` for the account balances.
+. Click Done.
+. Next, select the `time_as_client__c` from our Attribute Library by accessing the `Upsell Account Summary Metrics v1` Calculated Insights on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than` and key in `36` for the months of age.
+. Click Done.
+. Next, select the `count__c` from our Attribute Library by accessing the `Upsell Account Type Metrics v1` Calculated on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than or Equal To` and key in `1` for the count.
+. Add the dimension by selecting the `account_type__c` attribute, choose `Contains` as the Operator and key in `MONEY`.
+. Click Done.
+. Finally, select the `total_time_spent__c` from our Attribute Library by accessing the `Upsell Web EngagementSummary Metrics v1` Calculated Insights on the `Individual` and drag it over the the canvas.
+. For the operator, select `Greater Than or Equal To` and key in `20` for the count.
+. Add the dimension by selecting the `channel_type__c` attribute, choose `Contains` as the Operator and key in `real estate`.
+. Click Done.
+
+For the Publish Schedule, we update it to reflect a Publish Schedule of every 12 hours.
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-segment-up-sell.png[fins-cdp-setup-segment-up-sell.png,85%]
+
+=== Activation Targets
+
+Create activation targets to build, and activate data segments with Salesforce CDP.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, create a Cloud File Storage (S3) Activation Target and a Marketing Cloud Activation Target.
+
+*Activation Target - Cloud File Storage (S3)*
+
+Create an activation target in Salesforce CDP to publish segments to Cloud Storage. You can activate S3 without mapping contact points. Before you can create an Activation Target, determine your S3 access key and secret key.
+
+. Click Activation Targets.
+. Click New Activation Target.
+. Select Cloud File Storage.
+. Click Next.
+. Enter an easy to recognize and unique name.
+. Click Next.
+. Type the S3 bucket and parent folder configured by your admin for your activation target.
+. To give access to your S3 location, enter your S3 access key and secret key. The S3 credentials provided must have the following permissions: s3:PutObject, s3:GetObject, s3:ListBucket, s3:DeleteObject, s3:GetBucketLocation. *Note:* To delete S3 access or secret keys, delete the activation target.
+. Select an export file format.
+. Click Save.
+
+Your Cloud File Storage activation target is created and the following items are added to Cloud Storage:
+
+. A metadata file that describes the segment definition.
+. Data files that contain the segment members with additional attributes.
+. A segment-data folder to indicate that writing output files to the folder has completed. If this file is missing, it indicates that either the files are being written or the data was only partially written and the producer failed.
+
+After you create and activate segments to Cloud File Storage, a subfolder called `Salesforce-c360-Segments` is automatically created when the first segment is activated to Cloud File Storage.
+
+. Access Cloud File Storage.
+. Navigate to the bucket name you configured in Cloud File Storage Activation Target.
+. Navigate to `/Salesforce_c360_Segments`.
+
+The actual segments will be created with prefixes of `YYYY/MM/DD/HH/{first 100 characters of segment name}_{20 characters of activation name}_{timestamp in yyyyMMddHHmmsssSSS format}`.
+
+*Activation Target - Marketing Cloud:*
+
+Before creating an activation target, configure the Marketing Cloud connector in the CDP Setup page.
+
+. Click Setup gear icon and then CDP Setup.
+. Select Marketing Cloud.
+. Enter the Credentials to authenticate your Marketing Cloud account. You can proceed with the next step in the setup only if the authentication is successful.
+. Data Source setup - this step is optional. This needs to be set up if you are planning to ingest data from Marketing Cloud into Salesforce CDP. *Note:* For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, this step is skipped.
+. Select Business Units to activate -  this step is optional. To add or remove business units (BU), click the arrows between the two columns. *Note:* For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, select business units to publish segments to Marketing Cloud.
+
+Create an activation target in Salesforce CDP to publish segments to Marketing Cloud business units.
+
+. Click Activation Targets.
+. Click New.
+. Select Marketing Cloud.
+. Click Next.
+. Enter an easy to recognize and unique name. *IMPORTANT:* Marketing Cloud activation target names cannot be more than 128 characters, start with an underscore, be all numbers, or include these characters: `+@ % ^ = < ' * + # $ / \ ! ? ( ) { } [ ] , . (space)+`
+. Click Next.
+. To add or remove business units (BU) to receive the published segments, click the arrows between the two columns. When an activation target has multiple BUs, the activation filters the contacts by the BUs. The segment activates as a Shared Data Extension (SDE) and not as a Data Extension (DE) to Marketing Cloud. If an activation target has multiple business units configured, modify the activation target configuration to include one business unit only.
+. Save your changes.
+
+Your Marketing Cloud activation target is created.
+
+=== Activation
+
+Activation is the process that materializes and publishes a segment to activation platforms. An activation target is used to store authentication and authorization information for a given activation platform. You can publish your segments, include contact points, and additional attributes to the activation targets.
+
+View, change, and delete your Activations in Salesforce CDP for publishing of segments to activation platforms. Navigate to an Activation record to view details and publish history for that Activation.
+
+In Activations, the Activation History shows when and how segments were published. For segments published to a Marketing Cloud activation target, additional Accepted and Rejected columns only appear in Activation Publish History to provide more details.
+
+To view the publish history of a segment:
+
+. In Salesforce CDP, navigate to your Activations.
+. Select the activation to review.
+. View details in Activation History.
+
+After you create a segment in Salesforce CDP, you can publish a segment to an activation target.
+
+. In Salesforce CDP, click Segments.
+. Select a segment.
+. In Activations, click New.
+. Select an Activation Target.
+. Select an entity from Activation Membership.
+. Click Next.
+. Select your contact points. *Note:* Selecting contact points is optional for S3 activations. When contact points are mapped, select an existing path.
+. To activate additional attributes, click Add Attributes.
+. Drag up to 100 additional attributes to the canvas and click Save. *Note:* Two types of additional attributes can be added to your activation:
+ ** Attributes of the Activation Membership entity.
+ ** Attributes from entities mapped with a direct relationship to the Activation Membership entity.
+. Click to add a unique preferred attribute name for any attributes.
+. Click Next.
+. Enter a name and description for your activation. *IMPORTANT:* You cannot include the following characters in the name field: `++ ! @ # $ % ^ * ( ) = { } [ ] \ . < > / " : ? | , _ &+`
+. Click Save.
+
+Your segment publishes on the next publish scheduled for the selected activation target.
+
+For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, create Activations to both Activation Targets S3 and Marketing Cloud.
+
+*Cross-selling money market account/Up-selling mortgage account*
+
+Below are steps to create an Activation with an Activiation Target:
+
+. In Activations, click New.
+. Select the Segment `Cross-selling money market account/Up-selling mortgage account`.
+. Select an Activation Target (S3/Marketing Cloud Activiation Targets) created earlier.
+. Select `Account` from Activation Membership.
+. Click Next.
+. Select your contact points. *Note:* Selecting contact points is optional for S3 activations. When contact points are mapped, select an existing path or click Edit .
+. To activate additional attributes, click Add Attributes.
+. Drag Account Id, Account Name to the canvas and click Save.
+. From `Unified Individual <ruleset>` select the `Global Party` field and select the path that relates from `Account`
+. Click Next.
+. Enter a name and description for your activation. *IMPORTANT:* You cannot include the following characters in the name field: `++ ! @ # $ % ^ * ( ) = { } [ ] \ . < > / " : ? | , _ &+`
+. Click Save.
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

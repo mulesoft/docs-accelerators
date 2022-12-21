@@ -1,0 +1,3 @@
+.xref:index.adoc[Life Sciences]
+* xref:index.adoc[MuleSoft Accelerator for Life Sciences Overview]
+* xref:release-notes.adoc[Release Notes]

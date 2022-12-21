@@ -1,0 +1,323 @@
+= SAP Custom BAPI Setup Guide - Customer Profile Sync
+
+The following provides guidance on how to use the custom BAPI code (e.g., `ZBAPI_CUSTOMER_V3`) for your SAP instance.
+
+[NOTE]
+You must complete the following instructions before proceeding to https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.3/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Use case 1 - Customer profile sync from SAP].
+
+== BAPI custom objects
+
+You must create the following ABAP objects in order to use this custom BAPI, which are described below.
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#creating-data-elements[Data elements] +
+`Z_MASTER_ID`
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#creating-structures[Structures] +
+`ZSTR_PERSON` +
+`ZSTR_ORGANIZATION` +
+`ZSTR_GROUP` +
+`ZES_CUSTOMER` +
+`ZES_CONTROLDATA`
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#creating-table-types[Table types] +
+`ZTY_CUSTOMER`
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#creating-transparent-tables[Transparent tables] +
+`ZTT_CUSTOMER`
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#creating-function-groups-and-function-modules[Function groups] +
+`ZFG_CUSTOMER` +
+`ZFG_CUSTOMER2`
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#creating-function-groups-and-function-modules[Function modules] +
+** https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#zbapi-customer-modules[ZBAPI_CUSTOMER modules] +
++
+`ZBAPI_CUSTOMER` +
+`ZBAPI_CUSTOMER_CREATE` +
+`ZBAPI_CUSTOMER_CUSTOM_FIELDS` +
+`ZBAPI_CUSTOMER_UPDATE` +
+** https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.7/pages/SAP%20custom%20BAPI%20setup%20guide%20-%20customer%20profile%20sync/#more-zbapi-modules[More ZBAPI modules] +
++
+`ZBAPI_QUERY` +
+`ZBAPI_ADDR_QUERY` +
+`ZBAPI_QUERY_SAP` +
+`ZBAPI_CUST_QUERY` +
+`ZBAPI_CUSTOMER_CD`
+
+=== Creating Data Elements
+
+[%header%autowidth.spread]
+|===
+|Object	|How to create
+a|`Z_MASTER_ID`	a|//image placeholder for sfc-retail-com-bapi_01.png
+|===
+
+=== Creating Structures
+
+[%header%autowidth.spread]
+|===
+|Object	|How to Create
+a|`ZSTR_PERSON`	a|// image placeholder for retail-2.2-bapi-01.1.png
+a|`ZSTR_ORGANIZATION`	a|//image placeholder for retail-2.2-bapi-01.2.png
+a|`ZSTR_GROUP`	a|//image placeholder for retail-2.2-bapi-01.3.png
+a|`ZES_CUSTOMER`	a|//image placeholder for retail-2.2-bapi-01.4.png
+a|`ZES_CONTROLDATA`	a|//image placeholder for retail-2.2-bapi-01.5.png
+|===
+
+=== Creating Table Types
+
+[%header%autowidth.spread]
+|===
+|Object	|How to Create
+a|`ZTY_CUSTOMER`	a|//image placeholder for sfc-retail-com-bapi_05.png
+|===
+
+=== Creating Transparent Tables
+
+[%header%autowidth.spread]
+|===
+|Object	|How to Create
+a|`ZTT_CUSTOMER`	a|//image placeholder for retail-2.2-bapi-05.1.png
+|===
+
+=== Creating Function Groups and Function Modules
+
+==== ZBAPI Customer Modules
+
+. Create the function group `ZFG_CUSTOMER_V3`.
+
+. Create the function module `ZBAPI_CUSTOMER_V3`, using "Remote-enable module" as processing type.
+
+//image placeholder for sfc-retail-com-bapi_06.png
+
+[start=3]
+. Complete the import parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_07.png
+
+[start=4]
+. Complete the export parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_08.png
+
+[start=5]
+. Copy and paste the code from `ZBAPI_CUSTOMER_V3.txt`.
+
+. Create the function module `ZBAPI_CUSTOMER_CREATE_V3`.
+
+//image placeholder for sfc-retail-com-bapi_09.png
+
+[start=7]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-09.1.png
+
+[start=8]
+. Complete the export parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_11.png
+
+[start=9]
+. Copy and paste the code from `ZBAPI_CUSTOMER_CREATE_V3.txt`.
+
+. Create the function module `ZBAPI_CUSTOMER_CUSTOM_FLDS_V3`.
+
+//image placeholder for sfc-retail-com-bapi_15.png
+
+[start=11]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-15.1.png
+
+[start=12]
+. Copy and paste the code from `ZBAPI_CUSTOMER_CUSTOM_FIELDS_V3.txt`.
+
+. Create the function module `ZBAPI_CUSTOMER_UPDATE_V3`.
+
+//image placeholder for sfc-retail-com-bapi_12.png
+
+[start=14]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-12.1.png
+
+[start=15]
+. Complete the export parameters with the following:
+
+//image placeholder for retail-2.2-bapi-12.2.png
+
+[start=16]
+. Copy and paste the code from `ZBAPI_CUSTOMER_UPDATE_V3.txt`.
+
+. Create the function module `ZBAPI_QUERY_V3`, using "Remote-enable module" as processing type.
+
+//image placeholder for sfc-retail-com-bapi_36.png
+
+[start=18]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-36.1.png
+
+[start=19]
+. Complete the export parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_22.png
+
+[start=20]
+. Copy and paste the code from `ZBAPI_QUERY_V3.txt`.
+
+. Create the function module `ZBAPI_CONTROL_DATA_V3`.
+
+//image placeholder for sfc-retail-com-bapi_21.png
+
+[start=22]
+. Complete the import parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_24.png
+
+[start=23]
+. Complete the export parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_19.png
+
+[start=24]
+. Copy the source code from `ZBAPI_CONTROL_DATA_V3.txt`.
+
+. Activate the entire function group by right-clicking on it in the tree and then selecting "Activate".
+
+//image placeholder for sfc-retail-com-bapi_35.png
+
+[start=26]
+. Create the function group `ZFG_CUSTOMER2`.
+
+. Create the function module `ZBAPI_ADDR_QUERY`, using "Remote-enable module" as processing type.
+
+//image placeholder for sfc-retail-com-bapi_17.png
+
+[start=28]
+. Complete the import parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_20.png
+
+[start=29]
+. Complete the export parameters with the following:
+
+//image placeholder for sfc-retail-com-bapi_22.png
+
+[start=30]
+. Copy and paste the code from `ZBAPI_ADDR_QUERY.txt`.
+
+. Create the function module `ZBAPI_CONTROL_DATA` using the import parameters as follows:
+
+//image placeholder for retail-2.2-bapi-22.1.png
+
+[start=32]
+. Use the export parameters as in the following:
+
+//image placeholder for retail-2.2-bapi-22.2.png
+
+[start=33]
+. Copy the source code from `ZBAPI_CONTROL_DATA.txt`.
+
+. Activate the entire function group by right-clicking on it in the tree and selecting 'Activate'.
+
+//image placeholder for retail-2.2-bapi-22.3.png
+
+[start=35]
+. Complete the following:
+.. Create a customer group ZSME (Logistics > General > Business Partner > Customer > Control > Define and Assign Customer Number Ranges)
+.. Create a partner group ZSME (Cross-Application Components > SAP Business Partner > Business Partner > Basic Settings > Number Ranges and Settings) from the transaction SPRO
+.. Synchronize them from the same transaction (Cross-Application Components > Master Data Synchronization > Customer/Vendor Integration > Business Partner Settings > Settings for Customer Integration > Assign Keys > Define Number Assignment for Direction BP to Customer)
+
+//image placeholder for retail-2.2-bapi-22.4.png
+
+== More ZBAPI Modules
+
+The following describes how to sufficiently set up your SAP instance in order to use the following custom BAPIs:
+
+* `ZBAPI_ADDR_QUERY`
+* `ZBAPI_QUERY_SAP`
+* `ZBAPI_CUST_QUERY`
+* `ZBAPI_CUSTOMER_CD`
+
+To create ABAP custom objects, groups, and modules:
+
+. Create the same dictionary objects created for the BAPI `ZBAPI_CUSTOMER` using the following structure/table type:
+
+//image placeholder for retail-2.2-bapi-51.png
+
+//image placeholder for retail-2.2-bapi-52.png
+
+[start=2]
+. Create the function group `ZFG_CUSTOMER2`.
+
+. Create the function module `ZBAPI_ADDR_QUERY` using "Remote-enable module" as the processing type.
+
+//image placeholder for retail-2.2-bapi-53.png
+
+[start=4]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-54.png
+
+[start=5]
+. Complete the export parameters with the following:
+
+//image placeholder for retail-2.2-bapi-55.png
+
+[start=6]
+. Copy and paste the code from `ZBAPI_ADDR_QUERY.txt`.
+
+. Create the function module `ZBAPI_ADDR_SAP` using "Remote-enable module" as the processing type.
+
+//image placeholder for retail-2.2-bapi-56.png
+
+[start=8]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-57.png
+
+[start=9]
+. Complete the export parameters with the following:
+
+//image placeholder for retail-2.2-bapi-58.png
+
+[start=10]
+. Copy and paste the code from `ZBAPI_QUERY_SAP.txt`.
+
+. Create the function module `ZBAPI_CUST_QUERY` using "Remote-enable module" as the processing type.
+
+//image placeholder for retail-2.2-bapi-59.png
+
+[start=12]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-60.png
+
+[start=13]
+. Complete the export parameters with the following:
+
+//image placeholder for retail-2.2-bapi-61.png
+
+[start=14]
+. Copy and paste the code from `ZBAPI_CUST_QUERY.txt`.
+
+. Create the function module `ZBAPI_CUSTOMER_CD` using "Remote-enable module" as the processing type.
+
+//image placeholder for retail-2.2-bapi-62.png
+
+[start=16]
+. Complete the import parameters with the following:
+
+//image placeholder for retail-2.2-bapi-63.png
+
+[start=17]
+. Complete the export parameters with the following:
+
+//image placeholder for retail-2.2-bapi-64.png
+
+[start=18]
+. Copy and paste the code from `ZBAPI_CUSTOMER_CD.txt`.
+
+. Activate the entire function group by right-clicking on it in the tree and selecting "Activate".
+
+//image placeholder for retail-2.2-bapi-65.png
+
+== See Also 
+
+* xref:index.adoc[MuleSoft Accelerator for Retail]

@@ -1,5 +1,0 @@
-[%hardbreaks]
-xref:./shared-components/accelerator-pom-parent.adoc[Accelerator POM Parent]
-xref:./shared-components/accelerator-common-core.adoc[Accelerator Common Core Library]
-xref:./shared-components/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
-xref:./shared-components/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]

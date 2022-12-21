@@ -1,0 +1,19 @@
+= HL7 v2 to FHIR Converter
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-hl7v2-to-fhir-sys-api[HL7 v2 to FHIR converter] comes with a ready to use template for HL7 v2 to FHIR conversion, which is based on the guidance provided by the https://build.fhir.org/ig/HL7/v2-to-fhir[HL7 v2 to FHIR Implementation Guide]. This template can be extended or modified to meet specific conversion requirements.
+
+== Functional diagram
+
+//image placeholder hc-hl7v2-to-fhir-usecase-diagram.png - NEED IMAGE LOCATION
+
+== Advantages
+
+* Removes manual work associated with HL7 v2 and FHIR conversion following https://build.fhir.org/ig/HL7/v2-to-fhir/message_maps.html[HL7 identified mappings]
+* Supports the most commonly used HL7 v2 message formats
+* HL7 connector is preconfigured for this use case to easily read HL7 v2 messages
+* Solution can be extended to support any custom fields and segments
+* Highly performant with underlying DataWeave engine
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]

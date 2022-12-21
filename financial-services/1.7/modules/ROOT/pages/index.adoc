@@ -1,0 +1,37 @@
+= MuleSoft Accelerator for Financial Services
+
+MuleSoft Accelerator for Financial services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
+
+== Use Cases
+
+=== Core Banking Foundation
+
+The https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core Banking Foundation^] use case allows for the display of a customer’s financial summary from multiple systems. The solution supports a customer service view and a customer service representative view.
+
+=== Onboarding
+
+Accelerates the delivery and development of an enhanced onboarding solution to streamline banking loan origination and wealth management client account opening procedures. There are two extensions for this use case:
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer Onboarding - Banking^]
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Client Onboarding - Wealth management^]
+
+=== Payments Modernization
+
+The https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.6/pages/Use%20case%203%20-%20Payments%20modernization/[Payments Modernization use case^] accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
+
+=== Address Change Orchestration
+
+Accelerates the delivery and development of a home address validation solution for streamlining downstream processes impacted by postal address changes. There are two extensions for this use case:
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Address Change Orchestration: Insurance^]
+
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Address Change Orchestration: Banking^]
+
+== See Also
+
+* Required xref:prerequisites.adoc[Prerequisites] for this accelerator
+* xref:fins-assets.adoc[FINS assets]
+* xref:release-notes.adoc[Release Notes]
+* xref:upgrade-notes.adoc[Upgrade Notes]
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange

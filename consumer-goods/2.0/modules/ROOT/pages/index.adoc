@@ -1,0 +1,11 @@
+= MuleSoft Accelerator for Consumer Goods
+
+MuleSoft Accelerator for Consumer Goods helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
+
+To learn more, check out our https://library.mulesoft.com/c/trade-promotion-datasheet?x=gQavOq[datasheet] and https://www.mulesoft.com/lp/demo/api/trade-promotion-management[demo].
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cgcloud-home-hla.svg[MuleSoft-Accelerator-ConsumerGoods]
+
+== See Also
+
+* Required xref:prerequisites.adoc[Prerequisites] for this accelerator

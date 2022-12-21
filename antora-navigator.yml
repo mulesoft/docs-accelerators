@@ -1,0 +1,4 @@
+subcomponents:
+- parent: accelerators-home
+  components: [consumer-goods, financial-services, healthcare, life-sciences, manufacturing, retail]
+  sortAll: true
