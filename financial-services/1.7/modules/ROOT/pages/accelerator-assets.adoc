@@ -1,0 +1,54 @@
+= Available Assets
+
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
+
+== FINS System APIs
+
+include::partial$system-apis-fragment.adoc[]
+
+== FINS Process APIs
+
+include::partial$process-apis-fragment.adoc[]
+
+== FINS Experience APIs
+
+include::partial$experience-apis-fragment.adoc[]
+
+== FINS Listeners
+
+include::partial$listeners-fragment.adoc[]
+
+== FINS Custom Components
+
+include::partial$custom-components-fragment.adoc[]
+
+== Shared Accelerator Assets
+
+A number of shared assets and common services are also used by this accelerator.
+
+=== Accelerator System APIs
+
+[%hardbreaks]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-email-system-api.adoc[Accelerator Email System API]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-slack-system-api.adoc[Accelerator Slack System API]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-sms-system-api.adoc[Accelerator SMS System API]
+
+=== Accelerator Process APIs
+
+[%hardbreaks]
+* xref:../accel/process-apis/accelerator-notifications-process-api.adoc[Accelerator Notifications Process API]
+
+=== Accelerator Custom Components
+
+[%hardbreaks]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library.adoc[Accelerator CIM Global Library]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library.adoc[Accelerator CIM Market Library]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fins-library.adoc[Accelerator CIM FINS Extension Library]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core.adoc[Accelerator Common Core]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc.adoc[Accelerator ID Graph Lightning Web Component]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-knit-maven-plugin.adoc[Accelerator Knit Maven Plugin]
+* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent.adoc[Accelerator POM Parent]
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

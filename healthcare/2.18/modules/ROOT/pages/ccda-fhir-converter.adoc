@@ -1,0 +1,18 @@
+= C-CDA to FHIR Converter
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-ccda-to-fhir-sys-api/[C-CDA to FHIR converter] comes with a ready to use template for https://www.hl7.org/implement/standards/product_brief.cfm?product_id=496[CDA] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements.
+
+== Functional diagram
+
+//image placeholder with text [CDA to FHIR converter functional diagram] - NEED IMAGE LOCATION
+
+== Advantages
+
+* Accelerates efforts to standardize on FHIR and enables more comprehensive view into patients
+* Follows best practices prescribed by HL7 and removes manual work associated with conversion
+* Solution can be extended to support additional CDA documents
+* Highly performant with underlying DataWeave engine
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]

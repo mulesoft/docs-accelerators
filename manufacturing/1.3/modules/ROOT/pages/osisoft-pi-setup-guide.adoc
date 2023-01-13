@@ -1,0 +1,171 @@
+= OSISoft PI Setup Guide for Productive Maintenance
+
+== OSI PI SCADA System - Configuration Guide
+
+This section explain how to configure several components of OSI PI in order to connect to PI servers to retrieve time series data from PI data server.
+
+=== Configuration Steps
+
+. PI Data server connection
+. Configure PI Web API
+. Configure PI Randomizer Interface
+. Configure PI Points
+. Use PI Web API to retrieve attributes and values of PI points
+. PI point configuration used in this use case
+
+=== PI Data Server Connection
+
+* PI data server hosts configuration of PI points, stores values of the PI points and allows PI Web API connect to it and retrieve data from the clients. Make sure your machine can connect to the running instance of the PI data server.
+* Go to the Windows menu items or location of PI system typically located at C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PI System.
+* Run PI system explorer and select Servers menu.
+* If you see Data Server (and Asset Server) are connected no further configuration is required. Otherwise select Tools > Options menu.
+* Check PI Trust, uncheck Windows Security and check Allow login prompt. Then when you try to connect to data server it will prompt you with Windows authentication and your windows credentials.
+
+=== PI Web API Configuration
+
+* PI Web API needs to be configured to retrieve PI points attributes and values using REST.
+* Go to the Windows menu items or location of PI system typically located at C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PI System.
+* Run PI Web API Admin Utility and connects to the PI Asset Server instance.
+* Select HTTPS port 443 and Firewall exception.
+* Select Bypass Advanced Certification Check.
+* Select account type and account name.
+* Select AF server and database, and data server.
+* Follow the screens to continue configuration and note down the PI web API url.
+
+=== Web API System Configuration
+
+This section talks about configuration items which are supported but not configured by default. Follow these steps to configure web API system:
+
+. Open PI System Explorer
+. Click on Database and select Configuration
+. Expand Elements / OSISoft / PI Web API / PI_Server_Host / System Configuration, and then click on 'Attributes' tab
+. Configure the following items:
+
+[%header%autowidth.spread]
+|===
+|Item	|Details	|Comments
+|Basic Auth config	a|* Select AuthenticationMethods
+* Value field click on String Array
+* Type Basic in value and click on Add
+* Click on Check-In button	|Needed to authenticate and connect client to web Api. Refer to below screen.
+|Bulk Request config	a|* If you see IgnoreCacheControlForBulkRequests make sure it is set to True
+* Otherwise Click on New Attribute button on top and set the value to IgnoreCacheControlForBulkRequests, type to Boolean and value to True
+* Click on Check-In button	|Needed for value set URL to get data for multiple points
+|POST Request config	a|* Set EnableCSRFDefense to false	|Needed for POST to work to avoid 403 suite access denied error
+|===
+
+=== Configure PI Randomizer Interface
+
+Follow these steps to configure the random interface and install it as a Windows service.
+
+. Run PI Interface Configuration Utility
+. Select Interface > New Windows interface instance from a bat file or from an exe file and browse to Random interface installation directory typically C:\Program Files\PIPC\Interfaces\Random containing random.exe or random.bat file
+. Select Host PI data server and click on add
+. In the general section make sure the point source is R and in the scan frequency, you specify the frequency at which random interface will simulate PI points. You can specify multiple frequencies
+. In the Service section make sure tcp/ip is selected as a dependency
+
+=== Configure PI Points
+
+PI Interface for Random Simulator Data is installed and configured with PI Data Archive, is an excellent source of test data. You can configure points to generate various types of randomized data. The default point source for this interface is R.
+
+Point builder will allow you to configure PI points.
+
+. Run PI System Management Tools and select Points > Point Builder
+. Click on 'New' and provide point details such as the following:
+
+==== General Tab
+
+* Name: it must be a unique name across all points, e.g. FlowLevel-M23
+* Descriptor: can be used to store some important info such as machine or location where the point is attached
+* Stored Value: how value is stored in data server, select Real-time data
+* Point Source: source of value, for Random interface select R
+* Point Class: select Classic
+* Point Type: data type of the point such as int, float, string, timestamp, blob or digital
+* Digital Set: if the data type is Digital, select the set of value defined in the Digital Set
+* Eng Units: engineering unit of the point being measured, e.g. PSI for flow, F for temperature
+
+==== Archive Tab
+
+* Typical Value: typical value of the point, e.g. 50
+* Zero: minimum value of the point, e.g. 10
+* Span: maximum value of the point, e.g. 100
+* Make sure the Scan and Archiving are selected On
+
+==== Classic Tab
+
+The values in the Location 1 to 5, depends on the Data Type, Scan Class of the random interface being used, desired amount of change between each value, and number of value to change before midpoint resets to current value. Note that not all location values are required for each point. For example:
+
+[%header%autowidth.spread]
+|===
+|Field	|Value	|Description
+|Location1 | a|//what goes in value and description?
+|Location2	|10	|If the span is 100, it will allow to change value by 1 in each scan (10*(100/1000)) = 1
+|Location3	|25	|After 25 random value it will reset to current value
+|Location4	|1	|Scan class of PI point. Look at random.bat or Random interface configuration. This says the PI point will be changed as per line 1, so if that is 30 sec, the PI point value will change every 30 seconds.
+|Location5	|1	|Number from 0 to 5 depending on point data type
+|===
+
+* Digital States configuration: when point data type is selected as Digital, it's value can be one of value specified in a Digital State.
+** Select Points > Digital States and click on Add icon.
+** Name the set and set of state values with state name.
+** Below screen shows a Digital State for a Maintenance Status which can be 0=Active and 1=Broken.
+
+=== Use PI Web API to Retrieve Attributes and Values of PI Points
+
+Once PI servers, data server, web API, random interface and PI points are configured you can use PI web API to retrieve and update point attributes and values from PI server. The web API provides REST interface to interact with PI server over the web.
+
+The following table describes some of the common endpoints to retrieve PI point information. Note that each points and assets in PI server is identified using a unique webId.
+
+[%header%autowidth.spread]
+|===
+|Description	|Web API URL
+|PI Web API home page	|https://host:port/piwebapi/
+|Get attributes of all PI points	|https://host:port/piwebapi/dataservers/DataServer_webId/points
+|Get attributes of multiple specified PI points	|https://host:port/piwebapi/points/multiple?webId=Point1_WebId_&webId=Point2_WebId
+|Get value of a specific PI point	|https://host:port/piwebapi/streams/Point_webId/value
+|Get values of multiple specified PI points	|https://host:port/piwebapi/streamsets/value?webId=Point1_webId_&webId=Point2_webId
+|Get attributes of multiple specified PI points using POST method	|POST: https://host:port/piwebapi/batch
+
+Body:{ "1" : { "Method": "GET", "Resource": "https://host:port/piwebapi/points/multiple?webId=Point1_webId&webId=Point2webId" } }
+|Get data values of multiple specified PI points using POST method	|POST: https://host:port/piwebapi/batch
+
+Body:{ "1" : { "Method": "GET", "Resource": "https://host:port/piwebapi/streamsets/value?webId=Point1_webId&webId=Point2_webId" } }
+|===
+
+=== PI Point Configuration Used in This Use Case
+
+This use case measures vibration delta, temperature, oil level, noise level, and maintenance status of several machines. Following table described configuration of these PI points for one machine.
+
+[%header%autowidth.spread]
+|===
+|Attribute	|Point1	|Point2	|Point3	|Point4	|Point5
+|General Tab | | | | |
+|Name	|Vibration Delta	|Temperature	|Oil Level	|Noise Level	|Maintenance Status
+|Descriptor	|Machine1	|Machine1	|Machine1	|Machine1	|Machine1
+|Stored Values	|Real-time data	|Real-time data	|Real-time data	|Real-time data	|Real-time data
+|Point Source	|R	|R	|R	|R	|R
+|Point Class	|classic	|classic	|classic	|classic	|classic
+|Point Type	|Int32	|Int32	|Int32	|Int32	|Digital
+|Digital Set | | | | |MachineStatus
+|Eng Units	|Hz	|F	|Percentage	|Decibels |
+|Display Digits | | | | |
+|Archive Tab | | | | |
+|Typical Value	|500	|125	|50	|115	|1
+|Span	|1000	|160	|100	|160	|1
+|Zero	|10	|90	|0	|70	|0
+|Scan	|On	|On	|On	|On	|On
+|Archiving	|On	|On	|On	|On	|On
+|Classic Tab | | | | |
+|Location1 | | | | |
+|Location2 | | | | |
+|Location3	|100	|100	|100	|100 |
+|Location4	|1	|1	|1	|1	|1
+|Location5	|2	|2	|2	|2	|1
+a|`Misc` | | | | |
+|Data Type	|Station Data	|Station Data	|Station Data	|Station Data	|Random Data
+|Scale | | | | |
+|===
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Manufacturing]

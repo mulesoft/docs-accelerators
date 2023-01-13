@@ -1,0 +1,63 @@
+= SAP S4HANA Setup Guide for Sales Rebate Management
+
+== Communication Arrangements
+
+Below are the configuration arrangements required for this use case:
+
+[%header%autowidth.spread]
+|===
+|Communication Arrangement	|Service Name	|Protocol
+|SAP_COM_0002	|Journal Entry - Post (Synchronous)	|SOAP
+|===
+
+== Custom Fields
+
+[%header%autowidth.spread]
+|===
+|Salesforce Object	|SAP Field Name	|Data Type	|Length	|Unique	|ExternalID
+|Rebate Payment	|YY1_SME_ExtPaymID_MFG	|Text	|20	|Y	|Y
+|===
+
+This field is also enabled to be used in the SOAP Service mentioned in the previous section. To do that, use the Fiori app Custom Fields and Logic, section SOAP APIs. Look for the service and enable it.
+
+== Custom CDS View
+
+* Name: YY1_JournalEntryItem_Info
+* Representative Key: AccountingDocument
+* Scenario: External API
+* Data Source: I_JournalEntryItem
+* Elements:
+
+[%header%autowidth.spread]
+|===
+|Alias	|Path	|Type	|Key
+|SourceLedger	|I_JournalEntryItem.SourceLedger	|CHAR (2)	|Yes
+|CompanyCode	|I_JournalEntryItem.CompanyCode	|CHAR (4)	|Yes
+|FiscalYear	|I_JournalEntryItem.FiscalYear	|NUMC (4)	|Yes
+|AccountingDocument	|I_JournalEntryItem.AccountingDocument	|CHAR (10)	|Yes
+|LedgerGLLineItem	|I_JournalEntryItem.LedgerGLLineItem	|CHAR(6)	|Yes
+|Ledger	|I_JournalEntryItem.Ledger	|CHAR(2)	|Yes
+|AccountingDocumentType	|I_JournalEntryItem.AccountingDocumentType	|CHAR(2)	|No
+|Customer	|I_JournalEntryItem.Customer	|CHAR(10)	|No
+|YY1_SME_ExtPaymID_MFG_JEI	|I_JournalEntryItem.YY1_SME_ExtPaymID_MFG_JEI	|CHAR(20)	|No
+|CreationDate	|I_JournalEntryItem._JournalEntry.AccountingDocumentCreationDate	|DATS (8)	|No
+|LastChangeDate	|I_JournalEntryItem._JournalEntry.LastChangeDate	|DATS (8)	|No
+|IsReversed	|I_JournalEntryItem._JournalEntry.IsReversed	|CHAR(1)	|No
+|ReversalReason	|I_JournalEntryItem._JournalEntry.ReversalReason	|CHAR(2)	|No
+|ReverseDocument	|I_JournalEntryItem._JournalEntry.ReverseDocument	|CHAR(10)	|No
+|ClearingDate	|I_JournalEntryItem.ClearingDate	|DATS (8)	|No
+|ClearingAccountingDocument	|I_JournalEntryItem.ClearingAccountingDocument	|CHAR(10)	|No
+|ClearingDocumentLastChangeDate	|I_JournalEntryItem._ClearingAccountingDocument.LastChangeDate	|DATS (8)	|No
+|ClearingDocumentCreationDate	|I_JournalEntryItem._ClearingAccountingDocument.AccountingDocumentCreationDate	|DATS (8)	|No
+|ClearingDocumentCreationTime	|I_JournalEntryItem._ClearingAccountingDocument.CreationTime	|TIMS (6)	|No
+|AmountInCompanyCodeCurrency	|I_JournalEntryItem._ClearingAccountingDocument._OperationalAcctgDocItem.AmountInCompanyCodeCurrency	|CURR (23,2)	|No
+|AmountInTransactionCurrency	|I_JournalEntryItem._ClearingAccountingDocument._OperationalAcctgDocItem.AmountInTransactionCurrency	|CURR (23,2)	|No
+|TransactionCurrency	|I_JournalEntryItem._ClearingAccountingDocument._OperationalAcctgDocItem.TransactionCurrency	|CUKY (5)	|No
+|CompanyCodeCurrency	|I_JournalEntryItem._ClearingAccountingDocument._OperationalAcctgDocItem.CompanyCodeCurrency	|CUKY (5)	|No
+|===
+
+A custom communication scenario has to be created adding this CDS view as an inbound service. Once published, create a communication arrangement using that custom communication scenario. That arrangement will have the service URL to retrieve the Journal Entry Item information.
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Manufacturing]

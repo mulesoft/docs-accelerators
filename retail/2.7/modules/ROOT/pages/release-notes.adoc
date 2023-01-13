@@ -1,0 +1,61 @@
+= Release Notes
+
+== v2.5
+26 April 2022
+
+=== New Use Case
+
+This release includes the Deliver relevancy with CDP use case, which synchronizes and unifies customer profile data into a customer data platform so that you can personalize interactions by customer segment.
+
+== v2.4
+25 January 2022
+
+=== New Use Case
+
+This release includes the Real-time inventory management use case, which enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
+
+== v2.3
+23 November 2021
+
+Made the following improvements in this release:
+
+Enhanced product sync to support product variations as described here.
+
+== v2.2.1
+21 September 2021
+
+=== New Use Case
+
+This release includes the Product sync use case, which enables the creation and updates of products across relevant applications, with one application serving as the primary definition of the product.
+
+== v2.2
+29 July 2021
+
+Made the following improvements in this release:
+
+Enhanced customer sync to support Organizations
+Retrofitted all System APIs to reflect the following:
+Renamed query parameters in API specs
+Renamed custom fields in back-end systems
+Revised object structure on published B2C Commerce orders
+Made additional bug fixes and additional enhancements
+
+== v2.1
+6 July 2021
+
+=== New Use Case
+
+This release includes the Sales order sync use case, which enables retail developers to calculate the total lifetime value of a customer by unlocking order data from disparate systems.
+
+== v2.0
+10 May 2021
+
+=== Initial release
+
+This is the first release of the MuleSoft Accelerator for Retail. It has been released as version 2.0 due to the inclusion of some shared assets, which had previously been released with other Accelerators.
+
+This accelerator also introduces the Customer profile sync use case (and four extension use cases), which enables retail developers to create a customer 360 view by unlocking customer data from disparate systems.
+
+== See Also 
+
+* xref:index.adoc[MuleSoft Accelerator for Retail]

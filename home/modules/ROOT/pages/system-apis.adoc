@@ -1,0 +1,10 @@
+= Accelerator System APIs
+
+The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
+
+include::partial$system-apis-fragment.adoc[]
+
+== See Also
+
+* xref:common-assets.adoc[Accelerator Common Assets]
+* xref:index.adoc[MuleSoft Accelerators]

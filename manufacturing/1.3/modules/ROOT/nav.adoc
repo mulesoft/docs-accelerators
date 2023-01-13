@@ -1,0 +1,7 @@
+.xref:index.adoc[Manufacturing]
+* xref:index.adoc[MuleSoft Accelerator for Manufacturing Overview]
+* xref:release-notes.adoc[Release Notes]
+* xref:prerequisites.adoc[Prerequisites]
+** xref:osisoft-pi-setup-guide.adoc[OSISoft PI Setup Guide for Productive Maintenance]
+** xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide for Sales Rebate Management]
+** xref:tableau-setup-guide.adoc[Tableau Setup Guide for Productive Maintenance]
