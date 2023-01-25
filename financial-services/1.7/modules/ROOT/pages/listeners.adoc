@@ -1,7 +1,0 @@
-= FINS Listeners
-
-include::partial$listeners-fragment.adoc[]
-
-== See Also
-
-* xref:index.adoc[MuleSoft Accelerator for Financial Services]

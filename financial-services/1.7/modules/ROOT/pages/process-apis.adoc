@@ -1,7 +1,0 @@
-= FINS Process APIs
-
-include::partial$process-apis-fragment.adoc[]
-
-== See Also
-
-* xref:index.adoc[MuleSoft Accelerator for Financial Services]

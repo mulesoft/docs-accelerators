@@ -8,4 +8,5 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cgcloud-home-hla.
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * Required xref:prerequisites.adoc[Prerequisites] for this accelerator

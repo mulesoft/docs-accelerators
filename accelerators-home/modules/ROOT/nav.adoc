@@ -1,33 +1,11 @@
 .xref:index.adoc[Accelerators]
-<<<<<<< HEAD
 * xref:index.adoc[Introduction to MuleSoft Accelerators]
-=======
-* xref:index.adoc[MuleSoft Accelerators Overview]
->>>>>>> e45997f (Update index.adoc)
-* xref:getting-started.adoc[Getting Started]
+* xref:getting-started.adoc[Getting Started Guide]
 ** xref:build-environment.adoc[Build Environment]
 ** xref:application-deployment.adoc[Application Deployment]
 ** xref:application-testing.adoc[Application Testing]
 ** xref:additional-customizations.adoc[Additional Customizations]
-<<<<<<< HEAD
 * xref:shared-assets.adoc[Shared Assets]
-* xref:common-services.adoc[Common Services]
-* xref:cim-overview.adoc[Cloud Information Model]
-** xref:cim-subject-areas.adoc[CIM Subject Areas]
-*** xref:cim-finance.adoc[Finance]
-*** xref:cim-fulfill.adoc[Fulfill]
-*** xref:cim-market.adoc[Market]
-*** xref:cim-produce.adoc[Produce]
-*** xref:cim-sell.adoc[Sell]
-*** xref:cim-setup.adoc[Setup]
-** xref:cim-usage-guide.adoc[CIM Usage Guide]
-** xref:cim-customizations.adoc[CIM Customizations]
-=======
-* xref:common-assets.adoc[Common Assets]
-** xref:system-apis.adoc[Accelerator System APIs]
-** xref:process-apis.adoc[Accelerator Process APIs]
-** xref:api-libraries.adoc[Accelerator API Libraries]
-** xref:shared-components.adoc[Accelerator Shared Components]
 * xref:common-services.adoc[Common Services]
 * xref:cim/overview.adoc[Cloud Information Model]
 ** xref:cim/usage-guide.adoc[CIM Usage Guide]
@@ -38,4 +16,3 @@
 *** xref:cim/produce.adoc[Produce]
 *** xref:cim/sell.adoc[Sell]
 ** xref:cim/customizations.adoc[CIM Customizations]
->>>>>>> e45997f (Update index.adoc)

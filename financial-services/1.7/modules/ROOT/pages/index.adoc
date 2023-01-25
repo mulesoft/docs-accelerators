@@ -30,6 +30,7 @@ Accelerates the delivery and development of a home address validation solution f
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * Required xref:prerequisites.adoc[Prerequisites] for this accelerator
 * xref:fins-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
