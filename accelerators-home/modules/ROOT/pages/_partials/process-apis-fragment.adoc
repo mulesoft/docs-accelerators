@@ -1,0 +1,8 @@
+The following APIs represent the reusable business processes that are leveraged by multiple accelerators. These correspond to the Process layer in MuleSoft's API-led approach.
+
+[%hardbreaks]
+[%header%autowidth.spread^]
+|===
+| API  | Description
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-notifications-process-api[Accelerator Notifications Process API] | <description>
+|===

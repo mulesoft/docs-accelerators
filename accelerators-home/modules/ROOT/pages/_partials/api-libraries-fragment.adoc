@@ -1,0 +1,8 @@
+The following RAML libraries are available for use in all accelerators.
+
+[%hardbreaks]
+[%header%autowidth.spread^]
+|===
+| RAML Library | Description
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-global-resources[Accelerator Global Resources] | <description>
+|===

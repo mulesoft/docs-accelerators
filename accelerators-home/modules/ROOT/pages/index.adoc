@@ -1,0 +1,25 @@
+:imagesdir: ../assets/images
+
+= MuleSoft Accelerators Overview
+
+Accelerators are a collection of technical assets (predominantly API specifications and implementation templates), reference architectures, and documentation that can be used to accelerate the implementation of multiple use cases supporting a larger business or industry problem.
+
+Accelerators are designed as modular building blocks: customers can change the patterns, mappings, and endpoints to suit their needs. They represent best practices we recommend to customers in accomplishing these use cases. Customers will save hours of discovery, design, development, and testing each time they use an accelerator asset.
+
+To access any of the asset links described within the following Accelerators, you must log in to the https://anypoint.mulesoft.com/home/[Anypoint Platform^].
+
+[%autowidth.spread]
+|===
+.^|image:cg-icon.png[Consumer Goods,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods^] .^| Empower smarter, more effective trade promotions and retail execution through a modern integration approach supported by pre-built APIs, integration templates, and connectors.
+.^|image:fs-icon.png[Financial Services,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] .^| Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement such as customer relationship management (CRM) and information technology service management (ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
+.^|image:hc-icon.png[Healthcare,100%] .^| https://anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare^] .^| Enable EHR connectivity, power a Patient 360, and bring patient demographics information and COVID-19 lab results from any EHR into Health Cloud using HL7 V2 or FHIR standards.
+.^|image:ls-icon.png[Life Sciences,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences^] .^| Helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
+.^|image:mfg-icon.png[Manufacturing,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing^] .^| Provides seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
+.^|image:retail-icon.png[Retail,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^] .^| Enable retail IT teams to jumpstart digital transformation initiatives.
+|===
+
+If you have any questions or feedback, let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas in the https://help.mulesoft.com/s/ideas[Ideas Portal^].
+
+== See Also
+
+* For more accelerators, visit us on https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
