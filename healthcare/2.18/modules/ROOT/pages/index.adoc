@@ -30,5 +30,6 @@ The following use-case agnostic assets are also described:
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:setup-instructions.adoc[Setup Instructions] for this accelerator
 * xref:release-notes.adoc[Release Notes]

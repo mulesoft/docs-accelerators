@@ -29,4 +29,5 @@ Give the assets a try and if you have any questions or feedback, please let us k
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:release-notes.adoc[Release Notes] for this accelerator

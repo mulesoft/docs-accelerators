@@ -1,7 +1,0 @@
-= FINS Experience APIs
-
-include::partial$experience-apis-fragment.adoc[]
-
-== See Also
-
-* xref:index.adoc[MuleSoft Accelerator for Financial Services]
