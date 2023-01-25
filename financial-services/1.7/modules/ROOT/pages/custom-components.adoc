@@ -1,7 +1,0 @@
-= FINS Custom Components
-
-include::partial$custom-components-fragment.adoc[]
-
-== See Also
-
-* xref:index.adoc[MuleSoft Accelerator for Financial Services]
