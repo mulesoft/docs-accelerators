@@ -1,3 +1,5 @@
+The following APIs are provided for use by external systems to interact with functionality provided by the FINS use cases. These correspond to the Experience layer in MuleSoft's API-led approach.
+
 [%hardbreaks]
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-docusign-exp-api[FINS DocuSign Experience API^]
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-mobile-exp-api[FINS Mobile Experience API^]
