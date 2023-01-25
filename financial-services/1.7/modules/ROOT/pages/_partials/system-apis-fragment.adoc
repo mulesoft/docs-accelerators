@@ -1,3 +1,5 @@
+The following APIs are used to access and manage data in various external systems in support of the FINS use cases. These correspond to the System layer in MuleSoft's API-led approach.
+
 [%hardbreaks]
 [%header%autowidth.spread^]
 |===

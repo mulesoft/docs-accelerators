@@ -1,7 +1,4 @@
-
 = FINS Custom Components
-
-The following non-application components provide additional functionality in support of the FINS use cases.
 
 include::partial$custom-components-fragment.adoc[]
 
