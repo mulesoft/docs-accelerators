@@ -1,0 +1,7 @@
+= FINS System APIs
+
+include::partial$system-apis-fragment.adoc[]
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]
