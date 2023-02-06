@@ -1,0 +1,123 @@
+== Salesforce Lightning Web Component configuration
+
+The following example shows how to fetch Customer Profile Data using the Salesforce Experience API endpoint and display in Salesforce using this Lightning Web Component.
+
+=== Prerequisite setup
+
+. In Salesforce, ensure "My Domain" is turned on and activated for the org. Search "My Domain" in the https://help.salesforce.com/articleView?id=domain_name_overview.htm&type=5[Salesforce setup page].
+. Create CSP Trusted Sites (Note: this step takes 15-45 minutes to kick in after enabled. There is no alert when ready). In Salesforce Setup, search "CSP Trusted Sites". Create a CSP trusted site with the URL of the Salesforce Experience API deployed to CloudHub (e.g., https://org-salesforce-exp-api-v2-dev.us-e1.cloudhub.io). Be sure to not include a trailing slash on the URL.
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-csp-setup.png[sfc-sc-lwc-generic-csp-setup.png] +
+ +
+. Salesforce API callouts validate authenticity and ensure security via the use of CORS. It is necessary to configure the Mule API to support CORS. It can be done one of 2 ways:
+ ** Via Mulesoft API manager, add the Cross-Origin Resource Sharing Policy set to Public Resource.
+ +
+ +
+ image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-cors-setup_apim.png[sfc-sc-lwc-generic-cors-setup_apim.png] +
+ +
+ ** Manually return the appropriate headers in your Salesforce Experience API.
+ +
+ +
+ image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-cors-setup_manual.png[sfc-sc-lwc-generic-cors-setup_manual.png] +
+ +
+
+=== Deploying Lightning Web Component to Salesforce
+
+== Using Visual Studio Code
+
+. Deploy static resources (zip file in the root project folder containing D3.js, CSS/stylesheet, and icons) to Salesforce as a new Static Resource called `network_d3`. See https://help.salesforce.com/articleView?id=sf.pages_static_resources_manage.htm&type=5 for details.
+. Install the https://developer.salesforce.com/tools/sfdxcli[Salesforce CLI (SFDX)] on your local system.
+. Set up Visual Studio Code by following this trailhead: https://trailhead.salesforce.com/en/content/learn/projects/quick-start-lightning-web-components/set-up-visual-studio-code
+. Open the project folder in the Visual Studio Code app (note: must be the root folder in VS Code).
+. Authorize the org to publish the code (search for SFDX in the command palette).
+. Deploy the component source to org. This is best accomplished from the command line by running the following command from the project directory: `sfdx force:source:deploy --sourcepath force-app/main/default/lwc/networkVisualizer`
+. In Salesforce organization, navigate to "Custom Code \-> Lightning Components \-> Lightning Components" and make sure the component is available in the list:
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-graph-installed.png[sfc-sc-lwc-graph-installed.png] +
+ +
+
+== Using Managed Package
+
+. After logging into the target Salesforce org, paste the Install URL into the browser address bar `+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5f000000GuSmAAK+`.
+. Approve the Install for "All Users".
+. After installation is complete, navigate to "Packaging \-> Installed Packages" and make sure the package  `Accelerator ID Graph` is available in the list.
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-graph-package-installed.png[sfc-sc-lwc-graph-package-installed.png] +
+ +
+
+*Note*
+In case of Apex compile failure, expand the 'Advanced Options' and select *Compile only the Apex in the package* option.
+
+== The below configuration steps are specific for Salesforce Financial Services Cloud
+
+== Salesforce Configuration for Accounts
+
+. Navigate to a record page within Accounts object and click the gear icon at the top right to select *Edit Page*. On the edit page menu, on the left side menu scroll to the bottom to find the custom component *Accelerator ID Graph*. Drag the components onto the page as shown in the image below.
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-graph-config.png[sfc-sc-lwc-graph-config.png] +
+ +
+. Click on the component to configure parameters. Set the following attributes with parameters:
+ ** *Title to display* - Set the header title as `Customer ID Graph`.
+ ** *Icon for display* - From Salesforce Lightning Design System (LDS) `+https://www.lightningdesignsystem.com/icons/+`, select an appropriate icon. For FINS use cases, select `standard:customer_360`.
+ ** *URL for API call* - Set the endpoint of Mule Experience API to retrieve Global Ids, `+https://fins-salesforce-financial-exp-api-v1-dev.ca-c1.cloudhub.io/api/customers/{id}/externalIds+`.
+ ** *Field for API Lookup* - Set \{id} URI parameter to `Account.Global_Customer_Id__c`. The pattern is FSC object name and the custom Global Identifier Id field: `ObjectName.FieldName`.
+ ** *Image Id for center icon* - Set image id to `account`.
+ ** *Label for center icon* - Set the label to `Customer` to be displayed in the id graph for center icon.
+ ** *Show labels for icons* - Default is `disabled`. Enabling this will display labels under each icon, i.e., the centre icon and the icons for each system.
+ +
+ +
+. *Save* and publish your changes. +
+ +
+
+== Salesforce Configuration for Financial Accounts
+
+Follow the previous steps to add the Id Graph in Financial Accounts object. Update the below fields with the following values:
+
+* *Title to display* - Set the header title as `Financial Account ID Graph`.
+* *URL for API call* - Set the endpoint of Mule Experience API to retrieve Global Ids, `+https://fins-salesforce-financial-exp-api-v1-dev.ca-c1.cloudhub.io/api/accounts/{id}/externalIds+`.
+* *Field for API Lookup* - Set \{id} URI parameter to `FinServ__FinancialAccount__c.Global_Account_Id__c`. The pattern is FSC object name and the custom Global Identifier Id field: `ObjectName.FieldName`.
+* *Label for center icon* - Set the label to `Financial Account`. The label displays in the Id graph for center icon.
+
+== Salesforce Configuration for Financial Account Transaction
+
+Follow the previous steps to add the Id Graph in Financial Account Transactions object. Update the below fields with the following values:
+
+* *Title to display* - Set the header title as `Financial Transaction Graph`.
+* *URL for API call* - Set the endpoint of Mule Experience API to retrieve Global Ids, `+https://fins-salesforce-financial-exp-api-v1-dev.ca-c1.cloudhub.io/api/transactions/{id}/externalIds+`.
+* *Field for API Lookup* - Set \{id} URI parameter to `FinServ__FinancialAccountTransaction__c.Global_Transaction_Id__c`. The pattern is FSC object name and the custom Global Identifier Id field: 'ObjectName.FieldName'.
+* *Label for center icon* - Set the label to `Transaction`. The label displays in the Id graph for center icon.
+
+== Salesforce Configuration for Cards
+
+Follow the previous steps to add the Id Graph in Cards object. Update the below fields with the following values:
+
+* *Title to display* - Set the header title as `Cards ID Graph`.
+* *URL for API call* - Set the endpoint of Mule Experience API to retrieve Global Ids, `+https://fins-salesforce-financial-exp-api-v1-dev.ca-c1.cloudhub.io/api/cards/{id}/externalIds+`.
+* *Field for API Lookup* - Set \{id} URI parameter to `FinServ__Card__c.Global_Card_Id__c`. The pattern is FSC object name and the custom Global Identifier Id field: `ObjectName.FieldName`.
+* *Label for center icon* - Set the label to `Card`. The label displays in the Id graph for center icon.
+
+== The below configuration steps are specific for Salesforce Core Clouds
+
+== Salesforce Configuration for Accounts
+
+. Navigate to a record page within Accounts object and click the gear icon at the top right to select *Edit Page*. On the edit page menu, on the left side menu scroll to the bottom to find the custom component *Accelerator ID Graph*. Drag the components onto the page as shown in the image below.
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-graph-config.png[sfc-sc-lwc-graph-config.png] +
+ +
+. Click on the component to configure parameters. Set the following attributes with parameters:
+ ** *Title to display* - Set the header title as `Customer360`.
+ ** *Icon for display* - From Salesforce Lightning Design System (LDS) `+https://www.lightningdesignsystem.com/icons/+`, select an appropriate icon. For FINS use cases, select `standard:customer_360`.
+ ** *URL for API call* - Set the endpoint of Mule Experience API to retrieve Global Ids, `+https://accel-salesforce-exp-api-v2-dev.ca-c1.cloudhub.io/api/customers/{id}/externalIds+`.
+ ** *Field for API Lookup* - Set \{id} URI parameter to `Account.Global_Customer_Id__c`. The pattern is FSC object name and the custom Global Identifier Id field: `ObjectName.FieldName`.
+ ** *Image Id for center icon* - Set image id to `account`.
+ ** *Label for center icon* - Set the label to `Customer` to be displayed in the id graph for center icon.
+ ** *Show labels for icons* - Default is `disabled`. Enabling this will display labels under each icon, that is, the centre icon and the icons for each system.
+ +
+ +
+. *Save* and publish your changes. +
+ +

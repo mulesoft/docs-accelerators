@@ -1,4 +1,4 @@
-= Getting started with MuleSoft Accelerators
+= Getting Started with MuleSoft Accelerators
 
 This guide will help you configure your local build environment to ensure success in downloading, modifying, and deploying accelerator assets.
 
@@ -25,7 +25,7 @@ The following table provides more information about the types of accelerator ass
 |Custom	assets |Documentation and other downloadable components that do not fit into other categories.	|Accelerator POM Parent - Source
 |===
 
-=== Obtaining accelerator assets
+=== Obtaining Accelerator Assets
 
 All accelerator assets are available from the main Anypoint Exchange site and are freely downloadable by customers with current subscriptions. Refer to the sections in the page navigation menu on the left for more information about configuring, building, and deploying these assets.
 
