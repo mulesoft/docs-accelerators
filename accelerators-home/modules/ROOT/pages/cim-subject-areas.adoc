@@ -7,20 +7,20 @@ The following subject areas are currently supported - follow the links or refer 
 [%header%autowidth.spread^]
 |===
 | Name | Description
-| xref:finance.adoc[Finance]
+| xref:cim-finance.adoc[Finance]
 | Entities related to finances, such as payments and payment methods.
-| xref:fulfill.adoc[Fulfill]
+| xref:cim-fulfill.adoc[Fulfill]
 | Entities related to the fulfillment of goods and services, such as shipments.
-| xref:market.adoc[Market]
+| xref:cim-market.adoc[Market]
 | Entities related to the marketing and promotion of goods and services, such as customers, suppliers, and contact information.
-| xref:produce.adoc[Produce]
+| xref:cim-produce.adoc[Produce]
 | Entities related to actual goods and services, such as products and catalogs.
-| xref:sell.adoc[Sell]
+| xref:cim-sell.adoc[Sell]
 | Entities related to the selling of goods and services, such as sales orders and channels.
-| xref:setup.adoc[Setup]
+| xref:cim-setup.adoc[Setup]
 | Entities related to technical resources and artifacts.
 |===
 
 == See Also
 
-* xref:overview.adoc[CIM Overview]
+* xref:cim-overview.adoc[CIM Overview]
