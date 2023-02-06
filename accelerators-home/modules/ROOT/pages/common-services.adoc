@@ -2,15 +2,9 @@
 
 The MuleSoft Accelerators leverage a number of common components, referred to here as "common services". These services include the following:
 
-<<<<<<< HEAD
-* <<Common Scheduler>> - unified scheduling
-* <<Notification Services>> - send notifications
-* <<Security Services>> - API security policies
-=======
 * Common Scheduler – unified scheduling
 * Notification Services – send notifications
 * Security Services – API security policies
->>>>>>> e45997f (Update index.adoc)
 
 The notification and scheduler services can be configured and installed as independent applications. The notification services consists of multiple applications, depending on which notification targets are selected. One or more security policies can be applied using API Manager.
 
@@ -56,11 +50,7 @@ For service configuration details please refer to the xref:./getting-started.ado
 
 == Security Services
 
-<<<<<<< HEAD
-Most APIs use the HTTPS protocol by default for secure communications. The APIs provided by the solution can also be secured by applying the `Client ID enforcement` policy in API Manager; the `Basic Authentication` policy is also supported.
-=======
 As of Release 1.4, all APIs use the HTTPS protocol by default for secure communications. Most APIs provided by the solution can also be secured by applying the `Client ID enforcement` policy in API Manager; the `Basic Authentication` policy is also supported.
->>>>>>> e45997f (Update index.adoc)
 
 === CloudHub load balancers and HTTPS
 
@@ -80,22 +70,14 @@ The simplest way to create a managed API instance is from an existing Exchange a
 . In API Manager, select the same business group and choose a target environment. Click the `Manage API` button and then select the `Manage API from Exchange` option.
 . In the `API Name` field, start typing the name of the API to manage. The asset type and version fields should populate automatically.
 . Scroll down to the `Mule version` option and enable it. Clear the contents of the `Implementation URI` field.
-<<<<<<< HEAD
-. To make the API easier to find later, expand the `Advanced options` section and enter the full display name of the API in the `Label` field (for example, `Accelerator Jira Experience API`).
-=======
 . To make the API easier to find later, expand the `Advanced options` section and enter the full display name of the API in the `Label` field (e.g., `Acclelerator Jira Experience API`).
->>>>>>> e45997f (Update index.adoc)
 . Click `Save` to create the API instance. On the summary page, copy the `API ID` value found under the `Autodiscovery` label.
 
 ==== Requesting access to the API
 
 Locate the API asset in Exchange and select the `Request access` option from the menu located in the top-right corner of the asset page (may be hidden under the "three dots" menu). Select the API you created earlier and choose an application to use (create one if necessary). *Be sure to copy the client ID and client secret values.*
 
-<<<<<<< HEAD
-In your local Maven `settings.xml` file (the one you configured specifically for the accelerator deployments), set the values of the `accelerator-api.client-id` and `accelerator-api.client-id` properties in the target deployment profile (for example, `CloudHub-DEV`) using the values you copied above.
-=======
 In your local Maven `settings.xml` file (the one you configured specifically for the accelerator deployments), set the values of the `accelerator-api.client-id` and `accelerator-api.client-id` properties in the `CloudHub-DEV` profile using the values you copied above.
->>>>>>> e45997f (Update index.adoc)
 
 For a higher degree of security, create a separate application for each API consumer. For API to API calls, you will need to add each client ID/secret pair to your deployment profile and update the property name references in the `pom.xml` file for the consuming API.
 
@@ -106,11 +88,7 @@ Each application must include a configuration element corresponding to the API I
 . In the implementation project, open the `global.xml` file found under the `src/main/mule` folder.
 . When the editor opens, select the `Configuration XML` tab to reveal the XML source.
 . Locate the `api-gateway:autodiscovery` element and uncomment it. Leave the values as they are.
-<<<<<<< HEAD
-. In the property file representing the target deployment environment (for example, `config-dev.yaml`) under the `src/main/resources/config` folder, locate the `autodiscoveryID` property and set it to the value copied from the `API ID` value, above. Be sure to keep the double-quotes (this applies to all YAML config properties).
-=======
 . In the property file under `src/main/resources/properties` representing the target deployment environment (e.g., `DEV.yaml`), locate the `autodiscoveryID` property and set it to the value copied from the `API ID` value, above. Be sure to keep the double-quotes (all YAML config properties must be defined in quotes).
->>>>>>> e45997f (Update index.adoc)
 . Deploy the updated application and monitor the log file. Just before the `Your application is started` message, there should be one similar to the following:
 +
 ----
@@ -137,12 +115,7 @@ An easier way to apply policies to all APIs is to deploy them as Automated polic
 
 == See Also
 
-<<<<<<< HEAD
-* The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
-* The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-archetype-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
-=======
-* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
-* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-archetype-api-template-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
->>>>>>> e45997f (Update index.adoc)
+* The https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
+* The https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-archetype-api-template-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
 * The xref:./getting-started.adoc[Getting Started] guide provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
 * The xref:./index.adoc[MuleSoft Accelerators] main page.

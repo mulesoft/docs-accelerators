@@ -6,19 +6,11 @@ All application projects include MUnit test suites, which provide basic unit tes
 
 For running the Postman collections you will need to download and install the latest Postman release from https://www.postman.com/downloads/[^]. A Postman account is required to launch and run tetsts.
 
-<<<<<<< HEAD
 Before importing the project collection into your Postman workspace you will need to set up an environment specifically for running Accelerator test collections. In the `accelerator-common-resources` project there is a pre-defined environment file under the `testing` folder. Import this file into Postman and update the variables to reflect your own settings.
 
 == MUnit Tests
 
-From the command line, running any Maven goal that includes the testing phase will automatically execute the MUnit tests. This includes the goals `test`, `package` and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (for example, `mvn package -DskipTests`). Note: case matters.
-=======
-Before importing the project collection into your Postman workspace you will need to set up an environment specifically for running Accelerator test collections. In the `accelerator-common-build` project there is a pre-defined environment file under the `testing` folder. Import this file into Postman and update the variables to reflect your own settings.
-
-== MUnit Tests
-
 From the command line, running any Maven goal that includes the testing phase will automatically execute the MUnit tests. This includes the goals `test`, `package` and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (e.g., `mvn package -DskipTests`). Note: case matters.
->>>>>>> e45997f (Update index.adoc)
 
 == See Also
 

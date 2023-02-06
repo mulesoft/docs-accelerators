@@ -6,43 +6,20 @@ Accelerators are a collection of technical assets (predominantly API specificati
 
 Accelerators are designed as modular building blocks: customers can change the patterns, mappings, and endpoints to suit their needs. They represent best practices we recommend to customers in accomplishing these use cases. Customers will save hours of discovery, design, development, and testing each time they use an accelerator asset.
 
-<<<<<<< HEAD
-To access any of the asset links described within the following Accelerators, you must log in to https://anypoint.mulesoft.com/home/[Anypoint Platform^].
-
-[%autowidth.spread]
-|===
-.^|image:cg-icon.png[Consumer Goods,100%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Consumer Goods] .^| Helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution.
-.^|image:dc-icon.png[Data Cloud,100%] .^| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-datacloud/[MuleSoft Accelerator for Data Cloud^] .^| Enable organizations to easily unlock and connect core systems of record for Data Cloud.
-.^|image:fs-icon.png[Financial Services,100%] .^| xref:1.9@financial-services::index.adoc[MuleSoft Accelerator for Financial Services] .^| Simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data.
-.^|image:hc-icon.png[Healthcare,100%] .^| xref:2.20@healthcare::index.adoc[MuleSoft Accelerator for Healthcare] .^| Equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey.
-.^|image:ls-icon.png[Life Sciences,100%] .^| xref:1.1@life-sciences::index.adoc[MuleSoft Accelerator for Life Sciences] .^| Helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
-.^|image:mfg-icon.png[Manufacturing,100%] .^| xref:1.3@manufacturing::index.adoc[MuleSoft Accelerator for Manufacturing] .^| Equips discrete and process manufacturers with foundational assets for common use cases to accelerate their digital transformation journey.
-.^|image:retail-icon.png[Retail,100%] .^| xref:2.7@retail::index.adoc[MuleSoft Accelerator for Retail] .^| Empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster.
-.^|image:sap-icon.png[SAP,100%] .^| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/[MuleSoft Accelerator for SAP^] .^| Enable organizations to easily expose SAP ERP data for consumption by all.
-|===
-
-If you have any questions or feedback, let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas on the https://ideas.salesforce.com/[Salesforce Ideas Portal^].
-
-== See Also
-
-* xref:getting-started.adoc[Getting Started Guide]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerators-introduction/[MuleSoft Accelerators on Anypoint Exchange^].
-=======
 To access any of the asset links described within the following Accelerators, you must log in to the https://anypoint.mulesoft.com/home/[Anypoint Platform^].
 
 [%autowidth.spread]
 |===
-.^|image:cg-icon.png[Consumer Goods,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods^] .^| Empower smarter, more effective trade promotions and retail execution through a modern integration approach supported by pre-built APIs, integration templates, and connectors.
-.^|image:fs-icon.png[Financial Services,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] .^| Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement such as customer relationship management (CRM) and information technology service management (ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
-.^|image:hc-icon.png[Healthcare,100%] .^| https://anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare^] .^| Enable EHR connectivity, power a Patient 360, and bring patient demographics information and COVID-19 lab results from any EHR into Health Cloud using HL7 V2 or FHIR standards.
-.^|image:ls-icon.png[Life Sciences,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences^] .^| Helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
-.^|image:mfg-icon.png[Manufacturing,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing^] .^| Provides seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
-.^|image:retail-icon.png[Retail,100%] .^| https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^] .^| Enable retail IT teams to jumpstart digital transformation initiatives.
+.^|image:cg-icon.png[Consumer Goods,100%] .^| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods^] .^| Empower smarter, more effective trade promotions and retail execution through a modern integration approach supported by pre-built APIs, integration templates, and connectors.
+.^|image:fs-icon.png[Financial Services,100%] .^| https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] .^| Simplifies the creation of a customer 360 view by unlocking data from key systems including core banking platforms, systems of engagement such as customer relationship management (CRM) and information technology service management (ITSM), and FinTechs, which enables real-time relationship management and connected customer experiences.
+.^|image:hc-icon.png[Healthcare,100%] .^| https://anypoint.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/catalyst-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare^] .^| Enable EHR connectivity, power a Patient 360, and bring patient demographics information and COVID-19 lab results from any EHR into Health Cloud using HL7 V2 or FHIR standards.
+.^|image:ls-icon.png[Life Sciences,100%] .^| https://anypoint.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences^] .^| Helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
+.^|image:mfg-icon.png[Manufacturing,100%] .^| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing^] .^| Provides seamless connectivity between SAP S/4HANA, Product Information Management (PIM) systems, and Salesforce Manufacturing Cloud with pre-built APIs, integration templates, and reference architectures.
+.^|image:retail-icon.png[Retail,100%] .^| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^] .^| Enable retail IT teams to jumpstart digital transformation initiatives.
 |===
 
 If you have any questions or feedback, let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas in the https://help.mulesoft.com/s/ideas[Ideas Portal^].
 
 == See Also
 
-* For more accelerators, visit us on https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
->>>>>>> e45997f (Update index.adoc)
+* For more accelerators, visit us on https://www.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/mulesoft-accelerators-introduction/[Anypoint Exchange^].
