@@ -161,5 +161,5 @@ Since we are converting the value back to 2-decimal precision in this case, roun
 
 == See Also
 
-* xref:subject-areas.adoc[CIM Subject Areas]
-* xref:overview.adoc[CIM Overview]
+* xref:cim-subject-areas.adoc[CIM Subject Areas]
+* xref:cim-overview.adoc[CIM Overview]
