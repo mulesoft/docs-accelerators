@@ -10,7 +10,7 @@ The MuleSoft Accelerators for Salesforce Clouds are built on Mule 4 and Studio 7
 * Mule Runtime 4.4.0 or higher (included with Studio)
 * Latest AdoptOpenJDK 8 release (included with Studio)
 * Latest Maven 3.8.x release (for command-line deployments)
-* Latest Postman 9.x release (for API testing)
+* Postman 9.x or higher (for API testing)
 
 == Workstation Setup
 
@@ -18,15 +18,15 @@ Perform the following steps to prepare your workstation for building, deploying,
 
 === Installing
 
-. Download and install the latest 64-bit version of the OpenJDK 8 release from https://adoptopenjdk.net[^]. On Windows, add or update the `JAVA_HOME` environment variable to point to the installation root directory (e.g., `C:\Program Files\Java\jdk1.8.0_265``) and append `%JAVA_HOME%\bin` to the `PATH` variable.
+. Download and install the latest 64-bit version of the OpenJDK 8 release from https://adoptopenjdk.net[^]. On Windows, add or update the `JAVA_HOME` environment variable to point to the installation root directory (e.g., `C:\Program Files\Java\jdk1.8.0_265`) and append `%JAVA_HOME%\bin` to the `PATH` variable.
 . Download and install the latest Apache Maven 3.8.x release from http://maven.apache.org/download.cgi[^]. Add or update the `MAVEN_HOME` environment variable to point to the installation root directory (e.g., `C:\Utilities\apache-maven-3.8.4`) and append `%MAVEN_HOME%\bin` (`$MAVEN_HOME/bin` on Linux/MacOS) to the `PATH` variable.
 . Download and install the latest 64-bit version of the Anypoint Studio 7 release from https://www.mulesoft.com/lp/dl/studio[^]. Do not install the product under a folder containing spaces in the name.
 . Launch Studio and create a new workspace for the accelerator assets. Do not locate the workspace under a folder containing spaces in the name.
 
 === Configuring the Accelerator Build
 
-. Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
-. Import the project folder into Studio using the `General/Existing Projects into Workspace` wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-resources`, you can select the project in the `Package Explorer` view and press `F2` to rename it: +
+. Download the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-resources-src[Accelerator Common Build^] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
+. Import the project folder into Studio using the `accel/Existing Projects into Workspace` wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-resources`, you can select the project in the `Package Explorer` view and press `F2` to rename it: +
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-doc-setupguide_01.png[sfc-doc-setupguide_01.png,599]
 . Copy the contents of the `settings-accelerators.xml` file to your local Maven `settings.xml` file, which is usually located under `$HOME/.m2` on Linux/MacOS hosts and `%USERPROFILE%\.m2` on Windows hosts; create a new file if it does not exist. If the file already exists, make sure to merge the contents of the `settings-accelerators.xml` with the existing. You may also choose to keep the file separate and specify the `-s <filename>` option when running Maven commands; in Studio you will also need to override the user settings path (under `Anypoint Studio/Maven/User Settings` in the Preferences dialog). _Note: This step is optional, if the project is intended to build only in Anypoint Studio_
