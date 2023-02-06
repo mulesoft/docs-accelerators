@@ -6,7 +6,7 @@ All application projects include MUnit test suites, which provide basic unit tes
 
 For running the Postman collections you will need to download and install the latest Postman release from https://www.postman.com/downloads/[^]. A Postman account is required to launch and run tetsts.
 
-Before importing the project collection into your Postman workspace you will need to set up an environment specifically for running Accelerator test collections. In the `accelerator-common-build` project there is a pre-defined environment file under the `testing` folder. Import this file into Postman and update the variables to reflect your own settings.
+Before importing the project collection into your Postman workspace you will need to set up an environment specifically for running Accelerator test collections. In the `accelerator-common-resources` project there is a pre-defined environment file under the `testing` folder. Import this file into Postman and update the variables to reflect your own settings.
 
 == MUnit Tests
 

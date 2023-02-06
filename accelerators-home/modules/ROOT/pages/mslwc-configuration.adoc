@@ -1,0 +1,51 @@
+== MuleSoft API Lightning Web Component Configuration
+
+The following steps describe how to deploy the 'Lightning Web Component' into the required Salesforce Organization.
+
+Before deploying, make sure you have the proper access credentials to perform the installation.
+
+. Setup Visual Studio Code by following this trailhead: https://trailhead.salesforce.com/en/content/learn/projects/quick-start-lightning-web-components/set-up-visual-studio-code
+. Open the project folder in the Visual Studio Code app
+. Authorize the org to publish the code
+. Deploy source to org
+. In Salesforce organization, navigate to "Custom Code \-> Lightning Components \-> Lightning Components" and make sure two components are available in the list
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-list.png[sfc-sc-lwc-generic-list.png] +
+ +
+. Ensure my domain is turned on and activated for the org. Search "My Domain" in Salesforce setup page.[https://help.salesforce.com/articleView?id=domain_name_overview.htm&type=5] (https://help.salesforce.com/articleView?id=domain_name_overview.htm&type=5)
+. Create CSP Trusted Sites (Note: this step takes 15-45 minutes to kick in after enabled. There is no alert when ready). In Salesforce Setup, search "CSP Trusted Sites". Create a CSP trusted site with the URL of your app deployed to CloudHub if you wish to demo with CloudHub (ie https://accel-salesforce-exp-api-v1-dev.ca-c1.cloudhub.io).
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-csp-setup.png[sfc-sc-lwc-generic-csp-setup.png] +
+ +
+. CORS Config - This is done from your Mule API. Salesforce will validate CORS and so you must setup your Mule app to handle this appropriately. It can be done one of 2 ways.
+ ** Use API manager and add the Cross-Origin Resource Sharing Policy set to Public Resource.
+ +
+ +
+ image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-cors-setup_apim.png[sfc-sc-lwc-generic-cors-setup_apim.png] +
+ +
+ ** Manually return the appropriate headers in your Mule app. Add the below headers to your HTTP response
+ +
+ +
+ image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-cors-setup_manual.png[sfc-sc-lwc-generic-cors-setup_manual.png] +
+ +
+. Navigate to a page within Salesforce Lightning and use the gear icon at the top right to select edit page. On the edit page menu, on the left side menu scroll to the bottom to find muleSoftRelatedInfoView and muleSoftRelatedRecordsTable. Drag one of the components onto the page as shown in the image below.
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-page-edit.png[sfc-sc-lwc-generic-page-edit.png] +
+ +
+. Click on the component to configure parameters on the right side of the screen. Set the following attributes with parameters
+ ** *Enter title for the card* - Set the card header (ie Order History)
+ ** *Enter the base URI of your mule application* - Set the base endpoint of your mule app (include /api/path/. For my example it is 'https://accel-salesforce-exp-api-v1-dev.ca-c1.cloudhub.io/api/customers/'). Note that the '/' character likely must be used at the end
+ ** *Are you passing a record field to the endpoint?* - If you wish to pass one of the fields such as an external id in the URL, mark this as true
+ ** *If passing an id to the URI, set this field to append additional text to the URI after that dynamic value* - For my example it is '/orders'. This field is only relevant if you marked the checkbox above true, and can be blank if the last part of the URI is the external id. Note that the '/' character likely must be used at the start
+ ** *Enter the API Name of the object* - Enter the developer API name of the object the page is on (ie Order)
+ ** *Enter the API name of the field storing the related record id.* - Use this field to denote what you are passing in the URI (ie Email or CustomField__c). This field will be pulled from the record you have open and injected into the URL for mule
+
++
+_A note about the URI: If the Add Record Field flag is left unchecked, the component will callout to only the base endpoint you defined. If that flag is marked true, the app will callout to a concatenation of Base URI + Dynamic Record Field + Appended Text. So for the example given here it is calling to https://accel-salesforce-exp-api-v1-dev.ca-c1.cloudhub.io/api/customers/demotest2@test.com/orders_
+ +
+ +
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-sc-lwc-generic-config.png[sfc-sc-lwc-generic-config.png] +
+ +
