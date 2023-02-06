@@ -42,5 +42,5 @@ The primary objective of creating CIM type extensions is to re-introduce type co
 
 == See Also
 
-* xref:subject-areas.adoc[CIM Subject Areas]
-* xref:overview.adoc[CIM Overview]
+* xref:cim-subject-areas.adoc[CIM Subject Areas]
+* xref:cim-overview.adoc[CIM Overview]

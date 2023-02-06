@@ -16,5 +16,5 @@ https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/acce
 
 == See Also
 
-* xref:subject-areas.adoc[CIM Subject Areas]
-* xref:overview.adoc[CIM Overview]
+* xref:cim-subject-areas.adoc[CIM Subject Areas]
+* xref:cim-overview.adoc[CIM Overview]
