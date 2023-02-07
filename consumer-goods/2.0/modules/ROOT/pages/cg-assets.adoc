@@ -70,8 +70,8 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == Common services (can be used across any use case)
 
-* xref:accelerators-home:common-services.adoc[Accelerators Common Services^]
+* xref:accelerators-home:common-services.adoc[Accelerators Common Services]
 
 == See Also
 
-* xref:index.adoc[MuleSoft Accelerator for Consumer Goods^]
+* xref:index.adoc[MuleSoft Accelerator for Consumer Goods]

@@ -8,8 +8,6 @@ The following provides guidance on Salesforce CDP setup required for the Persona
 . Click the Setup icon and then `CDP Setup`. If you don’t see this option, either refresh your page or log out and back in with your admin user credentials.
 . Click `Get Started`. Setup can take a few minutes. Your Salesforce CDP instance is considered as successfully set up if you see a green tick mark for all the steps. If not, correct the issue and finish the setup.
 
-//image placeholder for rcg-cdp-setup-cdp-provisioning.png
-
 == Connect Data
 
 Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object.
@@ -205,7 +203,7 @@ A record modified field that indicates when each incoming record was last modifi
 
 ==== Create a Connected App for Salesforce CDP Ingestion API
 
-Before you can send data into Salesforce CDP using Ingestion API via Mulesoft’s Salesforce CDP connector, you must configure a Connected App. Refer this link for more details on creating a connected app.
+Before you can send data into Salesforce CDP using Ingestion API via MuleSoft’s Salesforce CDP connector, you must configure a Connected App. Refer this link for more details on creating a connected app.
 
 As part of your Connected App set up for Ingestion API, you must select the following OAuth scope:
 
@@ -215,7 +213,7 @@ As part of your Connected App set up for Ingestion API, you must select the foll
 * Manage user data via APIs (`api`)
 * Perform requests on your behalf at any time (`refresh_token`, `offline_access`).
 
-==== Configure Mulesoft’s Salesforce CDP Connector
+==== Configure MuleSoft’s Salesforce CDP Connector
 
 Anypoint Connector for Salesforce CDP (Salesforce CDP Connector) provides customers a pipeline to send data into Salesforce CDP.
 
