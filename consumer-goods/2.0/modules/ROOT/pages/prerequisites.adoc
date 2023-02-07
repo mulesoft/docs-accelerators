@@ -4,6 +4,10 @@ This page provides a summary of the guides available for configuring the various
 
 == Available Guides
 
+The following setup and configuration guides are available for this accelerator:
+
+* xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup Guide]
+
 Most of the implementation templates also contain details on requirements specific to those applications.
 
 == See Also
