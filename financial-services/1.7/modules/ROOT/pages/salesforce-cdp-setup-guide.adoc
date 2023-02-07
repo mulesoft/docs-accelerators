@@ -197,7 +197,7 @@ For the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator
 
 *Create a Connected App for Salesforce CDP Ingestion API*
 
-Before you can send data into Salesforce CDP using Ingestion API via Mulesoft's Salesforce CDP connector, you must configure a Connected App. Refer this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[link^] for more details on creating a connected app.
+Before you can send data into Salesforce CDP using Ingestion API via MuleSoft's Salesforce CDP connector, you must configure a Connected App. Refer this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[link^] for more details on creating a connected app.
 
 As part of your Connected App set up for Ingestion API, you must select the following OAuth scopes:
 
@@ -207,7 +207,7 @@ As part of your Connected App set up for Ingestion API, you must select the foll
 * Manage user data via APIs (`api`)
 * Perform requests on your behalf at any time (`refresh_token`, `offline_access`).
 
-*Configure Mulesoft's Salesforce CDP Connector*
+*Configure MuleSoft's Salesforce CDP Connector*
 
 The MuleSoft Connector for Salesforce CDP provides customers a pipeline to send data into Salesforce CDP. This connector works with the Salesforce CDP Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
 
