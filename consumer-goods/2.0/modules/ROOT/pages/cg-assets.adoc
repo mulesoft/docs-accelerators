@@ -1,0 +1,77 @@
+= Available Assets
+
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
+
+== Accelerator System APIs
+
+[cols=3*]
+|===
+| MDM System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-mdm-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-mdm-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Products System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-products-sys-api/[Implementation Template^]
+
+| RCG Salesforce Consumer Goods Cloud System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-cgcloud-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-cgcloud-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Customers System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-customers-sys-api/[Implementation Template^]
+
+| RCG Salsify Products System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-products-sys-api/[Implementation Template^]
+
+| RCG Trax System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-trax-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-trax-sys-api/[Implementation Template^]
+
+| RCG Hyperforce System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-hyperforce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-hyperforce-sys-api/[Implementation Template^]
+
+| RCG CRM Analytics System API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-crma-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-crma-sys-api/[Implementation Template^]
+|===
+
+== Accelerator Process APIs
+
+[cols=3*]
+|===
+| RCG Products Process API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-products-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-products-prc-api/[Implementation Template^]
+
+| RCG Customers Process API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-customers-prc-api/[Implementation Template^]
+
+| RCG Store Audit Process API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-store-audit-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-store-audit-prc-api/[Implementation Template^]
+
+| RCG Data Normalisation Process API
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-data-normalization-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-data-normalization-prc-api/[Implementation Template^]
+|===
+
+== Accelerator Listener Applications
+
+[cols=2*]
+|===
+| Salsify Channel Listener
+| https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-channel-listener/[Implementation Template^]
+|===
+
+== Common services (can be used across any use case)
+
+* xref:accelerators-home:common-services.adoc[Accelerators Common Services^]
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Consumer Goods^]

@@ -4,9 +4,19 @@ This page provides a summary of the guides available for configuring the various
 
 == Available Guides
 
+<<<<<<< HEAD
 There are no setup and configuration guides specific to this accelerator. However, most of the implementation templates contain details on requirements specific to those applications.
 
 == See Also
 
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+=======
+The following setup and configuration guides are available for this accelerator:
+
+
+Most of the implementation templates also contain details on requirements specific to those applications.
+
+== See Also
+
+>>>>>>> 8c54069 (Completed initial migration of Consumer Goods)
 * xref:index.adoc[MuleSoft Accelerator for Life Sciences]

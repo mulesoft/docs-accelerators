@@ -4,6 +4,8 @@ This page provides a summary of the guides available for configuring the various
 
 == Available Guides
 
+The following setup and configuration guides are available for this accelerator:
+
 * xref:anypointmq-setup-guide.adoc[Anypoint MQ setup guide]
 * xref:payments-setup-guide.adoc[Payments modernization demo setup guide]
 * xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP setup guide]
