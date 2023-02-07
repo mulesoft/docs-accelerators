@@ -1,4 +1,4 @@
-= Prerequisites for MuleSoft Accelerator for Financial Services
+= Prerequisites for MuleSoft Accelerator for Healthcare
 
 This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
 
@@ -6,14 +6,9 @@ This page provides a summary of the guides available for configuring the various
 
 The following setup and configuration guides are available for this accelerator:
 
-* xref:anypointmq-setup-guide.adoc[Anypoint MQ setup guide]
-* xref:payments-setup-guide.adoc[Payments modernization demo setup guide]
-* xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP setup guide]
-* xref:salesforce-fsc-setup-guide.adoc[Salesforce Financial Services Cloud setup guide]
-* xref:salesforce-mc-setup-guide.adoc[Salesforce Marketing Cloud setup guide]
 
 Most of the implementation templates also contain details on requirements specific to those applications.
 
 == See Also
 
-* xref:index.adoc[MuleSoft Accelerator for Financial Services]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]
