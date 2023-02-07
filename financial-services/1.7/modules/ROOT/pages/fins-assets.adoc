@@ -29,25 +29,34 @@ A number of shared assets and common services are also used by this accelerator.
 === Accelerator System APIs
 
 [%hardbreaks]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Accelerator Email System API]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Accelerator Slack System API]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Accelerator SMS System API]
+[cols=3*]
+|===
+| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
+| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
+| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
+|===
 
 === Accelerator Process APIs
 
 [%hardbreaks]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Accelerator Notifications Process API]
+[cols=3*]
+|===
+| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
+|===
 
 === Accelerator Custom Components
 
 [%hardbreaks]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library[Accelerator CIM Global Library]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[Accelerator CIM Market Library]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fins-ext-library[Accelerator CIM FINS Extension Library]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src[Accelerator Common Core]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src[Accelerator ID Graph Lightning Web Component]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-knit-maven-plugin-src[Accelerator Knit Maven Plugin]
-* xref:https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src[Accelerator POM Parent]
+[cols=2*]
+|===
+| Accelerator CIM Global Library | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library-src[Source^]
+| Accelerator CIM Market Library | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library-src[Source^]
+| Accelerator CIM FINS Extension Library | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fins-ext-library-src[Source^]
+| Accelerator Common Core | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src-src[Source^]
+| Accelerator ID Graph Lightning Web Component | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src-src[Source^]
+| Accelerator Knit Maven Plugin | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-knit-maven-plugin-src-src[Source^]
+| Accelerator POM Parent | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src-src[Source^]
+|===
 
 == See Also
 
