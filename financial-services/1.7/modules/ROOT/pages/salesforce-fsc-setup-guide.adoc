@@ -614,7 +614,7 @@ Follow the below steps to generate the `Consumer Key` and `Consumer Secret` valu
 . Click the Salesforce Setup icon.
 . Navigate to `+Apps -> App Manager+`.
 . Select `New Connected App`.
-. Enter Connected App Name: `Mulesoft Accelerator`, API Name: `Mulesoft_Accelerator` and set your email address.
+. Enter Connected App Name: `MuleSoft Accelerator`, API Name: `MuleSoft_Accelerator` and set your email address.
 . In the `API (Enable OAuth Settings)` section, check the box `Enable OAuth Settings`.
 . Set the callback URL `+http://localhost+`.
 . From the `Selected OAuth Scopes` list, select `Full access (full)`.

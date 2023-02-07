@@ -1,8 +1,10 @@
 The following APIs represent the reusable business processes that are leveraged by multiple accelerators. These correspond to the Process layer in MuleSoft's API-led approach.
 
 [%hardbreaks]
-[%header%autowidth.spread^]
+[cols=3*]
 |===
-| API  | Description
-| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-notifications-process-api[Accelerator Notifications Process API] | <description>
+|Accelerator Customers Process API | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-customers-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-customers-prc-api[Implementation Template^]
+|Accelerator Global Financial Account Process API | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-global-finacct-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-global-finacct-prc-api[Implementation Template^]
+|Accelerator Global Party Process API | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-global-party-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-global-party-prc-api[Implementation Template^]
+|Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-notifications-prc-api[API Specification^] | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-notifications-prc-api[Implementation Template^]
 |===
