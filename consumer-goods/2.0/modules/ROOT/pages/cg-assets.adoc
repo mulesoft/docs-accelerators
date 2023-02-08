@@ -2,7 +2,7 @@
 
 Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
 
-== Accelerator System APIs
+== RCG System APIs
 
 [cols=3*]
 |===
@@ -39,7 +39,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-crma-sys-api/[Implementation Template^]
 |===
 
-== Accelerator Process APIs
+== RCG Process APIs
 
 [cols=3*]
 |===
@@ -60,7 +60,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-data-normalization-prc-api/[Implementation Template^]
 |===
 
-== Accelerator Listener Applications
+== RCG Listener Applications
 
 [cols=2*]
 |===
