@@ -2,6 +2,28 @@
 
 This page provides some basic information for those upgrading to newer releases of the MuleSoft Accelerator for Financial Services.
 
+== Upgrading from Release 1.6 to Release 1.7
+
+As mentioned in the release notes, a number of technical and architectural changes introduced in this release will have an impact on existing deployments. These impacts, and corresponding upgrade considerations, should be addressed in the following order as appropriate for your deployments.
+
+- If changes have been made to the data types in the FINS Common, Banking, or Insurance RAML libraries, it is recommended that you deploy the new CIM libraries to your local environment and reflect the same changes there for use by the updated API specs.
+
+- While the new applications may work correctly against a MySQL database, it is recommended that you provision a new MariaDB instance and start with a fresh schema. The data structures have largely stayed the same, so it should be possible to transfer existing data (via export/import) from the old DB to the new one, if desired. However, new constraints have been introduced, which may prevent some existing data from being loaded successfully.
+
+- After deploying the new Global Data Management APIs and other applications referenced by this use case you should undeploy the original MDM System APIs to ensure they are no longer being referenced. Depending on your environment you may also need to redeploy the latest versions of the following applications: Bank Loans Process API, Customer Addresses Process API, Mobile Experience API, Salesforce Financial Experience API, and Salesforce Insurance Experience API.
+
+- Since the new Jack Henry SilverLake and Synergy System APIs, along with the Events Experience API, replace the original generic Core Banking database implementations, the following applications can be undeployed: Core Banking Poller Process API, Core Banking Accounts System API, and Core Banking Customers System API.
+
+- A large number of other assets, which have not been included in the asset lists for this release, have also been published to reflect changes in dependencies on both API specifications and other applications. It is therefore highly recommended that you upgrade all existing deployements to the latest versions found on Exchange to ensure compatibility with older use cases.
+
+=== Core Banking Limitations
+
+It is important to note that the Jack Henry SilverLake provider does not include support for all of the functionality that was originally implemented by the generic Core Banking System APIs. This may cause exisiting test cases and demo scripts to fail under certain conditions - please consult the documentation for the SilverLake System APIs for more details.
+
+== Upgrading from Release 1.5 to Release 1.6
+
+There were no breaking changes introduced by this release. The existing Salesforce Customers System API was enhanced to support the posting of messages to chatter feeds; all other APIs included in this release were net new.
+
 == Upgrading from Release 1.4 to Release 1.5
 
 The following changes introduced in this release may impact existing deployments:
@@ -98,7 +120,7 @@ The following steps should be performed when upgrading existing installations to
 . Create a new database schema for the Credit Card System.
 . Apply the schema creation script found in the Credit Card System API implementation project.
 . Undeploy the existing MDM and FIS System APIs.
-. Execute the Anypoint-MQ-Configuration Postman collection in the fins-common-resources project to create required MQ destinations.
+. Execute the `Anypoint-MQ-Configuration` Postman collection in the `fins-common-resources` project to create required MQ destinations.
 . Deploy/redeploy all implementation assets required for both use cases.
 
 === Verification Steps

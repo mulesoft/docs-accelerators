@@ -185,8 +185,8 @@ The following fields must be created in the corresponding objects.
 | Y
 
 | Account
-| Status
-| FinServ_Status
+| Customer Status
+| Customer_Status
 | Picklist
 | -
 | N
@@ -217,8 +217,24 @@ The following fields must be created in the corresponding objects.
 | Y
 
 | Contact
-| Global Postal Address ID
-| Global_PostalAddress_Id
+| Global Mobile Number ID
+| Global_MobileNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Other Address ID
+| Global_OtherAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Mailing Address ID
+| Global_MailingAddress_Id
 | Text
 | 36
 | Y
@@ -402,7 +418,7 @@ The following fields must be created in the corresponding objects.
 
 | Opportunity
 | KYC Completed
-| FINS_KYC_Completed__c
+| KYC_Completed__c
 | Checkbox
 | -
 | -
@@ -435,7 +451,7 @@ To create each of these custom fields and enable visibility for them on page lay
 . Select the `Fields & Relationships` page.
 . Click the *New* button and create the field as specified above.
 . Once the field has been created, click the `Set Field-Level Security` button (or do these steps later - see below).
-. Enable for desired profile, or tick the master checkbox next to `Visible` to enable visibility for the desired profile(s).
+. Enable for desired profile, or tick the checkbox next to `Visible` to enable visibility for the desired profile(s).
 
 Repeat these steps for each custom field in the above list.
 
@@ -446,8 +462,9 @@ TIP: Instead of adjusting permissions for each field as you go, if you are only 
 * The *Card Type* picklist values are *DebitCard* and *CreditCard*.
 * The *Credit Card Type* picklist values are *Amex*, *Discover*, *Mastercard*, *Visa*, and *Other*.
 * The *Last Transaction Type* picklist values are *CreditTransaction*, *DebitTransaction*, *TransferTransaction*,  and *PaymentTransaction*.
-* If the *Status* (`FinServ_Status__c`) field is not added as part of the Financial Services Cloud package, it must be added as a custom field. The picklist values are *Prospect*, *Onboarding*, *Active*, *Inactive*, *Closed*, *Deceased*, *Delinquent*, and *Dormant*.
+* The *Customer Status* picklist values are *Prospect*, *Onboarding*, *Active*, *Inactive*, *Closed*, *Deceased*, *Delinquent*, and *Dormant*.
 * The *Debit Financial Account* and *Credit Financial Account* fields looks up respective Financial Accounts.
+* All `Global_*_Id__c` fields should be visible in layouts (as described above) but made *read-only* to avoid issues with data synchronization.
 
 == Enable Financial Accounts in Sales
 
@@ -466,8 +483,8 @@ The default implementation of the solution requires the enablement of additional
 
 . Click the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
-. Find and select the `+FinServ_FinancialAccountTransaction__c+` Salesforce object.
-. Navigate to `Fields and Relationships` and select the `+FinServ_TransactionStatus__c+` picklist field.
+. Find and select the `FinServ__FinancialAccountTransaction__c` Salesforce object.
+. Navigate to `Fields and Relationships` and select the `FinServ__TransactionStatus__c` picklist field.
 . Scroll down to the `Values` section and click *New*.
 . Enter the values for `Cancelled` and `Initial` on separate lines and click *Save*.
 
@@ -513,60 +530,87 @@ The default implementation of the solution requires the enablement of multiple c
 
 If desired, click the *Currency Setup* button to add support for additional currency codes (e.g., EUR).
 
-== Create Push Topics
+== Create Platform Events and Apex Triggers
 
-The following Push Topics must be created in order to capture updates from Salesforce. The Apex scripts to create these Push Topics are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener/[Salesforce Topic Listener integration template^].
+The following Platform Event Objects and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Objects are located in the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-common-resources/[FINS Common Resources project] .
 
 |===
-| Salesforce Object | Apex script location | Push Topic name
+| Salesforce Object | Salesforce Platform Event Object | Salesforce Platform Event API Name | Apex Trigger Name
 
 | Account
-| /src/test/resources/scripts/accounts-push-topic.apxc
-| Accounts
+| Account
+| Account__e
+| AccountEventsPub
 
 | Contact
-| /src/test/resources/scripts/contacts-push-topic.apxc
-| Contacts
+| Contact
+| Contact__e
+| ContactEventsPub
 
 | Account
-| /src/test/resources/scripts/accounts-address-push-topic.apxc
 | AccountAddresses
+| AccountAddresses__e
+| AccountAddressEventsPub
 
 | Account
-| /src/test/resources/scripts/households-push-topic.apxc
-| Households
+| Household
+| Household__e
+| HouseholdEventsPub
+
+| Lead
+| Lead
+| Lead__e
+| LeadEventsPub
 
 | Opportunity
-| /src/test/resources/scripts/opportunities-push-topic.apxc
-| Opportunities
+| Opportunity
+| Opportunity__e
+| OpportunityEventsPub
 
 | +FinServ_FinancialAccount__c+
-| /src/test/resources/scripts/financial-accounts-push-topic.apxc
-| FinancialAccounts
+| FinancialAccount
+| FinancialAccount__e
+| FinancialAccountEventsPub
 
 | +FinServ_FinancialAccountTransaction__c+
-| /src/test/resources/scripts/transactions-push-topic.apxc
-| Transactions
+| FinancialAccountTransaction
+| FinancialAccountTransaction__e
+| TransactionsEventsPub
 
 | +FinServ_Card__c+
-| /src/test/resources/scripts/cards-push-topic.apxc
-| Cards
+| FinancialCard
+| FinancialCard__e
+| CardsEventsPub
 |===
 
-Follow the below steps to create the above Push Topics
+=== Create Platform Event Object
 
-. Edit the above scripts to set the `LastModifiedBy` and `RecordType` conditions to the correct IDs from your org (see *Additional notes*, below)
-. Click on Salesforce Setup icon.
-. Select `Developer Console` \-> `Debug`\-> `Open Execute Anonymous Window`.
-. Copy and paste the script from the `Apex script location` column in the above table and execute.
-. Repeat above step #3 for all the Salesforce objects in the above table.
+This implementation requires creation of Platform Events in Salesforce. To create a Platform Event Object following the below steps:
+
+. Login to Salesforce.
+. Click Setup to search for Platform Events in Quick Find Box. Platform Events Page under Integrations section appears with list of available Platform Events.
+. Click *New Platform Event* button to create an Object and enter Platform Information Details fields like Label, Plural Label and Object with Object Name and Event API Names as above table. Click Save. Repeat this step for creating multiple Salesforce Platform Event Objects as mentioned in the above table.
+. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility scripts (`CreatePlatformEventsCustomFields.txt`) available in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources/[FINS Common Resources project^] under the `/salesforce` folder.
+
+=== Create Apex Triggers
+
+Follow the below steps to create the Apex Triggers
+
+. Login to Salesforce.
+. Click Setup to search for Object Manager in Quick Find Box.
+. Search for the Salesforce Object. A page appears with Details of the Object.
+. Click Triggers unders the Details section to see list of available triggers on the Object. Click New.
+. Copy the Trigger Script code searching by Apex Trigger Name (mentioned in the above table for the SalesforceObject) in CreateApexTriggers.txt of https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/fins-common-resources/[FINS Common Resources] to the script editor. CreateApexTriggers.txt file is available under /salesforce folder.
+. Obtain the `LastModifiedById` and `RecordTypeId` (if it exists) by running the queries mentioned in the trigger from Developer Console.
+. Replace the values in the script and Save the trigger.
+. Click Save and ensure isActive checkbox is ticked.
+. Repeat the steps for all the Salesforce objects in the above table.
 
 === Additional Notes
 
-* All the Push Topics created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
-* The Push Topics Accounts, and AccountAddresses also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Account' and sObjectType='Account'` in the Developer Console.
-* The Push Topic Households also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
-* If creation of the Push Topic fails due to a missing field error it is most likely a permissions problem. Check the field level permissions for the object under Profile Settings for the same profile used by the service account.
+* All the Apex Triggers created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
+* The Apex Triggers AccountEventsPub, and AccountAddressEventsPub also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
+* The Apex Trigger HouseholdEventsPub also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Account' and sObjectType='Account'` in the Developer Console.
 
 == Adding Mailing Address to Person Account details Page
 
@@ -709,7 +753,7 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 |
 |===
 
-*The default value for all flags is `false`
+*The default value for all flags is `false`.
 
 == See Also
 
