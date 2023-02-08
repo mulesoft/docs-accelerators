@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-hl7v
 
 == Functional diagram
 
-//image placeholder hc-hl7v2-to-fhir-usecase-diagram.png - NEED IMAGE LOCATION
+image:https://www.mulesoft.com/ext/solutions/images/hc-hl7v2-to-fhir-usecase-diagram.png[hc-hl7v2-to-fhir-usecase-diagram.png,799,align="center"]
 
 == Advantages
 
