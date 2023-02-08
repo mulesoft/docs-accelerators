@@ -6,18 +6,11 @@ This page provides a summary of the guides available for configuring the various
 
 The following setup and configuration guides are available for this accelerator:
 
-<<<<<<< HEAD
-* xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Health Cloud Setup Guide]
-* xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
-=======
->>>>>>> 8c54069 (Completed initial migration of Consumer Goods)
+* xref:hls-setup-instructions.adoc[Healthcare Setup Instructions]
+* xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP Setup Guide]
 
 Most of the implementation templates also contain details on requirements specific to those applications.
 
 == See Also
 
-<<<<<<< HEAD
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-=======
->>>>>>> 8c54069 (Completed initial migration of Consumer Goods)
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]

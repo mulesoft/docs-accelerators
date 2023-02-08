@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 
 == Functional diagram
 
-image:https://www.mulesoft.com/ext/solutions/draft/images/hc-hl7v2-to-fhir-usecase-diagram.png[hc-hl7v2-to-fhir-usecase-diagram.png,799,align="center"]
+image:https://www.mulesoft.com/ext/solutions/images/hc-hl7v2-to-fhir-usecase-diagram.png[hc-hl7v2-to-fhir-usecase-diagram.png,799,align="center"]
 
 == Advantages
 
@@ -16,12 +16,4 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/hc-hl7v2-to-fhir-useca
 
 == See Also
 
-<<<<<<< HEAD
-* xref:index.adoc[MuleSoft Accelerator for Healthcare]
-=======
-<<<<<<<< HEAD:modules/ROOT/pages/hls/hc-hl7-v2-fhir-converter.adoc
-* xref:index.adoc[MuleSoft Accelerator for Healthcare]
-========
 * xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
->>>>>>>> e45997f (Update index.adoc):healthcare/2.18/modules/ROOT/pages/hl7-v2-fhir-converter.adoc
->>>>>>> e45997f (Update index.adoc)

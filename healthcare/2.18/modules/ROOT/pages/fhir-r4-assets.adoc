@@ -2,31 +2,13 @@
 
 The following are a collection of assets to support MuleSoft customers who are developing Fast Healthcare Interoperability Resources (FHIR) APIs using MuleSoft. Visit the https://www.hl7.org/fhir/[official HL7 website] for more information.
 
-<<<<<<< HEAD
-=======
-<<<<<<<< HEAD:modules/ROOT/pages/hls/hc-fhir-r4-assets.adoc
->>>>>>> e45997f (Update index.adoc)
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhirjson-to-raml-sys-api-spec/[FHIR RAML auto-generator] - Utility to generate RAML specification(s) for FHIR resources directly from the JSON schema provided by HL7.
-* xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets]
-* xref:fhir-r4-resources.adoc[FHIR R4 Resources List]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-error-policy/[FHIR Error API Policy] - Captures error responses and formats them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hc-accelerator-okta-smartfhir/[Okta SMART on FHIR^] - Implementation template that walks you through how to set up a reference SMART on FHIR implementation on Anypoint Platform using Okta as the identity provider.
+'''
 
-== See Also
-
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-* xref:prerequisites.adoc[Prerequisites]
-* xref:index.adoc[MuleSoft Accelerator for Healthcare]
-<<<<<<< HEAD
-=======
-========
-* FHIR RAML auto-generator — Utility to generate RAML specification(s) for FHIR resources directly from the JSON schema provided by HL7.
-* FHIR R4 US Core Profile Assets
-* FHIR R4 Resources List
-* FHIR Error API Policy — Captures error responses and formats them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhirjson-to-raml-sys-api-spec/[FHIR RAML auto-generator] - Utility to generate RAML specification(s) for FHIR resources directly from the JSON schema provided by HL7.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-profiles/[FHIR R4 US Core Profile Assets]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-resources-list/[FHIR R4 Resources List]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-error-policy/[FHIR Error API Policy] - Captures error responses and formats them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
 
 == See Also
 
 * xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
->>>>>>>> e45997f (Update index.adoc):healthcare/2.18/modules/ROOT/pages/fhir-r4-assets.adoc
->>>>>>> e45997f (Update index.adoc)

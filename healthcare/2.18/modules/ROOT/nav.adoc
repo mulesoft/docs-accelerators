@@ -14,7 +14,9 @@
 * xref:release-notes.adoc[Release Notes]
 =======
 * xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
-* xref:setup-instructions.adoc[Setup Instructions]
+* xref:prerequisites.adoc[Prerequisites]
+** xref:hls-setup-instructions.adoc[Healthcare Setup Instructions]
+** xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP Setup Guide]
 * xref:ccda-fhir-converter.adoc[C-CDA to FHIR Converter]
 * xref:fhir-r4-assets.adoc[FHIR R4 Assets]
 * xref:hl7-v2-fhir-converter.adoc[HL7 v2 to FHIR Converter]

@@ -49,7 +49,7 @@ Anypoint platform supports SMART on FHIR in the following ways:
 ========
 ** Provisioning third-party https://docs.mulesoft.com/access-management/configure-client-management-openid-task[OIDC client provider^] like Okta for identity management
 ** Out-of-the-box https://docs.mulesoft.com/api-manager/2.x/policy-openid-connect[OpenID Connect token enforcement policy^]
-** Leverage OAuth provider information in the ‘authentication’ object for custom policy
+** Leverage OAuth provider information in the `authentication` object for custom policy
 
 * Access to the data using FHIR based APIs
 ** MuleSoft Accelerator for Healthcare provides FHIR R4 specifications for all the FHIR resources
