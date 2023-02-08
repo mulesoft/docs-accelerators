@@ -16,6 +16,10 @@ As mentioned in the release notes, a number of technical and architectural chang
 
 - A large number of other assets, which have not been included in the asset lists for this release, have also been published to reflect changes in dependencies on both API specifications and other applications. It is therefore highly recommended that you upgrade all existing deployements to the latest versions found on Exchange to ensure compatibility with older use cases.
 
+=== Core Banking Limitations
+
+It is important to note that the Jack Henry SilverLake provider does not include support for all of the functionality that was originally implemented by the generic Core Banking System APIs. This may cause exisiting test cases and demo scripts to fail under certain conditions - please consult the documentation for the SilverLake System APIs for more details.
+
 == Upgrading from Release 1.5 to Release 1.6
 
 There were no breaking changes introduced by this release. The existing Salesforce Customers System API was enhanced to support the posting of messages to chatter feeds; all other APIs included in this release were net new.
@@ -116,7 +120,7 @@ The following steps should be performed when upgrading existing installations to
 . Create a new database schema for the Credit Card System.
 . Apply the schema creation script found in the Credit Card System API implementation project.
 . Undeploy the existing MDM and FIS System APIs.
-. Execute the Anypoint-MQ-Configuration Postman collection in the `fins-common-resources` project to create required MQ destinations.
+. Execute the `Anypoint-MQ-Configuration` Postman collection in the `fins-common-resources` project to create required MQ destinations.
 . Deploy/redeploy all implementation assets required for both use cases.
 
 === Verification Steps
