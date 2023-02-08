@@ -3,8 +3,8 @@ The following non-application components provide additional functionality in sup
 [%hardbreaks]
 [cols=2*]
 |===
-| FINS Financial Account Sync Lightning Web Component |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-financial-account-sync-lwc-src[ Source^]
 | FINS Common Resources |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[ Source^]
+| FINS Financial Account Sync Lightning Web Component |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-financial-account-sync-lwc-src[ Source^]
 | FINS Fraud Analysis Application |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-fraud-analysis-application-src[ Source^]
 | FINS Open Banking Library |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-openbanking-library[ Source^]
 | FINS Payments Frontend Web UI |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-frontend-webui-src[ Source^]

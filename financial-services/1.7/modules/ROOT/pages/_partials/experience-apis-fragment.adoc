@@ -4,6 +4,7 @@ The following APIs are provided for use by external systems to interact with fun
 [cols=3*]
 |===
 |FINS DocuSign Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-docusign-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-docusign-exp-api[Implementation Template^]
+|FINS Jack Henry Events Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-jackhenry-events-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.jackhenry-events/fins-docusign-exp-api[Implementation Template^]
 |FINS Mobile Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-mobile-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-mobile-exp-api[Implementation Template^]
 |FINS Open Banking Accounts Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-open-banking-accounts-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-open-banking-accounts-exp-api[Implementation Template^]
 |FINS Open Banking ASPSP Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-open-banking-aspsp-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-open-banking-aspsp-exp-api[Implementation Template^]
