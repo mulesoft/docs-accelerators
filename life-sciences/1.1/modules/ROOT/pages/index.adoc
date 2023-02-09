@@ -30,4 +30,6 @@ Give the assets a try and if you have any questions or feedback, please let us k
 == See Also
 
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-* xref:release-notes.adoc[Release Notes] for this accelerator
+* xref:prerequisites.adoc[Prerequisites]
+* xref:release-notes.adoc[Release Notes]
+* https://www.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences^] on Anypoint Exchange
