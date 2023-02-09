@@ -1,4 +1,4 @@
-= Salesforce Lightning Web Component configuration
+= ID Graph Lightning Web Component Configuration
 
 The following example shows how to fetch Customer Profile Data using the Salesforce Experience API endpoint and display in Salesforce using this Lightning Web Component.
 

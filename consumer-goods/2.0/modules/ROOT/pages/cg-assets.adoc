@@ -70,7 +70,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == Common services (can be used across any use case)
 
-* xref:accelerators-home:common-services.adoc[Accelerators Common Services]
+* xref:accelerators::common-services.adoc[Accelerators Common Services]
 
 == See Also
 
