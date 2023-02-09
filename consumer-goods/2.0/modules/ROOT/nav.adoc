@@ -2,5 +2,5 @@
 * xref:index.adoc[MuleSoft Accelerator for Consumer Goods Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup Guide]
-* xref:cg-assets.adoc[Accelerator Assets]
+* xref:cg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

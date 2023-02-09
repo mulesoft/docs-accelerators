@@ -35,7 +35,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-edit-redshift.png
 . Click on *Server* and select *Publish Workbook*.
 . Click on *Connect*, enter email address and password to sign in. +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-publish.png[mfg-tableau-online-publish.png] +
+image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-publish.png[mfg-tableau-online-publish.png] +
  +
 . In the *Publish Workbook to Tableau Online* window, complete the *Name* and *Description* fields.
 . Click on the *Publish* button.
@@ -47,21 +47,14 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-pub
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-alert.png[mfg-tableau-online-alert.png] +
  +
-. Click on the *Create* button on the right side which opens the 'Create Alert' dialogue box.
-. Users can select the condition and threshold and users can provide the subject details and select the alert condition (for example, daily).
+. Click on the *Create* button on the right side which opens the Create Alert dialogue box.
+. Users can select the condition and threshold and users can provide the subject details and select the alert condition (e.g., daily).
 . Users can provide the recipient details in the *Recipients* field and click on *Create Alert*.
 . An alert will be sent to the recipient.
 
-<<<<<<< HEAD
 image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-email-alert.png[mfg-email-alert.png]
 
 == See Also
 
 * xref:prerequisites.adoc[Prerequisites]
-=======
-//image placeholder for mfg-email-alert.png
-
-== See Also
-
->>>>>>> e45997f (Update index.adoc)
 * xref:index.adoc[MuleSoft Accelerator for Manufacturing]
