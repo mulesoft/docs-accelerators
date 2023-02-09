@@ -16,6 +16,6 @@
 *** xref:cim-market.adoc[Market]
 *** xref:cim-produce.adoc[Produce]
 *** xref:cim-sell.adoc[Sell]
-*** xref:cim-setup.adoc[Sell]
+*** xref:cim-setup.adoc[Setup]
 ** xref:cim-usage-guide.adoc[CIM Usage Guide]
 ** xref:cim-customizations.adoc[CIM Customizations]

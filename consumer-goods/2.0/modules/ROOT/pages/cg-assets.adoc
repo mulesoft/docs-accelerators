@@ -4,7 +4,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == RCG System APIs
 
-[cols=3*]
+[cols="40,30,30"]
 |===
 | MDM System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-mdm-sys-api-spec/[API Specification^]
@@ -41,7 +41,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == RCG Process APIs
 
-[cols=3*]
+[cols="40,30,30"]
 |===
 | RCG Products Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-products-prc-api-spec/[API Specification^]
@@ -62,7 +62,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == RCG Listener Applications
 
-[cols=2*]
+[cols="70,30"]
 |===
 | Salsify Channel Listener
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-channel-listener/[Implementation Template^]

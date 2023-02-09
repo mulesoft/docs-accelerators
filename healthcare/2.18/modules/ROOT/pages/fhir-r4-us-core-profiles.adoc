@@ -10,6 +10,7 @@ For the list of all FHIR R4 assets, please refer to xref:fhir-r4-resources.adoc[
 
 _API specifications, data types, and libraries built to meet compliance with FHIR R4 USCDI Core Profile standards._
 
+[cols="40,30,30"]
 |===
 | Module | Library | API specification
 
