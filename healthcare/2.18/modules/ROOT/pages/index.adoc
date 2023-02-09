@@ -23,14 +23,14 @@ The following describes the use cases supported by the MuleSoft Accelerator for 
 
 The following use-case agnostic assets are also available:
 
-* xref:fhir-r4-utilities[FHIR R4 utilities] — Start your journey using these FHIR-based APIs. Includes links to additional use-case agnostic assets (resources, libraries, and APIs), as well as an API Policy that you can use to format error messages in an FHIR-compliant format.
+* xref:fhir-r4-assets.adoc[FHIR R4 assets] — Start your journey using these FHIR-based APIs. Includes links to additional use-case agnostic assets (resources, libraries, and APIs), as well as an API Policy that you can use to format error messages in an FHIR-compliant format.
 * xref:hl7-v2-fhir-converter.adoc[HL7 v2 to FHIR converter] — The converter comes with a ready to use template for HL7 v2 to FHIR conversion, which is based on the guidance provided by the HL7 v2 to FHIR Implementation Guide. This template can be extended or modified to meet specific conversion requirements.
 * xref:x12-fhir-converter.adoc[X12 to FHIR converter] — The converter comes with a ready to use template for FHIR to X12 conversion. This template can be extended or modified to meet specific conversion requirements.
-* xref:ccda-fhir-converter[C-CDA to FHIR converter] — The converter comes with a ready to use template for CDA to FHIR conversion. This template can be extended or modified to meet specific conversion requirements.
+* xref:ccda-fhir-converter.adoc[C-CDA to FHIR converter] — The converter comes with a ready to use template for CDA to FHIR conversion. This template can be extended or modified to meet specific conversion requirements.
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:fins-r4-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

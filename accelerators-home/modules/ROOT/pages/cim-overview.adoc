@@ -28,6 +28,6 @@ Refer to the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed43
 
 == See Also
 
-* The xref:cim-usage-guide.adoc[Usage Guide] provides some helpful guidelines on how to use and interpret the model.
+* xref:cim-usage-guide.adoc[Usage Guide]
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
-* The xref:cim-customizations.adoc[Model Customizations] page describes the customizations and extensions that have been made to the original Cloud Information Model for use by the MuleSoft Accelerators.
+* xref:cim-customizations.adoc[Model Customizations]

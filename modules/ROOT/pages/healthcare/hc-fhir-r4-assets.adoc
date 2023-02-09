@@ -6,6 +6,7 @@ The following are a collection of assets to support MuleSoft customers who are d
 * xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets]
 * xref:fhir-r4-resources.adoc[FHIR R4 Resources List]
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-error-policy/[FHIR Error API Policy] - Captures error responses and formats them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-okta-smartfhir/[Okta SMART on FHIR^] - Implementation template that walks you through how to set up a reference SMART on FHIR implementation on Anypoint Platform using Okta as the identity provider.
 
 == See Also
 

@@ -2,13 +2,6 @@
 
 The following describes how to configure and test an S/4HANA Cloud SOAP outbound service (Product replication: `productmdmbulkreplicaterequest`) and the S/4HANA Cloud SOAP Connector as a Mule application deployed on Cloudhub.
 
-== Contents
-
-* <<configurations-in-s-4hana,Configurations in S/4HANA>>
-* <<configurations-in-the-mule-application,Configurations in the Mule Application>>
-* <<testing-the-scenario,Testing the scenario>>
-* <<s-4hana-customization-guide,S/4HANA customization guide>>
-
 == Configurations in S/4HANA
 
 To make the necessary configurations in S/4HANA:
