@@ -4,5 +4,6 @@
 * xref:prerequisites.adoc[Prerequisites]
 =======
 * xref:index.adoc[MuleSoft Accelerator for Life Sciences Overview]
+* xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes.adoc[Release Notes]
 >>>>>>> e45997f (Update index.adoc)
