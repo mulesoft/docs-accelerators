@@ -6,6 +6,7 @@ This page provides a summary of the guides available for configuring the various
 
 The following setup and configuration guides are available for this accelerator:
 
+* None
 
 Most of the implementation templates also contain details on requirements specific to those applications.
 
