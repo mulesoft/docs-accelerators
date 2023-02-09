@@ -4,7 +4,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == HLS System APIs
 
-[cols=3*]
+[cols="40,30,30"]
 |===
 | AWS Storage System API
 | https://anypoint.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/hls-aws-storage-sys-api-spec/[API Specification]
@@ -33,7 +33,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 === HLS Process APIs
 
-[cols=3*]
+[cols="40,30,30"]
 |===
 | Clinical Trials Process API
 | https://anypoint.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/hls-clinical-trials-prc-api-spec/[API Specification]

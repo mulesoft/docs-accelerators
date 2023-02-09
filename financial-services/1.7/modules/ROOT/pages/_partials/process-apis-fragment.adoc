@@ -1,7 +1,7 @@
 The following APIs represent the core business processes that orchestrate the FINS use cases. These correspond to the Process layer in MuleSoft's API-led approach.
 
 [%hardbreaks]
-[cols=3*]
+[cols="40,30,30"]
 |===
 | FINS Bank Accounts Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-bank-accounts-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-bank-accounts-prc-api[Implementation Template^]
 | FINS Bank Loans Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-bank-loans-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-bank-loans-prc-api[Implementation Template^]
