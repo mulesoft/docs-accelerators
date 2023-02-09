@@ -2,9 +2,9 @@
 
 The MuleSoft Accelerators leverage a number of common components, referred to here as "common services". These services include the following:
 
-* Common Scheduler – unified scheduling
-* Notification Services – send notifications
-* Security Services – API security policies
+* <<Common Scheduler>> – unified scheduling
+* <<Notification Services>> – send notifications
+* <<Security Services>> – API security policies
 
 The notification and scheduler services can be configured and installed as independent applications. The notification services consists of multiple applications, depending on which notification targets are selected. One or more security policies can be applied using API Manager.
 

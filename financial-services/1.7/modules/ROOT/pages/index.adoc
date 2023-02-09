@@ -44,7 +44,7 @@ https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-fin
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:fins-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

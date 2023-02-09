@@ -78,7 +78,7 @@ https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-medication-api/
 https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-medicationrequest-api/[MedicationRequest API]
 |===
 
-* _APIs marked with `*` have both FHIR R4 and US Core-specific Library and API specification available._
+_APIs marked with `*` have both FHIR R4 and US Core-specific Library and API specification available._
 
 == See Also
 
