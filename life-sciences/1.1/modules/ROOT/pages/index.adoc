@@ -1,35 +1,3 @@
-<<<<<<< HEAD
-= MuleSoft Accelerator for Life Sciences
-:ls-version: {page-component-version}
-
-The MuleSoft Accelerator for Life Sciences helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
-
-== Use Cases
-
-The following describes the use cases supported by the MuleSoft Accelerator for Life Sciences:
-
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%201%20-%20Clinical%20trial%20analytics/[Clinical trial analytics^] - Run more intelligent, data-driven trials with pre-built assets that surface relevant study and stakeholder information from Veeva. Easily consolidate this information into data lakes for analysis in business intelligence platforms like Tableau.
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site payment modernization^] - Streamline the clinical trial site payment process by integrating relevant study data from CTMS systems, like Veeva, to generate and transmit payments to sites.
-
-== Other Related Solutions
-
-For solutions related to healthcare, the xref:healthcare::index.adoc[MuleSoft Accelerator for Healthcare] helps organizations enable interoperability, simplify EHR connectivity, and power Patient 360 initiatives.
-
-== References
-
-The following are links to related and supporting documentation:
-
-* https://developer.veevavault.com/[Veeva Vault Developer Guide]
-* https://developer-cdms.veevavault.com/api/21.3/#getting-started[Vault CDMS Rest API Guide]
-
-== See Also
-
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-* xref:prerequisites.adoc[Prerequisites]
-* xref:ls-assets.adoc[Available Assets]
-* xref:release-notes::accelerators/life-sciences/life-sciences-release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences on Exchange^]
-=======
 == Overview
 
 The MuleSoft Accelerator for Life Sciences helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
@@ -54,12 +22,7 @@ The following are links to related and supporting documentation:
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-<<<<<<< HEAD
-* xref:release-notes.adoc[Release Notes] for this accelerator
->>>>>>> e45997f (Update index.adoc)
-=======
+* xref:accelerators::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes.adoc[Release Notes]
 * https://www.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences^] on Anypoint Exchange
->>>>>>> cad18d2 (Completed migrating remaining HLS content)

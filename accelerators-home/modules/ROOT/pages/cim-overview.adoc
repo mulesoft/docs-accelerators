@@ -14,21 +14,11 @@ CIM is a modern, open specification to help ease the pain of integrating data. C
 
 == History of CIM
 
-<<<<<<< HEAD
-The original distribution of CIM was produced by an open consortium formed to deliver a standards-based solution for connecting enterprise products. Although it was adopted by MuleSoft for use in various accelerators, limited adoption by other companies led to the consortium being halted and the primary website archived. 
-
-The version of CIM created and maintained by the MuleSoft Solutions team is now known as the Cloud Information Model for MuleSoft Accelerators, which will ultimately align with the https://help.salesforce.com/s/articleView?id=sf.c360_a_c360datamodel.htm&type=5[Salesforce Customer 360 Data Model] in future releases.
-
-== Organization
-
-The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity. Refer to the xref:cim-subject-areas.adoc[CIM Subject Areas] page for the list of subject areas that are currently supported.
-=======
 The original distribution of CIM was produced by an open consortium formed to deliver a standards-based solution for connecting enterprise products. Although it was adopted by MuleSoft for use in various accelerators, limited adoption by other companies led to the consortium being halted and the primary website archived. The version of CIM created and maintained by the MuleSoft Solutions team is now known as the Cloud Information Model for MuleSoft Accelerators.
 
 == Organization
 
 The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity. Refer to the xref:subject-areas.adoc[CIM Subject Areas] page for the list of subject areas that are currently supported.
->>>>>>> 9972373 (Flattened CIM docs as per other products)
 
 == Implementation
 
@@ -47,7 +37,11 @@ Refer to the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed43
 
 == See Also
 
-* The xref:cim-usage-guide.adoc[Usage Guide] provides some helpful guidelines on how to use and interpret the model.
+* xref:cim-usage-guide.adoc[Usage Guide]
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
+<<<<<<< HEAD
 * The xref:cim-customizations.adoc[Model Customizations] page describes the customizations and extensions that have been made to the original Cloud Information Model for use by the MuleSoft Accelerators.
 >>>>>>> 9972373 (Flattened CIM docs as per other products)
+=======
+* xref:cim-customizations.adoc[Model Customizations]
+>>>>>>> df620f3 (Additional fixes and updates for HLS)

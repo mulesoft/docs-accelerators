@@ -2,7 +2,7 @@
 
 This page provides some basic information for those upgrading to newer releases of the MuleSoft Accelerator for Financial Services.
 
-== Upgrading from Release 1.6 to Release 1.7
+== Release 1.6 to Release 1.7
 
 As mentioned in the release notes, a number of technical and architectural changes introduced in this release will have an impact on existing deployments. These impacts, and corresponding upgrade considerations, should be addressed in the following order as appropriate for your deployments.
 
@@ -20,11 +20,11 @@ As mentioned in the release notes, a number of technical and architectural chang
 
 It is important to note that the Jack Henry SilverLake provider does not include support for all of the functionality that was originally implemented by the generic Core Banking System APIs. This may cause exisiting test cases and demo scripts to fail under certain conditions - please consult the documentation for the SilverLake System APIs for more details.
 
-== Upgrading from Release 1.5 to Release 1.6
+== Release 1.5 to Release 1.6
 
 There were no breaking changes introduced by this release. The existing Salesforce Customers System API was enhanced to support the posting of messages to chatter feeds; all other APIs included in this release were net new.
 
-== Upgrading from Release 1.4 to Release 1.5
+== Release 1.4 to Release 1.5
 
 The following changes introduced in this release may impact existing deployments:
 
