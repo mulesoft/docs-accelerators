@@ -5,7 +5,7 @@
 
 6 September 2022
 
-=== Total productive maintenance use case
+=== Total Productive Maintenance Use Case
 
 This release introduces the https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mulesoft-accelerator-for-manufacturing/minor/1.2/pages/Use%20case%203%20-%20Total%20productive%20maintenance/[Total productive maintenance] use case, which helps manufacturers to maintain factory floor equipments.
 
@@ -13,7 +13,7 @@ This release introduces the https://anypoint.mulesoft.com/exchange/591d0125-a4ee
 
 8 June 2022
 
-=== Sales rebate management use case
+=== Sales Rebate Management Use Case
 
 This release introduces the https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mulesoft-accelerator-for-manufacturing/minor/1.2/pages/Use%20case%202%20-%20Sales%20rebate%20management/[Sales rebate management] use case, which helps manufacturers to seamlessly manage sales rebate programs.
 
@@ -25,7 +25,7 @@ This release also includes the following enhancements:
 
 28 March 2022
 
-=== Initial release
+=== Initial Release
 
 This is the first release of the MuleSoft Accelerator for Manufacturing.
 

@@ -1,7 +1,7 @@
 The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
 
 [%hardbreaks]
-[cols="50,25,25"]
+[cols="40,30,30"]
 |===
 |Accelerator AWS Storage System API | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-aws-storage-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-aws-storage-sys-api[Implementation Template^]
 |Accelerator Email System API | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-email-system-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-email-system-api[Implementation Template^]

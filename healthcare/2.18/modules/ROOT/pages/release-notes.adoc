@@ -318,4 +318,4 @@ The focus of release 1.1 is on providing API specifications and RAML library ass
 
 == See Also
 
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]
