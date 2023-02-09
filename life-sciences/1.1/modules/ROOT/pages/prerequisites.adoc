@@ -13,6 +13,7 @@ There are no setup and configuration guides specific to this accelerator. Howeve
 =======
 The following setup and configuration guides are available for this accelerator:
 
+* None
 
 Most of the implementation templates also contain details on requirements specific to those applications.
 
