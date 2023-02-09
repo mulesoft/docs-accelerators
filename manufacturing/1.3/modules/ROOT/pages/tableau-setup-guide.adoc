@@ -40,7 +40,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-pu
 . In the *Publish Workbook to Tableau Online* window, complete the *Name* and *Description* fields.
 . Click on the *Publish* button.
 
-== Steps to create an alert in Tableau Online.
+== Steps to create an alert in Tableau Online
 
 . Login into https://sso.online.tableau.com/public/idp/SSO[Tableau Online]
 . Click on *Watch* and select *Alerts* +

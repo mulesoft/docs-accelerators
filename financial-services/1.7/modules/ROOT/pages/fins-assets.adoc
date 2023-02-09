@@ -27,7 +27,7 @@ include::partial$custom-components-fragment.adoc[]
 The following shared APIs are are leveraged by this accelerator.
 
 [%hardbreaks]
-[cols=3*]
+[cols="40,30,30"]
 |===
 | Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
 | Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
@@ -40,7 +40,7 @@ The following shared APIs are are leveraged by this accelerator.
 The following shared components are leveraged by this accelerator.
 
 [%hardbreaks]
-[cols=2*]
+[cols="70,30"]
 |===
 | Accelerator CIM Global Library | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library-src[Source^]
 | Accelerator CIM Market Library | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library-src[Source^]
