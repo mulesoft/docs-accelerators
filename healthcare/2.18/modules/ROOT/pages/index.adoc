@@ -1,10 +1,7 @@
 = MuleSoft Accelerator for Healthcare
 :hls-version: 2.15
+
 The MuleSoft Accelerator for Healthcare equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey. With our pre-built APIs, connectors, implementation templates, and reference architectures, IT teams can spend more time innovating rather than building from scratch.
-
-== Healthcare and Life Sciences Solutions
-
-The Accelerator for Healthcare consists of pre-built APIs, integration templates, and prescriptive architecture to speed up the time to market for digital transformation projects. 
 
 For solutions related to life sciences, the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/[Accelerator for Life Sciences^] helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
 

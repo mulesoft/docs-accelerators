@@ -31,7 +31,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/hls-veeva-ctms-sys-api/[Implementation Template]
 |===
 
-=== Process APIs
+=== HLS Process APIs
 
 [cols=3*]
 |===
@@ -46,4 +46,6 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == See Also
 
+* xref:accelerators::common-services.adoc[Accelerator Common Services]
+* xref:accelerators::shared-assets.adoc[Accelerator Shared Assets]
 * xref:index.adoc[MuleSoft Accelerator for Life Sciences Overview]
