@@ -68,10 +68,8 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-channel-listener/[Implementation Template^]
 |===
 
-== Common services (can be used across any use case)
-
-* xref:accelerators::common-services.adoc[Accelerators Common Services]
-
 == See Also
 
+* xref:accelerators::common-services.adoc[Accelerator Common Services]
+* xref:accelerators::shared-assets.adoc[Accelerator Shared Assets]
 * xref:index.adoc[MuleSoft Accelerator for Consumer Goods]

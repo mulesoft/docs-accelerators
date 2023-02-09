@@ -1,7 +1,7 @@
 .xref:index.adoc[Healthcare]
 * xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
 * xref:prerequisites.adoc[Prerequisites]
-** xref:hls-setup-instructions.adoc[Healthcare Setup Instructions]
+** xref:hls-setup-guide.adoc[Accelerator Setup Guide]
 ** xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP Setup Guide]
 * xref:fhir-r4-assets.adoc[FHIR R4 Assets]
 ** xref:fhir-r4-resources.adoc[FHIR R4 Resources List]

@@ -22,6 +22,19 @@ include::partial$listeners-fragment.adoc[]
 
 include::partial$custom-components-fragment.adoc[]
 
+== Accelerator Shared APIs
+
+The following shared APIs are are leveraged by this accelerator.
+
+[%hardbreaks]
+[cols=3*]
+|===
+| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
+| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
+| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
+| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
+|===
+
 == Accelerator Shared Components
 
 The following shared components are leveraged by this accelerator.
@@ -38,19 +51,8 @@ The following shared components are leveraged by this accelerator.
 | Accelerator POM Parent | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src-src[Source^]
 |===
 
-== Accelerator Shared APIs
-
-The following shared APIs are are leveraged by this accelerator.
-
-[%hardbreaks]
-[cols=3*]
-|===
-| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
-| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
-| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
-| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
-|===
-
 == See Also
 
+* xref:accelerators::common-services.adoc[Accelerator Common Services]
+* xref:accelerators::shared-assets.adoc[Accelerator Shared Assets]
 * xref:index.adoc[MuleSoft Accelerator for Financial Services]

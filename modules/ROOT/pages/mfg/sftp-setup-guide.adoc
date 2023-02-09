@@ -1,0 +1,217 @@
+= SFTP Setup Guide
+
+This setup guide enables customers to upload existing customer, product, and order data to Manufacturing Cloud via SFTP. Data can be exported in `csv`` or `xlsx` format for loading into Salesforce.
+
+== SFTP folder setup
+
+In your SFTP server create inbox, archive and error folders for customers, products and orders.
+
+== File configuration
+
+* The sftp integrations can only read comma separated text file with *.csv extension or Microsoft Excel file with *.xlsx extension
+* For excel files, make sure all the data is in one tab and the tab names must be following: CustomerInfo, OrderInfo and ProductInfo respectively
+
+=== File formats
+
+=== Customer file format
+
+|===
+| Field Name | Field Description | Comments
+
+| ExternalId
+| Customer ID in external system
+| Required field
+
+| FirstName
+| The first name of the Party
+| Required for individual
+
+| MiddleName
+| The middle initial of the Party
+| Optional field for individual
+
+| LastName
+| The last name of the Party
+| Required for individual
+
+| OrgAccountName
+| Organization name
+| Required for an organization
+
+| EmailAddress
+| Email address
+| Optional
+
+| EmailType
+| Email type e.g. Home, Work
+| Optional
+
+| PhoneNumber
+| Phone number
+| Optional
+
+| InternationalCode
+| Phone country code
+| Optional the default is "001"
+
+| PhoneType
+| Phone Type
+| Optional the default is "Home"
+
+| PhoneExt
+| Phone extension
+| Optional
+
+| AddressLine1
+| Address Line
+| Optional
+
+| AddressLine2
+| Address Line
+| Optional
+
+| City
+| City name
+| Optional
+
+| State
+| State or province name
+| Optional
+
+| Country
+| Country name
+| Optional the default is "USA"
+
+| PostalCode
+| Postal code
+| Required
+
+| AddressType
+| Address type e.g. Home, Work
+| Optional the default is "Home"
+|===
+
+=== Order file format
+
+|===
+| Field Name | Field Description | Comments
+
+| Id
+| Order ID
+| Optional
+
+| Name
+| Order name
+| Required
+
+| OrderNumber
+| Order number
+| Required
+
+| Description
+| Order description
+| Optional
+
+| TotalPriceAmount
+| Total order cost
+| Required
+
+| AccountId
+| Account id
+| Required
+
+| TotalDeliveryFeeAmount
+| Shipping fee
+| Optional
+
+| EffectiveDate
+| Order date
+| Required
+
+| ExternalId
+| Order id in external system
+| Optional
+
+| ProductCode
+| Product sku code of the ordered item
+| Required
+
+| ProductDescription
+| Product description of the ordered item
+| Optional
+
+| OrderedQuantity
+| Quantity ordered
+| Required
+
+| UnitPriceAmount
+| Unit price of the product
+| Required
+
+| TotalPriceAmount
+| Total cost of all items
+| Required
+
+| OrderProductNumber
+| Total amount including tax
+| Required
+
+| TotalTaxAmount
+| Total sales tax
+| Required
+|===
+
+=== Product file format
+
+|===
+| Field Name | Field Description | Comments
+
+| Id
+| Product ID
+| Optional
+
+| Name
+| Product name
+| Required
+
+| ProductCode
+| Product sku code
+| Required
+
+| ProductCategory
+| Product category
+| Optional
+
+| Description
+| Product description
+| Required
+
+| ShortDescription
+| Product short description
+|
+
+| LongDescription
+| Product long description
+|
+
+| Status
+| Product status e.g. Active
+| Required
+
+| ExternalId
+| Product id in the external system
+| Required
+
+| Type
+| Product type
+| Required
+
+| UnitListPrice
+| Product unit price
+| Required
+|===
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Manufacturing]
