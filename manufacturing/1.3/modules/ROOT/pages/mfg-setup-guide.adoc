@@ -1,4 +1,4 @@
-= Accelerator for Manufacturing Setup Guide
+= Accelerator Setup Guide
 
 This page provides guidance on configuring the various systems and products required to implement the use cases provided by this solution.
 
