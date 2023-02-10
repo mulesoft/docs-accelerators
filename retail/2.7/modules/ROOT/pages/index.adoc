@@ -1,103 +1,25 @@
 = MuleSoft Accelerator for Retail
 
-MuleSoft Accelerator for Retail includes pre-built APIs, connectors, integration templates, and reference architecture to enable retail IT teams to jumpstart digital transformation initiatives
-home.
+MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster. Retail IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to create customer 360 profiles.
 
 == Use Cases
 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Use case 1 - Customer profile sync] — The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%202%20-%20Sales%20order%20sync/[Use case 2 - Sales order sync] — The Sales order sync use case enables retail developers to create and update sales orders across relevant applications. 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.6/pages/Use%20case%203%20-%20Product%20sync/[Use case 3 - Product sync] — The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Use case 4 - Real-time inventory management] — The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.6/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Use case 5 - Deliver relevancy with CDP] — The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format. Access to this information helps retailers create intelligent customer segmentation for personalized communications and promotions.
+The following use cases are supported by the MuleSoft Accelerator for Manufacturing:
 
-== Available Assets
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync] - The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
 
-The following assets are available for this accelerator:
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%202%20-%20Sales%20order%20sync/[Sales order sync] - The Sales order sync use case enables retail developers to create and update sales orders across relevant applications.
 
-=== Accelerator System APIs
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%203%20-%20Product%20sync/[Product sync] - The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
 
-[%header%autowidth.spread]
-|===
-|Asset Name |API Specification Link |Implementation Template Link
-|B2B Commerce System API | API Specification | Implementation Template
-|B2C Commerce System API | API Specification | Implementation Template
-|B2C Customers System API | API Specification | Implementation Template
-|MDM System API | API Specification | Implementation Template
-|OFBiz Customers System API | API Specification | Implementation Template
-|OFBiz Products System API | API Specification | Implementation Template
-|OMS System API | API Specification | Implementation Template
-|RCG Salsify Products System API | API Specification | Implementation Template
-|RCG Azure Cosmos DB System API | API Specification | Implementation Template
-|RCG B2C Commerce System API | API Specification | Implementation Template
-|RCG Marketo System API | API Specification | Implementation Template
-|RCG Salesforce CDP System API | API Specification | Implementation Template
-|RCG Snowflake System API | API Specification | Implementation Template
-|Salesforce Customers System API | API Specification | Implementation Template
-|Salesforce Marketing System API | API Specification | Implementation Template
-|Salesforce Orders System API | API Specification | Implementation Template
-|SAP ECC Customers System API | API Specification | Implementation Template
-|SAP S/4HANA Customers System API | API Specification | Implementation Template
-|SAP S/4HANA Orders System API | API Specification | Implementation Template
-|SAP S/4HANA Product Availability System API | API Specification | Implementation Template
-|SAP S/4HANA Products System API | API Specification | Implementation Template
-|===
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Real-time inventory management] - The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
 
-=== Accelerator Process APIs
-
-[%header%autowidth.spread]
-|===
-|Asset Name |API Specification Link |Implementation Template Link
-|Customers Process API | API Specification | Implementation Template
-|ERP Customers Process API | API Specification | Implementation Template
-|ERP Orders Process API | API Specification | Implementation Template
-|Inventory Process API | API Specification | Implementation Template
-|Orders Process API | API Specification | Implementation Template
-|PIM Sync Process API | API Specification | Implementation Template
-|Products Process API | API Specification | Implementation Template
-|RCG Customer Data Platform Process API | API Specification | Implementation Template
-|RCG DataLake Process API | API Specification | Implementation Template
-|RCG Marketing Process API | API Specification | Implementation Template
-|===
-
-=== Accelerator Experience APIs
-
-[%header%autowidth.spread]
-|===
-|Asset Name |API Specification Link |Implementation Template Link
-|B2C Commerce Experience API | API Specification | Implementation Template
-|Salesforce Experience API | API Specification | Implementation Template
-|===
-
-=== Accelerator Listeners
-
-[%header%autowidth.spread]
-|===
-|Listener Name |Implementation Template Link
-|Salesforce Marketing Listener | Implementation Template
-|Salesforce Topic Listener | Implementation Template
-|SAP Event Listener | Implementation Template
-|Salsify Channel Listener | Implementation Template
-|===
-
-=== Custom Components
-
-[%header%autowidth.spread]
-|===
-|Custom Component Name |Source Link
-|B2C Commerce Instore Pickup Cartridge | Source
-|B2C Commerce Sync Cartridge | Source
-|ID Graph Lightning Web Component | Source
-|POM Parent | Source
-|Product Availability Lightning Web Component | Source
-|===
-
-=== Common Services (can be used across any use case)
-
-* Accelerators Common Services
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Deliver relevancy with CDP] - The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format.
 
 == See Also 
 
 * xref:accelerators::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
+* xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^] on Anypoint Exchange

@@ -1,359 +1,205 @@
-== Available assets
+= Available assets
 
-The following assets are available for this accelerator:
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
 
-=== Accelerator System APIs
+== System APIs
 
-* {blank}
-+
-[cols=3*]
+[cols="40,30,30",width=100%]
 |===
 | B2B Commerce System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2b-commerce-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2b-commerce-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | B2C Commerce System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-sys-api[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | B2C Customers System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-customers-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-customers-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | MDM System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-mdm-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-mdm-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Salsify Products System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-products-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-products-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Azure Cosmos DB System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-azure-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-azure-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG B2C Commerce System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Marketo System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-marketo-system-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-marketo-system-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Salesforce CDP System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-cdp-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-cdp-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Snowflake System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-snowflake-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-snowflake-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Salesforce Customers System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-customers-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-customers-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Salesforce Marketing System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-marketing-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-marketing-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Salesforce Orders System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-orders-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-orders-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | SAP ECC Customers System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-sapecc-customers-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-sapecc-customers-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | SAP S/4HANA Customers System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-customers-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-customers-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | SAP S/4HANA Orders System API
 | https://anypoint.mulesoft.com/exchange/05ccff16-2d51-4e93-b543-f7e7a27faf55/accelerator-saphana-orders-sys-api/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-orders-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | SAP S/4HANA Product Availability System API
 | https://anypoint.mulesoft.com/exchange/05ccff16-2d51-4e93-b543-f7e7a27faf55/accelerator-saphana-productavailability-sys-api/[API Specification]
 | https://anypoint.mulesoft.com/exchange/05ccff16-2d51-4e93-b543-f7e7a27faf55/accel-saphana-productavailability-sys-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | SAP S/4HANA Products System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-products-sys-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-saphana-products-sys-api/[Implementation Template]
 |===
 
-=== Accelerator Process APIs
+== Process APIs
 
-* {blank}
-+
-[cols=3*]
+[cols="40,30,30",width=100%]
 |===
 | Customers Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-customers-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-customers-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | ERP Customers Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-erp-customers-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-erp-customers-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | ERP Orders Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-erp-orders-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-erp-orders-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Inventory Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-inventory-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-inventory-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Orders Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-orders-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-orders-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | PIM Sync Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-pim-sync-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-pim-sync-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Products Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-products-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-products-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Customer Data Platform Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-cdp-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-cdp-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG DataLake Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-datalake-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-datalake-prc-api/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | RCG Marketing Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-marketing-prc-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-marketing-prc-api/[Implementation Template]
 |===
 
-=== Accelerator Experience APIs
+== Experience APIs
 
-* {blank}
-+
-[cols=3*]
+[cols="40,30,30",width=100%]
 |===
 | B2C Commerce Experience API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-exp-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-exp-api[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=3*]
-|===
 | Salesforce Experience API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-exp-api-spec/[API Specification]
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-exp-api/[Implementation Template]
 |===
 
-=== Accelerator Listeners
+== Listeners & Handlers
 
-* {blank}
-+
-[cols=2*]
+[cols="70,30",width=100%]
 |===
 | Salesforce Marketing Listener
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-marketing-listener/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | Salesforce Topic Listener
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salesforce-topic-listener/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | SAP Event Listener
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-sap-event-listener/[Implementation Template]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | Salsify Channel Listener
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-channel-listener/[Implementation Template]
 |===
 
 === Custom Components
 
-* {blank}
-+
-[cols=2*]
+[cols="70,30",width=100%]
 |===
 | B2C Commerce Instore Pickup Cartridge
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-instore-pickup-cartridge-src/[Source]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | B2C Commerce Sync Cartridge
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-b2c-commerce-sync-cartridge-src/[Source]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | ID Graph Lightning Web Component
 | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-idgraph-lwc-src[Source]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | POM Parent
 | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-pom-parent-src/[Source]
-|===
 
-* {blank}
-+
-[cols=2*]
-|===
 | Product Availability Lightning Web Component
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/accelerator-productavailability-lwc-src/[Source]
 |===
 
-== Common services (can be used across any use case)
+== Shared APIs
 
-* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-salesforce-common-services/[Accelerators Common Services]
+[cols="40,30,30",width=100%]
+|===
+| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
+| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
+| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
+| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
+|===
+
+== Shared Components
+
+[cols="70,30",width=100%]
+|===
+| Accelerator Common Core
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-core-src/[Source]
+
+| POM Parent
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-pom-parent-src/[Source]
+
+| ID Graph Lightning Web Component
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-idgraph-lwc-src/[Source]
+|===
+
+== See Also
+
+* xref:accelerators::common-services.adoc[Accelerator Common Services]
+* xref:accelerators::shared-assets.adoc[Accelerator Shared Assets]
+* xref:index.adoc[MuleSoft Accelerator for Retail]

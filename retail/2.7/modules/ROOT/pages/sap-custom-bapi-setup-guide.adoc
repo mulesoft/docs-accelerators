@@ -261,7 +261,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-64.png
 . Copy and paste the code from 'ZBAPI_CUSTOMER_CD.txt'.
 . Activate the entire function group by right-clicking on it in the tree and selecting 'Activate':
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301] +
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301]
 
 == See Also 
 
