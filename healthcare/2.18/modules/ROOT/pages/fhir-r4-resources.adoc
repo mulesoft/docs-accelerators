@@ -10,7 +10,7 @@ For the list of US core profile assets, please refer to xref:fhir-r4-core-profil
 
 _API specifications, data types, and libraries built to meet compliance with FHIR R4 standards._
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | Category| Library | API Specification
 

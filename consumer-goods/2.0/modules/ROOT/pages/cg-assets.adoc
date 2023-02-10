@@ -2,9 +2,9 @@
 
 Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
 
-== RCG System APIs
+== System APIs
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | MDM System API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-mdm-sys-api-spec/[API Specification^]
@@ -39,9 +39,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-crma-sys-api/[Implementation Template^]
 |===
 
-== RCG Process APIs
+== Process APIs
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | RCG Products Process API
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-products-prc-api-spec/[API Specification^]
@@ -60,9 +60,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-data-normalization-prc-api/[Implementation Template^]
 |===
 
-== RCG Listener Applications
+== Listener Applications
 
-[cols="70,30"]
+[cols="70,30",width=100%]
 |===
 | Salsify Channel Listener
 | https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-salsify-channel-listener/[Implementation Template^]

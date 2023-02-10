@@ -8,14 +8,12 @@ _Load data to Manufacturing Cloud_
 
 image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-data-load.png[mfg-data-load]
 
-=== Use Case Considerations
-
-==== Functional Considerations
+=== Functional Considerations
 
 * Customer, product and order data needs to be in csv or xlsx format.
 * Customer and product data needs be loaded into Manufacturing Cloud before loading order data so that orders can be attached existing customers and products.
 
-==== Technical Considerations
+=== Technical Considerations
 
 This section lists the technical considerations and constraints on the solution design.
 

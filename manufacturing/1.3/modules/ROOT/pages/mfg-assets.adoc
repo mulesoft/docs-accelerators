@@ -2,9 +2,9 @@
 
 Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
 
-== MFG System APIs
+== System APIs
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | MFG Salesforce Customers System API
 | https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-salesforce-customers-sys-api/[API Specification]
@@ -59,9 +59,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-cases-sys-api/[Implementation Template]
 |===
 
-== MFG Process APIs
+== Process APIs
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | MFG Bulk Load Process API
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-bulk-load-prc-api-spec/[API Specification]
@@ -92,9 +92,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-machinedata-prc-api/[Implementation Template]
 |===
 
-== MFG Experience APIs
+== Experience APIs
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | MFG Bulk Load Experience API
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-bulk-load-exp-api-spec/[API Specification]
@@ -109,9 +109,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-tableau-workorders-exp-api/[Implementation Template]
 |===
 
-== MFG Applications
+== Listeners & Handlers
 
-[cols="70,30"]
+[cols="70,30",width=100%]
 |===
 | MFG SAP Event Listener
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-sap-event-listener/[Implementation Template]
@@ -123,17 +123,17 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-topic-listener/[Implementation Template]
 |===
 
-== MFG Custom Components
+== Custom Components
 
-[cols="70,30"]
+[cols="70,30",width=100%]
 |===
 | MFG Rebate Library
 | https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-rebate-library/[Source]
 |===
 
-== Accelerator Shared APIs
+== Shared APIs
 
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
 | Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
@@ -141,9 +141,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
 |===
 
-== Accelerator Shared Components
+== Shared Components
 
-[cols="70,30"]
+[cols="70,30",width=100%]
 |===
 | Accelerator Common Core
 | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-core-src/[Source]

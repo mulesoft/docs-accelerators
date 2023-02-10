@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 = Object Mappings
+=======
+= Mappings
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 == Customer profile sync
 
@@ -8,23 +12,36 @@ The following table summarizes how representations of a customer or individual f
 
 [%header%autowidth.spread]
 |===
+<<<<<<< HEAD
 | Source System | Source Type | CIM Types | Mapping Notes
 | B2C Commerce | Customer Profile | Individual
+=======
+|Source System	|Source Type	|CIM Types	|Mapping Notes
+|B2C Commerce	|Customer Profile	|Individual
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 Customer
 
 Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | One B2C customer profile will map to multiple CIM objects
 .3+| B2B Commerce
 Sales Cloud
 Service Cloud | Person Account | Individual
+=======
+Contact Phone	|One B2C customer profile will map to multiple CIM objects
+.3+|B2B Commerce
+Sales Cloud
+Service Cloud	|Person Account	|Individual
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 CustomerContactAddress
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | Person Account is represented as record type, mapping to Account and Contact
 | Account | OrganizationCustomerContact Address
 
@@ -32,14 +49,29 @@ Contact Email
 
 Contact Phone | Account is mapped separately from Contacts
 | Contact | Individual
+=======
+Contact Phone	|Person Account is represented as record type, mapping to Account and Contact
+|Account	|OrganizationCustomerContact Address
+
+Contact Email
+
+Contact Phone	|Account is mapped separately from Contacts
+|Contact	|Individual
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | Similar mappings as for Person Accounts but at the Individual level only
 | Marketing Cloud | Subscriber | Individual | Requires a data extension
 | SAP | Customer | IndividualCustomer
+=======
+Contact Phone	|Similar mappings as for Person Accounts but at the Individual level only
+|Marketing Cloud	|Subscriber	|Individual	|Requires a data extension
+|SAP	|Customer	|IndividualCustomer
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Contact Address
 
@@ -48,14 +80,23 @@ Contact Email
 Contact Phone |
 |===
 
+<<<<<<< HEAD
 === Target-type mappings
+=======
+== Target-type mappings
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 The following table summarizes how representations of a customer or individual from each system will be mapped from CIM types:
 
 [%header%autowidth.spread]
 |===
+<<<<<<< HEAD
 | Target System | CIM Type | Target Types | Mapping Notes
 | B2C Commerce | Customer
+=======
+|Target System	|CIM Type	|Target Types	|Mapping Notes
+|B2C Commerce	|Customer
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Individual
 
@@ -63,39 +104,67 @@ Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | Customer | Relevant fields only
 | MDM | All Types | Corresponding type | 1:1 mappings; use join tables for relationships
 .3+| B2B Commerce
 Sales Cloud
 Service Cloud | CustomerIndividual
+=======
+Contact Phone	|Customer	|Relevant fields only
+|MDM	|All Types	|Corresponding type	|1:1 mappings; use join tables for relationships
+.3+|B2B Commerce
+Sales Cloud
+Service Cloud	|CustomerIndividual
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | PersonAccount | Relevant fields only
 | CustomerOrganization
+=======
+Contact Phone	|PersonAccount	|Relevant fields only
+|CustomerOrganization
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | Account | Address fields mapped directly
 | Individual
+=======
+Contact Phone	|Account	|Address fields mapped directly
+|Individual
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | Contact | Similar mappings as for Person Accounts but at the Individual level only
 | Marketing Cloud | Individual | Subscriber | Relevant fields only
 | SAP | CustomerIndividual
+=======
+Contact Phone	|Contact	|Similar mappings as for Person Accounts but at the Individual level only
+|Marketing Cloud	|Individual	|Subscriber	|Relevant fields only
+|SAP	|CustomerIndividual
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 Contact Address
 
 Contact Email
 
+<<<<<<< HEAD
 Contact Phone | Customer | Relevant fields only
+=======
+Contact Phone	|Customer	|Relevant fields only
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 |===
 
 == Sales order sync
@@ -106,6 +175,7 @@ The following table summarizes how representations of a sales order from each sy
 
 [%header%autowidth.spread]
 |===
+<<<<<<< HEAD
 | Source system | Source type | CIM Types | Mapping notes
 | B2C Commerce | Order | SalesOrder
 
@@ -119,6 +189,21 @@ SalesOrderProduct | TBD
 
 SalesOrderProduct | Order line items added as sales order products
 | Salesforce | TBD | SalesOrder | TBD
+=======
+|Source system	|Source type	|CIM Types	|Mapping notes
+|B2C Commerce	|Order	|SalesOrder
+
+SalesOrderProduct	|Order line items added as sales order products
+|OFBiz	|Order
+
+OrderLineItem	|SalesOrder
+
+SalesOrderProduct	|TBD
+|SAP	|Order	|SalesOrder
+
+SalesOrderProduct	|Order line items added as sales order products
+|Salesforce	|TBD	|SalesOrder	|TBD
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 |===
 
 === Target-type mapping
@@ -127,6 +212,7 @@ The following table summarizes how representations of a sales order from each sy
 
 [%header%autowidth.spread]
 |===
+<<<<<<< HEAD
 | Target system | CIM type | Target Types | Mapping notes
 | B2C Commerce | SalesOrder | Order | Order status update only
 | OFBiz | SalesOrder
@@ -140,6 +226,21 @@ SalesOrderProduct | Order
 
 OrderLineItems | Relevant fields only
 | Salesforce | SalesOrder | TBD | TBD
+=======
+|Target system	|CIM type	|Target Types	|Mapping notes
+|B2C Commerce	|SalesOrder	|Order	|Order status update only
+|OFBiz	|SalesOrder
+
+SalesOrderPRoduct	|Order
+
+OrderLineItems	|Order status update only
+|SAP	|SalesOrder
+
+SalesOrderProduct	|Order
+
+OrderLineItems	|Relevant fields only
+|Salesforce	|SalesOrder	|TBD	|TBD
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 |===
 
 == Product sync
@@ -150,49 +251,84 @@ The following table summarizes how representations of a product from each system
 
 [%header%autowidth.spread]
 |===
+<<<<<<< HEAD
 | Source System | Source Type | CIM Types | Mapping Notes
 | B2C Commerce | Product | Product
+=======
+|Source System	|Source Type	|CIM Types	|Mapping Notes
+|B2C Commerce	|Product	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Relevant fields only
 | OFBiz | Product | Product
+=======
+PriceBook	|Relevant fields only
+|OFBiz	|Product	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Relevant fields only
 | SAP S/4HANA | Product | Product
+=======
+PriceBook	|Relevant fields only
+|SAP S/4HANA	|Product	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Relevant fields only
 | Salesforce | Product
 
 Pricebook | Product
+=======
+PriceBook	|Relevant fields only
+|Salesforce	|Product
+
+Pricebook	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Relevant fields only
 | PIM | Product
+=======
+PriceBook	|Relevant fields only
+|PIM	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Product
+=======
+PriceBook	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | 1:1 mappings; use join tables for relationships
+=======
+PriceBook	|1:1 mappings; use join tables for relationships
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 |===
 
 === Target-type mapping
@@ -201,26 +337,41 @@ The following table summarizes how representations of a product from each system
 
 [%header%autowidth.spread]
 |===
+<<<<<<< HEAD
 | Target System | CIM Type | Target Types | Mapping Notes
 | B2C Commerce | Product
+=======
+|Target System	|CIM Type	|Target Types	|Mapping Notes
+|B2C Commerce	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Product | Relevant fields only
 | OFBiz | Product
+=======
+PriceBook	|Product	|Relevant fields only
+|OFBiz	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Product
+=======
+PriceBook	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Relevant fields only
 | SAP S/4HANA | Product
 
@@ -228,24 +379,47 @@ PriceBook | Product
 
 PricingCondition | Relevant fields only
 | Salesforce | Product
+=======
+PriceBook	|Relevant fields only
+|SAP S/4HANA	|Product
+
+PriceBook	|Product
+
+PricingCondition	|Relevant fields only
+|Salesforce	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Product
 
 PriceBook | Relevant fields only
 | PIM | Product
+=======
+PriceBook	|Product
+
+PriceBook	|Relevant fields only
+|PIM	|Product
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 
 ProductCategory
 
 ProductCatalog
 
+<<<<<<< HEAD
 PriceBook | Product | Relevant fields only
+=======
+PriceBook	|Product	|Relevant fields only
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 |===
 
 == See Also 
 
+<<<<<<< HEAD
 * xref:prerequisites.adoc[Prerequisites]
+=======
+>>>>>>> 1f836b3 (Minor fixes based on latest build results)
 * xref:index.adoc[MuleSoft Accelerator for Retail]

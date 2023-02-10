@@ -16,7 +16,7 @@ The following use cases are supported by the MuleSoft Accelerator for Manufactur
 
 === Shared Use Cases
 
-The following use cases provided by the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/1.6/[MuleSoft Accelerator for SAP] are also leveraged by this accelerator:
+The following use cases provided by the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/[MuleSoft Accelerator for SAP^] are also leveraged by this accelerator:
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/1.6/pages/Use%20case%202%20-%20Procure-to-pay/[*Procure-to-pay*] - Streamline your procure-to-pay process with pre-built APIs, implementation templates, and connectors to seamlessly move supplier, invoice, and goods receipt data.
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/1.6/pages/Use%20case%203a%20-%20Quote-to-cash%20-%20Salesforce%20and%20SAP%20S4HANA/[*Quote-to-cash: Salesforce and SAP S/4HANA*] - Sync order, inventory, and customer data from opportunity to close between Salesforce Sales Cloud (including CPQ) and SAP S/4HANA.

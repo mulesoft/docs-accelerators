@@ -1,7 +1,6 @@
 The following applications listen for events published by external systems and ingest them in support of the FINS use cases. While these do not expose APIs as such, they loosely correspond to the Experience layer in MuleSoft's API-led approach because the source events are from systems external to the MuleSoft integration platform.
 
-[%hardbreaks]
-[cols="70,30"]
+[cols="70,30",width=100%]
 |===
 | FINS Payments ACH Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-ach-listener[Source^]
 | FINS Payments Fedwire Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-fedwire-listener[Source^]

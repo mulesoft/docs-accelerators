@@ -1,7 +1,6 @@
 The following APIs are used to access and manage data in various external systems in support of the FINS use cases. These correspond to the System layer in MuleSoft's API-led approach.
 
-[%hardbreaks]
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 | FINS Address Validation System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-address-validation-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-address-validation-sys-api[Implementation Template^]
 | FINS Blockchain System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-blockchain-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-blockchain-sys-api[Implementation Template^]
