@@ -1,4 +1,4 @@
-= Accelerator for Healthcare Setup Guide
+= Accelerator Setup Guide
 
 == Salesforce Health Cloud - Enabling Person Accounts
 
