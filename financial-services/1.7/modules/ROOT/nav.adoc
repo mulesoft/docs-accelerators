@@ -1,5 +1,5 @@
 .xref:index.adoc[Financial Services]
-* xref:index.adoc[MuleSoft Accelerator for Financial Services Overview]
+* xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup Guide]
 ** xref:payments-setup-guide.adoc[Payments modernization demo Setup Guide]

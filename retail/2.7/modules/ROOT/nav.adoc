@@ -1,5 +1,5 @@
 .xref:index.adoc[Retail]
-* xref:index.adoc[MuleSoft Accelerator for Retail Overview]
+* xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:rcg-setup-guide.adoc[Accelerator Setup Guide]
 ** xref:b2c-setup-guide.adoc[B2C Setup Guide]

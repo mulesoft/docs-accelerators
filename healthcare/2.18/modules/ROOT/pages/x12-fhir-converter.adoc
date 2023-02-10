@@ -19,4 +19,5 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/hls-x12-fhir-fx-diagra
 
 == See Also
 
+* xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]

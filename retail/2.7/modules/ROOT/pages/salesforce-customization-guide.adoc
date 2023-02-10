@@ -2,7 +2,7 @@
 
 The following provides guidance on the custom fields that need to be created for the customer profile and sales order sync use cases in order to function end-to-end.
 
-== New fields to be created
+== Fields to be created
 
 The following fields need to be created in the corresponding objects for the use case.
 
@@ -28,4 +28,5 @@ The Order object needs to be updated for the following fields for the use case:
 
 == See Also 
 
+* xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Retail]

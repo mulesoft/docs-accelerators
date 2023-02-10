@@ -1,5 +1,5 @@
 .xref:index.adoc[Healthcare]
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+* xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:hls-setup-guide.adoc[Accelerator Setup Guide]
 ** xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP Setup Guide]
