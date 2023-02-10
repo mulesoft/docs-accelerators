@@ -28,8 +28,5 @@ The Order object needs to be updated for the following fields for the use case:
 
 == See Also 
 
-<<<<<<< HEAD:modules/ROOT/pages/rcg/retail-salesforce-customization-guide.adoc
 * xref:prerequisites.adoc[Prerequisites]
-=======
->>>>>>> e45997f (Update index.adoc):retail/2.7/modules/ROOT/pages/salesforce-customization-guide.adoc
 * xref:index.adoc[MuleSoft Accelerator for Retail]

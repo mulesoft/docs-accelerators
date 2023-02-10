@@ -4,7 +4,7 @@
 The following provides guidance on how to use the custom BAPI code (for example, `ZBAPI_CUSTOMER_V3`) for your SAP instance.
 
 [NOTE]
-You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.3/pages/Use%20case%201%20-%20Customer%20profile%20sync/[ustomer profile sync from SAP^] use case.
+You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.3/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync from SAP^] use case.
 
 == BAPI custom objects
 
@@ -265,4 +265,5 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png
 
 == See Also 
 
+* xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Retail]
