@@ -1,11 +1,10 @@
 = SAP Custom BAPI Setup Guide
 :hardbreaks-option:
-:retail-version: 2.7
 
 The following provides guidance on how to use the custom BAPI code (for example, `ZBAPI_CUSTOMER_V3`) for your SAP instance.
 
 [NOTE]
-You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync from SAP^] use case.
+You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.3/pages/Use%20case%201%20-%20Customer%20profile%20sync/[ustomer profile sync from SAP^] use case.
 
 == BAPI custom objects
 
@@ -53,7 +52,6 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 * `ZBAPI_CUST_QUERY`
 * `ZBAPI_CUSTOMER_CD`
 
-[[creating-data-elements]]
 === Creating data elements
 
 [%header%autowidth.spread]
@@ -64,7 +62,6 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_01.png[sfc-retail-com-bapi_01.png,599]
 |===
 
-[[creating-structures]]
 === Creating structures
 
 [%header%autowidth.spread]
@@ -87,7 +84,6 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.5.png[retail-2.2-bapi-01.5.png,599]
 |===
 
-[[creating-table-types]]
 === Creating table types
 
 [%header%autowidth.spread]
@@ -98,7 +94,6 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_05.png[sfc-retail-com-bapi_05.png,599]
 |===
 
-[[creating-transparent-tables]]
 === Creating transparent tables
 
 [%header%autowidth.spread]
@@ -115,7 +110,6 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 
 <<bapi-custom-objects,back to top>>
 
-[[creating-function-groups-and-function-modules]]
 === Creating function groups and function modules
 
 ==== *ZBAPI Customer modules*
@@ -267,14 +261,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-64.png
 . Copy and paste the code from 'ZBAPI_CUSTOMER_CD.txt'.
 . Activate the entire function group by right-clicking on it in the tree and selecting 'Activate':
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301]
-
-[start=18]
-. Copy and paste the code from `ZBAPI_CUSTOMER_CD.txt`.
-
-. Activate the entire function group by right-clicking on it in the tree and selecting "Activate".
-
-//image placeholder for retail-2.2-bapi-65.png
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301] +
 
 == See Also 
 

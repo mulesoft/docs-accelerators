@@ -1,33 +1,4 @@
-<<<<<<< HEAD:modules/ROOT/pages/retail/rcg-setup-guide.adoc
 = Accelerator Setup Guide
-
-This page provides guidance on configuring the various systems and products required to implement the use cases provided by this solution.
-
-== Service Accounts
-
-Service accounts are needed for the applications below, with the versions used during Accelerator development noted:
-
-* Salesforce B2C Commerce (Version 20.6, Compatibility Mode 19.10)
-* Salesforce Marketing Cloud (April 2021)
-* Salesforce (Spring '21)
-* SAP (ECC 7.5)
-
-Additional resources used:
-
-* Global Data Management System (GDM) - MariaDB used as GDM
-* Order Management System (OMS) - Apache OFBiz used as OMS
-* Product Information Management (PIM) - Oracle 11g used as PIM
-
-== Required Configuration
-
-=======
-<<<<<<<< HEAD:modules/ROOT/pages/retail/retail-prereqs.adoc
-= Prerequisites for MuleSoft Accelerator for Retail
-========
-= Accelerator Setup Guide
-
-This page provides guidance on configuring the various systems and products required to implement the use cases provided by this solution.
->>>>>>>> 97bb809 (Squashing unverified commits from the beta branch):retail/2.7/modules/ROOT/pages/rcg-setup-guide.adoc
 
 This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
 
@@ -43,20 +14,10 @@ The following setup and configuration guides are available for this accelerator:
 * xref:sfdc-customization-guide.adoc[Salesforce Customization Guide]
 * xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
 
-<<<<<<<< HEAD:modules/ROOT/pages/retail/retail-prereqs.adoc
-Most of the implementation templates also contain details on requirements specific to those applications.
-========
 * Global Data Management System (GDM) - MariaDB used as GDM
 * Order Management System (OMS) - Apache OFBiz used as OMS
 * Product Information Management (PIM) - Oracle 11g used as PIM
->>>>>>>> 97bb809 (Squashing unverified commits from the beta branch):retail/2.7/modules/ROOT/pages/rcg-setup-guide.adoc
 
-== See Also
-
-<<<<<<<< HEAD:modules/ROOT/pages/retail/retail-prereqs.adoc
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-========
->>>>>>> 97bb809 (Squashing unverified commits from the beta branch):retail/2.7/modules/ROOT/pages/rcg-setup-guide.adoc
 In addition to configuring individual applications to suit your target deployment environment, the following will be required to implement the use cases described:
 
 * B2C Commerce Configuration: Open Commerce and Salesforce Commerce API access in addition to deployment and configuration of the B2C Commerce Sync Cartridge.
@@ -72,13 +33,8 @@ The accelerator includes some additional common components, which can be configu
 * Notification APIs for sending error notifications via email, SMS or Slack
 * Common scheduler for executing jobs on a schedule
 
-Please refer to the xref:accelerators-home::common-services.adoc[Accelerators Common Services] documentation for more details on configuring optional components.
+Please refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-common-services/[Accelerators Common Services] documentation for more details on configuring optional components.
 
 == See Also 
 
-* xref:prerequisites.adoc[Prerequisites]
-<<<<<<< HEAD:modules/ROOT/pages/retail/rcg-setup-guide.adoc
-=======
->>>>>>>> 97bb809 (Squashing unverified commits from the beta branch):retail/2.7/modules/ROOT/pages/rcg-setup-guide.adoc
->>>>>>> 97bb809 (Squashing unverified commits from the beta branch):retail/2.7/modules/ROOT/pages/rcg-setup-guide.adoc
 * xref:index.adoc[MuleSoft Accelerator for Retail]
