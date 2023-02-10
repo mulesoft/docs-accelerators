@@ -15,14 +15,14 @@ The following components are required in order to set up and configure OFBiz:
 The following steps are required in order to configure OFBiz for use by the Accelerator assets.
 
 . It is recommended to create a separate service account for integration purposes
-.. e.g., `gradle loadAdminUserLogin -PuserLoginId=integrationadmin`
+** for example, `gradle loadAdminUserLogin -PuserLoginId=integrationadmin`
 . Edit the framework/security/config/security.properties file and add the OFBiz server hostname to the host-headers-allowed setting
-. Services must be exported in order for the Mule applications to be able to invoke them. These are defined in a services xml file under the servicedef folder, organized by domain. For each of the following services, add the attribute export="true" to the service definition tag (all file paths are relative to $OFBIZ_HOME/applications):
+. Services must be exported in order for the Mule applications to be able to invoke them. These are defined in a services xml file under the servicedef folder, organized by domain. For each of the following services, add the attribute `export="true"` to the service definition tag (all file paths are relative to `$OFBIZ_HOME/applications`):
 
 [%header%autowidth.spread]
 |===
-|Path	|Object
-|party/servicedef/services.xml	|createPartyPostalAddress
+| Path | Object
+| party/servicedef/services.xml | createPartyPostalAddress
 quickCreateCustomer
 createPerson
 updatePerson
@@ -31,40 +31,40 @@ createUpdatePartyTeleco
 Number
 createUpdatePartyPostalAddress
 findPartiesById
-|party/servicedef/services_view.xml	|getPerson
+| party/servicedef/services_view.xml | getPerson
 getPartiesFromExternalId
 getPartiesFromExactEmail
 getPartyContactMechValueMaps
-|accounting/servicedef/services_paymentmethod.xml	|createCreditCard
-|order/servicedef/services.xml	|addOrderItemShipGroup
+| accounting/servicedef/services_paymentmethod.xml | createCreditCard
+| order/servicedef/services.xml | addOrderItemShipGroup
 changeOrderStatus
 createOrderPaymentPreference
 findOrders
 storeOrder
-|product/servicedef/services_shipment.xml	|createShipment
+| product/servicedef/services_shipment.xml | createShipment
 |===
 
-The service names can be cross-referenced with the XML request templates under src/main/resources/ofbiz as well as a few of the Transform Message processors contained in the flows.
+The service names can be cross-referenced with the XML request templates under `src/main/resources/ofbiz` as well as a few of the Transform Message processors contained in the flows.
 
 The Order, Party, and Product entities must be customized to support the order, customer, and product sync process, respectively. Here are the steps:
 
 . Navigate to `$OFBIZ_HOME/applications/datamodel/entitydef`
 . Make a backup copies of the `order-entitymodel.xml`, `party-entitymodel.xml`, and `partyproduct-entitymodel.xml` files
 . Edit the `order-entitymodel.xml` file as follows:
-.. Change the type of the externalId field in the OrderItem entity to "name" instead of "id"
-.. Do the same for the externalId field in the OrderHeader entity
+** Change the type of the externalId field in the OrderItem entity to "name" instead of "id"
+** Do the same for the externalId field in the OrderHeader entity
 . Edit the `party-entitymodel.xml` file as follows:
-.. Change the type of the externalId field in the Party entity to "name" instead of "id"
-.. Add the following field to the Person entity: `<field name="customerNumber" type="name"></field>`
+** Change the type of the externalId field in the Party entity to "name" instead of "id"
+** Add the following field to the Person entity: `<field name="customerNumber" type="name"></field>`
 . Edit the `product-entitymodel.xml` file as follows:
-.. Add the following field to the Product entity: `<field name="externalId" type="name"></field>`
+** Add the following field to the Product entity: `<field name="externalId" type="name"></field>`
 . Save all the files and restart OFBiz if it's already running
 
 == Starting OFBiz
 
 . Change directory to the OFBiz installation root
-. Run `nohup gradle ofbiz &``
-.. You can add the tail `-f nohup.out` to see the console output
+. Run `nohup gradle ofbiz &`
+** You can add the tail `-f nohup.out` to see the console output
 . Open a browser and navigate to `<ofbizhost>:8443/accounting/control/main`
 . Use the default administrative username `admin` on the account
 
@@ -72,17 +72,24 @@ The Order, Party, and Product entities must be customized to support the order, 
 
 . Change directory to the OFBiz installation root
 . Run `gradle ofbiz --shutdown`
-.. Wait for it to shut down cleanly
+** Wait for it to shut down cleanly
 
 == Troubleshooting
 
 If you see column-constraint errors it is possible the `OrderItem.external_id` and/or `Party.external_id` column did not get altered properly. To correct this, install the Apache Derby tools (e.g., `sudo apt-get install derby-tools`) and run the following commands. Be sure to shut down OFBiz first:
 
-`$ ij
+----
+$ ij
 ij> connect 'jdbc:derby:/opt/ofbiz/runtime/data/derby/ofbiz' user 'ofbiz' password 'ofbiz';
 ij> alter table Party alter column external_Id set data type varchar(100);
 ij> alter table Order_Item alter column external_Id set data type varchar(100);
 ij> alter table Order_Header alter column external_Id set data type varchar(100);
-ij> exit;`
+ij> exit;
+----
 
-Restart OFBiz to pick up the change.
+Restart OFBiz to pick up the changes.
+
+== See Also 
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Retail]

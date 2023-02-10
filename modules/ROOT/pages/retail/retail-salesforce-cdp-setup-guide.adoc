@@ -1,23 +1,23 @@
 = Salesforce CDP Setup Guide
 
-The following provides guidance on Salesforce CDP setup required for the Personalization with CDP use case.
+The following provides guidance on Salesforce CDP setup required for the "Personalization with CDP" use case.
 
 == CDP Provisioning
 
 . Log in to your Salesforce CDP instance with the link provided in your admin email and use the credentials provided. If this was deployed in our existing Salesforce instance, please use your current Salesforce Admin password.
-. Click the Setup icon and then `CDP Setup`. If you don’t see this option, either refresh your page or log out and back in with your admin user credentials.
+. Click the Setup icon and then `CDP Setup`. If you don't see this option, either refresh your page or log out and back in with your admin user credentials.
 . Click `Get Started`. Setup can take a few minutes. Your Salesforce CDP instance is considered as successfully set up if you see a green tick mark for all the steps. If not, correct the issue and finish the setup.
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-cdp-provisioning.png[rcg-cdp-setup-cdp-provisioning.png,599]
 
 == Connect Data
 
-Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object.
-
-Salesforce CDP has connectors for: Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, for Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
+Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object. Salesforce CDP has connectors for: Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, for Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
 
 The Personalization with CDP use case uses the following connectors:
 
 * Salesforce CRM - to connect data from Salesforce CRM instance to CDP
-* Ingestion API - to connect data from external source systems like Snowflake and Azure via MuleSoft’s Salesforce CDP connector.
+* Ingestion API - to connect data from external source systems like Snowflake and Azure via MuleSoft's Salesforce CDP connector.
 
 === Salesforce CRM Connector
 
@@ -30,20 +30,18 @@ In Salesforce CDP, you can establish a connection to your Salesforce CRM org. Fo
 . After you connect your Salesforce org, you can view the connection details.
 ** Connector Name: The name of the Salesforce org that is connected to Salesforce CDP.
 ** Connector Type: Identifies the name of the data connection type.
-** Status: Shows the org’s status.
+** Status: Shows the org's status.
 ** Org Id: The Salesforce org Id connected to Salesforce CDP.
 ** Updated: The date and timestamp of when the Salesforce org was connected to Salesforce CDP.
 
-Your Salesforce org is now connected.
-
-With the connection is established, the Salesforce CDP admin can either use bundles that can automatically deploy data or set up their own data streams.
+Your Salesforce org is now connected. With the connection is established, the Salesforce CDP admin can either use bundles that can automatically deploy data or set up their own data streams.
 
 === Ingestion API
 
 You can push data from an external system into Salesforce CDP via the Ingestion API.
 This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
 
-For the "Personalization with CDP" use case, we are pushing data from external systems Snowflake and Azure through MuleSoft’s Salesforce CDP connector into Salesforce CDP via the Ingestion API.
+For the "Personalization with CDP" use case, we are pushing data from external systems Snowflake and Azure through MuleSoft's Salesforce CDP connector into Salesforce CDP via the Ingestion API.
 
 Follow steps in each section below to setup and configure ingestion API to push data from external systems.
 
@@ -76,30 +74,31 @@ The schema used for the "Personalization with CDP" use case can be found in the 
 To create an ingestion API source in Salesforce CDP, the schema file you upload must meet specific requirements:
 
 * Uploaded schemas have to be in valid OpenAPI format with a .yml or .yaml extension. OpenAPI version 3 is supported (3.0.0, 3.0.1, 3.0.2).
-* Objects can’t have nested objects.
+* Objects cannot have nested objects.
 * Each schema must have at least one object. Each object must have at least one field.
-* Objects can’t have more than 1000 fields.
-* Objects can’t be longer than 80 characters.
-* Object names must contain only a-z, A-Z, 0-9, _, -. No unicode characters.
-* Field names must contain only a-z, A-Z, 0-9, _, -. No unicode characters.
-* Field names can’t be any of these reserved words: dateid, location_id, dat_account_currency, dat_exchange_rate, pacing_period, pacing_end_date, rowcount, version. Field names can’t contain string.
-* Field names can’t exceed 80 characters.
+* Objects cannot have more than 1000 fields.
+* Objects cannot be longer than 80 characters.
+* Object names must contain only `a-z, A-Z, 0-9, _, -`. No unicode characters.
+* Field names must contain only `a-z, A-Z, 0-9, _, -`. No unicode characters.
+* Field names cannot be any of these reserved words: date_id, location_id, dat_account_currency, dat_exchange_rate, pacing_period, pacing_end_date, rowcount, version. 
+* Field names cannot contain the string `__`.
+* Field names cannot exceed 80 characters.
 * Fields meet the following type and format:
 ** For text or boolean type: string
 ** For number type: number
 ** For date type: string; format: date-string
-* Object names can’t be duplicated; case-insensitive.
-* Objects can’t have duplicate field names; case-insensitive.
+* Object names cannot be duplicated; case-insensitive.
+* Objects cannot have duplicate field names; case-insensitive.
 * Date strings in your object payloads must be in ISO 8601 UTC Zulu with format `yyyy-MM-dd'T'HH:mm:ss.SSS'Z`.
 
 When updating your schema, be aware:
 
-* Existing field data types can’t be changed.
+* Existing field data types cannot be changed.
 * Upon updating an object, all the existing fields for that object must be present.
-* Your updated schema file only includes changed objects, so you don’t have to provide a comprehensive list of objects each time.
-* A date field must be present for objects that are intended for profile or engagement category. Objects of type `other` don’t impose this same requirement.
+* Your updated schema file only includes changed objects, so you don't have to provide a comprehensive list of objects each time.
+* A date field must be present for objects that are intended for profile or engagement category. Objects of type `other` do not impose the same requirement.
 
-Example Schema: Refer to this https://help.salesforce.com/s/articleView?id=sf.c360_a_connect_an_ingestion_source.htm&type=5[link] for an example schema.
+Refer to this https://help.salesforce.com/s/articleView?id=sf.c360_a_connect_an_ingestion_source.htm&type=5[link] for an example schema.
 
 == Create a Data Stream
 
@@ -107,14 +106,14 @@ Data streams are the connections and associated data ingested into Salesforce CD
 
 === Create a Data Stream Using Salesforce CRM Starter Bundle
 
-Create a data stream using a starter bundle to begin the flow of data from a Salesforce CRM source. Note: You can configure only one starter bundle at a time. For more details on Salesforce CRM Starter Data Bundles, see Salesforce CRM Starter Data Bundles.
+Create a data stream using a starter bundle to begin the flow of data from a Salesforce CRM source. *Note*: You can configure only one starter bundle at a time. For more details on Salesforce CRM Starter Data Bundles, see Salesforce CRM Starter Data Bundles.
 
-For Personalization with CDP use case, we have created data streams using the Service Cloud starter bundle.
+For the "Personalization with CDP" use case, we have created data streams using the Service Cloud starter bundle.
 
 . Navigate to the Data Streams tab.
 . Click *New*.
 . Select the Salesforce CRM data source and click *Next*.
-. Select the Salesforce org from which your data resides. If you have only one org connected to Salesforce CDP, it’s selected by default.
+. Select the Salesforce org from which your data resides. If you have only one org connected to Salesforce CDP, it's selected by default.
 . The Data Bundles tab is selected by default. Choose a starter bundle (Sales Cloud, Service Cloud, or Loyalty Management).
 
 [NOTE]
@@ -133,9 +132,9 @@ The Loyalty Management bundle is only accessible when object permissions have be
 Create a data stream to begin the flow of data from a Salesforce CRM data source. Add additional permissions to your Salesforce CDP Salesforce Connector Integration permission set in your Salesforce CRM org to ingest standard and custom objects and fields into Salesforce CDP.
 
 [NOTE]
-You if you are prompted with an error stating those objects cannot be added, you might need to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce CRM in Salesforce CDP].
+If you are prompted with an error stating those objects cannot be added, you might need to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce CRM in Salesforce CDP] (see below for further details).
 
-For "Personalization with CDP" use case, we have created data streams for Salesforce CRM objects Orders and Products after enabling permissions to ingest data.
+For the "Personalization with CDP" use case, we have created data streams for Salesforce CRM objects Orders and Products after enabling permissions to ingest data.
 
 To add permissions for objects and their fields:
 
@@ -181,29 +180,23 @@ After uploading the schema file, create a data stream from your source objects.
 . In Salesforce CDP, select *Data Streams*.
 . In recently viewed data streams, click *New*.
 . Click *Ingestion API*.
-. If you’ve more than one Ingestion API configured, select the one you want from the dropdown.
+. If you've more than one Ingestion API configured, select the one you want from the dropdown.
 . Check the objects found in the schema you want to use and click *Next*.
 . In the *New Data Stream* dialog box, configure the following:
-** Primary Key Note: A true Primary Key needs to be leveraged for CDP. If one does not exist, you will need to create *Formula Filed* for the *Primay Key*.
-** Category: Choose between *Profile* and *Engagement*.
-
-[NOTE]
-For Personalization with CDP use case, the category for all the objects in the schema are Profile.
-
-** *Record Modified Date*: To order Profile modifications, use the *Record Modified Date*.
-
-[NOTE]
-A record modified field that indicates when each incoming record was last modified is required for Engagement object types. While the field requirement is optional for Profile and Other objects, we encourage you to provide the record modified field to ensure incoming records are processed in the right order.
-
+** Primary Key: A true Primary Key needs to be leveraged for CDP. If one does not exist, you will need to create a *Formula Filed* for the *Primay Key*.
+** Category: Choose between *Profile* and *Engagement*. +
+**Note:** For the "Personalization with CDP use case", the category for all the objects in the schema are `Profile`. +
+** *Record Modified Date*: To order Profile modifications, use the *Record Modified Date*. +
+**Note:** A record modified field that indicates when each incoming record was last modified is required for Engagement object types. While the field requirement is optional for Profile and Other objects, we encourage you to provide the record modified field to ensure incoming records are processed in the right order. +
 ** *Date Time Field*: Used to represent when Engagement from an external source occurred at ingestion.
 . Click *Next*.
 . On the final summary screen, review the list of data streams that Salesforce CDP created.
-. Click *Deploy*. If you’ve only created one data stream, the data stream’s record page appears. If you’ve created multiple data streams, the view refreshes to show all recently viewed data streams.
+. Click *Deploy*. If you've only created one data stream, the data stream's record page appears. If you've created multiple data streams, the view refreshes to show all recently viewed data streams.
 . Map the data for the data stream before use. Wait up to one hour for your data to appear in your data stream.
 
 ==== Create a Connected App for Salesforce CDP Ingestion API
 
-Before you can send data into Salesforce CDP using Ingestion API via MuleSoft’s Salesforce CDP connector, you must configure a Connected App. Refer this link for more details on creating a connected app.
+Before you can send data into Salesforce CDP using Ingestion API via MuleSoft's Salesforce CDP connector, you must configure a Connected App. Refer this link for more details on creating a connected app.
 
 As part of your Connected App set up for Ingestion API, you must select the following OAuth scope:
 
@@ -213,7 +206,7 @@ As part of your Connected App set up for Ingestion API, you must select the foll
 * Manage user data via APIs (`api`)
 * Perform requests on your behalf at any time (`refresh_token`, `offline_access`).
 
-==== Configure MuleSoft’s Salesforce CDP Connector
+==== Configure MuleSoft's Salesforce CDP Connector
 
 Anypoint Connector for Salesforce CDP (Salesforce CDP Connector) provides customers a pipeline to send data into Salesforce CDP.
 
@@ -221,13 +214,13 @@ This connector works with the Salesforce CDP Bulk and Streaming API, depending o
 
 Refer to this https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[link] for details on configuration and operations for Salesforce CDP Connector.
 
-For "Personalization with CDP" use case, refer CDP System API specification and implementation template.
+For the "Personalization with CDP" use case, refer CDP System API specification and implementation template.
 
 == Data Modeling and Data Mapping
 
 === Data Cleansing and Preparation
 
-Cleaning and preparing your data is critical for success in using Salesforce CDP’ segmentation and activation capabilities.
+Cleaning and preparing your data is critical for success in using Salesforce CDP's segmentation and activation capabilities.
 
 * xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_library.htm&type=5[Formula Expression Library] - When you create a Salesforce CDP data stream, you can choose to generate more fields. These supplemental fields can be hard-coded or derived from other fields in the data stream.
 * xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_use_cases.htm&type=5[Formula Expression Use Cases] - These use cases are examples of using formula expression functionality in Salesforce CDP.
@@ -241,19 +234,19 @@ On the Data Stream detail page or after deploying your data streams, click Start
 
 On the Data Streams mapping canvas, you can see both your DSOs and target DMOs. To map one to another, click the name of a DSO and connect it to the desired DMO. For example, you can map the DSO firstname to the target First Name field using this method.
 
-* Data Mapper Views - Select table view or visual view when mapping your data in Salesforce CDP.
-* Data Model Objects - Objects in the data model created by the customer for CDP implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
-* Required Data Mappings When mapping your party area data, complete the required fields and relationships to successfully use Identity Resolution, Segmentation, and Activation.
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_mapping_views.htm&type=5[Data Mapper Views] - Select table view or visual view when mapping your data in Salesforce CDP.
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_objects.htm&type=5[Data Model Objects] - Objects in the data model created by the customer for CDP implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_required_data_mappings.htm&type=5[Required Data Mappings] - When mapping your party area data, complete the required fields and relationships to successfully use Identity Resolution, Segmentation, and Activation.
 
 For the "Personalization with CDP" use case, we mapped to Custom DMO for our MuleSoft Web Engagement Data.
 
 ==== Data Mapping
 
-//image placeholder for rcg-cdp-setup-custom-dmo-webengagement.png
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-custom-dmo-webengagement.png[rcg-cdp-setup-custom-dmo-webengagement.png,599]
 
 ==== Data Relationships
 
-//image placeholder for rcg-cdp-setup-webengagement-data-relationships.png
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-webengagement-data-relationships.png[rcg-cdp-setup-webengagement-data-relationships.png,599]
 
 == Identity Resolution
 
@@ -261,17 +254,16 @@ Use Identity Resolution to match and reconcile data about people into a comprehe
 
 Access Identity Resolution from Salesforce CDP after mapping entities to the CIM. Entities must be mapped before you can create rulesets. Additional Information can be found here.
 
-* xref:https://help.salesforce.com/s/articleView?id=c360_a_individual_ruleset.htm&type=5&language=en_US[Individual Entity Ruleset]
-* xref:https://help.salesforce.com/s/articleView?id=c360_a_unified_individual.htm&type=5&language=en_US[Identity Resolution Object Examples]
-* xref:https://help.salesforce.com/s/articleView?id=c360_a_identity_resolution_summary_anonymous_vs_known_profiles.htm&type=5&language=en_US[Anonymous and Known Profiles in Identity Resolution]
-* xref:https://help.salesforce.com/s/articleView?id=c360_a_resolution_troubleshooting.htm&type=5&language=en_US[Optimize Identity Resolution]
-* xref:https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Salesforce CDP]
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_identity_resolution_ruleset.htm&type=5[Identity Resolution Rulesets]
+* https://help.salesforce.com/s/articleView?id=c360_a_identity_resolution_summary_anonymous_vs_known_profiles.htm&type=5&language=en_US[Anonymous and Known Profiles in Identity Resolution]
+* https://help.salesforce.com/s/articleView?id=c360_a_resolution_troubleshooting.htm&type=5&language=en_US[Optimize Identity Resolution]
+* https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Salesforce CDP]
 
-For the "Personalization with CDP" use case, we are leveraging the Fuzzy Name and Normalized Email Match Rule; leveraging Fuzzy First Name, Exact Last Name, and Normalized Email Address.
+For the `Personalization with CDP` use case, we are leveraging the Fuzzy Name and Normalized Email Match Rule; leveraging Fuzzy First Name, Exact Last Name, and Normalized Email Address.
 
-//image placeholder for rcg-cdp-setup-identity-match-rules.png
+image:https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-identity-match-rules.png[rcg-cdp-setup-identity-match-rules.png,599]
 
-//image placeholder for rcg-cdp-setup-identity-match-rules-criteria.png
+image:https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-identity-match-rules-criteria.png[rcg-cdp-setup-identity-match-rules-criteria.png,599]
 
 To create your Identity Resolution Rules, follow the steps below:
 
@@ -287,9 +279,7 @@ To create your Identity Resolution Rules, follow the steps below:
 . Click the *Next* button and add the desired criteria for your *Match Rules*.
 . Click the *Next* button. Click *Add Match Rule* to add any additional rules, or click *Save* to complete *Match Rules*.
 
-Once run, review the https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.c360_a_resolution_summary.htm[Identity Resolution Summary] and Processing History screens to validate your https://help.salesforce.com/s/articleView?id=sf.c360_a_reconciliation_rules.htm&type=5[Identity Resolution Rules].
-
-Add applicable https://help.salesforce.com/s/articleView?id=sf.c360_a_reconciliation_rules.htm&type=5[Individual Reconciliation Rules].
+Once run, review the https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.c360_a_resolution_summary.htm[Identity Resolution Summary] and Processing History screens to validate your Identity Resolution Rules. Add applicable https://help.salesforce.com/s/articleView?id=sf.c360_a_reconciliation_rules.htm&type=5[Individual Reconciliation Rules].
 
 == Create and Activate Segments
 
@@ -301,25 +291,25 @@ Creating segments is simple in CDP.
 . When you see the list of already created segments, if any, click *New*.
 . Fill in all desired fields under *Segment Details*. The fields *Segment On*, *Segment Name*, and *Publish Schedule* are required.
 ** *Segment On*: Identifies the entity that your segment builds on.
-** *Segment Name*: Give your Segment a unique name that’s easy to remember and recognize.
-** *Segment Description*: Provide detail about a segment’s use, contents, or timeframes for later review.
+** *Segment Name*: Give your Segment a unique name that's easy to remember and recognize.
+** *Segment Description*: Provide detail about a segment's use, contents, or timeframes for later review.
 ** *Publish Schedule*: Determines when and how often your segment publishes to activation targets.
 . Save your changes.
 
 [NOTE]
-Leave the *Publish Schedule* as "Don’t Refresh for now," and then fill it in after you complete your segment filters. Segment can be scheduled to publish every 12 or 24 hours.
+Leave the *Publish Schedule* as "Don't Refresh for now," and then fill it in after you complete your segment filters. Segment can be scheduled to publish every 12 or 24 hours.
 
 Segment On: Segment On defines the target entity (object) used to build your segment. For example, you can build a segment on Unified Individual or Account. You can choose any entity marked as type Profile during ingestion.
 
-For the "Personalization with CDP" use case, we have created a few Segments. All Segments that we have created have been segmented on Unified Individual. For this segment, we wanted to create an audience wherein there were no Web Page Views in the last 365 Days. We grabbed updated Date from our Attribute Library and dragged it to the canvas. And for the operator we selected "Greater Than Last Number of Days" and entered "365" for the number of days. In the *Publish Schedule* field, we selected a schedule of every 24 hours.
+For the "Personalization with CDP" use case, we have created a few Segments. All Segments that we have created have been segmented on Unified Individual. For this segment, we wanted to create an audience wherein there were no Web Page Views in the last 365 Days. We grabbed updated Date from our Attribute Library and dragged it to the canvas. And for the operator we selected "Greater Than Last Number of Days" and entered "365" for the number of days. In the *Publish Schedule* field, we select a schedule of every 24 hours.
 
-//image placeholder for rcg-cdp-setup-segment-nowebpageviews.png
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-segment-nowebpageviews.png[rcg-cdp-setup-segment-nowebpageviews.png,599]
 
 === Activation Targets
 
 Create activation targets, build, and activate data segments with Salesforce CDP.
 
-For "Personalization with CDP" use case, we have created Cloud File Storage (S3) Activation Target and Marketing Cloud Activation Target.
+For the "Personalization with CDP" use case, we have created Cloud File Storage (S3) Activation Target and Marketing Cloud Activation Target.
 
 ==== Activation Target - Cloud File Storage (S3)
 
@@ -342,11 +332,11 @@ Your Cloud File Storage activation target is created and items are added to Clou
 . Data files that contain the segment members with additional attributes.
 . A segment-data folder to indicate that writing output files to the folder has completed. If this file is missing, it indicates that either the files are being written or the data was only partially written and the producer failed.
 
-After you create and activate segments to Cloud File Storage, a subfolder called Salesforce-c360-Segments is automatically created when the first segment is activated to Cloud File Storage.
+After you create and activate segments to Cloud File Storage, a subfolder called `Salesforce-c360-Segments` is automatically created when the first segment is activated to Cloud File Storage.
 
 . Access Cloud File Storage.
 . Navigate to the bucket name you configured in Cloud File Storage Activation Target.
-. Navigate to /firstparty/Salesforce_c360_Segments. Segments are created in `YYYY/MM/DD/HH/{first 100 characters of segment name}{20 characters of activation name}_{timestamp in yyyyMMddHHmmsssSSS format}`.
+. Navigate to `/first_party/Salesforce_c360_Segments``. Segments are created in `YYYY/MM/DD/HH/{first 100 characters of segment name}__{20 characters of activation name}_{timestamp in yyyyMMddHHmmsssSSS format}`.
 
 ==== Activation Target - Marketing Cloud
 
@@ -375,7 +365,7 @@ Next, create an activation target in Salesforce CDP to publish segments to Marke
 . Enter an easy to recognize and unique name.
 
 [NOTE]
-Marketing Cloud activation target names can’t be more than 128 characters, start with an underscore, be all numbers, or include these characters: @ %^ = < ' * + # $ / \ ! ? ( ) { } [ ] , . \ \
+Marketing Cloud activation target names cannot be more than 128 characters, start with an underscore, be all numbers, or include these characters: `@ %^ = < ' * + # $ / \ ! ? ( ) { } [ ] , . \ \`
 
 [start=6]
 . Click *Next*.
@@ -402,23 +392,23 @@ To create Activation for a Segment:
 
 After you create a segment in Salesforce CDP, you can publish a segment to an activation target.
 
-. In Salesforce CDP, click *Segments.
+. In Salesforce CDP, click *Segments*.
 . Select a segment.
 . In Activations, click *New*.
 . Select an *Activation Target*.
 . Select an entity from *Activation Membership*.
 . Click *Next*.
 . Select your contact points. Note: Selecting contact points is optional for S3 activations.
-.. When contact points are mapped, select an existing path or click Edit to add, reorder, or delete sources and change source types and priority for each contact point. The *Source Type Marketing Cloud* option is selected by default.
-.. For Marketing Cloud Activations, modify activations so that the source priority order is Marketing Cloud, and remove Any Source and Any Type, so new contacts won’t get introduced to Marketing Cloud from other sources.If an activation source priority has Any Source and Any Type configured, the activation will introduce contacts from other business units into the business unit configured for the activation target. If an activation source priority has other sources configured, activation introduces new contacts in Marketing Cloud.
+** When contact points are mapped, select an existing path or click Edit to add, reorder, or delete sources and change source types and priority for each contact point. The *Source Type Marketing Cloud* option is selected by default.
+** For Marketing Cloud Activations, modify activations so that the source priority order is Marketing Cloud, and remove Any Source and Any Type, so new contacts won't get introduced to Marketing Cloud from other sources.If an activation source priority has Any Source and Any Type configured, the activation will introduce contacts from other business units into the business unit configured for the activation target. If an activation source priority has other sources configured, activation introduces new contacts in Marketing Cloud.
 . To activate additional attributes, click *Add Attributes*.
-.. Drag up to 100 additional attributes to the canvas and click *Save*. +
+** Drag up to 100 additional attributes to the canvas and click *Save*. +
 The following two types of additional attributes can be added to your activation:
-... Attributes of the Activation Membership entity.
-... Attributes from entities mapped with a direct relationship to the Activation Membership entity.
-.. Click to add a unique preferred attribute name for any attributes.
+*** Attributes of the Activation Membership entity.
+*** Attributes from entities mapped with a direct relationship to the Activation Membership entity.
+** Click to add a unique preferred attribute name for any attributes.
 . Click *Next*.
-. Enter a name and description for your activation. The following characters cannot be included in the *Name* field: + ! @ # $ % ^ * ( ) = { } [ ] \ . < > / " : ? | , _ &
+. Enter a name and description for your activation. The following characters cannot be included in the *Name* field: `+ ! @ # $ % ^ * ( ) = { } [ ] \ . < > / " : ? | , _ &`
 . Click *Save*.
 
 Your segment publishes on the next publish scheduled for the selected activation target.
@@ -433,4 +423,8 @@ For the "Personalization with CDP" use case, we created Calculated Insights to g
 
 Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
 
-//image placeholder for rcg-cdp-setup-calculated-insights.png
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-calculated-insights.png[rcg-cdp-setup-calculated-insights.png,399]
+
+== See Also 
+
+* xref:index.adoc[MuleSoft Accelerator for Retail]

@@ -8,73 +8,140 @@ Before doing anything with the Salesforce Commerce API, you need an API Client I
 
 In Account Manager, create a new API Client with the following settings:
 
-* Roles: Salesforce Commmerce API role with access to the target instance
-* OpenID Connect allowed scopes:
-  'sfcc.orders
-  sfcc.orders.rw
-  sfcc.products
-  sfcc.products.rw
-  sfcc.shopper-baskets-orders
-  sfcc.shopper-baskets-orders.rw
-  sfcc.shopper-myaccount
-  sfcc.shopper-myaccount.rw
-  sfcc.shopper-myaccount.addresses
-  sfcc.shopper-myaccount.addresses.rw
-  sfcc.shopper-customers.register
-  sfcc.customerlists.rw'
-* Token Endpoint Auth Method: client_secret_post
-* Access Token Format: JWT
+* *Roles*: Salesforce Commmerce API role with access to the target instance
+* *OpenID Connect allowed scopes*:
++
+----
+sfcc.orders
+sfcc.orders.rw
+sfcc.products
+sfcc.products.rw
+sfcc.shopper-baskets-orders
+sfcc.shopper-baskets-orders.rw
+sfcc.shopper-myaccount
+sfcc.shopper-myaccount.rw
+sfcc.shopper-myaccount.addresses
+sfcc.shopper-myaccount.addresses.rw
+sfcc.shopper-customers.register
+sfcc.customerlists.rw
+----
+
+* *Token Endpoint Auth Method*: client_secret_post
+* *Access Token Format*: JWT
 
 Refer to the Add an API Client ID documentation in the Commerce Cloud Infocenter for more information.
 
 == Open Commerce API Settings
 
-OCAPI is the other set of APIs used by the implementation template. These settings are configured in Business Manager, on the Administration -> Site Development -> Open Commerce API Settings page. There are two groups of APIs that must be configured: Shop APIs and Data APIs. Access to Shop APIs must be configured at the Global (organization-wide) level, while access to Data APIs can be configured globally or at the individual site level.
+OCAPI is the other set of APIs used by the implementation template. These settings are configured in Business Manager, on the *Administration \-> Site Development \-> Open Commerce API Settings* page. There are two groups of APIs that must be configured: Shop APIs and Data APIs. Access to Shop APIs must be configured at the Global (organization-wide) level, while access to Data APIs can be configured globally or at the individual site level.
 
-== Shop APIs
+=== Shop APIs
 
 Access to the following resources and methods of the Shop APIs is required:
 
-[%header%autowidth.spread]
 |===
-|Resource	|Methods
-|/customers	|POST
-|/customers/*	|GET/PATCH
-|/customers/*/addresses	|GET/POST
-|/customers/*/addresses/*	|GET/PATCH/DELETE
-|/customers/*/baskets	|GET
-|/customers/*/orders	|GET
-|/orders/*	|GET/PATCH
-|/order_search	|POST
-|/product_lists	|GET
-|/product_lists/*	|GET/PATCH
-|/product_lists/*/items	|GET/POST
-|/product_lists/*/items/*	|PATCH/DELETE
-|/product_search	|GET
-|/product_search/availability	|GET
-|/product_search/images	|GET
-|/product_search/prices	|GET
-|/product_search/variations	|GET
-|/products/*	|GET
-|/products/*/images	|GET
-|/products/*/availability	|GET
-|/products/*/prices	|GET
-|/products/*/variations	|GET
+| Resource | Methods
+
+| /customers
+| POST
+
+| /customers/*
+| GET/PATCH
+
+| /customers/*/addresses
+| GET/POST
+
+| /customers/*/addresses/*
+| GET/PATCH/DELETE
+
+| /customers/*/baskets
+| GET
+
+| /customers/*/orders
+| GET
+
+| /orders/*
+| GET/PATCH
+
+| /order_search
+| POST
+
+| /product_lists
+| GET
+
+| /product_lists/*
+| GET/PATCH
+
+| /product_lists/*/items
+| GET/POST
+
+| /product_lists/*/items/*
+| PATCH/DELETE
+
+| /product_search
+| GET
+
+| /product_search/availability
+| GET
+
+| /product_search/images
+| GET
+
+| /product_search/prices
+| GET
+
+| /product_search/variations
+| GET
+
+| /products/*
+| GET
+
+| /products/*/images
+| GET
+
+| /products/*/availability
+| GET
+
+| /products/*/prices
+| GET
+
+| /products/*/variations
+| GET
 |===
 
-== Data APIs
+=== Data APIs
 
 Access to the following resources and methods of the Data APIs is required:
 
-[%header%autowidth.spread]
 |===
-|Resource	|Method
-|/products/*	|GET/PUT/PATCH
-|/products/*/variation_attributes/*	|GET/PUT
-|/products/*/variation_attributes/*/values/*	|GET/PUT
-|/products/*/variations/*	|GET/PUT
-|/product_search	|POST
-|/inventory_lists/*/product_inventory_records/*	|GET/PATCH/PUT
-|/catalogs/*/categories/*/products/*	|GET/PATCH/PUT
-|/sites/*/orders/**	|PUT/PATCH
+| Resource | Method
+
+| /products/*
+| GET/PUT/PATCH
+
+| /products/*/variation_attributes/*
+| GET/PUT
+
+| /products/*/variation_attributes/*/values/*
+| GET/PUT
+
+| /products/*/variations/*
+| GET/PUT
+
+| /product_search
+| POST
+
+| /inventory_lists/*/product_inventory_records/*
+| GET/PATCH/PUT
+
+| /catalogs/*/categories/*/products/*
+| GET/PATCH/PUT
+
+| /sites/*/orders/**
+| PUT/PATCH
 |===
+
+== See Also 
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Retail]
