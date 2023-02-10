@@ -1,7 +1,6 @@
 The following APIs are provided for use by external systems to interact with functionality provided by the FINS use cases. These correspond to the Experience layer in MuleSoft's API-led approach.
 
-[%hardbreaks]
-[cols="40,30,30"]
+[cols="40,30,30",width=100%]
 |===
 |FINS DocuSign Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-docusign-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-docusign-exp-api[Implementation Template^]
 |FINS Jack Henry Events Experience API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-jackhenry-events-exp-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.jackhenry-events/fins-docusign-exp-api[Implementation Template^]

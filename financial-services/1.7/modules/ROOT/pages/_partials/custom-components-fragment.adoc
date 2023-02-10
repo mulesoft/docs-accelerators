@@ -1,7 +1,6 @@
 The following non-application components provide additional functionality in support of the FINS use cases.
 
-[%hardbreaks]
-[cols="70,30"]
+[cols="70,30",width=100%]
 |===
 | FINS Common Resources |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[ Source^]
 | FINS Financial Account Sync Lightning Web Component |  https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-financial-account-sync-lwc-src[ Source^]

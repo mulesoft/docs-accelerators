@@ -1,20 +1,20 @@
-= Accelerator Shared Assets
+= Shared Assets
 
 The following assets may be used by one or more accelerators. They can also be downloaded and used independently.
 
-== Accelerator System APIs
+== System APIs
 
 include::partial$system-apis-fragment.adoc[]
 
-== Accelerator Process APIs
+== Process APIs
 
 include::partial$process-apis-fragment.adoc[]
 
-== Accelerator API Libraries
+== API Libraries
 
 include::partial$api-libraries-fragment.adoc[]
 
-== Accelerator Shared Components
+== Shared Components
 
 include::partial$shared-components-fragment.adoc[]
 
