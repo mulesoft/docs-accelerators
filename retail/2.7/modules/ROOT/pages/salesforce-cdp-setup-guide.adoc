@@ -427,4 +427,5 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-calcula
 
 == See Also 
 
+* xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Retail]

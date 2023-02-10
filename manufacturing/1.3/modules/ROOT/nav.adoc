@@ -1,5 +1,5 @@
 .xref:index.adoc[Manufacturing]
-* xref:index.adoc[MuleSoft Accelerator for Manufacturing Overview]
+* xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:mfg-setup-guide.adoc[Accelerator Setup Guide]
 ** xref:sftp-setup-guide.adoc[SFTP Setup Guide]
