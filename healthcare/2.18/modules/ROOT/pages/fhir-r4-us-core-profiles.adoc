@@ -84,4 +84,4 @@ _APIs marked with `*` have both FHIR R4 and US Core-specific Library and API spe
 == See Also
 
 * xref:fhir-r4-resources.adoc[FHIR R4 Resources List]
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]

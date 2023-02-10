@@ -5,105 +5,22 @@ MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from sys
 
 == Use Cases
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e45997f (Update index.adoc)
 The following use cases are supported by the MuleSoft Accelerator for Manufacturing:
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync^] - The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync] - The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%202%20-%20Sales%20order%20sync/[Sales order sync^] - The Sales order sync use case enables retail developers to create and update sales orders across relevant applications.
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%202%20-%20Sales%20order%20sync/[Sales order sync] - The Sales order sync use case enables retail developers to create and update sales orders across relevant applications.
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%203%20-%20Product%20sync/[Product sync^] - The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
-<<<<<<< HEAD
-=======
-=======
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Use case 1 - Customer profile sync] — The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%202%20-%20Sales%20order%20sync/[Use case 2 - Sales order sync] — The Sales order sync use case enables retail developers to create and update sales orders across relevant applications. 
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.6/pages/Use%20case%203%20-%20Product%20sync/[Use case 3 - Product sync] — The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.5/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Use case 4 - Real-time inventory management] — The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.6/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Use case 5 - Deliver relevancy with CDP] — The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format. Access to this information helps retailers create intelligent customer segmentation for personalized communications and promotions.
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%203%20-%20Product%20sync/[Product sync] - The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
 
-== Available Assets
->>>>>>> ac8dd28 (Update fins-release-notes.adoc)
->>>>>>> e45997f (Update index.adoc)
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Real-time inventory management] - The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Real-time inventory management^] - The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
-
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Deliver relevancy with CDP^] - The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format.
-
-== See Also 
-
-<<<<<<< HEAD
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-* xref:prerequisites.adoc[Prerequisites]
-* xref:release-notes::accelerators/retail/retail-release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail on Exchange^]
-=======
-<<<<<<<< HEAD:modules/ROOT/pages/rcg/retail-landing-page.adoc
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-* xref:prerequisites.adoc[Prerequisites]
-* xref:release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail on Exchange^]
-========
-=== Accelerator Process APIs
-
-[%header%autowidth.spread]
-|===
-|Asset Name |API Specification Link |Implementation Template Link
-|Customers Process API | API Specification | Implementation Template
-|ERP Customers Process API | API Specification | Implementation Template
-|ERP Orders Process API | API Specification | Implementation Template
-|Inventory Process API | API Specification | Implementation Template
-|Orders Process API | API Specification | Implementation Template
-|PIM Sync Process API | API Specification | Implementation Template
-|Products Process API | API Specification | Implementation Template
-|RCG Customer Data Platform Process API | API Specification | Implementation Template
-|RCG DataLake Process API | API Specification | Implementation Template
-|RCG Marketing Process API | API Specification | Implementation Template
-|===
-
-=== Accelerator Experience APIs
-
-[%header%autowidth.spread]
-|===
-|Asset Name |API Specification Link |Implementation Template Link
-|B2C Commerce Experience API | API Specification | Implementation Template
-|Salesforce Experience API | API Specification | Implementation Template
-|===
-
-=== Accelerator Listeners
-
-[%header%autowidth.spread]
-|===
-|Listener Name |Implementation Template Link
-|Salesforce Marketing Listener | Implementation Template
-|Salesforce Topic Listener | Implementation Template
-|SAP Event Listener | Implementation Template
-|Salsify Channel Listener | Implementation Template
-|===
-
-=== Custom Components
-
-[%header%autowidth.spread]
-|===
-|Custom Component Name |Source Link
-|B2C Commerce Instore Pickup Cartridge | Source
-|B2C Commerce Sync Cartridge | Source
-|ID Graph Lightning Web Component | Source
-|POM Parent | Source
-|Product Availability Lightning Web Component | Source
-|===
-
-=== Common Services (can be used across any use case)
-
-* Accelerators Common Services
+* https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/mulesoft-accelerator-for-retail/minor/2.7/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Deliver relevancy with CDP] - The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format.
 
 == See Also 
 
 * xref:accelerators::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
+* xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
->>>>>>>> e45997f (Update index.adoc):retail/2.7/modules/ROOT/pages/index.adoc
->>>>>>> e45997f (Update index.adoc)
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^] on Anypoint Exchange

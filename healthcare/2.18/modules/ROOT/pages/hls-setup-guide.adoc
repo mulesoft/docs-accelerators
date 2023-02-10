@@ -51,4 +51,4 @@ In addition to some global settings and repository references, the Maven https:/
 
 == See Also
 
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]

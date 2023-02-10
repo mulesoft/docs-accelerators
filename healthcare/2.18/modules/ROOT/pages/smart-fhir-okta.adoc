@@ -30,4 +30,4 @@ Anypoint platform supports SMART on FHIR in the following ways:
 
 == See Also
 
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]

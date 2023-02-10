@@ -1,14 +1,6 @@
 = X12 to FHIR Converter
 
-<<<<<<< HEAD
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-to-x12-sys-api/[X12 to FHIR converter^] comes with a ready to use template for https://x12.org/[X12^] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
-=======
-<<<<<<<< HEAD:modules/ROOT/pages/hls/hc-x12-fhir-converter.adoc
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-to-x12-sys-api/[X12 to FHIR converter^] comes with a ready to use template for https://x12.org/[X12^] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
-========
 The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-to-x12-sys-api/[X12 to FHIR converter^] comes with a ready to use template for https://x12.org/[X12^] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
->>>>>>>> e45997f (Update index.adoc):healthcare/2.18/modules/ROOT/pages/x12-fhir-converter.adoc
->>>>>>> e45997f (Update index.adoc)
 
 == Functional Diagram
 
@@ -27,14 +19,4 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/hls-x12-fhir-fx-diagra
 
 == See Also
 
-<<<<<<< HEAD
-* xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]
-=======
-<<<<<<<< HEAD:modules/ROOT/pages/hls/hc-x12-fhir-converter.adoc
-* xref:prerequisites.adoc[Prerequisites]
-* xref:index.adoc[MuleSoft Accelerator for Healthcare]
-========
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
->>>>>>>> e45997f (Update index.adoc):healthcare/2.18/modules/ROOT/pages/x12-fhir-converter.adoc
->>>>>>> e45997f (Update index.adoc)
