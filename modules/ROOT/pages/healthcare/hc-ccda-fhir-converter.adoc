@@ -12,3 +12,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/hls-ccda-fhir-fx-diagr
 * Follows best practices prescribed by HL7 and removes manual work associated with conversion
 * Solution can be extended to support additional CDA documents
 * Highly performant with underlying DataWeave engine
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]

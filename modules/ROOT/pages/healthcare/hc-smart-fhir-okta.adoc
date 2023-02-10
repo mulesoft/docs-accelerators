@@ -26,4 +26,8 @@ Anypoint platform supports SMART on FHIR in the following ways:
 
 * Access to the data using FHIR based APIs
 ** MuleSoft Accelerator for Healthcare provides FHIR R4 specifications for all the FHIR resources
-** Out-of-the-box https://docs.mulesoft.com/api-manager/2.x/cors-policy[cross origin resource sharing (CORS) policy] enables cross origin data exchange.
+** Out-of-the-box https://docs.mulesoft.com/api-manager/2.x/cors-policy[cross origin resource sharing (CORS) policy^] enables cross origin data exchange.
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]

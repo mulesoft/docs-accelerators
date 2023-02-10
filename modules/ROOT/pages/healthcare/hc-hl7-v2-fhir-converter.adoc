@@ -13,3 +13,7 @@ image:https://www.mulesoft.com/ext/solutions/images/hc-hl7v2-to-fhir-usecase-dia
 * HL7 connector is preconfigured for this use case to easily read HL7 v2 messages
 * Solution can be extended to support any custom fields and segments
 * Highly performant with underlying DataWeave engine
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]

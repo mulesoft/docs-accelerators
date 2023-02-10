@@ -369,4 +369,4 @@ See the following page to learn more about the FHIR Error API Policy:
 == See Also
 
 * xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets]
-* xref:index.adoc[MuleSoft Accelerator for Healthcare Overview]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]
