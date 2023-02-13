@@ -44,7 +44,7 @@ In your SFTP server create inbox, archive and error folders for customers, produ
 
 === File Formats
 
-=== Customer File Format
+==== Customer File Format
 
 |===
 | Field Name | Field Description | Comments
@@ -122,7 +122,7 @@ In your SFTP server create inbox, archive and error folders for customers, produ
 | Optional the default is "Home"
 |===
 
-=== Order File Format
+==== Order File Format
 
 |===
 | Field Name | Field Description | Comments
@@ -192,7 +192,7 @@ In your SFTP server create inbox, archive and error folders for customers, produ
 | Required
 |===
 
-=== Product File Format
+==== Product File Format
 
 |===
 | Field Name | Field Description | Comments

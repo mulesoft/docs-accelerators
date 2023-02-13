@@ -35,7 +35,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-edit-redshift.png
 . Click on *Server* and select *Publish Workbook*.
 . Click on *Connect*, enter email address and password to sign in. +
  +
-image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-publish.png[mfg-tableau-online-publish.png] +
+image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-publish.png[mfg-tableau-online-publish.png] +
  +
 . In the *Publish Workbook to Tableau Online* window, complete the *Name* and *Description* fields.
 . Click on the *Publish* button.
