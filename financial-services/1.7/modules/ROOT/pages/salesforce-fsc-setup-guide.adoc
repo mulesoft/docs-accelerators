@@ -50,7 +50,7 @@ To create the `Blockchain Account` record type in the Financial Account object, 
 . Select the `Object Manager` tab from the Setup home page.
 . Select the `+FinServ_FinancialAccount__c+` object.
 . Select `Page Layouts` from the left nav and click *New*.
-. Select an existing page layout (e.g., "Financial Account (Savings Account) Layout").
+. Select an existing page layout (for example, "Financial Account (Savings Account) Layout").
 . Set the `Page Layout Name` field to "Financial Account (Blockchain Account) Layout".
 . Click *Save* to create the new layout.
 
@@ -59,7 +59,7 @@ Select `Page Layouts` from the left nav to return to the list and repeat the abo
 Now create the new `Blockchain Account` record type:
 
 . Select `Record Type` from the left nav and click  *New*.
-. Select an existing record type (e.g., "Savings Account").
+. Select an existing record type (for example, "Savings Account").
 . Fill out the following fields as indicated.
  ** `Record Type Label` \-> "Blockchain Account"
  ** `Record Type Name` \-> "Blockchain" (change default value).
@@ -87,11 +87,11 @@ The steps for creating the `Financial Account Transfer Transaction` record type 
 
 . In the Object Manager, select the `+FinServ_FinancialAccountTransaction__c+` object.
 . Select `Page Layouts` from the left nav and click *New*.
-. Select an existing page layout (e.g., "Financial Account Transaction Layout").
+. Select an existing page layout (for example, "Financial Account Transaction Layout").
 . Set the `Page Layout Name` field to "Financial Account Transfer Transaction Layout".
 . Click *Save*.
 . Select `Record Types` from the left nav and click *New*.
-. Select an existing record type (e.g., "Financial Account Transaction") if available, otherwise use "--Master--".
+. Select an existing record type (for example, "Financial Account Transaction") if available, otherwise use "--Master--".
 . Fill out the following fields as indicated.
  ** `Record Type Label` \-> "Financial Account Transfer Transaction".
  ** `Record Type Name` \-> "Financial_Account_Transfer" (change default value).
@@ -528,7 +528,7 @@ The default implementation of the solution requires the enablement of multiple c
 . Click *Edit* and enable the `Activate Multiple Currencies` option.
 . Click *Save*.
 
-If desired, click the *Currency Setup* button to add support for additional currency codes (e.g., EUR).
+If desired, click the *Currency Setup* button to add support for additional currency codes (for example, EUR).
 
 == Create Platform Events and Apex Triggers
 
@@ -644,7 +644,7 @@ Perform the following actions to enable custom fields in Opportunity default pag
 . Click the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
 . Search for `Contact` and select it.
-. From the menu on the left, click on `Page Layouts` and select the layout you want to adjust (e.g., `).
+. From the menu on the left, click on `Page Layouts` and select the layout you want to adjust.
 . Click the `Fields` tab on the palette to show all the available fields.
 . Search for `KYC Completed` and select it.
 . Drag the field from the palette and drop it in the `Opportunity Information` section of the layout.
