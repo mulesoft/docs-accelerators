@@ -6,8 +6,8 @@ This guide will help you configure your local build environment to ensure succes
 
 To get started:
 
-. Set up your xref:accel/accel-build-environment.adoc[local build environment] with the required software and Maven build configuration.
-. Download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (e.g., SAP, Salesforce Service Cloud, etc.). Be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
+. Set up your xref:build-environment.adoc[local build environment] with the required software and Maven build configuration.
+. Download and configure the assets required for the use case(s) you wish to implement. Some use cases will require changes to the systems being integrated (for example, SAP, Salesforce Service Cloud, etc.) Be sure to read and follow the instructions specified for each accelerator carefully. This also applies when using only a few select assets instead of implementing complete use cases.
 . Deploy the applications individually to your own CloudHub instance, either manually or by using simple Maven commands. There may also be some helper configuration files available for deploying multiple components at once.
 
 These instructions assume you have already configured your Maven `settings.xml` file according to the xref:accel/accel-build-environment.adoc[build environment configuration] guide.
@@ -21,7 +21,7 @@ The following table provides more information about the types of accelerator ass
 |Type	|Purpose	|Example
 |API Spec Fragments	|Shared RAML specifications reused by multiple APIs. These define standard characteristics, data types and response codes common across most APIs.	|Accelerator Global Resources
 |REST APIs	|RAML specifications describing the resources and methods an API makes available to consumers. They are categorized into layers - System, Process, Experience - as per MuleSoft's API-led approach.	|Accelerator OMS System API
-|Templates	|Runtime implementations of individual APIs and other integrations. These must be customized and deployed to your own Mule runtime environment (e.g., CloudHub) to implement desired use cases.	|Accelerator OMS System API - Implementation Template
+|Templates	|Runtime implementations of individual APIs and other integrations. These must be customized and deployed to your own Mule runtime environment (for example, CloudHub) to implement desired use cases.	|Accelerator OMS System API - Implementation Template
 |Custom	assets |Documentation and other downloadable components that do not fit into other categories.	|Accelerator POM Parent - Source
 |===
 

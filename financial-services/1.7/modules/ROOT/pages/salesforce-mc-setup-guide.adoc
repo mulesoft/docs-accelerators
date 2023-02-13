@@ -262,7 +262,7 @@ Ensure the newly created data extension from CDP is active within Marketing clou
 * Set the Schedule
  ** Set the start date
  ** Set the time zone
- ** Set the cadence for the Journey (i.e. timing)
+ ** Set the cadence for the Journey (timing)
  ** Set the Evaluate New Record Only equal to True
 * Select the email message
  ** Set the Subject

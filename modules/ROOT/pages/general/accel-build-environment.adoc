@@ -18,8 +18,8 @@ Perform the following steps to prepare your workstation for building, deploying,
 
 === Installing
 
-. Download and install the latest 64-bit version of the OpenJDK 8 release from https://adoptopenjdk.net[^]. On Windows, add or update the `JAVA_HOME` environment variable to point to the installation root directory (e.g., `C:\Program Files\Java\jdk1.8.0_265`) and append `%JAVA_HOME%\bin` to the `PATH` variable.
-. Download and install the latest Apache Maven 3.8.x release from http://maven.apache.org/download.cgi[^]. Add or update the `MAVEN_HOME` environment variable to point to the installation root directory (e.g., `C:\Utilities\apache-maven-3.8.4`) and append `%MAVEN_HOME%\bin` (`$MAVEN_HOME/bin` on Linux/MacOS) to the `PATH` variable.
+. Download and install the latest 64-bit version of the OpenJDK 8 release from https://adoptopenjdk.net[^]. On Windows, add or update the `JAVA_HOME` environment variable to point to the installation root directory (for example, `C:\Program Files\Java\jdk1.8.0_265`) and append `%JAVA_HOME%\bin` to the `PATH` variable.
+. Download and install the latest Apache Maven 3.8.x release from http://maven.apache.org/download.cgi[^]. Add or update the `MAVEN_HOME` environment variable to point to the installation root directory (for example, `C:\Utilities\apache-maven-3.8.4`) and append `%MAVEN_HOME%\bin` (`$MAVEN_HOME/bin` on Linux/MacOS) to the `PATH` variable.
 . Download and install the latest 64-bit version of the Anypoint Studio 7 release from https://www.mulesoft.com/lp/dl/studio[^]. Do not install the product under a folder containing spaces in the name.
 . Launch Studio and create a new workspace for the accelerator assets. Do not locate the workspace under a folder containing spaces in the name.
 
@@ -40,7 +40,7 @@ To verify your workstation setup, import any Accelerator implementation template
 
 Once the project has been imported, verify that the project name in Studio matches the `name` element in the `pom.xml` file. If it does not (which is usually the case when importing from a downloaded archive), press `F2` to rename it accordingly; this will make it easier to use the build scripts later on. Ignore any warnings or errors for now.
 
-Open your favorite shell and navigate to the project root folder (e.g., `C:\workspaces\accelerators\accelerator-jira-sys-api`). Run the command `mvn clean`. If the command completes successfully (the message `BUILD SUCCESS` appears) then you are good to go. If any errors are reported, they must be resolved before continuing; consult the Troubleshooting section below for help with some common issues.
+Open your favorite shell and navigate to the project root folder (for example, `C:\workspaces\accelerators\accelerator-jira-sys-api`). Run the command `mvn clean`. If the command completes successfully (the message `BUILD SUCCESS` appears) then you are good to go. If any errors are reported, they must be resolved before continuing; consult the Troubleshooting section below for help with some common issues.
 
 In Studio, close the project, wait until Studio has finished processing any tasks, and then open it again. Ensure the project builds with no errors.
 
