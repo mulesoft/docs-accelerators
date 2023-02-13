@@ -32,4 +32,4 @@ The following use-case agnostic assets are also available:
 * xref:prerequisites.adoc[Prerequisites]
 * xref:fins-r4-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
-* https://www.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/catalyst-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare^] on Anypoint Exchange
+* https://www.mulesoft.com/exchange/org.mule.examples/catalyst-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare^]
