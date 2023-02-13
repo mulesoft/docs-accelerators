@@ -6,7 +6,7 @@ This solution provides a collection of BIAN-compliant assets that allow MuleSoft
 * BIAN assists banks with improving their architectural maturity and implementing their digital banking initiatives, like Open Banking
 * BIAN APIs are not required; however, they are available to simplify digital transformation.
 
-The following table lists the BIAN API specifications and implementation template starter assets that are made available as part of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange.
+The following table lists the BIAN API specifications and implementation template starter assets that are made available as part of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services[MuleSoft Accelerator for Financial Services^].
 
 [%header%autowidth.spread^]
 |===
