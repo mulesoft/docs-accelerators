@@ -76,7 +76,7 @@ The Order, Party, and Product entities must be customized to support the order, 
 
 == Troubleshooting
 
-If you see column-constraint errors it is possible the `OrderItem.external_id` and/or `Party.external_id` column did not get altered properly. To correct this, install the Apache Derby tools (e.g., `sudo apt-get install derby-tools`) and run the following commands. Be sure to shut down OFBiz first:
+If you see column-constraint errors it is possible the `OrderItem.external_id` and/or `Party.external_id` column did not get altered properly. To correct this, install the Apache Derby tools (for example, `sudo apt-get install derby-tools`) and run the following commands. Be sure to shut down OFBiz first:
 
 ----
 $ ij

@@ -35,10 +35,10 @@ Login > Setup > Profiles > Object Setting > Contact > Edit > Check the Edit and 
 This accelerator uses MuleSoft's HL7 Connector. If you're required to use custom segments for a specific message structure, please follow the following instructions.
 
 * HL7 schema definitions are distributed inside the hl7-schemas-4.1.1.jar file, embedded inside the HL7 Connector package. Copy the following files to a folder inside src/main/resources location.
-** Message structure schema file - e.g. ADT_A31.esl
+** Message structure schema file - for example, ADT_A31.esl
 ** Base definitions file - basedefs.esl
 ** Event message map file - event-message.yaml
-* Modify the message structure schema file (e.g. ADT_A31.esl) to include your custom segment (or modify an existing segment to fit your needs).
+* Modify the message structure schema file (for example, ADT_A31.esl) to include your custom segment (or modify an existing segment to fit your needs).
 * Modify the basedefs.esl file to include the changes for segment definitions.
 
 The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-adt-api/[implementation template^] for storing ADT messages in Salesforce Health Cloud shows an example of custom segment processing. Please check the src/main/resources/config/hl7/v2_2 folder in the implementation template. This folder has the necessary changes required to process custom segment `ZG1`.

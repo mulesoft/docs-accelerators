@@ -10,7 +10,7 @@ Before importing the project collection into your Postman workspace you will nee
 
 == MUnit Tests
 
-From the command line, running any Maven goal that includes the testing phase will automatically execute the MUnit tests. This includes the goals `test`, `package` and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (e.g., `mvn package -DskipTests`). Note: case matters.
+From the command line, running any Maven goal that includes the testing phase will automatically execute the MUnit tests. This includes the goals `test`, `package` and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (for example, `mvn package -DskipTests`). Note: case matters.
 
 == See Also
 

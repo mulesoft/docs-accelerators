@@ -74,7 +74,7 @@ In your SFTP server create inbox, archive and error folders for customers, produ
 | Optional
 
 | EmailType
-| Email type e.g. Home, Work
+| Email type (examples: Home, Work)
 | Optional
 
 | PhoneNumber
@@ -118,7 +118,7 @@ In your SFTP server create inbox, archive and error folders for customers, produ
 | Required
 
 | AddressType
-| Address type e.g. Home, Work
+| Address type (examples: Home, Work)
 | Optional the default is "Home"
 |===
 
@@ -226,7 +226,7 @@ In your SFTP server create inbox, archive and error folders for customers, produ
 |
 
 | Status
-| Product status e.g. Active
+| Product status (example: Active)
 | Required
 
 | ExternalId

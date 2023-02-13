@@ -70,7 +70,7 @@ The simplest way to create a managed API instance is from an existing Exchange a
 . In API Manager, select the same business group and choose a target environment. Click the `Manage API` button and then select the `Manage API from Exchange` option.
 . In the `API Name` field, start typing the name of the API to manage. The asset type and version fields should populate automatically.
 . Scroll down to the `Mule version` option and enable it. Clear the contents of the `Implementation URI` field.
-. To make the API easier to find later, expand the `Advanced options` section and enter the full display name of the API in the `Label` field (e.g., `Acclelerator Jira Experience API`).
+. To make the API easier to find later, expand the `Advanced options` section and enter the full display name of the API in the `Label` field (for example, `Accelerator Jira Experience API`).
 . Click `Save` to create the API instance. On the summary page, copy the `API ID` value found under the `Autodiscovery` label.
 
 ==== Requesting access to the API
@@ -88,7 +88,7 @@ Each application must include a configuration element corresponding to the API I
 . In the implementation project, open the `global.xml` file found under the `src/main/mule` folder.
 . When the editor opens, select the `Configuration XML` tab to reveal the XML source.
 . Locate the `api-gateway:autodiscovery` element and uncomment it. Leave the values as they are.
-. In the property file under `src/main/resources/properties` representing the target deployment environment (e.g., `DEV.yaml`), locate the `autodiscoveryID` property and set it to the value copied from the `API ID` value, above. Be sure to keep the double-quotes (all YAML config properties must be defined in quotes).
+. In the property file under `src/main/resources/properties` representing the target deployment environment (for example, `DEV.yaml`), locate the `autodiscoveryID` property and set it to the value copied from the `API ID` value, above. Be sure to keep the double-quotes (all YAML config properties must be defined in quotes).
 . Deploy the updated application and monitor the log file. Just before the `Your application is started` message, there should be one similar to the following:
 +
 ----

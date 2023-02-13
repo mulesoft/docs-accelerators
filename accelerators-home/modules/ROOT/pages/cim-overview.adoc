@@ -18,7 +18,7 @@ The original distribution of CIM was produced by an open consortium formed to de
 
 == Organization
 
-The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity. Refer to the xref:subject-areas.adoc[CIM Subject Areas] page for the list of subject areas that are currently supported.
+The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity. Refer to the xref:cim-subject-areas.adoc[CIM Subject Areas] page for the list of subject areas that are currently supported.
 
 == Implementation
 

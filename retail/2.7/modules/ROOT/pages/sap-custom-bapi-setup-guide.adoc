@@ -1,7 +1,7 @@
 = SAP Custom BAPI Setup Guide
 :hardbreaks-option:
 
-The following provides guidance on how to use the custom BAPI code (e.g., `ZBAPI_CUSTOMER_V3`) for your SAP instance.
+The following provides guidance on how to use the custom BAPI code (for example, `ZBAPI_CUSTOMER_V3`) for your SAP instance.
 
 [NOTE]
 You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/2.3/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync from SAP^] use case.
