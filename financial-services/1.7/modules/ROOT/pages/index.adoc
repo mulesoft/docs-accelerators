@@ -1,7 +1,7 @@
 = MuleSoft Accelerator for Financial Services
 :fins-version: 1.7
 
-MuleSoft Accelerator for Financial services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
+MuleSoft Accelerator for Financial Services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
 
 == Use Cases
 
@@ -48,4 +48,4 @@ The following *use-case agnostic* assets are also available:
 * xref:fins-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
 * xref:upgrade-notes.adoc[Upgrade Notes]
-* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^] on Anypoint Exchange
+* https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^]
