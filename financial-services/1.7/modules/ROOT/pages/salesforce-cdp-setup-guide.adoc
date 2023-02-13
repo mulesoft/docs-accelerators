@@ -243,7 +243,7 @@ To create a data stream from a Salesforce CRM data source:
 . In Salesforce CDP, navigate to Data Streams and click `New`.
 . Select the `Salesforce CRM` data source and click `Next`.
 . To create your data stream, select a Salesforce org (if you have only one Salesforce org connected to Salesforce CDP, it will be selected by default.
-. Click the `All Objects` button, select the target object to sync (e.g., Account), and click `Next`.
+. Click the `All Objects` button, select the target object to sync (for example, `Account`), and click `Next`.
 . For `Category`, select the `Profile` option.
 . Review the fields to include in your data stream. By default, all fields are preselected with the total number of fields available for the object is shown in parentheses.
 . Click `Next` and fill in the deployment details:
@@ -279,7 +279,7 @@ If you encounter object access errors in Salesforce CDP when creating data strea
 . Select the `Customer Data Platform Salesforce Connector Integration` permission set. +
 *Note:* The permission set is available only after you connect your CRM org to Salesforce CDP.
 . From Apps, select Object Settings.
-. Select the object to ingest into Salesforce CDP (e.g., `Account`).
+. Select the object to ingest into Salesforce CDP (for example, `Account`).
 . To change object permissions, click Edit.
 . Enable Read and View All permissions for the object and Read Access for each field. Use the table above for reference.
 . Click Save.

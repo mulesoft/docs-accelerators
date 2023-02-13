@@ -81,7 +81,7 @@ Point builder will allow you to configure PI points. Run PI System Management To
 
 === General Tab
 
-* Name: it must be a unique name across all points, e.g. FlowLevel-M23
+* Name: it must be a unique name across all points, for example, FlowLevel-M23
 * Descriptor: can be used to store some important info such as machine or location where the point is attached
 * Stored Value: how value is stored in data server, select Real-time data
 * Point Source: source of value, for Random interface select R
