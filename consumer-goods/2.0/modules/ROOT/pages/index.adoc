@@ -18,7 +18,7 @@ The https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/
 
 == See Also
 
-* xref:accelerators::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:cg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

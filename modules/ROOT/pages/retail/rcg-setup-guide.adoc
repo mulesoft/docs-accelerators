@@ -34,7 +34,7 @@ The accelerator includes some additional common components, which can be configu
 * Notification APIs for sending error notifications via email, SMS or Slack
 * Common scheduler for executing jobs on a schedule
 
-Please refer to the xref:accelerators::common-services.adoc[Accelerators Common Services] documentation for more details on configuring optional components.
+Please refer to the xref:accelerators-home::common-services.adoc[Accelerators Common Services] documentation for more details on configuring optional components.
 
 == See Also 
 

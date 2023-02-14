@@ -27,7 +27,7 @@ The following use cases provided by the https://www.mulesoft.com/exchange/org.mu
 
 == See Also
 
-* xref:accelerators::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
