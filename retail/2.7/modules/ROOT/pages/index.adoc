@@ -19,7 +19,7 @@ The following use cases are supported by the MuleSoft Accelerator for Manufactur
 
 == See Also 
 
-* xref:accelerators::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

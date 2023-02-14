@@ -28,7 +28,7 @@ The following use-case agnostic assets are also available:
 
 == See Also
 
-* xref:accelerators::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:fins-r4-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

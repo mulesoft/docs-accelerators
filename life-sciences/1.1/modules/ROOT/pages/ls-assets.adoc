@@ -46,7 +46,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 == See Also
 
-* xref:accelerators::common-services.adoc[Accelerator Common Services]
-* xref:accelerators::shared-assets.adoc[Accelerator Shared Assets]
+* xref:accelerators-home::common-services.adoc[Accelerator Common Services]
+* xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Life Sciences]
