@@ -12,4 +12,5 @@ Most of the implementation templates also contain details on requirements specif
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:index.adoc[MuleSoft Accelerator for Consumer Goods]

@@ -10,6 +10,7 @@ The following are a collection of assets to support MuleSoft customers who are d
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:fhir-r4-resources.adoc[FHIR R4 Resources List]
 * xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets]
 * xref:prerequisites.adoc[Prerequisites]
