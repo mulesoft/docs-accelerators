@@ -12,7 +12,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Party.png[alt="Pa
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[CIM Market Library^]
+https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[CIM Market Library^]
 
 == See Also
 

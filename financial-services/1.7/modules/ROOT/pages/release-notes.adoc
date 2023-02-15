@@ -1,4 +1,5 @@
 = Release Notes
+:fins-version: 1.7
 
 == v1.7
 
@@ -42,8 +43,8 @@ This use case enables a streamlined and automated client onboarding solution. We
 
 Introduces the Address change orchestration use case. There are two extensions of this use case:
 
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration: Insurance] -- Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
-* https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Use case 4b - Address change orchestration: Banking] -- Enhance your customer service teams`' upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration  use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration: Insurance^] -- Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Use case 4b - Address change orchestration: Banking^] -- Enhance your customer service teams`' upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration  use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
 
 == v1.3
 
@@ -61,7 +62,7 @@ A few assets were updated to correct minor issues, including:
 
 === Payments modernization Use Case
 
-Introduces the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%203%20-%20Payments%20modernization/[Payments modernization] use case, which accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
+Introduces the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%203%20-%20Payments%20modernization/[Payments modernization^] use case, which accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
 
 == v1.2
 
@@ -75,7 +76,7 @@ This release includes the following enhancements:
 * Added credit card functionality
 * Added full two-way synchronization capabilities between customer accounts, transactions, and credit cards
 
-See the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Upgrade%20notes/[Upgrade notes] for more information.
+See the xref:upgrade-notes.adoc[Upgrade notes] for more information.
 
 == v1.1
 
@@ -83,7 +84,7 @@ See the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de0
 
 === Customer onboarding Use Case
 
-Introduces the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer onboarding - Banking] use case, which allows leverages Salesforce Financial Services Cloud as the system of engagement, DocuSign as the document management system, and Equifax as the credit analysis system.
+Introduces the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer onboarding - Banking^] use case, which allows leverages Salesforce Financial Services Cloud as the system of engagement, DocuSign as the document management system, and Equifax as the credit analysis system.
 
 == v1.0
 
@@ -93,7 +94,7 @@ Introduces the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28
 
 This is the first release of the MuleSoft Accelerator for Financial Services.
 
-This accelerator also introduces the https://anypoint.mulesoft.com/exchange/8f5e182d-2f4a-4ac0-a319-28f660de099c/mulesoft-accelerator-for-financial-services/minor/1.5/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core banking foundation] use case, which allows for the display of a customer's financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
+This accelerator also introduces the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core banking foundation^] use case, which allows for the display of a customer's financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
 
 == See Also
 

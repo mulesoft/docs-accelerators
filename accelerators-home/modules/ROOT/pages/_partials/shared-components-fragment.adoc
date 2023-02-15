@@ -2,12 +2,12 @@ The following non-application components are shared across multiple accelerators
 
 [cols="70,30",width=100%]
 |===
-|Accelerator API Archetype Plugin | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-archetype-src[Source^]
-|Accelerator API Template Project | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src[Source^]
-|Accelerator Common Core Library | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src[Source^]
-|Accelerator Common Resources Project | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Source^]
-|Accelerator Knit Maven Plugin | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-knit-maven-plugin-src[Source^]
-|Accelerator ID Graph Lightning Web Component | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src[Source^]
-|Accelerator MuleSoft Lightning Web Component | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-lwc-src[Source^]
-|Accelerator POM Parent | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src[Source^]
+|Accelerator API Archetype Plugin | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-archetype-src[Source^]
+|Accelerator API Template Project | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src[Source^]
+|Accelerator Common Core Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src[Source^]
+|Accelerator Common Resources Project | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Source^]
+|Accelerator Knit Maven Plugin | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-knit-maven-plugin-src[Source^]
+|Accelerator ID Graph Lightning Web Component | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src[Source^]
+|Accelerator MuleSoft Lightning Web Component | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-lwc-src[Source^]
+|Accelerator POM Parent | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src[Source^]
 |===
