@@ -20,5 +20,6 @@ include::partial$shared-components-fragment.adoc[]
 
 == See Also
 
+* xref:getting-started.adoc[Getting Started Guide]
 * xref:common-services.adoc[Accelerator Common Services]
 * xref:index.adoc[MuleSoft Accelerators]

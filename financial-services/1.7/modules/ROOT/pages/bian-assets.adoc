@@ -67,5 +67,6 @@ The following table lists the BIAN API specifications and implementation templat
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Financial Services]

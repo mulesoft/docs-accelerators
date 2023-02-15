@@ -4,12 +4,9 @@ This page provides a summary of the guides available for configuring the various
 
 == Available Guides
 
-The following setup and configuration guides are available for this accelerator:
-
-* None
-
-Most of the implementation templates also contain details on requirements specific to those applications.
+There are no setup and configuration guides specific to this accelerator. However, most of the implementation templates contain details on requirements specific to those applications.
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:index.adoc[MuleSoft Accelerator for Life Sciences]
