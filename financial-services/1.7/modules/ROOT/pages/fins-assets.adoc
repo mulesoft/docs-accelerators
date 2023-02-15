@@ -53,6 +53,7 @@ The following shared components are leveraged by this accelerator.
 
 == See Also
 
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:accelerators-home::common-services.adoc[Accelerator Common Services]
 * xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
 * xref:prerequisites.adoc[Prerequisites]

@@ -6,7 +6,7 @@ Accelerators are a collection of technical assets (predominantly API specificati
 
 Accelerators are designed as modular building blocks: customers can change the patterns, mappings, and endpoints to suit their needs. They represent best practices we recommend to customers in accomplishing these use cases. Customers will save hours of discovery, design, development, and testing each time they use an accelerator asset.
 
-To access any of the asset links described within the following Accelerators, you must log in to the https://anypoint.mulesoft.com/home/[Anypoint Platform^].
+To access any of the asset links described within the following Accelerators, you must log in to https://anypoint.mulesoft.com/home/[Anypoint Platform^].
 
 [%autowidth.spread]
 |===
@@ -22,4 +22,5 @@ If you have any questions or feedback, let us know at solutions-questions@muleso
 
 == See Also
 
-* For more accelerators, visit us on https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[Anypoint Exchange^].
+* xref:getting-started.adoc[Getting Started Guide]
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[MuleSoft Accelerators on Anypoint Exchange^].

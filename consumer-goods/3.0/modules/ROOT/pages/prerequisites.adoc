@@ -12,8 +12,5 @@ Most of the implementation templates also contain details on requirements specif
 
 == See Also
 
-<<<<<<< HEAD
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
-=======
->>>>>>> 5df14b6 (Replaced Anypoint login links with www)
 * xref:index.adoc[MuleSoft Accelerator for Consumer Goods]
