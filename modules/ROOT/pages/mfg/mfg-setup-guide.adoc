@@ -22,7 +22,7 @@ The following fields must be created in the corresponding objects.
 
 == Anypoint MQ Configuration
 
-The Anypoint-MQ-Queues-Exchanges Postman collection in the https://anypoint.mulesoft.com/exchange/org.mule.examples/mfg-common-resources-src/[MFG Common Resources project^] will pre-create all MQ destinations required by the accelerator components.
+The Anypoint-MQ-Queues-Exchanges Postman collection in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-common-resources-src/[MFG Common Resources project^] will pre-create all MQ destinations required by the accelerator components.
 
 The collection requires the dev environment template to be imported into your Postman workspace and assigned proper values first. The following MQ destinations will be created upon successful execution.
 

@@ -1,0 +1,109 @@
+= Anypoint MQ Setup Guide
+
+The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources project^].
+
+== Environment Settings
+
+The collection requires the `dev` environment to be created and assigned proper values reflecting your target Anypoint org before running any of the requests. A template for this environment, which can be imported directly into your Postman workspace, has also been provided in the FINS Common Resources project.
+
+== Running the Collection
+
+The collection itself defines variables that must be overridden prior to running any requests. The contents of the collection have been organized into separate folders, which should be executed in the following order:
+
+. Authorization
+. Client-Management (optional)
+. Queue-Management
+. Exchange-Management
+
+Requests in the `Verification` folder can be run to validate the results of the above operations. If desired, objects created by the collection can be cleaned up by running requests found in the `Deletions` folder.
+
+== Verify Destinations
+
+The following MQ destinations will be created on successful execution.
+
+|===
+| Queue Name | Bound to Exchange | Dead Letter Queue Name
+
+| accelerator-notification-queue
+| accelerator-notification-exchange
+| accelerator-notification-dl-queue
+
+| fins-account-update-queue
+| fins-account-update-exchange
+| fins-account-update-dl-queue
+
+| fins-ach-inbound-queue
+| fins-ach-inbound-exchange
+| fins-ach-inbound-dl-queue
+
+| fins-ach-outbound-queue
+| fins-ach-outbound-exchange
+| fins-ach-outbound-dl-queue
+
+| fins-address-update-queue
+| fins-address-update-exchange
+| fins-address-update-dl-queue
+
+| fins-card-update-queue
+| fins-card-update-exchange
+| fins-card-update-dl-queue
+
+| fins-fedwire-inbound-queue
+| fins-fedwire-inbound-exchange
+| fins-fedwire-inbound-dl-queue
+
+| fins-fedwire-outbound-queue
+| fins-fedwire-outbound-exchange
+| fins-fedwire-outbound-dl-queue
+
+| fins-lead-update-queue
+| fins-lead-update-exchange
+| fins-address-update-dl-queue
+
+| fins-loan-document-update-queue
+| fins-document-update-exchange
+| fins-loan-document-update-dl-queue
+
+| fins-opportunity-update-queue
+| fins-opportunity-update-exchange
+| fins-opportunity-update-dl-queue
+
+| fins-party-update-queue
+| fins-party-update-exchange
+| fins-party-update-dl-queue
+
+| fins-partyrole-update-queue
+| fins-partyrole-update-exchange
+| fins-partyrole-update-dl-queue
+
+| fins-payments-webui-queue
+| fins-payment-notice-exchange
+| fins-payments-webui-dl-queue
+
+| fins-reconciliation-queue
+| fins-reconciliation-exchange
+| fins-reconciliation-dl-queue
+
+| fins-swift-inbound-queue
+| fins-swift-inbound-exchange
+| fins-swift-inbound-dl-queue
+
+| fins-swift-outbound-queue
+| fins-swift-outbound-exchange
+| fins-swift-outbound-dl-queue
+
+| fins-transaction-update-queue
+| fins-transaction-update-exchange
+| fins-transaction-update-dl-queue
+
+| fins-wealth-document-update-queue
+| fins-document-update-exchange
+| fins-wealth-document-update-dl-queue
+|===
+
+Note that the `accelerator-notification` destinations may already exist in your target environment.
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

@@ -7,56 +7,56 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | MFG Salesforce Customers System API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-salesforce-customers-sys-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-customers-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-salesforce-customers-sys-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-customers-sys-api/[Implementation Template^]
 
 | MFG Salesforce Manufacture System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-manufacture-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-manufacture-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-manufacture-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-manufacture-sys-api/[Implementation Template^]
 
 | MFG Salesforce Orders System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-orders-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-orders-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-orders-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-orders-sys-api/[Implementation Template^]
 
 | MFG Salesforce Products System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-products-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-products-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-products-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-products-sys-api/[Implementation Template^]
 
 | MFG SAP S/4HANA Customers System API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-saphana-customers-sys-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-saphana-customers-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-saphana-customers-sys-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-saphana-customers-sys-api/[Implementation Template^]
 
 | MFG SAP S/4HANA Orders System API
-| https://anypoint.mulesoft.com/exchange/05ccff16-2d51-4e93-b543-f7e7a27faf55/accelerator-saphana-orders-sys-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-saphana-orders-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-saphana-orders-sys-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-saphana-orders-sys-api/[Implementation Template^]
 
 | Manufacturing MDM System API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-mdm-sys-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-mdm-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mdm-sys-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-mdm-sys-api/[Implementation Template^]
 
 | PIM System API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-pim-sys-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accel-pim-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pim-sys-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-pim-sys-api/[Implementation Template^]
 
 | MFG Salesforce Rebate System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-rebate-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-rebate-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-rebate-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-rebate-sys-api/[Implementation Template^]
 
 | MFG SAP S/4HANA Credit Memo System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-saphana-creditmemo-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-saphana-creditmemo-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-saphana-creditmemo-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-saphana-creditmemo-sys-api/[Implementation Template^]
 
 | MFG OSIPI Machine Data System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-osipi-machinedata-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-osipi-machinedata-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-osipi-machinedata-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-osipi-machinedata-sys-api/[Implementation Template^]
 
 | MFG RedShift Machine Data System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-dw-machinedata-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-dw-machinedata-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-dw-machinedata-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-dw-machinedata-sys-api/[Implementation Template^]
 
 | MFG Salesforce Cases System API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-cases-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-cases-sys-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-cases-sys-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-cases-sys-api/[Implementation Template^]
 |===
 
 == Process APIs
@@ -64,32 +64,32 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | MFG Bulk Load Process API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-bulk-load-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-bulk-load-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-bulk-load-prc-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-bulk-load-prc-api/[Implementation Template^]
 
 | MFG Customers Process API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-customers-prc-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-customers-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-customers-prc-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-customers-prc-api/[Implementation Template^]
 
 | MFG Orders Process API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-orders-prc-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-orders-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-orders-prc-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-orders-prc-api/[Implementation Template^]
 
 | MFG Products Process API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-products-prc-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-products-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-products-prc-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-products-prc-api/[Implementation Template^]
 
 | PIM Sync Process API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-pim-sync-prc-api/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accel-pim-sync-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pim-sync-prc-api/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-pim-sync-prc-api/[Implementation Template^]
 
 | MFG Rebate Process API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-rebate-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-rebate-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-rebate-prc-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-rebate-prc-api/[Implementation Template^]
 
 | MFG Machine Data Process API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-machinedata-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-machinedata-prc-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-machinedata-prc-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-machinedata-prc-api/[Implementation Template^]
 |===
 
 == Experience APIs
@@ -97,16 +97,16 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | MFG Bulk Load Experience API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-bulk-load-exp-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-bulk-load-exp-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-bulk-load-exp-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-bulk-load-exp-api/[Implementation Template^]
 
 | MFG Salesforce Experience API
-| https://anypoint.mulesoft.com/exchange/701dca15-d8ec-43c6-b9ca-a415b09b8c5b/accelerator-salesforce-exp-api[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-exp-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-salesforce-exp-api[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-exp-api/[Implementation Template^]
 
 | MFG Tableau Machine Data Experience API
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-tableau-workorders-exp-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-tableau-workorders-exp-api/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-tableau-workorders-exp-api-spec/[API Specification^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-tableau-workorders-exp-api/[Implementation Template^]
 |===
 
 == Listeners & Handlers
@@ -114,13 +114,13 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="70,30",width=100%]
 |===
 | MFG SAP Event Listener
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-sap-event-listener/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-sap-event-listener/[Implementation Template^]
 
 | MFG SFTP CIM Handler
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-sftp-cim-handler/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-sftp-cim-handler/[Implementation Template^]
 
 | MFG Salesforce Topic Listener
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-salesforce-topic-listener/[Implementation Template^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-salesforce-topic-listener/[Implementation Template^]
 |===
 
 == Custom Components
@@ -128,17 +128,17 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="70,30",width=100%]
 |===
 | MFG Rebate Library
-| https://anypoint.mulesoft.com/exchange/591d0125-a4ee-4cb2-b818-09c72919728d/mfg-rebate-library/[Source^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-rebate-library/[Source^]
 |===
 
 == Shared APIs
 
 [cols="40,30,30",width=100%]
 |===
-| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
-| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
-| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
-| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
+| Accelerator Email System API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
+| Accelerator Slack System API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
+| Accelerator SMS System API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
+| Accelerator Notifications Process API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
 |===
 
 == Shared Components
@@ -146,13 +146,13 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="70,30",width=100%]
 |===
 | Accelerator Common Core
-| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Source^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Source^]
 
 | POM Parent
-| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Source^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Source^]
 
 | ID Graph Lightning Web Component
-| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src/[Source^]
+| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src/[Source^]
 |===
 
 == See Also

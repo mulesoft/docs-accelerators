@@ -41,13 +41,13 @@ This accelerator uses MuleSoft's HL7 Connector. If you're required to use custom
 * Modify the message structure schema file (for example, ADT_A31.esl) to include your custom segment (or modify an existing segment to fit your needs).
 * Modify the basedefs.esl file to include the changes for segment definitions.
 
-The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-adt-api/[implementation template^] for storing ADT messages in Salesforce Health Cloud shows an example of custom segment processing. Please check the src/main/resources/config/hl7/v2_2 folder in the implementation template. This folder has the necessary changes required to process custom segment `ZG1`.
+The https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-adt-api/[implementation template^] for storing ADT messages in Salesforce Health Cloud shows an example of custom segment processing. Please check the src/main/resources/config/hl7/v2_2 folder in the implementation template. This folder has the necessary changes required to process custom segment `ZG1`.
 
 For additional details on HL7 Connector, please refer to the https://docs.mulesoft.com/connectors/hl7/hl7-connector[documentation].
 
 == Maven POM Parent
 
-In addition to some global settings and repository references, the Maven https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[POM parent^] config also defines the versions of all MuleSoft connectors and modules used by applications. Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Exchange documentation^] for information on how to make changes to the POM parent file.
+In addition to some global settings and repository references, the Maven https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[POM parent^] config also defines the versions of all MuleSoft connectors and modules used by applications. Refer to the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Exchange documentation^] for information on how to make changes to the POM parent file.
 
 == See Also
 

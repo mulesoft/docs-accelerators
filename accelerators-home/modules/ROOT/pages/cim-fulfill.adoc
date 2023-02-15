@@ -12,7 +12,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Shipment.png[alt=
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fulfill-library[CIM Fulill Library^]
+https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fulfill-library[CIM Fulill Library^]
 
 == See Also
 
