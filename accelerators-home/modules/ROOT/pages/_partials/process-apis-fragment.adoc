@@ -2,8 +2,8 @@ The following APIs represent the reusable business processes that are leveraged 
 
 [cols="40,30,30",width=100%]
 |===
-|Accelerator Customers Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-customers-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-customers-prc-api[Implementation Template^]
-|Accelerator Global Financial Account Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-finacct-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-finacct-prc-api[Implementation Template^]
-|Accelerator Global Party Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-party-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-party-prc-api[Implementation Template^]
-|Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-notifications-prc-api[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api[Implementation Template^]
+|Accelerator Customers Process API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-customers-prc-api-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-customers-prc-api[Implementation Template^]
+|Accelerator Global Financial Account Process API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-finacct-prc-api-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-finacct-prc-api[Implementation Template^]
+|Accelerator Global Party Process API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-party-prc-api-spec[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-global-party-prc-api[Implementation Template^]
+|Accelerator Notifications Process API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-notifications-prc-api[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api[Implementation Template^]
 |===
