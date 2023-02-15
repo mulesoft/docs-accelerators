@@ -1,6 +1,6 @@
 = Anypoint MQ Setup Guide
 
-The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources project^].
+The Postman collection `Anypoint-MQ-Configuration` can be used to pre-create all Anypoint MQ destinations required by the accelerator components. This collection can be found in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources project^].
 
 == Environment Settings
 
