@@ -116,6 +116,6 @@ An easier way to apply policies to all APIs is to deploy them as Automated polic
 == See Also
 
 * The https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
-* The https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-archetype-api-template-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
+* The https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-archetype-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
 * The xref:./getting-started.adoc[Getting Started] guide provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
 * The xref:./index.adoc[MuleSoft Accelerators] main page.
