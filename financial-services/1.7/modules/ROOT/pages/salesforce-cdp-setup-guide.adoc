@@ -1425,9 +1425,7 @@ Use Identity Resolution to match and reconcile data about people into a comprehe
 
 Creating Identity Resolution rulesets can only be done after entities have been mapped and relationships established. Refer to the following links for additional anformation relating to Identity Resolution:
 
-* https://help.salesforce.com/s/articleView?id=c360_a_individual_ruleset.htm&type=5&language=en_US[Individual Entity Ruleset]
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_partyidentifier.htm&type=5[Party Identifier in Identity Resolution Match Rules]
-* https://help.salesforce.com/s/articleView?id=c360_a_unified_individual.htm&type=5&language=en_US[Identity Resolution Object Examples]
 * https://help.salesforce.com/s/articleView?id=c360_a_identity_resolution_summary_anonymous_vs_known_profiles.htm&type=5&language=en_US[Anonymous and Known Profiles in Identity Resolution]
 * https://help.salesforce.com/s/articleView?id=c360_a_resolution_troubleshooting.htm&type=5&language=en_US[Optimize Identity Resolution]
 * https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Salesforce CDP]

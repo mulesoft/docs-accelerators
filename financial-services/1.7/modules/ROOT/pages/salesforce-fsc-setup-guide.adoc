@@ -429,7 +429,7 @@ The following fields must be created in the corresponding objects.
 
 === Create via Apex Script
 
-An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources project^]. Download this project and follow the steps below.
+An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[FINS Common Resources^] project. Download this project and follow the steps below.
 
 . Click on Salesforce Setup icon and select `Developer Console` to open a new console window
 . Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
@@ -532,7 +532,7 @@ If desired, click the *Currency Setup* button to add support for additional curr
 
 == Create Platform Events and Apex Triggers
 
-The following Platform Event Objects and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Objects are located in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources/[FINS Common Resources project] .
+The following Platform Event Objects and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Objects are located in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources] project.
 
 |===
 | Salesforce Object | Salesforce Platform Event Object | Salesforce Platform Event API Name | Apex Trigger Name
@@ -590,7 +590,7 @@ This implementation requires creation of Platform Events in Salesforce. To creat
 . Login to Salesforce.
 . Click Setup to search for Platform Events in Quick Find Box. Platform Events Page under Integrations section appears with list of available Platform Events.
 . Click *New Platform Event* button to create an Object and enter Platform Information Details fields like Label, Plural Label and Object with Object Name and Event API Names as above table. Click Save. Repeat this step for creating multiple Salesforce Platform Event Objects as mentioned in the above table.
-. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility scripts (`CreatePlatformEventsCustomFields.txt`) available in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources/[FINS Common Resources project^] under the `/salesforce` folder.
+. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility scripts (`CreatePlatformEventsCustomFields.txt`) available in the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources^] under the `/salesforce` folder.
 
 === Create Apex Triggers
 
@@ -600,7 +600,7 @@ Follow the below steps to create the Apex Triggers
 . Click Setup to search for Object Manager in Quick Find Box.
 . Search for the Salesforce Object. A page appears with Details of the Object.
 . Click Triggers unders the Details section to see list of available triggers on the Object. Click New.
-. Copy the Trigger Script code searching by Apex Trigger Name (mentioned in the above table for the SalesforceObject) in CreateApexTriggers.txt of https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources/[FINS Common Resources] to the script editor. CreateApexTriggers.txt file is available under /salesforce folder.
+. Copy the Trigger Script code searching by Apex Trigger Name (mentioned in the above table for the SalesforceObject) in CreateApexTriggers.txt of https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources] to the script editor. CreateApexTriggers.txt file is available under /salesforce folder.
 . Obtain the `LastModifiedById` and `RecordTypeId` (if it exists) by running the queries mentioned in the trigger from Developer Console.
 . Replace the values in the script and Save the trigger.
 . Click Save and ensure isActive checkbox is ticked.
