@@ -1,5 +1,6 @@
 = MuleSoft Accelerator for Manufacturing
 :mfg-version: 1.3
+:sap-version: 1.6
 
 MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers with foundational assets for common use cases to accelerate their digital transformation journey. Our pre-built APIs, implementation templates, reference architecture, and connectors allow IT teams to spend more time innovating, and less time building common integrations from scratch.
 
@@ -21,10 +22,10 @@ The following use cases are supported by the MuleSoft Accelerator for Manufactur
 
 The following use cases provided by the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/[MuleSoft Accelerator for SAP^] are also leveraged by this accelerator:
 
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{mfg-version}/pages/Use%20case%202%20-%20Procure-to-pay/[Procure-to-pay^] - Streamline your procure-to-pay process with pre-built APIs, implementation templates, and connectors to seamlessly move supplier, invoice, and goods receipt data.
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{mfg-version}/pages/Use%20case%203a%20-%20Quote-to-cash%20-%20Salesforce%20and%20SAP%20S4HANA/[Quote-to-cash: Salesforce and SAP S/4HANA^] - Sync order, inventory, and customer data from opportunity to close between Salesforce Sales Cloud (including CPQ) and SAP S/4HANA.
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{mfg-version}/pages/Use%20case%203b%20-%20Quote-to-cash%20-%20B2B%20EDI/[Quote-to-cash: B2B EDI^] - Enable the sales order/purchase order and post-purchase order transaction flows between businesses, with one business serving as the buyer and the other as the supplier.
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{mfg-version}/pages/Use%20case%204%20-%20Real-time%20and%20bulk%20data%20lakes%20integration/[Real-time and bulk data lakes integration^] - Send sales order, inventory, and customer information from source systems to common data lake storage repositories.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%202%20-%20Procure-to-pay/[Procure-to-pay^] - Streamline your procure-to-pay process with pre-built APIs, implementation templates, and connectors to seamlessly move supplier, invoice, and goods receipt data.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%203a%20-%20Quote-to-cash%20-%20Salesforce%20and%20SAP%20S4HANA/[Quote-to-cash: Salesforce and SAP S/4HANA^] - Sync order, inventory, and customer data from opportunity to close between Salesforce Sales Cloud (including CPQ) and SAP S/4HANA.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%203b%20-%20Quote-to-cash%20-%20B2B%20EDI/[Quote-to-cash: B2B EDI^] - Enable the sales order/purchase order and post-purchase order transaction flows between businesses, with one business serving as the buyer and the other as the supplier.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-sap/minor/{sap-version}/pages/Use%20case%204%20-%20Real-time%20and%20bulk%20data%20lakes%20integration/[Real-time and bulk data lakes integration^] - Send sales order, inventory, and customer information from source systems to common data lake storage repositories.
 
 == See Also
 
