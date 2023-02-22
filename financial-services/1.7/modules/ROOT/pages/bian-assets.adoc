@@ -1,6 +1,6 @@
 = BIAN Assets
 
-This solution provides a collection of BIAN-compliant assets that allow MuleSoft and Salesforce Financial Services Cloud Banking customers accelerate innovation and composability, at scale.
+This solution provides a collection of BIAN-compliant assets that allow MuleSoft and Salesforce Financial Services Cloud Banking customers to accelerate innovation and composability, at scale.
 
 * BIAN methodologies enable interoperability and best practices between multiple players in the banking industry.
 * BIAN assists banks with improving their architectural maturity and implementing their digital banking initiatives, like Open Banking
