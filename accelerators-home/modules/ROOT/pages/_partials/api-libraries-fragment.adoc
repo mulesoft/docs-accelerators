@@ -2,13 +2,13 @@ The following RAML libraries are available for use in all accelerators.
 
 [cols="70,30",width=100%]
 |===
-| Accelerator Global Resources | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-global-resources[Library^]
-| CIM Finance Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-finance-library[Library^]
-| CIM FINS Extension Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fins-ext-library[Library^]
-| CIM Fulill Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fulfill-library[Library^]
-| CIM Market Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[Library^]
-| CIM Produce Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-produce-library[Library^]
-| CIM Sell Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-sell-library[Library^]
-| CIM Setup Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-setup-library[Library^]
+| Accelerator Global Resources | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-global-resources[Library^]
+| CIM Finance Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-finance-library[Library^]
+| CIM FINS Extension Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-fins-ext-library[Library^]
+| CIM Fulill Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-fulfill-library[Library^]
+| CIM Market Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-market-library[Library^]
+| CIM Produce Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-produce-library[Library^]
+| CIM Sell Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-sell-library[Library^]
+| CIM Setup Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-setup-library[Library^]
 
 |===

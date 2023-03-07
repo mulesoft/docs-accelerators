@@ -1,6 +1,6 @@
 = HL7 v2 to FHIR Converter
 
-The https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-hl7v2-to-fhir-sys-api[HL7 v2 to FHIR converter] comes with a ready to use template for HL7 v2 to FHIR conversion, which is based on the guidance provided by the https://build.fhir.org/ig/HL7/v2-to-fhir[HL7 v2 to FHIR Implementation Guide]. This template can be extended or modified to meet specific conversion requirements.
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hc-accelerator-hl7v2-to-fhir-sys-api[HL7 v2 to FHIR converter] comes with a ready to use template for HL7 v2 to FHIR conversion, which is based on the guidance provided by the https://build.fhir.org/ig/HL7/v2-to-fhir[HL7 v2 to FHIR Implementation Guide]. This template can be extended or modified to meet specific conversion requirements.
 
 == Functional diagram
 
