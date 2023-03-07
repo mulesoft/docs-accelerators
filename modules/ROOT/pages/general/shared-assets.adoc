@@ -12,7 +12,22 @@ include::partial$process-apis-fragment.adoc[]
 
 == API Libraries
 
-include::partial$api-libraries-fragment.adoc[]
+The following RAML libraries are available for use in all accelerators.
+
+[tabs]
+====
+:anypoint-hostname: anypoint.mulesoft.com
+US Exchange::
+include::_partials/api-libraries-fragment.adoc[]
+
+:anypoint-hostname: eu1.anypoint.mulesoft.com
+EU Exchange::
+include::_partials/api-libraries-fragment.adoc[]
+
+:anypoint-hostname: gc1.anypoint.mulesoft.com
+GovCloud Exchange::
+include::_partials/api-libraries-fragment.adoc[]
+====
 
 == Shared Components
 
