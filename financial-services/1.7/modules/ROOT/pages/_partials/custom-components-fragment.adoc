@@ -2,9 +2,9 @@ The following non-application components provide additional functionality in sup
 
 [cols="70,30",width=100%]
 |===
-| FINS Common Resources |  https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src[ Source^]
-| FINS Financial Account Sync Lightning Web Component |  https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-financial-account-sync-lwc-src[ Source^]
-| FINS Fraud Analysis Application |  https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-fraud-analysis-application-src[ Source^]
-| FINS Open Banking Library |  https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-openbanking-library[ Source^]
-| FINS Payments Frontend Web UI |  https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-frontend-webui-src[ Source^]
+| FINS Common Resources |  https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-common-resources-src[ Source^]
+| FINS Financial Account Sync Lightning Web Component |  https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-financial-account-sync-lwc-src[ Source^]
+| FINS Fraud Analysis Application |  https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-fraud-analysis-application-src[ Source^]
+| FINS Open Banking Library |  https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-openbanking-library[ Source^]
+| FINS Payments Frontend Web UI |  https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-payments-frontend-webui-src[ Source^]
 |===

@@ -7,36 +7,36 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | MDM System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-mdm-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-mdm-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-mdm-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-mdm-sys-api/[Implementation Template^]
 
 | SAP S/4HANA Products System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-products-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-products-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-saphana-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-saphana-products-sys-api/[Implementation Template^]
 
 | RCG Salesforce Consumer Goods Cloud System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-cgcloud-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-cgcloud-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-cgcloud-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-cgcloud-sys-api/[Implementation Template^]
 
 | SAP S/4HANA Customers System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-customers-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-customers-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-saphana-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-saphana-customers-sys-api/[Implementation Template^]
 
 | RCG Salsify Products System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-products-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-products-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salsify-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salsify-products-sys-api/[Implementation Template^]
 
 | RCG Trax System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-trax-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-trax-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-trax-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-trax-sys-api/[Implementation Template^]
 
 | RCG Hyperforce System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-hyperforce-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-hyperforce-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-hyperforce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-hyperforce-sys-api/[Implementation Template^]
 
 | RCG CRM Analytics System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-crma-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-crma-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-crma-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-crma-sys-api/[Implementation Template^]
 |===
 
 == Process APIs
@@ -44,20 +44,20 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | RCG Products Process API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-products-prc-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-products-prc-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-products-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-products-prc-api/[Implementation Template^]
 
 | RCG Customers Process API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-customers-prc-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-customers-prc-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-customers-prc-api/[Implementation Template^]
 
 | RCG Store Audit Process API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-store-audit-prc-api-spec[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-store-audit-prc-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-store-audit-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-store-audit-prc-api/[Implementation Template^]
 
 | RCG Data Normalisation Process API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-data-normalization-prc-api-spec[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-data-normalization-prc-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-data-normalization-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-data-normalization-prc-api/[Implementation Template^]
 |===
 
 == Listener Applications
@@ -65,7 +65,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="70,30",width=100%]
 |===
 | Salsify Channel Listener
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-channel-listener/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salsify-channel-listener/[Implementation Template^]
 |===
 
 == See Also

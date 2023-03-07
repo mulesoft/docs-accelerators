@@ -12,7 +12,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-document
 
 == Implementation
 
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-setup-library[CIM Setup Library^]
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-setup-library[CIM Setup Library^]
 
 == See Also
 

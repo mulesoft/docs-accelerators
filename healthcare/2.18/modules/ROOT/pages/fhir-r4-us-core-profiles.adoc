@@ -2,7 +2,7 @@
 
 The MuleSoft Accelerator for Healthcare provides a library of United States Core Data for Interoperability (USCDI) and FHIR R4 resources to help healthcare developers adhere to interoperability needs and jumpstart the development of healthcare digital transformation initiatives.
 
-You can also use the https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-error-policy/[FHIR Error API Policy] to capture error responses and format them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
+You can also use the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-error-policy/[FHIR Error API Policy] to capture error responses and format them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
 
 For the list of all FHIR R4 assets, please refer to xref:fhir-r4-resources.adoc[this link].
 
@@ -15,68 +15,68 @@ _API specifications, data types, and libraries built to meet compliance with FHI
 | Module | Library | API specification
 
 | Data Types
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-commons-library/[FHIR R4 Common Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-resource-types-library/[Resource Types Library] +
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-commons-library/[FHIR R4 Common Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-resource-types-library/[Resource Types Library] +
 
 | NA
 
 | Foundation
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-documentreference-library/[DocumentReference Library]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-documentreference-api/[DocumentReference API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-documentreference-library/[DocumentReference Library]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-documentreference-api/[DocumentReference API]
 
 | Security
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-provenance-library/[Provenance Library]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-provenance-api/[Provenance API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-provenance-library/[Provenance Library]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-provenance-api/[Provenance API]
 
 | Conformance
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-capabilitystatement-library/[CapabilityStatement Library]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-capabilitystatement-api/[CapabilityStatement API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-capabilitystatement-library/[CapabilityStatement Library]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-capabilitystatement-api/[CapabilityStatement API]
 
 | Administration
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-patient-library/[Patient Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-practitioner-library/[Practitioner Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-practitionerrole-library/[PractitionerRole Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-device-library/[Device Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-organization-library/[Organization Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-location-library/[Location Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-careteam-library/[CareTeam Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-encounter-library/[Encounter Library] +
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-patient-library/[Patient Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-practitioner-library/[Practitioner Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-practitionerrole-library/[PractitionerRole Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-device-library/[Device Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-organization-library/[Organization Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-location-library/[Location Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-careteam-library/[CareTeam Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-encounter-library/[Encounter Library] +
 
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-patient-api/[Patient API*] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-practitioner-api/[Practitioner API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-practitionerrole-api/[PractitionerRole API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-device-api/[Device API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-organization-api/[Organization API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-location-api/[Location API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-careteam-api/[CareTeam API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-encounter-api/[Encounter API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-patient-api/[Patient API*] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-practitioner-api/[Practitioner API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-practitionerrole-api/[PractitionerRole API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-device-api/[Device API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-organization-api/[Organization API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-location-api/[Location API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-careteam-api/[CareTeam API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-encounter-api/[Encounter API]
 
 | Clinical
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-allergyintolerance-library/[AllergyIntolerance Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-careplan-library/[CarePlan Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-goal-library/[Goal Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-procedure-library/[Procedure Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-condition-library/[Condition Library] +
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-allergyintolerance-library/[AllergyIntolerance Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-careplan-library/[CarePlan Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-goal-library/[Goal Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-procedure-library/[Procedure Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-condition-library/[Condition Library] +
 
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-allergyintolerance-api/[AllergyIntolerance API*] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-careplan-api/[CarePlan API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-goal-api/[Goal API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-procedure-api/[Procedure API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-condition-api/[Condition API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-allergyintolerance-api/[AllergyIntolerance API*] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-careplan-api/[CarePlan API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-goal-api/[Goal API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-procedure-api/[Procedure API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-condition-api/[Condition API]
 
 | Diagnostics
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-observation-library/[Observation Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-diagnosticreport-library/[DiagnosticReport Library]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-us-core-observation-api/[Observation API*] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-diagnosticreport-api/[DiagnosticReport API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-observation-library/[Observation Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-diagnosticreport-library/[DiagnosticReport Library]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-us-core-observation-api/[Observation API*] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-diagnosticreport-api/[DiagnosticReport API]
 
 | Medications
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-immunization-library/[Immunization Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-medication-library/[Medication Library] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-medicationrequest-library/[MedicationRequest Library]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-immunization-api/[Immunization API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-medication-api/[Medication API] +
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-medicationrequest-api/[MedicationRequest API]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-immunization-library/[Immunization Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-medication-library/[Medication Library] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-medicationrequest-library/[MedicationRequest Library]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-immunization-api/[Immunization API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-medication-api/[Medication API] +
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-r4-medicationrequest-api/[MedicationRequest API]
 |===
 
 _APIs marked with `*` have both FHIR R4 and US Core-specific Library and API specification available._

@@ -12,7 +12,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Product.png[alt="
 
 == Implementation
 
-https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-produce-library[CIM Produce Library^]
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-produce-library[CIM Produce Library^]
 
 == See Also
 
