@@ -28,10 +28,10 @@ The following shared APIs are are leveraged by this accelerator.
 
 [cols="40,30,30"]
 |===
-| Accelerator Email System API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-email-sys-api[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
-| Accelerator Slack System API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-slack-sys-api[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
-| Accelerator SMS System API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-sms-sys-api[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
-| Accelerator Notifications Process API | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-notifications-prc-api[API Specification^] | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
+| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-email-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-email-sys-api[Implementation Template^]
+| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-slack-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slack-sys-api[Implementation Template^]
+| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-sms-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-sms-sys-api[Implementation Template^]
+| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-notifications-prc-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-notifications-prc-api/[Implementation Template^]
 |===
 
 == Accelerator Shared Components
@@ -40,13 +40,13 @@ The following shared components are leveraged by this accelerator.
 
 [cols="70,30"]
 |===
-| Accelerator CIM Global Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library[Source^]
-| Accelerator CIM Market Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[Source^]
-| Accelerator CIM FINS Extension Library | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fins-ext-library[Source^]
-| Accelerator Common Core | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src[Source^]
-| Accelerator ID Graph Lightning Web Component | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src[Source^]
-| Accelerator Knit Maven Plugin | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-knit-plugin-src[Source^]
-| Accelerator POM Parent | https://www.anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src[Source^]
+| Accelerator CIM Global Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-global-library[Source^]
+| Accelerator CIM Market Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-market-library[Source^]
+| Accelerator CIM FINS Extension Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-fins-ext-library[Source^]
+| Accelerator Common Core | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-core-src[Source^]
+| Accelerator ID Graph Lightning Web Component | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-idgraph-lwc-src[Source^]
+| Accelerator Knit Maven Plugin | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-knit-plugin-src[Source^]
+| Accelerator POM Parent | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-pom-parent-src[Source^]
 |===
 
 == See Also

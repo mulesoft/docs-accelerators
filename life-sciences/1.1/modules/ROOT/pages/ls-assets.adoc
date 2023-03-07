@@ -7,28 +7,28 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | AWS Storage System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-aws-storage-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-aws-storage-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-aws-storage-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-aws-storage-sys-api/[Implementation Template^]
 
 | Azure Storage System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-azure-storage-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-azure-storage-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-azure-storage-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-azure-storage-sys-api/[Implementation Template^]
 
 | Clinical Trials Tableau System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-tableau-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-tableau-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-clinical-trials-tableau-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-clinical-trials-tableau-sys-api/[Implementation Template^]
 
 | SAP Accounts Payable System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mfg-sap-accounts-payable-sys-api-spec[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-sap-accounts-payable-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mfg-sap-accounts-payable-sys-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-sap-accounts-payable-sys-api/[Implementation Template^]
 
 | Veeva CDMS System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-cdms-sys-api-spec[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-cdms-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-veeva-cdms-sys-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-veeva-cdms-sys-api/[Implementation Template^]
 
 | Veeva CTMS System API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-ctms-sys-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-ctms-sys-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-veeva-ctms-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-veeva-ctms-sys-api/[Implementation Template^]
 |===
 
 === Process APIs
@@ -36,12 +36,12 @@ Accelerator assets include API specifications, implementation templates, custom 
 [cols="40,30,30",width=100%]
 |===
 | Clinical Trials Process API
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-prc-api-spec/[API Specification^]
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-prc-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-clinical-trials-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-clinical-trials-prc-api/[Implementation Template^]
 
 | Site Payments Process API
 |
-| https://www.anypoint.mulesoft.com/exchange/org.mule.examples/hls-site-payments-prc-api/[Implementation Template^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-site-payments-prc-api/[Implementation Template^]
 |===
 
 == See Also

@@ -23,4 +23,4 @@ If you have any questions or feedback, let us know at solutions-questions@muleso
 == See Also
 
 * xref:getting-started.adoc[Getting Started Guide]
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerators-introduction/[MuleSoft Accelerators on Anypoint Exchange^].
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerators-introduction/[MuleSoft Accelerators on Anypoint Exchange^].

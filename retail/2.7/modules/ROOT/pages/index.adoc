@@ -7,15 +7,15 @@ MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from sys
 
 The following use cases are supported by the MuleSoft Accelerator for Manufacturing:
 
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync^] - The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync^] - The Customer profile sync use case enables retail developers to create a customer 360 view by unlocking customer data from disparate systems. 
 
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%202%20-%20Sales%20order%20sync/[Sales order sync^] - The Sales order sync use case enables retail developers to create and update sales orders across relevant applications.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%202%20-%20Sales%20order%20sync/[Sales order sync^] - The Sales order sync use case enables retail developers to create and update sales orders across relevant applications.
 
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%203%20-%20Product%20sync/[Product sync^] - The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%203%20-%20Product%20sync/[Product sync^] - The Product sync use case enables retail developers to update product details in Salsify across relevant applications.
 
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Real-time inventory management^] - The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%204%20-%20Real-time%20inventory%20management/[Real-time inventory management^] - The Real-time inventory management use case enables customers to make an informed decision of their online purchase based on real-time inventory of a product in nearby stores.
 
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Deliver relevancy with CDP^] - The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%205%20-%20Deliver%20relevancy%20with%20CDP/[Deliver relevancy with CDP^] - The Deliver relevancy with CDP use case enables retail developers to combine customer profile data in a standardized format.
 
 == See Also 
 
@@ -23,4 +23,4 @@ The following use cases are supported by the MuleSoft Accelerator for Manufactur
 * xref:prerequisites.adoc[Prerequisites]
 * xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
-* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^]
