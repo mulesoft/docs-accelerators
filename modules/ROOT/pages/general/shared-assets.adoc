@@ -4,7 +4,28 @@ The following assets may be used by one or more accelerators. They can also be d
 
 == System APIs
 
-include::partial$system-apis-fragment.adoc[]
+The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
+
+:anypoint-hostname: anypoint.mulesoft.com
+.US Exchange
+[%collapsible%open]
+====
+include::_partials/system-apis-fragment.adoc[]
+====
+
+:anypoint-hostname: eu1.anypoint.mulesoft.com
+.EU Exchange
+[%collapsible]
+====
+include::_partials/system-apis-fragment.adoc[]
+====
+
+:anypoint-hostname: gc1.anypoint.mulesoft.com
+.GovCloud Exchange
+[%collapsible]
+====
+include::_partials/system-apis-fragment.adoc[]
+====
 
 == Process APIs
 
