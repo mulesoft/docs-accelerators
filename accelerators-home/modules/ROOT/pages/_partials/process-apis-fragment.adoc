@@ -2,8 +2,8 @@ The following APIs represent the reusable business processes that are leveraged 
 
 [cols="40,30,30",width=100%]
 |===
-// |Accelerator Customers Process API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api[Implementation Template^]
-|Accelerator Global Financial Account Process API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-global-finacct-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-global-finacct-prc-api[Implementation Template^]
-|Accelerator Global Party Process API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-global-party-prc-api-spec[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-global-party-prc-api[Implementation Template^]
-|Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-notifications-prc-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-notifications-prc-api[Implementation Template^]
+// |Accelerator Customers Process API | https://{anypoint-url}/accel-customers-prc-api-spec[API Specification^] | https://{anypoint-url}/accel-customers-prc-api[Implementation Template^]
+|Accelerator Global Financial Account Process API | https://{anypoint-url}/accel-global-finacct-prc-api-spec[API Specification^] | https://{anypoint-url}/accel-global-finacct-prc-api[Implementation Template^]
+|Accelerator Global Party Process API | https://{anypoint-url}/accel-global-party-prc-api-spec[API Specification^] | https://{anypoint-url}/accel-global-party-prc-api[Implementation Template^]
+|Accelerator Notifications Process API | https://{anypoint-url}/accelerator-notifications-prc-api[API Specification^] | https://{anypoint-url}/accel-notifications-prc-api[Implementation Template^]
 |===

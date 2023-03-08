@@ -2,12 +2,12 @@ The following non-application components are shared across multiple accelerators
 
 [cols="70,30",width=100%]
 |===
-|Accelerator API Archetype Plugin | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-archetype-src[Source^]
-|Accelerator API Template Project | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-template-src[Source^]
-|Accelerator Common Core Library | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-core-src[Source^]
-|Accelerator Common Resources Project | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-resources-src[Source^]
-|Accelerator Knit Maven Plugin | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-knit-plugin-src[Source^]
-|Accelerator ID Graph Lightning Web Component | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-idgraph-lwc-src[Source^]
-|Accelerator MuleSoft Lightning Web Component | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-lwc-src[Source^]
-|Accelerator POM Parent | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-pom-parent-src[Source^]
+|Accelerator API Archetype Plugin | https://{anypoint-url}/accelerator-mulesoft-api-archetype-src[Source^]
+|Accelerator API Template Project | https://{anypoint-url}/accelerator-mulesoft-api-template-src[Source^]
+|Accelerator Common Core Library | https://{anypoint-url}/accelerator-common-core-src[Source^]
+|Accelerator Common Resources Project | https://{anypoint-url}/accelerator-common-resources-src[Source^]
+|Accelerator Knit Maven Plugin | https://{anypoint-url}/accelerator-knit-plugin-src[Source^]
+|Accelerator ID Graph Lightning Web Component | https://{anypoint-url}/accelerator-idgraph-lwc-src[Source^]
+|Accelerator MuleSoft Lightning Web Component | https://{anypoint-url}/accelerator-mulesoft-lwc-src[Source^]
+|Accelerator POM Parent | https://{anypoint-url}/accelerator-pom-parent-src[Source^]
 |===
