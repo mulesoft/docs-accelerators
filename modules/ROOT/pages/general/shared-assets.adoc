@@ -20,7 +20,7 @@ include::_partials/system-apis-fragment.adoc[]
 include::_partials/system-apis-fragment.adoc[]
 ====
 
-:anypoint-url: gc1.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 .GovCloud Exchange
 [%collapsible]
 ====
@@ -43,7 +43,7 @@ include::_partials/process-apis-fragment.adoc[]
 include::_partials/process-apis-fragment.adoc[]
 ====
 
-:anypoint-url: gc1.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 .GovCloud Exchange
 [%collapsible]
 ====
@@ -64,7 +64,7 @@ include::_partials/api-libraries-fragment.adoc[]
 EU Exchange::
 include::_partials/api-libraries-fragment.adoc[]
 
-:anypoint-url: gc1.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 GovCloud Exchange::
 include::_partials/api-libraries-fragment.adoc[]
 ====
@@ -85,7 +85,7 @@ include::_partials/shared-components-fragment.adoc[]
 include::_partials/shared-components-fragment.adoc[]
 ====
 
-:anypoint-url: gc1.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 .GovCloud Exchange
 [%collapsible]
 ====
