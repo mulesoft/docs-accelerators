@@ -4,11 +4,51 @@ The following assets may be used by one or more accelerators. They can also be d
 
 == System APIs
 
-include::partial$system-apis-fragment.adoc[]
+The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
+
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+.US Exchange
+[%collapsible%open]
+====
+include::_partials/system-apis-fragment.adoc[]
+====
+
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+.EU Exchange
+[%collapsible]
+====
+include::_partials/system-apis-fragment.adoc[]
+====
+
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+.GovCloud Exchange
+[%collapsible]
+====
+include::_partials/system-apis-fragment.adoc[]
+====
 
 == Process APIs
 
-include::partial$process-apis-fragment.adoc[]
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+.US Exchange
+[%collapsible%open]
+====
+include::_partials/process-apis-fragment.adoc[]
+====
+
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+.EU Exchange
+[%collapsible]
+====
+include::_partials/process-apis-fragment.adoc[]
+====
+
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+.GovCloud Exchange
+[%collapsible]
+====
+include::_partials/process-apis-fragment.adoc[]
+====
 
 == API Libraries
 
@@ -16,22 +56,41 @@ The following RAML libraries are available for use in all accelerators.
 
 [tabs]
 ====
-:anypoint-hostname: anypoint.mulesoft.com
+:anypoint-url: anypoint.mulesoft.com
 US Exchange::
 include::_partials/api-libraries-fragment.adoc[]
 
-:anypoint-hostname: eu1.anypoint.mulesoft.com
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
 EU Exchange::
 include::_partials/api-libraries-fragment.adoc[]
 
-:anypoint-hostname: gc1.anypoint.mulesoft.com
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 GovCloud Exchange::
 include::_partials/api-libraries-fragment.adoc[]
 ====
 
 == Shared Components
 
-include::partial$shared-components-fragment.adoc[]
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+.US Exchange
+[%collapsible%open]
+====
+include::_partials/shared-components-fragment.adoc[]
+====
+
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+.EU Exchange
+[%collapsible]
+====
+include::_partials/shared-components-fragment.adoc[]
+====
+
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+.GovCloud Exchange
+[%collapsible]
+====
+include::_partials/shared-components-fragment.adoc[]
+====
 
 == See Also
 
