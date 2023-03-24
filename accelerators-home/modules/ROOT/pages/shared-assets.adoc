@@ -50,6 +50,23 @@ include::_partials/process-apis-fragment.adoc[]
 include::_partials/process-apis-fragment.adoc[]
 ====
 
+== API Libraries Test
+
+The following RAML libraries are available for use in all accelerators.
+
+[tabs]
+====
+US Exchange::
+* Accelerator Global Resources
+* CIM Finance Library
+EU Exchange::
+* Accelerator Global Resources
+* CIM Finance Library
+GovCloud Exchange::
+* Accelerator Global Resources
+* CIM Finance Library
+====
+
 == API Libraries
 
 The following RAML libraries are available for use in all accelerators.
