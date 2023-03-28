@@ -1,5 +1,5 @@
 = Salesforce CDP Setup Guide
-:fins-version: 1.7
+:fins-version: {page-component-version}
 
 The following provides guidance on Salesforce CDP setup required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case. A few of these steps can be omitted if deploying the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api[FINS Salesforce CDP System API^] independently of the use case.
 
