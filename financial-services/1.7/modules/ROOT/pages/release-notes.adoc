@@ -1,5 +1,5 @@
 = Release Notes
-:fins-version: 1.7
+:fins-version: {page-component-version}
 
 == v1.7
 

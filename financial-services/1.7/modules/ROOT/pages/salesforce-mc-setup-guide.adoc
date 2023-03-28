@@ -1,5 +1,5 @@
 = Salesforce Marketing Cloud Setup Guide
-:fins-version: 1.7
+:fins-version: {page-component-version}
 
 This guide provides the setup instructions for Marketing Cloud for the following use cases that are part of the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^]:
 

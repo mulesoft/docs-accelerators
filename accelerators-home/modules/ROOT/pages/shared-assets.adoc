@@ -56,16 +56,19 @@ The following RAML libraries are available for use in all accelerators.
 
 [tabs]
 ====
-:anypoint-url: anypoint.mulesoft.com
 US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com
 include::_partials/api-libraries-fragment.adoc[]
 
-:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
 EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
 include::_partials/api-libraries-fragment.adoc[]
 
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/api-libraries-fragment.adoc[]
 ====
 
