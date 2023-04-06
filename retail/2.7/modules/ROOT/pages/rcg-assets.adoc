@@ -103,10 +103,6 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-orders-prc-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-orders-prc-api/[Implementation Template^]
 
-| PIM Sync Process API
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-pim-sync-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-pim-sync-prc-api/[Implementation Template^]
-
 | Products Process API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-products-prc-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-products-prc-api/[Implementation Template^]
