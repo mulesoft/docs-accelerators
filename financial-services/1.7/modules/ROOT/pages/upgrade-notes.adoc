@@ -2,6 +2,16 @@
 
 This page provides some basic information for those upgrading to newer releases of the MuleSoft Accelerator for Financial Services.
 
+== Release 1.7 to Release 1.8
+
+As mentioned in the release notes, a number of technical and architectural changes introduced in this release will have an impact on existing deployments. These impacts, and the corresponding upgrade considerations, should be addressed in the following order as appropriate for your deployments:
+
+- Create platform event and triggers in Salesforce, deploy Accelerators Salesforce Party Listener and Accelerators Salesforce Financial Account Event Listener.
+
+- Replace FINS Customer Process API with the Accelerator Customer Process API.
+
+- A large number of other assets, which have not been included in the asset list for this release, have also been published to reflect changes in dependencies on both API specifications and other applications.
+
 == Release 1.6 to Release 1.7
 
 As mentioned in the release notes, a number of technical and architectural changes introduced in this release will have an impact on existing deployments. These impacts, and corresponding upgrade considerations, should be addressed in the following order as appropriate for your deployments.
