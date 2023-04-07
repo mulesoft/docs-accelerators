@@ -35,6 +35,10 @@ This use case accelerates the delivery and development of a home address validat
 
 The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with Salesforce CDP^] use case provides support for ingesting data from multiple sources into CDP and then using the results of CDP activations to optimize customer experiences by providing Customer Service Representatives (CSRs) with marketing insights.
 
+=== Salesforce Org Sync
+
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%206%20-%20Salesforce%20org%20sync/[Salesforce Org Sync] use case enables financial institutions using a multi-org strategy to sync customer data across Salesforce Financial Services Cloud, Sales Cloud, and Service Cloud orgs.
+
 === Additional Assets
 
 The following *use-case agnostic* assets are also available:
