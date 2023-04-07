@@ -1,6 +1,25 @@
 = Release Notes
 :fins-version: {page-component-version}
 
+== v1.8
+
+21 March 2023
+
+This use case introduces the Salesforce org sync, which enables syncing customer profile data between Salesforce Sales Cloud, Salesforce Service Cloud and Financial Services Cloud.
+
+Since many Salesforce customers opt to implement a multi-org solution for their Salesforce instance, this means that Salesforce customers must also have an org migration strategy defined to support the sharing of data between orgs. Defining a migration org strategy is a complex activity, often requiring the assistance of a third party. This solution enables the actual movement of data between orgs, including the data objects - accounts and contacts - and the order of those objects.
+
+From a technical perspective, this release introduces major changes to the way the synchronization of customer profiles is handled. Customers will now have the ability to sync multiple reference data providers by using the runtime properties, as well as onboard any reference data provider to the sync process without making any code changes. The result is a simplified set of data synchronization processes with support for plugging in different reference data providers, such as Salesforce.
+
+In addition, this release introduces platform events to capture data changes in Salesforce.  Scripts for platform event creation and triggers are also added.
+
+=== Minor updates
+
+The following assets were updated to correct minor issues:
+
+* Support for Sales Cloud and Service Cloud in LWC Component
+* Support for patch cards in Jack Henry SilverLake
+
 == v1.7
 
 13 December 2022
