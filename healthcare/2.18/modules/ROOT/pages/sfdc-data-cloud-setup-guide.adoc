@@ -1,9 +1,15 @@
 = Salesforce Data Cloud Setup Guide
 :hls-version: 2.18
 
+<<<<<<< HEAD
 The following provides guidance on Salesforce Data Cloud setup required for the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case.
 
 * <<data-cloud-provisioning,Data Cloud provisioning>>
+=======
+The following provides guidance on Salesforce Data Cloud setup required for the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case.
+
+* <<cdp-provisioning,CDP provisioning>>
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 * <<connect-data,Connect data>>
 * <<create-a-data-stream,Create a data stream>>
 * <<data-modeling-and-data-mapping,Data modeling and data mapping>>
@@ -12,6 +18,7 @@ The following provides guidance on Salesforce Data Cloud setup required for the 
 * <<create-and-activate-segments,Create and activate segments>>
 * <<data-kits,Data Kits>>
 
+<<<<<<< HEAD
 == Data Cloud provisioning
 
 . Log in to your Data Cloud instance using the link provided in the welcome email with admin user credentials. If this was deployed in your existing Salesforce Health Cloud instance, please use your existing admin user credentials.
@@ -28,10 +35,29 @@ Customer Data Platform has connectors for: Marketing Cloud Email Studio, MobileC
 The https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case uses the following connectors to ingest data into cdp:
 
 * Salesforce CRM - to connect data from a Salesforce Health Cloud instance to Data Cloud
+=======
+== CDP provisioning
+
+. Log in to your CDP instance using the link provided in the welcome email with admin user credentials. If this was deployed in your existing Salesforce Health Cloud instance, please use your existing admin user credentials.
+. Click the Setup gear icon and then CDP Setup.
+ ** If you don't see this option, either refresh your page or log out and log back in with your admin user credentials.
+. Click Get Started. Setup can take a few minutes. The CDP instance is considered to be successfully set up if there is a green tick mark for all the steps. If not, correct any issues reported and finish the setup. After setup is finished, your Customer Data Platform account is ready. Administrator user can now add profiles, create additional users, and assign permission sets.
+
+== Connect data
+
+Connectors are specialized data streams that communicate with external sources to transmit data into a CDP data source object.
+
+Customer Data Platform has connectors for: Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, for Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
+
+The https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case uses the following connectors to ingest data into cdp:
+
+* Salesforce CRM - to connect data from a Salesforce Health Cloud instance to CDP
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 * Ingestion API - to connect data from external source systems like Azure, Epic, Cerner, and other EHR systems via MuleSoft's CDP connector.
 
 === Salesforce CRM Connector
 
+<<<<<<< HEAD
 In Data Cloud, you can establish a connection to Salesforce Health Cloud org. The Data Cloud admin user can either use bundles that can automatically deploy data or set up their own data streams.
 
 Follow the below steps to create connection to your Salesforce Health Cloud org.
@@ -46,31 +72,68 @@ Follow the below steps to create connection to your Salesforce Health Cloud org.
  ** Status: Shows the org's status.
  ** Org Id: The Salesforce Health Cloud org identifier connected to Data Cloud.
  ** Updated: The date and timestamp of when the Salesforce Health Cloud org was connected to Data Cloud.
+=======
+In CDP, you can establish a connection to Salesforce Health Cloud org. The CDP admin user can either use bundles that can automatically deploy data or set up their own data streams.
+
+Follow the below steps to create connection to your Salesforce Health Cloud org.
+
+. In CDP, select the Setup gear icon and then CDP Setup.
+. Select Salesforce CRM.
+. To connect Salesforce Health Cloud org to CDP, click `New`. You can connect the Salesforce Health Cloud org that has CDP provisioned, or you can select the option to `Connect Another Org` (external orgs).
+. Click Connect. If connecting an external Salesforce Health Cloud org, enter admin user credentials to establish the connection with CDP.
+. After connecting to Salesforce Health Cloud org, the following connection details are displayed.
+ ** Connector Name: The name of the Salesforce Health Cloud org that is connected to CDP.
+ ** Connector Type: Identifies the name of the data connection type.
+ ** Status: Shows the org's status.
+ ** Org Id: The Salesforce Health Cloud org identifier connected to CDP.
+ ** Updated: The date and timestamp of when the Salesforce Health Cloud org was connected to CDP.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 . Your Salesforce Health Cloud org is now connected.
 
 After you create your Customer Data Platform instance and set up your Salesforce Health Cloud connection, you can install standard data bundles that are powered by data kits to deploy data within Customer Data Platform.
 
+<<<<<<< HEAD
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, Service Cloud bundle is installed. Refer https://help.salesforce.com/s/articleView?id=sf.c360_a_install_standard_data_bundles_powered_by_data_kits.htm&type=5[link] to install the bundle.
 
 === Ingestion API
 
 You can push data from an external system into Data Cloud via the Ingestion API. This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
+=======
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, Service Cloud bundle is installed. Refer https://help.salesforce.com/s/articleView?id=sf.c360_a_install_standard_data_bundles_powered_by_data_kits.htm&type=5[link] to install the bundle.
+
+=== Ingestion API
+
+You can push data from an external system into CDP via the Ingestion API. This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 Follow the steps in each section below to setup and configure ingestion API to push data from external systems.
 
 *Set up an Ingestion API Connector*
 
+<<<<<<< HEAD
 . In Data Cloud, select Data Cloud Setup.
 . Click Ingestion API.
 . Click New, enter a name for the API source, then click Save. On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. *Note:* Ingestion API schemas have set requirements - review the schema requirements before ingestion.
 . Click Upload Schema and navigate to the location of the file you want to use. Select the file and click Open. For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case the schema file `mule-hls-cdp-connector-schema.yaml` is available under `/src/test/resources` of the Implementation Template https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api[HLS CDP System API].
+=======
+. In CDP, select CDP Setup.
+. Click Ingestion API.
+. Click New, enter a name for the API source, then click Save. On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. *Note:* Ingestion API schemas have set requirements - review the schema requirements before ingestion.
+. Click Upload Schema and navigate to the location of the file you want to use. Select the file and click Open. For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case the schema file `mule-hls-cdp-connector-schema.yaml` is available under `/src/test/resources` of the Implementation Template https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api[HLS CDP System API].
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 . Preview all the detected objects and their attributes in your schema.
 . Click Save. The connector page reflects the updated status.
 . After the schema file is uploaded, you can create data streams to begin sending data from your source system.
 
+<<<<<<< HEAD
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, the external systems Azure, Epic, Cerner, and other EHR systems contain data to be pushed to Data Cloud through MuleSoft's CDP connector using the Ingestion API. The name of the Connector used will appear under `Ingestion API` drop down while creating a new Data Stream.
 
 The schema used for the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case can be found in the implementation template. The following objects are added for this use case:
+=======
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, the external systems Azure, Epic, Cerner, and other EHR systems contain data to be pushed to CDP through MuleSoft's CDP connector using the Ingestion API. The name of the Connector used will appear under `Ingestion API` drop down while creating a new Data Stream.
+
+The schema used for the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case can be found in the implementation template. The following objects are added for this use case:
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 * condition
 * immunization
@@ -78,7 +141,11 @@ The schema used for the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23
 
 *Schema requirements*
 
+<<<<<<< HEAD
 To create an ingestion API source in Data Cloud, the schema file you upload must meet specific requirements:
+=======
+To create an ingestion API source in CDP, the schema file you upload must meet specific requirements:
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 * Uploaded schemas have to be in valid OpenAPI format with a .yml or .yaml extension. OpenAPI version 3.0.x is supported.
 * Objects cannot have nested objects.
@@ -108,7 +175,11 @@ Example Schema: Refer https://help.salesforce.com/s/articleView?id=sf.c360_a_con
 
 == Create a data stream
 
+<<<<<<< HEAD
 Data streams are the connections and associated data ingested into Data Cloud. Data Cloud includes many data streams that can operate on different refresh schedules. Check https://help.salesforce.com/s/articleView?id=c360_a_data_stream_schedule.htm&type=5&language=en_US[Data Stream Schedule in Data Cloud] to know about how and when these data streams update.
+=======
+Data streams are the connections and associated data ingested into CDP. CDP includes many data streams that can operate on different refresh schedules. Check https://help.salesforce.com/s/articleView?id=c360_a_data_stream_schedule.htm&type=5&language=en_US[Data Stream Schedule in CDP] to know about how and when these data streams update.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 === Create a Salesforce CRM data stream
 
@@ -116,6 +187,7 @@ To create data streams from Salesforce CRM starter bundle:
 
 Refer this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_crm_starter_bundle.htm&type=5[link] to create data streams using starter bundle to begin the flow of data from a Salesforce Health Cloud data source.
 
+<<<<<<< HEAD
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data streams for Salesforce Health Cloud Account and Contact objects are created using Salesforce CRM Service bundle.
 
 To create data streams from Salesforce Health Cloud data source:
@@ -128,10 +200,25 @@ To add permissions for objects and their fields:
 . Select the `Salesforce Data Cloud Salesforce Connector Integration` permission set. *Note:* The permission set is available only after you connect your Salesforce Health Cloud org to Data Cloud.
 . From Apps, select Object Settings.
 . Select the object to ingest into Data Cloud.
+=======
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data streams for Salesforce Health Cloud Account and Contact objects are created using Salesforce CRM Service bundle.
+
+To create data streams from Salesforce Health Cloud data source:
+
+Create a data stream to begin the flow of data from a Salesforce Health Cloud data source. Add additional permissions to your `Salesforce Data Cloud Salesforce Connector Integration` permission set in your Salesforce Health Cloud org to ingest standard objects, custom objects and its fields into CDP. Refer to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce Health Cloud in CDP] or follow the instructions provided below.
+
+To add permissions for objects and their fields:
+
+. In the Salesforce Health Cloud org containing the objects and fields you want to ingest into CDP, from Setup in the Quick Find box, enter Permission, and select Permission Sets.
+. Select the `Salesforce Data Cloud Salesforce Connector Integration` permission set. *Note:* The permission set is available only after you connect your Salesforce Health Cloud org to CDP.
+. From Apps, select Object Settings.
+. Select the object to ingest into CDP.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 . To change object permissions, click Edit.
 . Enable Read and View All permissions for the object and Read Access for each field.
 . Click Save.
 
+<<<<<<< HEAD
 Repeat these steps for all objects and fields you want to ingest into Data Cloud. Now, create data streams for the required objects by following the steps in this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_crm_data_stream.htm&type=5&language=en_US[link].
 
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data streams for Contact Point Objects, Identifier, and ContactContactRelation are created.
@@ -141,27 +228,52 @@ For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10
 After uploading the schema file for Ingestion API Connector, create a data stream from your source objects. For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data streams for condition, immunization and webEngagement are created.
 
 . In Data Cloud, select Data Streams.
+=======
+Repeat these steps for all objects and fields you want to ingest into CDP. Now, create data streams for the required objects by following the steps in this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_crm_data_stream.htm&type=5&language=en_US[link].
+
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data streams for Contact Point Objects, Identifier, and ContactContactRelation are created.
+
+=== Create an Ingestion API data stream
+
+After uploading the schema file for Ingestion API Connector, create a data stream from your source objects. For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data streams for condition, immunization and webEngagement are created.
+
+. In CDP, select Data Streams.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 . In recently viewed data streams, click New.
 . Click Ingestion API.
 . If you have more than one Ingestion API configured, select the one you want from the dropdown.
 . Check the objects found in the schema you want to use and click Next.
 . At the New Data Stream dialog box, configure the following:
+<<<<<<< HEAD
  ** Primary Key: A true Primary Key needs to be leveraged for Data Cloud. If one does not exist, you will need to create a Formula Field for the Primary Key.
  ** Category: Choose between Profile, Engagement or Other. *Note:* For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, the category for all the objects in the schema are Other.
+=======
+ ** Primary Key: A true Primary Key needs to be leveraged for CDP. If one does not exist, you will need to create a Formula Field for the Primary Key.
+ ** Category: Choose between Profile, Engagement or Other. *Note:* For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, the category for all the objects in the schema are Other.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
  ** Record Modified Date: To order Profile modifications, use the Record Modified Date. *Note:* A record modified field that indicates when each incoming record was last modified is required for Engagement object types. While the field requirement is optional for Profile and Other objects, it is encouraged to provide the record modified field to ensure incoming records are processed in the right order.
  ** Date Time Field: Used to represent when Engagement from an external source occurred at ingestion.
  ** Click the `New Formula Field` (Optional).
 . Click Next.
+<<<<<<< HEAD
 . On the final summary screen, review the list of data streams that Data Cloud created.
 . Click Deploy. If you have only created one data stream, the data stream's record page appears. If you've created multiple data streams, the view refreshes to show all recently viewed data streams.
 . Wait up to one hour for your data to appear in your data stream. Map your data stream to data model objects to start using your data.
 
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data stream is created for the objects added in schema by following the steps above. At step 6, click `New Formula field` with `Field Label` as `uniqueId` with `Formula Return` Type as `Text`. Under `Transformation Formula`, the formula is created as below for each of the object.
+=======
+. On the final summary screen, review the list of data streams that CDP created.
+. Click Deploy. If you have only created one data stream, the data stream's record page appears. If you've created multiple data streams, the view refreshes to show all recently viewed data streams.
+. Wait up to one hour for your data to appear in your data stream. Map your data stream to data model objects to start using your data.
+
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, data stream is created for the objects added in schema by following the steps above. At step 6, click `New Formula field` with `Field Label` as `uniqueId` with `Formula Return` Type as `Text`. Under `Transformation Formula`, the formula is created as below for each of the object.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 * condition: `CONCAT(sourceField['patientMrn'],"~",sourceField['conditionCode'])`
 * immunization: `CONCAT(sourceField['patientMrn'],"~",sourceField['vaccineCode'],"~",sourceField['vaccineStatus'],"~",sourceField['vaccineDate'])`
 * webEngagement: `CONCAT(sourceField['emailAddress'],"~",sourceField['contentName'],"~",sourceField['contentType'])`
 
+<<<<<<< HEAD
 *Create a Connected App for Data Cloud Ingestion API*
 
 Before you can send data into Data Cloud using Ingestion API via Mulesoft's CDP connector, you must configure a Connected App. Refer this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[link] for more details on creating a connected app.
@@ -171,21 +283,41 @@ As part of your Connected App set up for Ingestion API, you must select the foll
 * Access and manage your Data Cloud Ingestion API data (`cdp_ingest_api`)
 * Manage Data Cloud profile data (`cdp_profile_api`)
 * Perform ANSI SQL queries on Data Cloud data (`cdp_query_api`)
+=======
+*Create a Connected App for CDP Ingestion API*
+
+Before you can send data into CDP using Ingestion API via Mulesoft's CDP connector, you must configure a Connected App. Refer this https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[link] for more details on creating a connected app.
+
+As part of your Connected App set up for Ingestion API, you must select the following OAuth scopes:
+
+* Access and manage your CDP Ingestion API data (`cdp_ingest_api`)
+* Manage CDP profile data (`cdp_profile_api`)
+* Perform ANSI SQL queries on CDP data (`cdp_query_api`)
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 * Manage user data via APIs (`api`)
 * Perform requests on your behalf at any time (`refresh_token`, `offline_access`).
 
 *Configure Mulesoft's CDP Connector*
 
+<<<<<<< HEAD
 The MuleSoft Connector for CDP provides customers a pipeline to send data into Data Cloud. This connector works with the Data Cloud Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
 
 Refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/salesforce-cdp-connector/1.1/[CDP Connector documentation] for additional details on configuration and available operations.
 
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api-spec/[HLS CDP System API] specification and https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api[HLS CDP System API] implementation template assets.
+=======
+The MuleSoft Connector for CDP provides customers a pipeline to send data into CDP. This connector works with the CDP Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
+
+Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.1/[CDP Connector documentation] for additional details on configuration and available operations.
+
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api-spec/[HLS CDP System API] specification and https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api[HLS CDP System API] implementation template assets.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 == Data modeling and data mapping
 
 === Data cleansing and preparation
 
+<<<<<<< HEAD
 Cleaning and preparing your data is critical for success in using Data Cloud segmentation and activation capabilities.
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_library.htm&type=5[Formula Expression Library]
@@ -197,6 +329,19 @@ When you create a Data Cloud data stream, you can choose to generate more fields
 These use cases are examples of using formula expression functionality in Data Cloud.
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and Data Cloud]
+=======
+Cleaning and preparing your data is critical for success in using CDP`' segmentation and activation capabilities.
+
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_library.htm&type=5[Formula Expression Library]
+
+When you create a CDP data stream, you can choose to generate more fields. These supplemental fields can be hard-coded or derived from other fields in the data stream.
+
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_use_cases.htm&type=5[Formula Expression Use Cases]
+
+These use cases are examples of using formula expression functionality in CDP.
+
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and CDP]
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 NOTE: Formula fields can be created at the time of data stream creation or later. Click the `New Formula Field` at the time of DataStream creation (Step 6) or Click the DataStream from recently viewed data streams list. Click `Add Source Fields` on the data stream page.
 
@@ -210,17 +355,29 @@ On the Data Streams mapping canvas, you can see both your DSOs and target DMOs. 
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_data_mapping_views.htm&type=5[Data Mapper Views]
 
+<<<<<<< HEAD
 Select table view or visual view when mapping your data in Data Cloud.
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_objects.htm&type=5[Data Model Objects]
 
 Objects in the data model created by the customer for Data Cloud implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
+=======
+Select table view or visual view when mapping your data in CDP.
+
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_objects.htm&type=5[Data Model Objects]
+
+Objects in the data model created by the customer for CDP implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_required_data_mappings.htm&type=5[Required Data Mappings]
 
 When mapping your party area data, complete the required fields and relationships to successfully use Identity Resolution, Segmentation, and Activation.
 
+<<<<<<< HEAD
 Default mapping exists for Account and Contact Objects if service Bundle is used to create data streams. For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, the default mapping from Account and Contact DSOs to Contact Point DMOs are removed. Data Streams to Data Model Objects (DMO) are mapped as per the below table.
+=======
+Default mapping exists for Account and Contact Objects if service Bundle is used to create data streams. For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, the default mapping from Account and Contact DSOs to Contact Point DMOs are removed. Data Streams to Data Model Objects (DMO) are mapped as per the below table.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 |===
 | Data Stream Name (DSO) | Custom Data Model Object (DMO) | Standard Data Model Object (DMO)
@@ -250,7 +407,11 @@ Default mapping exists for Account and Contact Objects if service Bundle is used
 |
 |===
 
+<<<<<<< HEAD
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, below Data Mappings are created between Data Streams and DMOs/custom DMOs.
+=======
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, below Data Mappings are created between Data Streams and DMOs/custom DMOs.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 *Data Mappings of Account Data Stream to Account DMO*
 
@@ -490,7 +651,11 @@ Some of the mappings are added by default from Bundle. Mapping needs to be chang
 | userId
 |===
 
+<<<<<<< HEAD
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, below DMOs and relationships needs to be maintained when Data mappings are done between Data Stream and DMOs.
+=======
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, below DMOs and relationships needs to be maintained when Data mappings are done between Data Stream and DMOs.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 *Data Relationships between DMOs*
 
@@ -542,7 +707,11 @@ For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10
 
 == Identity Resolution
 
+<<<<<<< HEAD
 NOTE: For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, identity resolution rulesets were not required.
+=======
+NOTE: For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, identity resolution rulesets were not required.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 Use identity resolution to consolidate data from difference sources into a comprehensive view of your customer called a unified profile. Identity resolution uses matching and reconciliation rules to link data about people into unified profiles. Each unified profile contains all the unique contact point values from all sources.
 
@@ -550,21 +719,35 @@ Set up identity resolution rulesets after mapping source data to data model obje
 
 == Calculated Insights
 
+<<<<<<< HEAD
 NOTE: For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, Calculated Insights were not required.
+=======
+NOTE: For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, Calculated Insights were not required.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 The Calculated Insights feature lets you define and calculate multidimensional metrics on your entire digital state stored in Salesforce Customer Data Platform.
 
 Additional Information can be found https://help.salesforce.com/s/articleView?id=sf.c360_a_calculated_insights.htm&type=5[here].
 
+<<<<<<< HEAD
 Examples of Calculated Insights are available in our Data Cloud Help Documentation and in our Data Cloud Salesforce GitHub Instance. Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
+=======
+Examples of Calculated Insights are available in our CDP Help Documentation and in our CDP Salesforce GitHub Instance. Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 == Create and activate segments
 
 === Segmentation
 
+<<<<<<< HEAD
 Creating segments is simple in Data Cloud.
 
 . In Data Cloud, click Segments.
+=======
+Creating segments is simple in CDP.
+
+. In CDP, click Segments.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 . When you see the list of already created segments, if any, click New.
 . Fill in all desired fields under Segment Details. Segment On, Segment Name, and Publish Schedule are required.
  ** Segment On: Identifies the entity that your segment builds on.
@@ -577,7 +760,11 @@ TIP: Leave the Publish Schedule as *Don't Refresh for now*, and then fill it in 
 
 Segment On: Segment On defines the target entity (object) used to build your segment. For example, you can build a segment on Unified Individual or Account or Individual. You can choose any entity marked as type Profile during ingestion.
 
+<<<<<<< HEAD
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, create Segments on Individual.
+=======
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, create Segments on Individual.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 Example segment:
 
@@ -613,6 +800,7 @@ For the Publish Schedule, we update it to reflect a Publish Schedule of every 12
 
 === Activation Targets
 
+<<<<<<< HEAD
 Create activation targets to build, and activate data segments with Data Cloud.
 
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, create a Marketing Cloud Activation Target.
@@ -628,6 +816,23 @@ Before creating an activation target, configure the Marketing Cloud connector in
 . Select Business Units to activate -  this step is optional. To add or remove business units (BU), click the arrows between the two columns. *Note:* For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, select business units to publish segments to Marketing Cloud.
 
 Create an activation target in Data Cloud to publish segments to Marketing Cloud business units.
+=======
+Create activation targets to build, and activate data segments with CDP.
+
+For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, create a Marketing Cloud Activation Target.
+
+*Activation Target - Marketing Cloud:*
+
+Before creating an activation target, configure the Marketing Cloud connector in the CDP Setup page.
+
+. Click Setup gear icon and then CDP Setup.
+. Select Marketing Cloud.
+. Enter the Credentials to authenticate your Marketing Cloud account. You can proceed with the next step in the setup only if the authentication is successful.
+. Data Source setup - this step is optional. This needs to be set up if you are planning to ingest data from Marketing Cloud into CDP. *Note:* For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, this step is skipped.
+. Select Business Units to activate -  this step is optional. To add or remove business units (BU), click the arrows between the two columns. *Note:* For the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, select business units to publish segments to Marketing Cloud.
+
+Create an activation target in CDP to publish segments to Marketing Cloud business units.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 . Click Activation Targets.
 . Click New.
@@ -644,12 +849,17 @@ Your Marketing Cloud activation target is created.
 
 Activation is the process that materializes and publishes a segment to activation platforms. An activation target is used to store authentication and authorization information for a given activation platform. You can publish your segments, include contact points, and additional attributes to the activation targets.
 
+<<<<<<< HEAD
 View, change, and delete your Activations in Data Cloud for publishing of segments to activation platforms. Navigate to an Activation record to view details and publish history for that Activation.
+=======
+View, change, and delete your Activations in CDP for publishing of segments to activation platforms. Navigate to an Activation record to view details and publish history for that Activation.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 
 In Activations, the Activation History shows when and how segments were published. For segments published to a Marketing Cloud activation target, additional Accepted and Rejected columns only appear in Activation Publish History to provide more details.
 
 To view the publish history of a segment:
 
+<<<<<<< HEAD
 . In Data Cloud, navigate to your Activations.
 . Select the activation to review.
 . View details in Activation History.
@@ -657,6 +867,15 @@ To view the publish history of a segment:
 After you create a segment in Data Cloud, you can publish a segment to an activation target.
 
 . In Data Cloud, click Segments.
+=======
+. In CDP, navigate to your Activations.
+. Select the activation to review.
+. View details in Activation History.
+
+After you create a segment in CDP, you can publish a segment to an activation target.
+
+. In CDP, click Segments.
+>>>>>>> a3c9b0e (Partial set of changes for CDP rebrand to Data Cloud)
 . Select a segment.
 . In Activations, click New.
 . Select an Activation Target.
