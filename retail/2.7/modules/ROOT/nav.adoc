@@ -8,6 +8,5 @@
 ** xref:sap-custom-bapi-setup-guide.adoc[SAP Custom BAPI Setup Guide]
 ** xref:salesforce-customization-guide.adoc[Salesforce Customization Guide]
 ** xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP Setup Guide]
-* xref:rcg-assets.adoc[Available Assets]
 * xref:cim-mappings.adoc[Object Mappings]
 * xref:release-notes.adoc[Release Notes]

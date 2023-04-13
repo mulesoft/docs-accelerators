@@ -1,5 +1,3 @@
-The following APIs represent the reusable business processes that are leveraged by multiple accelerators. These correspond to the Process layer in MuleSoft's API-led approach.
-
 [cols="40,30,30",width=100%]
 |===
 // |Accelerator Customers Process API | https://{anypoint-url}/accel-customers-prc-api-spec[API Specification^] | https://{anypoint-url}/accel-customers-prc-api[Implementation Template^]
