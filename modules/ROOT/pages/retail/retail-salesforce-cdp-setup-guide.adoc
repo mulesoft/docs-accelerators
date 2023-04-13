@@ -2,10 +2,10 @@
 
 The following provides guidance on Salesforce Data Cloud setup required for the "Personalization with CDP" use case.
 
-== CDP Provisioning
+== Data Cloud Provisioning
 
 . Log in to your Data Cloud instance with the link provided in your admin email and use the credentials provided. If this was deployed in our existing Salesforce instance, please use your current Salesforce Admin password.
-. Click the Setup icon and then `CDP Setup`. If you don't see this option, either refresh your page or log out and back in with your admin user credentials.
+. Click the Setup icon and then `Data Cloud Setup`. If you don't see this option, either refresh your page or log out and back in with your admin user credentials.
 . Click `Get Started`. Setup can take a few minutes. Your Data Cloud instance is considered as successfully set up if you see a green tick mark for all the steps. If not, correct the issue and finish the setup.
 
 image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-cdp-provisioning.png[rcg-cdp-setup-cdp-provisioning.png,599]
@@ -16,14 +16,14 @@ Connectors are specialized data streams that communicate with external sources t
 
 The Personalization with CDP use case uses the following connectors:
 
-* Salesforce CRM - to connect data from Salesforce CRM instance to CDP
+* Salesforce CRM - to connect data from Salesforce CRM instance to Data Cloud
 * Ingestion API - to connect data from external source systems like Snowflake and Azure via MuleSoft's Salesforce CDP connector.
 
 === Salesforce CRM Connector
 
 In Data Cloud, you can establish a connection to your Salesforce CRM org. Follow the below steps to establish a connection.
 
-. In Data Cloud, select the Setup icon and then CDP Setup.
+. In Data Cloud, select the Setup icon and then Data Cloud Setup.
 . Select `Salesforce CRM`.
 . To connect a Salesforce org to Data Cloud, click `New`. You can connect the Salesforce org that has Data Cloud provisioned, or you can Connect Another Org (external orgs).
 . To connect your Salesforce orgs to Data Cloud, click `Connect`. If connecting an external Salesforce org, enter your user credentials to establish the connection with Data Cloud.
@@ -47,7 +47,7 @@ Follow steps in each section below to setup and configure ingestion API to push 
 
 ==== Set Up an Ingestion API Connector
 
-. In Data Cloud, select `CDP Setup`.
+. In Data Cloud, select `Data Cloud Setup`.
 . Click `Ingestion API`.
 . Click `New`, enter a name for the API source, then click `Save`. On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with the .yaml file extension. The schema file describes how data from your website is structured.
 
@@ -183,7 +183,7 @@ After uploading the schema file, create a data stream from your source objects.
 . If you've more than one Ingestion API configured, select the one you want from the dropdown.
 . Check the objects found in the schema you want to use and click *Next*.
 . In the *New Data Stream* dialog box, configure the following:
-** Primary Key: A true Primary Key needs to be leveraged for CDP. If one does not exist, you will need to create a *Formula Filed* for the *Primay Key*.
+** Primary Key: A true Primary Key needs to be leveraged for Data Cloud. If one does not exist, you will need to create a *Formula Filed* for the *Primay Key*.
 ** Category: Choose between *Profile* and *Engagement*. +
 **Note:** For the "Personalization with CDP use case", the category for all the objects in the schema are `Profile`. +
 ** *Record Modified Date*: To order Profile modifications, use the *Record Modified Date*. +
@@ -224,7 +224,7 @@ Cleaning and preparing your data is critical for success in using Data Cloud's s
 
 * xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_library.htm&type=5[Formula Expression Library] - When you create a Data Cloud data stream, you can choose to generate more fields. These supplemental fields can be hard-coded or derived from other fields in the data stream.
 * xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_use_cases.htm&type=5[Formula Expression Use Cases] - These use cases are examples of using formula expression functionality in Data Cloud.
-* xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and CDP]
+* xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and Data Cloud]
 
 === Data Mapping
 
@@ -235,7 +235,7 @@ On the Data Stream detail page or after deploying your data streams, click Start
 On the Data Streams mapping canvas, you can see both your DSOs and target DMOs. To map one to another, click the name of a DSO and connect it to the desired DMO. For example, you can map the DSO firstname to the target First Name field using this method.
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_data_mapping_views.htm&type=5[Data Mapper Views] - Select table view or visual view when mapping your data in Data Cloud.
-* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_objects.htm&type=5[Data Model Objects] - Objects in the data model created by the customer for CDP implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_model_objects.htm&type=5[Data Model Objects] - Objects in the data model created by the customer for Data Cloud implementation are called Data Model Objects. If a new object is created, it can use a reference object. If a Data Model Object uses a reference object, it inherits the name, shape, and semantics of the reference object. This Data Model Object is called a Standard Object. You can also choose to define an entirely custom Data Model Object, called a Custom Object.
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_required_data_mappings.htm&type=5[Required Data Mappings] - When mapping your party area data, complete the required fields and relationships to successfully use Identity Resolution, Segmentation, and Activation.
 
 For the "Personalization with CDP" use case, we mapped to Custom DMO for our MuleSoft Web Engagement Data.
@@ -285,7 +285,7 @@ Once run, review the https://help.salesforce.com/s/articleView?language=en_US&ty
 
 === Segmentation
 
-Creating segments is simple in CDP.
+Creating segments is simple in Data Cloud.
 
 . In Data Cloud, click *Segments*.
 . When you see the list of already created segments, if any, click *New*.
@@ -340,15 +340,15 @@ After you create and activate segments to Cloud File Storage, a subfolder called
 
 ==== Activation Target - Marketing Cloud
 
-Before creating an activation target, configure the Marketing Cloud connector in the CDP Setup page.
+Before creating an activation target, configure the Marketing Cloud connector in the Data Cloud Setup page.
 
-. Click *Setup* gear icon and then *CDP Setup*.
+. Click *Setup* gear icon and then *Data Cloud Setup*.
 . Select *Marketing Cloud*.
 . Enter *Credentials* to authenticate your Marketing Cloud account. You can proceed with the next step in the setup only if the authentication is successful.
 . Complete the *Data Source setup* step if you are planning to ingest data from Marketing Cloud into Data Cloud. Otherwise, this step is optional.
 
 [NOTE]
-For Personalization with CDP use case, this step is skipped.
+For "Personalization with CDP use case", this step is skipped.
 
 [start=5]
 . Select *Business Units* to activate - this step is optional. To add or remove business units (BU), click the arrows between the two columns.
@@ -417,9 +417,9 @@ Your segment publishes on the next publish scheduled for the selected activation
 
 The Calculated Insights feature lets you define and calculate multi-dimensional metrics from your entire digital state stored in Data Cloud.
 
-Calculated Insights can be built Using Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the CDP Help Documentation. Also check https://help.salesforce.com/s/articleView?id=sf.c360_a_processing_calculated_insights.htm&type=5[Processing Calculated Insights] for the Calculated Insights schedule.
+Calculated Insights can be built Using Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the Data Cloud Help Documentation. Also check https://help.salesforce.com/s/articleView?id=sf.c360_a_processing_calculated_insights.htm&type=5[Processing Calculated Insights] for the Calculated Insights schedule.
 
-For the "Personalization with CDP" use case, we created Calculated Insights to gain visibility across our Loyalty and Sales Order data. Examples of Calculated Insights are available in our CDP Help Documentation and in our CDP Salesforce GitHub Instance.
+For the "Personalization with CDP" use case, we created Calculated Insights to gain visibility across our Loyalty and Sales Order data. Examples of Calculated Insights are available in our Data Cloud Help Documentation and in our Data Cloud Salesforce GitHub Instance.
 
 Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
 
