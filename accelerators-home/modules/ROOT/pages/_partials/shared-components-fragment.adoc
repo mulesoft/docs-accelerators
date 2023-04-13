@@ -1,5 +1,3 @@
-The following non-application components are shared across multiple accelerators.
-
 [cols="70,30",width=100%]
 |===
 |Accelerator API Archetype Plugin | https://{anypoint-url}/accelerator-mulesoft-api-archetype-src[Source^]

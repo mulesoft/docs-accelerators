@@ -6,5 +6,4 @@
 ** xref:osisoft-pi-setup-guide.adoc[OSISoft PI Setup Guide for Productive Maintenance]
 ** xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide for Sales Rebate Management]
 ** xref:tableau-setup-guide.adoc[Tableau Setup Guide for Productive Maintenance]
-* xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]

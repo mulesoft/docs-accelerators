@@ -2,8 +2,4 @@
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup Guide]
-<<<<<<< HEAD
-=======
-* xref:cg-assets.adoc[Available Assets]
->>>>>>> 5df14b6 (Replaced Anypoint login links with www)
 * xref:release-notes.adoc[Release Notes]
