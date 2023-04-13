@@ -27,6 +27,5 @@ The following use cases are supported by the MuleSoft Accelerator for Manufactur
 
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
-* xref:mfg-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^]
