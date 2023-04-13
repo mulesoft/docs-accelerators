@@ -228,16 +228,16 @@ Log into Marketing Cloud as the administrator and perform the steps outlined bel
 
 === Prerequisites
 
-Please refer to the xref:salesforce-cdp-setup-guide.adoc[Salesforce CDP setup guide] for instructions on how to publish and activate a CDP segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the CDP segment.
+Please refer to the xref:salesforce-cdp-setup-guide.adoc[Salesforce Data Cloud Setup Guide] for instructions on how to publish and activate a Data Cloud segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the Data Cloud segment.
 
 === Check Data Extension
 
-Ensure the newly created data extension from CDP is active within Marketing cloud.
+Ensure the newly created data extension from Data Cloud is active within Marketing cloud.
 
 * Navigate to Contact Builder
 * Click Data Extension at the top navigation
 * Search for the Data Extension
-* Confirm that the segment is created and shared with the CDP segment and proceed to the next step
+* Confirm that the segment is created and shared with the Data Cloud segment and proceed to the next step
 
 === Create Email Template
 
@@ -258,7 +258,7 @@ Ensure the newly created data extension from CDP is active within Marketing clou
 
 * Navigate to Journey Builder, click Journey Builder
 * Click Create Multi-Step Journey
-* Link the Data Extension shared with CDP
+* Link the Data Extension shared with Data Cloud
 * Set the Schedule
  ** Set the start date
  ** Set the time zone
