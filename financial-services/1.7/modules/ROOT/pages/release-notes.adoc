@@ -40,7 +40,7 @@ Finally, although the net impact on API implementations is minimal, it is import
 
 === Optimize customer experiences with CDP Use Case
 
-This use case  provides support for ingesting data from multiple sources into CDP to optimize customer experiences by using the results of CDP activations by providing Customer Service Representatives (CSRs) with marketing insights
+This use case  provides support for ingesting data from multiple sources into Data Cloud to optimize customer experiences by using the results of Data Cloud activations by providing Customer Service Representatives (CSRs) with marketing insights
 
 === BIAN compliant assets
 

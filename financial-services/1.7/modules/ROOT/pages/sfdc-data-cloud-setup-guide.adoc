@@ -1,16 +1,16 @@
-= Salesforce CDP Setup Guide
+= Salesforce Data Cloud Setup Guide
 :fins-version: {page-component-version}
 
-The following provides guidance on Salesforce CDP setup required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case. A few of these steps can be omitted if deploying the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api[FINS Salesforce CDP System API^] independently of the use case.
+The following provides guidance on Salesforce Data Cloud setup required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with Data Cloud^] use case. A few of these steps can be omitted if deploying the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api[FINS Salesforce Data Cloud System API^] independently of the use case.
 
-== CDP provisioning
+== Data Cloud provisioning
 
-If Salesforce CDP instance is already provisioned, skip this section. If not follow the steps to provision:
+If the Data Cloud instance is already provisioned, skip this section. If not follow the steps to provision:
 
-. Log in to your Salesforce CDP instance with the link provided in your admin email and use the credentials provided. If this was deployed in your existing Salesforce instance, please use your current Salesforce Admin password.
-. Click the Setup gear icon and then `CDP Setup`.
+. Log in to your Data Cloud instance with the link provided in your admin email and use the credentials provided. If this was deployed in your existing Salesforce instance, please use your current Salesforce Admin password.
+. Click the Setup gear icon and then `Data Cloud Setup`.
  ** If you don't see this option, either refresh your page or log out and back in with your admin user credentials.
-. Click `Get Started` to provision the Salesforce CDP Instance and it can take a few minutes. Correct any issues reported and finish the setup. The Salesforce CDP instance is considered to be successfully set up if there is a green tick mark for all the steps and you do not need to do anything.
+. Click `Get Started` to provision the Data Cloud Instance and it can take a few minutes. Correct any issues reported and finish the setup. The Data Cloud instance is considered to be successfully set up if there is a green tick mark for all the steps and you do not need to do anything.
  +
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-cdp-provisioning.png[fins-cdp-setup-cdp-provisioning.png,79%]
@@ -18,35 +18,35 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/fins-cdp-setup-cdp-pro
 
 == Create data connectors
 
-Connectors are specialized data streams that communicate with external sources to transmit data into a Salesforce CDP data source object. Salesforce CDP has connectors for Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
+Connectors are specialized data streams that communicate with external sources to transmit data into a Data Cloud data source object. Data Cloud has connectors for Marketing Cloud Email Studio, MobileConnect, MobilePush, Marketing Cloud Data Extensions, Salesforce CRM, Ingestion API, Interaction Studio, and for data outside Salesforce via cloud storage providers.
 
 === Use case requirements
 
 The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case uses the following connectors:
 
-* Salesforce CRM - to connect data from a Salesforce CRM instance to CDP.
+* Salesforce CRM - to connect data from a Salesforce CRM instance to Data Cloud.
 * Marketing Cloud - to receive segmentation results for marketing purposes.
 * Ingestion API - to connect data from external source systems like Snowflake, Databricks, and Amazon S3 via MuleSoft's Salesforce CDP connector.
 
-NOTE: This use case assumes that the connected Salesforce CRM instance has already been configured to support the Customer Sync Process required by many of the accelerator's use cases. In particular, it relies upon the existence of unique Global Party Identifiers for identity resolution purposes. Refer to the xref:salesforce-fsc-setup-guide.adoc[Salesforce Financial Services Cloud setup guide] for more details.
+NOTE: This use case assumes that the connected Salesforce CRM instance has already been configured to support the Customer Sync Process required by many of the accelerator's use cases. In particular, it relies upon the existence of unique Global Party Identifiers for identity resolution purposes. Refer to the xref:sfdc-fsc-setup-guide.adoc[Salesforce Financial Services Cloud setup guide] for more details.
 
 === Salesforce CRM Connector
 
-In Salesforce CDP, you can establish a connection to other Salesforce orgs built upon the CRM core. Follow the below steps to create one of these connections.
+In Data Cloud, you can establish a connection to other Salesforce orgs built upon the CRM core. Follow the below steps to create one of these connections.
 
-. In Salesforce CDP, select the Setup gear icon and then `CDP Setup`.
+. In Data Cloud, select the Setup gear icon and then `Data Cloud Setup`.
 . Select `Salesforce CRM` from the left navigation under``CONFIGURATION``.
-. To connect a Salesforce org to Salesforce CDP, click New.
+. To connect a Salesforce org to Data Cloud, click New.
 . Click the `Connect` button beside the 'Connect Another Org' section to connect to an external Salesforce org (for example, Salesforce FSC Banking).
-. Enter your user credentials to establish the connection with Salesforce CDP.
+. Enter your user credentials to establish the connection with Data Cloud.
 . After you connect your Salesforce org , you can view the connection details under `Connectors`.
- ** _Connector Name_: The name of the Salesforce org that is connected to Salesforce CDP.
+ ** _Connector Name_: The name of the Salesforce org that is connected to Data Cloud.
  ** _Connector Type_: Identifies the type of data connection as Salesforce CRM.
  ** _Status_: Shows the org's current status.
  ** _Org Id_: The identifier of the connected org.
- ** _Updated_: The date and timestamp of when the Salesforce org was connected to Salesforce CDP.
+ ** _Updated_: The date and timestamp of when the Salesforce org was connected to Data Cloud.
 
-Once the connection is established, the Salesforce CDP admin can either use bundles that can automatically deploy data or set up their own data streams; we will walk through the latter approach, below.
+Once the connection is established, the Data Cloud admin can either use bundles that can automatically deploy data or set up their own data streams; we will walk through the latter approach, below.
 
 For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, hover over the `Connector Name` field of the new connection and click the pencil icon to change the  name of the Connector to `Salesforce FSC Banking`. This is the name that will appear under the `Salesforce Org` dropdown while creating a new Data Stream.
 
@@ -54,31 +54,31 @@ For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6
 
 A Marketing Cloud Connector is required in order to use Marketing Cloud as either a source of data or a target for segmentation results. Below is a brief summary of steps to follow - consult https://help.salesforce.com/s/articleView?id=sf.c360_a_set_up_marketing_cloud_connection.htm&type=5[the online documentation] for more details.
 
-. Select `Marketing Cloud` from the left navigation menu in the `CDP Setup` app.
+. Select `Marketing Cloud` from the left navigation menu in the `Data Cloud Setup` app.
 . Enter the Credentials to authenticate your Marketing Cloud account. You can proceed with the next step in the setup only if the authentication is successful.
-. Data Source setup - this step is optional, and only needs to be set up if you are planning to ingest data from Marketing Cloud into Salesforce CDP. This step is not required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case.
+. Data Source setup - this step is optional, and only needs to be set up if you are planning to ingest data from Marketing Cloud into Data Cloud. This step is not required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case.
 . Select Business Units to activate -  select the business units to publish segments to Marketing Cloud.
 
 Ensure all configured items show a green circle before using the connector.
 
 === Ingestion API Connector
 
-You can push data from an external system into Salesforce CDP via the Ingestion API. This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
+You can push data from an external system into Data Cloud via the Ingestion API. This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
 
-For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to CDP through MuleSoft's Salesforce CDP connector using the Ingestion API. The schema file for the Ingestion API can be found in the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] implementation template. This schema includes definitions for the following objects:
+For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to Data Cloud through MuleSoft's Salesforce CDP connector using the Ingestion API. The schema file for the Ingestion API can be found in the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] implementation template. This schema includes definitions for the following objects:
 
 * FinancialAccount
 * FinancialTransaction
 * ExternalFinancialAccount
 * WebEngagement
 
-Download the template in order to access the schema file before proceeding with the creation of an Ingestion API in Salesfoce CDP.
+Download the template in order to access the schema file before proceeding with the creation of an Ingestion API in Salesfoce Data Cloud.
 
 ==== Create an Ingestion API Connector
 
 Follow the steps below to setup and configure an ingestion API to push data from external systems.
 
-. In Salesforce CDP, select `CDP Setup` from the Setup gear icon.
+. In Data Cloud, select `CDP Setup` from the Setup gear icon.
 . Select `Ingestion API` from the left navigation under``CONFIGURATION``.
 . Click `New`, enter a name for the API source (for example, 'FINS_Banking-Data-Connector'), then click `Save`.
 . On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. +
@@ -89,9 +89,9 @@ Follow the steps below to setup and configure an ingestion API to push data from
 
 The connector page should reflect the updated status. Once the schema file is uploaded, data streams can be created to ingest data from source systems via the new Ingestion API Connector.
 
-==== Create Connected App for Salesforce CDP Ingestion API
+==== Create Connected App for Data Cloud Ingestion API
 
-Before you can send data into Salesforce CDP using Ingestion API via Mulesoft's Salesforce CDP Connector, you must configure a Connected App. A brief summary of the steps to follow are given here - refer to https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[the online documentation] for more details on creating a connected app.
+Before you can send data into Data Cloud using Ingestion API via Mulesoft's Salesforce CDP Connector, you must configure a Connected App. A brief summary of the steps to follow are given here - refer to https://help.salesforce.com/s/articleView?id=sf.c360_a_create_ingestion_api_connected_app.htm&type=5[the online documentation] for more details on creating a connected app.
 
 . From the Setup app, navigate to the `+Apps->App Manager+` page.
 . Click the `New Connected App` button in the top right.
@@ -108,11 +108,11 @@ Before you can send data into Salesforce CDP using Ingestion API via Mulesoft's 
  ** `Perform requests on your behalf at any time (refresh_token, offline_access)`
 . Click `Save` and then `Done` to create the connected app.
 
-After creating the connected app, click the `Manage Consumer Details` button from the app detail page, confirm your identity, and then record the `Consumer Key` and `Consumer Secret` values: you will need these to configure the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API] implementation template for deployment. This application uses the MuleSoft Connector for Salesforce CDP, which provides customers a pipeline to send data into Salesforce CDP. Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
+After creating the connected app, click the `Manage Consumer Details` button from the app detail page, confirm your identity, and then record the `Consumer Key` and `Consumer Secret` values: you will need these to configure the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API] implementation template for deployment. This application uses the MuleSoft Connector for Salesforce CDP, which provides customers a pipeline to send data into Data Cloud. Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
 
 ==== Schema requirements
 
-To create an ingestion API source in Salesforce CDP, the schema file you upload must meet specific requirements:
+To create an ingestion API source in Data Cloud, the schema file you upload must meet specific requirements:
 
 * Uploaded schemas have to be in valid OpenAPI format with a .yml or .yaml extension. OpenAPI version 3 is supported (3.0.0, 3.0.1, 3.0.2).
 * Objects cannot have nested objects.
@@ -142,11 +142,11 @@ Use https://help.salesforce.com/s/articleView?id=sf.c360_a_connect_an_ingestion_
 
 == Create data streams
 
-Data streams are the connections and associated data ingested into Customer Data Platform. Salesforce CDP includes many data streams that can operate on different refresh schedules. Check https://help.salesforce.com/s/articleView?id=c360_a_data_stream_schedule.htm&type=5&language=en_US[Data Stream Schedule in Salesforce CDP] to know about how and when these data streams update.
+Data streams are the connections and associated data ingested into Customer Data Platform. Data Cloud includes many data streams that can operate on different refresh schedules. Check https://help.salesforce.com/s/articleView?id=c360_a_data_stream_schedule.htm&type=5&language=en_US[Data Stream Schedule in Data Cloud] to know about how and when these data streams update.
 
 === Create Salesforce CRM data streams
 
-To begin the flow of data from a Salesforce CRM data source (such as your Salesforce FSC Banking instance) into Salesforce CDP, you must create a data stream to ingest standard and custom objects and fields. Any Salesforce org built upon the CRM core can be connected.
+To begin the flow of data from a Salesforce CRM data source (such as your Salesforce FSC Banking instance) into Data Cloud, you must create a data stream to ingest standard and custom objects and fields. Any Salesforce org built upon the CRM core can be connected.
 
 ==== Use case requirements
 
@@ -240,9 +240,9 @@ Here are the minimum set of fields to be selected for each object:
 
 To create a data stream from a Salesforce CRM data source:
 
-. In Salesforce CDP, navigate to Data Streams and click `New`.
+. In Data Cloud, navigate to Data Streams and click `New`.
 . Select the `Salesforce CRM` data source and click `Next`.
-. To create your data stream, select a Salesforce org (if you have only one Salesforce org connected to Salesforce CDP, it will be selected by default.
+. To create your data stream, select a Salesforce org (if you have only one Salesforce org connected to Data Cloud, it will be selected by default.
 . Click the `All Objects` button, select the target object to sync (for example, `Account`), and click `Next`.
 . For `Category`, select the `Profile` option.
 . Review the fields to include in your data stream. By default, all fields are preselected with the total number of fields available for the object is shown in parentheses.
@@ -253,7 +253,7 @@ To create a data stream from a Salesforce CRM data source:
 
 Repeat the above steps for each object to ingest from a Salesforce instance (Account and Contact).
 
-NOTE: If you are prompted with an error stating those objects cannot be added, you might need to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce CRM in Salesforce CDP]. See below for further details.
+NOTE: If you are prompted with an error stating those objects cannot be added, you might need to https://help.salesforce.com/s/articleView?id=sf.c360_a_enable_user_permissions_external_salesforce_org.htm&type=5[Enable Object and Field Permissions to Access Salesforce CRM in Data Cloud]. See below for further details.
 
 ==== Add formula fields
 
@@ -272,19 +272,19 @@ Once the data streams for standard objects have been created, we need to add a f
 
 ==== Update object permissions
 
-If you encounter object access errors in Salesforce CDP when creating data streams, try adding permissions for the objects and their fields in the source Salesforce instance.
+If you encounter object access errors in Data Cloud when creating data streams, try adding permissions for the objects and their fields in the source Salesforce instance.
 
-. Login to the Salesforce org containing the objects and fields you want to ingest into Salesforce CDP
+. Login to the Salesforce org containing the objects and fields you want to ingest into Data Cloud
 . From the Setup page, enter 'Permission' in the Quick Find box and select `Permission Sets`.
 . Select the `Customer Data Platform Salesforce Connector Integration` permission set. +
-*Note:* The permission set is available only after you connect your CRM org to Salesforce CDP.
+*Note:* The permission set is available only after you connect your CRM org to Data Cloud.
 . From Apps, select Object Settings.
-. Select the object to ingest into Salesforce CDP (for example, `Account`).
+. Select the object to ingest into Data Cloud (for example, `Account`).
 . To change object permissions, click Edit.
 . Enable Read and View All permissions for the object and Read Access for each field. Use the table above for reference.
 . Click Save.
 
-Repeat these steps for all objects and fields you want to ingest into Salesforce CDP. For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, this includes the `Account` and `Contact` objects.
+Repeat these steps for all objects and fields you want to ingest into Data Cloud. For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, this includes the `Account` and `Contact` objects.
 
 === Create an Ingestion API data stream
 
@@ -320,16 +320,16 @@ For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6
 
 ==== Create Ingestion data stream
 
-. In Salesforce CDP, select Data Streams and click `New`.
+. In Data Cloud, select Data Streams and click `New`.
 . Select `Ingestion API` and click `Next`.
 . Select the connector you configured earlier from the dropdown.
 . Select all the objects found in the schema as per the above table and click `Next`.
 . In the 'New Data Stream' dialog, use the details in above table to configure each object by selecting the object shown under `Objects to Configure`:
- ** _Primary Key_: A true Primary Key needs to be leveraged for CDP (example - globalAccountId for Financial Account). If one does not exist, you will need to create a Formula Field for the Primay Key.
+ ** _Primary Key_: A true Primary Key needs to be leveraged for Data Cloud (example - globalAccountId for Financial Account). If one does not exist, you will need to create a Formula Field for the Primay Key.
  ** _Category_: Choose the `Profile` option.
 . Click `Save`.
 . Once the dialog has closed, click `Next`.
-. On the final summary screen, review the list of data streams that Salesforce CDP created and click `Deploy`.
+. On the final summary screen, review the list of data streams that Data Cloud created and click `Deploy`.
 
 Once deployed the view refreshes to show all recently viewed data streams. Map the data for the data stream before use. Wait up to one hour for your data to appear in your data stream.
 
@@ -1421,14 +1421,14 @@ The following table shows the relationships from the primary DMOs mapped from Da
 
 == Identity Resolution
 
-Use Identity Resolution to match and reconcile data about people into a comprehensive view of your customer called a _unified profile_. Identity Resolution uses matching and reconciliation rulesets to link the most relevant data from all the associated profiles of each unified profile. Identity Resolution is powered by rulesets to create unified profiles in Salesforce CDP.
+Use Identity Resolution to match and reconcile data about people into a comprehensive view of your customer called a _unified profile_. Identity Resolution uses matching and reconciliation rulesets to link the most relevant data from all the associated profiles of each unified profile. Identity Resolution is powered by rulesets to create unified profiles in Data Cloud.
 
 Creating Identity Resolution rulesets can only be done after entities have been mapped and relationships established. Refer to the following links for additional anformation relating to Identity Resolution:
 
 * https://help.salesforce.com/s/articleView?id=sf.c360_a_partyidentifier.htm&type=5[Party Identifier in Identity Resolution Match Rules]
 * https://help.salesforce.com/s/articleView?id=c360_a_identity_resolution_summary_anonymous_vs_known_profiles.htm&type=5&language=en_US[Anonymous and Known Profiles in Identity Resolution]
 * https://help.salesforce.com/s/articleView?id=c360_a_resolution_troubleshooting.htm&type=5&language=en_US[Optimize Identity Resolution]
-* https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Salesforce CDP]
+* https://help.salesforce.com/s/articleView?id=c360_a_profile_explorer.htm&type=5&language=en_US[Profile Explorer in Data Cloud]
 
 === Use case requirements
 
@@ -1475,13 +1475,13 @@ Follow the steps below to create the required Identity Resolution rules, startin
  ** _Match Rule Name_: `Email Address Match`
 . Click `Save` to save the new ruleset.
 
-The new ruleset will be published after being saved. Once CDP runs the profile reconciliation process, review the https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.c360_a_resolution_summary.htm[Resolution Summary] information and the 'Processing History' tab to ensure the Identity Resolution rules are working correctly. You can also add applicable https://help.salesforce.com/s/articleView?id=sf.c360_a_reconciliation_rules.htm&type=5[Individual Reconciliation Rules], if desired.
+The new ruleset will be published after being saved. Once Data Cloud runs the profile reconciliation process, review the https://help.salesforce.com/s/articleView?language=en_US&type=5&id=sf.c360_a_resolution_summary.htm[Resolution Summary] information and the 'Processing History' tab to ensure the Identity Resolution rules are working correctly. You can also add applicable https://help.salesforce.com/s/articleView?id=sf.c360_a_reconciliation_rules.htm&type=5[Individual Reconciliation Rules], if desired.
 
 == Calculated Insights
 
-The Calculated Insights feature lets you define and calculate multi-dimensional metrics from your entire digital state stored in Salesforce CDP.
+The Calculated Insights feature lets you define and calculate multi-dimensional metrics from your entire digital state stored in Data Cloud.
 
-Calculated Insights can be built using the Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the CDP Help Documentation. Also check https://help.salesforce.com/s/articleView?id=sf.c360_a_processing_calculated_insights.htm&type=5[Processing Calculated Insights] for the Calculated Insights schedule.
+Calculated Insights can be built using the Calculated Insights Builder, ANSI SQL, Salesforce Package, or Streaming Insights. Details on all options and use cases can be found in the Data Cloud Help Documentation. Also check https://help.salesforce.com/s/articleView?id=sf.c360_a_processing_calculated_insights.htm&type=5[Processing Calculated Insights] for the Calculated Insights schedule.
 
 Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
 
@@ -1652,7 +1652,7 @@ Again, remember to change the publish schedule once you are satisfied with the s
 
 === Activation Targets
 
-You create activation targets to build and activate data segments with Salesforce CDP. For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, we will create an AWS S3 Activation Target and a Marketing Cloud Activation Target.
+You create activation targets to build and activate data segments with Data Cloud. For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, we will create an AWS S3 Activation Target and a Marketing Cloud Activation Target.
 
 ==== AWS S3 Activation Target
 
@@ -1661,7 +1661,7 @@ This activation target is used to publish segments to AWS S3. You will need to h
 . Select `Activation Targets` from the top navigation menu.
 . Click the `New` button to create a new entry.
 . Select the `aws | S3` external platform and click `Next`.
-. Enter an easy to recognize but unique name (for example, 'CDP Segmentation Results Bucket') and click `Next`.
+. Enter an easy to recognize but unique name (for example, 'Data Cloud Segmentation Results Bucket') and click `Next`.
 . Specify the S3 bucket name and parent folder provided by your admin for your activation target.
 . Enter the S3 access key and secret key for the bucket. The S3 credentials provided must have the following permissions: s3:PutObject, s3:GetObject, s3:ListBucket, s3:DeleteObject, s3:GetBucketLocation. +
 *Note:* To delete S3 access or secret keys, first delete the activation target.
@@ -1684,12 +1684,12 @@ The actual segments will be created with prefixes of `YYYY/MM/DD/HH/{first 100 c
 
 ==== Marketing Cloud Activation Target
 
-Create an activation target in Salesforce CDP to publish segments to Marketing Cloud business units. Be sure configure the Marketing Cloud connector <<marketing-cloud-connector,as per the instructions above>> first, otherwise it will not show up as a target
+Create an activation target in Data Cloud to publish segments to Marketing Cloud business units. Be sure configure the Marketing Cloud connector <<marketing-cloud-connector,as per the instructions above>> first, otherwise it will not show up as a target
 
 . Select `Activation Targets` from the top navigation menu.
 . Click the `New` button to create a new entry.
 . Select `Marketing Cloud` as the target and click `Next`.
-. Enter an easy to recognize but unique name (for example, 'CDP Segmentation Results MC'). +
+. Enter an easy to recognize but unique name (for example, 'Data Cloud Segmentation Results MC'). +
 *IMPORTANT:* Marketing Cloud activation target names cannot be more than 128 characters, start with an underscore, be all numbers, or include these characters: `+@ % ^ = < ' * + # $ / \ ! ? ( ) { } [ ] , . (space)+`
 . Click `Next`.
 . To add or remove business units (BUs) to receive the published segments, click the arrows between the two columns. When an activation target has multiple BUs, the activation filters the contacts by the BUs. The segment activates as a Shared Data Extension (SDE) and not as a Data Extension (DE) to Marketing Cloud. If an activation target has multiple business units configured, modify the activation target configuration to include one business unit only.
@@ -1699,7 +1699,7 @@ Your Marketing Cloud activation target is created.
 
 === Activation
 
-Activation is the process that materializes and publishes a segment to activation platforms. An activation target is used to store authentication and authorization information for a given activation platform. You can publish your segments, including contact points and additional attributes, to the activation targets. After you create a segment in Salesforce CDP, you can publish a segment to an activation target.
+Activation is the process that materializes and publishes a segment to activation platforms. An activation target is used to store authentication and authorization information for a given activation platform. You can publish your segments, including contact points and additional attributes, to the activation targets. After you create a segment in Data Cloud, you can publish a segment to an activation target.
 
 ==== Use case requirements
 
@@ -1723,7 +1723,7 @@ Below are the steps to create the Activation:
 *IMPORTANT:* You cannot include the following characters in the name field: `++ ! @ # $ % ^ * ( ) = { } [ ] \ . < > / " : ? | , _ &+`
 . Click `Save`.
 
-This completes the configuration of CDP required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case.
+This completes the configuration of Data Cloud required for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case.
 
 == See Also
 
