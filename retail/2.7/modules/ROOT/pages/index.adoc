@@ -1,5 +1,5 @@
 = MuleSoft Accelerator for Retail
-:retail-version: 2.7
+:retail-version: {page-component-version}
 
 MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster. Retail IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to create customer 360 profiles.
 
@@ -22,4 +22,4 @@ The following use cases are supported by the MuleSoft Accelerator for Manufactur
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/[MuleSoft Accelerator for Retail on Exchange^]

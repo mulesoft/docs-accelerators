@@ -1,5 +1,5 @@
 = MuleSoft Accelerator for Life Sciences
-:ls-version: 1.1
+:ls-version: {page-component-version}
 
 The MuleSoft Accelerator for Life Sciences helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
 
@@ -12,7 +12,7 @@ The following describes the use cases supported by the MuleSoft Accelerator for 
 
 == Other Related Solutions
 
-For solutions related to healthcare, the https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare[Accelerator for Healthcare^] helps organizations enable interoperability, simplify EHR connectivity, and power Patient 360 initiatives.
+For solutions related to healthcare, the xref:healthcare::index.adoc[MuleSoft Accelerator for Healthcare] helps organizations enable interoperability, simplify EHR connectivity, and power Patient 360 initiatives.
 
 == References
 
@@ -27,4 +27,4 @@ The following are links to related and supporting documentation:
 * xref:prerequisites.adoc[Prerequisites]
 * xref:ls-assets.adoc[Available Assets]
 * xref:release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences on Exchange^]

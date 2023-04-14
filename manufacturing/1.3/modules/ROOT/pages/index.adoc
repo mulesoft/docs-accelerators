@@ -1,5 +1,5 @@
 = MuleSoft Accelerator for Manufacturing
-:mfg-version: 1.3
+:mfg-version: {page-component-version}
 :sap-version: 1.6
 
 MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers with foundational assets for common use cases to accelerate their digital transformation journey. Our pre-built APIs, implementation templates, reference architecture, and connectors allow IT teams to spend more time innovating, and less time building common integrations from scratch.
@@ -28,4 +28,4 @@ The following use cases provided by the https://anypoint.mulesoft.com/exchange/0
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing on Exchange^]
