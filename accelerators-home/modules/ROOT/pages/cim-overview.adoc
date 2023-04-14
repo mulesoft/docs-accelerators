@@ -14,7 +14,9 @@ CIM is a modern, open specification to help ease the pain of integrating data. C
 
 == History of CIM
 
-The original distribution of CIM was produced by an open consortium formed to deliver a standards-based solution for connecting enterprise products. Although it was adopted by MuleSoft for use in various accelerators, limited adoption by other companies led to the consortium being halted and the primary website archived. The version of CIM created and maintained by the MuleSoft Solutions team is now known as the Cloud Information Model for MuleSoft Accelerators, which will ultimately align with the https://help.salesforce.com/s/articleView?id=sf.c360_a_c360datamodel.htm&type=5[Salesforce Customer 360 Data Model] in future releases.
+The original distribution of CIM was produced by an open consortium formed to deliver a standards-based solution for connecting enterprise products. Although it was adopted by MuleSoft for use in various accelerators, limited adoption by other companies led to the consortium being halted and the primary website archived. 
+
+The version of CIM created and maintained by the MuleSoft Solutions team is now known as the Cloud Information Model for MuleSoft Accelerators, which will ultimately align with the https://help.salesforce.com/s/articleView?id=sf.c360_a_c360datamodel.htm&type=5[Salesforce Customer 360 Data Model] in future releases.
 
 == Organization
 
