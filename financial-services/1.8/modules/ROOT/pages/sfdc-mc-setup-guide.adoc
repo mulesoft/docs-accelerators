@@ -228,7 +228,11 @@ Log into Marketing Cloud as the administrator and perform the steps outlined bel
 
 === Prerequisites
 
+<<<<<<< HEAD
 Please refer to the xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide] for instructions on how to publish and activate a Data Cloud segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the Data Cloud segment.
+=======
+Please refer to the xref:salesforce-cdp-setup-guide.adoc[Salesforce Data Cloud Setup Guide] for instructions on how to publish and activate a Data Cloud segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the Data Cloud segment.
+>>>>>>> 51b0e25 (Updated FINS version)
 
 === Check Data Extension
 
