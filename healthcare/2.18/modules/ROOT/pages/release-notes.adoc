@@ -5,7 +5,7 @@
 
 13 December 2022
 
-This release extends the solution provided for https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to surface valuable population health data from EHR systems into Amazon HealthLake and Salesforce Customer Data Platform to improve clinical outcomes.
+This release extends the solution provided for https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to surface valuable population health data from EHR systems into Amazon HealthLake and Salesforce Customer Data Platform to improve clinical outcomes.
 
 * FHIR Bulk Export System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-bulk-export-sys-api-spec[API Specification] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-bulk-export-sys-api[Implementation Template] 
 * Population Health Management Process API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-population-health-mgmt-prc-api/[Implementation Template] 
@@ -17,7 +17,7 @@ This release extends the solution provided for https://www.anypoint.mulesoft.com
 
 20 October 2022
 
-This release provides a solution for https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to convert and surface valuable population health data into Amazon HealthLake to improve clinical outcomes.
+This release provides a solution for https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to convert and surface valuable population health data into Amazon HealthLake to improve clinical outcomes.
 
 As part of this release, existing assets used to convert from HL7 v2, C-CDA and X12 formats to FHIR R4 were enhanced to fix defects and enable use with Amazon HealthLake.
 
@@ -25,13 +25,13 @@ As part of this release, existing assets used to convert from HL7 v2, C-CDA and 
 
 26 July 2022
 
-This release provides a support to additional CDA document types in https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/C-CDA%20to%20FHIR%20converter/[convert C-CDA messages to FHIR] use case.
+This release provides a support to additional CDA document types in https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/C-CDA%20to%20FHIR%20converter/[convert C-CDA messages to FHIR] use case.
 
 == v2.15
 
 23 June 2022
 
-This release provides Healthcare organizations with a reference implementations to https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/FHIR%20R4%20assets/[convert FHIR R4 resources from HL7 FHIR JSON format to RAML specification] and https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/C-CDA%20to%20FHIR%20converter/[convert C-CDA messages to FHIR].
+This release provides Healthcare organizations with a reference implementations to https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/FHIR%20R4%20assets/[convert FHIR R4 resources from HL7 FHIR JSON format to RAML specification] and https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/C-CDA%20to%20FHIR%20converter/[convert C-CDA messages to FHIR].
 
 * FHIR RAML auto-generator | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhirjson-to-raml-sys-api-spec/[API specification] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhirjson-to-raml-sys-api/[Implementation Template] 
 * C-CDA to FHIR System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-ccda-to-fhir-sys-api-spec/[API specification] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-ccda-to-fhir-sys-api/[Implementation Template] 
@@ -70,7 +70,7 @@ This minor release includes an upgrade to the dependencies on the assets that pe
 
 19 April 2022
 
-This release provides Healthcare organizations with a reference implementation to https://www.anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/catalyst-accelerator-for-healthcare/minor/{hls-version}/pages/X12%20to%20FHIR%20converter/[convert X12 messages to FHIR].
+This release provides Healthcare organizations with a reference implementation to https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/X12%20to%20FHIR%20converter/[convert X12 messages to FHIR].
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-r4-to-x12-sys-api-spec/minor/{hls-version}/[API specification] and https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-to-x12-sys-api/[implementation template] for the X12 to FHIR System API.
 
