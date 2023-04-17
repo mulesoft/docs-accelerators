@@ -53,6 +53,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 * `ZBAPI_CUST_QUERY`
 * `ZBAPI_CUSTOMER_CD`
 
+[[creating-data-elements]]
 === Creating data elements
 
 [%header%autowidth.spread]
@@ -63,6 +64,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_01.png[sfc-retail-com-bapi_01.png,599]
 |===
 
+[[creating-structures]]
 === Creating structures
 
 [%header%autowidth.spread]
@@ -85,6 +87,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.5.png[retail-2.2-bapi-01.5.png,599]
 |===
 
+[[creating-table-types]]
 === Creating table types
 
 [%header%autowidth.spread]
@@ -95,6 +98,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_05.png[sfc-retail-com-bapi_05.png,599]
 |===
 
+[[creating-transparent-tables]]
 === Creating transparent tables
 
 [%header%autowidth.spread]
@@ -111,6 +115,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 
 <<bapi-custom-objects,back to top>>
 
+[[creating-function-groups-and-function-modules]]
 === Creating function groups and function modules
 
 ==== *ZBAPI Customer modules*
