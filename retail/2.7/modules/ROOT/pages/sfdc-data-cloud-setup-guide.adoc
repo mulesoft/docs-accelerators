@@ -222,7 +222,9 @@ For the "Personalization with CDP" use case, refer CDP System API specification 
 
 Cleaning and preparing your data is critical for success in using Data Cloud's segmentation and activation capabilities.
 
-* xref:https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and Data Cloud]
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_library.htm&type=5[Formula Expression Library] - When you create a Data Cloud data stream, you can choose to generate more fields. These supplemental fields can be hard-coded or derived from other fields in the data stream.
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_formula_expression_use_cases.htm&type=5[Formula Expression Use Cases] - These use cases are examples of using formula expression functionality in Data Cloud.
+* https://help.salesforce.com/s/articleView?id=sf.c360_a_data_types_and_date_formats.htm&type=5[Working with Dates and Data Cloud]
 
 === Data Mapping
 

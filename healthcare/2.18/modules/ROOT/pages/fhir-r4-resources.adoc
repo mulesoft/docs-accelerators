@@ -4,7 +4,7 @@ The MuleSoft Accelerator for Healthcare provides a library of United States Core
 
 You can also use the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-error-policy/[FHIR Error API Policy] to capture error responses and format them in an FHIR OperationOutcome-compliant format, since Anypoint Platform's out-of-the-box (OOTB) policies do not provide error messages in an FHIR-compliant format. This policy can also be used with other OOTB API policies provided in Anypoint Platform, such as OAuth or JWT.
 
-For the list of US core profile assets, please refer to xref:fhir-r4-core-profiles.adoc[this link].
+For the list of US core profile assets, please refer to xref:fhir-r4-us-core-profiles.adoc[this link].
 
 == FHIR R4 Resource List
 
