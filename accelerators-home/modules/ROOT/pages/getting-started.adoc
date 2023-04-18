@@ -62,7 +62,7 @@ As above, you can safely cancel out of the `Update your Workspace` dialog, if pr
 
 === Next Steps
 
-Ensure your xref:build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:application-deployment.adoc[Application Deployment], xref:application-testing.adoc[Application Testing] and xref:additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets.
+Ensure your xref:build-environment.adoc[Build Environment] is configured correctly before attempting to import or deploy any assets. Also refer to the xref:application-deployment.adoc[Application Deployment], xref:application-testing.adoc[Application Testing] and xref:additional-customizations.adoc[Additional Customizations] pages for more details on deploying, testing, and customizing accelerator assets. For more information about accelerators, see xref:index.adoc[MuleSoft Accelerators].
 
 == See Also
 
