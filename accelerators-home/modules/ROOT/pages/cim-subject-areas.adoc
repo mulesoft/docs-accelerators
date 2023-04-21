@@ -1,0 +1,26 @@
+= CIM Subject Areas
+
+The model content is organized into domains, or Subject Areas, which represent major business concepts. Each Subject Area defines one or more Entities, which have a set of Attributes defining the unique characteristics of the Entity.
+
+The following subject areas are currently supported - follow the links or refer to the tabs on the left for more details on each domain.
+
+[%header%autowidth.spread^]
+|===
+| Name | Description
+| xref:cim-finance.adoc[Finance]
+| Entities related to finances, such as payments and payment methods.
+| xref:cim-fulfill.adoc[Fulfill]
+| Entities related to the fulfillment of goods and services, such as shipments.
+| xref:cim-market.adoc[Market]
+| Entities related to the marketing and promotion of goods and services, such as customers, suppliers, and contact information.
+| xref:cim-produce.adoc[Produce]
+| Entities related to actual goods and services, such as products and catalogs.
+| xref:cim-sell.adoc[Sell]
+| Entities related to the selling of goods and services, such as sales orders and channels.
+| xref:cim-setup.adoc[Setup]
+| Entities related to technical resources and artifacts.
+|===
+
+== See Also
+
+* xref:cim-overview.adoc[CIM Overview]

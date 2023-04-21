@@ -1,0 +1,121 @@
+= MuleSoft Accelerators Common Services
+
+The MuleSoft Accelerators leverage a number of common components, referred to here as "common services". These services include the following:
+
+* <<Common Scheduler>> - unified scheduling
+* <<Notification Services>> - send notifications
+* <<Security Services>> - API security policies
+
+The notification and scheduler services can be configured and installed as independent applications. The notification services consists of multiple applications, depending on which notification targets are selected. One or more security policies can be applied using API Manager.
+
+== Common Scheduler
+
+The Common Scheduling Service is an optional component that will run schedules and perform API calls. The benefit of having a common scheduler service is to have all the integration-level schedules maintained in one place. Here is a high-level view of how the scheduler service works:
+
+image::https://www.mulesoft.com/ext/solutions/images/accel-scheduling-service-diagram.png[accel-scheduling-service-diagram.png]
+
+The service may be built in two different ways, depending on the target deployment platform. The Anypoint Platform offers operational advantages to applications deployed in CloudHub when dealing with schedules.
+
+=== High-level Workflow
+
+The following is a high level description of the workflow for the scheduler process:
+
+. A predefined schedule is triggered. Schedules have enriched information about the last execution such as SCHEDULE_TYPE and WATERMARK.
+. The scheduling service calls the job configured for this event and updates the schedule status to "TRIGGERED" with a current timestamp. A Trigger ID and CALLBACK URL are generated.
+. Once the process completes, it does a call-back to the scheduling status service through the callback URLs to report the execution status.
+
+For service configuration details please refer to the xref:./getting-started.adoc[Getting Started] guide as well as the implementation template for the services itself.
+
+== Notification Services
+
+The solution provides an optional Notifications Process API, which consumes notification events and sends notifications to individuals or groups via SMS, email, or Slack via system APIs specific to those services. The high-level design is as follows:
+
+image::https://www.mulesoft.com/ext/solutions/images/accel-notification-service-diagram.png[accel-notification-service-diagram.png]
+
+As you can see, the API offloads incoming requests directly to a queue in order to avoid blocking calling apps.
+
+=== High-level Workflow
+
+The following is a high level description of the workflow for the notification process:
+
+. A module calls the Notifications Process API, providing:
+ ** `NOTIFICATION\_TYPE` -- Either email, sms, or slack
+ ** `NOTIFICATION\_ADDRESS` -- Destination address/number
+ ** `NOTIFICATION\_MESSAGE` -- Notification message text
+. The API places the message on a queue for downstream processing and immediately returns a success response.
+. A queue subscriber receives the message and routes it to the appropriate System API based on the `NOTIFICATION\_TYPE`.
+. The System API synchronously processes the message and posts it to the back-end service.
+
+For service configuration details please refer to the xref:./getting-started.adoc[Getting Started] guide as well as the individual RAML specifications and implementation templates for the individual services themselves.
+
+== Security Services
+
+Most APIs use the HTTPS protocol by default for secure communications. The APIs provided by the solution can also be secured by applying the `Client ID enforcement` policy in API Manager; the `Basic Authentication` policy is also supported.
+
+=== CloudHub load balancers and HTTPS
+
+Applications that expose API endpoints or make calls to other APIs will do so via the HTTPS protocol. To simplify deployment, listeners use a self-signed certificate provided by the `accelerator-common-core` library. While this approach works fine when using the shared CloudHub load balancer in the target deployment region, the certificate will generally need to be replaced if running under a Dedicated Load Balancer.
+
+=== How to apply the API Manager policy
+
+This section describes the procedure to enable the `Client ID enforcement` policy for a deployed API.
+
+*Your organization must have API Manager included in your Anypoint subscription in order to proceed.*
+
+==== Creating the managed API instance
+
+The simplest way to create a managed API instance is from an existing Exchange asset. Here are the steps:
+
+. Download the API RAML Definition asset from the MuleSoft Exchange and upload it to your own Exchange instance. Be sure to select the correct business group.
+. In API Manager, select the same business group and choose a target environment. Click the `Manage API` button and then select the `Manage API from Exchange` option.
+. In the `API Name` field, start typing the name of the API to manage. The asset type and version fields should populate automatically.
+. Scroll down to the `Mule version` option and enable it. Clear the contents of the `Implementation URI` field.
+. To make the API easier to find later, expand the `Advanced options` section and enter the full display name of the API in the `Label` field (for example, `Accelerator Jira Experience API`).
+. Click `Save` to create the API instance. On the summary page, copy the `API ID` value found under the `Autodiscovery` label.
+
+==== Requesting access to the API
+
+Locate the API asset in Exchange and select the `Request access` option from the menu located in the top-right corner of the asset page (may be hidden under the "three dots" menu). Select the API you created earlier and choose an application to use (create one if necessary). *Be sure to copy the client ID and client secret values.*
+
+In your local Maven `settings.xml` file (the one you configured specifically for the accelerator deployments), set the values of the `accelerator-api.client-id` and `accelerator-api.client-id` properties in the target deployment profile (for example, `CloudHub-DEV`) using the values you copied above.
+
+For a higher degree of security, create a separate application for each API consumer. For API to API calls, you will need to add each client ID/secret pair to your deployment profile and update the property name references in the `pom.xml` file for the consuming API.
+
+=== Enabling support for API Manager in applications
+
+Each application must include a configuration element corresponding to the API ID that it's implementing. The accelerator applications already include support for this; you only need to update them as follows:
+
+. In the implementation project, open the `global.xml` file found under the `src/main/mule` folder.
+. When the editor opens, select the `Configuration XML` tab to reveal the XML source.
+. Locate the `api-gateway:autodiscovery` element and uncomment it. Leave the values as they are.
+. In the property file representing the target deployment environment (for example, `config-dev.yaml`) under the `src/main/resources/config` folder, locate the `autodiscoveryID` property and set it to the value copied from the `API ID` value, above. Be sure to keep the double-quotes (this applies to all YAML config properties).
+. Deploy the updated application and monitor the log file. Just before the `Your application is started` message, there should be one similar to the following:
++
+----
+API ApiKey{id='16422525'} is now unblocked (available).
+----
+
+. Verify that the status of the API instance in API Manager now shows as "Available".
+
+==== Applying the policy
+
+The following steps describe how to apply the `Client ID enforcement policy` to a specific API:
+
+. In API Manager, locate the API to apply the policy to and click the version label to bring up the API settings page.
+. Select the `Policies` item from the left navigation menu and click the `Apply New Policy` button.
+. Select the latest version of the `Client ID enforcement` policy and then click `Configure Policy`.
+. In the policy configuration page, choose the `HTTP Basic Authentication Header` option for the `Credentials origin` setting.
+. Click the `Apply` button to create and apply the policy to the API.
+
+The policy should take effect after a few moments.
+
+=== Automated policies
+
+An easier way to apply policies to all APIs is to deploy them as Automated policy. Existing applications will be updated, while new deployments will automatically get the policy. The steps for configuring the policies themselves remain the same.
+
+== See Also
+
+* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
+* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-archetype-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
+* The xref:./getting-started.adoc[Getting Started] guide provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
+* The xref:./index.adoc[MuleSoft Accelerators] main page.

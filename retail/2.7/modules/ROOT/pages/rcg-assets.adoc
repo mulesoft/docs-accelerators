@@ -1,0 +1,203 @@
+= Available assets
+
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
+
+== System APIs
+
+[cols="40,30,30",width=100%]
+|===
+| B2B Commerce System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2b-commerce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2b-commerce-sys-api/[Implementation Template^]
+
+| B2C Commerce System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-sys-api[Implementation Template^]
+
+| B2C Customers System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-customers-sys-api/[Implementation Template^]
+
+| MDM System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-mdm-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-mdm-sys-api/[Implementation Template^]
+
+| RCG Salsify Products System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-products-sys-api/[Implementation Template^]
+
+| RCG Azure Cosmos DB System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-azure-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-azure-sys-api/[Implementation Template^]
+
+| RCG B2C Commerce System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-sys-api/[Implementation Template^]
+
+| RCG Marketo System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-marketo-system-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-marketo-system-api/[Implementation Template^]
+
+| RCG Salesforce CDP System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-cdp-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-cdp-sys-api/[Implementation Template^]
+
+| RCG Snowflake System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-snowflake-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-snowflake-sys-api/[Implementation Template^]
+
+| Salesforce Customers System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-customers-sys-api/[Implementation Template^]
+
+| Salesforce Marketing System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-marketing-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-marketing-sys-api/[Implementation Template^]
+
+| Salesforce Orders System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-orders-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-orders-sys-api/[Implementation Template^]
+
+| SAP ECC Customers System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-sapecc-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-sapecc-customers-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Customers System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-customers-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Orders System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-saphana-orders-sys-api/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-orders-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Product Availability System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-saphana-productavailability-sys-api/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-saphana-productavailability-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Products System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-products-sys-api/[Implementation Template^]
+|===
+
+== Process APIs
+
+[cols="40,30,30",width=100%]
+|===
+| Customers Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-customers-prc-api/[Implementation Template^]
+
+| ERP Customers Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-erp-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-erp-customers-prc-api/[Implementation Template^]
+
+| ERP Orders Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-erp-orders-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-erp-orders-prc-api/[Implementation Template^]
+
+| Inventory Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-inventory-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-inventory-prc-api/[Implementation Template^]
+
+| Orders Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-orders-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-orders-prc-api/[Implementation Template^]
+
+| Products Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-products-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-products-prc-api/[Implementation Template^]
+
+| RCG Customer Data Platform Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-cdp-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-cdp-prc-api/[Implementation Template^]
+
+| RCG DataLake Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-datalake-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-datalake-prc-api/[Implementation Template^]
+
+| RCG Marketing Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-marketing-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-marketing-prc-api/[Implementation Template^]
+|===
+
+== Experience APIs
+
+[cols="40,30,30",width=100%]
+|===
+| B2C Commerce Experience API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-exp-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-exp-api[Implementation Template^]
+
+| Salesforce Experience API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-exp-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-exp-api/[Implementation Template^]
+|===
+
+== Listeners & Handlers
+
+[cols="70,30",width=100%]
+|===
+| Salesforce Marketing Listener
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-marketing-listener/[Implementation Template^]
+
+| Salesforce Topic Listener
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-topic-listener/[Implementation Template^]
+
+| SAP Event Listener
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-sap-event-listener/[Implementation Template^]
+
+| Salsify Channel Listener
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-channel-listener/[Implementation Template^]
+|===
+
+=== Custom Components
+
+[cols="70,30",width=100%]
+|===
+| B2C Commerce Instore Pickup Cartridge
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-instore-pickup-cartridge-src/[Source^]
+
+| B2C Commerce Sync Cartridge
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-b2c-commerce-sync-cartridge-src/[Source^]
+
+| ID Graph Lightning Web Component
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src[Source^]
+
+| POM Parent
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Source^]
+
+| Product Availability Lightning Web Component
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-productavailability-lwc-src/[Source^]
+|===
+
+== Shared APIs
+
+[cols="40,30,30",width=100%]
+|===
+| Accelerator Email System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-email-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-email-sys-api[Implementation Template^]
+| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-slack-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-slack-sys-api[Implementation Template^]
+| Accelerator SMS System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-sms-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-sms-sys-api[Implementation Template^]
+| Accelerator Notifications Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-notifications-prc-api[API Specification^] | https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-notifications-prc-api/[Implementation Template^]
+|===
+
+== Shared Components
+
+[cols="70,30",width=100%]
+|===
+| Accelerator Common Core
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Source^]
+
+| POM Parent
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Source^]
+
+| ID Graph Lightning Web Component
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-idgraph-lwc-src/[Source^]
+|===
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::common-services.adoc[Accelerator Common Services]
+* xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Retail]

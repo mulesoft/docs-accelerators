@@ -1,0 +1,20 @@
+= Prerequisites for MuleSoft Accelerator for Manufacturing
+
+This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
+
+== Available Guides
+
+The following setup and configuration guides are available for this accelerator:
+
+* xref:mfg-setup-guide.adoc[Accelerator Setup Guide]
+* xref:sftp-setup-guide.adoc[SFTP Setup Guide]
+* xref:osisoft-pi-setup-guide.adoc[OSISoft PI Setup Guide for Productive Maintenance]
+* xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide for Sales Rebate Management]
+* xref:tableau-setup-guide.adoc[Tableau Setup Guide for Productive Maintenance]
+
+Most of the implementation templates also contain details on requirements specific to those applications.
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:index.adoc[MuleSoft Accelerator for Manufacturing]

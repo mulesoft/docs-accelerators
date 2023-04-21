@@ -1,0 +1,46 @@
+= CIM Customizations
+
+This page describes the customizations and extensions that have been made to the original CIM RAML library.
+
+== General Customizations
+
+* All types have been refactored into separate RAML libraries, corresponding to the latest Subject Areas defined by the consortium.
+* In each library, types are organized according to the entity groups defined in the model. These types are then published via the main library file for quick reference.
+* All types, libraries, and exports are sorted in alphabetical order for ease of reference.
+* For the sake of consistency in each type, standard properties such as `id` and `name` have been moved to be the first ones declared; the order of all other properties in the type definition remains unchanged. This may be modified in the future to group related properties together.
+* The use of type composition has been adjusted to use plain strings, which could represent foreign key references, instead. This modification was done to remove cyclic dependencies and to flatten structures. Type composition in the core remains supported in a limited fashion through the use of unions (for example, `type: string | Product`). The following rules were applied to all cases where array properties referenced top-level entities:
+ ** The type definition was either replaced with `string` or a string union was added
+ ** Unions may only refer to types defined in the same Subject Area library
+ ** Unions can only be between `string` and the original type that was replaced
+ ** Unions must NOT be used where circular or infinite references are possible (for example, a parent object can  refer to a child object, but the child cannot also have a reference back to the parent)
+* Properties with type references replaced by strings were made optional to support customized composition (more on this below).
+* For all types that inherit from other types, duplicate property definitions found in the child have been removed. This mostly involved removing the `id` field from the child type.
+* A structure representing identifiers in external systems has been added as an optional property to all business entities that are expected to be reconciled across multiple systems (for example, `Party`).
+* The Party type now includes support for relating contact information to an instance.
+* Support for associating a list of external identifiers with Account and Party types has been introduced.
+* A structure defining a common set of audit fields found in most systems has also been added as an optional property to most types.
+* A `nil` union was added to all `id` properties to support creation of entities with auto-generated identifiers.
+* A `nil` union was also added to optional, non-string scalar properties to support a ternary state model (set to a value, set to an empty/null value, not present at all).
+* Many properties were changed from mandatory to optional to avoid unnecessary hard-coding of values - particularly where no reasonable default values could be identified.
+
+== Additions Made to Core CIM Types
+
+The core CIM model continues to evolve and expand. When one or more accelerator assets require additional types, which are not currently included in the official model, an assessment is made to determine whether or not it is reasonable to expect that they would be added (at least in some form) in future releases of the model. If an appropriate subject area and entity group can be identified for these types, they have been added to the core libraries. All other types must be defined outside of the CIM libraries.
+
+== Type Extensions
+
+The primary objective of creating CIM type extensions is to re-introduce type composition - in a controlled fashion - to make original core types "whole" for applications that need them. The following rules applied to all core types for which one or more properties had composition removed to reduce external dependencies:
+
+* Only types published by the main file for the corresponding subject area library can be extended.
+* Composition may be re-introduced only for core properties that were originally modified to be strings only (no unions) due to dependencies on external entities.
+* Composition may NOT be re-introduced where it would create cyclical or infinite references (for example, a reference to self).
+* All extended type names will be the name of the core parent type suffixed with `Ext` (for example, `ProductExt`).
+* Similarly, all properties added to extended types will include the suffix `Ext` for clarity and to avoid name collisions (for example, `productTypeExt`).
+* All properties added to extended types must be made optional.
+* Extensions may include references to core types defined in other subject areas but NOT extended types.
+* Similarly, extended type libraries may reference core type libraries but NOT extended type libraries.
+
+== See Also
+
+* xref:cim-subject-areas.adoc[CIM Subject Areas]
+* xref:cim-overview.adoc[CIM Overview]

@@ -1,0 +1,53 @@
+= Available Assets
+
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
+
+== System APIs
+
+[cols="40,30,30",width=100%]
+|===
+| AWS Storage System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-aws-storage-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-aws-storage-sys-api/[Implementation Template^]
+
+| Azure Storage System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-azure-storage-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-azure-storage-sys-api/[Implementation Template^]
+
+| Clinical Trials Tableau System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-tableau-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-tableau-sys-api/[Implementation Template^]
+
+| SAP Accounts Payable System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/mfg-sap-accounts-payable-sys-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-sap-accounts-payable-sys-api/[Implementation Template^]
+
+| Veeva CDMS System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-cdms-sys-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-cdms-sys-api/[Implementation Template^]
+
+| Veeva CTMS System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-ctms-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-veeva-ctms-sys-api/[Implementation Template^]
+|===
+
+=== Process APIs
+
+[cols="40,30,30",width=100%]
+|===
+| Clinical Trials Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-clinical-trials-prc-api/[Implementation Template^]
+
+| Site Payments Process API
+|
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-site-payments-prc-api/[Implementation Template^]
+|===
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::common-services.adoc[Accelerator Common Services]
+* xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Life Sciences]
