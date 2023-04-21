@@ -1,0 +1,97 @@
+= Shared Assets
+
+The following assets may be used by one or more accelerators. They can also be downloaded and used independently. All asset links refer to Anypoint Exchange and require you to login in order to be able to access them. Select the tab corresponding to the Cloud instance of your account in order to ensure you follow the correct links.
+
+== System APIs
+
+The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
+
+[tabs]
+====
+US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/system-apis-fragment.adoc[]
+
+EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+include::_partials/system-apis-fragment.adoc[]
+
+GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/system-apis-fragment.adoc[]
+====
+
+== Process APIs
+
+The following APIs represent the reusable business processes that are leveraged by multiple accelerators. These correspond to the Process layer in MuleSoft's API-led approach.
+
+[tabs]
+====
+US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/process-apis-fragment.adoc[]
+
+EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+include::_partials/process-apis-fragment.adoc[]
+
+GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/process-apis-fragment.adoc[]
+====
+
+== API Libraries
+
+The following RAML libraries are available for use in all API specifications.
+
+[tabs]
+====
+US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com
+include::_partials/api-libraries-fragment.adoc[]
+
+EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+include::_partials/api-libraries-fragment.adoc[]
+
+GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/api-libraries-fragment.adoc[]
+====
+
+== Shared Components
+
+The following non-application components are also used by multiple accelerators.
+
+[tabs]
+====
+US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/shared-components-fragment.adoc[]
+
+EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+include::_partials/shared-components-fragment.adoc[]
+
+GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/shared-components-fragment.adoc[]
+====
+
+== See Also
+
+* xref:getting-started.adoc[Getting Started Guide]
+* xref:common-services.adoc[Accelerator Common Services]
+* xref:index.adoc[MuleSoft Accelerators]

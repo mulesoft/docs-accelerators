@@ -1,0 +1,11 @@
+[cols="70,30",width=100%]
+|===
+| Accelerator Global Resources | https://{anypoint-url}/accelerator-global-resources[Library^]
+| CIM Finance Library | https://{anypoint-url}/accelerator-cim-finance-library[Library^]
+| CIM FINS Extension Library | https://{anypoint-url}/accelerator-cim-fins-ext-library[Library^]
+| CIM Fulill Library | https://{anypoint-url}/accelerator-cim-fulfill-library[Library^]
+| CIM Market Library | https://{anypoint-url}/accelerator-cim-market-library[Library^]
+| CIM Produce Library | https://{anypoint-url}/accelerator-cim-produce-library[Library^]
+| CIM Sell Library | https://{anypoint-url}/accelerator-cim-sell-library[Library^]
+| CIM Setup Library | https://{anypoint-url}/accelerator-cim-setup-library[Library^]
+|===

@@ -1,0 +1,36 @@
+= Release Notes
+:mfg-version: 1.3
+
+== v1.2
+
+6 September 2022
+
+=== Total Productive Maintenance Use Case
+
+This release introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%203%20-%20Total%20productive%20maintenance/[Total productive maintenance^] use case, which helps manufacturers to maintain factory floor equipments.
+
+== v1.1
+
+8 June 2022
+
+=== Sales Rebate Management Use Case
+
+This release introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%202%20-%20Sales%20rebate%20management/[Sales rebate management^] use case, which helps manufacturers to seamlessly manage sales rebate programs.
+
+This release also includes the following enhancements:
+
+* customers can be synced bidirectionally between SAP S/4 HANA and Salesforce Manufacturing Cloud.
+
+== v1.0
+
+28 March 2022
+
+=== Initial Release
+
+This is the first release of the MuleSoft Accelerator for Manufacturing.
+
+This release introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Run-rate%20business%20management/[Run-rate business management^] use case, which helps streamline sales agreements and account forecasts in Salesforce Manufacturing Cloud.
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Manufacturing]

@@ -1,0 +1,22 @@
+= Release Notes
+:ls-version: 1.1
+
+== v1.1
+
+26 July 2022
+
+This release provides a reference architecture and a reference solution for the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site payment modernization^] use case.
+
+== v1.0
+
+19 April 2022
+
+*Initial release*
+
+This is the first release of the MuleSoft Accelerator for Life Sciences.
+
+This accelerator introduces the Clinical trial analytics use case.
+
+== See Also
+
+* xref:index.adoc[MuleSoft Accelerator for Life Sciences]

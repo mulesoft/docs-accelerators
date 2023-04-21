@@ -1,0 +1,71 @@
+= Additional Customizations
+
+The following customizations can be made to better tailor the accelerator components to suit your needs.
+
+== Maven POM Parent
+
+All Accelerator projects inherit from a parent Maven POM. In addition to some global settings and repository references, this config also defines the versions of all MuleSoft connectors and modules used by applications. Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Accelerator POM Parent^] asset for more information about making changes to the POM parent file.
+
+== Common Core Library
+
+It is a best practice in MuleSoft application development to place common flows, configuration settings, and other resources into a shared library. The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Accelerator Common Core Library^] asset contains the source used by most implementation templates created for the accelerators. It is referenced as a Maven dependency only and is _not_ an application you can run.
+
+If you need to make changes to it you will need to download the asset, extract the source, and then import it into Studio (use the `Anypoint Studio project from File System` wizard). As with the POM parent, first update the version number before making any changes. See the `README.md` file in the project source for more details.
+
+In order for applications to reference the new version, you must either install the updated library into your local Maven repository or deploy it to your own Exchange instance. The process is similar to that described for the POM Parent, described above. In each application, update the `accelerator-common-core.version` property in the POM file to use the new library when building.
+
+== Configurable Properties
+
+In all applications, including the common core library, MuleSoft property files are located under the `src/main/resources/config` folder and are in YAML format. Each project has a `config-local.yaml` file, which holds configuration properties suitable for running the application from Anypoint Studio. The `config-dev.yaml` file contains properties for deployment to the DEV environment.
+
+You can modify these files as per your own environment settings. In most cases, you must replace the property values where the value shows something similar to `REPLACE_BY_USER` in order for the application to be useful. Consult the project `README.md` file and/or the use case configuration steps for more details on configuring individual applications. You can also create entirely new sets of files for additional deployment environments.
+
+All properties can be overridden at deployment time by supplying the fully-qualified property name to the Mule runtime. For CloudHub deployments, add the property to the `Properties` tab in Runtime Manager with the desired value. For example, the common core library has the following default property definition (some content omitted for clarity):
+
+----
+common:
+  notifications:
+    send: "none"
+----
+
+This can be overridden for an application by providing the following:
+
+----
+common.notifications.send=email
+----
+
+For local deployments, prefix the above with `-M-D` on the command line.
+
+== Encryption Keys
+
+For convenience, passwords, secrets, hostnames, URLs have been converted to plain-text so that it's easy to paste into Studio's "Run Configurations". This also eases CloudHub deployment by using "hidden" properties not stored in any files. However, all components do support the use of encrypted properties out-of-the-box.
+
+To use secure properties, set an `encryption-key` (called "mule.key" in configurations) for encrypting secrets. Individual properties can then be encrypted and placed in the `config-secured-${mule.env}.yaml` file, as appropriate. These files will automatically be imported at runtime. For maximum security, use a different encryption key for each application.
+
+Refer to the https://docs.mulesoft.com/runtime-manager/secure-application-properties[MuleSoft documentation^] for more information.
+
+== Application Messages
+
+Use `+application-msgs.********+` properties in YAML across all projects to configure the log messages as per the requirement. For example, `${application-msgs.before-post-inventory-call}` is used by the Logger before the HTTP POST inventory call to B2C Commerce.
+
+== Notifications
+
+The `common.notifications.send` property, defined in the common core library, is used to configure error notification settings for the APIs. Valid values are as follows:
+
+* "email" - sends an email notification
+* "sms" - sends an SMS notification
+* "slack" - sends a Slack notification
+* "all" - sends to all notification routes
+* "none" - does not send any notifications
+
+The default setting is "none". To enable the sending of notifications for a single application, you can override the value of this property at deployment time, either by adding the property to the `cloudHubDeployment` section in the application `pom.xml` file or by setting set it directly in Runtime Manager.
+
+To change the default behavior for all applications, modify the property value in the common core library, deploy the new version to Exchange, and then update all applications to reference the new version of the library.
+
+== See Also
+
+* xref:getting-started.adoc[Getting Started]
+* xref:build-environment.adoc[Build Environment]
+* xref:application-deployment.adoc[Application Deployment]
+* xref:application-testing.adoc[Application Testing]
+* xref:index.adoc[MuleSoft Accelerators]
