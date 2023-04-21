@@ -5,7 +5,7 @@
 
 26 July 2022
 
-This release provides a reference architecture and a reference solution for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site payment modernization^] use case.
+This release provides a reference architecture and a reference solution for the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site payment modernization^] use case.
 
 == v1.0
 

@@ -1,6 +1,6 @@
 = SMART on FHIR with Okta
 
-See the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hc-accelerator-okta-smartfhir/[Okta SMART on FHIR - Implementation Template^] asset, which walks you through how to set up a reference SMART on FHIR implementation on Anypoint Platform using Okta as the identity provider.
+See the https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-okta-smartfhir/[Okta SMART on FHIR - Implementation Template^] asset, which walks you through how to set up a reference SMART on FHIR implementation on Anypoint Platform using Okta as the identity provider.
 
 The **S**ubstitutable **M**edical **A**pplications and **R**eusable **T**echnology (SMART) is a web/mobile app, which is typically embedded in EHR but can also serve as a standalone smartphone app. SMART on FHIR provides a consistent approach to security and data requirements for health applications. It also provides a workflow to securely request access to data, receive the data, and use the data.
 
