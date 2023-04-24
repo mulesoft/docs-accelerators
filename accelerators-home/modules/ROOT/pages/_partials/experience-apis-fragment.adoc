@@ -1,0 +1,4 @@
+[cols="40,30,30",width=100%]
+|===
+|Accelerator Salesforce Customers Experience API | https://{anypoint-url}/accel-sfdc-customers-exp-api-spec[API Specification^] | https://{anypoint-url}/accel-sfdc-customers-exp-api[Implementation Template^]
+|===
