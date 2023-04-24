@@ -1,0 +1,5 @@
+[cols="70,30",width=100%]
+|===
+|Accelerator Salesforce Financial Account Event Listener | https://{anypoint-url}/accel-sfdc-finacct-event-listener[Implementation Template^]
+|Accelerator Salesforce Party Event Listener | https://{anypoint-url}/accel-sfdc-party-event-listener[Implementation Template^]
+|===
