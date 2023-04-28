@@ -2,6 +2,28 @@
 
 The following assets may be used by one or more accelerators. They can also be downloaded and used independently. All asset links refer to Anypoint Exchange and require you to login in order to be able to access them. Select the tab corresponding to the Cloud instance of your account in order to ensure you follow the correct links.
 
+== API Libraries
+
+The following RAML libraries are available for use in all API specifications.
+
+[tabs]
+====
+US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/api-libraries-fragment.adoc[]
+
+EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+include::_partials/api-libraries-fragment.adoc[]
+
+GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/api-libraries-fragment.adoc[]
+====
+
 == System APIs
 
 The following APIs are used by multiple accelerators to access and manage data in various external systems. These correspond to the System layer in MuleSoft's API-led approach.
@@ -46,26 +68,48 @@ GovCloud Exchange::
 include::_partials/process-apis-fragment.adoc[]
 ====
 
-== API Libraries
+== Experience APIs
 
-The following RAML libraries are available for use in all API specifications.
+The following APIs provide tailor-made endpoints for specific applications to consume. These correspond to the Experience layer in MuleSoft's API-led approach.
 
 [tabs]
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com
-include::_partials/api-libraries-fragment.adoc[]
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/experience-apis-fragment.adoc[]
 
 EU Exchange::
 +
 :anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
-include::_partials/api-libraries-fragment.adoc[]
+include::_partials/experience-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
 :anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
-include::_partials/api-libraries-fragment.adoc[]
+include::_partials/experience-apis-fragment.adoc[]
+====
+
+== Integration Applications
+
+The following applications provide key integrations but do not expose any APIs as such.
+
+[tabs]
+====
+US Exchange::
++
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/integrations-fragment.adoc[]
+
+EU Exchange::
++
+:anypoint-url: eu1.anypoint.mulesoft.com/exchange/org.mule.templates
+include::_partials/integrations-fragment.adoc[]
+
+GovCloud Exchange::
++
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+include::_partials/integrations-fragment.adoc[]
 ====
 
 == Shared Components
