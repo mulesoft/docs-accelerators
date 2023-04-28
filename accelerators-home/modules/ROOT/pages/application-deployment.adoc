@@ -127,7 +127,7 @@ The default setting for the `cloudhub.applicationName` property constructs the a
 An example of a deployed application name using the default settings is `org-notifications-prc-api-v1-dev`.
 
 [IMPORTANT] 
-CloudHub application names must be _globally_ unique. Therefore, we  highly recommended you set the `global.cloudhub.appPrefix` property, which is defined in the `global-settings` profile, to a 2-4 character abbreviation unique to your organization. Exceeding four characters may cause deployments to fail when using the CloudHub 1.0 runtime (see below).
+CloudHub application names must be _globally_ unique. Therefore, we highly recommended you set the `global.cloudhub.appPrefix` property, which is defined in the `global-settings` profile, to a 2-4 character abbreviation unique to your organization. Exceeding four characters may cause deployments to fail when using the CloudHub 1.0 runtime (see below).
 
 === Deploying Applications Using Maven Profiles
 
