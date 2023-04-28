@@ -113,7 +113,7 @@ The default `settings-accelerators.xml` file, provided by the "Accelerator Commo
 |===
 
 [NOTE]
-The template described previously is generic. Many accelerators provide their own version of the common resources project, which  contain a similar template specialized for that accelerator.
+The template described previously is generic. Many accelerators provide their own version of the common resources project, which contains a similar template specialized for that accelerator.
 
 === Application Naming
 
