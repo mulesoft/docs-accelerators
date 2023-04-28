@@ -10,7 +10,7 @@ All Accelerator projects inherit from a parent Maven POM. In addition to some gl
 
 It is a best practice in MuleSoft application development to place common flows, configuration settings, and other resources into a shared library. The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Accelerator Common Core Library^] asset contains the source used by most implementation templates created for the accelerators. It is referenced as a Maven dependency only and is _not_ an application you can run.
 
-If you need to make changes to it, you will need to download the asset, extract the source, and then import it into Studio (use the `Anypoint Studio project from File System` wizard). As with the POM parent, update the version number before making any changes. See the `README.md` file in the project source for more details.
+If you need to make changes to it you will need to download the asset, extract the source, and then import it into Studio (use the `Anypoint Studio project from File System` wizard). As with the POM parent, update the version number before making any changes. See the `README.md` file in the project source for more details.
 
 In order for applications to reference the new version, you must either install the updated library in your local Maven repository or deploy it to your own Exchange instance. The process is similar to that described for the POM Parent, described above. In each application, update the `accelerator-common-core.version` property in the POM file to use the new library when building.
 
