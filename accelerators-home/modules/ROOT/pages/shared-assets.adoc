@@ -10,7 +10,7 @@ The following RAML libraries are available for use in all API specifications.
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/api-libraries-fragment.adoc[]
 
 EU Exchange::
