@@ -1,0 +1,12 @@
+[cols="40,30,30",width=100%]
+|===
+|Accelerator AWS Storage System API | https://{anypoint-url}/accel-aws-storage-sys-api-spec[API Specification^] | https://{anypoint-url}/accel-aws-storage-sys-api[Implementation Template^]
+|Accelerator Email System API | https://{anypoint-url}/accelerator-email-sys-api[API Specification^] | https://{anypoint-url}/accel-email-sys-api[Implementation Template^]
+|Accelerator Global Financial Account System API | https://{anypoint-url}/accel-global-finacct-sys-api-spec[API Specification^] | https://{anypoint-url}/accel-mdb-global-finacct-sys-api[Implementation Template (MariaDB)^]
+|Accelerator Global Party System API | https://{anypoint-url}/accel-global-party-sys-api-spec[API Specification^] | https://{anypoint-url}/accel-mdb-global-party-sys-api[Implementation Template (MariaDB)^]
+// |Accelerator Global Product System API | https://{anypoint-url}/accel-global-product-sys-api-spec[API Specification^] | https://{anypoint-url}/accel-mdb-global-product-sys-api[MariaDB Implementation Template^]
+// |Accelerator Global Sales Order System API | https://{anypoint-url}/accel-global-slsorder-sys-api-spec[API Specification^] | https://{anypoint-url}/// //accel-global-slsorder-sys-api[Implementation Template^]
+|Accelerator Salesforce Customers System API | https://{anypoint-url}/accel-sfdc-customers-sys-api-spec[API Specification^] | https://{anypoint-url}/accel-sfdc-customers-sys-api[Implementation Template^]
+|Accelerator Slack System API | https://{anypoint-url}/accelerator-slack-sys-api[API Specification^] | https://{anypoint-url}/accel-slack-sys-api[Implementation Template^]
+|Accelerator SMS System API | https://{anypoint-url}/accelerator-sms-sys-api[API Specification^] | https://{anypoint-url}/accel-sms-sys-api[Implementation Template^]
+|===
