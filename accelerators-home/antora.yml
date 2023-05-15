@@ -1,0 +1,5 @@
+name: accelerators-home
+title: Accelerators
+version: ~
+nav:
+- modules/ROOT/nav.adoc
