@@ -30,7 +30,6 @@ Refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd1
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started Guide]
-* xref:cim-usage-guide.adoc[Usage Guide]
+* xref:cim-usage-guide.adoc[CIM Usage Guide]
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
-* xref:cim-customizations.adoc[Model Customizations]
+* xref:cim-customizations.adoc[CIM Customizations]
