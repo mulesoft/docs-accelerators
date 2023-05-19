@@ -1,1 +1,1 @@
-include::release-notes::partial$accelerators/accelerators-rn-landing-page.adoc[]
+include::release-notes::partial$accelerators/accelerators-rn-landing-page.adoc[tag::excludeacceldesc]
