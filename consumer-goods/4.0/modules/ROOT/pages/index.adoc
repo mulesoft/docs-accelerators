@@ -3,7 +3,7 @@
 
 MuleSoft Accelerator for Consumer Goods helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
 
-== Use cases
+== Use Cases
 
 === Product and Account Integration with Hierarchies
 
