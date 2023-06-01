@@ -5,8 +5,6 @@
 
 *May 30, 2023*
 
-include::partial$release-notes/rn-headings.adoc[tag=whatsNew,leveloffset=+2]
-
 This release includes the following enhancements to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%201%20-%20Patient%20360/[Patient 360 use case] and https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/2.19/pages/dkv-pq7/FHIR%20API%20assets%20and%20converters%20(HL7%20v2%2C%20CDA%20and%20X12)/[FHIR API assets and converters]:
 
 * Expanded the library of assets to allow organizations to more easily ingest critical information from clinical systems into Salesforce Health Cloud, which enables users to view the information included in the supported HL7 v2 events natively in their Salesforce console.
