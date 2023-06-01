@@ -2,7 +2,7 @@
 :cg-version: 4.0
 
 
-== v4.0
+== 4.0
 *June 2, 2023*
 
 === Updates to the Trade Promotion Effectiveness Use Case
