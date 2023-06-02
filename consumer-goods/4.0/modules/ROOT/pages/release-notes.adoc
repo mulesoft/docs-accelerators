@@ -3,7 +3,7 @@
 
 
 == 4.0
-*June 2 2023*
+*June 2, 2023*
 
 === Updates to the Trade Promotion Effectiveness Use Case
 
