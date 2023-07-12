@@ -589,7 +589,7 @@ Follow the below steps to create the Apex Triggers
 === Additional Notes
 
 * All the Apex Triggers created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
-* The Apex Triggers AccountEventsPub, AccountAddressEventsPub, and HouseholdEventsPub filter records based on record type ID. A query is povided in the respective Apex trigger as a comment and it can be used to obtain the record type ID. 
+* The Apex Triggers AccountEventsPub, AccountAddressEventsPub, and HouseholdEventsPub filter records based on record type ID. A query is provided in the respective Apex trigger as a comment and it can be used to obtain the record type ID. 
 
 == Adding Mailing Address to Person Account details Page
 
