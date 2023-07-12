@@ -1,24 +1,5 @@
 = Release Notes
-:hls-version: 2.20
-
-== 2.20
-
-*August 23, 2023*
-
-<<<<<<< HEAD
-This release extends the solution provided for the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%201%20-%20Patient%20360/[Patient 360 use case] to allow customers to discover and deploy from Salesforce using MuleSoft Direct for Health Cloud. The following updates are included:
-
-* Patient Summary - EMR Integration | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-hc-fhir-r4-sync-prc-api-impl[Application] 
-* Event-based ingestion into Health Cloud | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-hl7v2-events-mgmt-listener-impl[Application] 
-* Enhanced FHIR R4 RAML libraries and specifications to leverage the new version of AMF parser to better align with industry standards.
-
-=======
-This release extends the solution provided for https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%201%20-%20Patient%20360/[Patient 360 use case] to allow customers to discover and deploy from Salesforce using MuleSoft Direct for Health Cloud.
-
-* Patient Summary - EMR Integration | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-hc-fhir-r4-sync-prc-api-impl[Application] 
-* Event-based ingestion into Health Cloud | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-hl7v2-events-mgmt-listener-impl[Application] 
-* Enhanced FHIR R4 RAML libraries and specifications to leverage new version of AMF parser to better align with industry standard
->>>>>>> 2da1e04 (Update financial-services/1.8/modules/ROOT/pages/sfdc-fsc-setup-guide.adoc)
+:hls-version: 2.19
 
 == 2.19
 

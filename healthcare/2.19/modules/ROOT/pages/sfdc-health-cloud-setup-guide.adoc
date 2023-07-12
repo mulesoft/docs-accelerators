@@ -43,7 +43,11 @@ This accelerator uses MuleSoft's HL7 Connector. If you're required to use custom
 
 The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hc-accelerator-sfdc-adt-api/[implementation template^] for storing ADT messages in Salesforce Health Cloud shows an example of custom segment processing. Please check the src/main/resources/config/hl7/v2_2 folder in the implementation template. This folder has the necessary changes required to process custom segment `ZG1`.
 
+<<<<<<< HEAD
 For additional details on HL7 Connector, please refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/connectors/hl7/hl7-connector[documentation^].
+=======
+For additional details on HL7 Connector, please refer to the https://docs.mulesoft.com/connectors/hl7/hl7-connector[documentation^].
+>>>>>>> 2da1e04 (Update financial-services/1.8/modules/ROOT/pages/sfdc-fsc-setup-guide.adoc)
 
 == Maven POM Parent
 

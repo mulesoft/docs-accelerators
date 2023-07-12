@@ -4,11 +4,7 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 
 == Functional diagram
 
-<<<<<<< HEAD
-image:https://www.mulesoft.com/ext/solutions/draft/images/hc-hl7v2-to-fhir-usecase-diagram.png[hc-hl7v2-to-fhir-usecase-diagram.png,799,align="center"]
-=======
 image:https://www.mulesoft.com/ext/solutions/images/hc-hl7v2-to-fhir-usecase-diagram.png[hc-hl7v2-to-fhir-usecase-diagram.png,799,align="center"]
->>>>>>> 2da1e04 (Update financial-services/1.8/modules/ROOT/pages/sfdc-fsc-setup-guide.adoc)
 
 == Advantages
 
