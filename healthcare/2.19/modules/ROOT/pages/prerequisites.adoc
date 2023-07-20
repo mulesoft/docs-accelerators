@@ -6,7 +6,7 @@ This page provides a summary of the guides available for configuring the various
 
 The following setup and configuration guides are available for this accelerator:
 
-* xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Health Cloud Setup Guide]
+* xref:sfdc-health-cloud-setup-guide.adoc[Salesforce Health Cloud Setup Guide]
 * xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
 
 Most of the implementation templates also contain details on requirements specific to those applications.
