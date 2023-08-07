@@ -1,4 +1,5 @@
 .xref:index.adoc[Life Sciences]
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
+* xref:use-case-1-clinical-trial-analytics.adoc[Use Case 1 - Clinical Trial Analytics]
 * xref:release-notes.adoc[Release Notes]
