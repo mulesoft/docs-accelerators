@@ -101,5 +101,3 @@ The following are links to related and supporting documentation:
 
 * https://developer.veevavault.com/[Veeva Vault Developer Guide]
 * https://developer-cdms.veevavault.com/api/21.3/#getting-started[Vault CDMS Rest API Guide]
-
-[back to top](#overview)
