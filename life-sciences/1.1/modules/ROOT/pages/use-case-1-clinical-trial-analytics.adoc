@@ -1,0 +1,105 @@
+= Use Case 1 - Clinical Trial Analytics
+
+_Unlock and consolidate clinical trial data into data lakes for analysis to support better coordination and more informed decision making._
+
+== Overview
+
+Clinical trials are highly complex, lengthy, and expensive. They require effective collaboration among many key stakeholders including subjects, sites, sponsors, contract research organizations (CROs), and government agencies. However, the data needed to drive successful outcomes is often siloed and inaccessible where it is needed most.
+
+This use case unlocks critical data for analysis and allows sponsors and CROs to run more efficient and intelligent clinical trials. This solution enables organizations to unify reporting and build visualizations to support their analysis of study components, including study milestones and subject outcomes. With real-time access to this information, trial operations teams are better equipped to take appropriate and timely action to accelerate a successful trial.
+
+
+Ultimately, pharmaceutical companies and their stakeholders will be able to launch new drugs and treatments faster.
+
+== Use Case Description
+
+This use case provides MuleSoft System APIs and implementation templates to surface clinical trial data from Veeva CTMS and CDMS. The data can then be stored in AWS S3 or Azure Storage Blob, as well as other preferred data lakes and warehouses. Customers leveraging AWS S3 can use the Amazon Athena Connector to organize and prepare trial data for visualization in Tableau. Customers who prefer to connect directly from Veeva to Tableau can use the Tableau System API, which leverages the https://anypoint.mulesoft.com/exchange/com.mulesoft.connectors/mule4-tableau-specialist-connector[MuleSoft Tableau Connector], to produce visualizations directly in Tableau.
+
+== Glossary
+
+|===
+|Term|Definition|Example
+|CTMS (Clinical Trial Management System)| Software system used to manage clinical trials in clinical research. Serves as a single, centralized, web-based enterprise resource to support clinical research studies. | Veeva CTMS| 
+|EDC (Electronic Data Capture)| Software system designed for the collection of clinical data in electronic format for use mainly in human clinical trials. | Veeva CDMS| 
+| FDA  (Food and Drug Administration) | Federal agency responsible for reviewing applications and approving new drugs before pharma companies are able to take them to market. | FDA |
+|Investigator| An individual who conducts a clinical investigation (that is, under whose immediate direction the drug is dispensed to a subject).| Jane Smith |
+|Sites| A site refers to the entity that coordinates and collects data from the clinical trial patients, or subjects. | Usually a hospital or clinic |
+|Studies| A clinical study involves research using human volunteers (also called participants or subjects) that is intended to add to medical knowledge. | New drug clinical study |
+|Study arm| Refers to each group or subgroup of participants in a clinical trial that receives specific interventions (or no intervention) according to the study protocol.| Study arm #1 receives 10 mg of drug. Study arm #2 receives a placebo. |
+|Subject| An individual who participates in a clinical trial either as a recipient of the investigational product or as a control. The term is part of the federal regulation and may be used interchangeably with participant. | John Doe |
+|===
+
+== High-level Architecture
+
+The following diagram represents the portion of the overall solution that pertains to the Clinical trial analytics use case:
+
+image:hls-clinical-trial-architecture.png[Architecture diagram for clinical trial analytics accelerator]
+
+== Workflow
+
+. The Clinical Trials Operations manager needs a report including study data such as subject status across different sites.
+. They seek help from IT operations staff to surface the relevant data from Veeva.
+. The IT operations staff triggers the initial full load and schedule the subsequent delta loads to sync the data from Veeva into a target system (can vary based on business requirements). The integration supports AWS S3, Azure Storage Blob, or Tableau as a target system.
+. In the initial full load process, a job is created within Veeva to prepare the study data extract. After the job status is confirmed successful within Veeva, the study data is written to the target system.
+. A business intelligence (BI) tool such as Tableau can use the published data source (if target system in step 4 is Tableau), or an appropriate connector pulls the study data from AWS or Azure systems.
+. After the study data is available in the BI tool, the Clinical Trials Operation manager can generate the required report.
+
+== Sequence Diagrams of Processing Views
+
+The diagrams below illustrate the sequence of extracting study and subject information from Veeva CTMS and CDMS.
+
+=== Clinical Trial Analytics with CTMS Study Data
+
+The clinical trial process provides a means for analytical users to surface the study data from the Veeva CTMS system and make it available in a destination system, which is either AWS or Azure. This helps an end user to create the analytical reports using the available BI tools.
+
+image:hls-clinical-trial-analytics-ctms-sequence-diagram.png[Sequence diagram for clinical trial analytics with CTMS study data]
+
+=== Clinical Trial Analytics with CDMS Study Data
+
+The clinical trial process provides a means for analytical users to surface the study data from the Veeva CDMS system and make it available in a destination system, which is either AWS or Azure. This helps an end user to create the analytical reports using the available BI tools.
+
+image:hls-clinical-trial-analytics-cdms-sequence-diagram.png[Sequence diagram for clinical trial analytics with CDMS study data]
+
+== Assumptions and Constraints
+
+The following components guide or constrain the solution design at a high level:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.extension/mule-veevavault-connector/[Vault Connector] REST API capabilities are used to surface the initial bulk study data from Veeva CTMS and CDMS systems.
+* https://developer.veevavault.com/vql/#introduction-to-vault-queries[Vault Connector VQL] capabilities are used to surface the CTMS data for incremental loads.
+* Veeva CDMS system requires extracting the entire study information in a single compressed file, which has a list of CSV-formatted files for each type of dataset.
+* Mule CDMS system API uses the https://docs.mulesoft.com/compression-module/2.2/[Compression Module] to decompress the file and extract the required dataset files.
+* AWS S3 stores the datasets, and https://aws.amazon.com/athena/[Amazon Athena] joins the datasets and creates the final view for BI consumption.
+* Azure Storage Blob stores the datasets.
+
+== Before You Begin
+
+[cols="20,80",width=100%]
+|===
+|image:bulb.png[bulb.png,width="126"]|
+https://dev-docs-internal.kqa.msap.io/beta-accelerators/accelerators-home/getting-started[Getting Started with MuleSoft Accelerators] guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+|===
+
+== Downloadable Assets
+
+To download the assets, see the Clinical Trial Analytics use case in Exchange.
+
+=== System APIs
+
+* Veeva CTMS System API | API Specification | Implementation Template
+* Veeva CDMS System API | API Specification | Implementation Template
+* AWS Storage System API | API Specification | Implementation Template
+* Azure Storage System API | API Specification | Implementation Template
+* Clinical Trials Tableau System API | API Specification | Implementation Template
+
+=== Process APIs
+
+* Clinical Trials Process API | API Specification | Implementation Template
+
+== References
+
+The following are links to related and supporting documentation:
+
+* https://developer.veevavault.com/[Veeva Vault Developer Guide]
+* https://developer-cdms.veevavault.com/api/21.3/#getting-started[Vault CDMS Rest API Guide]
+
+[back to top](#overview)
