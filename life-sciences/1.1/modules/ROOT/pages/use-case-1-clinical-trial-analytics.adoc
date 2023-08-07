@@ -73,10 +73,10 @@ The following components guide or constrain the solution design at a high level:
 
 == Before You Begin
 
-[cols="20,80",width=100%]
+[cols="10,90",width=100%]
 |===
-|image:bulb.png[Before You Begin icon, 20%, 20%]|
-https://dev-docs-internal.kqa.msap.io/beta-accelerators/accelerators-home/getting-started[Getting Started with MuleSoft Accelerators] guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+|image:bulb.png[Before You Begin icon, 100%, 100%]|
+xref::index.adoc[Getting Started with MuleSoft Accelerators] guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
 |===
 
 == Downloadable Assets
