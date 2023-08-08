@@ -2,4 +2,5 @@
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:use-case-1-clinical-trial-analytics.adoc[Use Case 1 - Clinical Trial Analytics]
+* xref:use-case-2-site-payment-modernization.adoc[[Use Case 2 - Site Payment Modernization]
 * xref:release-notes.adoc[Release Notes]
