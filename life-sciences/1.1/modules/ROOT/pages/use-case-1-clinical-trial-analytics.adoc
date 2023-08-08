@@ -17,6 +17,7 @@ This use case provides MuleSoft System APIs and implementation templates to surf
 
 == Glossary
 
+[%header%autowidth.spread]
 |===
 |Term|Definition|Example
 |CTMS (Clinical Trial Management System)| Software system used to manage clinical trials in clinical research. Serves as a single, centralized, web-based enterprise resource to support clinical research studies. | Veeva CTMS| 
