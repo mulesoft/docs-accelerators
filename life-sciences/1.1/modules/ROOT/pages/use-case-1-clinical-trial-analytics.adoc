@@ -20,14 +20,14 @@ This use case provides MuleSoft System APIs and implementation templates to surf
 [%header%autowidth.spread]
 |===
 |Term|Definition|Example
-|CTMS (Clinical Trial Management System)| Software system used to manage clinical trials in clinical research. Serves as a single, centralized, web-based enterprise resource to support clinical research studies. | Veeva CTMS| 
-|EDC (Electronic Data Capture)| Software system designed for the collection of clinical data in electronic format for use mainly in human clinical trials. | Veeva CDMS| 
-| FDA  (Food and Drug Administration) | Federal agency responsible for reviewing applications and approving new drugs before pharma companies are able to take them to market. | FDA |
-|Investigator| An individual who conducts a clinical investigation (that is, under whose immediate direction the drug is dispensed to a subject).| Jane Smith |
-|Sites| A site refers to the entity that coordinates and collects data from the clinical trial patients, or subjects. | Usually a hospital or clinic |
-|Studies| A clinical study involves research using human volunteers (also called participants or subjects) that is intended to add to medical knowledge. | New drug clinical study |
-|Study arm| Refers to each group or subgroup of participants in a clinical trial that receives specific interventions (or no intervention) according to the study protocol.| Study arm #1 receives 10 mg of drug. Study arm #2 receives a placebo. |
-|Subject| An individual who participates in a clinical trial either as a recipient of the investigational product or as a control. The term is part of the federal regulation and may be used interchangeably with participant. | John Doe |
+|CTMS (Clinical Trial Management System)| Software system used to manage clinical trials in clinical research. Serves as a single, centralized, web-based enterprise resource to support clinical research studies. | Veeva CTMS
+|EDC (Electronic Data Capture)| Software system designed for the collection of clinical data in electronic format for use mainly in human clinical trials. | Veeva CDMS
+| FDA  (Food and Drug Administration) | Federal agency responsible for reviewing applications and approving new drugs before pharma companies are able to take them to market. | FDA
+|Investigator| An individual who conducts a clinical investigation (that is, under whose immediate direction the drug is dispensed to a subject).| Jane Smith 
+|Sites| A site refers to the entity that coordinates and collects data from the clinical trial patients, or subjects. | Usually a hospital or clinic
+|Studies| A clinical study involves research using human volunteers (also called participants or subjects) that is intended to add to medical knowledge. | New drug clinical study
+|Study arm| Refers to each group or subgroup of participants in a clinical trial that receives specific interventions (or no intervention) according to the study protocol.| Study arm #1 receives 10 mg of drug. Study arm #2 receives a placebo.
+|Subject| An individual who participates in a clinical trial either as a recipient of the investigational product or as a control. The term is part of the federal regulation and may be used interchangeably with participant. | John Doe
 |===
 
 == High-level Architecture
