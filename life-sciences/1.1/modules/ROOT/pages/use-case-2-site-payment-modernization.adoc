@@ -1,0 +1,104 @@
+= Use Case 2 - Site Payment Modernization
+
+_Automate the process of paying sites for clinical trial services, saving time and reducing technical debt_
+
+== Overview
+
+While clinical trial innovations continues to advance, the typical site payment process remains cumbersome and time-consuming for both sponsors and sites. Having a modern and automated site payment process is an advantage that could aid sponsors in contracting with top sites and retaining them throughout the trial.
+
+This use case enables life sciences organizations to streamline the task of paying sites for the services they deliver during the trial. By automating this process through the use of APIs, these organizations will:
+
+* Improve sites relations and differentiate from other sponsors
+* Reduce costs associated with manual tracking or reconciliation
+* Decrease time to market of new life saving drugs
+
+== Use Case Description
+
+This use case provides the necessary API specifications and implementation templates to take site payment requests created in Veeva CTMS and generate journal entries in SAP. Once the journal entry is processed and the site has been paid, the integration powered by the MuleSoft applications will update Veeva to reflect relevant payment information.  
+
+== Glossary
+
+[%header%autowidth.spread]
+|===
+|Term|Definition|Example
+|CTMS (Clinical Trial Management System)| Software system used to manage clinical trials in clinical research. Serves as a single, centralized, web-based enterprise resource to support clinical research studies. | Veeva CTMS
+|Investigator | An individual who conducts a clinical investigation (that is, under whose immediate direction the drug is dispensed to a subject).| Jane Smith
+|Sites| A site refers to the entity that coordinates and collects data from the clinical trial patients, or subjects. | Usually a hospital or clinic
+|Studies| A clinical study involves research using human volunteers (also called participants or subjects) that is intended to add to medical knowledge. | New drug clinical study
+|Subject| An individual who participates in a clinical trial either as a recipient of the investigational product or as a control. The term is part of the federal regulation and may be used interchangeably with participant. | John Doe
+|CRO| Clinical Research Organization (CRO), is an organization contracted by another company to take the lead in managing that company's trials and complex medical testing responsibilities. | Mythical CRO
+|Journal Entry| Journal Entry is a record of a business transaction in Financial Accounting. | Invoices, Receipts, Checks
+|Vault Payments| Add-on application to Veeva Vault CTMS that provides users with the ability to configure fee templates and schedules, generate payable items, and create payment requests within existing trial management workflows.| N/A
+|Fee Schedule| Stores negotiated reimbursement rates between the sponsor/CRO and site. | N/A
+|===
+
+== High-Level Architecture
+
+The following diagram represents the portion of the overall solution that pertains to the Site payment modernization use case.
+
+<img src="https://www.mulesoft.com/ext/solutions/draft/images/hls-site-payment-modernization-architecture.png" alt="Architecture diagram for site payment modernization" width="85%" />
+
+== Workflow
+
+. The Clinical Trials Operations manager creates payment requests in Veeva CTMS comprised of payable items owed to a site. 
+. On a scheduled basis, the process is triggered to retrieve the payment request(s) with `Ready for Payment` lifecycle state from Veeva CTMS.
+. For each payment request, create a journal entry in SAP S/4HANA using the SAP S/4HANA Cloud Journal Entry API.
+. Update the payment request lifecycle state to `Extracted for Payment`.
+. User performs the necessary steps to payout the journal entry in SAP S/4HANA.
+. On a scheduled basis, which can be configured per requirements, the process is triggered to retrieve the payouts from SAP S/4HANA using the Operational Journal Entry Item API.
+. Update the payment request lifecycle state to `Payment Completed` along with the payment information.
+
+== Sequence Diagrams of Processing Views
+
+The diagrams below illustrate the sequence of site payments processing between Veeva CTMS and SAP S/4HANA.
+
+=== Create Journal Entry for Payment Requests
+
+The site payment process provides a means for pharmaceutical companies and CROs to pay sites for the services they deliver during the process of a clinical trial. The process triggers on a scheduled run, retrieves the list of payment requests that are in `Ready for Payment` lifecycle state, creates a journal entry in SAP S/4HANA and then updates the lifecycle state to `Extracted for Payment`.
+
+<img src="https://www.mulesoft.com/ext/solutions/draft/images/hls-site-payments-create-journal-entries-sequence-diagram.png" alt="Sequence diagram for creating journal entry in SAP" width="90%" />
+
+=== Update Payment Request Payout
+
+The process triggers on a scheduled run, retrieves the list of payments from SAP S/4HANA that have been cleared from last run and updates the payment details and lifecycle state to `Payment Completed`.
+
+<img src="https://www.mulesoft.com/ext/solutions/draft/images/hls-site-payments-process-cleared-payments-sequence-diagram.png" alt="Sequence diagram for updating payment details in Veeva CTMS" width="90%" />
+
+=== Assumptions and Constraints
+
+The following will be used to guide or constrain the solution design at a high level:
+
+* Vault Connector VQL capabilities are used to retrieve payment requests from the CTMS
+* Vault Connector REST API capabilities are used to update the lifecycle state and payment information into Veeva CTMS
+* This integration is triggered through the creation and approval of a payment request which is made up of payable item(s)
+* SAP S/4HANA will be used to pay study sites using SAP S/4HANA Cloud https://api.sap.com/api/JOURNALENTRYCREATEREQUESTCONFI/overview[Journal Entry and Operation Journal Entry Item^] APIs
+* The ID in Veeva CTMS Payment Request object (payment\_\_v.id) must be 16 or fewer characters due to a limit imposed on external IDs (DocumentReferenceId) in SAP
+* For further setup instructions, refer to https://anypoint.mulesoft.com/exchange/dfb8ffc8-d878-4ae3-a4ad-7d2c4424f95a/hls-site-payments-prc-api/minor/1.0/pages/Prerequisites[Site Payments Process API Prerequisites page^]
+
+== Before You Begin
+
+[cols="10,90",width=100%]
+|===
+|image:life-sciences::bulb.png[Before You Begin icon, 100%, 100%]|
+xref:accelerators-home::index.adoc[Getting Started with MuleSoft Accelerators] guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
+|===
+
+== Downloadable assets
+
+=== System APIs
+
+* Veeva CTMS System API | API Specification| Implementation Template
+* SAP Accounts Payable System API| API Specification | Implementation Template
+
+=== Process APIs
+
+* Site Payments Process API | Implementation Template
+
+== References
+
+The following are links to related and supporting documentation:
+
+* https://developer.veevavault.com/[Veeva Vault Developer Guide^]
+* https://api.sap.com/api/JOURNALENTRYCREATEREQUESTCONFI/overview[SAP S/4HANA Cloud API Reference^]
+
+
