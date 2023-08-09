@@ -79,7 +79,7 @@ The following will be used to guide or constrain the solution design at a high l
 
 [cols="10,90",width=100%]
 |===
-|image:accelerator-home::bulb.png[Before You Begin icon, 100%, 100%]|
+|image:accelerators-home::bulb.png[Before You Begin icon, 100%, 100%]|
 xref:accelerators-home::index.adoc[Getting Started with MuleSoft Accelerators] guide provides general information on getting started with the accelerator components. This includes instructions on setting up your local workstation for configuring and deploying the applications.
 |===
 
