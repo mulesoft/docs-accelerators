@@ -1,6 +1,6 @@
 = Use Case 2 - Site Payment Modernization
 
-_Automate the process of paying sites for clinical trial services, saving time and reducing technical debt_
+_Automate the process of paying sites for clinical trial services, saving time and reducing technical debt._
 
 == Overview
 
@@ -36,7 +36,7 @@ This use case provides the necessary API specifications and implementation templ
 
 The following diagram represents the portion of the overall solution that pertains to the Site payment modernization use case.
 
-<img src="https://www.mulesoft.com/ext/solutions/draft/images/hls-site-payment-modernization-architecture.png" alt="Architecture diagram for site payment modernization" width="85%" />
+image:hls-site-payment-modernization-architecture.png[Architecture diagram for site payment modernization" width="85%"]
 
 == Workflow
 
@@ -56,13 +56,13 @@ The diagrams below illustrate the sequence of site payments processing between V
 
 The site payment process provides a means for pharmaceutical companies and CROs to pay sites for the services they deliver during the process of a clinical trial. The process triggers on a scheduled run, retrieves the list of payment requests that are in `Ready for Payment` lifecycle state, creates a journal entry in SAP S/4HANA and then updates the lifecycle state to `Extracted for Payment`.
 
-<img src="https://www.mulesoft.com/ext/solutions/draft/images/hls-site-payments-create-journal-entries-sequence-diagram.png" alt="Sequence diagram for creating journal entry in SAP" width="90%" />
+image:hls-site-payments-create-journal-entries-sequence-diagram.png[Sequence diagram for creating journal entry in SAP" width="90%"]
 
 === Update Payment Request Payout
 
 The process triggers on a scheduled run, retrieves the list of payments from SAP S/4HANA that have been cleared from last run and updates the payment details and lifecycle state to `Payment Completed`.
 
-<img src="https://www.mulesoft.com/ext/solutions/draft/images/hls-site-payments-process-cleared-payments-sequence-diagram.png" alt="Sequence diagram for updating payment details in Veeva CTMS" width="90%" />
+image:hls-site-payments-process-cleared-payments-sequence-diagram.png[Sequence diagram for updating payment details in Veeva CTMS" width="90%"]
 
 === Assumptions and Constraints
 
@@ -84,6 +84,9 @@ xref:accelerators-home::index.adoc[Getting Started with MuleSoft Accelerators] g
 |===
 
 == Downloadable assets
+
+
+To download the assets, see the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site payment modernization^] use case in Exchange.
 
 === System APIs
 
