@@ -7,8 +7,8 @@ The MuleSoft Accelerator for Life Sciences helps pharmaceuticals, medical device
 
 The following describes the use cases supported by the MuleSoft Accelerator for Life Sciences:
 
-* xref:use-case-1-clinical-trial-analytics.adoc[Clinical Trial Analytics^] - Run more intelligent, data-driven trials with pre-built assets that surface relevant study and stakeholder information from Veeva. Easily consolidate this information into data lakes for analysis in business intelligence platforms like Tableau.
-* xref:use-case-2-site-payment-modernization.adoc[Site Payment Modernization^] - Streamline the clinical trial site payment process by integrating relevant study data from CTMS systems, like Veeva, to generate and transmit payments to sites.
+* xref:use-case-1-clinical-trial-analytics.adoc[Clinical Trial Analytics] - Run more intelligent, data-driven trials with pre-built assets that surface relevant study and stakeholder information from Veeva. Easily consolidate this information into data lakes for analysis in business intelligence platforms like Tableau.
+* xref:use-case-2-site-payment-modernization.adoc[Site Payment Modernization] - Streamline the clinical trial site payment process by integrating relevant study data from CTMS systems, like Veeva, to generate and transmit payments to sites.
 
 == Other Related Solutions
 
