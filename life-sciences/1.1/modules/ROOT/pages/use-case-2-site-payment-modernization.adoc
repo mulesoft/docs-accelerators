@@ -74,7 +74,7 @@ The following will be used to guide or constrain the solution design at a high l
 * This integration is triggered through the creation and approval of a payment request which is made up of payable item(s)
 * SAP S/4HANA will be used to pay study sites using SAP S/4HANA Cloud https://api.sap.com/api/JOURNALENTRYCREATEREQUESTCONFI/overview[Journal Entry and Operation Journal Entry Item^] APIs
 * The ID in Veeva CTMS Payment Request object (payment\_\_v.id) must be 16 or fewer characters due to a limit imposed on external IDs (DocumentReferenceId) in SAP
-* For further setup instructions, refer to the Site Payments Process API - Implementation Template, which can be accessed from the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site Payment Modernization use case in Exchange].
+* For further setup instructions, refer to the Site Payments Process API - Implementation Template, which can be accessed from the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%202%20-%20Site%20payment%20modernization/[Site Payment Modernization use case in Exchange^].
 
 == Before You Begin
 
