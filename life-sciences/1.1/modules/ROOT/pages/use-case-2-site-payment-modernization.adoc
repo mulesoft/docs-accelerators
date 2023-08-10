@@ -1,4 +1,5 @@
 = Use Case 2 - Site Payment Modernization
+:ls-version: {page-component-version}
 
 _Automate the process of paying sites for clinical trial services, saving time and reducing technical debt._
 
