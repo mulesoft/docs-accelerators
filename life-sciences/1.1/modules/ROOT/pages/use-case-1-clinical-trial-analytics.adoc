@@ -1,4 +1,5 @@
 = Use Case 1 - Clinical Trial Analytics
+:ls-version: {page-component-version}
 
 _Unlock and consolidate clinical trial data into data lakes for analysis to support better coordination and more informed decision-making._
 
