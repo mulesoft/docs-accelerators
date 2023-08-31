@@ -1,0 +1,133 @@
+= Release Notes
+:fins-version: {page-component-version}
+
+== v1.9
+
+*August 31, 2023*
+
+This use case introduces Thought Machine's Vault Core, which delivers an expanded view into a customer's financial account information by leveraging the Vault Core platform as the source system for the financial data leveraged as part of this use case.
+
+This use case includes pre-built APIs and templates to unlock data from Vault Core and connect that data to Salesforce Financial Services Cloud as the system of engagement. By using the pre-built assets, customers can accelerate the process of getting critical customer data into Salesforce Financial Services Cloud so that they can access financial account data and the corresponding transactions.
+
+The Vault Core platform will be used as the source system for the financial data that is leveraged as part of this use case. The Vault Core data objects will be mapped to CIM data objects.
+
+In addition, all BIAN assets that are listed as version 11 on the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/BIAN%20assets/[BIAN assets^] page in Exchange were either created or updated as part of this release.
+
+== v1.8
+
+21 March 2023
+
+This use case introduces the Salesforce org sync, which enables syncing customer profile data between Salesforce Sales Cloud, Salesforce Service Cloud and Financial Services Cloud.
+
+Since many Salesforce customers opt to implement a multi-org solution for their Salesforce instance, this means that Salesforce customers must also have an org migration strategy defined to support the sharing of data between orgs. Defining a migration org strategy is a complex activity, often requiring the assistance of a third party. This solution enables the actual movement of data between orgs, including the data objects - accounts and contacts - and the order of those objects.
+
+From a technical perspective, this release introduces major changes to the way the synchronization of customer profiles is handled. Customers will now have the ability to sync multiple reference data providers by using the runtime properties, as well as onboard any reference data provider to the sync process without making any code changes. The result is a simplified set of data synchronization processes with support for plugging in different reference data providers, such as Salesforce.
+
+In addition, this release introduces platform events to capture data changes in Salesforce.  Scripts for platform event creation and triggers are also added.
+
+=== Minor updates
+
+The following assets were updated to correct minor issues:
+
+* Support for Sales Cloud and Service Cloud in LWC Component
+* Support for patch cards in Jack Henry SilverLake
+
+== v1.7
+
+13 December 2022
+
+=== Unlocking Jack Henry SilverLake core Use Case
+
+This use case introduces the Jack Henry SilverLake core as the Core Banking system implementation, which allows customers to synchronize Salesforce Financial Services Cloud data with SilverLake.
+
+From a technical perspective, this release introduces major changes to the way the synchronization of customer profiles and financial data is being handled - particularly with respect to the management of reference data. The net result is a simplified set of data synchronization processes with support for plugging in different reference data providers (for example, Salesforce) in a future release.
+
+The generic database implementations were also migrated from a MySQL provider to MariaDB. This change makes it feasible to publish database-dependent assets to GovCloud without sacrificing support from AWS RDS.
+
+Finally, although the net impact on API implementations is minimal, it is important to note that the custom FINS data models (provided via the FINS Common Library, FINS Banking Library, and FINS Insurance Library assets) have been consolidated within the existing CIM model by introducing two new libraries: the CIM Setup Library and the CIM FINS Extension Library. This moves us closer to having a consistent canonical model that is more closely aligned with the Salesforce Customer 360 Data Model.
+
+== v1.6
+
+13 September 2022
+
+=== Optimize customer experiences with CDP Use Case
+
+This use case  provides support for ingesting data from multiple sources into Data Cloud to optimize customer experiences by using the results of Data Cloud activations by providing Customer Service Representatives (CSRs) with marketing insights
+
+=== BIAN compliant assets
+
+This solution provides BIAN-compliant assets, including API specs and implementation templates. Discover and use over 50 assets in key business domains including servicing, sales, cards, loans, and deposits.
+
+== v1.5
+
+15 July 2022
+
+=== Client onboarding - Wealth management Use Case
+
+This use case enables a streamlined and automated client onboarding solution. Wealth management client service teams will be able to reduce the risk of manual errors by integrating systems and digitizing workflows
+
+== v1.4
+
+28 April 2022
+
+=== Address change orchestration Use Case
+
+Introduces the Address change orchestration use case. There are two extensions of this use case:
+
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration: Insurance^] -- Streamline downstream events that result from policyholder or carrier postal address adjustments. The address change orchestration use case for insurance delivers a solution for address confirmation, seamless policyholder data updates, and single home policy coverage assessments, resulting in faster policyholder premium updates.
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Use case 4b - Address change orchestration: Banking^] -- Enhance your customer service teams`' upsell, cross-sell, and service opportunities that result from customer postal code address changes. The address change orchestration  use case for banking supports faster address validation and increased customer service opportunities, including personalized products and offers.
+
+== v1.3
+
+21 March 2022
+
+=== Minor updates
+
+A few assets were updated to correct minor issues, including:
+
+* Database creation scripts
+* Visualizer layer assignments
+* Documentation updates
+
+28 January 2022
+
+=== Payments modernization Use Case
+
+Introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%203%20-%20Payments%20modernization/[Payments modernization^] use case, which accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
+
+== v1.2
+
+16 November 2021
+
+=== Core banking enhancements
+
+This release includes the following enhancements:
+
+* Added more information to both the customer accounts sync and customer onboarding use cases
+* Added credit card functionality
+* Added full two-way synchronization capabilities between customer accounts, transactions, and credit cards
+
+See the xref:upgrade-notes.adoc[Upgrade notes] for more information.
+
+== v1.1
+
+09 September 2021
+
+=== Customer onboarding Use Case
+
+Introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer onboarding - Banking^] use case, which allows leverages Salesforce Financial Services Cloud as the system of engagement, DocuSign as the document management system, and Equifax as the credit analysis system.
+
+== v1.0
+
+27 July 2021
+
+=== Initial release
+
+This is the first release of the MuleSoft Accelerator for Financial Services.
+
+This accelerator also introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core banking foundation^] use case, which allows for the display of a customer's financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
+
+== See Also
+
+* xref:upgrade-notes.adoc[Upgrade Notes]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]
