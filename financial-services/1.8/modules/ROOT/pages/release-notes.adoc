@@ -5,7 +5,7 @@
 
 *August 31, 2023*
 
-This use case introduces Thought Machine's Vault Core, which delivers an expanded view into a customer's financial account information by leveraging the Vault Core platform as the source system for the financial data leveraged as part of this use case.
+This use case introduces Thought Machine's Vault Core, which delivers an expanded view into a customer's financial account information, including profile data and transactions, using Thought Machine's Vault Core banking platform.
 
 This use case includes pre-built APIs and templates to unlock data from Vault Core and connect that data to Salesforce Financial Services Cloud as the system of engagement. By using the pre-built assets, customers can accelerate the process of getting critical customer data into Salesforce Financial Services Cloud so that they can access financial account data and the corresponding transactions.
 
