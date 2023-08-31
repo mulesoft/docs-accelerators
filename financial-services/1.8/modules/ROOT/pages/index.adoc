@@ -9,10 +9,7 @@ MuleSoft Accelerator for Financial Services simplifies customer 360 initiatives 
 The Core Banking Foundation use case enables a 360 view of your customers' financial information. There are two variations of this use case: one to jumpstart the unlocking of any core, and one to unlock a specific core.
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201a%20-%20Unlock%20any%20core/[Unlock any core^] - Unlock and display financial summaries from multiple systems.
-
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201b%20-%20Unlock%20Jack%20Henry%20SilverLake%20core/[Unlock Jack Henry SilverLake core^] - Accelerate the delivery of your customer 360 initiatives by unlocking your Jack Henry SilverLake core.
-
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201c%20-%20Unlock%20Thought%20Machine%20Vault%20Core[Unlock Thought Machine Vault Core] - Accelerate time to value by unlocking critical customer data from Thought Machine's Vault Core.
 
 === Onboarding
 
