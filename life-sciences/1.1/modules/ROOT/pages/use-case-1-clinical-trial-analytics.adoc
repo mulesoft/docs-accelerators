@@ -83,7 +83,7 @@ xref:accelerators-home::index.adoc[Getting Started with MuleSoft Accelerators] g
 
 == Downloadable Assets
 
-To download the assets, see the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/minor/{ls-version}/pages/Use%20case%201%20-%20Clinical%20trial%20analytics/[Clinical Trial Analytics^] use case in Exchange.
+To download the assets, see the https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/coc-cxh/Use%20case%201%20-%20Clinical%20trial%20analytics/[Clinical Trial Analytics^] use case in Exchange.
 
 === System APIs
 
