@@ -1,0 +1,6 @@
+name: consumer-goods
+title: Consumer Goods
+version: '4.0'
+display_version: '4.0'
+nav:
+- modules/ROOT/nav.adoc
