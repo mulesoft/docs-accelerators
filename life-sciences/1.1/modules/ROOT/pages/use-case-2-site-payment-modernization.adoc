@@ -3,6 +3,8 @@
 
 _Automate the process of paying sites for clinical trial services, saving time and reducing technical debt._
 
+To access the the downloadable assets for this use case, visit https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/mo2-pvc/Use%20case%202%20-%20Site%20payment%20modernization/[Use case 2 - Site payment modernization] in Exchange.
+
 == Overview
 
 While clinical trial innovations continues to advance, the typical site payment process remains cumbersome and time-consuming for both sponsors and sites. Having a modern and automated site payment process is an advantage that could aid sponsors in contracting with top sites and retaining them throughout the trial.

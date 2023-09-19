@@ -3,6 +3,8 @@
 
 _Unlock and consolidate clinical trial data into data lakes for analysis to support better coordination and more informed decision-making._
 
+To access the the downloadable assets for this use case, visit https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/coc-cxh/Use%20case%201%20-%20Clinical%20trial%20analytics/[Use case 1 - Clinical trial analytics] in Exchange.
+
 == Overview
 
 Clinical trials are highly complex, lengthy, and expensive. They require effective collaboration among many key stakeholders including subjects, sites, sponsors, contract research organizations (CROs), and government agencies. However, the data needed to drive successful outcomes is often siloed and inaccessible where it is needed most.
