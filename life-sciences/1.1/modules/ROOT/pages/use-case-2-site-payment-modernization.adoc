@@ -88,7 +88,7 @@ xref:accelerators-home::index.adoc[Getting Started with MuleSoft Accelerators] g
 
 == Downloadable assets
 
-To download the assets, see the https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/mo2-pvc/Use%20case%202%20-%20Site%20payment%20modernization/[Site Payment Modernization^] use case in Exchange.
+To download the assets, visit the https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/mo2-pvc/Use%20case%202%20-%20Site%20payment%20modernization/[Site Payment Modernization^] use case in Exchange.
 
 === System APIs
 
