@@ -1,0 +1,6 @@
+name: healthcare
+title: Healthcare
+version: '2.20'
+display_version: '2.20'
+nav:
+- modules/ROOT/nav.adoc
