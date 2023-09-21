@@ -3,7 +3,7 @@
 
 _Automate the process of paying sites for clinical trial services, saving time and reducing technical debt._
 
-Visit https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/mo2-pvc/Use%20case%202%20-%20Site%20payment%20modernization/[Exchange] to access the downloadable assets for this use case.
+Visit https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/mo2-pvc/Use%20case%202%20-%20Site%20payment%20modernization/[Exchange^] to access the downloadable assets for this use case.
 
 == Overview
 
