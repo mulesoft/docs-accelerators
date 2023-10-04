@@ -1,0 +1,16 @@
+= Prerequisites for MuleSoft Accelerator for Consumer Goods
+
+This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
+
+== Available Guides
+
+The following setup and configuration guides are available for this accelerator:
+
+* xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup Guide]
+
+Most of the implementation templates also contain details on requirements specific to those applications.
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:index.adoc[MuleSoft Accelerator for Consumer Goods]
