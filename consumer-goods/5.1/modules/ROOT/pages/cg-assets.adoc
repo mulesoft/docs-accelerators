@@ -1,0 +1,81 @@
+= Available Assets
+
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
+
+== System APIs
+
+[cols="40,30,30",width=100%]
+|===
+| MDM System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-mdm-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-mdm-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Products System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-products-sys-api/[Implementation Template^]
+
+| RCG Salesforce Consumer Goods Cloud System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-cgcloud-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-cgcloud-sys-api/[Implementation Template^]
+
+| SAP S/4HANA Customers System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-customers-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-saphana-customers-sys-api/[Implementation Template^]
+
+| RCG Salsify Products System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-products-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-products-sys-api/[Implementation Template^]
+
+| RCG Trax System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-trax-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-trax-sys-api/[Implementation Template^]
+
+| RCG Hyperforce System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-hyperforce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-hyperforce-sys-api/[Implementation Template^]
+
+| RCG Salesforce Volume Management System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salesforce-volume-mgmt-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-sfdc-volume-mgmt-sys-api/[Implementation Template^]
+
+| RCG CRM Analytics System API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-crma-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-crma-sys-api/[Implementation Template^]
+|===
+
+== Process APIs
+
+[cols="40,30,30",width=100%]
+|===
+| RCG Products Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-products-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-products-prc-api/[Implementation Template^]
+
+| RCG Customers Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-customers-prc-api/[Implementation Template^]
+
+| RCG Store Audit Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-store-audit-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-store-audit-prc-api/[Implementation Template^]
+
+| RCG Data Normalization Process API
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-data-normalization-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-data-normalization-prc-api/[Implementation Template^]
+|===
+
+== Listener Applications
+
+[cols="70,30",width=100%]
+|===
+| Salsify Channel Listener
+| https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-salsify-channel-listener/[Implementation Template^]
+|===
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::common-services.adoc[Accelerator Common Services]
+* xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Consumer Goods]
