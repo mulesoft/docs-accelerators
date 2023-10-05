@@ -9,7 +9,7 @@
 
 This release includes updates to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case.
 
-In this release, we are excited to introduce core business components that are crucial for setting up foundational data for Retail Execution in Salesforce Consumer Goods Cloud. These components include Customer Role, Customer Relationship, Customer Org Unit, Org Unit, and Customer Manager for Account objects. Additionally, we've added Unit of Measure and Product Condition features for Product objects. This enhancement greatly facilitates the integration of core data from ERP systems such as SAP into Salesforce Consumer Goods Cloud.
+This release introduces core business components that are crucial for setting up foundational data for Retail Execution in Salesforce Consumer Goods Cloud. These components include Customer Role, Customer Relationship, Customer Org Unit, Org Unit, and Customer Manager for Account objects. Additionally, Unit of Measure and Product Condition features for Product objects have been added. This enhancement facilitates the integration of core data from ERP systems, such as SAP, into Salesforce Consumer Goods Cloud.
 
 Furthermore, we're pleased to announce significant integrations between ERP systems and Salesforce Consumer Goods Cloud, particularly for Customer Planning and Forecasting. This integration will streamline and enhance the planning and forecasting processes, providing a more seamless experience for our users.
 
