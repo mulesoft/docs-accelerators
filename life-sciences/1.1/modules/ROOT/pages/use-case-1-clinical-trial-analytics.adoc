@@ -11,7 +11,6 @@ Clinical trials are highly complex, lengthy, and expensive. They require effecti
 
 This use case unlocks critical data for analysis and allows sponsors and CROs to run more efficient and intelligent clinical trials. This solution enables organizations to unify reporting and build visualizations to support their analysis of study components, including study milestones and subject outcomes. With real-time access to this information, trial operations teams are better equipped to take appropriate and timely action to accelerate a successful trial.
 
-
 Ultimately, pharmaceutical companies and their stakeholders will be able to launch new drugs and treatments faster.
 
 == Use Case Description
@@ -86,18 +85,6 @@ xref:accelerators-home::index.adoc[Getting Started with MuleSoft Accelerators] g
 == Downloadable Assets
 
 To download the assets, see the https://anypoint.mulesoft.com/exchange/9de0920c-0ee1-450a-9d38-12d43fe82cdb/life-sciences-use-case-migration-demo/minor/1.0/draft/pages/coc-cxh/Use%20case%201%20-%20Clinical%20trial%20analytics/[Clinical Trial Analytics^] use case in Exchange.
-
-=== System APIs
-
-* Veeva CTMS System API | API Specification | Implementation Template
-* Veeva CDMS System API | API Specification | Implementation Template
-* AWS Storage System API | API Specification | Implementation Template
-* Azure Storage System API | API Specification | Implementation Template
-* Clinical Trials Tableau System API | API Specification | Implementation Template
-
-=== Process APIs
-
-* Clinical Trials Process API | API Specification | Implementation Template
 
 == References
 
