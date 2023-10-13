@@ -10,7 +10,7 @@ To access any of the asset links described within the following Accelerators, yo
 
 [%header,cols="10a,30a,60a"]
 |===
-.^|image:cg-icon.png[Consumer Goods,25%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Consumer Goods] .^| Helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution.
+.^|image:cg-icon.png[Consumer Goods,100%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Consumer Goods] .^| Helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution.
 .^|image:dc-icon.png[Data Cloud,25%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Data Cloud] .^| Enable organizations to easily unlock and connect core systems of record for Data Cloud.
 .^|image:fs-icon.png[Financial Services,25%] .^| xref:1.9@financial-services::index.adoc[MuleSoft Accelerator for Financial Services] .^| Simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data.
 .^|image:hc-icon.png[Healthcare,25%] .^| xref:2.20@healthcare::index.adoc[MuleSoft Accelerator for Healthcare] .^| Equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey.
