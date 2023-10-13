@@ -8,7 +8,7 @@ Accelerators are designed as modular building blocks: customers can change the p
 
 To access any of the asset links described within the following Accelerators, you must log in to https://anypoint.mulesoft.com/home/[Anypoint Platform^].
 
-[%autowidth.spread]
+[%header,cols="10a,30a,60a"]
 |===
 .^|image:cg-icon.png[Consumer Goods,25%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Consumer Goods] .^| Helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution.
 .^|image:dc-icon.png[Data Cloud,25%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Data Cloud] .^| Enable organizations to easily unlock and connect core systems of record for Data Cloud.
