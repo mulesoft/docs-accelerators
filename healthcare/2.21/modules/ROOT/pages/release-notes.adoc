@@ -7,7 +7,7 @@
 
 The following updates are includes in this release:
 
-* Launched a new version of the FHIR RAML autogenerator to improve representation of key FHIR concepts in generated RAML specification, including support for descriptions and notes, constraining cardinality, element flags, linking to relevant value sets, extensions, and slicing.
+* Launched a new version of the FHIR JSON-to-RAML autogenerator to improve representation of key FHIR concepts in generated RAML specification, including support for descriptions and notes, constraining cardinality, element flags, linking to relevant value sets, extensions, and slicing.
 * Upgraded all implementation templates to leverage new API specifications published in MuleSoft Accelerator for Healthcare 2.20 and the latest version of the parent POM.
 
 == 2.20
