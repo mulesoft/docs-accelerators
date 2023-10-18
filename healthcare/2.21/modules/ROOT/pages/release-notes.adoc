@@ -3,7 +3,7 @@
 
 == 2.21
 
-*October , 2023*
+*October 12, 2023*
 
 The following updates are includes in this release:
 
