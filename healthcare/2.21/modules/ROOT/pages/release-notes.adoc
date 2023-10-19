@@ -5,7 +5,7 @@
 
 *October 12, 2023*
 
-The following updates are includes in this release:
+The following updates are included in this release:
 
 * Launched a new version of the FHIR JSON-to-RAML autogenerator to improve representation of key FHIR concepts in generated RAML specification, including support for descriptions and notes, constraining cardinality, element flags, linking to relevant value sets, extensions, and slicing.
 * Upgraded all implementation templates to leverage new API specifications published in MuleSoft Accelerator for Healthcare 2.20 and the latest version of the parent POM.
