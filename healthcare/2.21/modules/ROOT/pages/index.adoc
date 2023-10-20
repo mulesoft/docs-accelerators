@@ -1,0 +1,35 @@
+= MuleSoft Accelerator for Healthcare
+:hls-version: {page-component-version}
+
+The MuleSoft Accelerator for Healthcare equips Payer, Provider, and Life Sciences organizations with foundational assets to accelerate their digital transformation journey. With our pre-built APIs, connectors, implementation templates, and reference architectures, IT teams can spend more time innovating rather than building from scratch.
+
+For solutions related to life sciences, the xref:life-sciences::index.adoc[MuleSoft Accelerator for Life Sciences] helps pharmaceuticals, medical device companies, and contract research organizations (CROs) integrate digital operations and get their products to market faster.
+
+== Use Cases
+
+The following describes the use cases supported by the MuleSoft Accelerator for Healthcare:
+
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%201%20-%20Patient%20360/[Patient 360^] — This use case accelerates Patient 360 efforts by providing pre-built APIs and implementation templates to integrate critical data from EHRs with other emerging technologies and applications. This solution provides both HL7 v2 and FHIR-based capabilities to allow organizations to support a variety of use cases and realize value regardless of the industry standard that is present in their organization's ecosystem.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%202%20-%20CMS%20Interoperability/[CMS Interoperability^] — Includes assets to help you meet CMS Interoperability and Patient Access final rule.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%203%20-%20Labs%20integration/[Labs integration^] — Includes the The Electronic Laboratory Reporting (ELR) to CalREDIE implementation template, which helps you transmit laboratory reports that identify a notifiable condition to public health agencies (for example, California Department of Public Health).
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%204%20-%20Appointment%20scheduling/[Appointment scheduling^] — Includes the Appointment Scheduling Process API for both Cerner and Epic, which enables call center agents to schedule, update, and cancel appointments on behalf of the patient. See the implementation template for more information.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%205%20-%20Benefits%20and%20eligibility%20verification/[Benefits and eligibility verification^] — Enables call center agents and care staff to perform real-time benefits and eligibility verification. Providers can electronically verify a patient's insurance coverage in real-time for medical treatment directly within Salesforce Health Cloud.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%206%20-%20Prior%20Authorization/[Prior Authorization^] — Includes CRD, DTR, and PAS API specifications and implementation templates to automate the prior authorization process for more immediate authorizations, leading to better outcomes and increased satisfaction for patients, providers, and payers.
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management^] -  Convert and surface valuable population health data into Amazon HealthLake to improve clinical outcomes.
+
+=== Use Case Agnostic Assets
+
+The following use-case agnostic assets are also available:
+
+* xref:fhir-r4-assets.adoc[FHIR R4 assets] — Start your journey using these FHIR-based APIs. Includes links to additional use-case agnostic assets (resources, libraries, and APIs), as well as an API Policy that you can use to format error messages in an FHIR-compliant format.
+* xref:hl7-v2-fhir-converter.adoc[HL7 v2 to FHIR converter] — The converter comes with a ready to use template for HL7 v2 to FHIR conversion, which is based on the guidance provided by the HL7 v2 to FHIR Implementation Guide. This template can be extended or modified to meet specific conversion requirements.
+* xref:x12-fhir-converter.adoc[X12 to FHIR converter] — The converter comes with a ready to use template for FHIR to X12 conversion. This template can be extended or modified to meet specific conversion requirements.
+* xref:ccda-fhir-converter.adoc[C-CDA to FHIR converter] — The converter comes with a ready to use template for CDA to FHIR conversion. This template can be extended or modified to meet specific conversion requirements.
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:fhir-r4-assets.adoc[Available Assets]
+* xref:release-notes.adoc[Release Notes]
+* https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare on Exchange^]
