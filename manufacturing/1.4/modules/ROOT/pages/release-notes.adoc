@@ -5,7 +5,7 @@
 
 *October 23, 2023*
 
-The Run-rate Business Management use case is updated to remove the dependency on MDM and optimize it for direct integration between ERP and CRM systems, such as connecting SAP S/4HANA data to Salesforce Manufacturing Cloud. As part of this change, the use case name is changed to https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Account%20and%20product%20and%20order%20sync/[Account and product and order sync^].
+The Run-rate Business Management use case is updated to remove the dependency on MDM and optimize it for direct integration between ERP and CRM systems, such as connecting SAP S/4HANA data to Salesforce Manufacturing Cloud. As part of this update, the use case name is changed to https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Account%20and%20product%20and%20order%20sync/[Account and product and order sync^].
 
 == v1.2
 
