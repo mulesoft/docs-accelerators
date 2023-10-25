@@ -1,0 +1,6 @@
+name: manufacturing
+title: Manufacturing
+version: '1.4'
+display_version: '1.4'
+nav:
+- modules/ROOT/nav.adoc
