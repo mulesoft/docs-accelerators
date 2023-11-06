@@ -6,5 +6,4 @@
 ** xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
 ** xref:sfdc-fsc-setup-guide.adoc[Salesforce Financial Services Cloud Setup Guide]
 ** xref:sfdc-mc-setup-guide.adoc[Salesforce Marketing Cloud Setup Guide]
-* xref:release-notes.adoc[Release Notes]
 * xref:upgrade-notes.adoc[Upgrade Notes]
