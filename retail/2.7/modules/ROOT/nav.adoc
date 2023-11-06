@@ -9,4 +9,3 @@
 ** xref:sfdc-customization-guide.adoc[Salesforce Customization Guide]
 ** xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
 * xref:cim-mappings.adoc[Object Mappings]
-* xref:release-notes.adoc[Release Notes]
