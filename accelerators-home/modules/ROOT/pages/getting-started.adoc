@@ -1,6 +1,6 @@
 = Getting Started with MuleSoft Accelerators
 
-This guide will help you configure your local build environment to ensure success in downloading, modifying, and deploying accelerator assets.
+This guide helps you configure your local build environment to download, modify, and deploy accelerator assets successfully.
 
 == Quick Start
 
@@ -31,32 +31,34 @@ All accelerator assets are available from the main Anypoint Exchange site and ar
 
 The following instructions assume you have already configured your Maven `settings.xml` file according to the xref:build-environment.adoc[build environment configuration] guide.
 
-==== Import Directly from Anypoint Exchange
+==== Import Directly from Anypoint Studio or Import from Anypoint Code Builder
 
 All accelerator templates can be imported into Anypoint Studio directly from Exchange if your Anypoint credentials have been provided; refer to the Studio documentation for more details.
 
-* From Studio, open the Exchange window (typically the second toolbar button from the left)
-* If prompted, login to Anypoint Exchange
-* Select the `Provided by MuleSoft` view (top-left)
-* Click the `Asset type` selector to the left of the `Search` field and choose `Templates`
-* Copy and paste the title of this API into the `Search` field and press `Enter`
-* Click on the desired result to open the home page for the asset
-* Click on the `Open` icon (top-right) to import the asset into the current workspace
+* From Studio, open the Exchange window (typically the second toolbar button from the left).
+* If prompted, log in to Anypoint Exchange.
+* Select the `Provided by MuleSoft` view (top-left).
+* Click the *Asset type* selector to the left of the *Search* field and choose *Templates*.
+* Copy and paste the title of this API into the *Search* field and press *Enter* on your keyboard.
+* Click on the desired result to open the home page for the asset.
+* Click on the *Open* icon (top-right) to import the asset into the current workspace.
 
 If it appears, you can safely cancel out of the `Update your Workspace` dialog as well as the subsequent `Are you sure?` prompt: our templates will work correctly with or without the suggested changes.
 
-==== Download and Import Manually
+To import from Anypoint Code Builder, visit xref:code-builder::int-import-mule-project.adoc[Importing Projects into the IDE].
+
+==== Download and Import Manually to Anypoint Studio
 
 The following instructions assume you are viewing this page from your browser:
 
-* Click the `Download` button (top-right) and save the template archive to your local file system
-* In Studio, ensure the current perspective is set to `Mule Design`
-* Right-click in an empty area in the `Package Explorer` and select `+Import...+`
-* In the select dialog, expand the `Anypoint Studio` folder
-* Choose the `Packaged mule application (.jar)` option and click `Next >`
-* Enter the full path name of the downloaded jar file or select from the file browser
-* Remove the version and `mule-application-template` suffixes from the project name, if desired
-* Click `Finish` to import the project
+* Click the *Download* button (top-right) and save the template archive to your local file system.
+* In Studio, ensure the current perspective is set to `Mule Design`.
+* Right-click in an empty area in the `Package Explorer` and select *+Import...+*.
+* In the select dialog, expand the *Anypoint Studio* folder.
+* Choose the `Packaged mule application (.jar)` option and click *Next >*.
+* Enter the full path name of the downloaded jar file or select from the file browser.
+* Remove the version and `mule-application-template` suffixes from the project name, if desired.
+* Click *Finish* to import the project.
 
 As above, you can safely cancel out of the `Update your Workspace` dialog, if prompted.
 
