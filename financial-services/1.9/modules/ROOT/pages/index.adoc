@@ -50,6 +50,6 @@ The following *use-case agnostic* assets are also available:
 
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
-* xref:release-notes.adoc[Release Notes]
+* xref:release-notes::financial-services/financial-services-release-notes.adoc[MuleSoft Accelerator for Financial Services Release Notes]
 * xref:upgrade-notes.adoc[Upgrade Notes]
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services on Exchange^]
