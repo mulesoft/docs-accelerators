@@ -25,7 +25,7 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
-* xref:release-notes::consumer-goods/consumer-goods-release-notes.adoc[MuleSoft Accelerator for Consumer Goods Release Notes]
+* xref:release-notes.adoc[Release Notes]
 * https://anypoint.mulesoft.com/exchange//mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods on Exchange^]
 * xref:release-notes::mule-runtime/mule-esb.adoc[Mule Runtime Release Notes]
 
