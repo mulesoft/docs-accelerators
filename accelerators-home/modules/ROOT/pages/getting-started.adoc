@@ -31,7 +31,9 @@ All accelerator assets are available from the main Anypoint Exchange site and ar
 
 The following instructions assume you have already configured your Maven `settings.xml` file according to the xref:build-environment.adoc[build environment configuration] guide.
 
-==== Import Directly from Anypoint Studio or Import from Anypoint Code Builder
+==== Import Directly into Anypoint Studio
+
+===== Import from Exchange
 
 All accelerator templates can be imported into Anypoint Studio directly from Exchange if your Anypoint credentials have been provided; refer to the Studio documentation for more details.
 
@@ -45,9 +47,7 @@ All accelerator templates can be imported into Anypoint Studio directly from Exc
 
 If it appears, you can safely cancel out of the `Update your Workspace` dialog as well as the subsequent `Are you sure?` prompt: our templates will work correctly with or without the suggested changes.
 
-To import from Anypoint Code Builder, visit xref:code-builder::int-import-mule-project.adoc[Importing Projects into the IDE].
-
-==== Download and Import Manually to Anypoint Studio
+===== Download and Import Manually to Anypoint Studio
 
 The following instructions assume you are viewing this page from your browser:
 
@@ -61,6 +61,10 @@ The following instructions assume you are viewing this page from your browser:
 * Click *Finish* to import the project.
 
 As above, you can safely cancel out of the `Update your Workspace` dialog, if prompted.
+
+==== Import into Anypoint Code Builder
+
+To import into Anypoint Code Builder, visit xref:code-builder::int-import-mule-project.adoc[Importing Projects into the IDE].
 
 === Next Steps
 
