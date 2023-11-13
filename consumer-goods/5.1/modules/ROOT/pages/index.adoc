@@ -7,7 +7,7 @@ MuleSoft Accelerator for Consumer Goods helps consumer goods companies integrate
 
 === Product and Account Integration with Hierarchies
 
-The https://anypoint.mulesoft.com/exchange//mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case surfaces relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidate this information into Trade Promotion Management (TPM) platforms like Salesforce Consumer Goods Cloud for informed promotional planning.
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case surfaces relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidate this information into Trade Promotion Management (TPM) platforms like Salesforce Consumer Goods Cloud for informed promotional planning.
 
 === Retail Execution
 
@@ -26,4 +26,4 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange//mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods on Exchange^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods on Exchange^]

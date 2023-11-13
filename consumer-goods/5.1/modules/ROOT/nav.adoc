@@ -2,4 +2,3 @@
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup Guide]
-* xref:release-notes.adoc[Release Notes]

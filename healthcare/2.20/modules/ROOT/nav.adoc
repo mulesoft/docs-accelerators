@@ -10,4 +10,3 @@
 ** xref:hl7-v2-fhir-converter.adoc[HL7 v2 to FHIR Converter]
 ** xref:smart-fhir-okta.adoc[SMART on FHIR with Okta]
 ** xref:x12-fhir-converter.adoc[X12 to FHIR Converter]
-* xref:release-notes.adoc[Release Notes]
