@@ -37,13 +37,13 @@ The following instructions assume you have already configured your Maven `settin
 
 All accelerator templates can be imported into Anypoint Studio directly from Exchange if your Anypoint credentials have been provided; refer to the Studio documentation for more details.
 
-* From Studio, open the Exchange window (typically the second toolbar button from the left).
+* From Studio, open the Exchange window.
 * If prompted, log in to Anypoint Exchange.
-* Select the `Provided by MuleSoft` view (top-left).
-* Click the *Asset type* selector to the left of the *Search* field and choose *Templates*.
+* Select the `Provided by MuleSoft` view.
+* Click the *Asset type* selector, and then choose *Templates*.
 * Copy and paste the title of this API into the *Search* field and press *Enter* on your keyboard.
 * Click on the desired result to open the home page for the asset.
-* Click on the *Open* icon (top-right) to import the asset into the current workspace.
+* Click on the *Open* icon to import the asset into the current workspace.
 
 If it appears, you can safely cancel out of the `Update your Workspace` dialog as well as the subsequent `Are you sure?` prompt: our templates will work correctly with or without the suggested changes.
 
@@ -51,7 +51,7 @@ If it appears, you can safely cancel out of the `Update your Workspace` dialog a
 
 The following instructions assume you are viewing this page from your browser:
 
-* Click the *Download* button (top-right) and save the template archive to your local file system.
+* Click the *Download* button and save the template archive to your local file system.
 * In Studio, ensure the current perspective is set to `Mule Design`.
 * Right-click in an empty area in the `Package Explorer` and select *+Import...+*.
 * In the select dialog, expand the *Anypoint Studio* folder.
