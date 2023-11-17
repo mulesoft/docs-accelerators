@@ -1,4 +1,3 @@
 .xref:index.adoc[Life Sciences]
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
-* xref:release-notes.adoc[Release Notes]
