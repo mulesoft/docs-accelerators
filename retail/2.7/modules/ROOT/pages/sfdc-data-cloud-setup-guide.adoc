@@ -235,7 +235,7 @@ Anypoint Connector for Salesforce CDP (Data Cloud Connector) provides customers 
 
 This connector works with the Data Cloud Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
 
-Refer to this https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[link] for details on configuration and operations for Data Cloud Connector.
+Refer to this https://dev-docs-internal.kqa.msap.io/beta-accelerators/salesforce-cdp-connector/1.0/[link] for details on configuration and operations for Data Cloud Connector.
 
 For the "Personalization with CDP" use case, refer CDP System API specification and implementation template.
 
