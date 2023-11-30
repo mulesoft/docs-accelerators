@@ -178,11 +178,7 @@ As part of your Connected App set up for Ingestion API, you must select the foll
 
 The MuleSoft Connector for CDP provides customers a pipeline to send data into Data Cloud. This connector works with the Data Cloud Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
 
-<<<<<<< HEAD
 Refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/salesforce-cdp-connector/1.1/[CDP Connector documentation] for additional details on configuration and available operations.
-=======
-Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.1/[CDP Connector documentation] for additional details on configuration and available operations.
->>>>>>> 2da1e04 (Update financial-services/1.8/modules/ROOT/pages/sfdc-fsc-setup-guide.adoc)
 
 For the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case, refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api-spec/[HLS CDP System API] specification and https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-salesforce-cdp-sys-api[HLS CDP System API] implementation template assets.
 
