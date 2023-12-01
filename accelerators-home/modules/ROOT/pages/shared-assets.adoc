@@ -10,7 +10,7 @@ The following RAML libraries are available for use in all API specifications.
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/api-libraries-fragment.adoc[]
 
 EU Exchange::
@@ -20,7 +20,7 @@ include::_partials/api-libraries-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/api-libraries-fragment.adoc[]
 ====
 
@@ -42,7 +42,7 @@ include::_partials/system-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/system-apis-fragment.adoc[]
 ====
 
@@ -64,7 +64,7 @@ include::_partials/process-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/process-apis-fragment.adoc[]
 ====
 
@@ -86,7 +86,7 @@ include::_partials/experience-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/experience-apis-fragment.adoc[]
 ====
 
@@ -108,7 +108,7 @@ include::_partials/integrations-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/integrations-fragment.adoc[]
 ====
 
@@ -130,7 +130,7 @@ include::_partials/shared-components-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/shared-components-fragment.adoc[]
 ====
 
