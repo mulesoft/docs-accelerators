@@ -7,7 +7,7 @@
 
 === Updates to the Trade Promotion Effectiveness Use Case
 
-This release includes updates to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203b%20-%20Trade%20promotion%20effectiveness/[Trade Promotion Effectiveness^] use case, which helps visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
+This release includes updates to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203b%20-%20Trade%20promotion%20effectiveness/[Trade Promotion Effectiveness^] use case, which helps visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
 
 
 
@@ -16,28 +16,28 @@ This release includes updates to the https://anypoint.mulesoft.com/exchange/org.
 
 === New use case
 
-This release includes the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203b%20-%20Trade%20promotion%20effectiveness/[Trade promotion effectiveness^] use case, which helps visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
+This release includes the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203b%20-%20Trade%20promotion%20effectiveness/[Trade promotion effectiveness^] use case, which helps visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
 
 == v2.0
 25 October 2022
 
 === New use case
 
-This release includes the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%202%20-%20Retail%20execution/[Retail Execution^] use case, which unlocks shelf data to enable perfect retail execution with pre-built assets and lets retailers access store audit data from image recognition software, like Trax, and integrate smoothly into a Retail Execution platform, such as Salesforce Consumer Goods Cloud, to monitor at shelf performance in one platform.
+This release includes the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%202%20-%20Retail%20execution/[Retail Execution^] use case, which unlocks shelf data to enable perfect retail execution with pre-built assets and lets retailers access store audit data from image recognition software, like Trax, and integrate smoothly into a Retail Execution platform, such as Salesforce Consumer Goods Cloud, to monitor at shelf performance in one platform.
  
 == v1.1
 17 September 2022
 
 === Updates to the Product and Account Integration with Hierarchies
 
-This release includes updates to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case, which synchronizes relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidates this information into Trade Promotion Management (TPM) platforms, like Salesforce Consumer Goods Cloud, in real time for informed promotional planning.
+This release includes updates to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case, which synchronizes relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidates this information into Trade Promotion Management (TPM) platforms, like Salesforce Consumer Goods Cloud, in real time for informed promotional planning.
 
 == v1.0
 18 July 2022
 
 === New use case
 
-This release includes the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case, which synchronizes relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidates this information into Trade Promotion Management (TPM) platforms, like Salesforce Consumer Goods Cloud, for informed promotional planning.
+This release includes the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case, which synchronizes relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidates this information into Trade Promotion Management (TPM) platforms, like Salesforce Consumer Goods Cloud, for informed promotional planning.
 
 == See Also
 
