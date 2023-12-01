@@ -26,5 +26,5 @@ The following are links to related and supporting documentation:
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:ls-assets.adoc[Available Assets]
-* xref:release-notes.adoc[Release Notes]
+* xref:release-notes::accelerators/life-sciences/life-sciences-release-notes.adoc[Release Notes]
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences on Exchange^]

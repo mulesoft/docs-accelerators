@@ -8,11 +8,7 @@ MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers
 
 The following use cases are supported by the MuleSoft Accelerator for Manufacturing:
 
-<<<<<<< HEAD
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Account%20and%20product%20and%20order%20sync/[Account and product and order sync^] — Streamline account forecasts by connecting critical account, product, and order data from your ERP to CRM. This example will show how to accomplish this using SAP S/4HANA and Salesforce Manufacturing Cloud.
-=======
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%201%20-%20Account%20and%20product%20and%20order%20sync/["Account and product and order sync"^] — Streamline account forecasts by connecting critical account, product, and order data from your ERP to CRM. This example will show how to accomplish this using SAP S/4HANA and Salesforce Manufacturing Cloud.
->>>>>>> 6a7d363 (beta branch updates mfg 1.4)
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/minor/{mfg-version}/pages/Use%20case%202%20-%20Sales%20rebate%20management/[Sales rebate management^] — This solution seamlessly syncs customer and sales order data between SAP and Salesforce Manufacturing Cloud, and creates a credit memo in SAP in line with program guidelines and calculations.
 
@@ -31,9 +27,5 @@ The following use cases provided by the https://anypoint.mulesoft.com/exchange/0
 
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
-<<<<<<< HEAD
 * xref:release-notes::accelerators/manufacturing/manufacturing-release-notes.adoc[Release Notes]
-=======
-* xref:release-notes.adoc[Release Notes]
->>>>>>> 6a7d363 (beta branch updates mfg 1.4)
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing on Exchange^]

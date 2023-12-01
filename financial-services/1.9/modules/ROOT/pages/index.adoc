@@ -10,11 +10,7 @@ The Core Banking Foundation use case enables a 360 view of your customers' finan
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201a%20-%20Unlock%20any%20core/[Unlock any core^] - Unlock and display financial summaries from multiple systems.
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201b%20-%20Unlock%20Jack%20Henry%20SilverLake%20core/[Unlock Jack Henry SilverLake core^] - Accelerate the delivery of your customer 360 initiatives by unlocking your Jack Henry SilverLake core.
-<<<<<<< HEAD
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201c%20-%20Unlock%20Thought%20Machine%20Vault%20Core[Unlock Thought Machine Vault Core] - Accelerate the delivery of your customer 360 initiatives by unlocking your Thought Machine Vault Core.
-=======
-* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201c%20-%20Unlock%20Thought%20Machine%20Vault%20Core[Unlock Thought Machine Vault Core] - Accelerate the delivery of your customer 360 initiatives by unlocking your Thought Machine Vault Core.
->>>>>>> bf823a5 (add fins 1.9 to beta)
 
 === Onboarding
 

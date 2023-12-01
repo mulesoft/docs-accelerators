@@ -83,7 +83,11 @@ Follow the steps below to setup and configure an ingestion API to push data from
 . Click `New`, enter a name for the API source (for example, 'FINS_Banking-Data-Connector'), then click `Save`.
 . On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. +
 *Note:* Ingestion API schemas have set requirements - review the schema requirements below if having issues uploading the schema.
+<<<<<<< Updated upstream
 . Click `Upload Schema` and navigate to the location of the file you want to use. Select the file and click Open. For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the schema file `mule-cdp-connector-schema.yaml` is available under `src/test/resources/cdp-schema` of the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-snowflake-financial-sys-api[FINS Salesforce CDP System API^] implementation template.
+=======
+. Click `Upload Schema` and navigate to the location of the file you want to use. Select the file and click Open. For the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the schema file `mule-cdp-connector-schema.yaml` is available under `src/test/resources/cdp-schema` of the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] implementation template.
+>>>>>>> Stashed changes
 . Preview all the detected objects and their attributes in your schema.
 . Click `Save`.
 
