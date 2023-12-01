@@ -31,5 +31,5 @@ The following use-case agnostic assets are also available:
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:fhir-r4-assets.adoc[Available Assets]
-* xref:release-notes.adoc[Release Notes]
+* xref:release-notes::accelerators/healthcare/healthcare-release-notes.adoc[Release Notes]
 * https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare on Exchange^]
