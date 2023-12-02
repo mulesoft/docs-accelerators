@@ -8,7 +8,7 @@ Accelerators are designed as modular building blocks: customers can change the p
 
 To access any of the asset links described within the following Accelerators, you must log in to https://anypoint.mulesoft.com/home/[Anypoint Platform^].
 
-[%autowidth.spread]
+[cols="10a,30a,60a"]
 |===
 .^|image:cg-icon.png[Consumer Goods,100%] .^| xref:5.1@consumer-goods::index.adoc[MuleSoft Accelerator for Consumer Goods] .^| Helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution.
 .^|image:dc-icon.png[Data Cloud,100%] .^| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-datacloud/[MuleSoft Accelerator for Data Cloud^] .^| Enable organizations to easily unlock and connect core systems of record for Data Cloud.
@@ -20,7 +20,7 @@ To access any of the asset links described within the following Accelerators, yo
 .^|image:sap-icon.png[SAP,100%] .^| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-sap/[MuleSoft Accelerator for SAP^] .^| Enable organizations to easily expose SAP ERP data for consumption by all.
 |===
 
-If you have any questions or feedback, let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^], and submit ideas on the https://ideas.salesforce.com/[Salesforce Ideas Portal^].
+If you have any questions or feedback, let us know at solutions-questions@mulesoft.com. You can also engage with other users on the https://help.mulesoft.com/s/forum[MuleSoft Forum^] and submit ideas on the https://ideas.salesforce.com/[Salesforce Ideas Portal^].
 
 == See Also
 

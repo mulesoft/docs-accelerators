@@ -1,16 +1,16 @@
 = Application Testing
 
-All application projects include MUnit test suites, which provide basic unit test cases, and functional tests, defined in a Postman collection.
+All application projects include MUnit test suites, which provide basic unit test cases and functional tests defined in a Postman collection.
 
 == Postman Tests
 
-For running the Postman collections you will need to download and install the latest Postman release from https://www.postman.com/downloads/[^]. A Postman account is required to launch and run tetsts.
+For running the Postman collections you will need to download and install the latest Postman release from https://www.postman.com/downloads/[^]. A Postman account is required to launch and run tests.
 
-Before importing the project collection into your Postman workspace you will need to set up an environment specifically for running Accelerator test collections. In the `accelerator-common-resources` project there is a pre-defined environment file under the `testing` folder. Import this file into Postman and update the variables to reflect your own settings.
+Before importing the project collection into your Postman workspace you will need to set up an environment specifically for running Accelerator test collections. In the `accelerator-common-resources` project, there is a pre-defined environment file under the `testing` folder. Import this file into Postman and update the variables to reflect your own settings.
 
 == MUnit Tests
 
-From the command line, running any Maven goal that includes the testing phase will automatically execute the MUnit tests. This includes the goals `test`, `package` and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (for example, `mvn package -DskipTests`). Note: case matters.
+From the command line, running any Maven goal that includes the testing phase automatically executes the MUnit tests. This includes the goals `test`, `package`, and `deploy`. To avoid running the MUnit tests, specify either `-DskipMunitTests` or `-DskipTests` on the Maven command line (for example, `mvn package -DskipTests`). Case matters when specifying the values.
 
 == See Also
 

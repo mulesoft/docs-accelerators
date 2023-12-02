@@ -1,5 +1,5 @@
 = Salesforce Data Cloud Setup Guide
-:hls-version: 2.18
+:hls-version: 2.19
 
 The following provides guidance on Salesforce Data Cloud setup required for the https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population Health Management] use case.
 
