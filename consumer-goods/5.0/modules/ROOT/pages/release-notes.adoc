@@ -2,7 +2,7 @@
 :cg-version: 5.0
 
 == 5.0
-*Sep 19, 2023*
+*September 19, 2023*
 
 === New use case
 

@@ -9,23 +9,23 @@ Many templates can also be run from Anypoint Studio without having to customize 
 The following instructions are for running applications from Studio but apply to debugging as well.
 
 . Update the `src/main/resources/config/config-local.yaml` file and provide appropriate values for any mandatory property overrides listed for that application.
-. Right-click the project and select `+Run As -> Mule Application (configure)+`
-. If hidden deployment properties are required (for example, Anypoint MQ credentials), select the `Arguments` tab and add the property definitions to the `VM arguments` section. For example:
+. Right-click the project and select *Run As -> Mule Application (configure)*
+. If hidden deployment properties are required (for example, Anypoint MQ credentials), select the *Arguments* tab and add the property definitions to the *VM arguments* section as shown in the following example.
 +
 ----
  -M-Danypoint-mq.client-id=<client id> -M-Danypoint-mq.client-secret=<client secret>
 ----
 
- ** Click `Run` to launch the application.
+ ** Click *Run* to launch the application.
 
-To debug an application, choose `+Debug As -> Mule Application (configure)+` in the second step instead.
+To debug an application, choose *Debug As -> Mule Application (configure)* in the second step instead.
 
 == Deployment Instructions for CloudHub
 
 The following instructions apply to CloudHub deployments only.
 
 . Update the `config-dev.yaml` properties as described above. You can also choose to add them to your `settings.xml` file instead.
-. Use one of the following scripts to deploy application to CloudHub:
+. Use one of the following scripts to deploy the application to CloudHub:
  ** `packageDeploy.sh` (Mac/Linux) or `packageDeploy.cmd` (Windows) - clean, build, and deploy the application
  ** `deployOnly.sh` (Mac/Linux) or `deployOnly.cmd` (Windows) - deploy a previously-built application
 . Bring up the Runtime Manager console in Anypoint and monitor the application for proper startup.
@@ -112,7 +112,8 @@ The default `settings-accelerators.xml` file, provided by the "Accelerator Commo
 | no
 |===
 
-Note that the above template is generic: many accelerators provide their own version of the common resources project, which will contain a similar template specialized for that accelerator.
+[NOTE]
+The template described previously is generic. Many accelerators provide their own version of the common resources project, which contains a similar template specialized for that accelerator.
 
 === Application Naming
 
@@ -125,7 +126,8 @@ The default setting for the `cloudhub.applicationName` property constructs the a
 
 An example of a deployed application name using the default settings is `org-notifications-prc-api-v1-dev`.
 
-*Important note*: Since CloudHub application names must be _globally_ unique, it is highly recommended to set the `global.cloudhub.appPrefix` property (defined in the `global-settings` profile) to a short, 2-4 character abbreviation unique to your organization. Do not exceed 4 characters or deployments may fail when using the CloudHub 1.0 runtime (see below).
+[IMPORTANT] 
+CloudHub application names must be _globally_ unique. Therefore, we highly recommended you set the `global.cloudhub.appPrefix` property, which is defined in the `global-settings` profile, to a 2-4 character abbreviation unique to your organization. Exceeding four characters may cause deployments to fail when using the CloudHub 1.0 runtime (see below).
 
 === Deploying Applications Using Maven Profiles
 
@@ -133,11 +135,11 @@ Once appropriate values have been defined for the properties for the environment
 
 == Troubleshooting
 
-The following sections provide some solutions to common deployment issues.
+The following sections provide solutions to common deployment issues.
 
 === Error Deploying Project Imported into Anypoint Studio
 
-If you choose to import accelerator projects into Anypoint Studio, be aware that Studio may automatically make modifications to the application `pom.xml` files, which could impact deployment. In particular, be sure to cancel the prompt to "Upgrade your workspace" when importing projects. If you run into trouble, check the `pom.xml` file and verify the configuration of the `mule-maven-plugin` looks something like this:
+If you choose to import accelerator projects into Anypoint Studio, be aware that Studio may automatically make modifications to the application `pom.xml` files, which could impact deployment. In particular, be sure to cancel the prompt to "Upgrade your workspace" when importing projects. If you run into trouble, check the `pom.xml` file and verify the configuration of the `mule-maven-plugin` looks something like the following:
 
 ----
 <plugin>
@@ -153,11 +155,11 @@ If you choose to import accelerator projects into Anypoint Studio, be aware that
 </plugin>
 ----
 
-Make sure there is no `<version>` element included, and that the `<classifier>` element contains the property reference indicated above.
+Make sure there is no `<version>` element included and that the `<classifier>` element contains the property reference indicated above.
 
 === Unauthorized Error
 
-If deployment fails due to an `unauthorized` error, it is possible that the complete application name exceeds the 42 character limit on CloudHub deployment names. Adjust either the prefix, the `artifactId` value in the project pom.xml, or the deployment name pattern to ensure the complete application name does not exceed 42 characters in length.
+If deployment fails due to an `unauthorized` error, it is possible that the complete application name exceeds the 42 character limit on CloudHub deployment names. Adjust the prefix, the `artifactId` value in the project pom.xml, or the deployment name pattern to ensure the complete application name does not exceed 42 characters in length.
 
 == See Also
 

@@ -1,0 +1,1 @@
+include::release-notes::partial$accelerators/accelerators-rn-landing-page.adoc[tags=!excludeacceldesc]
