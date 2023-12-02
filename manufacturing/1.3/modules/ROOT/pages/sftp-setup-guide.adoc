@@ -6,7 +6,7 @@ This setup guide enables customers to upload existing customer, product, and ord
 
 _Load data to Manufacturing Cloud_
 
-image::https://www.mulesoft.com/ext/solutions/images/mfg-data-load.png[mfg-data-load]
+image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-data-load.png[mfg-data-load]
 
 === Functional Considerations
 

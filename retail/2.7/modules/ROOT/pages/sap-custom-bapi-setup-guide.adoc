@@ -5,7 +5,7 @@
 The following provides guidance on how to use the custom BAPI code (for example, `ZBAPI_CUSTOMER_V3`) for your SAP instance.
 
 [NOTE]
-You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync from SAP^] use case.
+You must complete the following instructions before deploying the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{retail-version}/pages/Use%20case%201%20-%20Customer%20profile%20sync/[Customer profile sync from SAP^] use case.
 
 == BAPI custom objects
 
@@ -61,7 +61,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | Object | How to create
 
 | `Z_MASTER_ID`
-| image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_01.png[sfc-retail-com-bapi_01.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_01.png[sfc-retail-com-bapi_01.png,599]
 |===
 
 [[creating-structures]]
@@ -72,19 +72,19 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | Object | How to create
 
 | `ZSTR_PERSON`
-| image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-01.1.png[retail-2.2-bapi-01.1.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.1.png[retail-2.2-bapi-01.1.png,599]
 
 | `ZSTR_ORGANIZATION`
-| image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-01.2.png[retail-2.2-bapi-01.2.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.2.png[retail-2.2-bapi-01.2.png,599]
 
 | `ZSTR_GROUP`
-| image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-01.3.png[retail-2.2-bapi-01.3.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.3.png[retail-2.2-bapi-01.3.png,599]
 
 | `ZES_CUSTOMER`
-| image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-01.4.png[retail-2.2-bapi-01.4.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.4.png[retail-2.2-bapi-01.4.png,599]
 
 | `ZES_CONTROLDATA`
-| image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-01.5.png[retail-2.2-bapi-01.5.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-01.5.png[retail-2.2-bapi-01.5.png,599]
 |===
 
 [[creating-table-types]]
@@ -95,7 +95,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | Object | How to create
 
 | `ZTY_CUSTOMER`
-| image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_05.png[sfc-retail-com-bapi_05.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_05.png[sfc-retail-com-bapi_05.png,599]
 |===
 
 [[creating-transparent-tables]]
@@ -106,7 +106,7 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 | Object | How to create
 
 | `ZTT_CUSTOMER`
-| image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-05.1.png[retail-2.2-bapi-05.1.png,599]
+| image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-05.1.png[retail-2.2-bapi-05.1.png,599]
 |===
 
 {blank}
@@ -123,91 +123,91 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 . Create the function group "ZFG_CUSTOMER_V3".
 . Create the function module "ZBAPI_CUSTOMER_V3", using "Remote-enable module" as processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_06.png[sfc-retail-com-bapi_06.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_06.png[sfc-retail-com-bapi_06.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_07.png[sfc-retail-com-bapi_07.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_07.png[sfc-retail-com-bapi_07.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_08.png[sfc-retail-com-bapi_08.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_08.png[sfc-retail-com-bapi_08.png,599]
 . Copy and paste the code from "ZBAPI_CUSTOMER_V3.txt".
 . Create the function module "ZBAPI_CUSTOMER_CREATE_V3":
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_09.png[sfc-retail-com-bapi_09.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_09.png[sfc-retail-com-bapi_09.png,399]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-09.1.png[retail-2.2-bapi-09.1.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-09.1.png[retail-2.2-bapi-09.1.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_11.png[sfc-retail-com-bapi_11.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_11.png[sfc-retail-com-bapi_11.png,599]
 . Copy and paste the code from "ZBAPI_CUSTOMER_CREATE_V3.txt".
 . Create the function module "ZBAPI_CUSTOMER_CUSTOM_FLDS_V3":
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_15.png[sfc-retail-com-bapi_15.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_15.png[sfc-retail-com-bapi_15.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-15.1.png[retail-2.2-bapi-15.1.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-15.1.png[retail-2.2-bapi-15.1.png,399]
 . Copy and paste the code from "ZBAPI_CUSTOMER_CUSTOM_FIELDS_V3.txt".
 . Create the function module "ZBAPI_CUSTOMER_UPDATE_V3":
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_12.png[sfc-retail-com-bapi_12.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_12.png[sfc-retail-com-bapi_12.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-12.1.png[retail-2.2-bapi-12.1.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-12.1.png[retail-2.2-bapi-12.1.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-12.2.png[retail-2.2-bapi-12.2.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-12.2.png[retail-2.2-bapi-12.2.png,599]
 . Copy and paste the code from "ZBAPI_CUSTOMER_UPDATE_V3.txt".
 . Create the function module "ZBAPI_QUERY_V3", using "Remote-enable module" as processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_36.png[sfc-retail-com-bapi_36.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_36.png[sfc-retail-com-bapi_36.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-36.1.png[retail-2.2-bapi-36.1.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-36.1.png[retail-2.2-bapi-36.1.png,399]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_22.png[sfc-retail-com-bapi_22.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_22.png[sfc-retail-com-bapi_22.png,399]
 . Copy and paste the code from "ZBAPI_QUERY_V3.txt".
 . Create the function module "ZBAPI_CONTROL_DATA_V3":
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_21.png[sfc-retail-com-bapi_21.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_21.png[sfc-retail-com-bapi_21.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_24.png[sfc-retail-com-bapi_24.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_24.png[sfc-retail-com-bapi_24.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_19.png[sfc-retail-com-bapi_19.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_19.png[sfc-retail-com-bapi_19.png,599]
 . Copy the source code from "ZBAPI_CONTROL_DATA_V3.txt".
 . Activate the entire function group by right-clicking on it in the tree and then selecting "Activate":
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_35.png[sfc-retail-com-bapi_35.png,301]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_35.png[sfc-retail-com-bapi_35.png,301]
 . Create the function group "ZFG_CUSTOMER2".
 . Create the function module "ZBAPI_ADDR_QUERY", using "Remote-enable module" as processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_17.png[sfc-retail-com-bapi_17.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_17.png[sfc-retail-com-bapi_17.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_20.png[sfc-retail-com-bapi_20.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_20.png[sfc-retail-com-bapi_20.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/sfc-retail-com-bapi_22.png[sfc-retail-com-bapi_22.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-retail-com-bapi_22.png[sfc-retail-com-bapi_22.png,399]
 . Copy and paste the code from "ZBAPI_ADDR_QUERY.txt".
 . Create the function module "ZBAPI_CONTROL_DATA" using the import parameters as follows:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-22.1.png[retail-2.2-bapi-22.1.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-22.1.png[retail-2.2-bapi-22.1.png,599]
 . Use the export parameters as in the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-22.2.png[retail-2.2-bapi-22.2.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-22.2.png[retail-2.2-bapi-22.2.png,599]
 . Copy the source code from "ZBAPI_CONTROL_DATA.txt".
 . Activate the entire function group by right-clicking on it in the tree and selecting 'Activate':
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-22.3.png[retail-2.2-bapi-22.3.png,301]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-22.3.png[retail-2.2-bapi-22.3.png,301]
 . Complete the following:
 . Create a customer group ZSME (*Logistics - General\->Business Partner\->Customer\->Control\->Define and Assign Customer Number Ranges*)
 . Create a partner group ZSME (*Cross-Application Components\->SAP Business Partner\->Business Partner\->Basic Settings\->Number Ranges and Settings*) from the transaction SPRO
 . Synchronize them from the same transaction (*Cross-Application Components\->Master Data Synchronization\->Customer/Vendor Integration\->Business Partner Settings\->Settings for Customer Integration\->Assign Keys\->Define Number Assignment for Direction BP to Customer*)
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-22.4.png[retail-2.2-bapi-22.4.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-22.4.png[retail-2.2-bapi-22.4.png,599]
 
 ==== *More ZBAPI modules*
 
@@ -222,52 +222,52 @@ To create ABAP custom objects, groups, and modules:
 
 . Create the same dictionary objects created for the BAPI `ZBAPI_CUSTOMER` using the following structure/table type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-51.png[retail-2.2-bapi-51.png,599]
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-52.png[retail-2.2-bapi-52.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-51.png[retail-2.2-bapi-51.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-52.png[retail-2.2-bapi-52.png,599]
 . Create the function group `ZFG_CUSTOMER2`.
 . Create the function module `ZBAPI_ADDR_QUERY` using 'Remote-enable module' as the processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-53.png[retail-2.2-bapi-53.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-53.png[retail-2.2-bapi-53.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-54.png[retail-2.2-bapi-54.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-54.png[retail-2.2-bapi-54.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-55.png[retail-2.2-bapi-55.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-55.png[retail-2.2-bapi-55.png,399]
 . Copy and paste the code from 'ZBAPI_ADDR_QUERY.txt'.
 . Create the function module `ZBAPI_ADDR_SAP` using 'Remote-enable module' as the processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-56.png[retail-2.2-bapi-56.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-56.png[retail-2.2-bapi-56.png,599]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-57.png[retail-2.2-bapi-57.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-57.png[retail-2.2-bapi-57.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-58.png[retail-2.2-bapi-58.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-58.png[retail-2.2-bapi-58.png,599]
 . Copy and paste the code from 'ZBAPI_QUERY_SAP.txt'.
 . Create the function module `ZBAPI_CUST_QUERY` using 'Remote-enable module' as the processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-59.png[retail-2.2-bapi-59.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-59.png[retail-2.2-bapi-59.png,399]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-60.png[retail-2.2-bapi-60.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-60.png[retail-2.2-bapi-60.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-61.png[retail-2.2-bapi-61.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-61.png[retail-2.2-bapi-61.png,599]
 . Copy and paste the code from 'ZBAPI_CUST_QUERY.txt'.
 . Create the function module `ZBAPI_CUSTOMER_CD` using 'Remote-enable module' as the processing type:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-62.png[retail-2.2-bapi-62.png,399]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-62.png[retail-2.2-bapi-62.png,399]
 . Complete the import parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-63.png[retail-2.2-bapi-63.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-63.png[retail-2.2-bapi-63.png,599]
 . Complete the export parameters with the following:
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-64.png[retail-2.2-bapi-64.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-64.png[retail-2.2-bapi-64.png,599]
 . Copy and paste the code from 'ZBAPI_CUSTOMER_CD.txt'.
 . Activate the entire function group by right-clicking on it in the tree and selecting 'Activate':
  +
-image:https://www.mulesoft.com/ext/solutions/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301]
+image:https://www.mulesoft.com/ext/solutions/draft/images/retail-2.2-bapi-65.png[retail-2.2-bapi-65.png,301]
 
 == See Also 
 

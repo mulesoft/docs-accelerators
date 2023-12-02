@@ -8,7 +8,7 @@ The following provides guidance on Salesforce Data Cloud setup required for the 
 . Click the Setup icon and then `Data Cloud Setup`. If you don't see this option, either refresh your page or log out and back in with your admin user credentials.
 . Click `Get Started`. Setup can take a few minutes. Your Data Cloud instance is considered as successfully set up if you see a green tick mark for all the steps. If not, correct the issue and finish the setup.
 
-image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-cdp-provisioning.png[rcg-cdp-setup-cdp-provisioning.png,599]
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-cdp-provisioning.png[rcg-cdp-setup-cdp-provisioning.png,599]
 
 == Connect Data
 
@@ -212,7 +212,7 @@ Anypoint Connector for Salesforce CDP (Data Cloud Connector) provides customers 
 
 This connector works with the Data Cloud Bulk and Streaming API, depending on the operation you configure. Each API call uses a request/response pattern over an HTTPS connection. All required request headers, error handling, and HTTPS connection configurations are built into the connector.
 
-Refer to this https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[link] for details on configuration and operations for Data Cloud Connector.
+Refer to this https://dev-docs-internal.kqa.msap.io/beta-accelerators/salesforce-cdp-connector/1.0/[link] for details on configuration and operations for Data Cloud Connector.
 
 For the "Personalization with CDP" use case, refer CDP System API specification and implementation template.
 
@@ -242,11 +242,11 @@ For the "Personalization with CDP" use case, we mapped to Custom DMO for our Mul
 
 ==== Data Mapping
 
-image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-custom-dmo-webengagement.png[rcg-cdp-setup-custom-dmo-webengagement.png,599]
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-custom-dmo-webengagement.png[rcg-cdp-setup-custom-dmo-webengagement.png,599]
 
 ==== Data Relationships
 
-image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-webengagement-data-relationships.png[rcg-cdp-setup-webengagement-data-relationships.png,599]
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-webengagement-data-relationships.png[rcg-cdp-setup-webengagement-data-relationships.png,599]
 
 == Identity Resolution
 
@@ -261,9 +261,9 @@ Access Identity Resolution from Data Cloud after mapping entities to the CIM. En
 
 For the `Personalization with CDP` use case, we are leveraging the Fuzzy Name and Normalized Email Match Rule; leveraging Fuzzy First Name, Exact Last Name, and Normalized Email Address.
 
-image:https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-identity-match-rules.png[rcg-cdp-setup-identity-match-rules.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-identity-match-rules.png[rcg-cdp-setup-identity-match-rules.png,599]
 
-image:https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-identity-match-rules-criteria.png[rcg-cdp-setup-identity-match-rules-criteria.png,599]
+image:https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-identity-match-rules-criteria.png[rcg-cdp-setup-identity-match-rules-criteria.png,599]
 
 To create your Identity Resolution Rules, follow the steps below:
 
@@ -303,7 +303,7 @@ Segment On: Segment On defines the target entity (object) used to build your seg
 
 For the "Personalization with CDP" use case, we have created a few Segments. All Segments that we have created have been segmented on Unified Individual. For this segment, we wanted to create an audience wherein there were no Web Page Views in the last 365 Days. We grabbed updated Date from our Attribute Library and dragged it to the canvas. And for the operator we selected "Greater Than Last Number of Days" and entered "365" for the number of days. In the *Publish Schedule* field, we select a schedule of every 24 hours.
 
-image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-segment-nowebpageviews.png[rcg-cdp-setup-segment-nowebpageviews.png,599]
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-segment-nowebpageviews.png[rcg-cdp-setup-segment-nowebpageviews.png,599]
 
 === Activation Targets
 
@@ -423,7 +423,7 @@ For the "Personalization with CDP" use case, we created Calculated Insights to g
 
 Once created, Calculated Insights are available in the Attribute Library. You can also confirm and validate Calculated Insights via Data Explorer.
 
-image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-calculated-insights.png[rcg-cdp-setup-calculated-insights.png,399]
+image::https://www.mulesoft.com/ext/solutions/draft/images/rcg-cdp-setup-calculated-insights.png[rcg-cdp-setup-calculated-insights.png,399]
 
 == See Also 
 

@@ -22,7 +22,7 @@ The following fields must be created in the corresponding objects.
 
 == Anypoint MQ Configuration
 
-The Anypoint-MQ-Queues-Exchanges Postman collection in the https://anypoint.mulesoft.com/exchange/org.mule.examples/mfg-common-resources-src/[MFG Common Resources project^] will pre-create all MQ destinations required by the accelerator components.
+The Anypoint-MQ-Queues-Exchanges Postman collection in the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mfg-common-resources-src/[MFG Common Resources project^] will pre-create all MQ destinations required by the accelerator components.
 
 The collection requires the dev environment template to be imported into your Postman workspace and assigned proper values first. The following MQ destinations will be created upon successful execution.
 
@@ -54,7 +54,7 @@ For communication arrangement SAP_COM_0287 to replicate the sales orders pricing
 . Enter the *Communication arrangement* app to edit or create the arrangement.
 . At outbound services sections, complete with the following:
 
-image::https://www.mulesoft.com/ext/solutions/images/mfg-saphana-setup-1.png[Configure SAP_COM_0287]
+image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-saphana-setup-1.png[Configure SAP_COM_0287]
 == Custom Fields
 
 Create the following fields in the corresponding objects for the use case:

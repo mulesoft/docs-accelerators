@@ -10,7 +10,7 @@ The following RAML libraries are available for use in all API specifications.
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/api-libraries-fragment.adoc[]
 
 EU Exchange::
@@ -20,7 +20,7 @@ include::_partials/api-libraries-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/api-libraries-fragment.adoc[]
 ====
 
@@ -32,7 +32,7 @@ The following APIs are used by multiple accelerators to access and manage data i
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/system-apis-fragment.adoc[]
 
 EU Exchange::
@@ -42,7 +42,7 @@ include::_partials/system-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/system-apis-fragment.adoc[]
 ====
 
@@ -54,7 +54,7 @@ The following APIs represent the reusable business processes that are leveraged 
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/process-apis-fragment.adoc[]
 
 EU Exchange::
@@ -64,7 +64,7 @@ include::_partials/process-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/process-apis-fragment.adoc[]
 ====
 
@@ -76,7 +76,7 @@ The following APIs provide tailor-made endpoints for specific applications to co
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/experience-apis-fragment.adoc[]
 
 EU Exchange::
@@ -86,7 +86,7 @@ include::_partials/experience-apis-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/experience-apis-fragment.adoc[]
 ====
 
@@ -98,7 +98,7 @@ The following applications provide key integrations but do not expose any APIs a
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/integrations-fragment.adoc[]
 
 EU Exchange::
@@ -108,7 +108,7 @@ include::_partials/integrations-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/integrations-fragment.adoc[]
 ====
 
@@ -120,7 +120,7 @@ The following non-application components are also used by multiple accelerators.
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/shared-components-fragment.adoc[]
 
 EU Exchange::
@@ -130,7 +130,7 @@ include::_partials/shared-components-fragment.adoc[]
 
 GovCloud Exchange::
 +
-:anypoint-url: gov.anypoint.mulesoft.com/exchange/org.mule.examples
+:anypoint-url: gov.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
 include::_partials/shared-components-fragment.adoc[]
 ====
 

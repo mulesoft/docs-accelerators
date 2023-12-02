@@ -21,13 +21,13 @@
 . Click on *File* tab, select *Import Workbook* and browse `mfg-tableau-workorders-exp-api/src/main/resources/workbook/FactoryEquipmentDashboard.twbx` file and click on the *Open* button.
 . Edit Amazon Redshift connection details.
 
-image::https://www.mulesoft.com/ext/solutions/images/mfg-edit-redshift.png[mfg-edit-redshift.png]
+image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-edit-redshift.png[mfg-edit-redshift.png]
 
 == Steps to create work order
 
 . In the *Submit a Work Order* dialogue box, the user can manage the Priority, Machine Id and provide a Reason to submit a work order. +
  +
- image:https://www.mulesoft.com/ext/solutions/images/mfg-submit-work-order.png[mfg-submit-work-order.png] +
+ image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-submit-work-order.png[mfg-submit-work-order.png] +
 . Click on *Create Work Order* which will create a case in Service Cloud.
 
 == Steps to Publish Workbook into Tableau Online.
@@ -35,7 +35,7 @@ image::https://www.mulesoft.com/ext/solutions/images/mfg-edit-redshift.png[mfg-e
 . Click on *Server* and select *Publish Workbook*.
 . Click on *Connect*, enter email address and password to sign in. +
  +
-image:https://www.mulesoft.com/ext/solutions/images/mfg-tableau-online-publish.png[mfg-tableau-online-publish.png] +
+image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-publish.png[mfg-tableau-online-publish.png] +
  +
 . In the *Publish Workbook to Tableau Online* window, complete the *Name* and *Description* fields.
 . Click on the *Publish* button.
@@ -45,14 +45,14 @@ image:https://www.mulesoft.com/ext/solutions/images/mfg-tableau-online-publish.p
 . Login into https://sso.online.tableau.com/public/idp/SSO[Tableau Online]
 . Click on *Watch* and select *Alerts* +
  +
-image:https://www.mulesoft.com/ext/solutions/images/mfg-tableau-online-alert.png[mfg-tableau-online-alert.png] +
+image:https://www.mulesoft.com/ext/solutions/draft/images/mfg-tableau-online-alert.png[mfg-tableau-online-alert.png] +
  +
 . Click on the *Create* button on the right side which opens the 'Create Alert' dialogue box.
 . Users can select the condition and threshold and users can provide the subject details and select the alert condition (for example, daily).
 . Users can provide the recipient details in the *Recipients* field and click on *Create Alert*.
 . An alert will be sent to the recipient.
 
-image::https://www.mulesoft.com/ext/solutions/images/mfg-email-alert.png[mfg-email-alert.png]
+image::https://www.mulesoft.com/ext/solutions/draft/images/mfg-email-alert.png[mfg-email-alert.png]
 
 == See Also
 

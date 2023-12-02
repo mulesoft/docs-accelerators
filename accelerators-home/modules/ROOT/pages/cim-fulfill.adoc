@@ -8,11 +8,11 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Shipment
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/Shipment.png[alt="Shipment Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-shipment.png"]
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Shipment.png[alt="Shipment Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-shipment.png"]
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fulfill-library[CIM Fulill Library^]
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-fulfill-library[CIM Fulill Library^]
 
 == See Also
 
