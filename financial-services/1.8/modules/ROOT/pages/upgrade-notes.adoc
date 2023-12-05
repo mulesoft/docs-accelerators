@@ -142,16 +142,7 @@ The following tests can be done to ensure proper deployment of all components fo
 * Repeat these tests for financial accounts, transactions, and cards in FSC.
 * Repeat the above steps for customers, accounts, transactions, and cards in Core Banking.
 * Walk through the Loan Origination scenario and ensure customer and loan account are properly created in FSC, Core Banking, and MDM.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 51b0e25 (Updated FINS version)
 
 == See Also
 
 * xref:index.adoc[MuleSoft Accelerator for Financial Services]
-<<<<<<< HEAD
->>>>>>> 97bb809 (Squashing unverified commits from the beta branch)
-=======
->>>>>>> 51b0e25 (Updated FINS version)

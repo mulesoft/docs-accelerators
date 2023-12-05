@@ -87,7 +87,7 @@ ij> alter table Order_Header alter column external_Id set data type varchar(100)
 ij> exit;
 ----
 
-Restart OFBiz to pick up the change.
+Restart OFBiz to pick up the changes.
 
 == See Also 
 

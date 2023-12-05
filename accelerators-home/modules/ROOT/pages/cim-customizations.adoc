@@ -32,10 +32,10 @@ The core CIM model continues to evolve and expand. When one or more accelerator 
 The primary objective of creating CIM type extensions is to re-introduce type composition - in a controlled fashion - to make original core types "whole" for applications that need them. The following rules applied to all core types for which one or more properties had composition removed to reduce external dependencies:
 
 * Only types published by the main file for the corresponding subject area library can be extended.
-* Composition may be re-introduced only for core properties that were originally modified to be strings only (i.e., no unions) due to dependencies on external entities.
-* Composition may NOT be re-introduced where it would create cyclical or infinite references (e.g., a reference to self).
-* All extended type names will be the name of the core parent type suffixed with `Ext` (e.g., `ProductExt`).
-* Similarly, all properties added to extended types will include the suffix `Ext` for clarity and to avoid name collisions (e.g., `productTypeExt`).
+* Composition may be re-introduced only for core properties that were originally modified to be strings only (no unions) due to dependencies on external entities.
+* Composition may NOT be re-introduced where it would create cyclical or infinite references (for example, a reference to self).
+* All extended type names will be the name of the core parent type suffixed with `Ext` (for example, `ProductExt`).
+* Similarly, all properties added to extended types will include the suffix `Ext` for clarity and to avoid name collisions (for example, `productTypeExt`).
 * All properties added to extended types must be made optional.
 * Extensions may include references to core types defined in other subject areas but NOT extended types.
 * Similarly, extended type libraries may reference core type libraries but NOT extended type libraries.

@@ -145,12 +145,4 @@ The following tests can be done to ensure proper deployment of all components fo
 
 == See Also
 
-<<<<<<< HEAD
-<<<<<<<< HEAD:financial-services/1.9/modules/ROOT/pages/upgrade-notes.adoc
 * xref:index.adoc[MuleSoft Accelerator for Financial Services]
-========
-* xref:fins-landing-page.adoc[MuleSoft Accelerator for Financial Services]
->>>>>>>> 1148e9a (Update common-services.adoc):modules/ROOT/pages/fins/fins-upgrade-notes.adoc
-=======
-* xref:index.adoc[MuleSoft Accelerator for Financial Services]
->>>>>>> bf823a5 (add fins 1.9 to beta)
