@@ -1,6 +1,6 @@
 = SAP Custom BAPI Setup Guide
 :hardbreaks-option:
-:retail-version: 2.7
+:retail-version: 3.0
 
 The following provides guidance on how to use the custom BAPI code (for example, `ZBAPI_CUSTOMER_V3`) for your SAP instance.
 
