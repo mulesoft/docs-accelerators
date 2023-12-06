@@ -2,19 +2,6 @@
 
 The following provides guidance on the custom fields that need to be created for the customer profile and sales order sync use cases in order to function end-to-end.
 
-== Fields to be created
-
-The following fields need to be created in the corresponding objects for the use case.
-
-[%header%autowidth.spread]
-|===
-| Salesforce Object | Field Name | Data Type | Length | Unique | ExternalId
-| Account | Global_Customer_Id__c | Text | 36 | Y | Y
-| Contact | Global_Individual_Id__c | Text | 36 | Y | Y
-| Order | Global_SalesOrder_Id__c | Text | 36 | Y | Y
-| Product2 | Global_Product_Id__c | Text | 36 | Y | Y
-|===
-
 == Fields to be updated
 
 The Order object needs to be updated for the following fields for the use case:
@@ -25,6 +12,418 @@ The Order object needs to be updated for the following fields for the use case:
 | Type | Picklist | ADD_ON, CANCELLATION, INITIAL, JOURNAL, RENEWAL, RETURN, SUBSCRIPTION, UPGRADE
 | Status | Picklist | CANCELLED, CREATED, CONFIRMED, DELIVERED, IN_CART, IN_TRANSIT, INVOICED, LOST, PARTIALLY_SHIPPED, PICKUP_AVAILABLE, PROCESSING, REJECTED, RETURNED
 |===
+
+== Custom Objects
+
+The following objects must be created
+
+|===
+| Salesforce Object Name | Singular Label | Plural Label
+
+|Managed_External_Id
+|Managed External Identifier
+|Managed External Identifiers
+|===
+
+=== Create Custom Objects Manually
+
+1. In your Salesforce org, click Setup and select Setup to open Setup.
+2. Click the Object Manager tab. If you don’t see it, enter Object Manager in the Quick Find box.
+3. On the Object Manager Object Manager page, click Create | Custom Object.
+4. For Label, enter the value in `Singular Label`.
+5. For Plural Label, enter the value in `Plural Label`.
+6. Leave the rest of the values as default and click Save.
+
+=== Create Custom Object via Apex script
+
+An Apex class called `CustomObjectUtility` and `MetadataService` are used to create custom object programmatically. The source can be found on [Common Resources project](https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-resources-src) and  [MetadataService](https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls) respectively. Download the project and follow the steps below.
+
+1. Click on Salesforce Setup icon and select `Developer Console` to open a new console window
+1. Go to `File -> New -> Apex class` and create a new class named `CustomObjectUtility`
+1. Copy the code from `accel-common-resources/salesforce/CustomObjectUtility.apxc` to the script editor
+1. Select the `File -> Save` menu option to compile and save the class
+1. Go to `File -> New -> Apex class` and create a new class named `MetadataService`
+1. Copy the code from `https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls` to the script editor
+1. Select the `File -> Save` menu option to compile and save the class
+1. Select `Debug -> Open Execute Anonymous Window`
+1. Copy and paste the contents of `/src/test/resources/scripts/CreateCustomObjects.txt` into the window.
+1. Enable the `Open Log` option and click the **Execute** button.
+
+Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
+
+== Custom Fields
+
+The following fields must be created in the corresponding objects.
+
+[%header%autowidth.spread]
+|===
+| Salesforce Object | Field Label | Field Name | Data Type | Length | Unique* | ExternalId
+
+| Account
+| Global Billing Address ID
+| Global_BillingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Customer ID
+| Global_Customer_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Email Address ID
+| Global_EmailAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Fax Number ID
+| Global_FaxNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Mailing Address ID
+| Global_MailingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Mobile Number ID
+| Global_MobileNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Party ID
+| Global_Party_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Phone Number ID
+| Global_PhoneNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Shipping Address ID
+| Global_ShippingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Customer Status
+| Customer_Status
+| Picklist
+| -
+| N
+| N
+
+| Managed_External_Id__c
+| External Id
+| External_Id
+| Text
+| 80
+| N
+| N
+
+| Managed_External_Id__c
+| External Id Type
+| External_Id_Type
+| Picklist
+| -
+| N
+| N
+
+| Managed_External_Id__c
+| Object Id
+| Object_Id
+| Text
+| 80
+| N
+| N
+
+| Managed_External_Id__c
+| Object Type
+| Object_Type
+| Picklist
+| -
+| N
+| N
+
+| Managed_External_Id__c
+| Status
+| Status
+| Picklist
+| -
+| N
+| N
+
+| Managed_External_Id__c
+| Status Last Changed
+| Status_Last_Changed
+| Date/Time
+| -
+| N
+| N
+
+| Contact
+| Global_Individual_Id
+| Global_Individual_Id
+| Text
+| 36
+| Y
+| Y
+
+| Order
+| Global_SalesOrder_Id
+| Global_SalesOrder_Id
+| Text
+| 36
+| Y
+| Y
+
+| Product2
+| Global_Product_Id
+| Global_Product_Id
+| Text
+| 36
+| Y
+| Y
+
+|===
+
+*Unique fields should be case-sensitive
+
+=== Create via Apex Script
+
+An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources^] project. Download this project and follow the steps below.
+
+. Click on Salesforce Setup icon and select `Developer Console` to open a new console window
+. Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
+. Copy the code from `accel-common-resources/salesforce/CustomFieldUtility.apxc` to the script editor
+. Select the `+File -> Save+` menu option to compile and save the class
+. Select `+Debug -> Open Execute Anonymous Window+`
+. Copy and paste the contents of `accel-common-resources/salesforce/CreateCustomFields.txt` into the window.
+. Enable the `Open Log` option and click the *Execute* button.
+
+Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
+
+=== Create Manually via Salesforce
+
+To create each of these custom fields and enable visibility for them on page layouts:
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Find and select the target Salesforce object.
+. Select the `Fields & Relationships` page.
+. Click the *New* button and create the field as specified above.
+. Once the field has been created, click the `Set Field-Level Security` button (or do these steps later - see below).
+. Enable for desired profile, or tick the checkbox next to `Visible` to enable visibility for the desired profile(s).
+
+Repeat these steps for each custom field in the above list.
+
+TIP: Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles it may be more efficient to go to the `+Users -> Profiles -> {profile} -> Object Settings+` for each object and adjust the permissions for multiple fields at once.
+
+=== Additional Notes
+
+* The *Customer Status* picklist values are *Prospect*, *Onboarding*, *Active*, *Inactive*, *Closed*, *Deceased*, *Delinquent*, and *Dormant*.
+* The *External Id Type* picklist values are *SALESFORCE_B2C*, *SALESFORCE_CORE*, *PIM*, *OFBIZ*, *SAP_4HANA*, *MDM*, *SAP_ECC*, *SALESFORCE_MARKETING*, and *ORACLE_EBS*.
+* The *Object Type* picklist values are *BillingAddress*, *Customer*, *Email*, *Fax*, *Household*, *Individual*, *MailingAddress*, *MobilePhone*, *Organization*, *Phone*, *Product*, *SalesOrder*, and *ShippingAddress*.
+* The *Status* picklist values are *VALID*, *INVALID*.
+* All `Global_*_Id__c` fields should be visible in layouts (as described above) but made *read-only* to avoid issues with data synchronization. 
+
+== Configure Connected App for Authentication
+
+Follow the below steps to generate the `Consumer Key` and `Consumer Secret` values required for Salesforce authentication.
+
+. Click the Salesforce Setup icon.
+. Navigate to `+Apps -> App Manager+`.
+. Select `New Connected App`.
+. Enter Connected App Name: `MuleSoft Accelerator`, API Name: `MuleSoft_Accelerator` and set your email address.
+. In the `API (Enable OAuth Settings)` section, check the box `Enable OAuth Settings`.
+. Set the callback URL `+http://localhost+`.
+. From the `Selected OAuth Scopes` list, select `Full access (full)`.
+. Click *Save* and then *Continue*.
+. Click the *Manage* button to view details for the new connected app.
+. Click the *Edit Policies* button.
+. In the `OAuth Policies` section, for `Permitted Users` select `All users may self-authorize`.
+. For `IP Relaxation`, select the `Relax IP restrictions` option.
+. Click *Save*.
+
+You now need to copy the `Consumer Key` and `Consumer Secret` values for use in configuring Mule application deployments. More specifically, these must be supplied as the values for the `sfdc.fsc.client-id` and `sfdc.fsc.client-secret` properties found in the `Clouhub-RCG-DEV` profile in your Maven `settings.xml` file.
+
+. On the Setup Home page, navigate to `+Apps -> App Manager+`.
+. Locate your new connected app and choose `View` from the actions dropdown for that item (last column on the right).
+. Under the `API (Enable OAuth Settings)` section, click the *Manage Consumer Details* button.
+. Verify your identity by entering the verification code that was emailed to you.
+. Copy the key and secret values and update your `settings.xml` file as described above.
+
+Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
+
+== Generating Security Token for Service Account
+
+A token needs to be generated for the service account used by the Mule applications in order to connect to the FSC instance.
+
+. Login to Salesforce as the Service Account User (the account that will be used by the Mule applications for connecting to Salesforce).
+. Click the Username icon in the top right corner and select `Settings` from the menu.
+. Select `+My Personal Information -> Reset My Security Token+` (if not found, see note below).
+. Click *Reset Security Token*.
+. Check the email inbox for an email from Salesforce with the new security token.
+
+NOTE: If the option to reset your security token is not available, it is likely that one or more Login IP Ranges are in effect. These can be temporarily removed from the settings page of the profile assigned to the service account user.
+
+== Contact Point Mappings
+
+The following table lists the conditions used to assign ContactPoints in Salesforce:
+
+[%header%autowidth.spread]
+|===
+| CIM PartyRoleType - PartyType | Salesforce Object - Record Type | Condition | Action in Salesforce | Comments
+
+| Customer - Individual
+| Account - PersonAccounts
+| ContactPointAddress with `isUsedForBilling` set as `false` and `isUsedForShipping` set as `false`
+| Assign Address as `PersonMailingAddress`
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Individual
+| Account - PersonAccounts
+| ContactPointAddress with `isUsedForBilling` set as `true`
+| Assign Address as `BillingAddress`
+|
+
+| Customer - Individual
+| Account - PersonAccounts
+| ContactPointAddress with `isUsedForShipping` set as `true`
+| Assign Address as `ShippingAddress`
+|
+
+| Customer - Individual
+| Account - PersonAccounts
+| ContactPointPhone with `isSMSCapable` set as `false`
+| Assign Phone Number as `Phone`
+| If multiple phones match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Individual
+| Account - PersonAccounts
+| ContactPointPhone with `isSMSCapable` set as `true`
+| Assign Phone Number as `PersonMobilePhone`]
+|
+
+| Customer - Organization
+| Account - Account
+| ContactPointAddress with `isUsedForBilling` set as `true`
+| Assign Address as `BillingAddress`
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Organization
+| Account - Account
+| ContactPointAddress with `isUsedForBilling` set as `true`
+| Assign Address as `BillingAddress`
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Organization
+| Account - Account
+| ContactPointAddress with `isUsedFoShipping` set as `true`
+| Assign Address as `ShippingAddress`
+|
+
+| Customer - Organization
+| Account - Account
+| ContactPointPhone with `isFaxCapable` set as `false`
+| Assign Phone Number as `Phone`
+| If multiple phones match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Organization
+| Account - Account
+| ContactPointPhone with `isFaxCapable` set as `true`
+| Assign Phone Number as `Fax`
+|
+|===
+
+*The default value for all flags is `false`.
+
+== Household Record Type
+
+The following record type must be enabled if CIM Customer with Party as `Household` needs to be supported, otherwise this step can be ignored.
+
+|===
+| Salesforce Object | Record Type
+
+| Account
+| Household
+|===
+
+To enable the `Household` record type in `Account` object, follow the below steps:
+
+. Click the Salesforce Setup icon.
+. Navigate to `+Users -> Profiles+`.
+. Select the target profile for the service account user.
+. Navigate to `+Object Settings -> Accounts+` and click the *Edit* button.
+. Under `Record Types and Page Layout Assignments` check the `Household` record type.
+. Click the *Save* button.
+
+== Create Platform Events and Apex Triggers
+
+The following Platform Event Objects and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Objects are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src/[Accelerator Common Resources] project.
+
+|===
+| Salesforce Object | Salesforce Platform Event Object | Salesforce Platform Event API Name | Apex Trigger Name
+
+| Account
+| Account
+| Account__e
+| AccountEventsPub
+|===
+
+=== Create Platform Event Object
+
+This implementation requires creation of Platform Events in Salesforce. To create a Platform Event Object following the below steps:
+
+. Login to Salesforce.
+. Click Setup to search for Platform Events in Quick Find Box. Platform Events Page under Integrations section appears with list of available Platform Events.
+. Click *New Platform Event* button to create an Object and enter Platform Information Details fields like Label, Plural Label and Object with Object Name and Event API Names as above table. Click Save. Repeat this step for creating multiple Salesforce Platform Event Objects as mentioned in the above table.
+. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility scripts (`CreatePlatformEventsCustomFields.txt`) available in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src/[Accelerator Common Resources^] under the `/salesforce` folder.
+
+=== Create Apex Triggers
+
+Follow the below steps to create the Apex Triggers
+
+. Login to Salesforce.
+. Click Setup to search for Object Manager in Quick Find Box.
+. Search for the Salesforce Object. A page appears with Details of the Object.
+. Click Triggers unders the Details section to see list of available triggers on the Object. Click New.
+. Copy the Trigger Script code searching by Apex Trigger Name (mentioned in the above table for the SalesforceObject) in CreateApexTriggers.txt of https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src/[Accelerator Common Resources] to the script editor. CreateApexTriggers.txt file is available under /salesforce folder.
+. Obtain the `LastModifiedById` and `RecordTypeId` (if it exists) by running the queries mentioned in the trigger from Developer Console.
+. Replace the values in the script and Save the trigger.
+. Click Save and ensure isActive checkbox is ticked.
+. Repeat the steps for all the Salesforce objects in the above table.
+
+=== Additional Notes
+
+* All the Apex Triggers created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
+* The Apex Trigger AccountEventsPub also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
 
 == See Also 
 
