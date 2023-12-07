@@ -213,7 +213,8 @@ The following fields must be created in the corresponding objects.
 
 |===
 
-*Unique fields should be case-sensitive
+[NOTE]
+Unique fields should be case-sensitive.
 
 === Create via Apex Script
 
