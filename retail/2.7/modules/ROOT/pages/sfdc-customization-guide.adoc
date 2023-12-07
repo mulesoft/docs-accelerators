@@ -406,7 +406,10 @@ This implementation requires `Platform Events` to be created in Salesforce. Foll
 
 . Log in to Salesforce.
 . Click *Setup* and search for "Platform Events" in the *Quick Find* box. The Platform Events page shows with a list of available Platform Events.
-. Click *New Platform Event* button to create an Object and enter Platform Information Details fields like Label, Plural Label and Object with Object Name and Event API Names as above table. Click Save. Repeat this step for creating multiple Salesforce Platform Event Objects as mentioned in the above table.
+. Click the *New Platform Event* button to create an Object. Complete the *Platform Information Details* fields, including *Label*, *Plural Label*, *Object with Object Name*, and *Event API Names* as indicated in the previous table.
+. Click *Save*.
+
+Repeat these steps to create additional Salesforce Platform Event objects as indicated in the previous table.
 . To add Custom Fields & RelationShips to Platform Event Definitions, run the utility scripts (`CreatePlatformEventsCustomFields.txt`) available in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src/[Accelerator Common Resources^] under the `/salesforce` folder.
 
 === Create Apex Triggers
