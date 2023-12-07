@@ -421,7 +421,7 @@ Follow these steps to create the Apex Triggers:
 . Search for the Salesforce object. This opens a page that shows the details of the object.
 . Click *Triggers* in the Details section to view a list of available triggers for the object.
 . Click *New*.
-. Copy the Trigger Script code searching by Apex Trigger Name (mentioned in the above table for the SalesforceObject) in CreateApexTriggers.txt of https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src/[Accelerator Common Resources] to the script editor. CreateApexTriggers.txt file is available under /salesforce folder.
+. Search for the Apex Trigger name, which is indicated in the previous table. Copy the Trigger Script code in `CreateApexTriggers.txt` from the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src/[Accelerator Common Resources] page and paste it into the script editor. The `CreateApexTriggers.txt` file is located in the `/salesforce` folder.
 . Obtain the `LastModifiedById` and `RecordTypeId` (if it exists) by running the queries mentioned in the trigger from Developer Console.
 . Replace the values in the script and Save the trigger.
 . Click Save and ensure isActive checkbox is ticked.
