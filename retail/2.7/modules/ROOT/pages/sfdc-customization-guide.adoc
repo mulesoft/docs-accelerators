@@ -283,7 +283,7 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 
 Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
 
-== Generating Security Token for Service Account
+== Generating a Security Token for the Service Account
 
 A token needs to be generated for the service account used by the Mule applications in order to connect to the FSC instance.
 
