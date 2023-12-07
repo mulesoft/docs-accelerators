@@ -57,7 +57,7 @@ The following fields must be created in the corresponding objects.
 
 [%header%autowidth.spread]
 |===
-| Salesforce Object | Field Label | Field Name | Data Type | Length | Unique* | ExternalId
+| Salesforce Object | Field Label | Field Name | Data Type | Length | Unique | ExternalId
 
 | Account
 | Global Billing Address ID
