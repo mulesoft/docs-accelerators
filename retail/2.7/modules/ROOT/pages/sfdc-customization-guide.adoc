@@ -244,7 +244,8 @@ To create each of these custom fields and enable visibility for them on page lay
 
 Repeat these steps for each custom field in the above list.
 
-TIP: Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles it may be more efficient to go to the `+Users -> Profiles -> {profile} -> Object Settings+` for each object and adjust the permissions for multiple fields at once.
+[NOTE]
+Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles, then it may be more efficient to go to `Users > Profiles > {profile} > Object Settings` for each object and adjust the permissions for multiple fields at once.
 
 === Additional Notes
 
