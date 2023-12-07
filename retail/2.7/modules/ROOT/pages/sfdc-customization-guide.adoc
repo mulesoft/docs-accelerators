@@ -34,7 +34,7 @@ The following objects must be created
 5. For Plural Label, enter the value in `Plural Label`.
 6. Leave the rest of the values as default and click Save.
 
-=== Create Custom Object via Apex script
+=== Create a Custom Object via Apex script
 
 An Apex class called `CustomObjectUtility` and `MetadataService` are used to create custom object programmatically. The source can be found on [Common Resources project](https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-resources-src) and  [MetadataService](https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls) respectively. Download the project and follow the steps below.
 
