@@ -430,7 +430,7 @@ Follow these steps to create the Apex Triggers:
 === Additional Notes
 
 * Each of the Apex Triggers that are created from the table filter records based on `LastModifiedBy <> {Service account ID}`. This is done to avoid cyclical updates performed by the Salesforce Customers API and Salesforce Financial System API. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
-* The Apex Trigger AccountEventsPub also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
+* The Apex Trigger `AccountEventsPub` also filters records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and 'sObjectType='Account'` in the Developer Console.
 
 == See Also 
 
