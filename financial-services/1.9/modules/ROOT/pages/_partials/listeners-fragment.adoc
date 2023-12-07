@@ -2,9 +2,9 @@ The following applications listen for events published by external systems and i
 
 [cols="70,30",width=100%]
 |===
-| FINS Payments ACH Listener | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-payments-ach-listener[Source^]
-| FINS Payments Fedwire Listener | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-payments-fedwire-listener[Source^]
-| FINS Payments SWIFT Listener | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-payments-swift-listener[Source^]
-| FINS Salesforce Marketing Listener | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-marketing-listener[Source^]
-| FINS Salesforce Topic Listener | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-topic-listener[Source^]
+| FINS Payments ACH Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-ach-listener[Source^]
+| FINS Payments Fedwire Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-fedwire-listener[Source^]
+| FINS Payments SWIFT Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-payments-swift-listener[Source^]
+| FINS Salesforce Marketing Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-marketing-listener[Source^]
+| FINS Salesforce Topic Listener | https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-topic-listener[Source^]
 |===
