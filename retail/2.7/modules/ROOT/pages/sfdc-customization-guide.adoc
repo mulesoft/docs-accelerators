@@ -293,7 +293,8 @@ A token needs to be generated for the service account used by the Mule applicati
 . Click *Reset Security Token*.
 . Check the email inbox for an email from Salesforce with the new security token.
 
-NOTE: If the option to reset your security token is not available, it is likely that one or more Login IP Ranges are in effect. These can be temporarily removed from the settings page of the profile assigned to the service account user.
+[NOTE]
+If the option to reset your security token is not available, it is likely that one or more Login IP Ranges are in effect. These can be temporarily removed from the settings page of the profile assigned to the service account user.
 
 == Contact Point Mappings
 
