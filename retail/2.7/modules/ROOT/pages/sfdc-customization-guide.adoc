@@ -420,7 +420,7 @@ Follow the below steps to create the Apex Triggers
 . Obtain the `LastModifiedById` and `RecordTypeId` (if it exists) by running the queries mentioned in the trigger from Developer Console.
 . Replace the values in the script and Save the trigger.
 . Click Save and ensure isActive checkbox is ticked.
-. Repeat the steps for all the Salesforce objects in the above table.
+. Repeat these steps for each Salesforce object in the previous table.
 
 === Additional Notes
 
