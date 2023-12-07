@@ -325,7 +325,7 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 | Account - PersonAccounts
 | ContactPointPhone with `isSMSCapable` set as `false`
 | Assign Phone Number as `Phone`
-| If multiple phones match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+| If multiple phones match this condition, the one with primaryFlag set to true is used; if none of them match this condition, then the first one is used
 
 | Customer - Individual
 | Account - PersonAccounts
