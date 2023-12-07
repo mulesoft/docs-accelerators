@@ -288,7 +288,7 @@ Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerato
 A token needs to be generated for the service account used by the Mule applications in order to connect to the FSC instance.
 
 . Login to Salesforce as the Service Account User (the account that will be used by the Mule applications for connecting to Salesforce).
-. Click the Username icon in the top right corner and select `Settings` from the menu.
+. Click the Username icon and select *Settings* from the menu.
 . Select `+My Personal Information -> Reset My Security Token+` (if not found, see note below).
 . Click *Reset Security Token*.
 . Check the email inbox for an email from Salesforce with the new security token.
