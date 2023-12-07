@@ -38,14 +38,14 @@ The following objects must be created
 
 An Apex class called `CustomObjectUtility` and `MetadataService` are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-resources-src[Common Resources project] and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow the steps below.
 
-1. Click on the Salesforce Setup icon and select `Developer Console` to open a new console window
+1. Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
 1. Go to `File > New > Apex class` and create a new class named `CustomObjectUtility`.
-1. Copy the code from `accel-common-resources/salesforce/CustomObjectUtility.apxc` to the script editor
-1. Select the `Save` from the File menu option to compile and save the class
-1. Go to `File > New > Apex class` and create a new class named `MetadataService`
-1. Copy the code from `https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls` to the script editor
-1. Select the `Save` from the File menu option to compile and save the class
-1. Select `Debug > Open Execute Anonymous Window`
+1. Copy the code from `accel-common-resources/salesforce/CustomObjectUtility.apxc` to the script editor.
+1. Select the `Save` from the File menu option to compile and save the class.
+1. Go to `File > New > Apex class` and create a new class named `MetadataService`.
+1. Copy the code from `https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls` to the script editor.
+1. Select the `Save` from the File menu option to compile and save the class.
+1. Select `Debug > Open Execute Anonymous Window`.
 1. Copy and paste the contents of `/src/test/resources/scripts/CreateCustomObjects.txt` into the window.
 1. Enable the `Open Log` option, and then click the *Execute* button.
 
@@ -220,11 +220,11 @@ Unique fields should be case-sensitive.
 
 An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources^] project. Download this project and follow the steps below.
 
-. Click on Salesforce Setup icon and select `Developer Console` to open a new console window
-. Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
+. Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
+. Go to `File > New > Apex class` and create a new class named `CustomFieldUtility`
 . Copy the code from `accel-common-resources/salesforce/CustomFieldUtility.apxc` to the script editor
-. Select the `+File -> Save+` menu option to compile and save the class
-. Select `+Debug -> Open Execute Anonymous Window+`
+. Select the `File > Save` menu option to compile and save the class
+. Select `Debug > Open Execute Anonymous Window`
 . Copy and paste the contents of `accel-common-resources/salesforce/CreateCustomFields.txt` into the window.
 . Enable the `Open Log` option and click the *Execute* button.
 
@@ -234,7 +234,7 @@ Once the script completes, select the `Debug Only` filter option to show just th
 
 To create each of these custom fields and enable visibility for them on page layouts:
 
-. Click the Salesforce Setup icon.
+. Click on the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
 . Find and select the target Salesforce object.
 . Select the `Fields & Relationships` page.
@@ -259,8 +259,8 @@ Instead of adjusting permissions for each field as you go, if you are only makin
 
 Follow the below steps to generate the `Consumer Key` and `Consumer Secret` values required for Salesforce authentication.
 
-. Click the Salesforce Setup icon.
-. Navigate to `+Apps -> App Manager+`.
+. Click on the Salesforce Setup icon .
+. Navigate to `Apps > App Manager`.
 . Select `New Connected App`.
 . Enter Connected App Name: `MuleSoft Accelerator`, API Name: `MuleSoft_Accelerator` and set your email address.
 . In the `API (Enable OAuth Settings)` section, check the box `Enable OAuth Settings`.
@@ -308,7 +308,7 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 | Account - PersonAccounts
 | ContactPointAddress with `isUsedForBilling` set as `false` and `isUsedForShipping` set as `false`
 | Assign Address as `PersonMailingAddress`
-| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none of them match this condition, then the first one is used
 
 | Customer - Individual
 | Account - PersonAccounts
@@ -338,13 +338,13 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 | Account - Account
 | ContactPointAddress with `isUsedForBilling` set as `true`
 | Assign Address as `BillingAddress`
-| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none of them match this condition, then the first one is used
 
 | Customer - Organization
 | Account - Account
 | ContactPointAddress with `isUsedForBilling` set as `true`
 | Assign Address as `BillingAddress`
-| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none of them match this condition, then the first one is used
 
 | Customer - Organization
 | Account - Account
@@ -356,7 +356,7 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 | Account - Account
 | ContactPointPhone with `isFaxCapable` set as `false`
 | Assign Phone Number as `Phone`
-| If multiple phones match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+| If multiple phones match this condition, the one with primaryFlag set to true is used; if none of them match this condition, then the first one is used
 
 | Customer - Organization
 | Account - Account
@@ -369,7 +369,7 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 
 == Household Record Type
 
-The following record type must be enabled if CIM Customer with Party as `Household` needs to be supported, otherwise this step can be ignored.
+The following record type must be enabled if CIM PartyRole `Customer` with Party as `Household` needs to be supported, otherwise this step can be ignored.
 
 |===
 | Salesforce Object | Record Type
@@ -380,8 +380,8 @@ The following record type must be enabled if CIM Customer with Party as `Househo
 
 To enable the `Household` record type in the `Account` object, follow these steps:
 
-. Click the Salesforce Setup icon.
-. Navigate to `+Users -> Profiles+`.
+. Click on the Salesforce Setup icon.
+. Navigate to `Users -> Profiles`.
 . Select the target profile for the service account user.
 . Navigate to `+Object Settings -> Accounts+` and click the *Edit* button.
 . Under `Record Types and Page Layout Assignments` check the `Household` record type.
