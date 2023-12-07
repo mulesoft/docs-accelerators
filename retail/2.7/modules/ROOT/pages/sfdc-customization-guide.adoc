@@ -414,7 +414,7 @@ Repeat these steps to create additional Salesforce Platform Event objects as ind
 
 === Create Apex Triggers
 
-Follow the below steps to create the Apex Triggers
+Follow these steps to create the Apex Triggers:
 
 . Login to Salesforce.
 . Click Setup to search for Object Manager in Quick Find Box.
