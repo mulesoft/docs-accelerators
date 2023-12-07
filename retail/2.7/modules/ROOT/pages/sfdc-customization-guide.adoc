@@ -42,7 +42,7 @@ An Apex class called `CustomObjectUtility` and `MetadataService` are used to cre
 1. Go to `File > New > Apex class` and create a new class named `CustomObjectUtility`.
 1. Copy the code from `accel-common-resources/salesforce/CustomObjectUtility.apxc` to the script editor
 1. Select the `Save` from the File menu option to compile and save the class
-1. Go to `File -> New -> Apex class` and create a new class named `MetadataService`
+1. Go to `File > New > Apex class` and create a new class named `MetadataService`
 1. Copy the code from `https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls` to the script editor
 1. Select the `Save` from the File menu option to compile and save the class
 1. Select `Debug -> Open Execute Anonymous Window`
