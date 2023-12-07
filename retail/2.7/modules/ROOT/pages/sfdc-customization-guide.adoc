@@ -377,7 +377,7 @@ The following record type must be enabled if CIM Customer with Party as `Househo
 | Household
 |===
 
-To enable the `Household` record type in `Account` object, follow the below steps:
+To enable the `Household` record type in the `Account` object, follow these steps:
 
 . Click the Salesforce Setup icon.
 . Navigate to `+Users -> Profiles+`.
