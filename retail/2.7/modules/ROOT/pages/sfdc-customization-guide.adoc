@@ -47,7 +47,7 @@ An Apex class called `CustomObjectUtility` and `MetadataService` are used to cre
 1. Select the `Save` from the File menu option to compile and save the class
 1. Select `Debug -> Open Execute Anonymous Window`
 1. Copy and paste the contents of `/src/test/resources/scripts/CreateCustomObjects.txt` into the window.
-1. Enable the `Open Log` option and click the **Execute** button.
+1. Enable the `Open Log` option, and then click the *Execute* button.
 
 Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
 
