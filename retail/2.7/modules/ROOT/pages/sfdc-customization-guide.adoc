@@ -44,7 +44,7 @@ An Apex class called `CustomObjectUtility` and `MetadataService` are used to cre
 1. Select the `Save` from the File menu option to compile and save the class
 1. Go to `File -> New -> Apex class` and create a new class named `MetadataService`
 1. Copy the code from `https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls` to the script editor
-1. Select the `File -> Save` menu option to compile and save the class
+1. Select the `Save` from the File menu option to compile and save the class
 1. Select `Debug -> Open Execute Anonymous Window`
 1. Copy and paste the contents of `/src/test/resources/scripts/CreateCustomObjects.txt` into the window.
 1. Enable the `Open Log` option and click the **Execute** button.
