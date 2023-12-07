@@ -29,7 +29,7 @@ The following objects must be created
 
 1. In your Salesforce org, click Setup, and then select Setup to open Setup.
 2. Click the Object Manager tab. If you don’t see it, enter Object Manager in the Quick Find box.
-3. On the Object Manager Object Manager page, click Create | Custom Object.
+3. On the Object Manager page, click Create | Custom Object.
 4. For Label, enter the value in `Singular Label`.
 5. For Plural Label, enter the value in `Plural Label`.
 6. Leave the rest of the values as default and click Save.
