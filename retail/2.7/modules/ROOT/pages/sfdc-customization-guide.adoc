@@ -277,7 +277,7 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 
 . On the Setup Home page, navigate to `+Apps -> App Manager+`.
 . Locate your new connected app and choose *View* from the actions dropdown for that item.
-. Under the `API (Enable OAuth Settings)` section, click the *Manage Consumer Details* button.
+. In the *API (Enable OAuth Settings)* section, click the *Manage Consumer Details* button.
 . Verify your identity by entering the verification code that was emailed to you.
 . Copy the key and secret values and update your `settings.xml` file as described above.
 
