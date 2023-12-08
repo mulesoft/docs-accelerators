@@ -1,0 +1,32 @@
+= Salesforce Customization Guide
+
+The following provides guidance on the custom fields that need to be created for the customer profile and sales order sync use cases in order to function end-to-end.
+
+== Fields to be created
+
+The following fields need to be created in the corresponding objects for the use case.
+
+[%header%autowidth.spread]
+|===
+| Salesforce Object | Field Name | Data Type | Length | Unique | ExternalId
+| Account | Global_Customer_Id__c | Text | 36 | Y | Y
+| Contact | Global_Individual_Id__c | Text | 36 | Y | Y
+| Order | Global_SalesOrder_Id__c | Text | 36 | Y | Y
+| Product2 | Global_Product_Id__c | Text | 36 | Y | Y
+|===
+
+== Fields to be updated
+
+The Order object needs to be updated for the following fields for the use case:
+
+[%header%autowidth.spread]
+|===
+| Field Name | Type | Updated Values
+| Type | Picklist | ADD_ON, CANCELLATION, INITIAL, JOURNAL, RENEWAL, RETURN, SUBSCRIPTION, UPGRADE
+| Status | Picklist | CANCELLED, CREATED, CONFIRMED, DELIVERED, IN_CART, IN_TRANSIT, INVOICED, LOST, PARTIALLY_SHIPPED, PICKUP_AVAILABLE, PROCESSING, REJECTED, RETURNED
+|===
+
+== See Also 
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Retail]
