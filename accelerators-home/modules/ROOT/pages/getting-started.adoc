@@ -2,10 +2,6 @@
 
 This guide helps you configure your local build environment to download, modify, and deploy accelerator assets successfully.
 
-++++
-include::_partials/getting-started-video.html[]
-++++
-
 == Quick Start
 
 To get started:
