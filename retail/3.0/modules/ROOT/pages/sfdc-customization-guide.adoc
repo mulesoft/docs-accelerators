@@ -1,8 +1,8 @@
 = Salesforce Customization Guide
 
-The following provides guidance on the custom fields that need to be created for the customer profile and sales order sync use cases in order to function end-to-end.
+This guide provides instruction on creating the custom fields that are required in order to enable the customer profile and sales order sync use cases to function end-to-end.
 
-== Fields to be updated
+== Fields to Be Updated
 
 The Order object needs to be updated for the following fields for the use case:
 
@@ -34,7 +34,7 @@ The following objects must be created
 5. For Plural Label, enter the value in `Plural Label`.
 6. Leave the rest of the values as default and click Save.
 
-=== Create a Custom Object via Apex script
+=== Create a Custom Object via Apex Script
 
 An Apex class called `CustomObjectUtility` and `MetadataService` are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accelerator-common-resources-src[Common Resources project] and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow the steps below.
 
@@ -221,10 +221,10 @@ Unique fields should be case-sensitive.
 An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources^] project. Download this project and follow the steps below.
 
 . Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
-. Go to `File > New > Apex class` and create a new class named `CustomFieldUtility`
-. Copy the code from `accel-common-resources/salesforce/CustomFieldUtility.apxc` to the script editor
-. Select the `File > Save` menu option to compile and save the class
-. Select `Debug > Open Execute Anonymous Window`
+. Go to `File > New > Apex class` and create a new class named `CustomFieldUtility`.
+. Copy the code from `accel-common-resources/salesforce/CustomFieldUtility.apxc` to the script editor.
+. Select the `File > Save` menu option to compile and save the class.
+. Select `Debug > Open Execute Anonymous Window`.
 . Copy and paste the contents of `accel-common-resources/salesforce/CreateCustomFields.txt` into the window.
 . Enable the `Open Log` option and click the *Execute* button.
 
