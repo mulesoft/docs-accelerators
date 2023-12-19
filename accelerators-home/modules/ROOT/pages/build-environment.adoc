@@ -15,6 +15,7 @@ The MuleSoft Accelerators for Salesforce Clouds are built on Mule 4 and Studio 7
 [NOTE]
 ====
 If you use Anypoint Studio 7.16 and later, you will need to override the Maven settings to use Maven version 3.8.x. To override the settings:
+
 . Open Maven settings in Anypoint Studio > Settings > Anypoint Studio.
 . Uncheck *Use embedded Maven installation*.
 . Enter the local Maven 3.8.x installation path in *Maven installation home directory*.
