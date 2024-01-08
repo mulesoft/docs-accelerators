@@ -1,0 +1,59 @@
+= MuleSoft Accelerator for Financial Services
+:fins-version: {page-component-version}
+
+MuleSoft Accelerator for Financial Services simplifies customer 360 initiatives by unlocking both core banking and insurance platforms, systems of engagement (such as CRM and ITSM), Insuretechs, and FinTech data. This enables a higher level of customer service, real-time relationship management, and a more connected digital experience.
+
+== Use Cases
+
+=== Core Banking Foundation
+The Core Banking Foundation use case enables a 360 view of your customers' financial information. There are two variations of this use case: one to jumpstart the unlocking of any core, and one to unlock a specific core.
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201a%20-%20Unlock%20any%20core/[Unlock any core^] - Unlock and display financial summaries from multiple systems.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201b%20-%20Unlock%20Jack%20Henry%20SilverLake%20core/[Unlock Jack Henry SilverLake core^] - Accelerate the delivery of your customer 360 initiatives by unlocking your Jack Henry SilverLake core.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201c%20-%20Unlock%20Thought%20Machine%20Vault%20Core[Unlock Thought Machine Vault Core] - Accelerate the delivery of your customer 360 initiatives by unlocking your Thought Machine Vault Core.
+
+=== Onboarding
+
+This use case accelerates the delivery and development of an enhanced onboarding solution to streamline banking loan origination and wealth management client account opening procedures. There are two extensions for this use case:
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202a%20-%20Customer%20onboarding%20-%20Banking/[Customer Onboarding - Banking^] - Create an easy and straightforward onboarding experience by empowering consumers to apply for a loan via a digital channel.
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Client Onboarding - Wealth management^] - Accelerate the delivery and development of a streamlined and automated client onboarding solution.
+
+=== Payments Modernization
+
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%203%20-%20Payments%20modernization/[Payments Modernization^] use case accelerates the development of modern payment solutions for Financial Institutions. Banks and Credit Unions will be able to deliver a diverse payments landscape that can address multiple types of financial transactions and customer needs.
+
+=== Address Change Orchestration
+
+This use case accelerates the delivery and development of a home address validation solution for streamlining downstream processes impacted by postal address changes. There are two extensions for this use case:
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Address Change Orchestration: Insurance^] - Streamline downstream events that result from policyholder or carrier postal address adjustments.
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Address Change Orchestration: Banking^] - Enhance customer service teams to upsell, cross-sell, and service opportunities that result from customer postal code address changes.
+
+=== Optimize Customer Experiences
+
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with Salesforce CDP^] use case provides support for ingesting data from multiple sources into Data Cloud and then using the results of Data Cloud activations to optimize customer experiences by providing Customer Service Representatives (CSRs) with marketing insights.
+
+=== Salesforce Org Sync
+
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%206%20-%20Salesforce%20org%20sync/[Salesforce Org Sync^] use case enables financial institutions using a multi-org strategy to sync customer data across Salesforce Financial Services Cloud, Sales Cloud, and Service Cloud orgs.
+
+=== AMS Integration
+
+
+
+=== Additional Assets
+
+The following *use-case agnostic* assets are also available:
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/BIAN%20assets/[BIAN assets^] - Jumpstart your BIAN standard implementation using these BIAN-compliant assets, including API specs and implementation templates. 
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:release-notes::accelerators/financial-services/financial-services-release-notes.adoc[Release Notes]
+* xref:upgrade-notes.adoc[Upgrade Notes]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services on Exchange^]
