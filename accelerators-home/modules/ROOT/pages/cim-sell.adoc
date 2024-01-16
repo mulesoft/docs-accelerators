@@ -8,11 +8,11 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Sales Order
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/cim/SalesOrder.png[alt="Sales Order Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-salesorder.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/SalesOrder.png[alt="Sales Order Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-salesorder.png"]
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-sell-library[CIM Sell Library^]
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-sell-library[CIM Sell Library^]
 
 == See Also
 

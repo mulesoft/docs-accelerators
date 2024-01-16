@@ -1,12 +1,12 @@
 = Salesforce Marketing Cloud Setup Guide
 :fins-version: {page-component-version}
 
-This guide provides the setup instructions for Marketing Cloud for the following use cases that are part of the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^]:
+This guide provides the setup instructions for Marketing Cloud for the following use cases that are part of the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^]:
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use case 2b - Client onboarding - Wealth management^]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration - Insurance^]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Use case 4b - Address change orchestration - Banking^]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Use case 5 - Optimize customer experiences with CDP^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use case 2b - Client onboarding - Wealth management^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration - Insurance^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Use case 4b - Address change orchestration - Banking^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Use case 5 - Optimize customer experiences with CDP^]
 
 == Create Data Extension for Sync Process
 
@@ -101,7 +101,7 @@ Journey Builder is used to trigger emails to a list of email addresses. The foll
 
 === Create Online Submission Form
 
-This is the form that the client will submit so that the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-wealth-exp-api/[Salesforce Wealth Experience API] will be invoked to create a lead in FSC:
+This is the form that the client will submit so that the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-wealth-exp-api/[Salesforce Wealth Experience API] will be invoked to create a lead in FSC:
 
 * Navigate to Web Studio and click Cloudpages
 * Create a Collection
