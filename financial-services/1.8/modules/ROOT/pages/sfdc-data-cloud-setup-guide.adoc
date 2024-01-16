@@ -108,7 +108,7 @@ Before you can send data into Data Cloud using Ingestion API via Mulesoft's Sale
  ** `Perform requests on your behalf at any time (refresh_token, offline_access)`
 . Click `Save` and then `Done` to create the connected app.
 
-After creating the connected app, click the `Manage Consumer Details` button from the app detail page, confirm your identity, and then record the `Consumer Key` and `Consumer Secret` values: you will need these to configure the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API] implementation template for deployment. This application uses the MuleSoft Connector for Salesforce CDP, which provides customers a pipeline to send data into Data Cloud. Refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
+After creating the connected app, click the `Manage Consumer Details` button from the app detail page, confirm your identity, and then record the `Consumer Key` and `Consumer Secret` values: you will need these to configure the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API] implementation template for deployment. This application uses the MuleSoft Connector for Salesforce CDP, which provides customers a pipeline to send data into Data Cloud. Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
 
 ==== Schema requirements
 

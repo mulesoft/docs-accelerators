@@ -42,7 +42,7 @@ For convenience, passwords, secrets, hostnames, URLs have been converted to plai
 
 To use secure properties, set an `encryption-key` (called "mule.key" in configurations) for encrypting secrets. Individual properties can then be encrypted and placed in the `config-secured-${mule.env}.yaml` file, as appropriate. These files will automatically be imported at runtime. For maximum security, use a different encryption key for each application.
 
-Refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/runtime-manager/secure-application-properties[MuleSoft documentation^] for more information.
+Refer to the https://docs.mulesoft.com/runtime-manager/secure-application-properties[MuleSoft documentation^] for more information.
 
 == Application Messages
 
