@@ -12,15 +12,12 @@ This release introduces the https://anypoint.mulesoft.com/exchange/org.mule.exam
 
 This release updates the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203b%20-%20Trade%20promotion%20effectiveness/[Trade Promotion Effectiveness^] use case with full and incremental load, which helps visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
 
-
 == 4.0
 *June 2, 2023*
 
 === Updates to the Trade Promotion Effectiveness Use Case
 
 This release includes updates to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203b%20-%20Trade%20promotion%20effectiveness/[Trade Promotion Effectiveness^] use case, which helps visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
-
-
 
 == v3.0
 30 January 2023

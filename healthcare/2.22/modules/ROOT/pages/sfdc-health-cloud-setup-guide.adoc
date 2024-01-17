@@ -1,0 +1,55 @@
+= Accelerator Setup Guide
+
+== Salesforce Health Cloud - Enabling Person Accounts
+
+There are different ways to represent patients in Health Cloud. This template requires that the patients in Health Cloud are represented as _Person Accounts_.
+
+Following are the general steps to achieve this. Please consult with your Salesforce representative for additional information.
+
+* Ask your Salesforce representative to make Person Accounts available in your organization.
+* From Setup, enter Custom Settings in the Quick Find box, then select Custom Settings.
+* In the list of custom settings, click Manage next to the Use Person Accounts custom settings.
+* Click *Edit* next to Use Person Account.
+* Select Enable. After person accounts are enabled, assign them to profiles. Please refer to the attached https://developer.salesforce.com/docs/atlas.en-us.health_cloud.meta/health_cloud/admin_person_account_overview.htm[document^] for the detailed explanation of representing patients in Health Cloud.
+
+== Salesforce Connected App
+
+This accelerator uses MuleSoft's Salesforce Composite Connector to perform atomic upserts to multiple Salesforce objects in a single transaction. It requires a 'Connected App' in Salesforce. Please refer to the instructions in Salesforce docs to create a Connected App.
+
+Please refer to the https://help.salesforce.com/articleView?id=connected_app_create.htm&type=5[instructions^] in Salesforce docs to create a connected app.
+
+== Enable Read/Write Permissions for Salesforce Objects
+
+Spring 2021 or later versions of Health Cloud Data Model Contact Object's few fields need read/write permissions enabled. The process to enable the access is:
+
+* Login to org --> Setup --> Profiles --> System Admin --> Object settings
+* Choose the object to be edited for enabling field's read/write access
+* Identify the field to be edited and check the boxes for Read and Write access
+
+Example:
+
+Login > Setup > Profiles > Object Setting > Contact > Edit > Check the Edit and Read Access
+
+== HL7 Connector - Configuration for Custom Segments
+
+This accelerator uses MuleSoft's HL7 Connector. If you're required to use custom segments for a specific message structure, please follow the following instructions.
+
+* HL7 schema definitions are distributed inside the hl7-schemas-4.1.1.jar file, embedded inside the HL7 Connector package. Copy the following files to a folder inside src/main/resources location.
+** Message structure schema file - for example, ADT_A31.esl
+** Base definitions file - basedefs.esl
+** Event message map file - event-message.yaml
+* Modify the message structure schema file (for example, ADT_A31.esl) to include your custom segment (or modify an existing segment to fit your needs).
+* Modify the basedefs.esl file to include the changes for segment definitions.
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-adt-api/[implementation template^] for storing ADT messages in Salesforce Health Cloud shows an example of custom segment processing. Please check the src/main/resources/config/hl7/v2_2 folder in the implementation template. This folder has the necessary changes required to process custom segment `ZG1`.
+
+For additional details on HL7 Connector, please refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/connectors/hl7/hl7-connector[documentation^].
+
+== Maven POM Parent
+
+In addition to some global settings and repository references, the Maven https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[POM parent^] config also defines the versions of all MuleSoft connectors and modules used by applications. Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Exchange documentation^] for information on how to make changes to the POM parent file.
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Healthcare]
