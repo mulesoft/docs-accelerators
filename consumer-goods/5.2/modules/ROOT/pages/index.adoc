@@ -23,7 +23,7 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 
 === POS Integration
 
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{cg-version}/pages/Use%20case%206%20-%20POS%20integration/[POS Integration^] use case enables retail developers to leverage pre-built integrations to connect order and loyalty data from POS Systems to Data Cloud.
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-consumer-goods/minor/{cg-version}/pages/Use%20case%206%20-%20POS%20integration/[POS Integration^] use case enables retail developers to leverage pre-built integrations to connect order and loyalty data from Point of Sale (POS) systems to Data Cloud.
 
 == See Also
 
