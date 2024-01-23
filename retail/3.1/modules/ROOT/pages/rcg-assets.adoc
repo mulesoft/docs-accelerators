@@ -38,7 +38,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-marketo-system-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-marketo-system-api/[Implementation Template^]
 
-| RCG Salesforce CDP System API
+| RCG Salesforce Data Cloud System API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-cdp-sys-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-cdp-sys-api/[Implementation Template^]
 
@@ -77,15 +77,19 @@ Accelerator assets include API specifications, implementation templates, custom 
 | SAP S/4HANA Products System API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-saphana-products-sys-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-saphana-products-sys-api/[Implementation Template^]
+
+| RCG Loyalty Management Cloud System API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-loyalty-mgmt-cloud-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-loyalty-mgmt-cloud-sys-api/[Implementation Template^]
 |===
 
 == Process APIs
 
 [cols="40,30,30",width=100%]
 |===
-| Customers Process API
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-customers-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-customers-prc-api/[Implementation Template^]
+| Accelerator Customers Process API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api/[Implementation Template^]
 
 | ERP Customers Process API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-erp-customers-prc-api-spec/[API Specification^]
@@ -99,9 +103,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-inventory-prc-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-inventory-prc-api/[Implementation Template^]
 
-| Orders Process API
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-orders-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-orders-prc-api/[Implementation Template^]
+| Accelerator Orders Process API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slsorder-sync-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slsorder-sync-prc-api/[Implementation Template^]
 
 | Products Process API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-products-prc-api-spec/[API Specification^]

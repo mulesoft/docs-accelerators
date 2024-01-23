@@ -41,6 +41,10 @@ Accelerator assets include API specifications, implementation templates, custom 
 | RCG CRM Analytics System API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-crma-sys-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-crma-sys-api/[Implementation Template^]
+
+| RCG Salesforce Data Cloud System API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-cdp-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-cdp-sys-api/[Implementation Template^]
 |===
 
 == Process APIs
@@ -62,6 +66,10 @@ Accelerator assets include API specifications, implementation templates, custom 
 | RCG Data Normalization Process API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-data-normalization-prc-api-spec[API Specification^]
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-data-normalization-prc-api/[Implementation Template^]
+
+| Accelerator Orders Process API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slsorder-sync-prc-api-spec[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slsorder-sync-prc-api/[Implementation Template^]
 |===
 
 == Listener Applications
@@ -70,6 +78,9 @@ Accelerator assets include API specifications, implementation templates, custom 
 |===
 | Salsify Channel Listener
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salsify-channel-listener/[Implementation Template^]
+
+| POS Event Listener
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-predictspring-event-listener/[Implementation Template^]
 |===
 
 == See Also
