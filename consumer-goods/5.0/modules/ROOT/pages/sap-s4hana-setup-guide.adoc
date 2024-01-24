@@ -8,25 +8,25 @@ To make the necessary configurations in S/4HANA:
 
 . Create a *Communication System* in the corresponding Fiori app. This communication system represents the external system that will consume the S/4HANA Cloud SOAP service. In this example, it's named "COM_0009_SOAP_OUT": +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-01.png[retail-sap-s4hana-setup-guide-01.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-01.png[retail-sap-s4hana-setup-guide-01.png,799] +
  +
 . For the 'Business System' name, use the same name of the System ID.
 . In the 'Host Name' field, enter the hostname of the Mule application deployed on Cloudhub (if you don't have it yet, you can enter a mock URL and then modify it later): +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-02.png[retail-sap-s4hana-setup-guide-02.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-02.png[retail-sap-s4hana-setup-guide-02.png,799] +
  +
 . Create a user that will be used to connect to the Cloud Hub app for sending product information in the outbound scenario (this is necessary even though the Mule application does not validate the user; we used any user for outbound): +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-03.png[retail-sap-s4hana-setup-guide-03.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-03.png[retail-sap-s4hana-setup-guide-03.png,799] +
  +
 . Use the *Communication Arrangement* Fiori app to create a new Communication Arrangement: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-04.png[retail-sap-s4hana-setup-guide-04.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-04.png[retail-sap-s4hana-setup-guide-04.png,799] +
  +
 . Create a new *Communication Arrangement*, select the communication scenario "SAP_COM_0009", and then define a specific name for the arrangement, "SAP_COM_0009_SOAP".
 . In the *Communication System* field, select the Communication System created in the previous step: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-05.png[retail-sap-s4hana-setup-guide-05.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-05.png[retail-sap-s4hana-setup-guide-05.png,799] +
  +
 . For outbound communication, select the previously-created user and configure the *Product Master - Replicate from SAP S/4HANA Cloud to Client* and include the following settings. Make sure to note the Path (`/sap/bc/srt/scs/sap/productmdmbulkreplicaterequest`) because we will use this path to configure the Mule application SOAP endpoint:
  ** Set the Service status to *Active*
@@ -34,11 +34,11 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setu
  ** Replication model = I (Initial)
  ** The Output Mode = D (Direct). +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-06.png[retail-sap-s4hana-setup-guide-06.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-06.png[retail-sap-s4hana-setup-guide-06.png,799] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-07.png[retail-sap-s4hana-setup-guide-07.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-07.png[retail-sap-s4hana-setup-guide-07.png,799] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-08.png[retail-sap-s4hana-setup-guide-08.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-08.png[retail-sap-s4hana-setup-guide-08.png,799] +
  +
 . Save it. All configurations at S/4HANA Cloud side are finished and you will be able to download the WSDL that contains the metadata to import into the S/4HANA Cloud SOAP Connector into the Mule application.
 
@@ -48,38 +48,38 @@ The following example describes how to create a Mule application using the Outbo
 
 . Create a Mule project and add the appropriate connector from Exchange to the Mule Palette: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-09.png[retail-sap-s4hana-setup-guide-09.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-09.png[retail-sap-s4hana-setup-guide-09.png,799] +
  +
 . Add and configure the *Outbound Message Listener* to the canvas: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-10.png[retail-sap-s4hana-setup-guide-10.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-10.png[retail-sap-s4hana-setup-guide-10.png,799] +
  +
 . Add the corresponding WSDL path to the WSDL you downloaded from S/4HANA Cloud and create the HTTP listener configuration: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-11.png[retail-sap-s4hana-setup-guide-11.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-11.png[retail-sap-s4hana-setup-guide-11.png,799] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-12.png[retail-sap-s4hana-setup-guide-12.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-12.png[retail-sap-s4hana-setup-guide-12.png,799] +
  +
 _*Note*: we are using no authentication on the Mule Application, so we used the Insecure option for the Trust Store Configuration. In the Keystore configuration, we used a test Keystore, which is mandatory for HTTPS communication:_ +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-13.png[retail-sap-s4hana-setup-guide-13.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-13.png[retail-sap-s4hana-setup-guide-13.png,799] +
  +
 . Select the Message type that the connector expects to receive from SAP (the connector reads the metadata from the WSDL we configured):
  +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-14.png[retail-sap-s4hana-setup-guide-14.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-14.png[retail-sap-s4hana-setup-guide-14.png,799] +
  +
 . On the Responses tab, use the status Code "202" and the Reason-Phrase "Accepted" because we want to send the same status that S/4HANA Cloud will send if the service invocation results OK. No payload will be returned as a response--just the Status code and Reason-phrase: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-15.png[retail-sap-s4hana-setup-guide-15.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-15.png[retail-sap-s4hana-setup-guide-15.png,799] +
  +
 . Use a *Logger* component to log the inbound XML payload: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-16.png[retail-sap-s4hana-setup-guide-16.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-16.png[retail-sap-s4hana-setup-guide-16.png,799] +
  +
 _The Mule flow should look like the following:_ +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-17.png[retail-sap-s4hana-setup-guide-17.png,399] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-17.png[retail-sap-s4hana-setup-guide-17.png,399] +
  +
 . Deploy the application to Cloudhub. You're now ready to test the scenario.
 
@@ -89,35 +89,35 @@ To test the scenario:
 
 . Create the following. You only need to create a material in the corresponding Fiori app of S/4HANA Cloud: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-18.png[retail-sap-s4hana-setup-guide-18.png,599] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-18.png[retail-sap-s4hana-setup-guide-18.png,599] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-19.png[retail-sap-s4hana-setup-guide-19.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-19.png[retail-sap-s4hana-setup-guide-19.png,799] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-20.png[retail-sap-s4hana-setup-guide-20.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-20.png[retail-sap-s4hana-setup-guide-20.png,799] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-21.png[retail-sap-s4hana-setup-guide-21.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-21.png[retail-sap-s4hana-setup-guide-21.png,799] +
  +
 _After you save the new material, you should see the following confirmation in S/4HANA Cloud:_ +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-22.png[retail-sap-s4hana-setup-guide-22.png,399] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-22.png[retail-sap-s4hana-setup-guide-22.png,399] +
  +
 _The following shows the  XML message received at the Mule application at the Runtime Manager on Cloudhub:_ +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-23.png[retail-sap-s4hana-setup-guide-23.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-23.png[retail-sap-s4hana-setup-guide-23.png,799] +
  +
 . See the sent message in the Message Dashboard Fiori Application: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-24.png[retail-sap-s4hana-setup-guide-24.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-24.png[retail-sap-s4hana-setup-guide-24.png,799] +
  +
 . Select the date: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-25.png[retail-sap-s4hana-setup-guide-25.png,399] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-25.png[retail-sap-s4hana-setup-guide-25.png,399] +
  +
 . Search under *CMD:Product Integration - /CMDPR → Product Replication to Client via Service - PRDREQ_OUT/00001 namespace*: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-26.png[retail-sap-s4hana-setup-guide-26.png,799] +
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-26.png[retail-sap-s4hana-setup-guide-26.png,799] +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-27.png[retail-sap-s4hana-setup-guide-27.png,799]
+image:https://www.mulesoft.com/ext/solutions/images/retail-sap-s4hana-setup-guide-27.png[retail-sap-s4hana-setup-guide-27.png,799]
 
 == S/4HANA customization guide
 
