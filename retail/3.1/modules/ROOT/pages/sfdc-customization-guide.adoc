@@ -250,7 +250,7 @@ Instead of adjusting permissions for each field as you go, if you are only makin
 === Additional Notes
 
 * The *Customer Status* picklist values are *Prospect*, *Onboarding*, *Active*, *Inactive*, *Closed*, *Deceased*, *Delinquent*, and *Dormant*.
-* The *External Id Type* picklist values are *SALESFORCE_B2C*, *SALESFORCE_CORE*, *PIM*, *OFBIZ*, *SAP_4HANA*, *MDM*, *SAP_ECC*, *SALESFORCE_MARKETING*, and *ORACLE_EBS*.
+* The *External Id Type* picklist values are *SALESFORCE_B2C*, *SALESFORCE_CORE*, *PIM*, *OFBIZ*, *SAP_4HANA*, *MDM*, *SAP_ECC*, *SALESFORCE_MARKETING*, *POS*, *SALESFORCE_DC*, *SALESFORCE_LM*, and *ORACLE_EBS*.
 * The *Object Type* picklist values are *BillingAddress*, *Customer*, *Email*, *Fax*, *Household*, *Individual*, *MailingAddress*, *MobilePhone*, *Organization*, *Phone*, *Product*, *SalesOrder*, and *ShippingAddress*.
 * The *Status* picklist values are *VALID*, *INVALID*.
 * All `Global_*_Id__c` fields should be visible in layouts (as described above) but made *read-only* to avoid issues with data synchronization. 

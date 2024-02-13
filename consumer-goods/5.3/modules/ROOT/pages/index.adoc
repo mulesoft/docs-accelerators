@@ -1,0 +1,37 @@
+= MuleSoft Accelerator for Consumer Goods
+:cg-version: {page-component-version}
+
+MuleSoft Accelerator for Consumer Goods helps consumer goods companies integrate their digital operations to gain visibility into trade promotion management and retail execution. Our foundational assets are expertly designed to jumpstart your top integration and business initiatives so that IT teams can spend more time innovating and less time building from scratch.
+
+== Use Cases
+
+=== Product and Account Integration with Hierarchies
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%201%20-%20Product%20and%20Account%20Integration%20with%20Hierarchies/[Product and Account Integration with Hierarchies^] use case surfaces relevant product, customer, demand planning, and pricing information from ERP and PIM systems and easily consolidate this information into Trade Promotion Management (TPM) platforms like Salesforce Consumer Goods Cloud for informed promotional planning.
+
+=== Retail Execution
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%202%20-%20Retail%20execution/[Retail Execution^] use case unlocks shelf data to enable perfect retail execution with pre-built assets. Access store audit data from image recognition software, like Trax, and smoothly integrate into Retail Execution platforms, such as Salesforce Consumer Goods Cloud, to monitor at shelf performance in one platform.
+
+=== Trade Promotion Effectiveness
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%203%20-%20Trade%20promotion%20effectiveness/[Trade Promotion Effectiveness^] use case allows you to visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
+
+=== Trade Promotion Optimization
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%204%20-%20Trade%20promotion%20optimization/[Trade Promotion Optimization^] use case allows you to visualize your promotions in one integrated platform with pre-built assets that integrate Business Intelligence Tools (BI Tools), such as CRM Analytics, into a TPM platform like Salesforce Consumer Goods Cloud.
+
+=== POS Integration
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%206%20-%20POS%20integration/[POS Integration^] use case enables retail developers to leverage pre-built integrations to connect order and loyalty data from Point of Sale (POS) systems to Data Cloud.
+
+=== Pricing Data integration for Trade Promotion Management
+
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-consumergoods/minor/{cg-version}/pages/Use%20case%207%20-%20Pricing%20Data%20Integration%20for%20TPM/[Pricing Data Integration for TPM^] use case enables consumer packaged goods companies to more effectively analyze and optimize promotional activities by integrating List Price and Cost of Goods Sold data with Hyperforce.
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:release-notes::accelerators/consumer-goods/consumer-goods-release-notes.adoc[Release Notes]
+* https://anypoint.mulesoft.com/exchange//mulesoft-accelerator-for-consumergoods/[MuleSoft Accelerator for Consumer Goods on Exchange^]
