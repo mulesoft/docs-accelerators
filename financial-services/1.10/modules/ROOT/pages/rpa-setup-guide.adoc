@@ -1,0 +1,145 @@
+= RPA Setup Guide
+
+This guide provides instructions for implementing the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20hyperautomation%20for%20insurance%20brokers/[Unlock AMS Through Hyperautomation for Insurance Brokers] use case, which is part of the MuleSoft Accelerator for Financial Services.
+
+The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to retrieve customer data from your Agency Management System (AMS) and automatically load the data into your CRM. To implement this use case, you must set up RPA on the device that runs the automation process and configure the solution to your specific AMS.
+
+== Before You Begin
+
+* Create an Anypoint Platform account xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[and assign it the `RPA Automations Manager` and `RPA Bots Manager` permissions].
+* Download the latest version of MuleSoft RPA Manager, RPA Builder, and RPA Bot.
+* Ensure you have access to your AMS and its database metadata.
+* Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
+* Connect the RPA Bot that is built for this solution to RPA Manager.
+* Download the “AMS_to_FSC.crpa” file to the same device on which RPA Builder is installed.
+
+== Workflow Overview
+
+. Create a project in RPA Manager.
+. Import and adapt the .crpa file in RPA Builder.
+. Publish or Deploy the process in RPA Manager.
+
+== Creating a Project in RPA Manager
+
+Detailed instructions for creating a new project in RPA Manager are available in the xref:rpa-manager::processautomation-manage.adoc#create-an-automation-project[Create an Automation Project] section of the Managing Automations page. If a new category is needed when creating a project, follow the instructions in the xref:rpa-manager::processautomation-prepare-project-category.adoc#create-a-category[Create a Category] section of the Manage Categories page.
+
+Once you create the project, xref:rpa-manager::processautomation-develop.adoc#build-a-process[move it directly to the Build phase] without making any changes.
+
+== Importing the CRPA File to RPA Builder
+
+. Log in to RPA Builder on the device on which the process runs.
+. On the xref:rpa-builder::ui-overview.adoc[Repository tab in the Explorer pane] in RPA Builder, click the name of the process you created in RPA Manager.
+. Click *File* on the xref:rpa-builder::ui-overview.adoc#menu-bar[Menu Bar], then click *Import Project*.
+. Select the .crpa file you downloaded in Exchange. The project opens in the model pane and includes three activities, which you must adapt to your AMS.
+
+== Adapting the CRPA File to Your AMS
+
+. Double-click each activity on the model pane to open the workflow.
+. Compare the shown process with your process and adapt the action steps accordingly. See How to adapt the CRPA file for an example.
+. Save and upload the project to RPA Manager.
+
+== Transferring Project to the Test Phase and Testing It
+
+Now that you have adapted the file to your AMS, xref:rpa-manager::processautomation-deploy.adoc#test-a-process-automation[follow these steps] to transfer the project to the Test phase and test it.
+
+== Transferring the Project to the Production Phase
+
+After successfully testing the project, xref:rpa-manager::processautomation-deploy.adoc[transfer the project to the Production phase]. Once transferred, do one of the following:
+
+* xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Deploy the project] and schedule it as needed.
+* Publish the project to Anypoint Exchange as an invocable run configuration, which can be called as an invocable action in a flow.
+** xref:rpa-manager::processautomation-deploy#publish-automation-exchange[Publish RPA Manager Project to Exchange]
+** xref:rpa-manager::settings-connect.adoc[RPA Manager Settings]
+** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
+** xref:composer::ms_composer_rpa_reference.adoc[RPA Reference]
+)
+
+== Example of Adapting the CRPA File
+
+[DISCLAIMER]
+This example uses real world data to show you how to adapt a .crpa file to a specific AMS.
+
+All values for the Activity Parameters used in RPA Builder are test values that you must overwrite with your own values when creating the run configuration for the process in RPA Manager.
+
+=== Process Model
+
+The process model contains the following three activities:
+
+. Log in to the AMS using credentials and a database name.
+. Open a record in the AMS database using a lookup code.
+. Copy data from various fields on the record pages to [should be a CSV file but is a POST REST call in JSON format to http://mainstreet-demo.us-e2.cloudhub.io/epicpolicy]
+
+image placeholder
+
+You can add activities by clicking on an element on the model panel and choosing an element from the context menu. For example, the following image shows how to branch off to a second AMS if you are using more than one and not finding the data you need in the first AMS:
+
+image placeholder
+
+Click on an activity to open the editing workflow.
+
+=== Activity 1: Log in to the AMS
+
+Follow these steps to log in to the AMS:
+
+. Decrypt the AMS login credentials that go in through an Activity Parameter.
+. Run the AMS.
+. Log in to the AMS using the decrypted credentials.
+. Select the database using another in-going Activity Parameter.
++
+image placeholder
+
+. Change the following in the *Run Program Wizard* dialog:
+
+.. Replace the values in the *File name* and *Window Title* fields with the values from your AMS.
+.. Click the *Test* button to run the application so that you can use it to adapt the following Action Steps:
++
+image placeholder 1
++
+image placeholder 2
+
+. Capture and test a new pattern that indicates the login page of the AMS is visible onscreen:
++
+image placeholder 1
++
+image placeholder 2
+
+. Re-identify the field to enter the password. It may be necessary to add a similar Action Step above for entering the user name.
++
+image placeholder 1
++
+image placeholder 2
+
+. Re-identify the *Login* button to click on:
++
+image placeholder 1
++
+image placeholder 2
+
+. Make sure you wait for the login process to complete by choosing a pattern that will disappear after completion:
++
+image placeholder 1
++
+image placeholder 2
+
+. Adapt the other Action Steps of the same types in a similar way. Or, add or delete Action Steps based on what is needed to log in to your AMS.
+
+=== Activity 2: Find a Record in the AMS
+
+The second activity finds a record in the AMS using a lookup code.
+
+Change the following Action Steps:
+
+. Adapt the first Action Steps as you did in the previous Activity.
+. Adapt the scan area in the AI OCR Action Step in which RPA Bot searches for the record entry with the lookup code:
++
+image placeholder 1
++
+image placeholder 2
+
+. Adapt the rest of the Action Steps as you did in the previous Activity.
+
+=== Activity 3: Copy the data from the AMS to 
+
+(Repetition of find field, read content, write content somewhere else)
+
+image placeholder
