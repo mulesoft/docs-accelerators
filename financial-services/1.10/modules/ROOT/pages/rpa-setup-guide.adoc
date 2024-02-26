@@ -69,11 +69,11 @@ The process model contains the following three activities:
 . Open a record in the AMS database using a lookup code.
 . Copy data from various fields on the record pages to [should be a CSV file but is a POST REST call in JSON format to http://mainstreet-demo.us-e2.cloudhub.io/epicpolicy]
 
-image::rpa-setup-process-model.png[RPA Builder Process Model]
+image::rpa-setup-process-model.png[RPA Builder process model]
 
 You can add activities by clicking on an element on the model panel and choosing an element from the context menu. For example, the following image shows how to branch off to a second AMS if you are using more than one and not finding the data you need in the first AMS:
 
-image placeholder
+image::rpa-setup-add-activity.png[Add activity to RPA Builder process model]
 
 Click on an activity to open the editing workflow.
 
@@ -86,40 +86,30 @@ Follow these steps to log in to the AMS:
 . Log in to the AMS using the decrypted credentials.
 . Select the database using another in-going Activity Parameter.
 +
-image placeholder
+image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter Wizard]
 
 . Change the following in the *Run Program Wizard* dialog:
 
 .. Replace the values in the *File name* and *Window Title* fields with the values from your AMS.
 .. Click the *Test* button to run the application so that you can use it to adapt the following Action Steps:
 +
-image placeholder 1
-+
-image placeholder 2
+image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 
 . Capture and test a new pattern that indicates the login page of the AMS is visible onscreen:
 +
-image placeholder 1
-+
-image placeholder 2
+image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
 . Re-identify the field to enter the password. It may be necessary to add a similar Action Step above for entering the user name.
 +
-image placeholder 1
-+
-image placeholder 2
+image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
 
 . Re-identify the *Login* button to click on:
 +
-image placeholder 1
-+
-image placeholder 2
+image::rpa-setup-click-app-element-wizard.png[RPA Builder Click App Element Wizard]
 
 . Make sure you wait for the login process to complete by choosing a pattern that will disappear after completion:
 +
-image placeholder 1
-+
-image placeholder 2
+image::rpa-setup-choose-pattern.png[RPA Builder Image Search Wizard choose pattern]
 
 . Adapt the other Action Steps of the same types in a similar way. Or, add or delete Action Steps based on what is needed to log in to your AMS.
 
@@ -127,14 +117,17 @@ image placeholder 2
 
 The second activity finds a record in the AMS using a lookup code.
 
+. Enter the lookup code, which was provided as an Activity Parameter, as locate criterion to search for the account data set.
+. Click on the result entry to open the account data and wait until it is fully loaded.
+
+image::rpa-setup-lookup-code.png[RPA Builder lookup code]
+
 Change the following Action Steps:
 
 . Adapt the first Action Steps as you did in the previous Activity.
 . Adapt the scan area in the AI OCR Action Step in which RPA Bot searches for the record entry with the lookup code:
 +
-image placeholder 1
-+
-image placeholder 2
+image::rpa-setup-ai-ocr-wizard.png[RPA Builder AI OCR screen-based Wizard]
 
 . Adapt the rest of the Action Steps as you did in the previous Activity.
 
@@ -142,4 +135,3 @@ image placeholder 2
 
 (Repetition of find field, read content, write content somewhere else)
 
-image placeholder
