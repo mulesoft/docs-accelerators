@@ -133,5 +133,34 @@ image::rpa-setup-ai-ocr-wizard.png[RPA Builder AI OCR screen-based Wizard]
 
 === Activity 3: Copy the data from the AMS to 
 
-(Repetition of find field, read content, write content somewhere else)
+The third activity retrieves data and exports the data from the AMS to Salesforce Financial Services Cloud.
 
+. Retrieve account data.
+. Retrieve the policy data of the account.
+. Export the data, either to a CSV file or via a REST call.
+
+image::rpa-setup-export-data.png[RPA Builder export data]
+
+Change the following Action Steps:
+
+. To retrieve the data, re-identify the fields from which to read in all the Read Text from App Element Action Steps and add or delete them as needed.
++
+image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
+
+It is sometimes necessary to click into a field before reading the text, and then to use a keystroke to get out of the field afterward.
++
+image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
+
+If you search for text in a special format, you can use Optical Character Recognition in combination with regular expressions.
++
+image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
+
+. Ensure all retrieved data is pinned to the Combine Strings Action Steps and adjust if necessary. You can also link more Activity Parameters. 
++
+image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
+
+. Add the string to a CSV file via the `Pin Variable`. You can adjust the properties as needed.
++
+image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
+
+The CSV file must be in the format specified.
