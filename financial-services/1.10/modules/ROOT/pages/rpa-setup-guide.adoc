@@ -148,11 +148,11 @@ Change the following Action Steps:
 image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
 
 It is sometimes necessary to click into a field before reading the text, and then to use a keystroke to get out of the field afterward.
-+
+
 image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
 
 If you search for text in a special format, you can use Optical Character Recognition in combination with regular expressions.
-+
+
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
 . Ensure all retrieved data is pinned to the Combine Strings Action Steps and adjust if necessary. You can also link more Activity Parameters. 
