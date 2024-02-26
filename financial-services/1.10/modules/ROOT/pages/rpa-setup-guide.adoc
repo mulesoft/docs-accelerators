@@ -155,6 +155,7 @@ If you search for text in a special format, you can use Optical Character Recogn
 
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
+[start=2]
 . Ensure all retrieved data is pinned to the Combine Strings Action Steps and adjust if necessary. You can also link more Activity Parameters. 
 +
 image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
