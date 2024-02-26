@@ -144,7 +144,7 @@ image::rpa-setup-export-data.png[RPA Builder export data]
 Change the following Action Steps:
 
 . To retrieve the data, re-identify the fields from which to read in all the Read Text from App Element Action Steps and add or delete them as needed.
-+
+
 image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
 
 It is sometimes necessary to click into a field before reading the text, and then to use a keystroke to get out of the field afterward.
