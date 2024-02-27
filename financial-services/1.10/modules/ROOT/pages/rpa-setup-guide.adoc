@@ -7,7 +7,7 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 == Before You Begin
 
 * Create an Anypoint Platform account xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[and assign it the `RPA Automations Manager` and `RPA Bots Manager` permissions].
-* Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation[RPA Bot] from the RPA Manager home page.
+* Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation.adoc[RPA Bot] from the RPA Manager home page.
 * Ensure you have access to your AMS and its database metadata.
 * Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
 * Download the “AMS_to_FSC.crpa” file to the same device on which RPA Builder is installed.
@@ -46,7 +46,7 @@ Now that you have adapted the file to your AMS, xref:rpa-manager::processautomat
 After successfully testing the project, transfer the project to the Production phase. Once transferred, do one of the following:
 
 * xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Deploy the project] and schedule it as needed.
-* xref:rpa-manager::processautomation-deploy#publish-automation-exchange[Publish the project to Anypoint Exchange as an invocable run configuration].
+* xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[Publish the project to Anypoint Exchange as an invocable run configuration].
 ** xref:rpa-manager::settings-connect.adoc[RPA Manager Settings]
 ** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
 ** xref:composer::ms_composer_rpa_reference.adoc[RPA Reference]
@@ -54,8 +54,8 @@ After successfully testing the project, transfer the project to the Production p
 [[example-of-adapting-the-crpa-file]]
 == Example of Adapting the CRPA File
 
-[DISCLAIMER]
-This example uses real world data to show you how to adapt a .crpa file to a specific AMS.
+[NOTE]
+The example in this guide uses real world data to show you how to adapt a .crpa file to a specific AMS.
 
 All values for the Activity Parameters used in RPA Builder are test values that you must overwrite with your own values when creating the run configuration for the process in RPA Manager.
 
