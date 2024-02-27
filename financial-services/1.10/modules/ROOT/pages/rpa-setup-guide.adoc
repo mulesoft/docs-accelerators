@@ -52,7 +52,6 @@ After successfully testing the project, xref:rpa-manager::processautomation-depl
 ** xref:rpa-manager::settings-connect.adoc[RPA Manager Settings]
 ** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
 ** xref:composer::ms_composer_rpa_reference.adoc[RPA Reference]
-)
 
 == Example of Adapting the CRPA File
 
