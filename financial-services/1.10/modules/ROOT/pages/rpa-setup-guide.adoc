@@ -137,7 +137,9 @@ The third activity retrieves data and exports the data from the AMS to Salesforc
 
 . Retrieve account data.
 . Retrieve the policy data of the account.
-. Export the data, either to a CSV file or via a REST call.
+. Export the data in one of the following ways:
+.. CSV file
+.. REST call
 
 image::rpa-setup-export-data.png[RPA Builder export data]
 
@@ -163,5 +165,5 @@ image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
 . Add the string to a CSV file via the `Pin Variable`. You can adjust the properties as needed.
 +
 image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
-
++
 The CSV file must be in the format specified.
