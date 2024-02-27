@@ -67,7 +67,8 @@ The process model contains the following three activities:
 
 . Log in to the AMS using credentials and a database name.
 . Open a record in the AMS database using a lookup code.
-. Copy data from various fields on the record pages to [should be a CSV file but is a POST REST call in JSON format to http://mainstreet-demo.us-e2.cloudhub.io/epicpolicy]
+. Copy data from various fields on the record pages to a CSV file.
+//Step 3 above should be a CSV file but is a POST REST call in JSON format to http://mainstreet-demo.us-e2.cloudhub.io/epicpolicy. I (Tasha) wrote the instructions as a CSV. What should the text actually state?
 
 image::rpa-setup-process-model.png[RPA Builder process model]
 
@@ -95,7 +96,7 @@ image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter W
 +
 image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 
-. Capture and test a new pattern that indicates the login page of the AMS is visible onscreen:
+. Use the *Start from scratch* option to capture and test a new pattern that indicates the login page of the AMS is visible onscreen:
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
