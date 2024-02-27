@@ -7,10 +7,9 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 == Before You Begin
 
 * Create an Anypoint Platform account xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[and assign it the `RPA Automations Manager` and `RPA Bots Manager` permissions].
-* Download the latest version of MuleSoft RPA Manager, RPA Builder, and RPA Bot.
+* Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation[RPA Bot] from the RPA Manager home page.
 * Ensure you have access to your AMS and its database metadata.
 * Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
-* Connect the RPA Bot that is built for this solution to RPA Manager.
 * Download the “AMS_to_FSC.crpa” file to the same device on which RPA Builder is installed.
 
 == Workflow Overview
@@ -35,24 +34,24 @@ Once you create the project, xref:rpa-manager::processautomation-develop.adoc#bu
 == Adapting the CRPA File to Your AMS
 
 . Double-click each activity on the model pane to open the workflow.
-. Compare the shown process with your process and adapt the action steps accordingly. See How to adapt the CRPA file for an example.
+. Compare the shown process with your process and adapt the action steps accordingly. See <<example-of-adapting-the-crpa-file>> for a detailed example.
 . Save and upload the project to RPA Manager.
 
 == Transferring Project to the Test Phase and Testing It
 
-Now that you have adapted the file to your AMS, xref:rpa-manager::processautomation-deploy.adoc#test-a-process-automation[follow these steps] to transfer the project to the Test phase and test it.
+Now that you have adapted the file to your AMS, xref:rpa-manager::processautomation-deploy.adoc#test-a-process-automation[transfer the project to the Test phase and test it].
 
 == Transferring the Project to the Production Phase
 
-After successfully testing the project, xref:rpa-manager::processautomation-deploy.adoc[transfer the project to the Production phase]. Once transferred, do one of the following:
+After successfully testing the project, transfer the project to the Production phase. Once transferred, do one of the following:
 
 * xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Deploy the project] and schedule it as needed.
-* Publish the project to Anypoint Exchange as an invocable run configuration, which can be called as an invocable action in a flow.
-** xref:rpa-manager::processautomation-deploy#publish-automation-exchange[Publish RPA Manager Project to Exchange]
+* xref:rpa-manager::processautomation-deploy#publish-automation-exchange[Publish the project to Anypoint Exchange as an invocable run configuration].
 ** xref:rpa-manager::settings-connect.adoc[RPA Manager Settings]
 ** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
 ** xref:composer::ms_composer_rpa_reference.adoc[RPA Reference]
 
+[[example-of-adapting-the-crpa-file]]
 == Example of Adapting the CRPA File
 
 [DISCLAIMER]
@@ -79,7 +78,7 @@ Click on an activity to open the editing workflow.
 
 === Activity 1: Log in to the AMS
 
-Follow these steps to log in to the AMS:
+==== Overview of the Activity Workflow
 
 . Decrypt the AMS login credentials that go in through an Activity Parameter.
 . Run the AMS.
@@ -88,9 +87,10 @@ Follow these steps to log in to the AMS:
 +
 image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter Wizard]
 
-. Change the following in the *Run Program Wizard* dialog:
+==== Minimum Steps to Adapt in This Workflow
 
-.. Replace the values in the *File name* and *Window Title* fields with the values from your AMS.
+. Change the following in the xref:rpa-builder::toolbox-control-run-program.adoc[*Run Program* Action Step]:
+.. Replace the values in the *File name*, *Parameters*, and *Window Title* fields with the values from your AMS.
 .. Click the *Test* button to run the application so that you can use it to adapt the following Action Steps:
 +
 image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
@@ -99,11 +99,11 @@ image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
-. Re-identify the field to enter the password. It may be necessary to add a similar Action Step above for entering the user name.
+. Re-identify the field to enter the password. It may be necessary to add a similar Action Step above for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[*Keystrokes to App Element* Action Step].
 +
 image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
 
-. Re-identify the *Login* button to click on:
+. Re-identify the *Login* button to click on in the xref:rpa-builder::toolbox-app-automation-click-app-element.adoc[*Click App Element* Action Step]:
 +
 image::rpa-setup-click-app-element-wizard.png[RPA Builder Click App Element Wizard]
 
@@ -125,13 +125,13 @@ image::rpa-setup-lookup-code.png[RPA Builder lookup code]
 Change the following Action Steps:
 
 . Adapt the first Action Steps as you did in the previous Activity.
-. Adapt the scan area in the AI OCR Action Step in which RPA Bot searches for the record entry with the lookup code:
+. Adapt the scan area in the xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[AI OCR Action Step] in which RPA Bot searches for the record entry with the lookup code:
 +
 image::rpa-setup-ai-ocr-wizard.png[RPA Builder AI OCR screen-based Wizard]
 
 . Adapt the rest of the Action Steps as you did in the previous Activity.
 
-=== Activity 3: Copy the data from the AMS to 
+=== Activity 3: Retrieve and Export Data from the AMS
 
 The third activity retrieves data and exports the data from the AMS to Salesforce Financial Services Cloud.
 
@@ -145,7 +145,7 @@ image::rpa-setup-export-data.png[RPA Builder export data]
 
 Change the following Action Steps:
 
-. To retrieve the data, re-identify the fields from which to read in all the Read Text from App Element Action Steps and add or delete them as needed.
+. To retrieve the data, re-identify the fields from which to read in each of the xref:rpa-builder::toolbox-app-automation-read-text-from-app-element.adoc[Read Text from App Element Action Steps] and add or delete them as needed.
 
 image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
 
@@ -158,10 +158,17 @@ If you search for text in a special format, you can use Optical Character Recogn
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
 [start=2]
-. Ensure all retrieved data is pinned to the Combine Strings Action Steps and adjust if necessary. You can also link more Activity Parameters. 
+. Ensure all retrieved data is pinned to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
 +
 image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
 
 . Add the string to a CSV file via the `Pin Variable`. You can adjust the properties as needed. The CSV file must be in the format specified.
 +
 image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
+
+== See Also
+
+* https://help.salesforce.com/s/articleView?id=000381876&type=1[Prepare a CSV File for an Import or Update in Salesforce]
+* https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/datafiles_field_names.htm[Prepare Data Files in Salesforce > Find Field Names]
+* https://developer.salesforce.com/docs/atlas.en-us.248.0.object_reference.meta/object_reference/sforce_api_objects_list.htm[Standard Objects in Salesforce]
+* https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_account.htm[Standard Objects in Salesforce > Accounts]
