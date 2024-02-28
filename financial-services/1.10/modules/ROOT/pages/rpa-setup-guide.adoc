@@ -8,7 +8,7 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 
 == Before You Begin
 
-* Create an Anypoint Platform account xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[and assign it the *RPA Automations Manager* and *RPA Bots Manager* permissions].
+* Ensure the Anypoint Platform account has xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[the *RPA Automations Manager* and *RPA Bots Manager* permissions].
 * Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation.adoc[RPA Bot] from the RPA Manager home page.
 * Ensure you have access to your AMS and its database metadata.
 * Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
@@ -51,7 +51,6 @@ After successfully testing the project, transfer the project to the Production p
 * Publish the project to Anypoint Exchange xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[as an invocable run configuration]. Refer to the following documentation for help with this process:
 ** xref:rpa-manager::settings-connect.adoc[RPA Manager Settings]
 ** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
-** xref:composer::ms_composer_rpa_reference.adoc[RPA Reference]
 
 [[example-of-adapting-the-crpa-file]]
 == Example of Adapting the CRPA File
@@ -135,7 +134,7 @@ image::rpa-setup-ai-ocr-wizard.png[RPA Builder AI OCR screen-based Wizard]
 
 === Activity 3: Retrieve and Export Data from the AMS
 
-The third activity retrieves data and exports the data from the AMS to Salesforce Financial Services Cloud.
+The third activity retrieves data and exports the data from the AMS so that it can be imported into to Salesforce Financial Services Cloud.
 
 . Retrieve account data.
 . Retrieve the policy data of the account.
@@ -155,16 +154,16 @@ It is sometimes necessary to click into a field before reading the text, and the
 
 image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
 
-If you search for text in a special format, you can use Optical Character Recognition in combination with regular expressions.
+If you search for text in a special format, you can use xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[Optical Character Recognition] in combination with regular expressions.
 
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
 [start=2]
-. Ensure all retrieved data is pinned to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
+. Ensure all retrieved data is xref:rpa-builder::common-properties.adoc#variables[pinned] to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
 +
 image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
 
-. Add the string to a CSV file via the `Pin Variable`. You can adjust the properties as needed. The CSV file must be in the format specified.
+. Add the string to a CSV file as `Pin Variable`. You can adjust the properties as needed. The CSV file must be in the format specified.
 +
 image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
 
