@@ -9,7 +9,6 @@
 * xref:shared-assets.adoc[Shared Assets]
 * xref:common-services.adoc[Common Services]
 * xref:cim-overview.adoc[Cloud Information Model]
-* xref:ubp-considerations.adoc[Anypoint pricing model considerations]
 ** xref:cim-subject-areas.adoc[CIM Subject Areas]
 *** xref:cim-finance.adoc[Finance]
 *** xref:cim-fulfill.adoc[Fulfill]
