@@ -100,3 +100,4 @@ As mentioned above, accelerator solutions already avoid unnecessary network traf
 * https://docs.mulesoft.com/general/pricing-metrics[Usage and Pricing Metrics]
 * https://docs.mulesoft.com/general/usage-reports[Viewing Usage Reports]
 * https://blogs.mulesoft.com/learn-apis/api-led-connectivity/[API-led connectivity]
+
