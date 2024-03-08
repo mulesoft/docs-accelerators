@@ -1,0 +1,6 @@
+name: retail
+title: Retail
+version: '3.2'
+display_version: '3.2'
+nav:
+- modules/ROOT/nav.adoc
