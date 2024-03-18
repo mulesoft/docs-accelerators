@@ -16,6 +16,7 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 
 == Workflow Overview
 
+. (add looping line)
 . Create a project in RPA Manager.
 . Import and adapt the .crpa file in RPA Builder.
 . Publish or Deploy the process in RPA Manager.
@@ -169,7 +170,6 @@ image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizar
 
 == See Also
 
-* https://help.salesforce.com/s/articleView?id=000381876&type=1[Prepare a CSV File for an Import or Update in Salesforce]
-* https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/datafiles_field_names.htm[Prepare Data Files in Salesforce > Find Field Names]
-* https://developer.salesforce.com/docs/atlas.en-us.248.0.object_reference.meta/object_reference/sforce_api_objects_list.htm[Standard Objects in Salesforce]
-* https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_account.htm[Standard Objects in Salesforce > Accounts]
+* _Salesforce Help_: https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_account.htm[Account]
+* _Salesforce Help_: https://help.salesforce.com/s/articleView?id=000381876&type=1[Prepare a CSV File for an Import or Update in Salesforce]
+* _Salesforce Help_: https://developer.salesforce.com/docs/atlas.en-us.248.0.object_reference.meta/object_reference/sforce_api_objects_list.htm[Standard Objects]
