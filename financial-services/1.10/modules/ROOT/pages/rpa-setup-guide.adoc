@@ -23,21 +23,21 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 
 == Creating a Project in RPA Manager
 
-Detailed instructions for creating a new project in RPA Manager are available in the xref:rpa-manager::processautomation-manage.adoc#create-an-automation-project[Create an Automation Project] section of the Managing Automations page. If a new category is needed when creating a project, follow the instructions in the xref:rpa-manager::processautomation-prepare-project-category.adoc#create-a-category[Create a Category] section of the Manage Categories page.
+To create a new project in RPA Manager, see xref:rpa-manager::processautomation-manage.adoc#create-an-automation-project[Create an Automation Project]. If a new category is needed when creating a project, see xref:rpa-manager::processautomation-prepare-project-category.adoc#create-a-category[Create a Category].
 
 Once you create the project, xref:rpa-manager::processautomation-develop.adoc#build-a-process[move it directly to the Build phase] without making any changes.
 
 == Importing the CRPA File to RPA Builder
 
 . Log in to RPA Builder on the device on which the process runs.
-. On the xref:rpa-builder::ui-overview.adoc[Repository tab in the Explorer pane] in RPA Builder, click the name of the process you created in RPA Manager.
-. Click *File* on the xref:rpa-builder::ui-overview.adoc#menu-bar[Menu Bar], then click *Import Project*.
-. Select the .crpa file you downloaded in Exchange. The project opens in the model pane and includes three activities, which you must adapt to your AMS.
+. On the xref:rpa-builder::ui-overview.adoc[Repository tab in the Explorer pane] in RPA Builder, click the name of the process you created.
+. Click *File* on the xref:rpa-builder::ui-overview.adoc#menu-bar[Menu Bar], and then click *Import Project*.
+. Select the .crpa file you downloaded from Exchange. The project opens in the model pane and includes three activities, which you must adapt to your AMS.
 
 == Adapting the CRPA File to Your AMS
 
 . Double-click each activity on the model pane to open the workflow.
-. Compare the shown process with your process and adapt the action steps accordingly. See <<example-of-adapting-the-crpa-file>> for a detailed example.
+. Compare the process that is shown with your process and adapt the action steps accordingly. See <<example-of-adapting-the-crpa-file>> for a detailed example.
 . Save and upload the project to RPA Manager.
 
 == Transferring Project to the Test Phase and Testing It
@@ -91,7 +91,7 @@ image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter W
 
 ==== Minimum Steps to Adapt in This Workflow
 
-. Change the following in the xref:rpa-builder::toolbox-control-run-program.adoc[*Run Program* Action Step]:
+. Change the following in the xref:rpa-builder::toolbox-control-run-program.adoc[Run Program Action Step]:
 .. Replace the values in the *File name*, *Parameters*, and *Window Title* fields with the values from your AMS.
 .. Click the *Test* button to run the application so that you can use it to adapt the following Action Steps:
 +
@@ -101,15 +101,15 @@ image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
-. Re-identify the field to enter the password. It may be necessary to add a similar Action Step above for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[*Keystrokes to App Element* Action Step].
+. Re-identify the field to enter the password. It may be necessary to add a similar Action Step previously for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[*Keystrokes to App Element* Action Step].
 +
 image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
 
-. Re-identify the *Login* button to click on in the xref:rpa-builder::toolbox-app-automation-click-app-element.adoc[*Click App Element* Action Step]:
+. Re-identify the *Login* button, which is used in the xref:rpa-builder::toolbox-app-automation-click-app-element.adoc[Click App Element Action Step]:
 +
 image::rpa-setup-click-app-element-wizard.png[RPA Builder Click App Element Wizard]
 
-. Make sure you wait for the login process to complete by choosing a pattern that will disappear after completion:
+. Wait for the login process to complete by choosing a pattern that will disappear after completion:
 +
 image::rpa-setup-choose-pattern.png[RPA Builder Image Search Wizard choose pattern]
 
@@ -120,7 +120,7 @@ image::rpa-setup-choose-pattern.png[RPA Builder Image Search Wizard choose patte
 The second activity finds a record in the AMS using a lookup code.
 
 . Enter the lookup code, which was provided as an Activity Parameter, as locate criterion to search for the account data set.
-. Click on the result entry to open the account data and wait until it is fully loaded.
+. Click on the result entry to open the account data, and then wait until it is fully loaded.
 
 image::rpa-setup-lookup-code.png[RPA Builder lookup code]
 
@@ -151,7 +151,7 @@ Change the following Action Steps:
 
 image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
 
-It is sometimes necessary to click into a field before reading the text, and then to use a keystroke to get out of the field afterward.
+It is sometimes necessary to click into a field before reading the text and then use a keystroke to get out of the field.
 
 image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
 
@@ -160,11 +160,11 @@ If you search for text in a special format, you can use xref:rpa-builder::toolbo
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
 [start=2]
-. Ensure all retrieved data is xref:rpa-builder::common-properties.adoc#variables[pinned] to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
+. Ensure all the data that has been retrieved is xref:rpa-builder::common-properties.adoc#variables[pinned] to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
 +
 image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
 
-. Add the string to a CSV file as `Pin Variable`. You can adjust the properties as needed. The CSV file must be in the format specified.
+. Add the string to a CSV file as `Pin Variable`. You can adjust the properties as needed. The CSV file must be in the specified format.
 +
 image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
 
