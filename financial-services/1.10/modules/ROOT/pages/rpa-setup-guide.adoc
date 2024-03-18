@@ -8,7 +8,7 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 
 == Before You Begin
 
-* Ensure the Anypoint Platform account has xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[the *RPA Automations Manager* and *RPA Bots Manager* permissions].
+* Ensure the Anypoint Platform account has xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[the RPA Automations Manager and RPA Bots Manager permissions].
 * Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation.adoc[RPA Bot] from the RPA Manager home page.
 * Ensure you have access to your AMS and its database metadata. Configure the custom fields in the [FINS AMS Salesforce Sync Handler - Implementation Template], ensuring that the custom field names match the column names on the CSV file.
 * Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
@@ -101,7 +101,7 @@ image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
-. Re-identify the field to enter the password. It may be necessary to add a similar Action Step previously for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[*Keystrokes to App Element* Action Step].
+. Re-identify the field to enter the password. It may be necessary to add a similar Action Step previously for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[Keystrokes to App Element Action Step].
 +
 image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
 
@@ -139,9 +139,7 @@ The third activity retrieves data and exports the data from the AMS so that it c
 
 . Retrieve account data.
 . Retrieve the policy data of the account.
-. Export the data in one of the following ways:
-.. CSV file
-.. REST call
+. Export the data to a CSV file.
 
 image::rpa-setup-export-data.png[RPA Builder export data]
 
@@ -173,3 +171,4 @@ image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizar
 * _Salesforce Help_: https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_account.htm[Account]
 * _Salesforce Help_: https://help.salesforce.com/s/articleView?id=000381876&type=1[Prepare a CSV File for an Import or Update in Salesforce]
 * _Salesforce Help_: https://developer.salesforce.com/docs/atlas.en-us.248.0.object_reference.meta/object_reference/sforce_api_objects_list.htm[Standard Objects]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]
