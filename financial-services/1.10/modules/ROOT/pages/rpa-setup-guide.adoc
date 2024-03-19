@@ -2,13 +2,13 @@
 
 = RPA Setup Guide
 
-This guide provides instructions for implementing the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20hyperautomation%20for%20insurance%20brokers/[Unlock AMS Through Hyperautomation for Insurance Brokers] use case, which is part of the MuleSoft Accelerator for Financial Services.
+This guide provides instructions for implementing the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20automation%20for%20insurance%20brokers/[Unlock AMS Through Automation for Insurance Brokers] use case, which is part of the MuleSoft Accelerator for Financial Services.
 
-The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to retrieve customer data from your Agency Management System (AMS) and automatically load the data into your CRM. To implement this use case, you must set up RPA on the device that runs the automation process and configure the solution to your specific AMS.
+The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to retrieve customer data from your Agency Management System (AMS) and automatically load the data into Salesforce Financial Services Cloud (FSC). To implement this use case, you must set up RPA on the device that runs the automation process and configure the solution to your specific AMS.
 
 == Before You Begin
 
-* Ensure the Anypoint Platform account has xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[the RPA Automations Manager and RPA Bots Manager permissions].
+* Ensure the Anypoint Platform account that will be used has xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[the RPA Automations Manager and RPA Bots Manager permissions].
 * Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation.adoc[RPA Bot] from the RPA Manager home page.
 * Ensure you have access to your AMS and its database metadata. Configure the custom fields in the [FINS AMS Salesforce Sync Handler - Implementation Template], ensuring that the custom field names match the column names on the CSV file.
 * Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
@@ -17,9 +17,9 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 == Workflow Overview
 
 . Create two projects in RPA Manager:
-.. The first project contains the process for getting and looping over all relevant data sets in the AMS. For each data set, it calls the second project.
-.. The second project contains the process for getting the data from one AMS data set and adding it to a CSV file, which later is imported to FSC.
-. Import and adapt the .crpa file in the second project in RPA Builder.
+.. The first project contains the process for getting all relevant datasets and looping over them in your AMS. For each dataset, the second project is called.
+.. The second project contains the process for getting the data from one AMS dataset and adding it to a CSV file, which is imported at a later step to FSC.
+. Import and adapt the CRPA file in the second project in RPA Builder.
 . Publish the second project to Anypoint Exchange in RPA Manager.
 . Build the process for the first project from scratch in RPA Builder.
 . Deploy a scheduled configuration for the first project.
@@ -35,7 +35,7 @@ Once you create the project, xref:rpa-manager::processautomation-develop.adoc#bu
 . Log in to RPA Builder on the device on which the process runs.
 . On the xref:rpa-builder::ui-overview.adoc[Repository tab in the Explorer pane] in RPA Builder, click the name of the process you created.
 . Click *File* on the xref:rpa-builder::ui-overview.adoc#menu-bar[Menu Bar], and then click *Import Project*.
-. Select the .crpa file you downloaded from Exchange. The project opens in the model pane and includes three activities, which you must adapt to your AMS.
+. Select the CRPA file you downloaded from Exchange. The project opens in the model pane and includes three activities, which you must adapt to your AMS.
 
 == Adapting the CRPA File to Your AMS
 
@@ -66,7 +66,7 @@ xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Depl
 == Example of Adapting the CRPA File
 
 [NOTE]
-The example in this guide uses real world data to show you how to adapt a .crpa file to a specific AMS.
+The example in this guide uses real world data to show you how to adapt a CRPA file to a specific AMS.
 
 All values for the Activity Parameters used in RPA Builder are test values that you must overwrite with your own values when creating the run configuration for the process in RPA Manager.
 
