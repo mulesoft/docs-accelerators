@@ -759,8 +759,7 @@ The following table lists the conditions used to assign ContactPoints in Salesfo
 
 To enable Stop Check and Stop Automated Clearing House (ACH) features, you must create a button for both features in your Salesforce org. Follow these steps to create the buttons:
 
-. Set up https://help.salesforce.com/s/articleView?id=sf.nc_named_creds_and_ext_creds.htm&type=5
-[named credentials] for making HTTP calls to Mule APIs.
+. Set up https://help.salesforce.com/s/articleView?id=sf.nc_named_creds_and_ext_creds.htm&type=5[named credentials] for making HTTP calls to Mule APIs.
 . Deploy the Stop Check and Stop ACH flows from the package provided in https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources]. See https://help.salesforce.com/s/articleView?id=sf.flow.htm&language=en_US&type=5[Flow Builder] in Salesforce Help for information about creating flows.
 . Add *Stop Check* and *Stop ACH* buttons to the Financial Account object in your Salesforce org. See https://help.salesforce.com/s/articleView?id=sf.customizing_detail_page_buttons.htm&type=5[Customize Standard and Custom Buttons on Page Layouts] in Salesforce Help for information about creating buttons.
 . Create a quick action for each button to enable users to access the buttons easily. See https://help.salesforce.com/s/articleView?id=sf.fsc_slack_app_create_a_quick_action_for_a_flow.htm&type=[Create a Quick Action for a Flow] for information about creating quick actions.
