@@ -72,7 +72,7 @@ All values for the Activity Parameters used in RPA Builder are test values that 
 
 === Process Model
 
-The process model contains the following three activities:
+The process model contains the following activities:
 
 . Log in to the AMS using credentials and a database name.
 . Open a record in the AMS database using a lookup code.
