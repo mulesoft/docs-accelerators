@@ -126,7 +126,7 @@ image::rpa-setup-choose-pattern.png[RPA Builder Image Search Wizard choose patte
 
 === Activity 2: Find a Record in the AMS
 
-The second activity finds a record in the AMS using a lookup code.
+The second activity finds a record in the AMS by using a lookup code.
 
 . Enter the lookup code, which was provided as an Activity Parameter, as locate criterion to search for the account data set.
 . Click on the result entry to open the account data, and then wait until it is fully loaded.
