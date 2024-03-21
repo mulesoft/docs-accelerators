@@ -110,7 +110,7 @@ image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
-. Re-identify the field to enter the password. It may be necessary to add a similar Action Step previously for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[Keystrokes to App Element Action Step].
+. Reidentify the field to enter the password. You might have to add an Action Step for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[Keystrokes to App Element Action Step].
 +
 image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
 
