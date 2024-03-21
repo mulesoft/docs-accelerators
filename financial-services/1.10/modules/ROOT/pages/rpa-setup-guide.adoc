@@ -102,7 +102,7 @@ image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter W
 
 . Change the following in the xref:rpa-builder::toolbox-control-run-program.adoc[Run Program Action Step]:
 .. Replace the values in the *File name*, *Parameters*, and *Window Title* fields with the values from your AMS.
-.. Click the *Test* button to run the application so that you can use it to adapt the following Action Steps:
+.. Click *Test* to run the application so that you can use it to adapt the following Action Steps:
 +
 image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 
