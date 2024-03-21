@@ -167,7 +167,7 @@ To search for text in a special format, you can use xref:rpa-builder::toolbox-te
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
 [start=2]
-. Ensure all the data that has been retrieved is xref:rpa-builder::common-properties.adoc#variables[pinned] to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
+. Ensure that all retrieved data is xref:rpa-builder::common-properties.adoc#variables[pinned] to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
 +
 image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
 
