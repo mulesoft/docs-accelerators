@@ -18,7 +18,7 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 
 . Create two projects in RPA Manager:
 * The first project contains the process for getting all relevant datasets and looping over them in your AMS. For each dataset, the second project is called.
-.. The second project contains the process for getting the data from one AMS dataset and adding it to a CSV file, which is imported at a later step to FSC.
+* The second project contains the process for getting the data from one AMS dataset and adding it to a CSV file, which is imported at a later step to FSC.
 . Import and adapt the CRPA file in the second project in RPA Builder.
 . Publish the second project to Anypoint Exchange in RPA Manager.
 . Build the process for the first project from scratch in RPA Builder.
