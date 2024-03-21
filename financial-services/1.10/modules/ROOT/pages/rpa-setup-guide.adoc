@@ -66,7 +66,7 @@ xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Depl
 == Example of Adapting the CRPA File
 
 [NOTE]
-The example in this guide uses real world data to show you how to adapt a CRPA file to a specific AMS.
+The example in this guide uses real-world data to show you how to adapt a CRPA file to a specific AMS.
 
 All values for the Activity Parameters used in RPA Builder are test values that you must overwrite with your own values when creating the run configuration for the process in RPA Manager.
 
