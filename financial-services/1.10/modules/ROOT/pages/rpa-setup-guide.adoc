@@ -118,7 +118,7 @@ image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App
 +
 image::rpa-setup-click-app-element-wizard.png[RPA Builder Click App Element Wizard]
 
-. Wait for the login process to complete by choosing a pattern that will disappear after completion:
+. Wait for the login process to complete by choosing a pattern that disappears after completion:
 +
 image::rpa-setup-choose-pattern.png[RPA Builder Image Search Wizard choose pattern]
 
