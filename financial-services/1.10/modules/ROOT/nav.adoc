@@ -3,6 +3,7 @@
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup Guide]
 ** xref:payments-setup-guide.adoc[Payments modernization demo Setup Guide]
+** xref:rpa-setup-guide.adoc[RPA Setup Guide]
 ** xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
 ** xref:sfdc-fsc-setup-guide.adoc[Salesforce Financial Services Cloud Setup Guide]
 ** xref:sfdc-mc-setup-guide.adoc[Salesforce Marketing Cloud Setup Guide]
