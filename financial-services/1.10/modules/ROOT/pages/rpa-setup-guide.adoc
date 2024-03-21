@@ -171,7 +171,7 @@ image::rpa-setup-optical-character-recognition.png[How to use optical character 
 +
 image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
 
-. Add the string to a CSV file as `Pin Variable`. You can adjust the properties as needed. The CSV file must be in the specified format.
+. Add the string to a CSV file as `Pin Variable` and adjust the properties as needed. The CSV file must be in the specified format.
 +
 image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
 
