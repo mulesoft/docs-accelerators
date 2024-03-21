@@ -162,7 +162,7 @@ If necessary, click into a field before reading the text and then use a keystrok
 
 image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
 
-If you search for text in a special format, you can use xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[Optical Character Recognition] in combination with regular expressions.
+To search for text in a special format, you can use xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[Optical Character Recognition] in combination with regular expressions.
 
 image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
 
