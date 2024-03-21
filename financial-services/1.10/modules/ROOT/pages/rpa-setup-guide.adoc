@@ -57,7 +57,7 @@ After successfully testing the project, transfer the project to the Production p
 
 Now that you have published the second project as an invokable run configuration, you can call it from within another process by using the xref:rpa-builder::toolbox-network-rest-call.adoc[*REST Call* Action Step].
 
-The process should take a list of lookup codes provided via a file and use the xref:rpa-builder::toolbox-flow-control-file-controlled-loop.adoc[*File Controlled Loop* Action Step] to iterate over all codes and use them within the request body of the REST call.
+The second process should take a list of lookup codes provided via a file, use the xref:rpa-builder::toolbox-flow-control-file-controlled-loop.adoc[*File Controlled Loop* Action Step] to iterate over all codes, and use the codes within the request body of the REST call.
 
 xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Deploy the project] and schedule it as needed.
 
