@@ -40,7 +40,7 @@ Once you create the project, xref:rpa-manager::processautomation-develop.adoc#bu
 == Adapting the CRPA File to Your AMS
 
 . Double-click each activity on the model pane to open the workflow.
-. Compare the process that is shown with your process and adapt the action steps accordingly. See <<example-of-adapting-the-crpa-file>> for a detailed example.
+. Compare the displayed process with your process and adapt the action steps accordingly. See <<example-of-adapting-the-crpa-file>> for a detailed example.
 . Save and upload the project to RPA Manager.
 
 == Transferring the Second Project to the Test Phase and Testing It
