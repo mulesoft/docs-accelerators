@@ -154,7 +154,7 @@ image::rpa-setup-export-data.png[RPA Builder export data]
 
 Change the following Action Steps:
 
-. To retrieve the data, re-identify the fields from which to read in each of the xref:rpa-builder::toolbox-app-automation-read-text-from-app-element.adoc[Read Text from App Element Action Steps] and add or delete them as needed.
+. To retrieve the data, reidentify the fields from which to read in each of the xref:rpa-builder::toolbox-app-automation-read-text-from-app-element.adoc[Read Text from App Element Action Steps] and add or delete them as needed.
 
 image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
 
