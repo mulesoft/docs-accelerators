@@ -24,41 +24,41 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 . Build the process for the first project from scratch in RPA Builder.
 . Deploy a scheduled configuration for the first project.
 
-== Creating a Project in RPA Manager
+== Create a Project in RPA Manager
 
 To create a new project in RPA Manager, see xref:rpa-manager::processautomation-manage.adoc#create-an-automation-project[Create an Automation Project]. If a new category is needed when creating a project, see xref:rpa-manager::processautomation-prepare-project-category.adoc#create-a-category[Create a Category].
 
 Once you create the project, xref:rpa-manager::processautomation-develop.adoc#build-a-process[move it directly to the Build phase] without making any changes.
 
-== Importing the CRPA File to RPA Builder
+== Import the CRPA File to RPA Builder
 
 . Log in to RPA Builder on the device on which the process runs.
 . On the xref:rpa-builder::ui-overview.adoc[Repository tab in the Explorer pane] in RPA Builder, click the name of the process you created.
 . Click *File* on the xref:rpa-builder::ui-overview.adoc#menu-bar[Menu Bar], and then click *Import Project*.
 . Select the CRPA file you downloaded from Exchange. The project opens in the model pane and includes three activities, which you must adapt to your AMS.
 
-== Adapting the CRPA File to Your AMS
+== Adapt the CRPA File to Your AMS
 
 . Double-click each activity on the model pane to open the workflow.
 . Compare the displayed process with your process and adapt the action steps accordingly. See <<example-of-adapting-the-crpa-file>> for a detailed example.
 . Save and upload the project to RPA Manager.
 
-== Transferring the Second Project to the Test Phase and Testing It
+== Transfer the Second Project to the Test Phase and Testing It
 
 Now that you have adapted the file to your AMS, xref:rpa-manager::processautomation-deploy.adoc#test-a-process-automation[transfer the project to the Test phase and test it].
 
-== Transferring the Second Project to the Production Phase
+== Transfer the Second Project to the Production Phase
 
 After successfully testing the project, transfer the project to the Production phase and publish the project to Anypoint Exchange xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[as an invokable run configuration]. For help with this process, refer to:
 
 ** xref:rpa-manager::settings-connect.adoc[Connecting to RPA Processes from Salesforce Products]
 ** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
 
-== Implementing and Deploying the First Project
+== Implement and Deploying the First Project
 
-Now that you have published the second project as an invokable run configuration, you can call it from within another process by using the xref:rpa-builder::toolbox-network-rest-call.adoc[*REST Call* Action Step].
+Now that you have published the second project as an invokable run configuration, you can call it from within another process by using the xref:rpa-builder::toolbox-network-rest-call.adoc[REST Call Action Step].
 
-The second process should take a list of lookup codes provided via a file, use the xref:rpa-builder::toolbox-flow-control-file-controlled-loop.adoc[*File Controlled Loop* Action Step] to iterate over all codes, and use the codes within the request body of the REST call.
+The second process should take a list of lookup codes provided via a file, use the xref:rpa-builder::toolbox-flow-control-file-controlled-loop.adoc[File Controlled Loop Action Step] to iterate over all codes, and use the codes within the request body of the REST call.
 
 xref:rpa-manager::processautomation-deploy.adoc#deploy-a-process-automation[Deploy the project] and schedule it as needed.
 
@@ -113,7 +113,7 @@ image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
-. Reidentify the field to enter the password. You might have to add an Action Step for entering the user name in the xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[Keystrokes to App Element Action Step].
+. Reidentify the field to enter the password. You might have to add another xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[Keystrokes to App Element Action Step] for entering the user name, which would go before the password step.
 +
 image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
 
