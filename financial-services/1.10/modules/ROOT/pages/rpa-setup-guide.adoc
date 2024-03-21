@@ -86,6 +86,8 @@ Add activities by clicking on an element on the model panel and choosing an elem
 
 image::rpa-setup-add-activity.png[Add activity to RPA Builder process model]
 
+The linter automatically checks the model for completeness and displays error and warning messages to indicate what to change.
+
 Click on an activity to open the editing workflow.
 
 === Activity 1: Log In to the AMS
