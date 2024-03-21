@@ -11,7 +11,7 @@ The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to r
 * Ensure that the Anypoint Platform account to use has xref:rpa-home::automation-userrolesandpermissions-anypointrpapermissions.adoc[the RPA Automations Manager and RPA Bots Manager permissions].
 * Install the latest version of MuleSoft xref:rpa-builder::install-and-configure.adoc[RPA Builder] and xref:rpa-bot::installation.adoc[RPA Bot] from the RPA Manager home page.
 * Ensure that you have access to your AMS and its database metadata. Configure the custom fields in the [FINS AMS Salesforce Sync Handler - Implementation Template], ensuring that the custom field names match the column names on the CSV file.
-* Ensure you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
+* Ensure that you have access to the Salesforce Financial Services Cloud organization to which your AMS data will be loaded.
 * Download the “AMS_to_FSC.crpa” file to the same device on which RPA Builder is installed.
 
 == Workflow Overview
