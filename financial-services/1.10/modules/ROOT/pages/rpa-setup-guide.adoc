@@ -93,7 +93,7 @@ Click on an activity to open the editing workflow.
 
 . Decrypt the AMS login credentials that go in through an Activity Parameter.
 . Run the AMS.
-. Log in to the AMS using the decrypted credentials.
+. Log in to the AMS by using the decrypted credentials.
 . Select the database by using another in-going Activity Parameter.
 +
 image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter Wizard]
