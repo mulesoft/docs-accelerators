@@ -158,7 +158,7 @@ Change the following Action Steps:
 
 image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
 
-It is sometimes necessary to click into a field before reading the text and then use a keystroke to get out of the field.
+If necessary, click into a field before reading the text and then use a keystroke to get out of the field.
 
 image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
 
