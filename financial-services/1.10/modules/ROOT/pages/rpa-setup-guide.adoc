@@ -144,7 +144,7 @@ image::rpa-setup-ai-ocr-wizard.png[RPA Builder AI OCR screen-based Wizard]
 
 === Activity 3: Retrieve and Export Data from the AMS
 
-The third activity retrieves data and exports the data from the AMS so that it can be imported into to Salesforce Financial Services Cloud.
+The third activity retrieves data and exports the data from the AMS so that it can be imported to Salesforce Financial Services Cloud.
 
 . Retrieve account data.
 . Retrieve the policy data of the account.
