@@ -81,7 +81,7 @@ The process model contains the following activities:
 
 image::rpa-setup-process-model.png[RPA Builder process model]
 
-You can add activities by clicking on an element on the model panel and choosing an element from the context menu. For example, the following image shows how to branch off to a second AMS if you are using more than one and not finding the data you need in the first AMS:
+Add activities by clicking on an element on the model panel and choosing an element from the context menu. For example, the following image shows how to branch off to a second AMS if you are using more than one AMS and not finding the data you need in the first AMS:
 
 image::rpa-setup-add-activity.png[Add activity to RPA Builder process model]
 
