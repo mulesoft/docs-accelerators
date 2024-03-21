@@ -50,7 +50,8 @@ Now that you have adapted the file to your AMS, xref:rpa-manager::processautomat
 == Transferring the Second Project to the Production Phase
 
 After successfully testing the project, transfer the project to the Production phase and publish the project to Anypoint Exchange xref:rpa-manager::processautomation-deploy.adoc#publish-automation-exchange[as an invokable run configuration]. For help with this process, refer to:
-** xref:rpa-manager::settings-connect.adoc[RPA Manager Settings]
+
+** xref:rpa-manager::settings-connect.adoc[]
 ** https://help.salesforce.com/s/articleView?id=sf.flow_build_use_flows_with_mulesoft_rpa.htm&type=5[Use Flows with MuleSoft RPA]
 
 == Implementing and Deploying the First Project
