@@ -106,7 +106,7 @@ image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter W
 +
 image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
 
-. Use the *Start from scratch* option to capture and test a new pattern that indicates the login page of the AMS is visible onscreen:
+. Use the *Start from scratch* option to capture and test a new pattern that indicates that the login page of the AMS is visible onscreen:
 +
 image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
 
