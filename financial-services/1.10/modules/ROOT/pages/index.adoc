@@ -42,7 +42,7 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 
 === Unlock AMS Through Hyperautomation for Insurance Brokers
 
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20hyperautomation%20for%20insurance%20brokers/[Unlock AMS Through Hyperautomation for Insurance Brokers] use case enables insurance brokers to view policy data from an Agency Management System (AMS) platform in their CRM platform.
+The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20automation%20for%20insurance%20brokers/[Unlock AMS Through Automation for Insurance Brokers] use case enables insurance brokers to view policy data from an Agency Management System (AMS) platform in their CRM platform.
 
 === Additional Assets
 
