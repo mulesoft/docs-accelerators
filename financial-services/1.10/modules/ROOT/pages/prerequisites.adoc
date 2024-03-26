@@ -8,6 +8,7 @@ The following setup and configuration guides are available for this accelerator:
 
 * xref:anypointmq-setup-guide.adoc[Anypoint MQ setup guide]
 * xref:payments-setup-guide.adoc[Payments modernization demo setup guide]
+* xref:rpa-setup-guide.adoc[RPA Setup Guide]
 * xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud setup guide]
 * xref:sfdc-fsc-setup-guide.adoc[Salesforce Financial Services Cloud setup guide]
 * xref:sfdc-mc-setup-guide.adoc[Salesforce Marketing Cloud setup guide]
