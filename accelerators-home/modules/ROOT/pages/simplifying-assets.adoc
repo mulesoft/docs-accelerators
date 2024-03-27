@@ -1,0 +1,66 @@
+# Considerations for Simplifying Accelerator Assets
+
+MuleSoft Accelerators were designed following an API-led approach to connectivity, which promotes a clean separation of application, process, and system integration layers while enabling a high level of reusability - particularly with System APIs. While this powerful approach remains valid today, and is highly recommended for organizations of all sizes to enable future growth while minimizing maintenance costs, there are some considerations that need to be taken into account for customers who want to simplify their integrations and architectural approach. 
+
+## Simplifying Accelerator Assets
+
+A consistent driving factor behind the design and implementation of use cases supported by the MuleSoft Accelerators has always been to keep the assets and corresponding solutions as simple as possible while still providing a solid, functional, and maintainable architecture for customers to build upon. This has been achieved through the following key solution design principles:
+
+. Follow the API-led connectivity approach but create APIs only where necessary to support clean integration with external applications and systems.
+. Keep exception handling clean and simple, allowing for straightforward extension and customization. 
+. Avoid the use of heavy logging, monitoring, or exception handling frameworks.
+. Leverage a reusable canonical data model within the business process layer to simplify communication between layers.
+. Use messaging only where deemed necessary to support high-volume deployments.
+. Use inline sub-flows instead top-level flows wherever possible.
+
+The asset being developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been solutioned but also other use cases needed by customers to support their business. For the most part this means the inclusion of additional endpoints in some APIs, especially System APIs shared across multiple use cases, which may not be required in all customer deployments. The reference architectures for most solutions have also been designed for long-term growth and evolution, which may result in additional applications and interactions that may not be required for smaller deployments. 
+
+The following sections describe steps you can take to reduce the number of flows in accelerator applications.
+
+### Remove Unused APIkit Handlers
+
+Some of the accelerator API specifications, particularly the System APIs, were designed to support a wider range of use cases than what was strictly required to implement the solution's own use cases. This means that APIkit would have scaffolded flows you may not require for your use cases. These can simply be removed from the main router flow file, which is usually the one named `*-api.xml`. There is no need to go through the trouble of changing the API specification and re-scaffolding, since you would still have to edit the file manually to remove the scaffolded flows anyway. We do not recommend circumventing the APIkit router with a plain choice router as this would lead to reduced discoverability and higher maintenance costs.
+
+Most applications also include a flow for the APIkit console, which could also be removed to reduce the number of flows if this functionality is not required.
+
+### Remove API Health Checks
+
+The `get:/ping` endpoint was provided for customers who wish to monitor the health status of deployed APIs periodically. If this is not required, the handlers for these endpoints may be removed from the main APIkit flow file. If the endpoints are kept, messages and throughput can still be reduced by removing the checks for downstream dependencies.
+
+### Generalize Event Sources
+
+While we do not recommend creating monolithic flows that listen to generic events, there are some simplifications that can be gained by combining finer-grained event sources into more granular events. For example, while we already have general events for publishing and consuming updates to Parties (such as Individual and Household) and Party Roles (such as Customer and Supplier), the two update queues could be combined into one, bound to both Exchanges, and consumed by a single handler. The number of messages received would be the same but with one less flow event source. A similar approach could be taken for VMQueue subscribers, SFTP listeners, and others.
+
+### Reducing the Number of APIs Overall
+
+Where back-end systems have a modern, well-designed API, such as Salesforce, and there is no need to perform extensive mapping between a canonical model and the back-end model, consider making calls directly to the target system from the Process layer instead of through a dedicated System API. This can also help reduce the number of message flows.
+
+The use cases for Experience APIs include providing data transformation, authentication mediation, and service filtering for external consumers. If internal systems are aligned to the same data, authentication, and services as the target Process or System APIs, there may be no need to have a dedicated Experience API for those consumers - especially if the target APIs are governed via API Manager.
+
+When providing similar functionality to external applications via Experience APIs, look for opportunities to provide a single Experience API to support multiple channels, rather than one Experience API per channel. For example, multiple Salesforce Experience APIs could be combined into one or two APIs, reducing the number of message flows and applications.
+
+Where appropriate, consider providing shared functionality via Mule libraries instead of standalone APIs. One example would be where a simple Account or Order lookup from Salesforce is required by multiple applications in the Process layer. Instead of providing this functionality as a standalone service it could be implemented in one or more sub-flows, packaged into a Mule library, and included with the Process APIs that require it. This approach would reduce both flows and message counts.
+
+## Additional Simplifications
+
+This section includes additional steps you can take to further simplify your integrations by reducing the number of mule messages and throughput.
+
+### Reducing Mule Messages
+
+Mule messages are produced every time an event is received from an event source, including incoming API requests. One way to reduce the number of messages consumed is to reduce the number of API to API calls, such as Experience to Process or Process to System, that are made during the course of handling a top level event. While the accelerator solutions are already designed to avoid making unnecessary hops (for example, having an Experience API call a System API directly when no intermediate transformation, validation, or aggregation is required, rather than introducing an intermediate Process API that only acts as a pass-through hop), there are a few ways this can be optimized further:
+
+* Consider making calls to back-end systems directly from Process APIs where a well-defined interface exists for the target system.
+* For health checks, remove the flows that also check the health of downstream systems when the `checkDependencies` flag is set.
+* Replace the use of VMQueue or Anypoint MQ messaging if asynchronous processing is not truly required. These patterns were often provided with the expectation that customers would use them in high-volume deployments, which may not be the case for some deployments.
+* Where request batching can be done, update endpoints to accept arrays of objects instead of single items, as appropriate.
+
+### Reducing Data Throughput
+
+As mentioned above, accelerator solutions already avoid unnecessary network traffic by reducing the number of hops and by not making use of any external logging, monitoring, or exception handling frameworks. A number of the simplification steps described above also apply to reducing data throughput. For your own deployments, be sure to take data throughput into account when considering the addition of any custom frameworks, such as for logging or exception handling.
+
+## See Also
+
+* xref:getting-started.adoc[Getting Started Guide]
+* https://docs.mulesoft.com/general/usage-reports[Viewing Usage Reports]
+* https://blogs.mulesoft.com/learn-apis/api-led-connectivity/[API-led Connectivity]
+* xref:index.adoc[MuleSoft Accelerators]

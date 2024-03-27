@@ -46,7 +46,7 @@ The following is a high level description of the workflow for the notification p
 . A queue subscriber receives the message and routes it to the appropriate System API based on the `NOTIFICATION\_TYPE`.
 . The System API synchronously processes the message and posts it to the back-end service.
 
-For service configuration details please refer to the xref:./getting-started.adoc[Getting Started] guide as well as the individual RAML specifications and implementation templates for the individual services themselves.
+For service configuration details please refer to the xref:./getting-started.adoc[Getting Started Guide] as well as the individual RAML specifications and implementation templates for the individual services themselves.
 
 == Security Services
 
@@ -117,5 +117,5 @@ An easier way to apply policies to all APIs is to deploy them as Automated polic
 
 * The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
 * The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-archetype-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
-* The xref:./getting-started.adoc[Getting Started] guide provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
+* The xref:./getting-started.adoc[Getting Started Guide] provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
 * The xref:./index.adoc[MuleSoft Accelerators] main page.

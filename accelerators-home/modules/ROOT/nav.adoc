@@ -6,7 +6,7 @@
 ** xref:application-deployment.adoc[Application Deployment]
 ** xref:application-testing.adoc[Application Testing]
 ** xref:additional-customizations.adoc[Additional Customizations]
-** xref:ubp-considerations.adoc[New Pricing Model Considerations]
+** xref:simplifying-assets.adoc[Simplifying Accelerator Assets]
 * xref:shared-assets.adoc[Shared Assets]
 * xref:common-services.adoc[Common Services]
 * xref:cim-overview.adoc[Cloud Information Model]
