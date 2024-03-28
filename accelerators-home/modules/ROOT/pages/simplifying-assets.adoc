@@ -11,56 +11,56 @@ A consistent driving factor behind the design and implementation of use cases su
 . Avoid the use of heavy logging, monitoring, or exception handling frameworks.
 . Leverage a reusable canonical data model within the business process layer to simplify communication between layers.
 . Use messaging only where deemed necessary to support high-volume deployments.
-. Use inline sub-flows instead top-level flows wherever possible.
+. Use inline sub-flows instead of top-level flows wherever possible.
 
-The asset being developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been solutioned but also other use cases needed by customers to support their business. For the most part this means the inclusion of additional endpoints in some APIs, especially System APIs shared across multiple use cases, which may not be required in all customer deployments. The reference architectures for most solutions have also been designed for long-term growth and evolution, which may result in additional applications and interactions that may not be required for smaller deployments. 
+The assets being developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been solutioned but also other use cases needed by customers to support their business. Additional endpoints have been included in some APIs, especially System APIs shared across multiple use cases, which may not be required in all customer deployments. The reference architectures for most solutions have also been designed for long-term growth and evolution, which sometimes results in additional applications and interactions that are not always required for smaller deployments. 
 
 The following sections describe steps you can take to reduce the number of flows in accelerator applications.
 
 ### Remove Unused APIkit Handlers
 
-Some of the accelerator API specifications, particularly the System APIs, were designed to support a wider range of use cases than what was strictly required to implement the solution's own use cases. This means that APIkit would have scaffolded flows you may not require for your use cases. These can simply be removed from the main router flow file, which is usually the one named `*-api.xml`. There is no need to go through the trouble of changing the API specification and re-scaffolding, since you would still have to edit the file manually to remove the scaffolded flows anyway. We do not recommend circumventing the APIkit router with a plain choice router as this would lead to reduced discoverability and higher maintenance costs.
+Some accelerator API specifications, such as the System APIs, support a wider range of use cases than what is required to implement the solution's own use cases. If you don't need the scaffolded flows in APIkit for your use cases, remove them from the main router flow file, which is usually `*-api.xml`. You don't need to change the API specification and re-scaffold, since the file needs to be edited manually to remove the scaffolded flows. Circumventing the APIkit router with a plain choice router is not recommended because it reduces discoverability and increases maintenance costs.
 
 Most applications also include a flow for the APIkit console, which could also be removed to reduce the number of flows if this functionality is not required.
 
 ### Remove API Health Checks
 
-The `get:/ping` endpoint was provided for customers who wish to monitor the health status of deployed APIs periodically. If this is not required, the handlers for these endpoints may be removed from the main APIkit flow file. If the endpoints are kept, messages and throughput can still be reduced by removing the checks for downstream dependencies.
+The `get:/ping` endpoint is provided for customers who wish to monitor the health status of deployed APIs periodically. If it's not needed, remove the handlers for these endpoints from the main APIkit flow file. If you keep the endpoints, remove the checks for downstream dependencies to reduce messages and throughput.
 
 ### Generalize Event Sources
 
-While we do not recommend creating monolithic flows that listen to generic events, there are some simplifications that can be gained by combining finer-grained event sources into more granular events. For example, while we already have general events for publishing and consuming updates to Parties (such as Individual and Household) and Party Roles (such as Customer and Supplier), the two update queues could be combined into one, bound to both Exchanges, and consumed by a single handler. The number of messages received would be the same but with one less flow event source. A similar approach could be taken for VMQueue subscribers, SFTP listeners, and others.
+Creating monolithic flows that listen to generic events is not recommended, but combining finer-grained event sources into more granular events simplifies the solution. For example, there are general events for publishing and consuming updates to Parties, such as Individual and Household, and to Party Roles, such as Customer and Supplier. But the two update queues can be combined into one, bound to both Exchanges, and consumed by a single handler. The same number of messages is received but with one less flow event source. You can take the same approach for VMQueue subscribers, SFTP listeners, and others.
 
-### Reducing the Number of APIs Overall
+### Reduce the Number of APIs
 
-Where back-end systems have a modern, well-designed API, such as Salesforce, and there is no need to perform extensive mapping between a canonical model and the back-end model, consider making calls directly to the target system from the Process layer instead of through a dedicated System API. This can also help reduce the number of message flows.
+ Back-end systems like Salesforce have a modern, well-designed API and do not need extensive mapping between a canonical model and the back-end model. To recuce the number of message flows, consider making calls directly to the target system from the Process layer instead of through a dedicated System API.
 
-The use cases for Experience APIs include providing data transformation, authentication mediation, and service filtering for external consumers. If internal systems are aligned to the same data, authentication, and services as the target Process or System APIs, there may be no need to have a dedicated Experience API for those consumers - especially if the target APIs are governed via API Manager.
+The use cases for Experience APIs provide data transformation, authentication mediation, and service filtering for external consumers. If internal systems are aligned to the same data, authentication, and services as the target Process or System APIs, a dedicated Experience API for those consumers is not always needed, especially if API Manager governs the target APIs.
 
-When providing similar functionality to external applications via Experience APIs, look for opportunities to provide a single Experience API to support multiple channels, rather than one Experience API per channel. For example, multiple Salesforce Experience APIs could be combined into one or two APIs, reducing the number of message flows and applications.
+When providing similar functionality to external applications via Experience APIs, look for opportunities to provide a single Experience API to support multiple channels, rather than one Experience API per channel. For example, combine multiple Salesforce Experience APIs into one or two APIs to the number of message flows and applications.
 
-Where appropriate, consider providing shared functionality via Mule libraries instead of standalone APIs. One example would be where a simple Account or Order lookup from Salesforce is required by multiple applications in the Process layer. Instead of providing this functionality as a standalone service it could be implemented in one or more sub-flows, packaged into a Mule library, and included with the Process APIs that require it. This approach would reduce both flows and message counts.
+Where appropriate, provide shared functionality via Mule libraries instead of standalone APIs, such as when an Account or Order lookup from Salesforce is required by multiple applications in the Process layer. Instead of providing this functionality as a standalone service, implement it in one or more sub-flows, package it into a Mule library, and include it where needed with the Process APIs. This approach reduces both flows and message counts.
 
 ## Additional Simplifications
 
-This section includes additional steps you can take to further simplify your integrations by reducing the number of mule messages and throughput.
+This section includes additional steps to simplify your integrations by reducing the number of mule messages and throughput.
 
-### Reducing Mule Messages
+### Reduce Mule Messages
 
-Mule messages are produced every time an event is received from an event source, including incoming API requests. One way to reduce the number of messages consumed is to reduce the number of API to API calls, such as Experience to Process or Process to System, that are made during the course of handling a top level event. While the accelerator solutions are already designed to avoid making unnecessary hops (for example, having an Experience API call a System API directly when no intermediate transformation, validation, or aggregation is required, rather than introducing an intermediate Process API that only acts as a pass-through hop), there are a few ways this can be optimized further:
+Receiving an event from an event source, including incoming API requests, produces Mule messages. To lower the number of messages consumed, reduce the number of API to API calls, such as Experience to Process or Process to System, that are made when handling a top level event. The accelerator solutions are designed to avoid making unnecessary hops, such as an Experience API calling a System API directly when no intermediate transformation, validation, or aggregation is required. The solutions also do not introduce an intermediate Process API that only acts as a pass-through hop. To optimize the solutions further:
 
-* Consider making calls to back-end systems directly from Process APIs where a well-defined interface exists for the target system.
-* For health checks, remove the flows that also check the health of downstream systems when the `checkDependencies` flag is set.
-* Replace the use of VMQueue or Anypoint MQ messaging if asynchronous processing is not truly required. These patterns were often provided with the expectation that customers would use them in high-volume deployments, which may not be the case for some deployments.
-* Where request batching can be done, update endpoints to accept arrays of objects instead of single items, as appropriate.
+* Make calls to back-end systems directly from Process APIs that have a well-defined interface for the target system.
+* Remove the flows for health checks that also check the health of downstream systems when the `checkDependencies` flag is set.
+* Replace the use of VMQueue or Anypoint MQ messaging that doesn't require asynchronous processing. These patterns were provided with the expectation that customers would use them in high-volume deployments, which may not be the case for some deployments.
+* Update endpoints to accept arrays of objects instead of single items when request batching can be done.
 
-### Reducing Data Throughput
+### Reduce Data Throughput
 
-As mentioned above, accelerator solutions already avoid unnecessary network traffic by reducing the number of hops and by not making use of any external logging, monitoring, or exception handling frameworks. A number of the simplification steps described above also apply to reducing data throughput. For your own deployments, be sure to take data throughput into account when considering the addition of any custom frameworks, such as for logging or exception handling.
+Some of the simplification steps described previously also reduce data throughput. Take data throughput into account for your deployments when considering the addition of any custom frameworks, such as for logging or exception handling.
 
 ## See Also
 
-* xref:getting-started.adoc[Getting Started Guide]
-* https://docs.mulesoft.com/general/usage-reports[Viewing Usage Reports]
+* xref:getting-started.adoc[Getting Started]
+* xref:general::usage-reports.adoc[Viewing Usage Reports]
 * https://blogs.mulesoft.com/learn-apis/api-led-connectivity/[API-led Connectivity]
 * xref:index.adoc[MuleSoft Accelerators]
