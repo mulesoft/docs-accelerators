@@ -340,7 +340,7 @@ To update the picklist values for a field in the specified object:
 . Search for and select the target Salesforce object.
 . Select the *Fields & Relationships* page.
 . Search for and select the target field with the field label.
-. Under the header `Picklist Values`, select `New`.
+. Select *New* in *Picklist Values*.
 . Add the respective `To be updated values` from the table with each picklist value on its own line.
 . Click `Save`.
 
