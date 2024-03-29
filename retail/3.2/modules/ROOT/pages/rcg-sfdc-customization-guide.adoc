@@ -342,7 +342,7 @@ To update the picklist values for a field in the specified object:
 . Search for and select the target field with the field label.
 . Select *New* in *Picklist Values*.
 . Add the corresponding value from the *Values* column in the previous table, placing each picklist value on a separate line.
-. Click `Save`.
+. Click *Save*.
 
 Repeat these steps for each field in the above table.
 
