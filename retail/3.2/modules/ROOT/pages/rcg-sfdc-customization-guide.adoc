@@ -335,7 +335,7 @@ Follow these instructions to update the picklist fields that are listed in the t
 
 To update the picklist values for a field in the specified object:
 
-. Click on the Salesforce Setup icon.
+. Click *Setup*.
 . Select the `Object Manager` tab from the Setup home page.
 . Find and select the target Salesforce object.
 . Select the `Fields & Relationships` page.
