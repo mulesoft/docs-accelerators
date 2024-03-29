@@ -302,7 +302,7 @@ Use the Apex class `CustomFieldUtility` to create custom fields programmatically
 
 Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
 
-=== Create Manually via Salesforce
+=== Create Fields Manually via Salesforce
 
 To create each of these custom fields and enable visibility for them on page layouts:
 
