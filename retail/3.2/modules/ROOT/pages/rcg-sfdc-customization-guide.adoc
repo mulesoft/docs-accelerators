@@ -442,7 +442,7 @@ Follow these steps to create the Apex Triggers:
 
 === Additional Notes
 
-* The Apex Trigger that is created filter records based on `LastModifiedBy <> {Service account ID}`. This is done to avoid cyclical updates performed by the Salesforce Customers System API. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
+* The Apex Trigger that is created filters records based on `LastModifiedBy <> {Service account ID}` to avoid cyclical updates performed by the Salesforce Customers System API. Run the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console to obtain the Apex Trigger.
 
 == See Also 
 
