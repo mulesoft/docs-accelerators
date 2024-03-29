@@ -290,7 +290,7 @@ Unique fields should be case-sensitive.
 
 === Create via Apex Script
 
-An Apex class called `CustomFieldUtility` is used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources/[RCG Common Resources] project. Download this project and follow the steps below.
+Use the Apex class `CustomFieldUtility` to create custom fields programmatically. See the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources/[RCG Common Resources] project to find the source for this class. Once you have downloaded the project, follow these steps:
 
 . Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
 . Go to `File > New > Apex class` and create a new class named `CustomFieldUtility`.
