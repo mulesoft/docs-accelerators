@@ -322,7 +322,7 @@ Repeat these steps for each custom field in the above table.
 1. All `Global_*_Id__c` fields should be visible in layouts, as described previously, but made *read-only* to avoid issues with data synchronization.
 ====
 
-== Fields to Be Updated
+== Fields to Update
 
 Follow these instructions to update the picklist fields that are listed in the table in the Custom Fields section:
 
