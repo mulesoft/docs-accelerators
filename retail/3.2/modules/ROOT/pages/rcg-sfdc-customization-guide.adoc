@@ -324,7 +324,7 @@ Repeat these steps for each custom field in the above table.
 
 == Fields to Be Updated
 
-The picklist fields mentioned in the table needs to be updated as per the instructions provided below.
+Follow these instructions to update the picklist fields that are listed in the table in the Custom Fields section:
 
 [%header%autowidth.spread]
 |===
