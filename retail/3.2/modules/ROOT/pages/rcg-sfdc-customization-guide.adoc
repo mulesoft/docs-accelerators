@@ -47,7 +47,7 @@ The following fields must be created in their corresponding objects manually or 
 
 [%header%autowidth.spread]
 |===
-| Salesforce Object Label | Field Label | Field Name | Data Type | Length | Unique | ExternalId | Formula
+| Salesforce Object Label | Field Label | Field Name | Data Type | Length | Unique | ExternalId a| Formula
 
 | Account
 | Global Billing Address ID
