@@ -129,6 +129,7 @@ The following fields must be created in their corresponding objects manually or 
 | 36
 | Y
 | Y
+| -
 
 | Account
 | Customer Status
@@ -318,7 +319,7 @@ Repeat these steps for each custom field in the above table.
 
 [NOTE]
 ====
-1. Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles, then it may be more efficient to go to `Users > Profiles > {profile} > Object Settings` for each object and adjust the permissions for multiple fields at once.
+1. Instead of adjusting permissions for each field, if you are only making them available to one or two profiles, then it may be more efficient to go to `Users > Profiles > {profile} > Object Settings` for each object and adjust the permissions for multiple fields at once.
 1. All `Global_*_Id__c` fields should be visible in layouts, as described previously, but made *read-only* to avoid issues with data synchronization.
 ====
 
@@ -354,9 +355,9 @@ If you created the fields in the previous Custom Fields section manually, update
 | Account | Customer Status | Type | Picklist | Prospect, Onboarding, Active, Inactive, Closed, Deceased, Delinquent, Dormant
 | Managed External Identifier | External Id Type | External_Id_Type__c | Picklist | SALESFORCE_B2C, SALESFORCE_CORE, PIM, OFBIZ, SAP_4HANA, MDM, SAP_ECC, SALESFORCE_MARKETING, POS, SALESFORCE_DC, SALESFORCE_LM, ORACLE_EBS
 | Managed External Identifier | Object Type | Object_Type__c | Picklist | BillingAddress, Customer, Email, Fax, Household, Individual, MailingAddress, MobilePhone, Organization, Phone, Product, SalesOrder, ShippingAddress
-| Managed External Identifier | Status | Status__c | VALID, INVALID
-| Product | Product Group | Product_Catalog__c | Basic, Premium
-| Product | Status | Status__c | VALID, INVALID
+| Managed External Identifier | Status | Status__c | Picklist | VALID, INVALID
+| Product | Product Group | Product_Catalog__c | Picklist| Basic, Premium
+| Product | Status | Status__c | Picklist| VALID, INVALID
 |===
 
 
@@ -377,6 +378,7 @@ Follow the below steps to generate the `Consumer Key` and `Consumer Secret` valu
 . In the `OAuth Policies` section, for `Permitted Users` select `All users may self-authorize`.
 . For `IP Relaxation`, select the `Relax IP restrictions` option.
 . Click *Save*.
+. Enable the OAuth 2.0 Username-Password Flow by following the steps documented in https://help.salesforce.com/s/articleView?id=release-notes.rn_security_username-password_flow_blocked_by_default.htm&release=244&type=5[Salesforce Help Docs].
 
 You now need to copy the `Consumer Key` and `Consumer Secret` values for use in configuring Mule application deployments. More specifically, these must be supplied as the values for the `sfdc.client-id` and `sfdc.client-secret` properties found in the `Clouhub-RCG-DEV` profile in your Maven `settings.xml` file.
 
@@ -386,7 +388,9 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 . Verify your identity by entering the verification code that was emailed to you.
 . Copy the key and secret values and update your `settings.xml` file as described previously.
 
-Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
+
+
+Download the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src[RCG Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
 
 == Generating a Security Token for the Service Account
 
