@@ -2,7 +2,7 @@
 
 This guide provides the Salesforce customizations that must be created to enable the Customer 360, Product, and Sales Order Sync use cases to function end-to-end.
 
-== Custom Object
+== Create Custom Objects
 
 The following object must be created either manually or via Apex script as per the instructions provided below.
 
