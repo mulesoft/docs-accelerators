@@ -319,6 +319,7 @@ Repeat these steps for each custom field in the above table.
 [NOTE]
 1. Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles, then it may be more efficient to go to `Users > Profiles > {profile} > Object Settings` for each object and adjust the permissions for multiple fields at once.
 1. All `Global_*_Id__c` fields should be visible in layouts (as described above) but made *read-only* to avoid issues with data synchronization.
+====
 
 == Fields to Be Updated
 
