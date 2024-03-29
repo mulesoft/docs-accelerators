@@ -43,7 +43,7 @@ Once the script completes, select the `Debug Only` filter option to show only th
 
 == Create Custom Fields
 
-The following fields must be created in the corresponding objects either manually or via Apex script as per the instructions provided below.
+The following fields must be created in their corresponding objects manually or via Apex script:
 
 [%header%autowidth.spread]
 |===
