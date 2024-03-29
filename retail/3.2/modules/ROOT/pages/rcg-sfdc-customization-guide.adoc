@@ -350,7 +350,7 @@ If you created the fields in the previous Custom Fields section manually, update
 
 [%header%autowidth.spread]
 |===
-| Salesforce Object Label | Field Label | Field Name | Data Type | To be updated values
+| Salesforce Object Label | Field Label | Field Name | Data Type | Values
 | Account | Customer Status | Type | Picklist | Prospect, Onboarding, Active, Inactive, Closed, Deceased, Delinquent, Dormant
 | Managed External Identifier | External Id Type | External_Id_Type__c | Picklist | SALESFORCE_B2C, SALESFORCE_CORE, PIM, OFBIZ, SAP_4HANA, MDM, SAP_ECC, SALESFORCE_MARKETING, POS, SALESFORCE_DC, SALESFORCE_LM, ORACLE_EBS
 | Managed External Identifier | Object Type | Object_Type__c | Picklist | BillingAddress, Customer, Email, Fax, Household, Individual, MailingAddress, MobilePhone, Organization, Phone, Product, SalesOrder, ShippingAddress
