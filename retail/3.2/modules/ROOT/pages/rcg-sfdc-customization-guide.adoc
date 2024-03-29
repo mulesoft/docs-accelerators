@@ -4,7 +4,7 @@ This guide provides the Salesforce customizations that must be created to enable
 
 == Create Custom Objects
 
-The following object must be created either manually or via Apex script as per the instructions provided below.
+The following objects must be created manually or via Apex script:
 
 |===
 | Salesforce Object Name | Singular Label | Plural Label
