@@ -346,7 +346,7 @@ To update the picklist values for a field in the specified object:
 
 Repeat these steps for each field in the table.
 
-If the fields under `Custom Fields` header were created manually, update the picklist values for the fields in the table as per the instructions above.
+If you created the fields in the previous Custom Fields section manually, update the picklist values for the fields in the table in the Fields to Update section.
 
 [%header%autowidth.spread]
 |===
