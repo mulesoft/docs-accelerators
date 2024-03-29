@@ -288,7 +288,7 @@ The following fields must be created in their corresponding objects manually or 
 [NOTE]
 Unique fields should be case-sensitive.
 
-=== Create via Apex Script
+=== Create Fields via Apex Script
 
 Use the Apex class `CustomFieldUtility` to create custom fields programmatically. See the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources/[RCG Common Resources] project to find the source for this class. Once you have downloaded the project, follow these steps:
 
