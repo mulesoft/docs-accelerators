@@ -333,7 +333,7 @@ Follow these instructions to update the picklist fields that are listed in the t
 | Order | Status | Status | Picklist | CANCELLED, CREATED, CONFIRMED, DELIVERED, IN_CART, IN_TRANSIT, INVOICED, LOST, PARTIALLY_SHIPPED, PICKUP_AVAILABLE, PROCESSING, REJECTED, RETURNED
 |===
 
-To update picklist values for a field in the specified object:
+To update the picklist values for a field in the specified object:
 
 . Click on the Salesforce Setup icon.
 . Select the `Object Manager` tab from the Setup home page.
