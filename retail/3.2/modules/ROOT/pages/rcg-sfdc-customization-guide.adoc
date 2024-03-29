@@ -6,6 +6,7 @@ This guide provides the Salesforce customizations that must be created to enable
 
 The following objects must be created manually or via Apex script:
 
+[%header%autowidth.spread]
 |===
 | Salesforce Object Name | Singular Label | Plural Label
 
