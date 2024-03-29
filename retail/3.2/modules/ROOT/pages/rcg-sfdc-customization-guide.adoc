@@ -436,7 +436,7 @@ Follow these steps to create the Apex Triggers:
 . Click *Triggers* in the Details section to view a list of available triggers for the object.
 . Click *New*.
 . Search for the Apex Trigger name, which is indicated in the previous table. Copy the Trigger Script code `CreateApexTriggers.txt` available in the `rcg-common-resources/salesforce` folder of https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources/[RCG Common Resources] project and paste it into the script editor.
-. Obtain the `LastModifiedById` by running the query mentioned in the additional notes below.
+. Obtain the `LastModifiedById` by running the query from the Additional Notes section.
 . Replace the values in the script and save the trigger.
 . Click *Save* and ensure the *isActive* checkbox is checked.
 
