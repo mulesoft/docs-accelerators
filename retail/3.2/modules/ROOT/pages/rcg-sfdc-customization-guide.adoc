@@ -17,8 +17,7 @@ The following objects must be created manually or via Apex script:
 
 === Create Custom Object Manually
 
-1. In your Salesforce org, click Setup, and then select Setup to open Setup.
-2. Click the Object Manager tab. If you don’t see it, enter Object Manager in the Quick Find box.
+1. From Setup In your Salesforce org, click the Object Manager tab. If you don’t see it, enter "Object Manager" in the Quick Find box.
 3. On the Object Manager page, click Create | Custom Object.
 4. For Label, enter the value in `Singular Label`.
 5. For Plural Label, enter the value in `Plural Label`.
@@ -27,7 +26,7 @@ The following objects must be created manually or via Apex script:
 
 === Create Custom Object via Apex Script
 
-An Apex class called `CustomObjectUtility` and `MetadataService` are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources/[RCG Common Resources] project and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow the steps below.
+The`CustomObjectUtility` and `MetadataService` Apex classes are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources/[RCG Common Resources] project and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow the steps below.
 
 1. Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
 1. Go to `File > New > Apex class` and create a new class named `CustomObjectUtility`.
@@ -228,7 +227,7 @@ The following fields must be created in their corresponding objects manually or 
 | -
 | -
 | -
-| Shipping__c + Total_Tax__c + TotalAmount
+| `Shipping__c + Total_Tax__c + TotalAmount`
 
 | Product
 | Global_Product_Id
@@ -303,7 +302,7 @@ Use the Apex class `CustomFieldUtility` to create custom fields programmatically
 
 Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
 
-=== Create Manually via Salesforce
+=== Create Fields Manually via Salesforce
 
 To create each of these custom fields and enable visibility for them on page layouts:
 
