@@ -228,7 +228,7 @@ The following fields must be created in their corresponding objects manually or 
 | -
 | -
 | -
-| Shipping__c + Total_Tax__c + TotalAmount
+| Shipping__c `+` Total_Tax__c `+` TotalAmount
 
 | Product
 | Global_Product_Id
@@ -446,7 +446,7 @@ Follow these steps to create the Apex Triggers:
 
 === Additional Notes
 
-* The Apex Trigger that is created filters records based on `LastModifiedBy <> {Service account ID}` to avoid cyclical updates performed by the Salesforce Customers System API. Run the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console to obtain the Apex Trigger.
+* The Apex Trigger that is created filters records based on `LastModifiedBy <> {Service account ID}` to avoid cyclical updates performed by the Salesforce Customers System API. Run the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console to obtain Service account ID.
 
 == See Also 
 
