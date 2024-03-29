@@ -18,7 +18,6 @@ The following objects must be created manually or via Apex script:
 === Create Custom Object Manually
 
 1. From Setup In your Salesforce org, click the Object Manager tab. If you don’t see it, enter "Object Manager" in the Quick Find box.
-2. Click the Object Manager tab. If you don’t see it, enter Object Manager in the Quick Find box.
 3. On the Object Manager page, click Create | Custom Object.
 4. For Label, enter the value in `Singular Label`.
 5. For Plural Label, enter the value in `Plural Label`.
