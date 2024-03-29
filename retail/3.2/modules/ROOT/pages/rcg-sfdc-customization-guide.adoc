@@ -227,7 +227,7 @@ The following fields must be created in their corresponding objects manually or 
 | -
 | -
 | -
-| `Shipping__c + Total_Tax__c + TotalAmount`
+| Shipping__c + Total_Tax__c + TotalAmount
 
 | Product
 | Global_Product_Id
