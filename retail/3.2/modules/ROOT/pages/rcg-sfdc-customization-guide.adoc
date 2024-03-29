@@ -41,7 +41,7 @@ An Apex class called `CustomObjectUtility` and `MetadataService` are used to cre
 
 Once the script completes, select the `Debug Only` filter option to show only the results of each create request. Verify that custom object has been created successfully.
 
-== Custom Fields
+== Create Custom Fields
 
 The following fields must be created in the corresponding objects either manually or via Apex script as per the instructions provided below.
 
