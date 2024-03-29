@@ -344,7 +344,7 @@ To update the picklist values for a field in the specified object:
 . Add the corresponding value from the *Values* column in the previous table, placing each picklist value on a separate line.
 . Click *Save*.
 
-Repeat these steps for each field in the above table.
+Repeat these steps for each field in the table.
 
 If the fields under `Custom Fields` header were created manually, update the picklist values for the fields in the table as per the instructions above.
 
