@@ -1,6 +1,6 @@
 = Salesforce Customization Guide
 
-This guide provides instruction on Salesforce customization that are required to enable the customer 360, product and sales order sync use cases to function end-to-end.
+This guide provides the Salesforce customizations that must be created to enable the Customer 360, Product, and Sales Order Sync use cases to function end-to-end.
 
 == Custom Object
 
