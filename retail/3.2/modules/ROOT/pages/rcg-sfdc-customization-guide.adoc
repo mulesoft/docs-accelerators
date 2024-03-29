@@ -227,7 +227,7 @@ The following fields must be created in their corresponding objects manually or 
 | -
 | -
 | -
-| Shipping__c
+| Shipping＿c
 
 | Product
 | Global_Product_Id
