@@ -163,7 +163,7 @@ If deployment fails due to an `unauthorized` error, it is possible that the comp
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started Guide]
+* xref:getting-started.adoc[Getting Started]
 * xref:build-environment.adoc[Build Environment]
 * xref:application-testing.adoc[Application Testing]
 * xref:additional-customizations.adoc[Additional Customizations]

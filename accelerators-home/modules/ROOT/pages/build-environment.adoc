@@ -87,7 +87,7 @@ If the `mvn clean` command does not complete successfully, or if Studio reports 
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started Guide]
+* xref:getting-started.adoc[Getting Started]
 * xref:application-deployment.adoc[Application Deployment]
 * xref:additional-customizations.adoc[Additional Customizations]
 * xref:application-testing.adoc[Application Testing]
