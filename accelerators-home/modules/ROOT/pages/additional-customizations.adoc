@@ -4,11 +4,11 @@ The following customizations can be made to tailor the accelerator components to
 
 == Maven POM Parent
 
-All Accelerator projects inherit from a parent Maven POM. In addition to some global settings and repository references, this config also defines the versions of all MuleSoft connectors and modules used by applications. Refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-pom-parent-src/[Accelerator POM Parent^] asset for more information about making changes to the POM parent file.
+All Accelerator projects inherit from a parent Maven POM. In addition to some global settings and repository references, this config also defines the versions of all MuleSoft connectors and modules used by applications. Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-pom-parent-src/[Accelerator POM Parent^] asset for more information about making changes to the POM parent file.
 
 == Common Core Library
 
-It is a best practice in MuleSoft application development to place common flows, configuration settings, and other resources into a shared library. The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-core-src/[Accelerator Common Core Library^] asset contains the source used by most implementation templates created for the accelerators. It is referenced as a Maven dependency only and is _not_ an application you can run.
+It is a best practice in MuleSoft application development to place common flows, configuration settings, and other resources into a shared library. The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-core-src/[Accelerator Common Core Library^] asset contains the source used by most implementation templates created for the accelerators. It is referenced as a Maven dependency only and is _not_ an application you can run.
 
 If you need to make changes to it you will need to download the asset, extract the source, and then import it into Studio (use the `Anypoint Studio project from File System` wizard). As with the POM parent, update the version number before making any changes. See the `README.md` file in the project source for more details.
 
@@ -42,7 +42,7 @@ For convenience, passwords, secrets, hostnames, URLs have been converted to plai
 
 To use secure properties, set an `encryption-key` (called "mule.key" in configurations) for encrypting secrets. Individual properties can then be encrypted and placed in the `config-secured-${mule.env}.yaml` file, as appropriate. These files will automatically be imported at runtime. For maximum security, use a different encryption key for each application.
 
-Refer to the https://dev-docs-internal.kqa.msap.io/beta-accelerators/runtime-manager/secure-application-properties[MuleSoft documentation^] for more information.
+Refer to the https://docs.mulesoft.com/runtime-manager/secure-application-properties[MuleSoft documentation^] for more information.
 
 == Application Messages
 
