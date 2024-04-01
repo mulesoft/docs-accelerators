@@ -14,7 +14,7 @@ From the command line, running any Maven goal that includes the testing phase au
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started]
+* xref:getting-started.adoc[Getting Started Guide]
 * xref:build-environment.adoc[Build Environment]
 * xref:application-deployment.adoc[Application Deployment]
 * xref:additional-customizations.adoc[Additional Customizations]

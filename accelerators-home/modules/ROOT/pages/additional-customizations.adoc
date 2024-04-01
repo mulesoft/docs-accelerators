@@ -64,7 +64,7 @@ To change the default behavior for all applications, modify the property value i
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started]
+* xref:getting-started.adoc[Getting Started Guide]
 * xref:build-environment.adoc[Build Environment]
 * xref:application-deployment.adoc[Application Deployment]
 * xref:application-testing.adoc[Application Testing]

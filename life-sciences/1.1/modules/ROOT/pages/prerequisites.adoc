@@ -4,5 +4,5 @@ There are no setup or configuration guides specific to the MuleSoft Accelerator 
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started]
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:index.adoc[MuleSoft Accelerator for Life Sciences Overview]
