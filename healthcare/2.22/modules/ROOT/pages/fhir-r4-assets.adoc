@@ -3,9 +3,9 @@
 The following are a collection of assets to support MuleSoft customers who are developing Fast Healthcare Interoperability Resources (FHIR) APIs using MuleSoft. Visit the https://www.hl7.org/fhir/[official HL7 website] for more information.
 
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhirjson-to-raml-sys-api-spec/[FHIR RAML auto-generator] - Utility to generate RAML specifications for FHIR resources from the JSON schema provided by HL7.
-* xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets] - A list of API specifications, data types, and libraries to meet FHIR R4 USCDI Core Profile compliance standards.
-* xref:fhir-r4-resources.adoc[FHIR R4 Resources List] - A list of API specifications, data types, and libraries to meet FHIR R4 compliance standards, as well as information about the FHIR Error API policy.
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-error-policy/[FHIR Error API Policy] - A guide for capturing error responses and formatting them in FHIR OperationOutcome-compliant format.
+* xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets] - A collection of API specifications, data types, and libraries designed to meet FHIR USCDI Core Profile compliance standards.
+* xref:fhir-r4-resources.adoc[FHIR R4 Resources List] - A collection of API specifications, data types, and libraries designed to meet FHIR R4 compliance standards.
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fhir-error-policy/[FHIR Error API Policy] - A custom policy that captures error responses and formats them into OperationOutcome, which is a FHIR compliant format.
 * https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hc-accelerator-okta-smartfhir/[Okta SMART on FHIR^] - Guidance for setting up a reference "SMART on FHIR" implementation on Anypoint Platform using Okta as the identity provider.
 
 == See Also
