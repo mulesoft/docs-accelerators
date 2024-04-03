@@ -29,7 +29,7 @@ The `get:/ping` endpoint periodically monitors the health status of deployed API
 
 === Generalize Event Sources
 
-Creating monolithic flows that listen to generic events is not recommended, but combining finer-grained event sources into more granular events simplifies the solution. For example, there are general events for publishing and consuming updates to Parties, such as Individual and Household, and to Party Roles, such as Customer and Supplier. But by combining the update queues, they are bound to both Exchanges and consumed by a single handler. You receive the same number of messages but with one less flow event source.
+You don't need to create monolithic flows that listen to generic events. Instead, combine finer-grained event sources into more granular events simplifies the solution. For example, there are general events for publishing and consuming updates to Parties, such as Individual and Household, and to Party Roles, such as Customer and Supplier. But by combining the update queues, you bind them to both Exchanges and a single handler consumes them. You receive the same number of messages but with fewer flow event sources.
 
 Take the same approach for VMQueue subscribers, SFTP listeners, and others.
 
