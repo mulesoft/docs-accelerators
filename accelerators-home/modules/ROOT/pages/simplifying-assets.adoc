@@ -38,7 +38,7 @@ Take the same approach for VMQueue subscribers, SFTP listeners, and other event 
 
 Backend systems like Salesforce have a modern API and limited mapping between a canonical model and the backend model. To reduce the number of message flows, consider making calls directly to the target system from the Process layer instead of through a dedicated System API.
 
-The use cases for Experience APIs provide data transformation, authentication mediation, and service filtering for external consumers. If API Manager governs the target APIs, then an Experience API is not needed for internal systems aligned to the same data, authentication, and services as the Process or System APIs.
+The use cases for Experience APIs provide data transformation, authentication mediation, and service filtering for external consumers. If API Manager governs the target APIs, you don't need an Experience API for internal systems aligned to the same data, authentication, and services as the Process or System APIs.
 
 When providing similar functionality to external apps via Experience APIs, find opportunities to provide a single Experience API to support multiple channels, rather than one Experience API per channel. For example, combine multiple Salesforce Experience APIs to reduce the number of message flows and apps.
 
