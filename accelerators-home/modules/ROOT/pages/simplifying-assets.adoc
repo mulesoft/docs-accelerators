@@ -67,7 +67,7 @@ Some of the simplification steps described previously also reduce data throughpu
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started]
+* xref:getting-started.adoc[]
 * xref:general::usage-reports.adoc[]
 * https://blogs.mulesoft.com/learn-apis/api-led-connectivity/[API-led Connectivity]
 * xref:index.adoc[]
