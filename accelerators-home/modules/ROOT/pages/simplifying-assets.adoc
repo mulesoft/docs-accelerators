@@ -4,18 +4,18 @@ MuleSoft Accelerators follow an API led approach to connectivity, which separate
 
 == Simplify Accelerator Assets
 
-A consistent driving factor behind the design and implementation of use cases supported by the MuleSoft Accelerators has always been to keep the assets and corresponding solutions as simple as possible while still providing a solid, functional, and maintainable architecture for customers to build upon. This has been achieved through the following key solution design principles:
+Keeping the assets and corresponding solutions as simple as possible drives the design and implementation of use cases supported by the MuleSoft Accelerators. Providing a solid, functional, and maintainable architecture for customers to build upon also contributes. The following key principles demonstrate the philosophy behind the solution design:
 
-* Follow the API-led connectivity approach but create APIs only where necessary to support clean integration with external apps and systems.
+* Follow the API led connectivity approach but create APIs only where necessary to support clean integration with external apps and systems.
 * Keep exception handling clean and simple, allowing for straightforward extension and customization. 
 * Avoid the use of heavy logging, monitoring, or exception handling frameworks.
 * Leverage a reusable canonical data model within the business process layer to simplify communication between layers.
-* Use messaging only where deemed necessary to support high-volume deployments.
-* Use inline sub-flows instead of top-level flows wherever possible.
+* Use messaging only where necessary to support high volume deployments.
+* Use inline subflows instead of top level flows where possible.
 
-The assets being developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been solutioned but also other use cases needed by customers to support their business. Additional endpoints have been included in some APIs, especially System APIs shared across multiple use cases, which may not be required in all customer deployments. The reference architectures for most solutions have also been designed for long-term growth and evolution, which sometimes results in additional apps and interactions that are not always required for smaller deployments. 
+The assets developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been built but also other use cases needed by customers to support their business. Some APIs include additional endpoints, especially System APIs shared across multiple use cases, but not all customer deployments require the additional endpoints. The reference architectures for most solutions have also been designed for long-term growth and evolution, which sometimes results in additional apps and interactions that are not always required for smaller deployments. 
 
-The following sections describe steps you can take to reduce the number of flows in accelerator apps.
+The following sections describe how to reduce the number of flows in accelerator apps.
 
 === Remove Unused APIkit Handlers
 
