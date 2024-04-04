@@ -15,7 +15,7 @@ Keeping the assets and corresponding solutions as simple as possible drives the 
 
 The assets developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been built but also other use cases needed by customers to support their business. Some APIs include additional endpoints, especially System APIs shared across multiple use cases, but not all customer deployments require the additional endpoints. The reference architectures for most solutions have also been designed for long-term growth and evolution, which sometimes results in additional apps and interactions that are not always required for smaller deployments. 
 
-The following sections describe how to reduce the number of flows in accelerator apps.
+To reduce the number of flows in accelerator apps, apply the guidance in the following sections.
 
 === Remove Unused APIkit Handlers
 
