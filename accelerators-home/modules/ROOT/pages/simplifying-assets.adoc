@@ -19,19 +19,20 @@ The following sections describe how to reduce the number of flows in accelerator
 
 === Remove Unused APIkit Handlers
 
-Remove scaffolded flows from the main router flow file in APIkit, which is usually the `*-api.xml` file. Leave the API specification unchanged instead of rescaffolding, because you always edit the file manually to remove the scaffolded flows. Avoid circumventing the APIkit router with a plain choice router, because that makes the router less discoverable and increases maintenance costs.
-
-Also, remove the flow for the APIkit console.
+* Remove scaffolded flows from the main router flow file in APIkit, which is usually the `*-api.xml` file.
+* Leave the API specification unchanged instead of rescaffolding, because you always edit the file manually to remove the scaffolded flows.
+* Avoid circumventing the APIkit router with a plain choice router, because that makes the router less discoverable and increases maintenance costs.
+* Remove the flow for the APIkit console.
 
 === Remove API Health Checks
 
-The `get:/ping` endpoint periodically monitors the health status of deployed APIs. Remove the handlers for these endpoints from the main APIkit flow file if monitoring is not needed. If you keep the endpoints, remove the checks for downstream dependencies to reduce messages and throughput.
+The `get:/ping` endpoint periodically monitors the health status of deployed APIs. If you don't need to monitor, remove the handlers for these endpoints from the main APIkit flow file. If you keep the endpoints, remove the checks for downstream dependencies to reduce messages and throughput.
 
 === Generalize Event Sources
 
-Instead of creating monolithic flows that listen to generic events, combine event sources into more granular events. For example, there are general events for publishing and consuming updates to Parties, such as Individual and Household, and to Party Roles, such as Customer and Supplier. By combining the update queues, you bind them to both Exchanges and a single handler consumes them. You receive the same number of messages but with fewer flow event sources.
+Instead of creating monolithic flows that listen to generic events, combine event sources into more granular events. For example, general events exist for publishing and consuming updates to Parties, such as Individual and Household, and to Party Roles, such as Customer and Supplier. By combining the update queues, you bind them to both Exchanges and a single handler consumes them. You receive the same number of messages but with fewer flow event sources.
 
-Take the same approach for VMQueue subscribers, SFTP listeners, and others.
+Take the same approach for VMQueue subscribers, SFTP listeners, and other event sources.
 
 === Reduce the Number of APIs
 
@@ -45,7 +46,7 @@ Provide shared functionality via Mule libraries instead of standalone APIs, such
 
 == Additional Simplifications
 
-The following sections provide additional steps to simplify your integrations by reducing the number of Mule messages and throughput.
+To simplify your integrations, reduce the number of Mule messages and throughput.
 
 === Reduce Mule Messages
 
@@ -54,8 +55,8 @@ Receiving an event from an event source, including incoming API requests, produc
 The accelerator solutions also avoid making unnecessary hops, such as an Experience API calling a System API directly when no intermediate transformation, validation, or aggregation is required. The solutions avoid introducing an intermediate Process API that acts as a passthrough hop. To optimize the solutions further:
 
 * Make calls to backend systems directly from Process APIs that have a straightforward interface for the target system.
-* If you enable the `checkDependencies` flag, remove the flows for health checks that check downstream system health.
-* If you use low volume deployments and synchronous processing, replace VMQueue or Anypoint MQ messaging.
+* Remove the flows for health checks that look at downstream system health if you enable the `checkDependencies` flag.
+* Replace VMQueue or Anypoint MQ messaging if you use low volume deployments and synchronous processing.
 * Update endpoints to accept arrays of objects instead of single items when performing request batching.
 
 === Reduce Data Throughput
@@ -65,6 +66,6 @@ Some of the simplification steps described previously also reduce data throughpu
 == See Also
 
 * xref:getting-started.adoc[Getting Started]
-* xref:general::usage-reports.adoc[Viewing Usage Reports]
+* xref:general::usage-reports.adoc[]
 * https://blogs.mulesoft.com/learn-apis/api-led-connectivity/[API-led Connectivity]
-* xref:index.adoc[MuleSoft Accelerators Overview]
+* xref:index.adoc[]
