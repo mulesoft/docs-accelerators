@@ -32,7 +32,7 @@ The following APIs are used by multiple accelerators to access and manage data i
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/system-apis-fragment.adoc[]
 
 EU Exchange::
@@ -54,7 +54,7 @@ The following APIs represent the reusable business processes that are leveraged 
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/process-apis-fragment.adoc[]
 
 EU Exchange::
@@ -76,7 +76,7 @@ The following APIs provide tailor-made endpoints for specific applications to co
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/experience-apis-fragment.adoc[]
 
 EU Exchange::
@@ -98,7 +98,7 @@ The following applications provide key integrations but do not expose any APIs a
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/integrations-fragment.adoc[]
 
 EU Exchange::
@@ -120,7 +120,7 @@ The following non-application components are also used by multiple accelerators.
 ====
 US Exchange::
 +
-:anypoint-url: anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873
+:anypoint-url: anypoint.mulesoft.com/exchange/org.mule.examples
 include::_partials/shared-components-fragment.adoc[]
 
 EU Exchange::

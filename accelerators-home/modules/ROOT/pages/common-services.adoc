@@ -12,7 +12,7 @@ The notification and scheduler services can be configured and installed as indep
 
 The Common Scheduling Service is an optional component that will run schedules and perform API calls. The benefit of having a common scheduler service is to have all the integration-level schedules maintained in one place. Here is a high-level view of how the scheduler service works:
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/accel-scheduling-service-diagram.png[accel-scheduling-service-diagram.png]
+image::https://www.mulesoft.com/ext/solutions/images/accel-scheduling-service-diagram.png[accel-scheduling-service-diagram.png]
 
 The service may be built in two different ways, depending on the target deployment platform. The Anypoint Platform offers operational advantages to applications deployed in CloudHub when dealing with schedules.
 
@@ -30,7 +30,7 @@ For service configuration details please refer to the xref:./getting-started.ado
 
 The solution provides an optional Notifications Process API, which consumes notification events and sends notifications to individuals or groups via SMS, email, or Slack via system APIs specific to those services. The high-level design is as follows:
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/accel-notification-service-diagram.png[accel-notification-service-diagram.png]
+image::https://www.mulesoft.com/ext/solutions/images/accel-notification-service-diagram.png[accel-notification-service-diagram.png]
 
 As you can see, the API offloads incoming requests directly to a queue in order to avoid blocking calling apps.
 
@@ -115,7 +115,7 @@ An easier way to apply policies to all APIs is to deploy them as Automated polic
 
 == See Also
 
-* The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
-* The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-mulesoft-api-archetype-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
+* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-template-src/[API Template Project^] is a generic implementation template that allows you to quickly create implementations for new API specifications.
+* The https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-mulesoft-api-archetype-src/[Maven Archetype Plugin^] is a Maven archetype pre-built with Accelerator best practices to help developers kick start their development of new APIs.
 * The xref:./getting-started.adoc[Getting Started] guide provides detailed information about configuring and using these services. Refer to the navigation pages on the left for more information about these services from a functional perspective.
 * The xref:./index.adoc[MuleSoft Accelerators] main page.

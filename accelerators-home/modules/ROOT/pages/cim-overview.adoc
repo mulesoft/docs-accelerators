@@ -26,7 +26,7 @@ The model content is organized into domains, or Subject Areas, which represent m
 
 The version of CIM used by the MuleSoft Accelerators is represented as a set of RAML library fragments. There is a core library for each domain, plus extension libraries that aggregate data types from multiple core libraries for a more complete representation of the model. The entities in each core library are logically grouped into related entities within that Subject Area. Each core library provides a set of examples and JSON schemas, which can be useful for defining metadata types when developing applications in Anypoint Studio.
 
-Refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-cim-global-library[Accelerator CIM Global Library^] home page to get started with using the model.
+Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-global-library[Accelerator CIM Global Library^] home page to get started with using the model.
 
 == See Also
 
