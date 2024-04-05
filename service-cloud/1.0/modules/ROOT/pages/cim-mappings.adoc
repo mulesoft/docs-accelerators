@@ -1,6 +1,6 @@
 = Object Mappings
 
-== Customer profile sync
+== Customer Profile Sync
 
 === Source-type mappings
 
