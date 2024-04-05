@@ -57,5 +57,5 @@ Contact Phone | Customer | Relevant fields only
 
 == See Also 
 
-* xref:prerequisites.adoc[Prerequisites]
+* xref:prerequisites.adoc[Before You Begin]
 * xref:index.adoc[MuleSoft Accelerator for Service Cloud]
