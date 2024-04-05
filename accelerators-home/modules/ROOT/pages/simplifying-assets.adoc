@@ -10,7 +10,7 @@ The following key principles demonstrate the philosophy behind the solution desi
 
 * Follows the API-led connectivity approach but creates APIs only where necessary to support clean integration with external apps and systems.
 * Keeps exception handling clean and simple, allowing for straightforward extension and customization. 
-* Avoid the use of heavy logging, monitoring, or exception handling frameworks.
+* Avoids using heavy logging, monitoring, or exception-handling frameworks.
 * Leverage a reusable canonical data model within the business process layer to simplify communication between layers.
 * Use messaging only where necessary to support high volume deployments.
 * Use inline subflows instead of top-level flows where possible.
