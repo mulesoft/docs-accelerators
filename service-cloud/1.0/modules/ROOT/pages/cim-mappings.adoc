@@ -4,7 +4,7 @@
 
 === Source-Type Mappings
 
-The following table summarizes how representations of a customer or individual from each system will be mapped to CIM types:
+The following table shows how customers or individuals from each system are mapped to CIM types:
 
 [%header%autowidth.spread]
 |===
