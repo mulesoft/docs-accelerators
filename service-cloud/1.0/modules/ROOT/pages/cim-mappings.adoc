@@ -10,7 +10,7 @@ The following table summarizes how representations of a customer or individual f
 |===
 | Source System | Source Type | CIM Types | Mapping Notes
 
-.3+| Salesforce
+| Salesforce
 Service Cloud | Person Accounts | Individual
 
 CustomerContactAddress
