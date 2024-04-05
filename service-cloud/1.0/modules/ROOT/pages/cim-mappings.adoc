@@ -11,47 +11,46 @@ The following table shows how customers or individuals from each system are mapp
 | Source System | Source Type | CIM Types | Mapping Notes
 
 | Salesforce
-Service Cloud | Person Accounts | * Individual
+Service Cloud | Person Accounts a| * Individual
 
 * CustomerContactAddress
 
-Contact Email
+* Contact Email
 
-Contact Phone | Person Account is represented as record type, mapping to Account and Contact
+* Contact Phone | A Person Account is represented as a record type that maps to Account and Contact.
 
-| SAP | Customer | IndividualCustomer
+| SAP | Customer a| * IndividualCustomer
 
-Contact Address
+* Contact Address
 
-Contact Email
+* Contact Email
 
-Contact Phone |
+* Contact Phone |
 |===
 
-=== Target-type mappings
+=== Target-Type Mappings
 
-The following table summarizes how representations of a customer or individual from each system will be mapped from CIM types:
+The following table shows how customers or individuals from each system are mapped to CIM types:
 
 [%header%autowidth.spread]
 |===
-| Target System | CIM Type | Target Types | Mapping Notes
+| Target System | Target Type | CIM Type| Mapping Notes
 
-| Salesforce
-Service Cloud | CustomerIndividual
+| Salesforce Service Cloud | PersonAccounts a| * CustomerIndividual
 
-Contact Address
+* Contact Address
 
-Contact Email
+* Contact Email
 
-Contact Phone | PersonAccounts | Relevant fields only
+* Contact Phone | Relevant fields only
 
-| SAP | CustomerIndividual
+| SAP | Customer a| * CustomerIndividual
 
-Contact Address
+* Contact Address
 
-Contact Email
+* Contact Email
 
-Contact Phone | Customer | Relevant fields only
+* Contact Phone | Relevant fields only
 |===
 
 
