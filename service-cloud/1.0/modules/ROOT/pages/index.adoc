@@ -1,7 +1,7 @@
 = MuleSoft Accelerator for Service Cloud
 :service-cloud-version: {page-component-version}
 
-MuleSoft Accelerator for Service Cloud empowers service representatives with a holistic customer 360 view, facilitating personalized interactions, optimized service workflows, and heightened operational efficiency, all aimed at enhancing customer satisfaction.
+MuleSoft Accelerator for Service Cloud empowers service representatives with a holistic customer 360 view, facilitating personalized interactions, optimized service workflows, and heightened operational efficiency, to enhance customer satisfaction.
 
 == Use Cases
 
