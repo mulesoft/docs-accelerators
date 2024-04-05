@@ -1,6 +1,6 @@
 = Considerations for Simplifying Accelerator Assets
 
-MuleSoft Accelerators follow an API led approach to connectivity, which separates app, process, and system integration layers while enabling a high level of reusability, particularly with System APIs. The low maintenance costs and ability to enable future growth make this process highly recommended. However, if you want a less complex approach, follow this guidance to simplify your integrations and architecture. 
+MuleSoft Accelerators follow an API-led approach to connectivity, which separates app, process, and system integration layers while enabling a high level of reusability, particularly with System APIs. The low maintenance costs and ability to enable future growth make this process highly recommended. However, if you want a less complex approach, follow this guidance to simplify your integrations and architecture. 
 
 == Simplify Accelerator Assets
 
