@@ -15,7 +15,7 @@ The following key principles demonstrate the philosophy behind the solution desi
 * Uses messaging only where necessary to support high-volume deployments.
 * Uses inline subflows instead of top-level flows where possible.
 
-The assets developed for the MuleSoft Accelerators were also intended to be flexible and extensible, supporting not only the use cases that have been built but also other use cases needed by customers to support their business. Some APIs include additional endpoints, especially System APIs shared across multiple use cases, but not all customer deployments require the additional endpoints. The reference architectures for most solutions have also been designed for long-term growth and evolution, which sometimes results in additional apps and interactions that are not always required for smaller deployments. 
+The assets developed for the MuleSoft Accelerators are flexible and extensible, supporting existing use cases and other use cases that customers need to support their business. Some APIs include additional endpoints, especially System APIs shared across multiple use cases. Not all customer deployments require the additional endpoints. The reference architectures for most solutions support long-term growth and evolution, which can result in additional apps and interactions that are not always required for smaller deployments. 
 
 To reduce the number of flows in accelerator apps, apply the guidance in the following sections.
 
