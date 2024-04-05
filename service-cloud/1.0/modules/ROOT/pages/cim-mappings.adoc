@@ -2,7 +2,7 @@
 
 == Customer Profile Sync
 
-=== Source-type mappings
+=== Source-Type Mappings
 
 The following table summarizes how representations of a customer or individual from each system will be mapped to CIM types:
 
