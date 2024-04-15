@@ -54,20 +54,17 @@ the Salesforce org.
 
 [%header%autowidth.spread]
 |===
-|*Salesforce Object* |*Field Label* |*Field Name* |*Data Type* |*Length*
-|*Unique** |*ExternalId*
+|*Salesforce Object* |*Field Label* |*Field Name* |*Data Type* |*Length* |*Unique** |*ExternalId*
+
 |Pending Order Summary Error |Error Code |Error_Code__c |Text |255 |N |N
 
-|Pending Order Summary Error |Error Message |Error_Message__c |Long Text
-Area |5000 |N |N
+|Pending Order Summary Error |Error Message |Error_Message__c |Long Text Area |5000 |N |N
 
 |Pending Order Summary Error |Event Uuid |Event_Uuid__c |Text |255 |N |N
 
-|Pending Order Summary Error |External Reference Identifier
-|External_Reference_Identifier__c |Text |255 |N |N
+|Pending Order Summary Error |External Reference Identifier|External_Reference_Identifier__c |Text |255 |N |N
 
-|Pending Order Summary Error |Pending Order Summary Error Name |Name
-|Text |80 |N |N
+|Pending Order Summary Error |Pending Order Summary Error Name |Name|Text |80 |N |N
 |===
 
 === Platform Event

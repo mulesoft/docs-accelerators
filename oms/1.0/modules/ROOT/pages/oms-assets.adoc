@@ -6,22 +6,23 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 [cols="40,30,30",width=100%]
 |===
-| B2B Commerce System API
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-b2b-commerce-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-b2b-commerce-sys-api/[Implementation Template^]
+| Accelerator Salesforce OMS System API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-sfdc-oms-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-sfdc-oms-sys-api/[Implementation Template^]
 
-| RCG Loyalty Management Cloud System API
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-loyalty-mgmt-cloud-sys-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-loyalty-mgmt-cloud-sys-api/[Implementation Template^]
 |===
 
 == Process APIs
 
 [cols="40,30,30",width=100%]
 |===
-| Accelerator Customers Process API
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api-spec/[API Specification^]
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api/[Implementation Template^]
+| Accelerator B2B Orders Process API
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-orders-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-orders-prc-api-spec/[Implementation Template^]
+
+| Accelerator B2B Simulator Process API
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-simulator-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-b2b-simulator-prc-api-spec/[Implementation Template^]
 
 |===
 
@@ -29,8 +30,8 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 [cols="70,30",width=100%]
 |===
-| Salesforce Marketing Listener
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-marketing-listener/[Implementation Template^]
+| Accelerator Salesforce OMS Event Listener
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-sfdc-oms-event-listener/[Implementation Template^]
 
 |===
 
@@ -38,16 +39,24 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 [cols="70,30",width=100%]
 |===
-| B2C Commerce Instore Pickup Cartridge
-| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-b2c-commerce-instore-pickup-cartridge-src/[Source^]
+| Accelerator B2B Common Library
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-library/[Source^]
 
+| Accelerator B2B Common Resources
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Source^]
 |===
 
 == Shared APIs
 
 [cols="40,30,30",width=100%]
 |===
-| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-slack-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slack-sys-api[Implementation Template^]
+| Accelerator Slack System API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-slack-sys-api[API Specification^] 
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slack-sys-api[Implementation Template^]
+
+| Accelerator B2B Storage System API
+| https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-storage-sys-api-spec/[API Specification^]
+|  https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-storage-sys-api-spec/[Implementation Template^]
 |===
 
 == Shared Components
