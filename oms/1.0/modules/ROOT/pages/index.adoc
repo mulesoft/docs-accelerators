@@ -1,0 +1,17 @@
+= MuleSoft Accelerator for OMS
+:oms-version: {page-component-version}
+
+MuleSoft Accelerator for OMS empowers retail IT teams to Leverage the C360 platform to service orders across all channels and customer segments. IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to manage order lifecycle.
+
+== Use Cases
+
+The following use cases are supported by the MuleSoft Accelerator for OMS:
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-retail/minor/{oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation%20with%20Salesforce%20OMS/[B2B EDI Order Lifecycle Automation with Salesforce OMS^] - Automate B2B/EDI order lifecycle with Salesforce OMS. 
+
+== See Also 
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:release-notes::accelerators/oms/oms-release-notes.adoc[Release Notes]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-oms/[MuleSoft Accelerator for OMS on Exchange^]

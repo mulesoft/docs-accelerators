@@ -1,0 +1,72 @@
+= Available assets
+
+Accelerator assets include API specifications, implementation templates, custom assets, and common services. Most interfaces use canonical data model definitions, which makes these assets plug and play and highly reusable. Individual assets can therefore be leveraged either as part of a use case, following the reference architecture provided, or independently to support different use cases, depending on your needs.
+
+== System APIs
+
+[cols="40,30,30",width=100%]
+|===
+| B2B Commerce System API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-b2b-commerce-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-b2b-commerce-sys-api/[Implementation Template^]
+
+| RCG Loyalty Management Cloud System API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-loyalty-mgmt-cloud-sys-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-loyalty-mgmt-cloud-sys-api/[Implementation Template^]
+|===
+
+== Process APIs
+
+[cols="40,30,30",width=100%]
+|===
+| Accelerator Customers Process API
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api-spec/[API Specification^]
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-customers-prc-api/[Implementation Template^]
+
+|===
+
+== Listeners & Handlers
+
+[cols="70,30",width=100%]
+|===
+| Salesforce Marketing Listener
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-salesforce-marketing-listener/[Implementation Template^]
+
+|===
+
+=== Custom Components
+
+[cols="70,30",width=100%]
+|===
+| B2C Commerce Instore Pickup Cartridge
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/rcg-b2c-commerce-instore-pickup-cartridge-src/[Source^]
+
+|===
+
+== Shared APIs
+
+[cols="40,30,30",width=100%]
+|===
+| Accelerator Slack System API | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-slack-sys-api[API Specification^] | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slack-sys-api[Implementation Template^]
+|===
+
+== Shared Components
+
+[cols="70,30",width=100%]
+|===
+| Accelerator Common Core
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-core-src/[Source^]
+
+| POM Parent
+| https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-pom-parent-src/[Source^]
+
+
+|===
+
+== See Also
+
+* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::common-services.adoc[Accelerator Common Services]
+* xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for OMS]
