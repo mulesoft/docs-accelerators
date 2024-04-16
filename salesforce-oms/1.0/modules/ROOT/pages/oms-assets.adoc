@@ -78,4 +78,4 @@ Accelerator assets include API specifications, implementation templates, custom 
 * xref:accelerators-home::common-services.adoc[Accelerator Common Services]
 * xref:accelerators-home::shared-assets.adoc[Accelerator Shared Assets]
 * xref:prerequisites.adoc[Prerequisites]
-* xref:index.adoc[MuleSoft Accelerator for OMS]
+* xref:index.adoc[MuleSoft Accelerator for Salesforce OMS]

@@ -1,4 +1,4 @@
-.xref:index.adoc[OMS]
+.xref:index.adoc[Salesforce OMS]
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup Guide]
