@@ -1,0 +1,215 @@
+= Salesforce OMS Setup and Customization Guide
+
+This guide describes how to configure Salesforce OMS for the
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-oms/[B2B
+EDI Order Lifecycle Automation with Salesforce OMS] use case.
+
+== OMS Setup
+
+Configure Salesforce OMS as follows:
+
+* Setup Salesforce OMS as per instructions found in https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sfom_impl_b2b_b2b2c.pdf[Salesforce OMS] 
+* Disable the Enable Reduction Orders option in Order Settings as per
+instructions given in
+https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sfom_impl_b2b_b2b2c.pdf[Salesforce OMS Implementation Guide]
+* Enable Order Management, Use Person Accounts, and High Scale Orders
+* Activate Multiple Currencies
+* <<configure_payment_gateway>>
+
+== Customization
+
+Install the Salesforce package from the B2B Common Resources project.
+After installing the package, verify following changes in the Salesforce
+organization.
+
+=== Custom Fields
+
+Verify that the following fields are created in the corresponding
+objects.
+
+[%header%autowidth.spread]
+|===
+|*Salesforce Object* |*Field Label* |*Field Name* |*Data Type* |*Length* |*Unique** |*ExternalId*
+|Account |B2B EDI Sender Code |B2B_EDISenderCode__c |Text(Case Sensitive) |15 |Y |N
+
+|Account |B2B Order Currency |B2B_OrderCurrency__c |Text |3 |N |N
+
+|Account |B2B Order Delivery Method |B2B_OrderDeliveryMethod__c
+|Lookup(Order Delivery Method) | | |N
+
+|Account |B2B Order Sales Channel |B2B_OrderSalesChannel__c
+|Lookup(Sales Channel) | | |N
+
+|Account |B2B Order Store |B2B_OrderStore__c |Lookup(Store) | | |N
+
+|Shipment |ExternalId |ExternalId__c |Text |100 |N |Y
+|===
+
+=== Custom Object Tab
+
+Verify that the Pending Order Summary Errors custom tab is available in
+the Salesforce org.
+
+[%header%autowidth.spread]
+|===
+|*Salesforce Object* |*Field Label* |*Field Name* |*Data Type* |*Length* |*Unique** |*ExternalId*
+
+|Pending Order Summary Error |Error Code |Error_Code__c |Text |255 |N |N
+
+|Pending Order Summary Error |Error Message |Error_Message__c |Long Text Area |5000 |N |N
+
+|Pending Order Summary Error |Event Uuid |Event_Uuid__c |Text |255 |N |N
+
+|Pending Order Summary Error |External Reference Identifier|External_Reference_Identifier__c |Text |255 |N |N
+
+|Pending Order Summary Error |Pending Order Summary Error Name |Name|Text |80 |N |N
+|===
+
+=== Platform Event
+
+Verify that the ShipmentCreated platform event is available in
+Salesforce OMS as follows:
+
+[%header%autowidth.spread]
+|===
+|Name |API Name |Event Type |Publish Behavior
+|ShipmentCreated |ShipmentCreated__e |High Volume |Publish After Commit
+|===
+
+*Fields*
+
+[%header%autowidth.spread]
+|===
+|*Salesforce Object* |*Field Label* |*Field Name* |*Data Type* |*Length*
+|*Unique** |*ExternalId*
+|ShipmentCreated |OrderSummaryId |OrderSummaryId__c |Text |50 |N |N
+
+|ShipmentCreated |ShipmentId |ShipmentId__c |Text |50 |N |N
+|===
+
+=== Flows
+
+After installing the Salesforce package from the
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-b2b-common-resources-src/[B2B
+Common Resources] project, verify that the following flows are available
+and activated. Activate the flow if not active. These flows can be
+customized as per business requirements.
+
+* `OMS_Create_OrderSummaryRoutingSchedule_on_OrderSummary_event` flow
+creates Order Summary Routing schedule when OMS Order Summary record is
+created.
+* `OMS_Create_Fulfillment_Orders_on_OrderSummaryRoutingSchedule` flow
+creates fulfillment Orders once Order Summary Routing schedule record is
+created.
+* `OMS_Create_Fulfillment_Orders_from_Order_Summary_Subflow` is used in
+`OMS_Create_Fulfillment_Orders_on_OrderSummaryRoutingSchedule` flow to
+create Fulfillment Orders for a Order Summary.
+* `OMS_Raise_ShipmentCreated_Event` flow creates a platform event when a
+Shipment is created in OMS.
+* `OMS_Create_Invoice` flow creates an Invoice once the Fulfillment
+Order is fulfilled.
+* `OMS_Log_Pending_Order_Summary_Error` flow creates a record in Pending
+Order Summary Error object with error information if error occurs during
+Pending Order Summary Processed Event processing.
+
+=== Configure Payment Gateway [[configure_payment_gateway]]
+
+==== Manually Configure a Payment Gateway
+
+If you don’t use Salesforce Payments, you can manually configure a
+payment gateway to view and manage payments in Order Management.
+Configure a gateway for each payment provider, for example, Stripe,
+PayPal, Adyen, or Cybersource. Payment packages are available on
+AppExchange for some vendors.
+
+[%header%autowidth.spread]
+. Create a payment gateway adapter class using the Salesforce APEX
+connector framework. To get started, see these reference classes:
+https://github.com/forcedotcom/Core-Payments-Reference-Gateway-Integration-Adapters[https://github.com/forcedotcom/Core-Payments-Reference-Gateway-Integration-Adapters]
+. Create a payment gateway provider record that points to the adapter
+class that you created.
+. In Setup, define a named credential that contains the gateway
+provider’s authentication and login information. The adapter class
+callout definition calls the named credential.
+. To link the payment gateway provider record and the named credential,
+create a payment gateway record.
+
+== Error Handling in Salesforce OMS
+
+When utilizing the Salesforce High Scale Orders API, data for order
+summaries is initially recorded as `PendingOrderSummary`. To
+troubleshoot errors that could occur during the transition from
+`PendingOrderSummary` to `Order Summary` use the
+`OMS_Log_Pending_Order_Summary_Error.flow` process. This process
+subscribes to the `PendingOrderSumProcEvent` event and logs these errors
+in the `Pending Order Summary Error` object. The "Pending Order Summary
+Errors" custom tab lists the errors and can be viewed in the Salesforce
+OMS UI.
+
+== Configure Connected App for Authentication
+
+Follow the below steps to generate the Consumer Key and Consumer Secret
+values required for Salesforce authentication.
+
+[%header%autowidth.spread]
+. Click the Salesforce Setup icon.
+. Navigate to Apps -> App Manager.
+. Select New Connected App.
+. Enter Connected App Name: MuleSoft Accelerator, API Name:
+MuleSoft_Accelerator and set your email address.
+. In the API (Enable OAuth Settings) section, check the box Enable OAuth
+Settings.
+. Set the callback URL http://localhost.
+. From the Selected OAuth Scopes list, select Full access (full).
+. Click Save and then Continue.
+. Click the Manage button to view details for the new connected app.
+. Click the Edit Policies button.
+. In the OAuth Policies section, for Permitted Users select All users
+may self-authorize.
+. For IP Relaxation, select the Relax IP restrictions option.
+. Click Save.
+
+You now need to copy the Consumer Key and Consumer Secret values for use
+in configuring Mule application deployments. More specifically, these
+must be supplied as the values for the sfdc.client-id and
+sfdc.client-secret properties found in your Maven settings.xml file.
+
+[%header%autowidth.spread]
+. On the Setup Home page, navigate to Apps -> App Manager.
+. Locate your new connected app and choose View from the actions
+dropdown for that item (last column on the right).
+. Under the API (Enable OAuth Settings) section, click the Manage
+Consumer Details button.
+. Verify your identity by entering the verification code that was
+emailed to you.
+. Copy the key and secret values and update your settings.xml file as
+described above.
+
+Download the B2B Common Resources project for a sample settings.xml file
+that can be used as a starting point.
+
+== Generating Security Token for Service Account
+
+A token needs to be generated for the service account used by the Mule
+applications in order to connect to the FSC instance.
+
+[%header%autowidth.spread]
+. Login to Salesforce as the Service Account User (the account that will
+be used by the Mule applications for connecting to Salesforce).
+. Click the Username icon in the top right corner and select Settings
+from the menu.
+. Select My Personal Information -> Reset My Security Token (if not
+found, see note below).
+. Click Reset Security Token.
+. Check the email inbox for an email from Salesforce with the new
+security token.
+
+Note : If the option to reset your security token is not available, it
+is likely that one or more Login IP Ranges are in effect. These can be
+temporarily removed from the settings page of the profile assigned to
+the service account user.
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Salesforce OMS]
