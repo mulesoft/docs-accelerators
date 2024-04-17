@@ -5,7 +5,6 @@ MuleSoft Accelerators follow an API-led approach to connectivity, which separate
 == Simplify Accelerator Assets
 
 Keeping the assets and corresponding solutions as simple as possible drives the design and implementation of use cases supported by the MuleSoft Accelerators. Providing a solid, functional, and maintainable architecture for customers to build upon also contributes.
-+
 The following key principles demonstrate the philosophy behind the solution design:
 
 * Follows the API-led connectivity approach but creates APIs only where necessary to support clean integration with external apps and systems.
