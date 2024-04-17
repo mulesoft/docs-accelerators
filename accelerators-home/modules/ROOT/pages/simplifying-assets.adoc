@@ -52,7 +52,7 @@ To simplify your integrations, reduce the number of Mule messages and throughput
 
 === Reduce Mule Messages
 
-Receiving an event from an event source, including incoming API requests, produces Mule messages. To consume fewer messages when handling a top-level event, reduce the number of API to API calls, such as Experience API to Process API.
+Receiving an event from an event source, including incoming API requests, produces Mule messages. To consume fewer messages when handling a top-level event, reduce the number of API-to-API calls, such as Experience API to Process API.
 
 The accelerator solutions also avoid making unnecessary hops, such as an Experience API calling a System API directly when no intermediate transformation, validation, or aggregation is required. The solutions avoid introducing an intermediate Process API that acts as a passthrough hop.
 
