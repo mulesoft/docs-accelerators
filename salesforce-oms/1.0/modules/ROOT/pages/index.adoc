@@ -7,7 +7,7 @@ The MuleSoft Accelerator for Salesforce OMS enables you to extend and integrate 
 
 The following use cases are supported by the MuleSoft Accelerator for OMS:
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation^] - Add EDI as a direct order intake channel to manage and service EDI orders across the full lifecycle. 
+* The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case lets you add EDI as a direct order intake channel to manage and service EDI orders across the full lifecycle. 
 
 == See Also 
 
