@@ -15,7 +15,7 @@ The collection defines the variables that you must override prior to running any
 . Queue-Management
 . Exchange-Management
 
-Requests in the `Verification` folder can be run to validate the results of the above operations. If desired, objects created by the collection can be cleaned up by running requests found in the `Deletions` folder.
+Run requests in the `Verification` folder to validate the results of the previous operations. If desired, run the requests in the `Deletions` folder to clean up objects created by the collection. 
 
 == Verify Destinations
 
