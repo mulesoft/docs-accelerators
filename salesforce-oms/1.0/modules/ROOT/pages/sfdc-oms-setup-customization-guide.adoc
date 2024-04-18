@@ -1,7 +1,7 @@
 = Salesforce OMS Setup and Customization Guide
 
 This guide describes how to configure Salesforce OMS for the
-https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-oms/[B2B
+https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/[B2B
 EDI Order Lifecycle Automation with Salesforce OMS] use case.
 
 == OMS Setup
