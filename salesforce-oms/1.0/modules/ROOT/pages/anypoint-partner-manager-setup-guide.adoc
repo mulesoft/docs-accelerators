@@ -55,7 +55,7 @@ The following variables must be set to run the collection.
 
 |b2b_erp_prc_api_host_name |The host name of the ERP Process API. This example uses the B2B Simulator Process API.
 
-|b2b_erp_prc_api_invoices_path |The URI path for Invoices in the ERP Process API. This example uses B2B Simulator Process API.
+|b2b_erp_prc_api_invoices_path |The URI path for Invoices in the ERP Process API. This example uses the B2B Simulator Process API.
 
 |b2b_orders_prc_api_payments_path |The URI path for Payments in the B2B Orders Process API.
 
