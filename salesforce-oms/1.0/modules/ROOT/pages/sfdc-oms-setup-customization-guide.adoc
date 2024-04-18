@@ -136,7 +136,7 @@ To connect to the Financial Services Cloud instance, you must generate a token f
 . Select *Reset My Security Token* in *My Personal Information*.
 . Click *Reset Security Token*.
 
-Salesfoce emails the new security token.
+Salesfoce emails the new security token to the service account user's address.
 
 [NOTE]
 The option to reset your security token does not show if you have one or more login IP ranges. To enable the option, remove the login IP ranges from the settings page of the profile assigned to the service account user. Reset your security token, and then restore the login IP ranges.
