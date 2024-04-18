@@ -59,7 +59,7 @@ The following variables must be set to run the collection.
 
 |b2b_orders_prc_api_payments_path |The URI path for Payments in the B2B Orders Process API.
 
-|b2b_erp_prc_api_acknowledgements_path |The URI path for Acknowledgments in the ERP Process API. This example uses B2B Simulator Process API.
+|b2b_erp_prc_api_acknowledgements_path |The URI path for Acknowledgments in the ERP Process API. This example uses the B2B Simulator Process API.
 
 |partner_name | The name of the partner.
 
