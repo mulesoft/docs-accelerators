@@ -6,6 +6,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 
 [cols="40,30,30",width=100%]
 |===
+
 | Accelerator B2B Storage System API
 | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-storage-sys-api-spec/[API Specification^]
 | https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-storage-sys-api/[Implementation Template^]
@@ -57,6 +58,7 @@ Accelerator assets include API specifications, implementation templates, custom 
 | Accelerator Slack System API
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-slack-sys-api[API Specification^] 
 | https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accel-slack-sys-api[Implementation Template^]
+
 |===
 
 == Shared Components
