@@ -1,0 +1,57 @@
+= CIM Design Elements
+
+This document summarizes the more important design elements that were adopted when defining CIM model objects. 
+
+== General Design Elements
+
+The following design elements apply to all CIM object definitions.
+
+=== Library Organization
+
+* The types for each library are defined in separate RAML libraries, one for each entity group.
+* All types are then published via the main library file for ease of reference.
+* All types, libraries, and exports are sorted in alphabetical order for quick reference.
+
+=== Object Definition
+
+* Standard properties such as `id`, `name`, and `description` appear first in each object definition, and in that order.
+* Objects that include a mandatory `id` property are made nillable to support auto-generated values upon create.
+* With the exception of strings, optional properties of intrinsic types (such as integer or datetime) are also nillable to support ternary states (set to a value, set to no value, or not present at all).
+* Since the model is intended to easily extendable as-is, properties with pre-defined enumerations are used very sparingly.
+* Most entities include an optional set of standard audit properties, usually as the last property defined.
+* Major entities, which may be synchronized between multiple systems, also include an optional set of external identifier references as the second-last property defined.
+* Arrays of child objects generally appear near the end of the object definition, typically just before the external identifiers and audit information properties.
+* To avoid cyclical dependencies, type composition occurs only within a single library file; all references to other entities are defined as string identifiers.
+* Most type composition is also defined as a union with a string to support flatter message instances where full object hierarchies are not required.
+* Unions are not used where circular or infinite references are possible (such as a child object referring to the parent).
+* Types that are intended to be extended always have a discriminator property with the value set to the name of the object.
+* Child types override the discriminator value to be the name of the child object.
+
+=== Object and Property Naming
+
+* Boolean properties start with a context-appropriate verb such as `can`, `is`, `has`, `should`, or `was`.
+* Date/time properties have a suffix corresponding to actual type, such as `DateTime` or `Date` for `datetime` types, and `Time` for `time-only` types 
+* Properties representing internal identifier references to other objects have a suffix of `Id`, except when defined as a union between an identifier string and an actual object
+* Properties representing coded values end in `Code`.
+* Properties representing decimal values end in `Number`.
+* Properties representing arrays have plural names.
+* Properties used as discriminators end in `Instance`.
+
+== Type Extensions
+
+The primary objective of creating CIM type extensions is to re-introduce type composition - in a controlled fashion - to make original core types "whole" for applications that need them. The following rules applied to all core types for which one or more properties had composition removed to reduce external dependencies:
+
+* Only types published by the main file for the corresponding subject area library can be extended.
+* Composition may be re-introduced only for core properties that were originally modified to be strings only (no unions) due to dependencies on external entities.
+* Composition may NOT be re-introduced where it would create cyclical or infinite references (for example, a reference to self).
+* All extended type names will be the name of the core parent type suffixed with `Ext` (for example, `ProductExt`).
+* Similarly, all properties added to extended types will include the suffix `Ext` for clarity and to avoid name collisions (for example, `productTypeExt`).
+* All properties added to extended types must be made optional.
+* Extensions may include references to core types defined in other subject areas but NOT extended types.
+* Similarly, extended type libraries may reference core type libraries but NOT extended type libraries.
+
+== See Also
+
+* xref:index.adoc[CIM Overview]
+* xref:cim-usage-guide.adoc[CIM Usage Guide]
+* xref:cim-subject-areas.adoc[CIM Subject Areas]

@@ -16,5 +16,7 @@ https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/acce
 
 == See Also
 
+* xref:index.adoc[CIM Overview]
+* xref:cim-design-elements.adoc[CIM Design Elements]
+* xref:cim-usage-guide.adoc[CIM Usage Guide]
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
-* xref:cim-overview.adoc[CIM Overview]
