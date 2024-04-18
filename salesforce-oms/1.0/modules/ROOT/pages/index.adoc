@@ -1,13 +1,13 @@
 = MuleSoft Accelerator for Salesforce OMS
 :salesforce-oms-version: {page-component-version}
 
-The MuleSoft Accelerator for Salesforce OMS enables customers to extend and integrate OMS with external business partners and application ecosystems leveraging Anypoint platform's application and B2B Integration capabilities. The solution provides customers with an accelerated jump start to implement EDI messaging and other application integrations around Salesforce OMS.
+The MuleSoft Accelerator for Salesforce OMS enables you to extend and integrate your Order Management System (OMS) with external business partners and application ecosystems by leveraging the application and B2B Integration capabilities of Anypoint Platform. The solution accelerates the implementation of Electronic Data Interchange (EDI) messaging and other application integrations into Salesforce OMS.
 
 == Use Cases
 
-The following use cases are supported by the MuleSoft Accelerator for OMS:
+=== B2B EDI Order Lifecycle Automation
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation^] - Add EDI as a direct order intake channel to manage and service EDI orders across the full lifecycle. 
+* The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case lets you add EDI as a direct order intake channel to manage and service EDI orders across the full lifecycle. 
 
 == See Also 
 
