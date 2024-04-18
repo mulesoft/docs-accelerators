@@ -1,7 +1,7 @@
 = MuleSoft Accelerator for Salesforce OMS
 :salesforce-oms-version: {page-component-version}
 
-The MuleSoft Accelerator for Salesforce OMS enables customers to extend and integrate OMS with external business partners and application ecosystems leveraging Anypoint platform's application and B2B Integration capabilities. The solution provides customers with an accelerated jump start to implement EDI messaging and other application integrations around Salesforce OMS.
+The MuleSoft Accelerator for Salesforce OMS enables you to extend and integrate your Order Management System (OMS) with external business partners and application ecosystems by leveraging the application and B2B Integration capabilities of Anypoint Platform. The solution accelerates the implementation of Electronic Data Interchange (EDI) messaging and other application integrations into Salesforce OMS.
 
 == Use Cases
 
