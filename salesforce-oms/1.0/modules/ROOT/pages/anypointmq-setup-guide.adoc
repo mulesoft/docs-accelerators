@@ -8,7 +8,7 @@ Create the `dev` environment by using the template in the https://anypoint.mules
 
 == Running the Collection
 
-The collection itself defines a number of variables that must be overridden prior to running any requests. The contents of the collection have been organized into separate folders, which should be executed in the following order:
+The collection defines the variables that you must override prior to running any requests. The collection is organized into separate folders, which should be executed in the following order:
 
 . Authorization
 . Client-Management (optional)
