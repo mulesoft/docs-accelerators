@@ -6,9 +6,21 @@ Handling of material that you will be buying, moving and selling. For example, p
 
 The following diagrams show the entities and relationships in this subject area, organized by entity group.
 
+=== Inventory Product
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-inventory-product.png[alt="Inventory Product Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-inventory-product.png"]
+
+=== Inventory Received
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-inventory-received.png[alt="Inventory Received Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-inventory-received.png"]
+
 === Product
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Product.png[alt="Product Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-product.png"]
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-product.png[alt="Product Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-product.png"]
+
+=== Purchase Order
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-purchase-order.png[alt="Purchase Order Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-purchase-order.png"]
 
 == Implementation
 
