@@ -283,18 +283,18 @@ The focus of release 2.1.1 is on providing mapping and cosmetic fixes in the imp
 The focus of release 1.1 is on providing API specifications and RAML library assets for all 145 https://www.hl7.org/fhir/resourcelist.html[FHIR resources]. These assets will help healthcare providers and payers in meeting CMS interoperability rules.
 
 * NEW: API specifications for resources in the following FHIR modules:
-** Foundation
-** FHIR Exchange
-** Terminology
-** Conformance
-** Security and Privacy
-** Implementation Support
-** Administration
-** Clinical
-** Diagnostic
-** Medications
-** Workflow
-** Financial
+ ** Foundation
+ ** FHIR Exchange
+ ** Terminology
+ ** Conformance
+ ** Security and Privacy
+ ** Implementation Support
+ ** Administration
+ ** Clinical
+ ** Diagnostic
+ ** Medications
+ ** Workflow
+ ** Financial
 
 == See Also
 

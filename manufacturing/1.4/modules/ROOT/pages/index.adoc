@@ -25,7 +25,7 @@ The following use cases provided by the https://anypoint.mulesoft.com/exchange/o
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes::accelerators/manufacturing/manufacturing-release-notes.adoc[Release Notes]
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-manufacturing/[MuleSoft Accelerator for Manufacturing on Exchange^]
