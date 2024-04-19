@@ -1,6 +1,6 @@
 = Prerequisites for MuleSoft Accelerator for Life Sciences
 
-There are no setup or configuration guides specific to the MuleSoft Accelerator for Life Sciences. However, the use cases for this accelerator include a list of implementation templates, which contain details on the requirements for those applications. Refer to the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences use cases in Exchange^] for the list of assets.
+There are no setup or configuration guides specific to the MuleSoft Accelerator for Life Sciences. However, the use cases for this accelerator include a list of implementation templates, which contain details on the requirements for those applications. Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-life-sciences/[MuleSoft Accelerator for Life Sciences use cases in Exchange^] for the list of assets.
 
 == See Also
 
