@@ -67,7 +67,7 @@ Verify that the `ShipmentCreated` platform event is configured exactly as shown 
 |ShipmentCreated |ShipmentCreated__e |High Volume |Publish After Commit
 |===
 
-In addition, verify that the following fields have been created in the `ShipmentCreated` object:
+In addition, verify that the following fields are created in the `ShipmentCreated` object:
 
 [%header%autowidth.spread]
 |===
