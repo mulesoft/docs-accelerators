@@ -16,7 +16,7 @@ image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-contact
 
 === Lead
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-lead.png.png[alt="Lead Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-lead.png"]
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-lead.png[alt="Lead Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-lead.png"]
 
 === Party
 
