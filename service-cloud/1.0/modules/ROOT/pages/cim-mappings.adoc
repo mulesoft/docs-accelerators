@@ -36,7 +36,8 @@ The following table shows how customers or individuals from each system are mapp
 |===
 | Target System | Target Type | CIM Type| Mapping Notes
 
-| Salesforce Service Cloud | PersonAccounts a| * CustomerIndividual
+.3+| Salesforce
+Service Cloud | CustomerIndividual
 
 * Contact Address
 
