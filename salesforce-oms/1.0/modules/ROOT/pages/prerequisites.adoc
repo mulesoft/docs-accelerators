@@ -7,7 +7,7 @@ Use the following setup guides to configure the systems and products that are ne
 * xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization]
 * xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup]
 
-The amount of configuration you'll need to perform depends on which assets you're deploying in your target environment. See the B2B EDI Order Lifecycle Automation use case page in Exchange for a list of downloadable assets. The implementation templates for this use case provide the requirements that are specific to each application.
+The amount of configuration required depends on which assets you're deploying in your target environment. See the B2B EDI Order Lifecycle Automation use case page in Exchange for a list of downloadable assets. The implementation templates for this use case provide the requirements that are specific to each application.
 
 == See Also
 
