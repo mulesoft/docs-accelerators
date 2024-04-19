@@ -132,7 +132,7 @@ Use the sample `settings.xml` file in the Accelerator B2B Common Resources proje
 To connect to the Financial Services Cloud instance, you must generate a token for the service account used by Mule applications.
 
 . Log in to Salesforce as the service account user, which is the account Mule applications use to connect to Salesforce.
-. Click the Username icon and select *Settings*.
+. Click the *Username* icon and select *Settings*.
 . Select *Reset My Security Token* in *My Personal Information*.
 . Click *Reset Security Token*.
 
