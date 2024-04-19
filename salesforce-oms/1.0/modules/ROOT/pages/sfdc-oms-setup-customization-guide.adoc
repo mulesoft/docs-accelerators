@@ -81,7 +81,7 @@ In addition, verify that the following fields are created in the `ShipmentCreate
 After installing the Salesforce package, verify that the following flows are available and activated. Customize the flows based on your business requirements.
 
 * `OMS_Create_OrderSummaryRoutingSchedule_on_OrderSummary_event` - Creates an Order Summary Routing schedule when OMS Order Summary record is created.
-* `OMS_Create_Fulfillment_Orders_on_OrderSummaryRoutingSchedule` - Creates a fulfillment orders after an `Order Summary Routing` schedule record is created.
+* `OMS_Create_Fulfillment_Orders_on_OrderSummaryRoutingSchedule` - Creates fulfillment orders after an `Order Summary Routing` schedule record is created.
 * `OMS_Create_Fulfillment_Orders_from_Order_Summary_Subflow` - Used in `OMS_Create_Fulfillment_Orders_on_OrderSummaryRoutingSchedule` flow to create fulfillment orders for an order summary.
 * `OMS_Raise_ShipmentCreated_Event` flow - Creates a platform event when a shipment is created in Salesforce OMS.
 * `OMS_Create_Invoice` - Creates an invoice after the fulfillment order is filled.
