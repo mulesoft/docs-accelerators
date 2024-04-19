@@ -6,9 +6,21 @@ This defines who you have trading relationships with and how. For example, a cus
 
 The following diagrams show the entities and relationships in this subject area, organized by entity group.
 
+=== Account
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-account.png[alt="Account Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-account.png"]
+
+=== Contact Point
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-contact-point.png[alt="Contact Point Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-contact-point.png"]
+
+=== Lead
+
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-lead.png.png[alt="Lead Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-lead.png"]
+
 === Party
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Party.png[alt="Party Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-party.png"]
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-party.png[alt="Party Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-party.png"]
 
 == Implementation
 
