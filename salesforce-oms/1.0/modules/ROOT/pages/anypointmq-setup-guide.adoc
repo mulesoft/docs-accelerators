@@ -11,7 +11,7 @@ Create the `dev` environment by using the template in the https://anypoint.mules
 The collection defines the variables that you must override prior to running requests. The collection is organized into separate folders, which you must execute in the following order:
 
 . Authorization
-. Client-Management - This variable is optional.
+. (Optional) Client-Management
 . Queue-Management
 . Exchange-Management
 
