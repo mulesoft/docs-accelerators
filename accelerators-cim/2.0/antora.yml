@@ -1,0 +1,6 @@
+name: accelerators-cim
+title: Cloud Information Model
+version: '2.0'
+display_version: '2.0'
+nav:
+- modules/ROOT/nav.adoc

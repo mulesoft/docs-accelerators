@@ -1,39 +1,27 @@
 = Anypoint MQ Setup Guide
 
-The Postman collection `Anypoint-MQ-Configuration` can be used to
-pre-create all Anypoint MQ destinations required by the accelerator
-components. This collection can be found in the
-https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator
-B2B Common Resources] project
+To create the Anypoint MQ destinations that are required by the MuleSoft Accelerator for Salesforce OMS components, use the `Anypoint-MQ-Configuration` Postman collection in the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project.
 
 == Environment Settings
 
-The collection requires the `dev` environment to be created and assigned
-proper values reflecting your target Anypoint org before running any of
-the requests. A template for this environment, which can be imported
-directly into your Postman workspace, has also been provided in the
-https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator
-B2B Common Resources] project.
+Create the `dev` environment by using the template in the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project and importing it into your Postman workspace. Assign the values that reflect your target Anypoint Platform org before running the requests.
 
-== Running the Collection
+== Run the Collection
 
-The collection itself defines variables that must be overridden prior to
-running any requests. The contents of the collection have been organized
-into separate folders, which should be executed in the following order:
+The collection defines the variables that you must override prior to running requests. The collection is organized into separate folders, which you must execute in the following order:
 
 . Authorization
-. Client-Management (optional)
+. Client-Management - This variable is optional.
 . Queue-Management
 . Exchange-Management
 
-Requests in the `Verification` folder can be run to validate the results
-of the above operations. If desired, objects created by the collection
-can be cleaned up by running requests found in the `Deletions` folder.
+Run requests in the _Verification_ folder to validate the results of the previous operations. If desired, run the requests in the _Deletions_ folder to clean up objects created by the collection. 
 
 == Verify Destinations
 
-The following MQ destinations will be created on successful execution.
+Successful execution of the collection creates the following Anypoint MQ destinations:
 
+[%header%autowidth.spread]
 |===
 | Queue Name| Bound to Exchange| Dead Letter Queue Name
 

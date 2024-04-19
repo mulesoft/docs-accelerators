@@ -1,18 +1,15 @@
 = Prerequisites for MuleSoft Accelerator for OMS
+:salesforce-oms-version: {page-component-version}
 
-This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
+Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case:
 
-== Available Guides
+* xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup]
+* xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization]
+* xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup]
 
-The following setup and configuration guides are available for this accelerator:
-
-* xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup Guide]
-* xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization Guide]
-* xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup Guide]
-
-Most of the implementation templates also contain details on requirements specific to those applications.
+The amount of configuration you'll need to perform depends on which assets you're deploying in your target environment. See the B2B EDI Order Lifecycle Automation use case page in Exchange for a list of downloadable assets. The implementation templates for this use case provide the requirements that are specific to each application.
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started]
 * xref:index.adoc[MuleSoft Accelerator for Salesforce OMS]

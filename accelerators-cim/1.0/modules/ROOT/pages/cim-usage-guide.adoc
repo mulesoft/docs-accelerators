@@ -8,7 +8,7 @@ The primary audience for this document primarily includes architects, consultant
 
 == Interpretation of Identifiers
 
-For all accelerator use cases involving the synchronization of entities between multiple systems (for example, customer profiles), the Global Data System APIs are responsible for generating and maintaining universal identifiers for all entities. Also known as "global"identifiers, these values represent a single, globally unique ID for any given instance of an entity. These values are typically assigned to the `id` property of any given CIM object (for example, `Customer.id`) in all Process APIs, where the representation of the object is expected to be the "golden copy" of it. All other system identifiers are treated as external, and thus may be found in the `externalIds` property (where supported).
+For all accelerator use cases involving the synchronization of entities between multiple systems (for example, customer profiles), the Global Data System APIs are responsible for generating and maintaining universal identifiers for all entities. Also known as "global" identifiers, these values represent a single, globally unique ID for any given instance of an entity. These values are typically assigned to the `id` property of any given CIM object (for example, `Customer.id`) in all Process APIs, where the representation of the object is expected to be the "golden copy" of it. All other system identifiers are treated as external, and thus may be found in the `externalIds` property (where supported).
 
 For System APIs, however, the `id` property of any given CIM object will be set to the identifier understood by that system on all request/response messages. If supported, the universal identifier will be found in the `externalIds` property with an external ID type of "MDM". The intent behind this approach is to keep the interpretation of the identifiers for a target system as being from the perspective of that system, rather than from the Global Data repository. The same applies to most Experience APIs as well.
 
@@ -162,4 +162,4 @@ Since we are converting the value back to 2-decimal precision in this case, roun
 == See Also
 
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
-* xref:cim-overview.adoc[CIM Overview]
+* xref:index.adoc[CIM Overview]
