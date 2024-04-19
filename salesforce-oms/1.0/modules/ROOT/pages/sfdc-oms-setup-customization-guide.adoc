@@ -101,7 +101,9 @@ Follow these steps to configure a payment gateway manually:
 
 == Error Handling in Salesforce OMS
 
-The Salesforce High Scale Orders API initially records data for order summaries as `PendingOrderSummary`. To troubleshoot errors that occur during the transition from `PendingOrderSummary` to `Order Summary`, use the `OMS_Log_Pending_Order_Summary_Error.flow` process, which subscribes to the `PendingOrderSumProcEvent` event and logs errors in the `Pending Order Summary Error` object. The *Pending Order Summary Errors* custom tab in Salesforce OMS shows the errors.
+The Salesforce High Scale Orders API initially records data for order summaries as `PendingOrderSummary`. 
+
+To troubleshoot errors that occur during the transition from `PendingOrderSummary` to `Order Summary`, use the `OMS_Log_Pending_Order_Summary_Error.flow` process, which subscribes to the `PendingOrderSumProcEvent` event and logs errors in the `Pending Order Summary Error` object. The *Pending Order Summary Errors* custom tab in Salesforce OMS shows the errors.
 
 == Configure Your Connected App for Authentication
 
