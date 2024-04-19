@@ -17,4 +17,4 @@ https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-fulfill
 == See Also
 
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
-* xref:cim-overview.adoc[CIM Overview]
+* xref:index.adoc[CIM Overview]

@@ -1,0 +1,34 @@
+= CIM Market Subject Area
+
+This defines who you have trading relationships with and how. For example, a customer & supplier along with contact information such as phone number and email address.
+
+== Model Diagrams
+
+The following diagrams show the entities and relationships in this subject area, organized by entity group.
+
+=== Account
+
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-account.png[alt="Account Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-account.png"]
+
+=== Contact Point
+
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contact-point.png[alt="Contact Point Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contact-point.png"]
+
+=== Lead
+
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-lead.png.png[alt="Lead Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-lead.png"]
+
+=== Party
+
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-party.png[alt="Party Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-party.png"]
+
+== Implementation
+
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[CIM Market Library^]
+
+== See Also
+
+* xref:index.adoc[CIM Overview]
+* xref:cim-design-elements.adoc[CIM Design Elements]
+* xref:cim-usage-guide.adoc[CIM Usage Guide]
+* xref:cim-subject-areas.adoc[CIM Subject Areas]

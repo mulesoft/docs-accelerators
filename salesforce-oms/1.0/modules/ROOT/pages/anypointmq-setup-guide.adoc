@@ -1,0 +1,40 @@
+= Anypoint MQ Setup Guide
+
+To create the Anypoint MQ destinations that are required by the MuleSoft Accelerator for Salesforce OMS components, use the `Anypoint-MQ-Configuration` Postman collection in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project.
+
+== Environment Settings
+
+Create the `dev` environment by using the template in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project and importing it into your Postman workspace. Assign the values that reflect your target Anypoint Platform org before running the requests.
+
+== Run the Collection
+
+The collection defines the variables that you must override prior to running requests. The collection is organized into separate folders, which you must execute in the following order:
+
+. Authorization
+. (Optional) Client-Management
+. Queue-Management
+. Exchange-Management
+
+Run requests in the `Verification` folder to validate the results of the previous operations. Optionally, run the requests in the `Deletions` folder to clean up objects created by the collection. 
+
+== Verify Destinations
+
+Successful execution of the collection creates the following Anypoint MQ destinations:
+
+[%header%autowidth.spread]
+|===
+| Queue Name| Bound to Exchange| Dead Letter Queue Name
+
+| accel-b2b-orders-update-queue
+| accel-oms-update-exchange
+| accel-b2b-orders-update-dl-queue 
+
+| accel-oms-exception-queue
+| -
+| -
+|===
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Salesforce OMS]

@@ -23,4 +23,4 @@ The following subject areas are currently supported - follow the links or refer 
 
 == See Also
 
-* xref:cim-overview.adoc[CIM Overview]
+* xref:index.adoc[CIM Overview]
