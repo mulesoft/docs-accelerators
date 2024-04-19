@@ -123,7 +123,7 @@ Follow these steps to generate the *Consumer Key* and *Consumer Secret* values r
 . Click *Manage Consumer Details* in the *API (Enable OAuth Settings)* section.
 . Verify your identity by entering the verification code from your email.
 . Copy the values in the *Consumer Key* and *Consumer Secret* fields.
-. Add the values as the `sfdc.client-id` and `sfdc.client-secret` properties respectively in your Maven settings.xml file. 
+. Add the values as the `sfdc.client-id` and `sfdc.client-secret` properties respectively in your Maven `settings.xml` file. 
 
 Use the sample settings.xml file in the Accelerator B2B Common Resources project as a starting point for configuring your connected app.
 
