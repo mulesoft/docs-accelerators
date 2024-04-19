@@ -2,7 +2,11 @@
 :retail-version: {page-component-version}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 MuleSoft Accelerator for Service Cloud empowers service representatives with a holistic customer 360 view, facilitating personalized interactions, optimized service workflows, and heightened operational efficiency, to enhance customer satisfaction.
+=======
+MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster. Retail IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to create customer 360 profiles.
+>>>>>>> parent of dd2a590 (beta doc update for Service cloud)
 =======
 MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster. Retail IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to create customer 360 profiles.
 >>>>>>> parent of dd2a590 (beta doc update for Service cloud)
@@ -10,7 +14,11 @@ MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from sys
 == Use Case
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The following use case is supported by the MuleSoft Accelerator for Service Cloud:
+=======
+The following use cases are supported by the MuleSoft Accelerator for Retail:
+>>>>>>> parent of dd2a590 (beta doc update for Service cloud)
 =======
 The following use cases are supported by the MuleSoft Accelerator for Retail:
 >>>>>>> parent of dd2a590 (beta doc update for Service cloud)
