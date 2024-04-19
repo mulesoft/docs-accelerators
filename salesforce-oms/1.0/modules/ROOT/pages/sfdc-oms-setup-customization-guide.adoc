@@ -87,7 +87,8 @@ After installing the Salesforce package, verify that the following flows are ava
 * `OMS_Create_Invoice` - Creates an invoice after the fulfillment order is filled.
 * `OMS_Log_Pending_Order_Summary_Error` - Creates an error record in the `Pending Order Summary Error` object when an error occurs during processing of the `Pending Order Summary Processed Event`.
 
-=== Configure Payment Gateway [[configure_payment_gateway]]
+[[configure_payment_gateway]]
+=== Configure the Payment Gateway
 
 If you don't use Salesforce Payments, configure a payment gateway manually to view and manage payments in Order Management. Configure a gateway for each payment provider, including Stripe, PayPal, Adyen, and Cybersource. You can find payment packages on AppExchange for some vendors.
 
