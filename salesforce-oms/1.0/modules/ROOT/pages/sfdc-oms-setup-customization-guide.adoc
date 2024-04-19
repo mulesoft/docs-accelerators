@@ -111,7 +111,7 @@ Follow these steps to generate the *Consumer Key* and *Consumer Secret* values r
 . Enter your email address.
 . Check the *Enable OAuth Settings*.
 . Set the callback URL to `http://localhost`.
-. Select "Full access (full)" in the *Selected OAuth Scopes* list.
+. In the *Selected OAuth Scopes* list, select *Full access (full)*.
 . Click *Save*, and then click *Continue*.
 . Click *Manage* to view the connected app details.
 . Click *Edit Policies*.
