@@ -18,7 +18,7 @@ Install the Salesforce package from the https://anypoint.mulesoft.com/exchange/o
 
 === Custom Fields
 
-Verify that the following fields have been created in the corresponding objects:
+Verify that the following fields are created in the corresponding objects:
 
 [%header%autowidth.spread]
 |===
