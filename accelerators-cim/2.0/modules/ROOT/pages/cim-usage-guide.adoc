@@ -1,4 +1,4 @@
-= CIM Usage Guide
+= CIM Usage Guidelines
 
 This document provides some detailed information about how the Cloud Information Model (CIM) is typically used within MuleSoft Accelerators. The primary audience for this document includes architects, consultants, developers, and testers involved in the design, development, and testing of API-based solutions.
 
