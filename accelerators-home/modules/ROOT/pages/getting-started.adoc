@@ -68,7 +68,7 @@ As above, you can safely cancel out of the `Update your Workspace` dialog, if pr
 
 ==== Import into Anypoint Code Builder
 
-To import into Anypoint Code Builder, visit xref:code-builder::int-import-mule-project.adoc[Importing Projects into the IDE].
+To import into Anypoint Code Builder, visit xref:code-builder/int-import-mule-project.adoc[Importing Projects into the IDE].
 
 === Next Steps
 
