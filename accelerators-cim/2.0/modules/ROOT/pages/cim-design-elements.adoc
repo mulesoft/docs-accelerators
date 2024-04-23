@@ -1,6 +1,6 @@
 = CIM Design Elements
 
-This document summarizes the more important design elements that were adopted when defining CIM model objects. 
+This guide summarizes the more important design elements that were adopted when defining CIM model objects. 
 
 == General Design Elements
 
