@@ -28,7 +28,7 @@ CIM supports the following subject areas, each of which includes an Entity Relat
 [[diagram_conventions]]
 == Diagram Conventions
 
-The diagrams included in each subject group show the entities and relationships defined within that group. In most cases, relationships to entities defined in other subject areas are also provided for context. The following table summarizes the conventions used to indicate the status of each entity.
+The diagrams included in each subject group show the entities and relationships defined within that group. Relationships to entities defined in other subject areas are also provided for context. The following table summarizes the conventions used to indicate the status of each entity.
 
 [%header%autowidth.spread^]
 |===
