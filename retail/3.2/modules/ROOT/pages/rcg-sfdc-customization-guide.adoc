@@ -426,7 +426,7 @@ This implementation requires `Platform Event` to be created in Salesforce. Follo
 . Click the *New Platform Event* button to create an Object. Complete the *Platform Information Details* fields, including *Label*, *Plural Label*, *Object with Salesforce Object*, and *Salesforce Platform Event API Name* as indicated in the previous table.
 . Click *Save*.
 
-. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility script `CreatePlatformEventsCustomFields.txt` available in the `rcg-common-resources/salesforce` folder of https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project.
+. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility script `CreatePlatformEventsCustomFields.txt`, which is in the `rcg-common-resources/salesforce` folder of the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project.
 . Follow the steps to run the script provided in `Create via Apex Script` under `Custom Fields`.
 
 === Create Apex Triggers
