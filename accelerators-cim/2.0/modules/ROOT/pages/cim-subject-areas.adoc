@@ -6,7 +6,7 @@ The model content is organized into domains, or Subject Areas, which represent m
 
 == Supported Subject Areas
 
-The following subject areas are currently supported. Each subject area includes an Entity Relationship Diagram (ERD) for each entity group defined under that area. See below for additional details on the conventions used in the diagrams.
+CIM supports the following subject areas, each of which includes an Entity Relationship Diagram (ERD). See <<diagram_conventions>> for the conventions used in the diagrams.
 
 [%header%autowidth.spread^]
 |===
