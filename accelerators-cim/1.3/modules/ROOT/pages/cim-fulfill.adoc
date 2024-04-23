@@ -8,7 +8,7 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Shipment
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/Shipment.png[alt="Shipment Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-shipment.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim1.3/accel-cim-shipment.png[alt="Shipment Diagram",link="https://www.mulesoft.com/ext/solutions/images/cim1.3/accel-cim-shipment.png"]
 
 == Implementation
 
