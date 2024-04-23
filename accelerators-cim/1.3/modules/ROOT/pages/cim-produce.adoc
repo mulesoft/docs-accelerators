@@ -8,7 +8,7 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Product
 
-image::https://www.mulesoft.com/ext/solutions/draft/images/cim/Product.png[alt="Product Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim/accel-cim-product.png"]
+image::https://www.mulesoft.com/ext/solutions/draft/images/cim1.3/accel-cim-product.png[alt="Product Diagram",link="https://www.mulesoft.com/ext/solutions/draft/images/cim1.3/accel-cim-product.png"]
 
 == Implementation
 
