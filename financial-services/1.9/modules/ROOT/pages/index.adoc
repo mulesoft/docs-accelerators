@@ -48,7 +48,7 @@ The following *use-case agnostic* assets are also available:
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes::accelerators/financial-services/financial-services-release-notes.adoc[Release Notes]
 * xref:upgrade-notes.adoc[Upgrade Notes]
