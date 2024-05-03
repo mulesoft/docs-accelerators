@@ -2,7 +2,7 @@
 
 = RPA Setup Guide
 
-This guide provides instructions for implementing the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20automation%20for%20insurance%20brokers/[Unlock AMS Through Automation for Insurance Brokers] use case, which is part of the MuleSoft Accelerator for Financial Services.
+This guide provides instructions for implementing the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%207%20-%20Unlock%20AMS%20through%20automation%20for%20insurance%20brokers/[Unlock AMS Through Automation for Insurance Brokers] use case, which is part of the MuleSoft Accelerator for Financial Services.
 
 The use case leverages MuleSoft's Robotic Process Automation (RPA) solution to retrieve customer data from your Agency Management System (AMS) and automatically load the data into Salesforce Financial Services Cloud (FSC). To implement this use case, you must set up RPA on the device that runs the automation process and configure the solution to your specific AMS.
 

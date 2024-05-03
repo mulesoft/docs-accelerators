@@ -1,10 +1,10 @@
 = X12 to FHIR Converter
 
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/hls-fhir-to-x12-sys-api/[X12 to FHIR converter^] comes with a ready to use template for https://x12.org/[X12^] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-to-x12-sys-api/[X12 to FHIR converter^] comes with a ready to use template for https://x12.org/[X12^] to FHIR conversion. This template can be extended or modified to meet specific conversion requirements. The converter converts FHIR R4 to X12 formats and its responses from X12 to FHIR R4.
 
 == Functional Diagram
 
-image:https://www.mulesoft.com/ext/solutions/draft/images/hls-x12-fhir-fx-diagram.svg[X12 to FHIR converter functional diagram,900,align="center"]
+image:https://www.mulesoft.com/ext/solutions/images/hls-x12-fhir-fx-diagram.svg[X12 to FHIR converter functional diagram,900,align="center"]
 
 == Advantages
 
