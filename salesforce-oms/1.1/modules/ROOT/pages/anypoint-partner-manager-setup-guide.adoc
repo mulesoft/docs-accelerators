@@ -1,0 +1,75 @@
+= Anypoint Partner Manager Setup Guide
+
+To configure Anypoint Partner Manager, follow the Postman collection instructions in the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerators B2B Common Resources] project.
+
+The collection creates the following configurations:
+
+* Endpoints, message types, and custom message attributes
+* Partners
+* Message flows
+
+Once the collection runs successfully, go to Partner Manager in Anypoint Platform and verify that the configurations were created successfully.
+
+== Run the Postman Collection
+
+Use the Partner Manager setup collection in the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator B2B Common Resource] project to configure message flows and their components in Partner Manager for the Accelerator for Salesforce OMS solution.
+
+To run the collection, you must set the following variables:
+
+[cols=",",]
+|===
+|Property Name |Description
+
+|env_identifier_x12-isa-zz_id |The ID of the identifier type X12-ISA-ZZ.
+
+|env_identifier_x12-gs_id |The ID of the identifier type X12-GS for partner. 
+
+|env_identifier_ref-id_id |The ID of the identifier type Reference ID. This is static across all the organizations.
+
+|http_endpoint_type_id |The ID of the endpoint type HTTP.
+
+|host_anypoint_org |The host name of the Anypoint Platform organization.
+
+|devx.orgid |The ID of the Anypoint Platform organization.
+
+|devx.envid |The ID of the environment in the Anypoint Platform organization.
+
+|partner_x12_isa_identifier_value |The value of the partner identifier type X12-ISA-ZZ. This example uses `ORANGE`.
+
+|partner_reference_id_identifier_value |The value of the partner identifier type Reference ID. This example uses `ORANGE`.
+
+|partner_x12_gs_identifier_type_value |The value of the partner identifier type X12 - GS. This example uses `ORANGE`.
+
+|host_x12_isa_identifier_value |The value of the host identifier type X12-ISA-ZZ. This example uses `MYTHICAL`.
+
+|host_reference_id_identifier_value |The value of the host identifier type Reference ID. This example uses `MYTHICAL`.
+
+|host_x12_gs_identifier_type_value |The value of the host identifier type X12 - GS. This example uses `MYTHICAL`.
+
+|b2b_orders_process_api_host_name |The host name of the B2B Orders Process API.
+
+|b2b_orders_prc_api_orders_path |The URI path for `Orders` in the B2B Orders Process API.
+
+|b2b_storage_sys_api_host_name |The host name of the B2B Storage System API.
+
+|b2b_erp_prc_api_host_name |The host name of the ERP Process API. This example uses the B2B Simulator Process API.
+
+|b2b_erp_prc_api_invoices_path |The URI path for Invoices in the ERP Process API. This example uses the B2B Simulator Process API.
+
+|b2b_orders_prc_api_payments_path |The URI path for Payments in the B2B Orders Process API.
+
+|b2b_erp_prc_api_acknowledgements_path |The URI path for Acknowledgments in the ERP Process API. This example uses the B2B Simulator Process API.
+
+|partner_name | The name of the partner.
+
+|partner_description |The description of the partner.
+
+|partner_website_url |The website URL of the partner.
+|===
+
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Salesforce OMS]
+
