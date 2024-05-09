@@ -1,7 +1,0 @@
-.xref:index.adoc[Service Cloud]
-* xref:index.adoc[Accelerator Overview]
-* xref:prerequisites.adoc[Prerequisites]
-** xref:rcg-setup-guide.adoc[Accelerator Setup Guide]
-** xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide]
-** xref:sfdc-customization-guide.adoc[Salesforce Customization Guide]
-* xref:cim-mappings.adoc[Object Mappings]
