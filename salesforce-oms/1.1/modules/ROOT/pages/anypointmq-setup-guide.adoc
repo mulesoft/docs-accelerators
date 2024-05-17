@@ -34,6 +34,18 @@ Successful execution of the collection creates the following Anypoint MQ destina
 | -
 |===
 
+| accel-retail-update-queue
+| accel-retail-update-exchange
+| accel-retail-exception-dl-queue
+| -
+|===
+
+| accel-shipping-update-queue
+| accel-shipping-update-exchange
+| accel-shipping-exception-dl-queue
+| -
+|===
+
 == See Also
 
 * xref:prerequisites.adoc[Prerequisites]

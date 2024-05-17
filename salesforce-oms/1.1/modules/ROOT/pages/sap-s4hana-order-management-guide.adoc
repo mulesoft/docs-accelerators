@@ -1,8 +1,139 @@
-= SAP S4HANA Setup Guide
+= SAP S4HANA Order Management Guide
 
-== Overview
+== SAP process overview
 
-The following describes how to configure and test an S/4HANA Cloud SOAP outbound service (Product replication: `productmdmbulkreplicaterequest`) and the S/4HANA Cloud SOAP Connector as a Mule application deployed on Cloudhub.
+image:https://www.mulesoft.com/ext/solutions/draft/images/raccel-sap-hana-oms-guide-0.png[accel-sap-hana-oms-guide-0.png,799]
+
+For the Salesforce OMS to ERP Integration use case, the following objects in SAP S/4HANA are used:
+ ** Manual transportation planning (6W2)
+ ** Transportation execution (6W3)
+ ** Freight settlement (6W4)
+
+SAP Documents involved:
+ ** Sales Order: a contractual agreement between a sales organization and a sold-to party about delivering products or providing a service for defined prices, quantities and times
+ ** Freight Order: order for which execution is planned by a carrier or the shipper. Contains the plan for the logistical processing, planned departure times for the vehicle and execution data.
+ ** Outbound Delivery Order: contains all the data required for triggering and monitoring the complete outbound delivery process.
+ ** Billing Document: invoice created on the basis of an outbound delivery, to request payment from the customer who ordered the delivery.
+
+== Step by step of the documents creation
+
+== Sales Order creation
+From the search bar, look for the app Create Sales Order - VA01. Complete the order type with OR and press enter. Use 17100012 as sold to party. Add the product TG0011 at item level and assign a quantity. Press enter again and save.
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-1.png[accel-sap-hana-oms-guide-1.png,799]
+
+
+At the bottom, you’ll get the sales order id. For this example is 16088. SAP automatically creates a freight unit, which is going to be used to create the freight order.
+
+Note:In case the freight unit is not created automatically (you can check that using the app manage freight units), verify that the shipping condition at the header of the document is set to TM – Int. Planning:
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-2.png[accel-sap-hana-oms-guide-2.png,799]
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-3.png[accel-sap-hana-oms-guide-3.png,799]
+
+== Freight Order creation
+From the search bar, look for the app Transportation Cockpit. At Freight unit stages, change the value of the first dropdown to ERP document and complete the field with the sales order number (16088). From the Vehicle type section, complete the field next to the dropdown with * as shown in the following screenshot:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-4.png[accel-sap-hana-oms-guide-4.png,799]
+
+Click on continue.
+
+Now, from the freight unit section select the freight unit of the sales order and from the Truck section, select the truck type STR12:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-5.png[accel-sap-hana-oms-guide-5.png,799]
+
+At the freight unit section, click on the button create Road Freight Order and then click on save.
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-6.png[accel-sap-hana-oms-guide-6.png,799]
+
+The new freight order will be displayed on the right side of the screen (6600000007). If you click on the freight order number, you will see the details of the order:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-7.png[accel-sap-hana-oms-guide-7.png,799]
+
+
+From there, click on Edit. Complete the order with the following data:
+   - Vehicle type: STR012
+   - Carrier: 17386002
+   - Purchasing organization: 1710
+   - Purchasing group: 005
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-8.png[accel-sap-hana-oms-guide-8.png,799]
+
+Click on save.
+
+Now go to the Charges tab. At charge items, expand the item:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-9.png[accel-sap-hana-oms-guide-9.png,799]
+
+At Base FTL rate, enter an amount. For this case I’m using 50. Press enter and save.
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-10.png[accel-sap-hana-oms-guide-10.png,799]
+
+Now go to the status tab. From the menu Subcontracting, click on Send to Carrier:
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-11.png[accel-sap-hana-oms-guide-11.png,799]
+
+
+Again, from the menu Subcontracting, click on Set to Confirmed by Carrier:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-12.png[accel-sap-hana-oms-guide-12.png,799]
+
+To add the Tracking number, from the menu go to Custom fields
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-13.png[accel-sap-hana-oms-guide-13.png,799]
+
+
+Here add the tracking number and save:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-14.png[accel-sap-hana-oms-guide-14.png,799]
+
+== Outbound Delivery creation
+Now at the same page we were working, we are going to create the Outbound delivery. From the menu, click on Create deliveries.
+
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-15.png[accel-sap-hana-oms-guide-15.png,799]
+
+
+You can check all the documents related to the freight order at the tab Document Flow:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-16.png[accel-sap-hana-oms-guide-16.png,799]
+
+Open a new tab of S/4 HANA Cloud, and look for the app Change Outbound Delivery. Complete with the outbound delivery number (80000094) and press enter:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-17.png[accel-sap-hana-oms-guide-17.png,799]
+
+Now, to do the Picking, go to that tab and complete the picking quantity with the same delivery quantity. In this case it is 4. You’ll see that the status changes:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-18.png[accel-sap-hana-oms-guide-18.png,799]
+
+Before picking:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-19.png[accel-sap-hana-oms-guide-19.png,799]
+
+After entering the picking quantity:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-20.png[accel-sap-hana-oms-guide-20.png,799]
+
+Now, from the menu click on Post Goods Issue:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-21.png[accel-sap-hana-oms-guide-21.png,799]
+
+This action will trigger the event of the Outbound Delivery API (DELIVERY_REQUEST_OUT).
+
+Now if you go back to the freight order window, click on Refresh to update the status tab:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-22.png[accel-sap-hana-oms-guide-22.png,799]
+
+Click on Edit. Now, from the menu Execution Status, click on Set Ready for Transportation Execution:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-23.png[accel-sap-hana-oms-guide-23.png,799]
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-24.png[accel-sap-hana-oms-guide-24.png,799]
+
+
+Scroll down to the Stages section (which is located after Items), select the item and from the menu Execution Status (Source), choose Set to departure.
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-25.png[accel-sap-hana-oms-guide-25.png,799]
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-26.png[accel-sap-hana-oms-guide-26.png,799]
+
+
+=== Billing Document creation
+To create the invoice, look for the app Create Billing Documents - VF01. At the main screen, complete the document to be processed with the outbound delivery number (80000094):
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-27.png[accel-sap-hana-oms-guide-27.png,799]
+Press enter.
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-28.png[accel-sap-hana-oms-guide-28.png,799]
+From there, click on save. The billing document will be shown at the bottom:
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-29.png[accel-sap-hana-oms-guide-29.png,799]
+
+=== Process flow overview
+Look for the app Manage Sales Order Version 2. Filter by the sales order id (16088).
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-30.png[accel-sap-hana-oms-guide-30.png,799]
+
+Click on the order to see the details. From there go to Process flow. You’ll see all the documents that have been created so far.
+image:https://www.mulesoft.com/ext/solutions/draft/images/accel-sap-hana-oms-guide-31.png[accel-sap-hana-oms-guide-31.png,799]
+
+
+
+
 
 == Configurations in S/4HANA
 
