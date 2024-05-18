@@ -124,7 +124,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setu
 
 The following provides guidance on the custom fields that you must create for  customers, products and orders sync use cases to function in an end-to-end manner.
 
-=== Custom fields
+=== Create Custom Fields
 
 Create the following new fields in the corresponding objects for the use case:
 
