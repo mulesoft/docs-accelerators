@@ -169,7 +169,7 @@ Add the customer using the rule (Outbound Delivery) and the Determination Step C
 | DELIVERY_NOTE | <Customer Number> | EDI | WE
 |===
 
-At the communication system, used to configure this communication arrangement, add the customer in the section Business Partner.
+Next, add the customer in the *Business Partner* section of the communication system, which is used to configure this communication arrangement.
 
 Custom CDS View
 
