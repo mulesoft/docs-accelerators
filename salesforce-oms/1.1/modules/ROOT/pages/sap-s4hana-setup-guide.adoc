@@ -190,6 +190,7 @@ Custom CDS View
 
  - Elements:
 
+[%header%autowidth.spread]
     |===
     | Alias | Path | Type | Key 
     | SalesDocument| I_SalesDocument.SalesDocument| CHAR (10) | Yes
