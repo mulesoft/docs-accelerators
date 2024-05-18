@@ -180,6 +180,7 @@ Custom CDS View
  - Scenario: External API
  - Data Sources: 
 
+[%header%autowidth.spread]
     |===
     | Field name | Type | Cardinality | Join Condition 
     | I_SalesDocument| Primary Datasource | N/A | N/A
