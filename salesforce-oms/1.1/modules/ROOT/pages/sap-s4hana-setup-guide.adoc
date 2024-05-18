@@ -140,7 +140,9 @@ Create the following new fields in the corresponding objects for the use case:
 
 The following sections guide you through setting up your Salesforce OMS to ERP Integration.
 
-Communication Arrangement
+==== Configure the Communication Arrangement
+
+Use the settings in the table to configure the communication arrangements.
 
 [%header%autowidth.spread]
 |===
