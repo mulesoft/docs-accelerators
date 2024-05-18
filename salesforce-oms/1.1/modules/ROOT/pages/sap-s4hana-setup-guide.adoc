@@ -206,6 +206,7 @@ Custom CDS View
 
 You must create a custom communication scenario by adding the CDS view as an inbound service. After you publish the communication scenario, create a communication arrangement using the custom communication scenario you just created. The communication arrangement includes the service URL that is used to retrieve the SD Document Flow.
 
+[%header%autowidth.spread]
 |===
 | SAP Field Name | Label | Data Type | Length | SAP Business Context 
 | YY1_SME_Tracking_Nmb| Tracking Number| Text | 20 | Transportation Orders (TM_TRANSPORTATION_ORDER)
