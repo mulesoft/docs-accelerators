@@ -35,6 +35,9 @@ Successful execution of the collection creates the following Anypoint MQ destina
 | -
 |===
 
+[%header%autowidth.spread]
+|===
+| Queue Name| Bound to Exchange| Dead Letter Queue Name
 | accel-retail-update-queue
 | accel-retail-update-exchange
 | accel-retail-exception-dl-queue
