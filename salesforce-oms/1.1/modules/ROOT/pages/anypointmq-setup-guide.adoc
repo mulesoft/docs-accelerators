@@ -28,6 +28,7 @@ Successful execution of the collection creates the following Anypoint MQ destina
 | accel-b2b-orders-update-queue
 | accel-oms-update-exchange
 | accel-b2b-orders-update-dl-queue 
+|===
 
 | accel-oms-exception-queue
 | -
