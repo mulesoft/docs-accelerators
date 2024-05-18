@@ -178,7 +178,8 @@ Custom CDS View
  +
  SalesDocument
  - Scenario: External API
- - Data Sources: 
+ * *Data Sources*
+ +
 
 [%header%autowidth.spread]
     |===
