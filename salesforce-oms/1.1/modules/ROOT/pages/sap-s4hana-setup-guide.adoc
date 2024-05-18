@@ -162,7 +162,7 @@ Use the Fiori app Output Parameter Determination to add the following entry unde
 | DELIVERY_NOTE | A | J | C
 |===
 
-Add the customer using the rule (Outbound Delivery) and the Determination Step Channel
+After configuring the communication arrangements, add the customer by using the rule `Outbound Delivery` and the Determination Step Channel.
 
 [%header%autowidth.spread]
 |===
