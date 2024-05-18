@@ -174,7 +174,9 @@ Next, add the customer in the *Business Partner* section of the communication sy
 Custom CDS View
 
  - Name: YY1_SDDocumentFlow
- - Representative Key: SalesDocument
+ * *Representative Key*
+ +
+ SalesDocument
  - Scenario: External API
  - Data Sources: 
 
