@@ -188,7 +188,8 @@ Custom CDS View
     | I_SDDocumentCategory| Associated Datasource | Zero or More [0..*]| SDDocumentCategory = SubsequentDocumentCategory
     |===
 
- - Elements:
+ * *Elements*
+ +
 
 [%header%autowidth.spread]
     |===
