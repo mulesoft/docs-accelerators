@@ -164,6 +164,7 @@ Use the Fiori app Output Parameter Determination to add the following entry unde
 
 Add the customer using the rule (Outbound Delivery) and the Determination Step Channel
 
+[%header%autowidth.spread]
 |===
 | Output Type | Recipient | Channel | Rolee 
 | DELIVERY_NOTE | <Customer Number> | EDI | WE
