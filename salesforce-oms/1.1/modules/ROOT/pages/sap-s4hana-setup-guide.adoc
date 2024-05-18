@@ -177,7 +177,9 @@ Custom CDS View
  * *Representative Key*
  +
  SalesDocument
- - Scenario: External API
+ * *Scenario*
+ +
+ External API
  * *Data Sources*
  +
 
