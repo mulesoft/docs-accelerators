@@ -138,7 +138,7 @@ Create the following new fields in the corresponding objects for the use case:
 
 === Confiigurations for Order Management
 
-The following provides guidance on the setup and custom fields for Salesforce OMS to ERP Integration.
+The following sections guide you through setting up your Salesforce OMS to ERP Integration.
 
 Communication Arrangement
 
