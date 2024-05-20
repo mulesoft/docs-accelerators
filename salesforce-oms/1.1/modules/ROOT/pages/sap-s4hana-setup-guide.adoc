@@ -180,6 +180,7 @@ Next, add the customer in the *Business Partner* section of the communication sy
  * *Name*
  +
  YY1_SDDocumentFlow
+ 
  * *Representative Key*
  +
  SalesDocument
