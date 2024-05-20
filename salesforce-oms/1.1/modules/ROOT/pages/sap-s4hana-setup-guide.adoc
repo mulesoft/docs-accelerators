@@ -124,7 +124,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setu
 
 == S/4HANA customization guide
 
-The following provides guidance on the custom fields that you must create for  customers, products and orders sync use cases to function in an end-to-end manner.
+Create the following custom fields in the corresponding objects in Salesforce OMS to enable the customer, product, and orders sync use cases to function end-to-end.
 
 === Create Custom Fields
 
