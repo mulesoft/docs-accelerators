@@ -199,7 +199,7 @@ Next, add the customer in the *Business Partner* section of the communication sy
     |===
 
  * *Elements*
- +
+ 
 
 [%header%autowidth.spread]
     |===
