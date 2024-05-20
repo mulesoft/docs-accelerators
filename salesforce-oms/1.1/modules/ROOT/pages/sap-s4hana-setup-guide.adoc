@@ -183,6 +183,7 @@ Next, add the customer in the *Business Partner* section of the communication sy
  * *Representative Key*
  +
  SalesDocument
+ 
  * *Scenario*
  +
  External API
