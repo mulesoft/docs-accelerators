@@ -187,7 +187,7 @@ Next, add the customer in the *Business Partner* section of the communication sy
  +
  External API
  * *Data Sources*
- +
+ 
 
 [%header%autowidth.spread]
     |===
