@@ -154,7 +154,7 @@ Use the settings in the table to configure the communication arrangements.
 | SAP_COM_0120 | Billing Document - Read, Cancel, GetPDF| OData V2
 |===
 
-===== Required Entry for Outbound Delivery - Notify (B2B) Communication Arrangement
+==== Required Entry for Outbound Delivery - Notify (B2B) Communication Arrangement
 
 Use the Fiori app Output Parameter Determination to add the following entry under the rule for *Outbound delivery* and *Determination Step Output Relevance*.
 
