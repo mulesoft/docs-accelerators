@@ -8,7 +8,7 @@ The collection creates the following configurations:
 * Partners
 * Message flows
 
-Once the collection runs successfully, go to Partner Manager in Anypoint Platform and verify that the configurations were created successfully.
+After the collection runs successfully, go to Partner Manager in Anypoint Platform and verify that the configurations were created successfully.
 
 == Run the Postman Collection
 

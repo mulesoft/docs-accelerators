@@ -10,6 +10,6 @@ The following are a collection of assets to support MuleSoft customers who are d
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* xref:accelerators-home::getting-started.adoc[Getting Started]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]

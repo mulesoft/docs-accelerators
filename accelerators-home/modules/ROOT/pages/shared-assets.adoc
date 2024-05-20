@@ -136,6 +136,6 @@ include::_partials/shared-components-fragment.adoc[]
 
 == See Also
 
-* xref:getting-started.adoc[Getting Started Guide]
+* xref:getting-started.adoc[Getting Started]
 * xref:common-services.adoc[Accelerator Common Services]
 * xref:index.adoc[MuleSoft Accelerators]

@@ -11,11 +11,11 @@ Create the `dev` environment by using the template in the https://anypoint.mules
 The collection defines the variables that you must override prior to running requests. The collection is organized into separate folders, which you must execute in the following order:
 
 . Authorization
-. Client-Management - This variable is optional.
+. (Optional) Client-Management
 . Queue-Management
 . Exchange-Management
 
-Run requests in the _Verification_ folder to validate the results of the previous operations. If desired, run the requests in the _Deletions_ folder to clean up objects created by the collection. 
+Run requests in the `Verification` folder to validate the results of the previous operations. Optionally, run the requests in the `Deletions` folder to clean up objects created by the collection. 
 
 == Verify Destinations
 
