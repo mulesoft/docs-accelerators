@@ -211,7 +211,6 @@ Next, add the customer in the *Business Partner* section of the communication sy
     | CreationTime | _I_SDDocumentMultiLevelProcFlo.CreationTime | TIMS (6) | No
     |===
 
-
 ==== Create Custom Communication Scenario
 
 You must create a custom communication scenario by adding the CDS view as an inbound service.
