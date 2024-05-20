@@ -137,7 +137,7 @@ Create the following new fields in the corresponding objects for the use case:
 | Product | YY1_SME_UnvProductId_PRD | Text | 36 | Y | Y
 |===
 
-=== Confiigure Salesforce Order Management
+=== Configure Salesforce Order Management
 
 The following sections guide you through setting up your Salesforce OMS to ERP Integration.
 
