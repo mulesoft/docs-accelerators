@@ -174,7 +174,7 @@ After configuring the communication arrangements, add the customer by using the 
 
 Next, add the customer in the *Business Partner* section of the communication system, which is used to configure this communication arrangement.
 
-Custom CDS View
+==== Custom CDS View
 
  * *Name*
  +
