@@ -7,7 +7,7 @@ MuleSoft Accelerator for Service Cloud empowers service representatives with a h
 
 The following use case is supported by the MuleSoft Accelerator for Service Cloud:
 
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-service-cloud/minor/{service-cloud-version}/pages/Use%20case%201a%20-%20SAP%20to%20Salesforce%20Integration/[SAP to Salesforce Integration]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-service-cloud/minor/{service-cloud-version}/pages/Use%20case%201a%20-%20SAP%20to%20Salesforce%20Integration/[SAP to Salesforce Integration]
 +
 Enable a single view of your customer by simplifying connectivity between SAP S/4HANA and Salesforce.
 
@@ -20,4 +20,4 @@ Enable a single view of your customer by simplifying connectivity between SAP S/
 * xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes::accelerators/service-cloud/service-cloud-release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-service-cloud/[MuleSoft Accelerator for Service Cloud on Exchange^]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-service-cloud/[MuleSoft Accelerator for Service Cloud on Exchange^]
