@@ -122,7 +122,7 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setu
  +
 image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setup-guide-27.png[retail-sap-s4hana-setup-guide-27.png,799]
 
-== S/4HANA customization guide
+== S/4HANA Customization Guide
 
 Create the following custom fields in the corresponding objects in Salesforce OMS to enable the customer, product, and orders sync use cases to function end-to-end.
 
@@ -134,7 +134,7 @@ Create the following custom fields in the corresponding objects in Salesforce OM
 | Product | YY1_SME_UnvProductId_PRD | Text | 36 | Y | Y
 |===
 
-=== Configure Salesforce Order Management
+=== Configure SAP S/4HANA Order Management
 
 Follow the steps in these sections to configure your Salesforce OMS to ERP Integration.
 
