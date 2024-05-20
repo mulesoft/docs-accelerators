@@ -15,7 +15,7 @@ The collection defines the variables that you must override prior to running req
 . Queue-Management
 . Exchange-Management
 
-Run requests in the _Verification_ folder to validate the results of the previous operations. If desired, run the requests in the _Deletions_ folder to clean up objects created by the collection. 
+Run requests in the Verification folder to validate the results of the previous operations. You can also run the requests in the Deletions folder to clean up objects created by the collection. 
 
 == Verify Destinations
 
