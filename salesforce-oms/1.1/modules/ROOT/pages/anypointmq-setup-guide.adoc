@@ -24,7 +24,6 @@ Successful execution of the collection creates the following Anypoint MQ destina
 [%header%autowidth.spread]
 |===
 | Queue Name| Bound to Exchange| Dead Letter Queue Name
-
 | accel-b2b-orders-update-queue
 | accel-oms-update-exchange
 | accel-b2b-orders-update-dl-queue 
