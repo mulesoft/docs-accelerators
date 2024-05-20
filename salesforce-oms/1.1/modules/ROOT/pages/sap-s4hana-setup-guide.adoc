@@ -152,7 +152,7 @@ Use the settings in the table to configure the communication arrangements.
 | SAP_COM_0120 | Billing Document - Read, Cancel, GetPDF| OData V2
 |===
 
-==== Add Required Entry for Outbound Delivery - Notify (B2B) Communication Arrangement
+==== Add the Required Entry for Outbound Delivery - Notify (B2B) Communication Arrangement
 
 Use the Fiori app Output Parameter Determination to add the following entry under the rule for *Outbound delivery* and *Determination Step Output Relevance*.
 
@@ -210,7 +210,7 @@ External API
 | CreationTime | _I_SDDocumentMultiLevelProcFlo.CreationTime | TIMS (6) | No
 |===
 
-==== Create Custom Communication Scenario
+==== Create a Custom Communication Scenario
 
 You must create a custom communication scenario by adding the CDS view as an inbound service.
 
