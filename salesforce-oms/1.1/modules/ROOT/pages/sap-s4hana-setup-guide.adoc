@@ -126,7 +126,6 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setu
 
 Create the following custom fields in the corresponding objects in Salesforce OMS to enable the customer, product, and orders sync use cases to function end-to-end.
 
-=== Create Custom Fields
 
 Create the following new fields in the corresponding objects for the use case:
 
