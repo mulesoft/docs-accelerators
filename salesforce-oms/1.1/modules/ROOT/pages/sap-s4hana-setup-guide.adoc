@@ -126,8 +126,6 @@ image:https://www.mulesoft.com/ext/solutions/draft/images/retail-sap-s4hana-setu
 
 Create the following custom fields in the corresponding objects in Salesforce OMS to enable the customer, product, and orders sync use cases to function end-to-end.
 
-
-
 [%header%autowidth.spread]
 |===
 | Salesforce Object | Field Name | Data Type | Length | Unique | ExternalId
@@ -154,7 +152,7 @@ Use the settings in the table to configure the communication arrangements.
 | SAP_COM_0120 | Billing Document - Read, Cancel, GetPDF| OData V2
 |===
 
-==== Required Entry for Outbound Delivery - Notify (B2B) Communication Arrangement
+==== Add Required Entry for Outbound Delivery - Notify (B2B) Communication Arrangement
 
 Use the Fiori app Output Parameter Determination to add the following entry under the rule for *Outbound delivery* and *Determination Step Output Relevance*.
 
@@ -176,43 +174,41 @@ Next, add the customer in the *Business Partner* section of the communication sy
 
 ==== Custom CDS View
 
- * *Name*
- +
- YY1_SDDocumentFlow
- 
- * *Representative Key*
- +
- SalesDocument
- 
- * *Scenario*
- +
- External API
- 
- * *Data Sources*
- 
+* *Name*
++
+YY1_SDDocumentFlow
 
+* *Representative Key*
++
+SalesDocument
+
+* *Scenario*
++
+External API
+
+* *Data Sources*
++
 [%header%autowidth.spread]
-    |===
-    | Field name | Type | Cardinality | Join Condition 
-    | I_SalesDocument| Primary Datasource | N/A | N/A
-    | I_SDDocumentMultiLevelProcFlow| Associated Datasource | Zero or More [0..*] | PrecedingDocument = SalesDocument
-    | I_SDDocumentCategory| Associated Datasource | Zero or More [0..*]| SDDocumentCategory = SubsequentDocumentCategory
-    |===
+|===
+| Field name | Type | Cardinality | Join Condition 
+| I_SalesDocument| Primary Datasource | N/A | N/A
+| I_SDDocumentMultiLevelProcFlow| Associated Datasource | Zero or More [0..*] | PrecedingDocument = SalesDocument
+| I_SDDocumentCategory| Associated Datasource | Zero or More [0..*]| SDDocumentCategory = SubsequentDocumentCategory
+|===
 
- * *Elements*
- 
-
+* *Elements*
++
 [%header%autowidth.spread]
-    |===
-    | Alias | Path | Type | Key 
-    | SalesDocument| I_SalesDocument.SalesDocument| CHAR (10) | Yes
-    | PrecedingDocumentCategory | _I_SDDocumentMultiLevelProcFlo.PrecedingDocumentCategory | CHAR (4) | No
-    | SubsequentDocument | _I_SDDocumentMultiLevelProcFlo.SubsequentDocument | CHAR (10)| No
-    | SubsequentDocumentCategory | _I_SDDocumentMultiLevelProcFlo.SubsequentDocumentCategory | CHAR (10)| No
-    | ProcessFlowLevel | _I_SDDocumentMultiLevelProcFlo.ProcessFlowLevel | NUMC(2) | No
-    | CreationDate | _I_SDDocumentMultiLevelProcFlo.CreationDate | DATS (8) | No
-    | CreationTime | _I_SDDocumentMultiLevelProcFlo.CreationTime | TIMS (6) | No
-    |===
+|===
+| Alias | Path | Type | Key 
+| SalesDocument| I_SalesDocument.SalesDocument| CHAR (10) | Yes
+| PrecedingDocumentCategory | _I_SDDocumentMultiLevelProcFlo.PrecedingDocumentCategory | CHAR (4) | No
+| SubsequentDocument | _I_SDDocumentMultiLevelProcFlo.SubsequentDocument | CHAR (10)| No
+| SubsequentDocumentCategory | _I_SDDocumentMultiLevelProcFlo.SubsequentDocumentCategory | CHAR (10)| No
+| ProcessFlowLevel | _I_SDDocumentMultiLevelProcFlo.ProcessFlowLevel | NUMC(2) | No
+| CreationDate | _I_SDDocumentMultiLevelProcFlo.CreationDate | DATS (8) | No
+| CreationTime | _I_SDDocumentMultiLevelProcFlo.CreationTime | TIMS (6) | No
+|===
 
 ==== Create Custom Communication Scenario
 
