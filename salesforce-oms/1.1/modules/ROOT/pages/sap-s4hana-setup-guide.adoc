@@ -139,7 +139,7 @@ Create the following new fields in the corresponding objects for the use case:
 
 === Configure Salesforce Order Management
 
-The following sections guide you through setting up your Salesforce OMS to ERP Integration.
+Follow the steps in these sections to configure your Salesforce OMS to ERP Integration.
 
 ==== Configure the Communication Arrangement
 
