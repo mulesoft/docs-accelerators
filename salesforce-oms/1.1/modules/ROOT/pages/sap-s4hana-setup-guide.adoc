@@ -214,7 +214,9 @@ Next, add the customer in the *Business Partner* section of the communication sy
 
 ==== Create Custom Communication Scenario
 
-You must create a custom communication scenario by adding the CDS view as an inbound service. After you publish the communication scenario, create a communication arrangement using the custom communication scenario you just created. The communication arrangement includes the service URL that is used to retrieve the SD Document Flow.
+You must create a custom communication scenario by adding the CDS view as an inbound service.
+
+Publish the communication scenario, and then create a communication arrangement using the custom communication scenario you just created. The communication arrangement includes the service URL that is used to retrieve the SD Document Flow.
 
 [%header%autowidth.spread]
 |===
