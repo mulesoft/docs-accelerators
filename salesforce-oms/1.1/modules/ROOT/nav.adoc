@@ -1,0 +1,7 @@
+.xref:index.adoc[Salesforce OMS]
+* xref:index.adoc[Accelerator Overview]
+* xref:prerequisites.adoc[Prerequisites]
+** xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup]
+** xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization]
+** xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup]
+** xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide]
