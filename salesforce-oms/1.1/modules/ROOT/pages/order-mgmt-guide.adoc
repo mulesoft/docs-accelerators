@@ -56,7 +56,7 @@ Follow these steps to create a freight order in SAP:
 . Enter *** in the *Vehicle Types* field.
 . Click *Continue*.
 . Select the freight unit of the sales order in the *Freight Unit* column.
-. Select *STR12** in the *Trucks* field.
+. Select a value in the *Trucks* field.
 . Click *Create Road Freight Order* in the *Freight Unit Stages* field, and then click *Save* to create the freight order.
 . Click the freight order number to open the order details, and then complete the *Vehicle Type*, *Carrier*, *Purchasing Organization*, and *Purchasing Group* fields.
 . On the *Charges* tab, enter an amount in the *Base FTL - Flat Rate* field, and then click *Save*.
