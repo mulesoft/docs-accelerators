@@ -1,4 +1,4 @@
-= Order Management Guide
+= SAP S/4HANA Order Management Guide
 
 == Overview
 
@@ -28,21 +28,6 @@ The order for which execution is planned by a carrier or the shipper. Contains t
 +
 Contains the data required for triggering and monitoring the complete outbound delivery process.
 Billing Document: invoice created on the basis of an outbound delivery, to request payment from the customer who ordered the delivery.
-
-=== SAP APIs
-
-The following APIs are required to perform the steps in this use case:
-
-[%header%autowidth.spread]
-|===
-|SAP Business Object |Technical Name |Communication Arrangement |Protocol |Sample Payload |Drive Folder
-|Sales Order |API_SALES_ORDER_SRV |SAP_COM_0109 |OData V2 |N/A |N/A
-|Outbound Delivery - Notify (B2B) |DELIVERY_REQUEST_OUT |SAP_COM_0223 |SOAP |Doc |Link
-|Freight Order (A2X) |API_FREIGHTORDER |SAP_COM_0905 |OData V4 |N/A |N/A
-|Billing Document |BDwReferenceRequest_In |SAP_COM_0120 |SOAP |Doc |Link
-|Billing Document |API_BILLING_DOCUMENT_SRV |SAP_COM_0120 |OData V2 |Doc |N/A
-|SD Document Flow |YY1_SDDOCUMENTFLOW_CDS |OData V2 |Doc | |N/A
-|===
 
 == Create a Sales Order
 
