@@ -51,7 +51,7 @@ Follow these steps to create a sales order in SAP:
 . Search for the *Create Sales Order - VA01* app.
 . Enter *OR* as the order type.
 . Press Enter.
-. Enter *17100012* in the Sold to Party field.
+. Enter *17100012* in the *Sold-to Party* field.
 . Click the *Display header details* icon and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when creating the freight order.
 . Enter *TG0011* in the Material column of the *All Items* section.
 . Enter a value in the *Order Quantity* field.
