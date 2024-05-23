@@ -33,7 +33,16 @@ Billing Document: invoice created on the basis of an outbound delivery, to reque
 
 The following APIs are required to perform the steps in this use case:
 
-
+[%header%autowidth.spread]
+|===
+|SAP Business Object |Technical Name |Communication Arrangement |Protocol |Sample Payload |Drive Folder
+|Sales Order |API_SALES_ORDER_SRV |SAP_COM_0109 |OData V2 |N/A |N/A
+|Outbound Delivery - Notify (B2B) |DELIVERY_REQUEST_OUT |SAP_COM_0223 |SOAP |Doc |Link
+|Freight Order (A2X) |API_FREIGHTORDER |SAP_COM_0905 |OData V4 |N/A |N/A
+|Billing Document |BDwReferenceRequest_In |SAP_COM_0120 |SOAP |Doc |Link
+|Billing Document |API_BILLING_DOCUMENT_SRV |SAP_COM_0120 |OData V2 |Doc |N/A
+|SD Document Flow |YY1_SDDOCUMENTFLOW_CDS |OData V2 |Doc | |N/A
+|===
 
 == Create a Sales Order
 
@@ -105,11 +114,12 @@ Follow these steps to create an invoice for the order:
 . Enter the outbound delivery number in the *Document* column of the *Documents to Be Processed* table, and then press Enter.
 . Click *Save*.
 
-== View the Process Flow
+== View Your Documents
 
 Follow these steps to view the documents you created:
 
 . Search for the *Manage Sales Order Version 2* app, and then filter by the sales order ID.
 . Click the sales order ID in the *Sales Orders* table to open the order details.
 . Click *Process Flow* to view the documents you created.
+
 
