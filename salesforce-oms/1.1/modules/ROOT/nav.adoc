@@ -3,6 +3,6 @@
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup]
 ** xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup]
-** xref:order-mgmt-guide.adoc[Order Management Setup]
 ** xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization]
-** xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide]
+** xref:order-mgmt-guide.adoc[SAP S/4HANA Order Management]
+** xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup]
