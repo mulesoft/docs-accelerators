@@ -10,11 +10,18 @@ Follow the instructions in the https://resources.docs.salesforce.com/latest/late
 * Disable the *Enable Reduction Orders* option in *Order Settings*.
 * Enable *Order Management*, *Use Person Accounts*, and *High Scale Orders*
 * Activate *Multiple Currencies*
+* Enable *State* and *Country/Territory* picklists
+* Create Webstore and assign value to ExternalReference field
 * <<configure_payment_gateway>>
 
 == Customization
 
 Install the Salesforce package from the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project and verify that the configuration is correct in your Salesforce organization.
+
+After successfull package intallation follow the following steps
+
+* Create matching Rule Account Interchange Code Match with Matching Cretaria Account: B2B_EDISenderCodeEXACTMatchBlank = FALSE 
+* Create duplicate rule named 'Account Interchange Code Rule' with the matching rule 'Account Interchange Code Match'. Set the order to 1, giving it precedence over the standard account matching rule.
 
 === Custom Fields
 
@@ -37,6 +44,8 @@ Verify that the following fields have been created in the corresponding objects:
 
 |Shipment |ExternalId |ExternalId__c |Text |100 |N |Y
 |===
+
+IMPORTANT: Add read/ write permissions to custom fields created by Salesforce package.
 
 === Custom Object Tab
 
@@ -129,7 +138,7 @@ Use the sample settings.xml file in the Accelerator B2B Common Resources project
 
 == Generate a Security Token for Your Service Account
 
-To connect to the Financial Services Cloud instance, you must generate a token for the service account used by Mule applications.
+To connect to the Salesforce OMS Cloud instance, you must generate a token for the service account used by Mule applications.
 
 . Log in to Salesforce as the service account user, which is the account Mule applications use to connect to Salesforce.
 . Click the Username icon and select *Settings*.
