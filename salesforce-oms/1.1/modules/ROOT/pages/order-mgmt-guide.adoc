@@ -15,7 +15,7 @@ Submit a ticket on https://me.sap.com/[SAP for Me] to request activation of the 
 
 For more information about how to complete the ticket, see the https://userapps.support.sap.com/sap/support/knowledge/en/3122430[Scope item activation request for CBC provisioned S/4HANA Cloud Essentials tenant] knowledge base article on the SAP support site.
 
-=== SAP Documents
+=== Generated SAP Documents
 
 Completing the steps in this guide generates following SAP documents:
 
