@@ -59,9 +59,9 @@ Follow these steps to create a freight order in SAP:
 . Click *Continue*.
 . Select the freight unit of the sales order in the *Freight Unit* column.
 . Select a value in the *Trucks* field.
-. Click *Create Road Freight Order* in the *Freight Unit Stages* field, and then click *Save* to create the freight order.
-. Click the freight order number to open the order details, and then complete the *Vehicle Type*, *Carrier*, *Purchasing Organization*, and *Purchasing Group* fields.
-. Enter an amount in the *Base FTL - Flat Rate* field on the *Charges* tab, and then click *Save*.
+. Click *Create Road Freight Order* in the *Freight Unit Stages* field and then click *Save* to create the freight order.
+. Click the freight order number to open the order details and then complete the *Vehicle Type*, *Carrier*, *Purchasing Organization*, and *Purchasing Group* fields.
+. Enter an amount in the *Base FTL - Flat Rate* field on the *Charges* tab and then click *Save*.
 . Select *Send to Carrier* from the *Subcontracting* dropdown on the *Statuses* tab.
 . Then, select *Set to Confirmed by Carrier* from the same *Subcontracting* dropdown.
 . Select *Custom Fields* from the *All Tabs* icon (image:all-tabs-icon.png[3%,3%]) and complete the *Tracking Number* field.
@@ -71,10 +71,10 @@ Follow these steps to create a freight order in SAP:
 
 Follow these steps to create an outbound delivery in SAP:
 
-. Click the *Create Deliveries* tab, and then click the *Document Flow* tab.
+. Click the *Create Deliveries* tab and then click the *Document Flow* tab.
 . Select the box for each document that is related to the freight order.
 . Open SAP S/4HANA in a new tab and search for the *Change Outbound Delivery* app.
-. Enter a value in the *Outbound Delivery* field, and then press Enter.
+. Enter a value in the *Outbound Delivery* field and then press Enter.
 . On the *Picking* tab, enter the same value in the *Picked Qty* column that's in the *Deliv. Qty* column to update the status in the *OvrllPickStatus* and *Warehouse Execution* fields.
 . Select *Post Goods Issue* from the *Menu* dropdown to trigger the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
 . Return to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
@@ -87,14 +87,14 @@ Follow these steps to create an outbound delivery in SAP:
 Follow these steps to create an invoice in SAP:
 
 . Search for the *Create Billing Documents - VF01* app.
-. Enter the outbound delivery number in the *Document* column of the *Documents to Be Processed* table, and then press Enter.
+. Enter the outbound delivery number in the *Document* column of the *Documents to Be Processed* table and then press Enter.
 . Click *Save*.
 
 == View Your Documents
 
 Follow these steps in SAP to view the documents you created:
 
-. Search for the *Manage Sales Order Version 2* app, and then filter by the sales order ID.
+. Search for the *Manage Sales Order Version 2* app and then filter by the sales order ID.
 . Click the sales order ID in the *Sales Orders* table to open the order details.
 . Click *Process Flow* to view the documents you created.
 
