@@ -75,7 +75,7 @@ Follow these steps to create an outbound delivery in SAP:
 . Enter a value in the *Outbound Delivery* field, and then press Enter.
 . On the *Picking* tab, enter the same value in the *Picked Qty* column as the value in the *Deliv. Qty* column. Entering this value updates the status values in the *OvrllPickStatus* and *Warehouse Execution* fields.
 . Select *Post Goods Issue* from the *Menu* dropdown. This action triggers the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
-. Navigate back to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
+. Return to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
 . Click the *Edit* button.
 . Select *Set to Ready for Transportation Execution* in the *Execution Status* dropdown. This updates the value in the *Execution Status* field to *Ready for Transportation Execution*.
 . In the *Stages* section, select *Set to Departed* in the *Execution Status (Source)* dropdown.
