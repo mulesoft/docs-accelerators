@@ -24,13 +24,13 @@ Completing the steps in this guide generates following SAP documents:
 A contractual agreement between a sales organization and a sold-to party to deliver products or provide a service at a set price, quantity, and time.
 * *Freight Order*
 +
-The order for which execution is planned by a carrier or shipper. The order contains the logistical processing plan, vehicle departure times, and order execution data.
+The order that a carrier or shipper plans to execute, containing the logistical processing plan, vehicle departure times, and order execution data.
 * *Outbound Delivery Order*
 +
 Contains the data that is required to trigger and monitor the outbound delivery process.
 * *Billing Document*
 +
-The invoice created for an outbound delivery, requesting payment from the customer who placed the order.
+The invoice that is created for an outbound delivery and that requests payment from the customer who placed the order.
 
 == Create a Sales Order
 
