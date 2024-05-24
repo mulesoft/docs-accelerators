@@ -42,7 +42,7 @@ Follow these steps to create a sales order in SAP:
 . Enter a value in the *Sold-to Party* field.
 . Enter a value in the *Ship-to Party* field.
 . Click the *Display header details* icon (image:display-header-details-icon.png[3%,3%]) and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when creating the freight order.
-. Enter a value in the Material column of the *All Items* section.
+. Enter a value in the *Material* column of the *All Items* section.
 . Enter a value in the *Order Quantity* field.
 . Press Enter.
 . Click *Save*.
@@ -61,10 +61,10 @@ Follow these steps to create a freight order in SAP:
 . Select a value in the *Trucks* field.
 . Click *Create Road Freight Order* in the *Freight Unit Stages* field, and then click *Save* to create the freight order.
 . Click the freight order number to open the order details, and then complete the *Vehicle Type*, *Carrier*, *Purchasing Organization*, and *Purchasing Group* fields.
-. On the *Charges* tab, enter an amount in the *Base FTL - Flat Rate* field, and then click *Save*.
-. From the *Subcontracting* dropdown on the *Statuses* tab, select *Send to Carrier*.
-. Then, from the same *Subcontracting* dropdown, select *Set to Confirmed by Carrier*.
-. Click *Custom Fields* from the *All Tabs* icon (image:all-tabs-icon.png[3%,3%]) and complete the *Tracking Number* field.
+. Enter an amount in the *Base FTL - Flat Rate* field on the *Charges* tab, and then click *Save*.
+. Select *Send to Carrier* from the *Subcontracting* dropdown on the *Statuses* tab.
+. Then, select *Set to Confirmed by Carrier* from the same *Subcontracting* dropdown.
+. Select *Custom Fields* from the *All Tabs* icon (image:all-tabs-icon.png[3%,3%]) and complete the *Tracking Number* field.
 . Click *Save*.
 
 == Create an Outbound Delivery
@@ -75,12 +75,12 @@ Follow these steps to create an outbound delivery in SAP:
 . Check the box for each document that is related to the freight order.
 . Open SAP S/4HANA in a new tab and search for the *Change Outbound Delivery* app.
 . Enter a value in the *Outbound Delivery* field, and then press Enter.
-. On the *Picking* tab, enter the same value in the *Picked Qty* column as the value in the *Deliv. Qty* column. Entering this value updates the status values in the *OvrllPickStatus* and *Warehouse Execution* fields.
+. On the *Picking* tab, enter the same value in the *Picked Qty* column that's in the *Deliv. Qty* column. Entering the value updates the status in the *OvrllPickStatus* and *Warehouse Execution* fields.
 . Select *Post Goods Issue* from the *Menu* dropdown. This action triggers the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
 . Return to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
 . Click the *Edit* button.
 . Select *Set to Ready for Transportation Execution* in the *Execution Status* dropdown. This updates the value in the *Execution Status* field to *Ready for Transportation Execution*.
-. In the *Stages* section, select *Set to Departed* in the *Execution Status (Source)* dropdown.
+. Select *Set to Departed* in the *Execution Status (Source)* dropdown in the *Stages* section.
 
 == Create an Invoice
 
