@@ -3,7 +3,7 @@
 
 == Overview
 
-Follow the steps in the SAP S/4HANA Order Management Guide to create a sales order, frieght order, outbound delivery, and invoice in SAP, which are needed to implement the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[Salesforce OMS to ERP Integration] use case.
+Before you implement the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[Salesforce OMS to ERP Integration] use case, you must create a sales order, freight order, outbound delivery, and invoice in SAP.
 
 == Before You Begin
 
@@ -27,7 +27,7 @@ A contractual agreement between a sales organization and a sold-to party to deli
 The order for which execution is planned by a carrier or shipper. The order contains the logistical processing plan, vehicle departure times, and order execution data.
 * *Outbound Delivery Order*
 +
-Contains the data required to trigger and monitor the outbound delivery process.
+Contains the data that is required to trigger and monitor the outbound delivery process.
 * *Billing Document*
 +
 The invoice created for an outbound delivery, requesting payment from the customer who placed the order.
@@ -41,7 +41,7 @@ Follow these steps to create a sales order in SAP:
 . Press Enter.
 . Enter a value in the *Sold-to Party* field.
 . Enter a value in the *Ship-to Party* field.
-. Click the *Display header details* icon (image:display-header-details-icon.png[3%,3%]) and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when creating the freight order.
+. Click the *Display header details* icon (image:display-header-details-icon.png[3%,3%]) and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when the freight order is created.
 . Enter a value in the *Material* column of the *All Items* section.
 . Enter a value in the *Order Quantity* field.
 . Press Enter.
@@ -72,14 +72,14 @@ Follow these steps to create a freight order in SAP:
 Follow these steps to create an outbound delivery in SAP:
 
 . Click the *Create Deliveries* tab, and then click the *Document Flow* tab.
-. Check the box for each document that is related to the freight order.
+. Select the box for each document that is related to the freight order.
 . Open SAP S/4HANA in a new tab and search for the *Change Outbound Delivery* app.
 . Enter a value in the *Outbound Delivery* field, and then press Enter.
-. On the *Picking* tab, enter the same value in the *Picked Qty* column that's in the *Deliv. Qty* column. Entering the value updates the status in the *OvrllPickStatus* and *Warehouse Execution* fields.
-. Select *Post Goods Issue* from the *Menu* dropdown. This action triggers the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
+. On the *Picking* tab, enter the same value in the *Picked Qty* column that's in the *Deliv. Qty* column to update the status in the *OvrllPickStatus* and *Warehouse Execution* fields.
+. Select *Post Goods Issue* from the *Menu* dropdown to trigger the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
 . Return to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
 . Click the *Edit* button.
-. Select *Set to Ready for Transportation Execution* in the *Execution Status* dropdown. This updates the value in the *Execution Status* field to *Ready for Transportation Execution*.
+. Select *Set to Ready for Transportation Execution* in the *Execution Status* dropdown to update the value in the *Execution Status* field to *Ready for Transportation Execution*.
 . Select *Set to Departed* in the *Execution Status (Source)* dropdown in the *Stages* section.
 
 == Create an Invoice
