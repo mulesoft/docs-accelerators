@@ -17,7 +17,7 @@ For more information about how to complete the ticket, see the https://userapps.
 
 === SAP Documents
 
-The following SAP documents are created as you complete the steps in this guide:
+Completing the steps in this guide generates following SAP documents:
 
 * *Sales Order*
 +
