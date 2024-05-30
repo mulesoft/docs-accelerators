@@ -9,11 +9,11 @@ Use the following setup guides to configure the systems and products that are ne
 * xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization]
 * xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup]
 
-Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Use%20case%202%20-%20Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case:
+Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case:
 
 * xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup]
-* xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide]
-
+* xref:order-mgmt-guide.adoc[SAP S/4HANA Order Management]
+* xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup]
 
 == See Also
 
