@@ -39,10 +39,10 @@ Follow these steps to create a sales order in SAP:
 . Search for the *Create Sales Order - VA01* app.
 . Enter *OR* in the *Order Type* field.
 . Press Enter.
-. Enter a value in the *Sold-to Party* field.
-. Enter a value in the *Ship-to Party* field.
+. Enter the customer identification number in the *Sold-to Party* field.
+. Enter the customer identification number in the *Ship-to Party* field.
 . Click the *Display header details* icon (image:display-header-details-icon.png[3%,3%]) and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when the freight order is created.
-. Enter a value in the *Material* column of the *All Items* section.
+. Enter the product identification number that you are including in the sales order in the *Material* column of the *All Items* section.
 . Enter a value in the *Order Quantity* field.
 . Press Enter.
 . Click *Save*.
@@ -74,7 +74,7 @@ Follow these steps to create an outbound delivery in SAP:
 . Click the *Create Deliveries* tab and then click the *Document Flow* tab.
 . Select the box for each document that is related to the freight order.
 . Open SAP S/4HANA in a new tab and search for the *Change Outbound Delivery* app.
-. Enter a value in the *Outbound Delivery* field and then press Enter.
+. Enter outbound delivery number from the *Create Deliveries* tab in the *Outbound Delivery* field and then press Enter.
 . On the *Picking* tab, enter the same value in the *Picked Qty* column that's in the *Deliv. Qty* column to update the status in the *OvrllPickStatus* and *Warehouse Execution* fields.
 . Select *Post Goods Issue* from the *Menu* dropdown to trigger the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
 . Return to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
