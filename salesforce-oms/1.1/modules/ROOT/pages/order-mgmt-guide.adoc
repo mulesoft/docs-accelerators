@@ -55,7 +55,7 @@ Follow these steps to create a freight order in SAP:
 
 . Search for the *Transportation Cockpit* app.
 . Select *ERP Document* and paste the sales order ID into the *Freight Unit Stages* field.
-. Enter * in the *Vehicle Types* field.
+. Enter an asterisk in the *Vehicle Types* field.
 . Click *Continue*.
 . Select the freight unit of the sales order in the *Freight Unit* column.
 . Select the truck type in the *Trucks* field.
