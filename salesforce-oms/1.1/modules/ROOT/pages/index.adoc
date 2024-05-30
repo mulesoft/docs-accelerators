@@ -11,7 +11,7 @@ The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/
 
 === Salesforce OMS to ERP Integration
 
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Use%20case%202%20-%20Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case lets you manage orders received via omnichannel sources within Salesforce Order Management System (OMS).
+Manage orders received via omnichannel sources within Salesforce Order Management System (OMS) with the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case.
 
 == See Also 
 
