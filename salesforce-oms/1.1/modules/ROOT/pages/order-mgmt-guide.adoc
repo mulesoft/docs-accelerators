@@ -17,7 +17,7 @@ For more information about how to complete the ticket, see the https://userapps.
 
 === Generated SAP Documents
 
-Completing the steps in this guide generates following SAP documents:
+Completing the steps in this guide generates following documents:
 
 * *Sales Order*
 +
@@ -30,7 +30,7 @@ The order that a carrier or shipper plans to execute, containing the logistical 
 Contains the data that is required to trigger and monitor the outbound delivery process.
 * *Billing Document*
 +
-The invoice that is created for an outbound delivery and that requests payment from the customer who placed the order.
+The invoice that is created for an outbound delivery and requests payment from the customer who placed the order.
 
 == Create a Sales Order
 
@@ -55,7 +55,7 @@ Follow these steps to create a freight order in SAP:
 
 . Search for the *Transportation Cockpit* app.
 . Select *ERP Document* and paste the sales order ID into the *Freight Unit Stages* field.
-. Enter * in the *Vehicle Types* field.
+. Enter `*` in the *Vehicle Types* field.
 . Click *Continue*.
 . Select the freight unit of the sales order in the *Freight Unit* column.
 . Select the truck type in the *Trucks* field.
@@ -74,7 +74,7 @@ Follow these steps to create an outbound delivery in SAP:
 . Click the *Create Deliveries* tab and then click the *Document Flow* tab.
 . Select the box for each document that is related to the freight order.
 . Open SAP S/4HANA in a new tab and search for the *Change Outbound Delivery* app.
-. Enter outbound delivery number from the *Create Deliveries* tab in the *Outbound Delivery* field and then press Enter.
+. Enter the outbound delivery number from the *Create Deliveries* tab in the *Outbound Delivery* field and then press Enter.
 . On the *Picking* tab, enter the same value in the *Picked Qty* column that's in the *Deliv. Qty* column to update the status in the *OvrllPickStatus* and *Warehouse Execution* fields.
 . Select *Post Goods Issue* from the *Menu* dropdown to trigger the `Outbound Delivery API (DELIVERY_REQUEST_OUT)` event.
 . Return to the freight order and click *Refresh* to update the status fields on the *Statuses* tab.
