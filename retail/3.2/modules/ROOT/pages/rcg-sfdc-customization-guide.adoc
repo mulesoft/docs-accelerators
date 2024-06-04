@@ -26,7 +26,7 @@ The following objects must be created manually or via Apex script:
 
 === Create Custom Object via Apex Script
 
-The`CustomObjectUtility` and `MetadataService` Apex classes are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src/[RCG Common Resources] project and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow the steps below.
+Use the`CustomObjectUtility` and `MetadataService` Apex classes to create a custom object programmatically. The source is on the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow these steps:
 
 1. Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
 1. Go to `File > New > Apex class` and create a new class named `CustomObjectUtility`.
@@ -290,7 +290,7 @@ Unique fields should be case-sensitive.
 
 === Create Fields via Apex Script
 
-Use the Apex class `CustomFieldUtility` to create custom fields programmatically. See the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src/[RCG Common Resources] project to find the source for this class. Once you have downloaded the project, follow these steps:
+Use the Apex class `CustomFieldUtility` to create custom fields programmatically. See the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project to find the source for this class. Download the project and follow these steps:
 
 . Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
 . Go to `File > New > Apex class` and create a new class named `CustomFieldUtility`.
@@ -389,7 +389,7 @@ You now need to copy the `Consumer Key` and `Consumer Secret` values for use in 
 
 
 
-Download the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src[RCG Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
+Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src[RCG Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
 
 == Generating a Security Token for the Service Account
 
@@ -406,7 +406,7 @@ If the option to reset your security token is not available, it is likely that o
 
 == Create Platform Events and Apex Triggers
 
-The following Platform Event Object and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Object are located in the https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src/[RCG Common Resources] project.
+The following Platform Event Object and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Object are located in the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project.
 
 |===
 | Salesforce Object | Salesforce Platform Event Object | Salesforce Platform Event API Name | Apex Trigger Name
@@ -426,7 +426,7 @@ This implementation requires `Platform Event` to be created in Salesforce. Follo
 . Click the *New Platform Event* button to create an Object. Complete the *Platform Information Details* fields, including *Label*, *Plural Label*, *Object with Salesforce Object*, and *Salesforce Platform Event API Name* as indicated in the previous table.
 . Click *Save*.
 
-. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility script `CreatePlatformEventsCustomFields.txt` available in the `rcg-common-resources/salesforce` folder of https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src/[RCG Common Resources] project.
+. To add Custom Fields & RelationShips to Platform Event Definitions, run the utility script `CreatePlatformEventsCustomFields.txt`, which is in the `rcg-common-resources/salesforce` folder of the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project.
 . Follow the steps to run the script provided in `Create via Apex Script` under `Custom Fields`.
 
 === Create Apex Triggers
@@ -438,7 +438,7 @@ Follow these steps to create the Apex Triggers:
 . Search for the Salesforce object. This opens a page that shows the details of the object.
 . Click *Triggers* in the Details section to view a list of available triggers for the object.
 . Click *New*.
-. Search for the Apex Trigger name, which is indicated in the previous table. Copy the Trigger Script code `CreateApexTriggers.txt` available in the `rcg-common-resources/salesforce` folder of https://anypoint.mulesoft.com/exchange/2cc3c2c9-ddd3-4582-bdcc-b510f30065a7/rcg-common-resources-src/[RCG Common Resources] project and paste it into the script editor.
+. Search for the Apex Trigger name, which is indicated in the previous table. Copy the Trigger Script code `CreateApexTriggers.txt` from the `rcg-common-resources/salesforce` folder of the https://anypoint.mulesoft.com/exchange/org.mule.examples/rcg-common-resources-src/[RCG Common Resources] project and paste it into the script editor.
 . Obtain the `LastModifiedById` by running the query from the Additional Notes section.
 . Replace the values in the script and save the trigger.
 . Click *Save* and ensure the *isActive* checkbox is checked.

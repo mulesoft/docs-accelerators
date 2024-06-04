@@ -3,18 +3,17 @@
 
 The amount of configuration you'll need to perform depends on which assets you're deploying in your target environment.
 
-Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case:
+Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case:
 
 * xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup]
 * xref:sfdc-oms-setup-customization-guide.adoc[Salesforce OMS Setup and Customization]
 * xref:anypoint-partner-manager-setup-guide.adoc[Anypoint Partner Manager Setup]
 
-Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case:
+Use the following setup guides to configure the systems and products that are needed to implement the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case:
 
 * xref:anypointmq-setup-guide.adoc[Anypoint MQ Setup]
 * xref:order-mgmt-guide.adoc[SAP S/4HANA Order Management]
 * xref:sap-s4hana-setup-guide.adoc[SAP S/4HANA Setup]
-
 
 == See Also
 
