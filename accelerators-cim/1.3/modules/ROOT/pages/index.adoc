@@ -30,7 +30,7 @@ Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerato
 
 == See Also
 
-* xref:accelerators-home:getting-started.adoc[Getting Started]
+* xref:accelerators-home::getting-started.adoc[Getting Started]
 * xref:cim-usage-guide.adoc[Usage Guide]
 * xref:cim-subject-areas.adoc[CIM Subject Areas]
 * xref:cim-customizations.adoc[Model Customizations]
