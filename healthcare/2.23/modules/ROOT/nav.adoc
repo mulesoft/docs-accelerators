@@ -2,7 +2,6 @@
 * xref:index.adoc[Accelerator Overview]
 * xref:prerequisites.adoc[Prerequisites]
 ** xref:sfdc-health-cloud-setup-guide.adoc[Salesforce Health Cloud Setup Guide]
-** xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
 * xref:fhir-r4-assets.adoc[FHIR R4 Assets]
 ** xref:fhir-r4-resources.adoc[FHIR R4 Resources List]
 ** xref:fhir-r4-us-core-profiles.adoc[FHIR R4 US Core Profile Assets]
