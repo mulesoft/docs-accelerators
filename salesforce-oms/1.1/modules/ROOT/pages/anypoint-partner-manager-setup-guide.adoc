@@ -26,7 +26,7 @@ To run the collection, you must set the following variables:
 
 |env_identifier_ref-id_id |The ID of the identifier type Reference ID. This is static across all the organizations.
 
-|http_endpoint_type_id |The endpointTypeId of the endpoint type HTTPS.
+|http_endpoint_type_id |The endpointTypeId of the endpoint type HTTPS. This is static across all the organisations. Open the partner manager -> endpoints creation screen -> open your developer console and network tools. Try creating an http endpoint and you can see the request JSON that is sent to partner manager api get the endpointTypeId.
 
 |host_anypoint_org |The host name of the Anypoint Platform organization.
 
