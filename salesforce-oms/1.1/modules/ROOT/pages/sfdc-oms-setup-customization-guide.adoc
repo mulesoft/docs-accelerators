@@ -16,7 +16,7 @@ Follow the instructions in the https://resources.docs.salesforce.com/latest/late
 * Create a new Digital Wallet from the Digital Wallets page if there is no Payment Method already configured for the Account. A Digital Wallet can be created by filling in the Account, Processing Mode, Nickname and Type fields. 
 
 
-== Customization
+== Customize Salesforce OMS
 
 Install the Salesforce package from the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project and verify that the configuration is correct in your Salesforce organization.
 
