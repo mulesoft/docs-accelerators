@@ -49,7 +49,7 @@ Verify that the following fields have been created in the corresponding objects:
 
 IMPORTANT: Add read/ write permissions to custom fields created by Salesforce package.
 
-=== Custom Object Tab
+=== Verify the Custom Object Tab
 
 Verify that your Salesforce org shows the *Pending Order Summary Errors* custom tab.
 
