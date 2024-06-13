@@ -23,7 +23,7 @@ Install the Salesforce package from the https://anypoint.mulesoft.com/exchange/9
 Follow these steps in Salesforce OMS after installing the package successfully:
 
 * Create a matching rule named `Account Interchange Code Match` in *Setup > Matching Rules*. Enter `Account: B2B_EDISenderCode EXACT MatchBlank = FALSE` in the *Matching Criteria* field.
-* Create duplicate rule named 'Account Interchange Code Rule' with the matching rule 'Account Interchange Code Match'. Set the order to 1, giving it precedence over the standard account matching rule.
+* Create a duplicate rule named `Account Interchange Code Rule` in *Setup > Duplicate Rules*. Select `Account Interchange Code Match` as the matching rule. After you save and activate the duplicate rule, open the rule in  *Duplicate Management > Duplicate Rules* and set the order to 1 in the *Reorder* field, which gives the rule precedence over the standard *Account* object matching rule.
 
 === Custom Fields
 
