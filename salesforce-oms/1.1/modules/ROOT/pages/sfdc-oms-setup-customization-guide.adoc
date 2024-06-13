@@ -47,7 +47,7 @@ Verify that the following fields have been created in the corresponding objects:
 |===
 
 [NOTE]
-You must add the *Read* and *Write* permissions to the custom fields created by Salesforce package.
+You must add the *Read* and *Write* permissions to the custom fields created by the Salesforce package.
 
 === Verify the Custom Object Tab
 
