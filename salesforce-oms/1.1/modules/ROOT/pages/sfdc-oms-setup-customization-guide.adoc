@@ -22,7 +22,7 @@ Install the Salesforce package from the https://anypoint.mulesoft.com/exchange/9
 
 Follow these steps in Salesforce OMS after installing the package successfully:
 
-* Create matching Rule Account Interchange Code Match with Matching Cretaria Account: B2B_EDISenderCode EXACT MatchBlank = FALSE 
+* Create a matching rule named `Account Interchange Code Match` in *Setup > Matching Rules*. Enter `Account: B2B_EDISenderCode EXACT MatchBlank = FALSE` in the *Matching Criteria* field.
 * Create duplicate rule named 'Account Interchange Code Rule' with the matching rule 'Account Interchange Code Match'. Set the order to 1, giving it precedence over the standard account matching rule.
 
 === Custom Fields
