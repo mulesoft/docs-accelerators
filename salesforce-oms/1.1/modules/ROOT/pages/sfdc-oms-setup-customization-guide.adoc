@@ -10,11 +10,18 @@ Follow the instructions in the https://resources.docs.salesforce.com/latest/late
 * Disable the *Enable Reduction Orders* option in *Order Settings*.
 * Enable *Order Management*, *Use Person Accounts*, and *High Scale Orders*
 * Activate *Multiple Currencies*
+* Enable *State* and *Country/Territory* picklists
 * <<configure_payment_gateway>>
+* Configure either a digital wallet or credit card payment method and associate an account with it
 
 == Customization
 
 Install the Salesforce package from the https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-b2b-common-resources-src/[Accelerator B2B Common Resources] project and verify that the configuration is correct in your Salesforce organization.
+
+Follow these steps in Salesforce OMS after installing the package successfully:
+
+. Create a matching rule named `Account Interchange Code Match` in *Setup > Matching Rules*. Enter `Account: B2B_EDISenderCode EXACT MatchBlank = FALSE` in the *Matching Criteria* field.
+. Create a duplicate rule named `Account Interchange Code Rule` in *Setup > Duplicate Rules*. Select `Account Interchange Code Match` as the matching rule. After you save and activate the duplicate rule, open the rule in  *Duplicate Management > Duplicate Rules* and set the order to 1 in the *Reorder* field, which gives the rule precedence over the standard *Account* object matching rule.
 
 === Custom Fields
 
@@ -38,7 +45,10 @@ Verify that the following fields have been created in the corresponding objects:
 |Shipment |ExternalId |ExternalId__c |Text |100 |N |Y
 |===
 
-=== Custom Object Tab
+[NOTE]
+You must add the *Read* and *Write* permissions to the custom fields created by the Salesforce package.
+
+=== Verify the Custom Object Tab
 
 Verify that your Salesforce org shows the *Pending Order Summary Errors* custom tab.
 
@@ -129,7 +139,7 @@ Use the sample settings.xml file in the Accelerator B2B Common Resources project
 
 == Generate a Security Token for Your Service Account
 
-To connect to the Financial Services Cloud instance, you must generate a token for the service account used by Mule applications.
+To connect to the Salesforce OMS Cloud instance, you must generate a token for the service account used by Mule applications.
 
 . Log in to Salesforce as the service account user, which is the account Mule applications use to connect to Salesforce.
 . Click the Username icon and select *Settings*.
