@@ -26,7 +26,7 @@ To run the collection, you must set the following variables:
 
 |env_identifier_ref-id_id |The ID of the identifier type Reference ID. This is static across all the organizations.
 
-|http_endpoint_type_id |The `endpointTypeId` of an HTTPS endpoint type. The value is the same across all environments. Note that you can find the `endpointTypeId` value by opening the details of an endpoint in Partner Manager, and then running a request from the *Network* tab in the developer view of your browser. The value is available from the *Preview* tab.
+|http_endpoint_type_id |The `endpointTypeId` of an HTTPS endpoint type. The value is the same across all environments. Note that you can find the `endpointTypeId` value by opening the details of an endpoint in Partner Manager, and then running a request from the *Network* tab in the developer view of your browser. The value is available from the *Preview* tab of the run result.
 
 |host_anypoint_org |The host name of the Anypoint Platform organization.
 
