@@ -47,7 +47,8 @@ Verify that the following fields have been created in the corresponding objects:
 |Shipment |ExternalId |ExternalId__c |Text |100 |N |Y
 |===
 
-IMPORTANT: Add read/ write permissions to custom fields created by Salesforce package.
+[NOTE]
+You must add the *Read* and *Write* permissions to the custom fields created by Salesforce package.
 
 === Verify the Custom Object Tab
 
