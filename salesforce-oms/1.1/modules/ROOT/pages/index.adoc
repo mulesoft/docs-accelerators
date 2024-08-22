@@ -7,15 +7,15 @@ The MuleSoft Accelerator for Salesforce OMS enables you to integrate your Order 
 
 === B2B EDI Order Lifecycle Automation
 
-The https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case lets you add EDI as a direct order intake channel to manage and service EDI orders across the full order management lifecycle. 
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/B2B%20EDI%20Order%20Lifecycle%20Automation/[B2B EDI Order Lifecycle Automation] use case lets you add EDI as a direct order intake channel to manage and service EDI orders across the full order management lifecycle. 
 
 === Salesforce OMS to ERP Integration
 
-Manage orders received via omnichannel sources within Salesforce Order Management System (OMS) with the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case.
+Manage orders received via omnichannel sources within Salesforce Order Management System (OMS) with the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/minor/{salesforce-oms-version}/pages/Salesforce%20OMS%20to%20ERP%20Integration/[Salesforce OMS to ERP Integration] use case.
 
 == See Also 
 
 * xref:accelerators-home::getting-started.adoc[Getting Started]
 * xref:prerequisites.adoc[Prerequisites]
 * xref:release-notes::accelerators/salesforce-oms/salesforce-oms-release-notes.adoc[Release Notes]
-* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-salesforce-oms/[MuleSoft Accelerator for Salesforce OMS on Exchange]
+* https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-salesforce-oms/[MuleSoft Accelerator for Salesforce OMS on Exchange]
