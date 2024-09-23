@@ -1,6 +1,6 @@
 = Anypoint Partner Manager Setup Guide
 
-To configure Anypoint Partner Manager, follow the Postman collection instructions in the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerators B2B Common Resources] project.
+To configure Anypoint Partner Manager, follow the Postman collection instructions in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-b2b-common-resources-src/[Accelerators B2B Common Resources] project.
 
 The collection creates the following configurations:
 
@@ -8,11 +8,11 @@ The collection creates the following configurations:
 * Partners
 * Message flows
 
-Once the collection runs successfully, go to Partner Manager in Anypoint Platform and verify that the configurations were created successfully.
+After the collection runs successfully, go to Partner Manager in Anypoint Platform and verify that the configurations were created successfully.
 
 == Run the Postman Collection
 
-Use the Partner Manager setup collection in the https://anypoint.mulesoft.com/exchange/997d5e99-287f-4f68-bc95-ed435d7c5797/accel-b2b-common-resources-src/[Accelerator B2B Common Resource] project to configure message flows and their components in Partner Manager for the Accelerator for Salesforce OMS solution.
+Use the Partner Manager setup collection in the https://anypoint.mulesoft.com/exchange/org.mule.examples/accel-b2b-common-resources-src/[Accelerator B2B Common Resource] project to configure message flows and their components in Partner Manager for the Accelerator for Salesforce OMS solution.
 
 To run the collection, you must set the following variables:
 
