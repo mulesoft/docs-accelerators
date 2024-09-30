@@ -1634,7 +1634,7 @@ For this segment, we again aggregrate data using the Calculated Insights created
 . Select `Individual` as the object to segment on, enter `Upselling mortgage account` as the segment name, and click `Save`.
 . Expand the list of attributes for the `Upsell Account Summary Metrics` calculated insight.
 . Add a condition for the attribute  `total_balance__c`, with `Is Greater Than or Equal To` as the Operator and `10000` as the value. Click `Done` to save the condition.
-. Add a condition for the `time_as_client__c` attribute, with an Operator of `Is Greater Than` and and a value of `36` (for the age of the account in months). Click `Done` to save the condition.
+. Add a condition for the `time_as_client__c` attribute, with an Operator of `Is Greater Than` and  a value of `36` (for the age of the account in months). Click `Done` to save the condition.
 . Switch the current attributes list to the `Upsell Account Summary Metrics` calculated insight.
 . Add a condition for the `count__c` attribute, selecting `Is Greater Than or Equal To` as the Operator and entering `1` as the Value.
 . Click the `Add Dimension` button, select `account_type__c` as the Attribute, `Contains` as the Operator, and enter `MONEY` as the Value. Click `Done`.
