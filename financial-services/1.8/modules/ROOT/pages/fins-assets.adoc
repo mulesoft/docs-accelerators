@@ -24,7 +24,7 @@ include::partial$custom-components-fragment.adoc[]
 
 == Accelerator Shared APIs
 
-The following shared APIs are are leveraged by this accelerator.
+The following shared APIs are leveraged by this accelerator.
 
 [cols="40,30,30"]
 |===
