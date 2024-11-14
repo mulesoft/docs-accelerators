@@ -35,10 +35,10 @@ Perform the following steps to prepare your workstation for building, deploying,
 
 === Configuring the Accelerator Build
 
-. Download the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/accelerator-common-resources-src[Accelerator Common Resources^] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
+. Download the https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Accelerator Common Resources^] asset from Exchange and unpack the archive to a temporary directory. The directory should contain a single Studio project folder called `accelerator-common-resources`.
 . Import the project folder into Studio using the *accel/Existing Projects into Workspace* wizard (not the Anypoint Studio project wizard). If the project does not import as `accelerator-common-resources`, you can select the project in the Package Explorer view and press F2 to rename it: +
  +
-image:https://www.mulesoft.com/ext/solutions/draft/images/sfc-doc-setupguide_01.png[sfc-doc-setupguide_01.png,599]
+image:https://www.mulesoft.com/ext/solutions/images/sfc-doc-setupguide_01.png[sfc-doc-setupguide_01.png,599]
 . Copy the contents of the `settings-accelerators.xml` file to your local Maven `settings.xml` file, which is usually located under `$HOME/.m2` on Linux/MacOS hosts and `%USERPROFILE%\.m2` on Windows hosts; create a new file if it does not exist. If the file already exists, make sure to merge the contents of the `settings-accelerators.xml` with the existing. You may also choose to keep the file separate and specify the `-s <filename>` option when running Maven commands; in Studio you will also need to override the user settings path, which is under `Anypoint Studio/Maven/User Settings` in the Preferences dialog.
 [NOTE]
 This step is optional, if the project is intended to build only in Anypoint Studio.
