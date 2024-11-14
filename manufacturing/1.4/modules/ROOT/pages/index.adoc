@@ -1,6 +1,7 @@
 = MuleSoft Accelerator for Manufacturing
 :mfg-version: {page-component-version}
 :sap-version: 1.6
+:page-aliases: @manufacturing::mfg-assets.adoc
 
 MuleSoft Accelerator for Manufacturing equips discrete and process manufacturers with foundational assets for common use cases to accelerate their digital transformation journey. Our pre-built APIs, implementation templates, reference architecture, and connectors allow IT teams to spend more time innovating, and less time building common integrations from scratch.
 
