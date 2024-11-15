@@ -1,5 +1,6 @@
 = MuleSoft Accelerator for Retail
 :retail-version: {page-component-version}
+:page-aliases: 3.1@retail::rcg-assets.adoc
 
 MuleSoft Accelerator for Retail empowers retail IT teams to unlock data from systems including ERP, CRM, MDM, commerce, and marketing to activate digital projects faster. Retail IT teams can take advantage of pre-built APIs, connectors, implementation templates, and reference architecture to create customer 360 profiles.
 
