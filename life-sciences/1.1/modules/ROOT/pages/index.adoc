@@ -1,6 +1,6 @@
 = MuleSoft Accelerator for Life Sciences
 :ls-version: {page-component-version}
-:page-aliases: @life-sciences::ls-assets.adoc
+:page-aliases: 1.1@life-sciences::ls-assets.adoc
 
 The MuleSoft Accelerator for Life Sciences helps pharmaceuticals, medical device companies, and contract research organizations (CROs) seamlessly integrate their digital operations and get their products to market faster. The expertly designed foundational assets for this accelerator are tailored to propel an organization's top integration and business initiatives so that its IT teams can spend more time innovating and less time building solutions from the ground up.
 
