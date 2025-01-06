@@ -1,4 +1,5 @@
 = Cloud Information Model for MuleSoft Accelerators
+:page-aliases: accelerators-home::cim-overview.adoc
 
 The use of good, comprehensive canonical data models in API specifications is key for maximizing the reuse and flexibility of the interfaces and limiting the amount of data transformation logic required between the Experience, Process, and System layer in an API-led approach. Many organizations struggle with this, however, often ending up with disparate object definitions for the same entities across different APIs. This leads to brittle and often complex data transformations, which become difficult to maintain over time.
 
