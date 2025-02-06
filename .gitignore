@@ -49,4 +49,6 @@ velocity.log
 
 # Project-specific
 src/test/resources/scripts/create-stored-procedures.sql
+
+# vscode settings
 .vscode/
