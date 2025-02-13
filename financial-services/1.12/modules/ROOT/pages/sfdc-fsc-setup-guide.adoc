@@ -1,0 +1,770 @@
+= Salesforce Financial Services Cloud Setup Guide
+
+This page describes how to configure an existing Salesforce Financial Services Cloud (FSC) instance to support the default MuleSoft Accelerator for Financial Services functionality. These instructions assume that the required FSC packages have been deployed to the target Salesforce instance and that the appropriate permissions have already been assigned.
+
+== Record Types
+
+The following record types must exist in the corresponding objects for the accelerator assets to function correctly.
+
+|===
+| Salesforce Object | Record Type
+
+| Account
+| Household
+
+| Financial Account
+| Blockchain Account
+
+| Financial Account
+| General Ledger Account
+
+| Financial Account
+| Money Market Account
+
+| Financial Account Transaction
+| Financial Account Transfer Transaction
+
+| Lead
+| Lead
+|===
+
+Follow the instructions for each object below.
+
+=== Account & Lead
+
+To enable the `Household` record type in `Account` object, follow the below steps:
+
+. Click the Salesforce Setup icon.
+. Navigate to `+Users -> Profiles+`.
+. Select the target profile for the service account user.
+. Navigate to `+Object Settings -> Accounts+` and click the *Edit* button.
+. Under `Record Types and Page Layout Assignments` check the `Household` record type.
+. Click the *Save* button.
+
+Follow the same steps but this time enable the `Lead` record type on the `Lead` object.
+
+=== Financial Account
+
+To create the `Blockchain Account` record type in the Financial Account object, first create a page layout for it based on an existing layout.
+
+. Select the `Object Manager` tab from the Setup home page.
+. Select the `+FinServ_FinancialAccount__c+` object.
+. Select `Page Layouts` from the left nav and click *New*.
+. Select an existing page layout (for example, "Financial Account (Savings Account) Layout").
+. Set the `Page Layout Name` field to "Financial Account (Blockchain Account) Layout".
+. Click *Save* to create the new layout.
+
+Select `Page Layouts` from the left nav to return to the list and repeat the above steps to create the `General Ledger Account` and `Money Market Account` page layouts.
+
+Now create the new `Blockchain Account` record type:
+
+. Select `Record Type` from the left nav and click  *New*.
+. Select an existing record type (for example, "Savings Account").
+. Fill out the following fields as indicated.
+ ** `Record Type Label` \-> "Blockchain Account"
+ ** `Record Type Name` \-> "Blockchain" (change default value).
+ ** `Description` \-> "Represents a Blockchain account"
+. Enable the `Active` checkbox.
+. In the list of profiles, check the `Make available` option the profile assigned to the target API service account (at a minimum).
+. Click *Next* and select the option `Apply one layout to all profiles`.
+. Select the page layout "Financial Account (Blockchain Account) Layout".
+. Click *Save*.
+
+Repeat the above steps to create the `General Ledger Account` and `Money Market Account` record types. Be sure to select the correct page layout corresponding to the record type.
+
+The new record types should now be available in the `Record Types` section. You can verify that the new record type is also available to the target user profile as follows:
+
+. Navigate to `+Users -> Profiles+`.
+. Select the target profile.
+. Navigate to `+Object Settings -> Financial Accounts+` (the object you edited earlier) and click the *Edit* link.
+. Verify that the new record types are listed under `Record Types and Page Layout Assignments`.
+
+=== Financial Account Transaction
+
+The standard record type *Financial Account Transaction* supports the transaction types `DebitTransaction` and `CreditTranction`. The *Financial Account Transfer Transaction* record type must be created to support the `TransferTransaction` and `PaymentTransaction` transaction types.
+
+The steps for creating the `Financial Account Transfer Transaction` record type are similar to those above, but for the `Financial Transaction` object instead.
+
+. In the Object Manager, select the `+FinServ_FinancialAccountTransaction__c+` object.
+. Select `Page Layouts` from the left nav and click *New*.
+. Select an existing page layout (for example, "Financial Account Transaction Layout").
+. Set the `Page Layout Name` field to "Financial Account Transfer Transaction Layout".
+. Click *Save*.
+. Select `Record Types` from the left nav and click *New*.
+. Select an existing record type (for example, "Financial Account Transaction") if available, otherwise use "--Master--".
+. Fill out the following fields as indicated.
+ ** `Record Type Label` \-> "Financial Account Transfer Transaction".
+ ** `Record Type Name` \-> "Financial_Account_Transfer" (change default value).
+ ** `Description` \-> "Defines a transaction that represents a generic transfer from one account to another".
+. Enable the `Active` checkbox.
+. In the list of profiles, check the `Make available` option the profile assigned to the target API service account (at a minimum).
+. Click *Next* and select the option `Apply one layout to all profiles`.
+. Select the page layout "Financial Account Transfer Transaction Layout".
+. Click *Save*.
+
+The new record type can be verified as above.
+
+== Custom Fields
+
+The following fields must be created in the corresponding objects.
+
+[%header%autowidth.spread]
+|===
+| Salesforce Object | Field Label | Field Name | Data Type | Length | Unique* | ExternalId
+
+| Account
+| Global Billing Address ID
+| Global_BillingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Customer ID
+| Global_Customer_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Email Address ID
+| Global_EmailAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Fax Number ID
+| Global_FaxNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Mailing Address ID
+| Global_MailingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Mobile Number ID
+| Global_MobileNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Party ID
+| Global_Party_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Phone Number ID
+| Global_PhoneNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Global Shipping Address ID
+| Global_ShippingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Account
+| Customer Status
+| Customer_Status
+| Picklist
+| -
+| N
+| N
+
+| Contact
+| Global Email Address ID
+| Global_EmailAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Individual ID
+| Global_Individual_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Phone Number ID
+| Global_PhoneNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Mobile Number ID
+| Global_MobileNumber_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Other Address ID
+| Global_OtherAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| Contact
+| Global Mailing Address ID
+| Global_MailingAddress_Id
+| Text
+| 36
+| Y
+| Y
+
+| +FinServ_Card__c+
+| Card Type
+| Card_Type
+| Picklist
+| -
+| N
+| N
+
+| +FinServ_Card__c+
+| Cardholder Name
+| Cardholder_Name__c
+| Text
+| 100
+| N
+| N
+
+| +FinServ_Card__c+
+| Credit Card Type
+| Credit_Card_Type__c
+| Picklist
+| -
+| N
+| N
+
+| +FinServ_Card__c+
+| Global Card ID
+| Global_Card_Id__c
+| Text
+| 36
+| Y
+| Y
+
+| +FinServ_FinancialAccount__c+
+| Global Account ID
+| Global_Account_Id__c
+| Text
+| 36
+| Y
+| Y
+
+| +FinServ_FinancialAccount__c+
+| Initial Transaction ID
+| Initial_Transaction_Id__c
+| Text
+| 36
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Last Payment Amount
+| LastPaymentAmount__c
+| Currency
+| (16,2)
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Last Payment Date
+| LastPaymentDate__c
+| Date
+| -
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Last Statement Date
+| LastStatementDate__c
+| Date
+| -
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Last Transaction Amount
+| LastTransactionAmount__c
+| Currency
+| (16,2)
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Last Transaction Type
+| LastTransactionType__c
+| Picklist
+| -
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Last Transaction ID
+| Last_Transaction_Id__c
+| Text
+| 36
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Maximum Monthly Withdrawals
+| Maximum_Monthly_Withdrawals__c
+| Number
+| 18
+| N
+| N
+
+| +FinServ_FinancialAccount__c+
+| Monthly Withdrawal Limit
+| Monthly_Withdrawal_Limit__c
+| Number
+| (16,2)
+| N
+| N
+
+| +FinServ_FinancialAccountTransaction__c+
+| Debit Financial Account
+| Debit_Financial_Account__c
+| Lookup
+| -
+| -
+| -
+
+| +FinServ_FinancialAccountTransaction__c+
+| Credit Financial Account
+| Credit_Financial_Account__c
+| Lookup
+| -
+| -
+| -
+
+| +FinServ_FinancialAccountTransaction__c+
+| Global Transaction ID
+| Global_Transaction_Id__c
+| Text
+| 36
+| Y
+| Y
+
+| +FinServ_FinancialAccountTransaction__c+
+| Originator ID
+| Originator_Id__c
+| Text
+| 36
+| Y
+| N
+
+| InsurancePolicy
+| Global Policy ID
+| Global_Policy_Id__c
+| Text
+| 36
+| Y
+| Y
+
+| Opportunity
+| ACH Transfer Authorization Document ID
+| Ach_Transfer_Auth_Document_Id
+| Text
+| 36
+| N
+| N
+
+| Opportunity
+| Asset Transfer Authorization Document ID
+| Asset_Transfer_Auth_Document_Id
+| Text
+| 36
+| N
+| N
+
+| Opportunity
+| Document Signatures Received
+| Document_Signatures_Received__c
+| Checkbox
+| -
+| -
+| -
+
+| Opportunity
+| KYC Completed
+| KYC_Completed__c
+| Checkbox
+| -
+| -
+| -
+|===
+
+*Unique fields should be case-sensitive
+
+=== Create via Apex Script
+
+An Apex class called `CustomFieldUtility` can be used to create custom fields programmatically. The source for this class can be found in the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-common-resources-src[FINS Common Resources^] project. Download this project and follow the steps below.
+
+. Click on Salesforce Setup icon and select `Developer Console` to open a new console window
+. Go to `+File -> New -> Apex class+` and create a new class named `CustomFieldUtility`
+. Copy the code from `fins-common-resources/salesforce/CustomFieldUtility.apxc` to the script editor
+. Select the `+File -> Save+` menu option to compile and save the class
+. Select `+Debug -> Open Execute Anonymous Window+`
+. Copy and paste the contents of `fins-common-resources/salesforce/CreateCustomFields.txt` into the window.
+. Enable the `Open Log` option and click the *Execute* button.
+
+Once the script completes, select the `Debug Only` filter option to show just the results of each create request. Verify that all fields have been successfully created.
+
+=== Create Manually via Salesforce
+
+To create each of these custom fields and enable visibility for them on page layouts:
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Find and select the target Salesforce object.
+. Select the `Fields & Relationships` page.
+. Click the *New* button and create the field as specified above.
+. Once the field has been created, click the `Set Field-Level Security` button (or do these steps later - see below).
+. Enable for desired profile, or tick the checkbox next to `Visible` to enable visibility for the desired profile(s).
+
+Repeat these steps for each custom field in the above list.
+
+TIP: Instead of adjusting permissions for each field as you go, if you are only making them available to one or two profiles it may be more efficient to go to the `+Users -> Profiles -> {profile} -> Object Settings+` for each object and adjust the permissions for multiple fields at once.
+
+=== Additional Notes
+
+* The *Card Type* picklist values are *DebitCard* and *CreditCard*.
+* The *Credit Card Type* picklist values are *Amex*, *Discover*, *Mastercard*, *Visa*, and *Other*.
+* The *Last Transaction Type* picklist values are *CreditTransaction*, *DebitTransaction*, *TransferTransaction*,  and *PaymentTransaction*.
+* The *Customer Status* picklist values are *Prospect*, *Onboarding*, *Active*, *Inactive*, *Closed*, *Deceased*, *Delinquent*, and *Dormant*.
+* The *Debit Financial Account* and *Credit Financial Account* fields looks up respective Financial Accounts.
+* All `Global_*_Id__c` fields should be visible in layouts (as described above) but made *read-only* to avoid issues with data synchronization.
+
+== Enable Financial Accounts in Sales
+
+When the Financial Services Cloud feature is added to the Salesforce instance, the Commercial and Retail Banking apps are provided to work with financial accounts. If you want to enable the Financial Accounts tab on the Sales app, follow these steps:
+
+. Navigate to the `Sales` app home page.
+. Click the pencil icon on the right corner of the navigation pane, which opens the `Edit Sales App Navigation Items` dialog box.
+. Click *Add More Items*.
+. Navigate to `All` under the `Available Items` menu.
+. Search for `Financial Accounts` and Select it.
+. Click `Add 1 Nav Item` and then click *Save*.
+
+== Enable Transaction Status
+
+The default implementation of the solution requires the enablement of additional values for the transaction status picklist in the target FSC instance. This can be done as follows:
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Find and select the `FinServ__FinancialAccountTransaction__c` Salesforce object.
+. Navigate to `Fields and Relationships` and select the `FinServ__TransactionStatus__c` picklist field.
+. Scroll down to the `Values` section and click *New*.
+. Enter the values for `Cancelled` and `Initial` on separate lines and click *Save*.
+
+== Enable Transaction Types
+
+The default implementation of the solution also requires the enablement of additional transaction types. The steps are similar to those above:
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Find and select the `+FinServ_FinancialAccountTransaction__c+` Salesforce object.
+. Navigate to `Fields and Relationships` and select the `+FinServ_TransactionType__c+` picklist field.
+. Scroll down to the `Values` section and click *New*.
+. Enter the values for `Payment` and `Transfer` on separate lines and click *Save*.
+
+== Workflow Rules
+
+To display a specific page layout based on the record type, a Workflow rule is created. To ensure the page layout changes based on the record type `Financial Account Transfer Transaction`, follow the below steps:
+
+. Click the Salesforce Setup icon.
+. Navigate to `+Process Automation -> Workflow Rules+`.
+. Click the *New Rule* button.
+. Select `+FinServ_FinancialAccountTransaction__c+` from the *Object* dropdown.
+. Enter *Rule Name* as `Transfer Transaction Type` and description as `Defines a transaction that represents a generic transfer from one account to another`.
+. Set `Evaluation Criteria` as ``created, and any time it``s edited to subsequently meet criteria`.
+. In the `Rule Criteria` section, select `criteria are met`.
+. In the first row, select the field as `Financial Account Transaction: Transaction Type`, operator as `equals`, and value as `Transfer`.
+. In the second row, select the field as `Financial Account Transaction: Transaction Type`, operator as `equals`, and value as `Payment`.
+. Set filter logic `1 OR 2`. Click *Save*.
+. In `Workflow Actions`, under `Immediate Actions`, select `New Field Update`.
+. Set `Name` as `Transfer Transaction Type`.
+. In `Field to Update`, select `Record Type`. Click *Next*.
+. In `Specify New Field Value`, select `Financial Account Transfer Transaction` from the record type dropdown.
+. Click *Save*.
+
+== Enable Multiple Currencies
+
+The default implementation of the solution requires the enablement of multiple currency support in the target FSC instance. This can be done as follows:
+
+. Click the Salesforce Setup icon.
+. Navigate to `+Company Settings -> Company Information+`.
+. Click *Edit* and enable the `Activate Multiple Currencies` option.
+. Click *Save*.
+
+If desired, click the *Currency Setup* button to add support for additional currency codes (for example, EUR).
+
+== Create Platform Events and Apex Triggers
+
+The following Platform Event Objects and Apex Triggers must be created in order to capture updates from Salesforce. The scripts to create these Apex Triggers and add fields to Platform Event Objects are located in the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-common-resources-src/[FINS Common Resources] project.
+
+|===
+| Salesforce Object | Salesforce Platform Event Object | Salesforce Platform Event API Name | Apex Trigger Name
+
+| Account
+| Account
+| Account__e
+| AccountEventsPub
+
+| Contact
+| Contact
+| Contact__e
+| ContactEventsPub
+
+| Account
+| AccountAddresses
+| AccountAddresses__e
+| AccountAddressEventsPub
+
+| Account
+| Household
+| Household__e
+| HouseholdEventsPub
+
+| Lead
+| Lead
+| Lead__e
+| LeadEventsPub
+
+| Opportunity
+| Opportunity
+| Opportunity__e
+| OpportunityEventsPub
+
+| +FinServ_FinancialAccount__c+
+| FinancialAccount
+| FinancialAccount__e
+| FinancialAccountEventsPub
+
+| +FinServ_FinancialAccountTransaction__c+
+| FinancialAccountTransaction
+| FinancialAccountTransaction__e
+| TransactionsEventsPub
+
+| +FinServ_Card__c+
+| FinancialCard
+| FinancialCard__e
+| CardsEventsPub
+|===
+
+=== Create Platform Event Object
+
+This implementation requires creation of Platform Events in Salesforce. To create a Platform Event Object following the below steps:
+
+. Login to Salesforce.
+. Click Setup to search for Platform Events in Quick Find Box. Platform Events Page under Integrations section appears with list of available Platform Events.
+. Click *New Platform Event* button to create an Object and enter Platform Information Details fields like Label, Plural Label and Object with Object Name and Event API Names as above table. Click Save. Repeat this step for creating multiple Salesforce Platform Event Objects as mentioned in the above table.
+. To add Custom Fields & Relationships to Platform Event Definitions, run the utility scripts (`CreatePlatformEventsCustomFields.txt`) available in the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-common-resources-src/[FINS Common Resources^] under the `/salesforce` folder.
+
+=== Create Apex Triggers
+
+Follow the below steps to create the Apex Triggers
+
+. Login to Salesforce.
+. Click Setup to search for Object Manager in Quick Find Box.
+. Search for the Salesforce Object. A page appears with Details of the Object.
+. Click Triggers unders the Details section to see list of available triggers on the Object. Click New.
+. Copy the Trigger Script code searching by Apex Trigger Name (mentioned in the above table for the SalesforceObject) in CreateApexTriggers.txt of https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-common-resources-src/[FINS Common Resources] to the script editor. CreateApexTriggers.txt file is available under /salesforce folder.
+. Obtain the `LastModifiedById` and `RecordTypeId` (if it exists) by running the queries mentioned in the trigger from Developer Console.
+. Replace the values in the script and Save the trigger.
+. Click Save and ensure isActive checkbox is ticked.
+. Repeat the steps for all the Salesforce objects in the above table.
+
+=== Additional Notes
+
+* All the Apex Triggers created above filters records based on `LastModifiedBy <> {Service account ID}`. This is to filter out updates done by the Salesforce Customers and Salesforce Financial System APIs to avoid cyclical updates. This can be obtained by running the query `SELECT Id FROM User WHERE Username='<service-account-username>'` in the Developer Console.
+* The Apex Triggers AccountEventsPub, and AccountAddressEventsPub also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Household' and sObjectType='Account'` in the Developer Console.
+* The Apex Trigger HouseholdEventsPub also filter records based on record type ID. The record type ID can be obtained by running the query `SELECT Id,Name FROM RecordType where Name='Account' and sObjectType='Account'` in the Developer Console.
+
+== Adding Mailing Address to Person Account details Page
+
+The following instructions assume that https://help.salesforce.com/s/articleView?id=sf.account_person_enable.htm&type=5[support for Person Accounts^] is already enabled. Perform the following actions to enable Mailing Address on the Person Account detail page.
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Search for `Person Account` and select it.
+. From the menu on the left, click on `Page Layouts` and select the layout you want to adjust.
+. Click the `Fields` tab on the palette to show all the available fields.
+. Search for `MailingAddress` and select it.
+. Drag the field from the palette and drop it in the `Address Information` section of the layout
+. Click the *Save* button.
+
+== Creating Contacts not Associated with an Account
+
+These instructions assume that the Salesforce FSC instance includes access to the `Contact` object.
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Search for `Contact` and select it.
+. From the menu on the left, click on `Page Layouts` and select the layout you want to adjust.
+. Find the `Account Name` field on the layout and hover over it. Then, click the wrench icon to show the field properties.
+. Deselect the `Required` checkbox and confirm your changes.
+. Click the *Save* button.
+
+== Adding Fields to Opportunity Page
+
+Perform the following actions to enable custom fields in Opportunity default page.
+
+. Click the Salesforce Setup icon.
+. Select the `Object Manager` tab from the Setup home page.
+. Search for `Contact` and select it.
+. From the menu on the left, click on `Page Layouts` and select the layout you want to adjust.
+. Click the `Fields` tab on the palette to show all the available fields.
+. Search for `KYC Completed` and select it.
+. Drag the field from the palette and drop it in the `Opportunity Information` section of the layout.
+. Repeat the last two steps to add the `Document Signatues Recieved`, `Ach Transfer Auth Document Id`, and `Asset Transfer Auth Document Id` fields.
+. Click the *Save* button.
+
+== Configure Connected App for Authentication
+
+Follow the below steps to generate the `Consumer Key` and `Consumer Secret` values required for Salesforce authentication.
+
+. Click the Salesforce Setup icon.
+. Navigate to `+Apps -> App Manager+`.
+. Select `New Connected App`.
+. Enter Connected App Name: `MuleSoft Accelerator`, API Name: `MuleSoft_Accelerator` and set your email address.
+. In the `API (Enable OAuth Settings)` section, check the box `Enable OAuth Settings`.
+. Set the callback URL `+http://localhost+`.
+. From the `Selected OAuth Scopes` list, select `Full access (full)`.
+. Click *Save* and then *Continue*.
+. Click the *Manage* button to view details for the new connected app.
+. Click the *Edit Policies* button.
+. In the `OAuth Policies` section, for `Permitted Users` select `All users may self-authorize`.
+. For `IP Relaxation`, select the `Relax IP restrictions` option.
+. Click *Save*.
+
+You now need to copy the `Consumer Key` and `Consumer Secret` values for use in configuring Mule application deployments. More specifically, these must be supplied as the values for the `sfdc.fsc.client-id` and `sfdc.fsc.client-secret` properties found in the `FSC-BANKING-DEV`, `FSC-Insurance-DEV` and `FSC-WEALTH-DEV` profiles in your Maven `settings.xml` file.
+
+. On the Setup Home page, navigate to `+Apps -> App Manager+`.
+. Locate your new connected app and choose `View` from the actions dropdown for that item (last column on the right).
+. Under the `API (Enable OAuth Settings)` section, click the *Manage Consumer Details* button.
+. Verify your identity by entering the verification code that was emailed to you.
+. Copy the key and secret values and update your `settings.xml` file as described above.
+
+Download the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-common-resources-src[FINS Common Resources project^] for a sample `settings.xml` file that can be used as a starting point.
+
+== Generating Security Token for Service Account
+
+A token needs to be generated for the service account used by the Mule applications in order to connect to the FSC instance.
+
+. Login to Salesforce as the Service Account User (the account that will be used by the Mule applications for connecting to Salesforce).
+. Click the Username icon in the top right corner and select `Settings` from the menu.
+. Select `+My Personal Information -> Reset My Security Token+` (if not found, see note below).
+. Click *Reset Security Token*.
+. Check the email inbox for an email from Salesforce with the new security token.
+
+NOTE: If the option to reset your security token is not available, it is likely that one or more Login IP Ranges are in effect. These can be temporarily removed from the settings page of the profile assigned to the service account user.
+
+== Contact Point Mappings
+
+The following table lists the conditions used to assign ContactPoints in Salesforce:
+
+|===
+| CIM PartyRole - Party | Salesforce Object - Record Type | Condition | Action in Salesforce | Comments
+
+| Customer - Individual
+| Account - PersonAccount
+| ContactPointAddress with `isUsedForBilling` set as `false`
+| Assign Address as `PersonMailingAddress`
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Individual
+| Account - PersonAccount
+| ContactPointAddress with `isUsedForBilling` set as `true`
+| Assign Address as `BillingAddress`
+|
+
+| Customer - Individual
+| Account - PersonAccount
+| ContactPointPhone with `isSMSCapable` set as `false`
+| Assign Phone Number as `Phone`
+| If multiple phones match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Individual
+| Account - PersonAccount
+| ContactPointPhone with `isSMSCapable` set as `true`
+| Assign Phone Number as `PersonMobilePhone`
+|
+
+| Customer - Organization
+| Account - Account
+| ContactPointAddress with `isUsedForBilling` set as `true`
+| Assign Address as `BillingAddress`
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Organization
+| Account - Account
+| ContactPointAddress with `isUsedForBilling` set as `true`
+| Assign Address as `BillingAddress`
+| If multiple addresses match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Organization
+| Account - Account
+| ContactPointAddress with `isUsedFoShipping` set as `true`
+| Assign Address as `ShippingAddress`
+|
+
+| Customer - Organization
+| Account - Account
+| ContactPointPhone with `isFaxCapable` set as `false`
+| Assign Phone Number as `Phone`
+| If multiple phones match this condition, the one with primaryFlag set to true is used; if none set the first one will be used
+
+| Customer - Organization
+| Account - Account
+| ContactPointPhone with `isFaxCapable` set as `true`
+| Assign Phone Number as `Fax`
+|
+|===
+
+*The default value for all flags is `false`.
+
+== Creating Stop Check and Stop ACH Buttons
+
+To enable Stop Check and Stop Automated Clearing House (ACH) features, you must create a button for both features in your Salesforce org. Follow these steps to create the buttons:
+
+. Set up https://help.salesforce.com/s/articleView?id=sf.nc_named_creds_and_ext_creds.htm&type=5[named credentials] for making HTTP calls to Mule APIs.
+. Deploy the Stop Check and Stop ACH flows from the package provided in https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-common-resources-src/[FINS Common Resources]. See https://help.salesforce.com/s/articleView?id=sf.flow.htm&language=en_US&type=5[Flow Builder] in Salesforce Help for information about creating flows.
+. Add *Stop Check* and *Stop ACH* buttons to the Financial Account object in your Salesforce org. See https://help.salesforce.com/s/articleView?id=sf.customizing_detail_page_buttons.htm&type=5[Customize Standard and Custom Buttons on Page Layouts] in Salesforce Help for information about creating buttons.
+. Create a quick action for each button to enable users to access the buttons easily. See https://help.salesforce.com/s/articleView?id=sf.fsc_slack_app_create_a_quick_action_for_a_flow.htm&type=[Create a Quick Action for a Flow] for information about creating quick actions.
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]
