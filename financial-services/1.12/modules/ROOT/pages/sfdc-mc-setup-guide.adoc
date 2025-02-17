@@ -1,0 +1,276 @@
+= Salesforce Marketing Cloud Setup Guide
+:fins-version: {page-component-version}
+
+This guide provides the setup instructions for Marketing Cloud for the following use cases that are part of the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/[MuleSoft Accelerator for Financial Services^]:
+
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%202b%20-%20Client%20onboarding%20-%20Wealth%20management/[Use case 2b - Client onboarding - Wealth management^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204a%20-%20Address%20change%20orchestration%20-%20Insurance/[Use case 4a - Address change orchestration - Insurance^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%204b%20-%20Address%20change%20orchestration%20-%20Banking/[Use case 4b - Address change orchestration - Banking^]
+* https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Use case 5 - Optimize customer experiences with CDP^]
+
+== Create Data Extension for Sync Process
+
+The steps listed below are not specific to any use case, they are needed for the sync process, which is common for all the use cases. It is assumed that the Salesforce Marketing Cloud has been provisioned and access is granted appropriately.
+
+To create the data extension to store Individuals (for example, `Individual`), log in to Marketing Cloud as the administrator and perform the following steps:
+
+* Click on Email Studio.
+* Click on Subscribers Menu.
+* Click on Data Extensions link.
+* On right side tab under Data Extensions section, click Create button to create Data Extensions.
+* Select Standard DataExtension from the popup. Click Ok.
+* On the next popup screen, choose Creation Method as Create from New. Enter the Name of the DataExtension as 'Individual', check the Is Sendable? checkbox, and click Next.
+* On Data Retention Policy popup, set the Retention Setting to On and select Apply To Delete : as All records and data extensions. Set the Period: as After 6 Years from the dropdown and click Next.
+* Add fields and create a relationship.
+ ** Add a field EmailAddress with EmailAddress Data type and mark it as Primary Key.
+ ** Add below fields as Text Data type with Length as 500 and mark them as Nullable.
+  *** FirstName
+  *** LastName
+  *** PersonName
+  *** GlobalPartyId
+  *** CompanyName
+  *** State
+ ** Add below fields as Text Data type of Length 500.
+  *** SubscriberId
+  *** CreatedBy
+  *** UpdatedBy
+ ** Add below fields as Date Data type
+  *** CreatedDate
+  *** UpdatedDate.
+ ** From the Send Relationship dropdown, choose Email Address relates to Subscribers on as Subscriber Key.
+ ** Click Create.
+
+The steps listed below are specific to this use case, and assume that the Salesforce Marketing Cloud instance has been provisioned and appropriate access granted.
+
+== Setup instructions for the Client Onboarding Use Case
+
+Log into Marketing Cloud as the administrator and perform the steps outlined below.
+
+=== Create Data Extension
+
+This is needed to capture data for the email and online submission form (HTML).
+
+* Navigate to Audience Builder, click Contact Builder
+* Navigate to Data Extensions at the top navigation
+* Click Create
+
+Create the data extension for the onboarding form (for example, `WAM_Onboarding_Form`) with the following fields:
+
+* First Name
+* Last Name
+* Email Address
+
+=== Create Email Template
+
+The email is the template that is populated and sent to prospective clients so they can provide their details through the onboarding form created above.
+
+* Navigate to Email Studio
+* Click Email
+* Click Content at the top nav
+* Click Create, Email Message
+* Click Select Creation Option, click Template
+* Select a desired template
+* Input the following fields:
+ ** Name
+ ** Description
+ ** Location = Content Builder
+ ** Click Next, add the content including Subject and Preheader
+
+=== Create Email Journey
+
+Journey Builder is used to trigger emails to a list of email addresses. The following steps outline the process to create a journey to send emails to prospective clients. The journey is configured to resend the email in 5 days if a prospective client does not respond to the first email.
+
+* Navigate to Journey Builder, click Journey Builder
+* Click Create New Journey
+* Drag and drop Data Extension as the starting event
+* Select the data extension created above (for example, WAM_Onboarding_Form)
+* Drag and drop Email as the next event
+* Select the email created in Email Studio
+* Drag and drop Wait by Duration as the next step
+* Configure the desired duration (example - 5 days)
+* Drag and drop a Decision Split. This event type will decide what actions to take if the user submits or doesn't submit the online form
+* Configure the Filter Criteria to be Email Address is not null
+* Configure Remainder to be that all remaining people will be sent down this path
+* For the Remainder Path
+* Drag and drop an email event and select the desired email
+* Drag and drop Wait by Duration
+* Configure the desired duration (example - 1 minute)
+* For the Form Submitted path
+* Drag and drop Wait by Duration
+* Configure the desired duration (example - 1 minute)
+
+=== Create Online Submission Form
+
+This is the form that the client will submit so that the https://anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/fins-salesforce-wealth-exp-api/[Salesforce Wealth Experience API] will be invoked to create a lead in FSC:
+
+* Navigate to Web Studio and click Cloudpages
+* Create a Collection
+* Under Add Content, click a Landing Page. This is where the WAM Onboarding Form will be created
+* Create the WAM Onboarding Form via HTML
+* Drag and drop the HTML object into the content body
+* Input the following code, save, and then publish
+
+[,html]
+----
+		<h1> WAM Onboarding Form </h1>
+		<h2> Please fill out the following fields to completion: </h2>
+		<form action="https://mcwqh6t79hz1ztf2d-090xpy55-q.pub.sfmc-content.com/toq02t51ydg" method="post">
+			<table>
+				<tr>
+					<th style="text-align:right">First Name:<span
+					style="color:red"><b>*</b></span>
+					</th>
+					<td>
+					  <input type="text" name="firstName">
+					</td>
+				</tr>
+				<tr>
+					<th style="text-align:right">Last Name:<span style="color:red"><b>*</b></span>
+					</th>
+					<td><input type="text" name="lastName">
+					</td>
+				</tr>
+				<tr>
+					<th style="text-align:right">Email Address:<span style="color:red"><b>*</b></span>
+					</th>
+					<td>
+						<input type="text" name="emailAddress">
+					</td>
+				</tr>
+			</table>
+			<br><br> <input type="submit" value="Submit Onboarding Form" />
+		</form>
+----
+
+=== Create Confirmation Landing Page
+
+This is the page that the user will see once they submit the onboarding form.
+
+* Click Add Content, click Landing Page
+* Drag and drop the Code Snippet object into the content body
+* Input the following code, save, and then publish
+
+[,bash]
+----
+%%[SET @firstName = RequestParameter('firstName')
+
+SET @lastName = RequestParameter('lastName')
+
+SET @emailAddress = RequestParameter('emailAddress')
+
+SET @var0 = '{"firstName": "'
+SET @var1 = '","lastName": "'
+SET @var2 = '","emailAddress": "'
+SET @var4 = '"}'
+SET @content = Concat(@var0, @firstName, @var1,
+@lastName, @var2, @emailAddress, @var4)
+
+SET @return_code2DEFAULT3 =
+
+HTTPPost("https://<replace with path to Salesforce Wealth Experience API>/api/leads","application/json", @content, @response_data2,"Authorization",@Bearer)
+
+]%%
+----
+
+* Add a Free Form object below the code snippet object
+* Enter text: `"Thanks for your submission!"`
+
+== Setup Instructions for the Address Change Orchestration Use Case
+
+Log into Marketing Cloud as the administrator and perform the steps outlined below.
+
+=== Create Installed Package
+
+This is needed for the System API to connect to Salesforce Marteing Cloud.
+
+* Navigate to Settings \-> Setup \-> Users \-> Roles and check the role is assigned by selecting and clicking on View Assignments. The role shoudld include Administrator.
+* Navigate to Settings \-> Setup \-> Apps \-> Installed Packages.
+* Click New and add a new Package by providing a Name and Description.
+* Click on the Add Component button that appears under Details tab. A pop-up opens with few options under Choose your Component Type section.
+* Select API Integration as component type and click Next.
+* Select Server-to-Server as Integration Type and click Next.
+* Select Appropriate Scopes as needed for Integration and click Save. Note: These scopes listed are needed for using the Marketing CloudREST API and may not be used by the MuleSoft connector used in this application. Email: Read, Write Automations: Read, Write, Execute List and Subscribers: Read, Write Data Extensions: Read, Write
+
+Once Saved, API Integration appears under Components section with Client Id, Client Secret, and SOAP Base URI that can be used to configure in `config-local.yaml/config-dev.yaml` properties file for each environment.
+
+=== Create Data Extension
+
+To create the data extension for the Postal Address Change (for example, `Postal_Address_Change_DE`):
+
+* Click on Email Studio.
+* Click on Subscribers Menu.
+* Click on Data Extensions link.
+* On right side tab under Data Extensions section, click Create button to create Data Extensions.
+* Select Standard DataExtension from the popup. Click Ok.
+* On the next popup screen, choose Creation Method as Create from New. Enter the Name of the DataExtension as 'Postal_Address_Change_DE', check the Is Sendable? checkbox, and click Next.
+* On Data Retention Policy popup, set the Retention Setting to On and select Apply To Delete : as All records and data extensions. Set the Period: as After 6 Years from the dropdown and click Next.
+* Add fields and create a relationship. There will be no Primary Key set for this Data Extension as it's to only trigger events for a Journey.
+ ** Add a field EmailAddress with EmailAddress Data type.
+ ** Add a field LastUpdated with Date as Data type and default value as current date by selecting the use the current system date checkbox.
+ ** Add PersonName field as Text Data type with Length as 500.
+ ** From drop downs of Send Relationship, choose Email Address relates to Subscribers on as Subscriber Key. Click  Create.
+
+=== Create Email Journey
+
+* Ensure an email message has been already composed with the correct Content that can be used in the Journey.
+* Navigate to Journey Builder, click Create New Journey.
+* Click Build in Multi-Step Journey.
+ ** Drag and drop an API Event into the Entry Source, click Create an Event, enter a name for the API Event into the Activity Name, and select the relevant Data Extension.
+ ** Drag and drop an Email event in between the API Event and Wait by Duration event in the Journey Builder flow diagram.
+ ** Enter in a name for the Activity Name and provide a description in the Description field.
+ ** Click Select Message and click the email message you've created and click Summary. Click Done.
+ ** Click the Wait By Duration event in the Journey Builder flow (diamond shape diagram).Change duration to 1 minute and click Done.
+* Click Save and Click Activate.
+
+== Setup Instructions for the Optimize Customer Experiences Use Case
+
+Log into Marketing Cloud as the administrator and perform the steps outlined below.
+
+=== Prerequisites
+
+Please refer to the xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide] for instructions on how to publish and activate a Data Cloud segment. Once the segment is published and activated, it will trigger the creation of a data extension in Marketing Cloud with the same name as the Data Cloud segment.
+
+=== Check Data Extension
+
+Ensure the newly created data extension from Data Cloud is active within Marketing cloud.
+
+* Navigate to Contact Builder
+* Click Data Extension at the top navigation
+* Search for the Data Extension
+* Confirm that the segment is created and shared with the Data Cloud segment and proceed to the next step
+
+=== Create Email Template
+
+* Navigate to Email Studio
+* Click Email to create the email to send out to prospective clients
+* Click Content at the top navigation
+* Click Create Email Message
+* Click Select Creation Option, click Template
+* Select the desired Template
+* Input the following fields
+ ** Name
+ ** Description
+ ** Location = Content Builder
+* Click Next, then add the content of your email including Subject and Preheader
+* Click Save
+
+=== Create Multi-step Journey
+
+* Navigate to Journey Builder, click Journey Builder
+* Click Create Multi-Step Journey
+* Link the Data Extension shared with Data Cloud
+* Set the Schedule
+ ** Set the start date
+ ** Set the time zone
+ ** Set the cadence for the Journey (timing)
+ ** Set the Evaluate New Record Only equal to True
+* Select the email message
+ ** Set the Subject
+ ** Select the Sender Profile
+* Set the Wait period to 1 minute
+* Save and activate the journey
+
+== See Also
+
+* xref:prerequisites.adoc[Prerequisites]
+* xref:index.adoc[MuleSoft Accelerator for Financial Services]

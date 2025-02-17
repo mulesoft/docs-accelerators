@@ -1,4 +1,5 @@
 = Prerequisites for MuleSoft Accelerator for Healthcare
+:page-aliases: healthcare::sfdc-data-cloud-setup-guide.adoc
 
 This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
 
