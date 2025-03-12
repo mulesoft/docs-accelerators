@@ -1,0 +1,6 @@
+name: financial-services
+title: Financial Services
+version: '1.12'
+display_version: '1.12'
+nav:
+- modules/ROOT/nav.adoc
