@@ -8,11 +8,11 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Fulfillment Order
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-fulfillment-order.png[alt="Fulfillment Order Diagram",width=82%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-fulfillment-order.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-fulfillment-order.png[alt="Entity relationship model showing fulfillment order data and its relationships",width=82%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-fulfillment-order.png"]
 
 === Shipment
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-shipment.png[alt="Shipment Diagram",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-shipment.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-shipment.png[alt="Entity relationship model showing shipment data and its relationships",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-shipment.png"]
 
 == Implementation
 

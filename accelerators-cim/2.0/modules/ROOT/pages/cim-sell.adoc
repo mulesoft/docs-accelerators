@@ -8,19 +8,19 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Contract
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contract.png[alt="Contract Diagram",width=80%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contract.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contract.png[alt="Entity relationship model showing contract data and its relationships",width=80%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contract.png"]
 
 === Opportunity
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-opportunity.png[alt="Opportunity Diagram",width=66%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-opportunity.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-opportunity.png[alt="Entity relationship model showing opportunity data and its relationships",width=66%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-opportunity.png"]
 
 === Price Book
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-price-book.png[alt="Price Book Diagram",width=41%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-price-book.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-price-book.png[alt="Entity relationship model showing price book data and its relationships",width=41%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-price-book.png"]
 
 === Sales Order
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-sales-order.png[alt="Sales Order Diagram",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-sales-order.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-sales-order.png[alt="Entity relationship model showing sales order data and its relationships",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-sales-order.png"]
 
 == Implementation
 

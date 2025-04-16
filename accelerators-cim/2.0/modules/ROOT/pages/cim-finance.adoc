@@ -8,15 +8,15 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Invoice
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-invoice.png[alt="Invoice Diagram",width=44%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-invoice.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-invoice.png[alt="Entity relationship model showing invoice data and its relationships",width=44%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-invoice.png"]
 
 === Payment
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment.png[alt="Payment Diagram",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment.png[alt="Entity relationship model showing payment data and its relationships",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment.png"]
 
 === Payment Method
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment-method.png[alt="Payment Method Diagram",width=54%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment-method.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment-method.png[alt="Entity relationship model showing payment method data and its relationships",width=54%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-payment-method.png"]
 
 == Implementation
 

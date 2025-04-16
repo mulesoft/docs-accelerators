@@ -8,19 +8,19 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Account
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-account.png[alt="Account Diagram",width=81%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-account.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-account.png[alt="Entity relationship model showing account data and its relationships",width=81%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-account.png"]
 
 === Contact Point
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contact-point.png[alt="Contact Point Diagram",width=42%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contact-point.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contact-point.png[alt="Entity relationship model showing contact point data and its relationships",width=42%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-contact-point.png"]
 
 === Lead
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-lead.png[alt="Lead Diagram",width=79%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-lead.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-lead.png[alt="Entity relationship model showing lead data and its relationships",width=79%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-lead.png"]
 
 === Party
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-party.png[alt="Party Diagram",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-party.png"]
+image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-party.png[alt="Entity relationship model showing party data and its relationships",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-party.png"]
 
 == Implementation
 
