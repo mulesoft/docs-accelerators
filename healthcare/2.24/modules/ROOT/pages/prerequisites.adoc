@@ -11,5 +11,5 @@ Most of the implementation templates also contain details on requirements specif
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
+* For guidance on configuring your local build environment to download, modify, and deploy accelerator assets, see xref:accelerators-home::getting-started.adoc[].
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]
