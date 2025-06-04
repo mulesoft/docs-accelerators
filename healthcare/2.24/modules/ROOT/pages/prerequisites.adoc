@@ -3,6 +3,14 @@
 
 This page provides a summary of the guides available for configuring the various systems and products required to implement the use cases provided by this solution. The individual systems needed, and amount of configuration required, depend on which assets are to be deployed in your target environment(s) - refer to the use case pages for more details.
 
+== Configuration Guidance
+
+Support for configuring and using this accelerator is available here:
+
+* For guidance on configuring your local build environment to download, modify, and deploy accelerator assets, see xref:accelerators-home::getting-started.adoc[].
+* For the collection of assets to support MuleSoft customers who are developing Fast Healthcare Interoperability Resources (FHIR) APIs using MuleSoft, see xref:fhir-r4-assets.adoc[]. Visit the https://www.hl7.org/fhir/[official HL7 website] for more information.
+* For the use cases that describe how to use this accelerator's assets, see https://www.anypoint.mulesoft.com/exchange/0b4cad67-8f23-4ffe-a87f-ffd10a1f6873/mulesoft-accelerator-for-healthcare/[MuleSoft Accelerator for Healthcare on Exchange^].
+
 == Available Guides
 
 The xref:sfdc-health-cloud-setup-guide.adoc[Salesforce Health Cloud Setup Guide] is available for this accelerator.
@@ -11,5 +19,4 @@ Most of the implementation templates also contain details on requirements specif
 
 == See Also
 
-* xref:accelerators-home::getting-started.adoc[Getting Started Guide]
 * xref:index.adoc[MuleSoft Accelerator for Healthcare]
