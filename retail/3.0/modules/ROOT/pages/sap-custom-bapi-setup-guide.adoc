@@ -11,11 +11,13 @@ You must complete the following instructions before deploying the https://anypoi
 
 You must create the following ABAP objects in order to use this custom BAPI, which are described below.
 
-=== <<creating-data-elements,Data elements>>
+=== Data Elements
 
 * `Z_MASTER_ID`
 
-=== <<creating-structures,Structures>>
+See <<creating-data-elements>>.
+
+=== Structures
 
 * `ZSTR_PERSON`
 * `ZSTR_ORGANIZATION`
@@ -23,20 +25,28 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 * `ZES_CUSTOMER`
 * `ZES_CONTROLDATA`
 
-=== <<creating-table-types,Table types>>
+See <<creating-structures>>.
+
+=== Table Types
 
 * `ZTY_CUSTOMER`
 
-=== <<creating-transparent-tables,Transparent tables>>
+See <<creating-table-types>>.
+
+=== Transparent Tables
 
 * `ZTT_CUSTOMER`
 
-=== <<creating-function-groups-and-function-modules,Function groups>>
+See <<creating-transparent-tables>>.
+
+=== Function Groups
 
 * `ZFG_CUSTOMER`
 * `ZFG_CUSTOMER2`
 
-=== <<creating-function-groups-and-function-modules,Function modules>>
+See <<creating-function-groups-and-function-modules>>.
+
+=== Function Modules
 
 *<<zbapi-customer-modules,ZBAPI_CUSTOMER modules>>*
 
@@ -52,6 +62,8 @@ You must create the following ABAP objects in order to use this custom BAPI, whi
 * `ZBAPI_QUERY_SAP`
 * `ZBAPI_CUST_QUERY`
 * `ZBAPI_CUSTOMER_CD`
+
+See <<creating-function-groups-and-function-modules>>.
 
 [[creating-data-elements]]
 === Creating data elements
