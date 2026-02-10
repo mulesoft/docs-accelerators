@@ -10,7 +10,7 @@ Following are the general steps to achieve this. Please consult with your Salesf
 * From Setup, enter Custom Settings in the Quick Find box, then select Custom Settings.
 * In the list of custom settings, click Manage next to the Use Person Accounts custom settings.
 * Click *Edit* next to Use Person Account.
-* Select Enable. After person accounts are enabled, assign them to profiles. Please refer to the attached https://help.salesforce.com/s/articleView?language=en_US&id=sf.admin_person_account_overview.htm[document^] for the detailed explanation of representing patients in Health Cloud.
+* Select Enable. After person accounts are enabled, assign them to profiles. See https://help.salesforce.com/s/articleView?language=en_US&id=sf.admin_person_account_overview.htm[Set Up Person Accounts to Represent Health Cloud Members and Patients^] for the detailed explanation of representing patients in Health Cloud.
 
 == Salesforce Connected App
 
