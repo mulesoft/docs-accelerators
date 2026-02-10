@@ -121,7 +121,7 @@ Follow these steps to generate the *Consumer Key* and *Consumer Secret* values r
 . Enter "MuleSoft Accelerator" as the connected app name and API name.
 . Enter your email address.
 . Check the *Enable OAuth Settings*.
-. Set the callback URL http://localhost.
+. Set the callback URL `\http://localhost`.
 . Select "Full access (full)" in the *Selected OAuth Scopes* list.
 . Click *Save*, and then click *Continue*.
 . Click *Manage* to view the connected app details.
