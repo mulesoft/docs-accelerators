@@ -10,13 +10,13 @@ Following are the general steps to achieve this. Please consult with your Salesf
 * From Setup, enter Custom Settings in the Quick Find box, then select Custom Settings.
 * In the list of custom settings, click Manage next to the Use Person Accounts custom settings.
 * Click *Edit* next to Use Person Account.
-* Select Enable. After person accounts are enabled, assign them to profiles. Please refer to the attached https://developer.salesforce.com/docs/atlas.en-us.health_cloud.meta/health_cloud/admin_person_account_overview.htm[document^] for the detailed explanation of representing patients in Health Cloud.
+* Select Enable. After person accounts are enabled, assign them to profiles. Please refer to the attached https://help.salesforce.com/s/articleView?language=en_US&id=sf.admin_person_account_overview.htm[document^] for the detailed explanation of representing patients in Health Cloud.
 
 == Salesforce Connected App
 
 This accelerator uses MuleSoft's Salesforce Composite Connector to perform atomic upserts to multiple Salesforce objects in a single transaction. It requires a 'Connected App' in Salesforce. Please refer to the instructions in Salesforce docs to create a Connected App.
 
-Please refer to the https://help.salesforce.com/articleView?id=connected_app_create.htm&type=5[instructions^] in Salesforce docs to create a connected app.
+Please refer to the https://help.salesforce.com/s/articleView?language=en_US&id=connected_app_create.htm&type=5[instructions^] in Salesforce docs to create a connected app.
 
 == Enable Read/Write Permissions for Salesforce Objects
 
@@ -43,7 +43,7 @@ This accelerator uses MuleSoft's HL7 Connector. If you're required to use custom
 
 The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-adt-api/[implementation template^] for storing ADT messages in Salesforce Health Cloud shows an example of custom segment processing. Please check the src/main/resources/config/hl7/v2_2 folder in the implementation template. This folder has the necessary changes required to process custom segment `ZG1`.
 
-For additional details on HL7 Connector, please refer to the https://docs.mulesoft.com/connectors/hl7/hl7-connector[documentation^].
+For additional details on HL7 Connector, please refer to the https://docs.mulesoft.com/hl7-connector/latest/[documentation^].
 
 == Maven POM Parent
 
