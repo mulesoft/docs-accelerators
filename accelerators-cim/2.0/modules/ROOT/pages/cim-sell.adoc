@@ -24,7 +24,7 @@ image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-sales-order.p
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-sell-library[CIM Sell Library^]
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-sell-library/[CIM Sell Library^]
 
 == See Also
 

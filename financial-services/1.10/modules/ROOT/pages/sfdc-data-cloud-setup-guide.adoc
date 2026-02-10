@@ -1,7 +1,7 @@
 = Salesforce Data Cloud Setup Guide
 :fins-version: {page-component-version}
 
-The following provides guidance on Salesforce Data Cloud setup required for the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with Data Cloud^] use case. A few of these steps can be omitted if deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api[FINS Salesforce Data Cloud System API^] independently of the use case.
+The following provides guidance on Salesforce Data Cloud setup required for the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with Data Cloud^] use case. A few of these steps can be omitted if deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce Data Cloud System API^] independently of the use case.
 
 == Data Cloud provisioning
 
@@ -65,7 +65,7 @@ Ensure all configured items show a green circle before using the connector.
 
 You can push data from an external system into Data Cloud via the Ingestion API. This RESTful API offers two interaction patterns: bulk and streaming. The streaming pattern accepts incremental updates to a data set as those changes are captured, while the bulk pattern accepts CSV files in cases where data syncs occur periodically. The same data stream can accept data from the streaming and the bulk interaction.
 
-For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to Data Cloud through MuleSoft's Salesforce CDP connector using the Ingestion API. The schema file for the Ingestion API can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] implementation template. This schema includes definitions for the following objects:
+For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the external systems Snowflake, Databricks, and Amazon S3 contain data to be pushed to Data Cloud through MuleSoft's Salesforce CDP connector using the Ingestion API. The schema file for the Ingestion API can be found in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api//[FINS Salesforce CDP System API^] implementation template. This schema includes definitions for the following objects:
 
 * FinancialAccount
 * FinancialTransaction
@@ -83,7 +83,7 @@ Follow the steps below to setup and configure an ingestion API to push data from
 . Click `New`, enter a name for the API source (for example, 'FINS_Banking-Data-Connector'), then click `Save`.
 . On the details page for the new connector, you must upload a schema file in OpenAPI (OAS) format with a `.yaml` file extension. The schema file describes how data transferred via the API is structured. +
 *Note:* Ingestion API schemas have set requirements - review the schema requirements below if having issues uploading the schema.
-. Click `Upload Schema` and navigate to the location of the file you want to use. Select the file and click Open. For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the schema file `mule-cdp-connector-schema.yaml` is available under `src/test/resources/cdp-schema` of the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] implementation template.
+. Click `Upload Schema` and navigate to the location of the file you want to use. Select the file and click Open. For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, the schema file `mule-cdp-connector-schema.yaml` is available under `src/test/resources/cdp-schema` of the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api//[FINS Salesforce CDP System API^] implementation template.
 . Preview all the detected objects and their attributes in your schema.
 . Click `Save`.
 
@@ -108,7 +108,7 @@ Before you can send data into Data Cloud using Ingestion API via Mulesoft's Sale
  ** `Perform requests on your behalf at any time (refresh_token, offline_access)`
 . Click `Save` and then `Done` to create the connected app.
 
-After creating the connected app, click the `Manage Consumer Details` button from the app detail page, confirm your identity, and then record the `Consumer Key` and `Consumer Secret` values: you will need these to configure the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API] implementation template for deployment. This application uses the MuleSoft Connector for Salesforce CDP, which provides customers a pipeline to send data into Data Cloud. Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
+After creating the connected app, click the `Manage Consumer Details` button from the app detail page, confirm your identity, and then record the `Consumer Key` and `Consumer Secret` values: you will need these to configure the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api//[FINS Salesforce CDP System API] implementation template for deployment. This application uses the MuleSoft Connector for Salesforce CDP, which provides customers a pipeline to send data into Data Cloud. Refer to the https://docs.mulesoft.com/salesforce-cdp-connector/1.0/true[Salesforce CDP Connector documentation] for additional details on configuration and available operations.
 
 ==== Schema requirements
 

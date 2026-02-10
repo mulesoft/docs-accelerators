@@ -12,7 +12,7 @@ image::https://www.mulesoft.com/ext/solutions/images/cim1.3/accel-cim-sales-orde
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-sell-library[CIM Sell Library^]
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-sell-library/[CIM Sell Library^]
 
 == See Also
 

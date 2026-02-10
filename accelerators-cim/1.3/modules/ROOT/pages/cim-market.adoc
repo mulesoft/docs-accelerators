@@ -12,7 +12,7 @@ image::https://www.mulesoft.com/ext/solutions/images/cim1.3/accel-cim-party.png[
 
 == Implementation
 
-https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library[CIM Market Library^]
+https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-cim-market-library/[CIM Market Library^]
 
 == See Also
 

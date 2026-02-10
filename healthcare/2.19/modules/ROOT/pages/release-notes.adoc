@@ -5,7 +5,7 @@
 
 *May 30, 2023*
 
-This release includes the following enhancements to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%201%20-%20Patient%20360/[Patient 360 use case] and https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/2.19/pages/dkv-pq7/FHIR%20API%20assets%20and%20converters%20(HL7%20v2%2C%20CDA%20and%20X12)/[FHIR API assets and converters]:
+This release includes the following enhancements to the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%201%20-%20Patient%20360/[Patient 360 use case] and https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/2.19/pages/dkv-pq7/FHIR%20API%20assets%20and%20converters%20(HL7%20v2,%20CDA%20and%20X12)/[FHIR API assets and converters]:
 
 * Expanded the library of assets to allow organizations to more easily ingest critical information from clinical systems into Salesforce Health Cloud, which enables users to view the information included in the supported HL7 v2 events natively in their Salesforce console.
 ** Added support for ADT^A02, ADT^A03, ADT^A04, ADT^A05, SIU^S12, SIU^S13, SIU^S14, and SIU^S15.
@@ -20,10 +20,10 @@ This release includes the following enhancements to the https://anypoint.mulesof
 
 This release extends the solution provided for https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to surface valuable population health data from EHR systems into Amazon HealthLake and Salesforce Customer Data Platform to improve clinical outcomes.
 
-* FHIR Bulk Export System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-bulk-export-sys-api-spec[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-bulk-export-sys-api[Implementation Template] 
+* FHIR Bulk Export System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-bulk-export-sys-api/-spec/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-bulk-export-sys-api/[Implementation Template] 
 * Population Health Management Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-population-health-mgmt-prc-api/[Implementation Template] 
-* Salesforce CDP System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-salesforce-cdp-sys-api-spec[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-salesforce-cdp-sys-api[Implementation Template] 
-* Azure Web Engagement System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-engagements-sys-api-spec[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-azure-patient-engmt-sys-api[Implementation Template] 
+* Salesforce CDP System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-salesforce-cdp-sys-api/-spec/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-salesforce-cdp-sys-api/[Implementation Template] 
+* Azure Web Engagement System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-engagements-sys-api-spec/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-azure-patient-engmt-sys-api/[Implementation Template] 
 * Patient Segmentation Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-patient-segmentation-prc-api/[Implementation Template] 
 
 == v2.17
@@ -75,7 +75,7 @@ This minor release includes an upgrade to the dependencies on the assets that pe
 * Benefits Eligibility Verification System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-availity-financial-sys-api/[Implementation Template] 
 * CRD Clinical Decision Support System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-cds-services-sys-api/[Implementation Template] 
 * DTR System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-davinci-dtr-sys-api/[Implementation Template] 
-* Prior Authorization System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-prior-authorization-sys-api[Implementation Template] 
+* Prior Authorization System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-prior-authorization-sys-api/[Implementation Template] 
 * HL7 V2 to FHIR System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-hl7v2-to-fhir-sys-api/[Implementation Template]
 * X12 to FHIR System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-to-x12-sys-api/[Implementation Template] 
 
@@ -95,7 +95,7 @@ This release provides an end-to-end solution for prior authorization, which incl
 
 * CRD Clinical Decision Support System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-cds-services-sys-api-spec/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-cds-services-sys-api/[Implementation Template] 
 * DTR System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-davinci-dtr-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-davinci-dtr-sys-api/[Implementation Template] 
-* Prior Authorization System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-prior-authorization-api[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-prior-authorization-sys-api[Implementation Template] 
+* Prior Authorization System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-prior-authorization-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-prior-authorization-sys-api/[Implementation Template] 
 
 == v2.12.1
 
@@ -111,7 +111,7 @@ This minor release includes an upgrade to the assets to be EMR agnostic, which a
 
 This release provides an end-to-end solution for prior authorization support, which automates the prior authorization process for more immediate authorizations. The following assets are also available:
 
-* Prior Authorization System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-prior-authorization-api[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-prior-authorization-sys-api[Implementation Template] 
+* Prior Authorization System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-prior-authorization-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-prior-authorization-sys-api/[Implementation Template] 
 * Aidbox Administration System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-administration-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-aidbox-us-core-administration-sys-api/[Implementation Template] 
 
 == v2.11
@@ -186,7 +186,7 @@ The following assets were also enhanced and improved for this release:
 
 * Epic Administration System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/epic-fhir-r4-administration-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-epic-us-core-administration-sys-api/[Implementation Template] 
 * Epic Clinical System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/epic-fhir-r4-clinical-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-epic-us-core-clinical-sys-api/[Implementation Template] 
-* Epic Diagnostics System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/epic-fhir-r4-diagnostics-api[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-epic-us-core-diagnostics-sys-api/[Implementation Template] 
+* Epic Diagnostics System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/epic-fhir-r4-diagnostics-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-epic-us-core-diagnostics-sys-api/[Implementation Template] 
 * Epic Medications System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/epic-fhir-r4-medications-api/[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-epic-us-core-medications-sys-api/[Implementation Template] 
 * FHIR R4 Administration API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-administration-api/[API Specification] 
 * FHIR R4 Clinical API | https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-clinical-api/[API Specification] 
@@ -254,7 +254,7 @@ This release provides Healthcare organizations with a reference implementation t
 
 24 November 2020
 
-The focus of release 2.4 is on providing the API specifications and implementation templates for https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
+The focus of release 2.4 is on providing the API specifications and implementation templates for https://www.cms.gov/priorities/burden-reduction/overview/interoperability[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-patient-access-clinical-exp-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-us-core-patientaccessclinicaldata-exp-api/[implementation template] for Patient Access API - Clinical Data as per the https://www.hl7.org/fhir/us/core/[US Core Implementation Guide].
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-patient-access-claims-encounter-exp-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-carin-patientclaimsencounterdata-exp-api/[implementation template] for Patient Access API - Claims and Encounter Data as per the https://build.fhir.org/ig/HL7/carin-bb/index.html[CARIN Implementation Guide for Blue Button].
@@ -264,7 +264,7 @@ The focus of release 2.4 is on providing the API specifications and implementati
 
 22 October 2020
 
-The focus of release 2.3 is on providing the API specifications and implementation templates for https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
+The focus of release 2.3 is on providing the API specifications and implementation templates for https://www.cms.gov/priorities/burden-reduction/overview/interoperability[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-pdex-formulary-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-pdex-formulary-exp-api/[implementation template] for Formulary API as per the http://build.fhir.org/ig/HL7/davinci-pdex-formulary/index.html[DaVinci PDEX US Drug Formulary Implementation Guide].
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-plannet-providerdirectory-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-plannet-providerdirectory-exp-api/[implementation template] for Provider Directory API as per the https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/index.html[DaVinci PDEX Plan Net Implementation Guide].
