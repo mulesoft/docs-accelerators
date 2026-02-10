@@ -36,14 +36,14 @@ The following objects must be created
 
 === Create a Custom Object via Apex Script
 
-An Apex class called `CustomObjectUtility` and `MetadataService` are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Common Resources project] and https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls[MetadataService] respectively. Download the project and follow the steps below.
+An Apex class called `CustomObjectUtility` and `MetadataService` are used to create a custom object programmatically. The source can be found on https://anypoint.mulesoft.com/exchange/org.mule.examples/accelerator-common-resources-src[Common Resources project] and [MetadataService] respectively. Download the project and follow the steps below.
 
 1. Click on the Salesforce Setup icon and select `Developer Console` to open a new console window.
 2. Go to `File > New > Apex class` and create a new class named `CustomObjectUtility`.
 3. Copy the code from `accel-common-resources/salesforce/CustomObjectUtility.apxc` to the script editor.
 4. Select the `Save` from the File menu option to compile and save the class.
 5. Go to `File > New > Apex class` and create a new class named `MetadataService`.
-6. Copy the code from `https://github.com/financialforcedev/apex-mdapi/blob/master/apex-mdapi/src/classes/MetadataService.cls` to the script editor.
+6. Copy the code from `` to the script editor.
 7. Select the `Save` from the File menu option to compile and save the class.
 8. Select `Debug > Open Execute Anonymous Window`.
 9. Copy and paste the contents of `/src/test/resources/scripts/CreateCustomObjects.txt` into the window.

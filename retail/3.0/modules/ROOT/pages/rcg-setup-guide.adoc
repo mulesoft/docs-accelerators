@@ -22,7 +22,7 @@ Additional resources used:
 In addition to configuring individual applications to suit your target deployment environment, the following will be required to implement the use cases described:
 
 * B2C Commerce Configuration: Open Commerce and Salesforce Commerce API access in addition to deployment and configuration of the B2C Commerce Sync Cartridge.
-* Salesforce Configuration: Addition of custom fields and enabling Person Accounts (details can be found https://help.salesforce.com/articleView?id=000328922&type=1&mode=1[here]) in addition to creating a push topic on Account object with appropriate filters.
+* Salesforce Configuration: Addition of custom fields and enabling Person Accounts (details can be found [here]) in addition to creating a push topic on Account object with appropriate filters.
 * Salesforce Marketing Cloud: A custom Data Extension will need to be created along with an Installed Package to make API requests.
 * SAP Configuration: Deployment of the custom SAP BAPI code required.
 
