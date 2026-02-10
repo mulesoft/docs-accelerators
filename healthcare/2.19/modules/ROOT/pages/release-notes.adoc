@@ -18,7 +18,7 @@ This release includes the following enhancements to the https://anypoint.mulesof
 
 13 December 2022
 
-This release extends the solution provided for https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to surface valuable population health data from EHR systems into Amazon HealthLake and Salesforce Customer Data Platform to improve clinical outcomes.
+This release extends the solution provided for https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/rco-2ps/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to surface valuable population health data from EHR systems into Amazon HealthLake and Salesforce Customer Data Platform to improve clinical outcomes.
 
 * FHIR Bulk Export System API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-bulk-export-sys-api-spec[API Specification] | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-bulk-export-sys-api[Implementation Template] 
 * Population Health Management Process API | https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-population-health-mgmt-prc-api/[Implementation Template] 
@@ -30,7 +30,7 @@ This release extends the solution provided for https://www.anypoint.mulesoft.com
 
 20 October 2022
 
-This release provides a solution for https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to convert and surface valuable population health data into Amazon HealthLake to improve clinical outcomes.
+This release provides a solution for https://www.anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-healthcare/minor/{hls-version}/pages/rco-2ps/Use%20case%207%20-%20Population%20health%20management/[Population health management] to enable organizations to convert and surface valuable population health data into Amazon HealthLake to improve clinical outcomes.
 
 As part of this release, existing assets used to convert from HL7 v2, C-CDA and X12 formats to FHIR R4 were enhanced to fix defects and enable use with Amazon HealthLake.
 
@@ -254,7 +254,7 @@ This release provides Healthcare organizations with a reference implementation t
 
 24 November 2020
 
-The focus of release 2.4 is on providing the API specifications and implementation templates for https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
+The focus of release 2.4 is on providing the API specifications and implementation templates for https://www.cms.gov/priorities/burden-reduction/overview/interoperability[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-patient-access-clinical-exp-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-sfdc-us-core-patientaccessclinicaldata-exp-api/[implementation template] for Patient Access API - Clinical Data as per the https://www.hl7.org/fhir/us/core/[US Core Implementation Guide].
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-patient-access-claims-encounter-exp-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-carin-patientclaimsencounterdata-exp-api/[implementation template] for Patient Access API - Claims and Encounter Data as per the https://build.fhir.org/ig/HL7/carin-bb/index.html[CARIN Implementation Guide for Blue Button].
@@ -264,7 +264,7 @@ The focus of release 2.4 is on providing the API specifications and implementati
 
 22 October 2020
 
-The focus of release 2.3 is on providing the API specifications and implementation templates for https://www.cms.gov/Regulations-and-Guidance/Guidance/Interoperability/index[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
+The focus of release 2.3 is on providing the API specifications and implementation templates for https://www.cms.gov/priorities/burden-reduction/overview/interoperability[CMS Interoperability and Patient Access final rule]. The release contains the following assets:
 
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-pdex-formulary-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-pdex-formulary-exp-api/[implementation template] for Formulary API as per the http://build.fhir.org/ig/HL7/davinci-pdex-formulary/index.html[DaVinci PDEX US Drug Formulary Implementation Guide].
 * https://anypoint.mulesoft.com/exchange/org.mule.examples/fhir-r4-plannet-providerdirectory-api/[API specification] and https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-plannet-providerdirectory-exp-api/[implementation template] for Provider Directory API as per the https://build.fhir.org/ig/HL7/davinci-pdex-plan-net/index.html[DaVinci PDEX Plan Net Implementation Guide].
