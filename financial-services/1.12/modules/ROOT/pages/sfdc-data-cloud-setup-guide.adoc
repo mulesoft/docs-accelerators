@@ -22,7 +22,7 @@ Connectors are specialized data streams that communicate with external sources t
 
 === Use case requirements
 
-The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case uses the following connectors:
+The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/dcb-oxw/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20Data%20Cloud/[Optimize Customer Experiences with CDP^] use case uses the following connectors:
 
 * Salesforce CRM - to connect data from a Salesforce CRM instance to Data Cloud.
 * Marketing Cloud - to receive segmentation results for marketing purposes.
