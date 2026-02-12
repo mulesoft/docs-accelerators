@@ -113,7 +113,7 @@ Introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft
 
 This is the first release of the MuleSoft Accelerator for Financial Services.
 
-This accelerator also introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%201%20-%20Core%20banking%20foundation/[Core banking foundation^] use case, which allows for the display of a customer's financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
+This accelerator also introduces the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/a5h-00q/Use%20case%201a%20-%20Unlock%20any%20core/[Core banking foundation^] use case, which allows for the display of a customer's financial summary from multiple systems. The customer and customer service representative (CSR) views are supported in this release.
 
 == See Also
 
