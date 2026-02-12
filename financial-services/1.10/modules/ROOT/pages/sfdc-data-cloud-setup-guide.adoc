@@ -150,7 +150,7 @@ To begin the flow of data from a Salesforce CRM data source (such as your Salesf
 
 ==== Use case requirements
 
-For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, a separate data stream for each of the following objects must be created to pull required data from your Salesforce FSC instance:
+For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/dcb-oxw/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20Data%20Cloud/[Optimize Customer Experiences with CDP^] use case, a separate data stream for each of the following objects must be created to pull required data from your Salesforce FSC instance:
 
 |===
 | Object in Salesforce CRM | Name of the DataStream
@@ -257,7 +257,7 @@ NOTE: If you are prompted with an error stating those objects cannot be added, y
 
 ==== Add formula fields
 
-Once the data streams for standard objects have been created, we need to add a formula field to identify whether or not the associated party represents an Individual. This is required for proper identity resolution and segmentation for the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case. Repeat the following steps for both data streams created above:
+Once the data streams for standard objects have been created, we need to add a formula field to identify whether or not the associated party represents an Individual. This is required for proper identity resolution and segmentation for the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/dcb-oxw/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20Data%20Cloud/[Optimize Customer Experiences with CDP^] use case. Repeat the following steps for both data streams created above:
 
 . Click the data stream from the 'Data Streams' list view to bring up the details page.
 . Select the `New Formula Field` action from the top right action list. You may need to click the 'more' down arrow to find the action.
@@ -284,7 +284,7 @@ If you encounter object access errors in Data Cloud when creating data streams, 
 . Enable Read and View All permissions for the object and Read Access for each field. Use the table above for reference.
 . Click Save.
 
-Repeat these steps for all objects and fields you want to ingest into Data Cloud. For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20CDP/[Optimize Customer Experiences with CDP^] use case, this includes the `Account` and `Contact` objects.
+Repeat these steps for all objects and fields you want to ingest into Data Cloud. For the https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/dcb-oxw/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20Data%20Cloud/[Optimize Customer Experiences with CDP^] use case, this includes the `Account` and `Contact` objects.
 
 === Create an Ingestion API data stream
 
