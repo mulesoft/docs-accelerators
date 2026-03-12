@@ -1,6 +1,0 @@
-name: life-sciences
-title: Life Sciences
-version: '1.2'
-display_version: '1.2'
-nav:
-- modules/ROOT/nav.adoc
