@@ -1,6 +1,0 @@
-name: retail
-title: Retail
-version: '3.1'
-display_version: '3.1'
-nav:
-- modules/ROOT/nav.adoc
