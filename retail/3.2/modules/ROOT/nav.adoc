@@ -7,5 +7,5 @@
 ** xref:sap-s4hana-setup-guide.adoc[SAP S4HANA Setup Guide]
 ** xref:sap-custom-bapi-setup-guide.adoc[SAP Custom BAPI Setup Guide]
 ** xref:rcg-sfdc-customization-guide.adoc[Salesforce Customization Guide]
-** xref:sfdc-data-cloud-setup-guide.adoc[Salesforce Data Cloud Setup Guide]
+** xref:sfdc-data-cloud-setup-guide.adoc[Deliver Relevancy with Data 360 Use Case Setup Guide]
 * xref:cim-mappings.adoc[Object Mappings]

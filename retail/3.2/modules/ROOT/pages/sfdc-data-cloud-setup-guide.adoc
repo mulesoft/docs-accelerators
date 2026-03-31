@@ -1,8 +1,8 @@
-= Salesforce Data 360 Setup for Personalization with CDP
+= Deliver Relevancy with Data 360 Use Case Setup Guide
 
-The *Deliver relevancy with Data 360* use case in MuleSoft Accelerator for Retail requires a connection to Salesforce Data 360. Complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path].
+The *Deliver Relevancy with Data 360* use case in MuleSoft Accelerator for Retail requires a connection to Salesforce Data 360. Complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path].
 
-After completing the setup, apply the use case-specific guidance on this page for connectors, data mapping, identity resolution, segmentation, activation, and calculated insights. For additional use case information and the downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver relevancy with Data 360] documentation in Anypoint Exchange.
+After completing the setup, apply the use case-specific guidance on this page for connectors, data mapping, identity resolution, segmentation, activation, and calculated insights. For additional use case information and the downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver Relevancy with Data 360] documentation in Anypoint Exchange.
 
 === Data Sources and Connectors
 
@@ -49,7 +49,7 @@ Build audience segments and activate them to downstream channels, so personalize
 
 Calculated insights are used to analyze loyalty and sales order behavior and to populate attributes used in downstream segmentation and activation.
 
-For the *Deliver relevancy with Data 360* use case, Calculated Insights were created to gain visibility across loyalty and sales order data. Examples of Calculated Insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
+For the *Deliver Relevancy with Data 360* use case, Calculated Insights were created to gain visibility across loyalty and sales order data. Examples of Calculated Insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
 
 == See Also
 
