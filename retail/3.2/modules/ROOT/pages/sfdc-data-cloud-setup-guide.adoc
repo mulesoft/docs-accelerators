@@ -1,17 +1,17 @@
 = Salesforce Data 360 Setup for Personalization with CDP
 
-The "Deliver relevancy with Data Cloud" use case in MuleSoft Accelerator for Retail requires a connection to Data 360. To get started, complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path]. Once the foundation is established, apply the use case-specific guidance on this page for connectors, data mapping, identity resolution, segmentation, activation, and calculated insights. For additional technical details and downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver relevancy with Data Cloud] use case documentation in Anypoint Exchange.
+The "Personalization with CDP" use case in MuleSoft Accelerator for Retail requires a connection to Data 360. Complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path]. Once the foundation is established, apply the use case-specific guidance on this page for connectors, data mapping, identity resolution, segmentation, activation, and calculated insights. For additional technical details and downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver relevancy with Data Cloud] use case documentation in Anypoint Exchange.
 
 === Data Sources and Connectors
 
-For this use case:
+For the "Personalization with CDP" use case:
 
 * Use the Salesforce CRM connector to ingest Salesforce CRM data.
 * Use the Ingestion API for external systems, including Snowflake and Azure, through the MuleSoft Salesforce CDP connector.
 
 === Ingestion API Schema and Objects
 
-For this use case, the Ingestion API schema includes these objects:
+For the "Personalization with CDP" use case, the Ingestion API schema includes these objects:
 
 * Loyalty
 * Subscription
@@ -22,7 +22,7 @@ Use the implementation template for the schema and payload examples that map to 
 
 === Data Streams and Data Mapping
 
-For this use case:
+For the "Personalization with CDP" use case:
 
 * Service Cloud starter bundle data streams are used for CRM ingestion.
 * Additional CRM data streams are created for Orders and Products.
@@ -34,7 +34,7 @@ image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-webengagement
 
 === Identity Resolution
 
-For this use case, the identity ruleset uses fuzzy and normalized matching:
+For the "Personalization with CDP" use case, the identity ruleset uses fuzzy and normalized matching:
 
 * Fuzzy Name and Normalized Email
 * Fuzzy First Name, Exact Last Name, and Normalized Email Address
@@ -45,7 +45,7 @@ image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-identity-matc
 
 === Segmentation and Activation
 
-For this use case:
+For the "Personalization with CDP" use case:
 
 * Segments are built on Unified Individual.
 * One example segment targets customers with no Web Page Views in the last 365 days and publishes every 24 hours.
@@ -55,7 +55,7 @@ image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-segment-noweb
 
 === Calculated Insights
 
-For this use case, calculated insights are used to analyze loyalty and sales order behavior and to populate attributes used in downstream segmentation and activation.
+For the "Personalization with CDP" use case, calculated insights are used to analyze loyalty and sales order behavior and to populate attributes used in downstream segmentation and activation.
 
 image::https://www.mulesoft.com/ext/solutions/images/rcg-cdp-setup-calculated-insights.png[rcg-cdp-setup-calculated-insights.png,399]
 
