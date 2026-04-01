@@ -2,7 +2,7 @@
 
 The *Deliver Relevancy with Data 360* use case in MuleSoft Accelerator for Retail requires a connection to Salesforce Data 360. Complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path].
 
-After completing the setup, apply the use case-specific guidance on this page for connectors, data mapping, identity resolution, segmentation, activation, and calculated insights. For additional use case information and the downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver Relevancy with Data 360] documentation in Anypoint Exchange.
+After completing the setup, apply the use case-specific guidance on this page. For additional use case information and the downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver Relevancy with Data 360] documentation in Anypoint Exchange.
 
 === Data Sources and Connectors
 
