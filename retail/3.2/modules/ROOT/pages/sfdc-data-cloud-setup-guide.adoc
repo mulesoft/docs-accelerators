@@ -1,4 +1,4 @@
-= Deliver Relevancy with Data 360 Use Case Setup Guide
+= Deliver Personlization Use Case Setup Guide
 
 The *Deliver Relevancy with Data 360* use case in MuleSoft Accelerator for Retail requires a connection to Salesforce Data 360. Complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path].
 
