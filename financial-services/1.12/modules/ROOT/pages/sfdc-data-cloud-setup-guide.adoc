@@ -40,7 +40,7 @@ Identity logic unifies person and account signals that are needed for customer-l
 
 === Calculated Insights Focus
 
-Calculated insights support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_processing_calculated_insights.htm&language=en_US&type=5[Processing Calculated Insights].
+Calculated insights support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Processing Calculated Insights].
 
 === Segmentation and Activation Focus
 
@@ -49,9 +49,9 @@ Build audience segments from unified profiles and financial engagement signals. 
 * Build audience segments from unified profiles and financial engagement signals.
 * Activate segment outputs to configured downstream channels, including Marketing Cloud where applicable.
 
-== Guidance for Standalone FINS Salesforce Data Cloud System AP Deployments
+== Guidance for Standalone Deployments
 
-If deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce Data Cloud System API^] independently of the use case:
+If deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce Data 360 System API^] independently of the use case:
 
 * Omit use-case-specific segmentation and activation configuration.
 * Omit use-case-specific Marketing Cloud activation setup.

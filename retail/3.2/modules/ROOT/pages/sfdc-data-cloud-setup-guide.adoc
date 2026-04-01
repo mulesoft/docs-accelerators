@@ -49,7 +49,7 @@ Build audience segments and activate them to downstream channels, so personalize
 
 Calculated insights are used to analyze loyalty and sales order behavior and to populate attributes used in downstream segmentation and activation.
 
-For the *Deliver Relevancy with Data 360* use case, Calculated Insights were created to gain visibility across loyalty and sales order data. Examples of Calculated Insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
+For the *Deliver Relevancy with Data 360* use case, calculated insights are used to gain visibility across loyalty and sales order data. Examples of calculated insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
 
 == See Also
 
