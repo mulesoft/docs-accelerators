@@ -9,7 +9,7 @@ After completing the setup, apply the use case-specific guidance on this page. F
 Configure Salesforce CRM and Ingestion API connectors to bring CRM and external system data into Data 360.
 
 * Use the Salesforce CRM connector to ingest Salesforce CRM data.
-* Use the Ingestion API for external systems, including Snowflake and Azure, through the MuleSoft Salesforce CDP connector.
+* Use the Ingestion API for external systems, including Snowflake and Azure, through the Salesforce Data Cloud connector.
 
 == Ingestion API Schema and Objects
 
@@ -20,36 +20,36 @@ The Ingestion API schema includes these objects:
 * WebEngagement
 * EmailEngagement
 
-Use the implementation template for the schema and payload examples that map to this accelerator's APIs.
+Use the implementation template for the schema and payload examples that map to MuleSoft Accelerator for Retail APIs.
 
 == Data Streams and Data Mapping
 
-Create the required data streams and map source objects to the target data model so customer profiles and engagement data can be segmented and activated.
+Create the required data streams, and then map source objects to the target data model to make sure customer profiles and engagement data are segmented and activated.
 
-* Service Cloud starter bundle data streams are used for CRM ingestion.
-* Additional CRM data streams are created for Orders and Products.
-* MuleSoft Web Engagement data is mapped to a custom DMO.
+* Use the Service Cloud starter bundle data streams for CRM ingestion.
+* Create additional CRM data streams for Orders and Products.
+* Map MuleSoft Web Engagement data to a custom DMO.
 
 == Identity Resolution
 
-The identity ruleset uses fuzzy and normalized matching:
+Configure the identity ruleset to use fuzzy and normalized matching:
 
 * Fuzzy Name and Normalized Email
 * Fuzzy First Name, Exact Last Name, and Normalized Email Address
 
 == Segmentation and Activation
 
-Build audience segments and activate them to downstream channels, so personalized experiences can be delivered consistently across touchpoints.
+Build audience segments and activate them to downstream channels to make sure personalized experiences are delivered consistently across touchpoints.
 
-* Segments are built on Unified Individual.
-* One example segment targets customers with no Web Page Views in the last 365 days and publishes every 24 hours.
-* Activation targets include Cloud File Storage (S3) and Marketing Cloud.
+* Build segments on the Unified Individual.
+* Create a segment that targets customers with no Web Page Views in the last 365 days and publishes every 24 hours.
+* Include Cloud File Storage (S3) and Marketing Cloud in the activation targets.
 
 == Calculated Insights
 
-Calculated insights are used to analyze loyalty and sales order behavior and to populate attributes used in downstream segmentation and activation.
+Use calculated insights to analyze loyalty and sales order behavior and to populate attributes that are used in downstream segmentation and activation.
 
-For the *Deliver Relevancy with Data 360* use case, calculated insights are used to gain visibility across loyalty and sales order data. Examples of calculated insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
+Examples of calculated insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
 
 == See Also
 
