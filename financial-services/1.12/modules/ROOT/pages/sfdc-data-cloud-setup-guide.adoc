@@ -5,7 +5,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerato
 
 After completing the setup, apply the use case-specific guidance on this page. For additional use case information and the downloadable assets, refer to the use casedocumentation in Anypoint Exchange.
 
-=== Data Connectors and Sources
+== Data Connectors and Sources
 
 Configure Salesforce CRM and Ingestion API connectors to bring CRM and external system data into Data 360.
 
@@ -15,7 +15,7 @@ Configure Salesforce CRM and Ingestion API connectors to bring CRM and external 
 
 The use case expects source data to include globally unique party identifiers for downstream profile unification.
 
-=== Ingestion API Schema Scope
+== Ingestion API Schema Scope
 
 The ingestion schema includes:
 
@@ -26,7 +26,7 @@ The ingestion schema includes:
 
 Refer to the implementation template in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] project for the schema file for the Ingestion API as well as payload examples.
 
-=== Data Streams and Mapping Focus
+== Data Streams and Mapping Focus
 
 Create the required data streams and map source objects to the target data model, so customer profiles and engagement data can be segmented and activated.
 
@@ -34,15 +34,15 @@ Create the required data streams and map source objects to the target data model
 * Map source objects to target model objects needed for identity, segmentation, and activation outcomes.
 * Confirm that required relationships are present before audience publishing.
 
-=== Identity Resolution Focus
+== Identity Resolution Focus
 
 Identity logic unifies person and account signals that are needed for customer-level profile views used in personalization and engagement targeting.
 
-=== Calculated Insights Focus
+== Calculated Insights Focus
 
 Calculated insights support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Processing Calculated Insights].
 
-=== Segmentation and Activation Focus
+== Segmentation and Activation Focus
 
 Build audience segments from unified profiles and financial engagement signals. Activate segment outputs to configured downstream channels, including Marketing Cloud where applicable.
 

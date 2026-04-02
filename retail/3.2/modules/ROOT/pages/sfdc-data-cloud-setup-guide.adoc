@@ -4,14 +4,14 @@ The *Deliver Relevancy with Data 360* use case in MuleSoft Accelerator for Retai
 
 After completing the setup, apply the use case-specific guidance on this page. For additional use case information and the downloadable assets, refer to the https://www.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-retail/[Deliver Relevancy with Data 360] documentation in Anypoint Exchange.
 
-=== Data Sources and Connectors
+== Data Sources and Connectors
 
 Configure Salesforce CRM and Ingestion API connectors to bring CRM and external system data into Data 360.
 
 * Use the Salesforce CRM connector to ingest Salesforce CRM data.
 * Use the Ingestion API for external systems, including Snowflake and Azure, through the MuleSoft Salesforce CDP connector.
 
-=== Ingestion API Schema and Objects
+== Ingestion API Schema and Objects
 
 The Ingestion API schema includes these objects:
 
@@ -22,7 +22,7 @@ The Ingestion API schema includes these objects:
 
 Use the implementation template for the schema and payload examples that map to this accelerator's APIs.
 
-=== Data Streams and Data Mapping
+== Data Streams and Data Mapping
 
 Create the required data streams and map source objects to the target data model so customer profiles and engagement data can be segmented and activated.
 
@@ -30,14 +30,14 @@ Create the required data streams and map source objects to the target data model
 * Additional CRM data streams are created for Orders and Products.
 * MuleSoft Web Engagement data is mapped to a custom DMO.
 
-=== Identity Resolution
+== Identity Resolution
 
 The identity ruleset uses fuzzy and normalized matching:
 
 * Fuzzy Name and Normalized Email
 * Fuzzy First Name, Exact Last Name, and Normalized Email Address
 
-=== Segmentation and Activation
+== Segmentation and Activation
 
 Build audience segments and activate them to downstream channels, so personalized experiences can be delivered consistently across touchpoints.
 
@@ -45,7 +45,7 @@ Build audience segments and activate them to downstream channels, so personalize
 * One example segment targets customers with no Web Page Views in the last 365 days and publishes every 24 hours.
 * Activation targets include Cloud File Storage (S3) and Marketing Cloud.
 
-=== Calculated Insights
+== Calculated Insights
 
 Calculated insights are used to analyze loyalty and sales order behavior and to populate attributes used in downstream segmentation and activation.
 
