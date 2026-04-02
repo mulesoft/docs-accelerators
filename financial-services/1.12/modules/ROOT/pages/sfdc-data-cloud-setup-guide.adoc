@@ -40,7 +40,7 @@ Configure the identity logic to unify person and account signals that are needed
 
 == Calculated Insights Focus
 
-Use calculated insights to support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Processing Calculated Insights].
+Use calculated insights to support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Enhance Data with Insights].
 
 == Segmentation and Activation Focus
 

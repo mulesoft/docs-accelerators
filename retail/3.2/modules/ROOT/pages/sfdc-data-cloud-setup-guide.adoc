@@ -47,9 +47,7 @@ Build audience segments and activate them to downstream channels to make sure pe
 
 == Calculated Insights
 
-Use calculated insights to analyze loyalty and sales order behavior and to populate attributes that are used in downstream segmentation and activation.
-
-Examples of calculated insights are available in the Data 360 help documentation and in the Data 360 Salesforce GitHub Instance.
+Use calculated insights to analyze loyalty and sales order behavior and to populate attributes that are used in downstream segmentation and activation. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Enhance Data with Insights].
 
 == See Also
 
