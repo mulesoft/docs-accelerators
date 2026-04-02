@@ -3,15 +3,15 @@
 
 The https://anypoint.mulesoft.com/exchange/org.mule.examples/mulesoft-accelerator-for-financial-services/minor/{fins-version}/pages/dcb-oxw/Use%20case%205%20-%20Optimize%20customer%20experiences%20with%20Data%20Cloud/[Optimize Customer Experiences with Data 360] in MuleSoft Accelerator for Financial Services requires initial configuration in Salesforce Data 360. Complete the core configuration by following the https://help.salesforce.com/s/articleView?id=data.c360_a_customer360_lm.htm&type=5[Data 360 learning path].
 
-After completing the setup, apply the use case-specific guidance on this page. For additional use case information and the downloadable assets, refer to the use casedocumentation in Anypoint Exchange.
+After completing the setup, apply the use case-specific guidance on this page. For additional use case information and the downloadable assets, refer to the use case documentation in Anypoint Exchange.
 
 == Data Connectors and Sources
 
 Configure Salesforce CRM and Ingestion API connectors to bring CRM and external system data into Data 360.
 
 * Salesforce CRM serves as the primary source for Financial Services Cloud customer and account data.
-* Marketing Cloud is a target destination for audience activation outputs.
-* Ingestion API is used for external data sources such as Snowflake, Databricks, and Amazon S3.
+* Marketing Cloud is the target destination for audience activation outputs.
+* The Ingestion API is used for external data sources such as Snowflake, Databricks, and Amazon S3.
 
 The use case expects source data to include globally unique party identifiers for downstream profile unification.
 
@@ -24,39 +24,36 @@ The ingestion schema includes:
 * ExternalFinancialAccount
 * WebEngagement
 
-Refer to the implementation template in the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce CDP System API^] project for the schema file for the Ingestion API as well as payload examples.
+Refer to the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce Data 360 System API Implementation Template^] for the Ingestion API schema file and payload examples.
 
 == Data Streams and Mapping Focus
 
-Create the required data streams and map source objects to the target data model, so customer profiles and engagement data can be segmented and activated.
+Create the required data streams, and then map source objects to the target data model to make sure customer profiles and engagement data are segmented and activated.
 
-* Define streams for Financial Services objects required for profile, transaction, and engagement analysis.
-* Map source objects to target model objects needed for identity, segmentation, and activation outcomes.
+* Define the streams for the Financial Services objects that are required for profile, transaction, and engagement analysis.
+* Map source objects to the target model objects that are needed for identity, segmentation, and activation outcomes.
 * Confirm that required relationships are present before audience publishing.
 
 == Identity Resolution Focus
 
-Identity logic unifies person and account signals that are needed for customer-level profile views used in personalization and engagement targeting.
+Configure the identity logic to unify person and account signals that are needed for customer-level profile views used in personalization and engagement targeting.
 
 == Calculated Insights Focus
 
-Calculated insights support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Processing Calculated Insights].
+Use calculated insights to support audience definitions, campaign decisions, and financial engagement analytics. For more information, see https://help.salesforce.com/s/articleView?id=data.c360_a_insights.htm&type=5[Processing Calculated Insights].
 
 == Segmentation and Activation Focus
 
 Build audience segments from unified profiles and financial engagement signals. Activate segment outputs to configured downstream channels, including Marketing Cloud where applicable.
 
-* Build audience segments from unified profiles and financial engagement signals.
-* Activate segment outputs to configured downstream channels, including Marketing Cloud where applicable.
-
 == Guidance for Standalone Deployments
 
-If deploying the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce Data 360 System API^] independently of the use case:
+If you deploy the https://anypoint.mulesoft.com/exchange/org.mule.examples/fins-salesforce-cdp-sys-api/[FINS Salesforce Data 360 System API^] independently of the use case, do the following:
 
-* Omit use-case-specific segmentation and activation configuration.
-* Omit use-case-specific Marketing Cloud activation setup.
-* Omit use-case-specific calculated insights unless required by downstream consumers.
-* Keep only the connector, schema, stream, and mapping scope required by your API data contracts.
+* Omit use case-specific segmentation and activation configuration.
+* Omit use case-specific Marketing Cloud activation setup.
+* Omit use case-specific calculated insights unless required by downstream consumers.
+* Keep only the connectors, schemas, streams, and mappings that are required by your API data contracts.
 
 == See Also
 
