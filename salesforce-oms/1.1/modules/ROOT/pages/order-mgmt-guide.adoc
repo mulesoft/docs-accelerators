@@ -41,7 +41,7 @@ Follow these steps to create a sales order in SAP:
 . Press Enter.
 . Enter the customer identification number in the *Sold-to Party* field.
 . Enter the customer identification number in the *Ship-to Party* field.
-. Click the *Display header details* icon (image:display-header-details-icon.png[3%,3%]) and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when the freight order is created.
+. Click the *Display header details* icon (image:display-header-details-icon.png["",3%,3%]) and verify that the *Shp. Cond* on the *Shipping* tab is set to *TM - Int. Planning*, which enables SAP to create a freight unit automatically. The freight unit is used when the freight order is created.
 . Enter the product identification number that you are including in the sales order in the *Material* column of the *All Items* section.
 . Enter a value in the *Order Quantity* field.
 . Press Enter.
@@ -64,7 +64,7 @@ Follow these steps to create a freight order in SAP:
 . Enter an amount in the *Base FTL - Flat Rate* field on the *Charges* tab and then click *Save*.
 . Select *Send to Carrier* from the *Subcontracting* dropdown on the *Statuses* tab.
 . Then, select *Set to Confirmed by Carrier* from the same *Subcontracting* dropdown.
-. Select *Custom Fields* from the *All Tabs* icon (image:all-tabs-icon.png[3%,3%]) and complete the *Tracking Number* field.
+. Select *Custom Fields* from the *All Tabs* icon (image:all-tabs-icon.png["",3%,3%]) and complete the *Tracking Number* field.
 . Click *Save*.
 
 == Create an Outbound Delivery

@@ -33,10 +33,10 @@ The diagrams included in each subject group show the entities and relationships 
 [%header%autowidth.spread^]
 |===
 | Symbol | Entity Status | Description
-| image:defined-group-entity.png[Defined Group Entity,50%] | Defined Group Entity | An entity in the current group that has a concrete definition.
-| image:undefined-group-entity.png[Undefined Group Entity,50%] | Undefined Group Entity | An entity belonging to the current group that does not have a concrete definition.
-| image:defined-external-entity.png[Defined External Entity,50%] | Defined External Entity | An entity defined in a different entity group or subject area.
-| image:undefined-external-entity.png[Undefined External Entity,50%] | Undefined External Entity | An entity belonging to a different group or subject area that has not been defined.
+| image:defined-group-entity.png["",50%] | Defined Group Entity | An entity in the current group that has a concrete definition.
+| image:undefined-group-entity.png["",50%] | Undefined Group Entity | An entity belonging to the current group that does not have a concrete definition.
+| image:defined-external-entity.png["",50%] | Defined External Entity | An entity defined in a different entity group or subject area.
+| image:undefined-external-entity.png["",50%] | Undefined External Entity | An entity belonging to a different group or subject area that has not been defined.
 |===
 
 == See Also
