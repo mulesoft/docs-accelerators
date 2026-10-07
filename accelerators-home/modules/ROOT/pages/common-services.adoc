@@ -12,7 +12,7 @@ The notification and scheduler services can be configured and installed as indep
 
 The Common Scheduling Service is an optional component that will run schedules and perform API calls. The benefit of having a common scheduler service is to have all the integration-level schedules maintained in one place. Here is a high-level view of how the scheduler service works:
 
-image::accelerators-home::accel-scheduling-service-diagram.png[accel-scheduling-service-diagram.png]
+image::accelerators-home::accel-scheduling-service-diagram.png[alt="Common Scheduling Service architecture"]
 
 The service may be built in two different ways, depending on the target deployment platform. The Anypoint Platform offers operational advantages to applications deployed in CloudHub when dealing with schedules.
 
@@ -30,7 +30,7 @@ For service configuration details please refer to the xref:./getting-started.ado
 
 The solution provides an optional Notifications Process API, which consumes notification events and sends notifications to individuals or groups via SMS, email, or Slack via system APIs specific to those services. The high-level design is as follows:
 
-image::accelerators-home::accel-notification-service-diagram.png[accel-notification-service-diagram.png]
+image::accelerators-home::accel-notification-service-diagram.png[alt="Notification Services architecture"]
 
 As you can see, the API offloads incoming requests directly to a queue in order to avoid blocking calling apps.
 

@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/hc-accelerator-hl7v
 
 == Functional diagram
 
-image::healthcare::hc-hl7v2-to-fhir-usecase-diagram.png[hc-hl7v2-to-fhir-usecase-diagram.png,799,align="center"]
+image::healthcare::hc-hl7v2-to-fhir-usecase-diagram.png[alt="HL7 v2 to FHIR converter functional architecture",width=799,align="center"]
 
 == Advantages
 

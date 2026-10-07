@@ -80,11 +80,11 @@ The process model contains the following activities:
 . Copy data from various fields on the record pages to a CSV file.
 //Step 3 above should be a CSV file but is a POST REST call in JSON format to http://mainstreet-demo.us-e2.cloudhub.io/epicpolicy. I (Tasha) wrote the instructions as a CSV. What should the text actually state?
 
-image::rpa-setup-process-model.png[RPA Builder process model]
+image::rpa-setup-process-model.png["RPA Builder process model"]
 
 Add activities by clicking on an element on the model panel and choosing an element from the context menu. For example, the following image shows how to branch off to a second AMS if you are using more than one AMS and not finding the data you need in the first AMS:
 
-image::rpa-setup-add-activity.png[Add activity to RPA Builder process model]
+image::rpa-setup-add-activity.png["RPA Builder option for adding an activity to the process model"]
 
 The linter automatically checks the model for completeness and displays error and warning messages to indicate what to change.
 
@@ -99,7 +99,7 @@ Click on an activity to open the editing workflow.
 . Log in to the AMS by using the decrypted credentials.
 . Select the database by using another in-going Activity Parameter.
 +
-image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter Wizard]
+image::rpa-setup-activity-parameters-wizard.png["RPA Builder Activity Parameter Wizard"]
 
 ==== Minimum Steps to Adapt in This Workflow
 
@@ -107,23 +107,23 @@ image::rpa-setup-activity-parameters-wizard.png[RPA Builder Activity Parameter W
 .. Replace the values in the *File name*, *Parameters*, and *Window Title* fields with the values from your AMS.
 .. Click *Test* to run the application so that you can use it to adapt the following Action Steps:
 +
-image::rpa-setup-run-program-wizard.png[RPA Builder Run Program Wizard]
+image::rpa-setup-run-program-wizard.png["RPA Builder Run Program Wizard"]
 
 . Use the *Start from scratch* option to capture and test a new pattern that indicates that the login page of the AMS is visible onscreen:
 +
-image::rpa-setup-image-search-wizard.png[RPA Builder Image Search Wizard]
+image::rpa-setup-image-search-wizard.png["RPA Builder pattern-selection wizard"]
 
 . Reidentify the field to enter the password. You might have to add another xref:rpa-builder::toolbox-app-automation-keystrokes-to-app-element.adoc[Keystrokes to App Element Action Step] for entering the user name, which would go before the password step.
 +
-image::rpa-setup-keystrokes-app-element-wizard.png[RPA Builder Keystrokes to App Element Wizard]
+image::rpa-setup-keystrokes-app-element-wizard.png["RPA Builder Keystrokes to App Element Wizard"]
 
 . Reidentify the *Login* button, which is used in the xref:rpa-builder::toolbox-app-automation-click-app-element.adoc[Click App Element Action Step]:
 +
-image::rpa-setup-click-app-element-wizard.png[RPA Builder Click App Element Wizard]
+image::rpa-setup-click-app-element-wizard.png["RPA Builder Click App Element Wizard"]
 
 . Wait for the login process to complete by choosing a pattern that disappears after completion:
 +
-image::rpa-setup-choose-pattern.png[RPA Builder Image Search Wizard choose pattern]
+image::rpa-setup-choose-pattern.png["RPA Builder pattern-selection wizard"]
 
 . Adapt the other Action Steps of the same types in a similar way. Or, add or delete Action Steps based on what is needed to log in to your AMS.
 
@@ -134,14 +134,14 @@ The second activity finds a record in the AMS by using a lookup code.
 . Enter the lookup code, which was provided as an Activity Parameter, as locate criterion to search for the account data set.
 . Click on the result entry to open the account data, and then wait until it's fully loaded.
 
-image::rpa-setup-lookup-code.png[RPA Builder lookup code]
+image::rpa-setup-lookup-code.png["RPA Builder workflow that enters a lookup code"]
 
 Change the following Action Steps:
 
 . Adapt the first Action Steps as you did in the previous Activity.
 . Adapt the scan area in the xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[AI OCR Action Step] in which RPA Bot searches for the record entry with the lookup code:
 +
-image::rpa-setup-ai-ocr-wizard.png[RPA Builder AI OCR screen-based Wizard]
+image::rpa-setup-ai-ocr-wizard.png["RPA Builder AI OCR wizard"]
 
 . Adapt the rest of the Action Steps as you did in the previous Activity.
 
@@ -153,30 +153,30 @@ The third activity retrieves data and exports the data from the AMS so that it c
 . Retrieve the policy data of the account.
 . Export the data to a CSV file.
 
-image::rpa-setup-export-data.png[RPA Builder export data]
+image::rpa-setup-export-data.png["RPA Builder workflow that exports data to a CSV file"]
 
 Change the following Action Steps:
 
 . To retrieve the data, reidentify the fields from which to read in each of the xref:rpa-builder::toolbox-app-automation-read-text-from-app-element.adoc[Read Text from App Element Action Steps] and add or delete them as needed.
 
-image::rpa-setup-read-text-app-element-wizard.png[RPA Builder Read Text from App Element Wizard]
+image::rpa-setup-read-text-app-element-wizard.png["RPA Builder Read Text from App Element Wizard"]
 
 If necessary, click into a field before reading the text and then use a keystroke to get out of the field.
 
-image::rpa-setup-read-text-tip.png[RPA Builder tip for getting in and out of fields]
+image::rpa-setup-read-text-tip.png["RPA Builder workflow for entering and leaving a field before reading text"]
 
 To search for text in a special format, you can use xref:rpa-builder::toolbox-text-recognition-ai-ocr-screen-based.adoc[Optical Character Recognition] in combination with regular expressions.
 
-image::rpa-setup-optical-character-recognition.png[How to use optical character recognition in RPA Builder]
+image::rpa-setup-optical-character-recognition.png["RPA Builder workflow that uses optical character recognition"]
 
 [start=2]
 . Ensure that all retrieved data is xref:rpa-builder::common-properties.adoc#variables[pinned] to the xref:rpa-builder::toolbox-variable-handling-combine-strings.adoc[Combine Strings Action Step] and adjust if necessary. You can also link more Activity Parameters. 
 +
-image::rpa-setup-combine-strings-wizard.png[RPA Builder Combine Strings Wizard]
+image::rpa-setup-combine-strings-wizard.png["RPA Builder Combine Strings Wizard"]
 
 . Add the string to a CSV file as `Pin Variable` and adjust the properties as needed. The CSV file must be in the specified format.
 +
-image::rpa-setup-write-text-file-wizard.png[RPA Builder Write to Text File Wizard]
+image::rpa-setup-write-text-file-wizard.png["RPA Builder Write to Text File Wizard"]
 
 == See Also
 

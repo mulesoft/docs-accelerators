@@ -8,19 +8,19 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Inventory Product
 
-image::accelerators-cim::accel-cim-inventory-product.png[alt="Inventory Product Diagram",width=38%]
+image::accelerators-cim::accel-cim-inventory-product.png[alt="Inventory Product entity relationships in CIM Produce",width=38%]
 
 === Inventory Received
 
-image::accelerators-cim::accel-cim-inventory-received.png[alt="Inventory Received Diagram",width=44%]
+image::accelerators-cim::accel-cim-inventory-received.png[alt="Inventory Received entity relationships in CIM Produce",width=44%]
 
 === Product
 
-image::accelerators-cim::accel-cim-product.png[alt="Product Diagram",width=100%]
+image::accelerators-cim::accel-cim-product.png[alt="Product entity relationships in CIM Produce",width=100%]
 
 === Purchase Order
 
-image::accelerators-cim::accel-cim-purchase-order.png[alt="Purchase Order Diagram",width=56%]
+image::accelerators-cim::accel-cim-purchase-order.png[alt="Purchase Order entity relationships in CIM Produce",width=56%]
 
 == Implementation
 

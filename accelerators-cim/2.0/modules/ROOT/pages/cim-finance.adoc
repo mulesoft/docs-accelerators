@@ -8,15 +8,15 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Invoice
 
-image::accelerators-cim::accel-cim-invoice.png[alt="Invoice Diagram",width=44%]
+image::accelerators-cim::accel-cim-invoice.png[alt="Invoice entity relationships in CIM Finance",width=44%]
 
 === Payment
 
-image::accelerators-cim::accel-cim-payment.png[alt="Payment Diagram",width=100%]
+image::accelerators-cim::accel-cim-payment.png[alt="Payment entity relationships in CIM Finance",width=100%]
 
 === Payment Method
 
-image::accelerators-cim::accel-cim-payment-method.png[alt="Payment Method Diagram",width=54%]
+image::accelerators-cim::accel-cim-payment-method.png[alt="Payment Method entity relationships in CIM Finance",width=54%]
 
 == Implementation
 

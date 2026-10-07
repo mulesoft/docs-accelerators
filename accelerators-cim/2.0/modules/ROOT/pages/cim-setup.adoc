@@ -8,7 +8,7 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Generated Document
 
-image::accelerators-cim::accel-cim-generated-document.png[alt="Generated Document Diagram",width=100%]
+image::accelerators-cim::accel-cim-generated-document.png[alt="Generated Document entity relationships in CIM Setup",width=100%]
 
 == Implementation
 
