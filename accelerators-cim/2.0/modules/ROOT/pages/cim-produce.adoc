@@ -8,19 +8,19 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Inventory Product
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-inventory-product.png[alt="Inventory Product Diagram",width=38%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-inventory-product.png"]
+image::accelerators-cim::accel-cim-inventory-product.png["Inventory Product entity relationships in CIM Produce",width=38%]
 
 === Inventory Received
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-inventory-received.png[alt="Inventory Received Diagram",width=44%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-inventory-received.png"]
+image::accelerators-cim::accel-cim-inventory-received.png["Inventory Received entity relationships in CIM Produce",width=44%]
 
 === Product
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-product.png[alt="Product Diagram",width=100%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-product.png"]
+image::accelerators-cim::accel-cim-product.png["Product entity relationships in CIM Produce",width=100%]
 
 === Purchase Order
 
-image::https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-purchase-order.png[alt="Purchase Order Diagram",width=56%,link="https://www.mulesoft.com/ext/solutions/images/cim/accel-cim-purchase-order.png"]
+image::accelerators-cim::accel-cim-purchase-order.png["Purchase Order entity relationships in CIM Produce",width=56%]
 
 == Implementation
 
