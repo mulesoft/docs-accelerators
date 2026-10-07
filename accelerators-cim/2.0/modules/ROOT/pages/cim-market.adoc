@@ -8,19 +8,19 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Account
 
-image::accelerators-cim::accel-cim-account.png[alt="Account entity relationships in CIM Market",width=81%]
+image::accelerators-cim::accel-cim-account.png["Account entity relationships in CIM Market",width=81%]
 
 === Contact Point
 
-image::accelerators-cim::accel-cim-contact-point.png[alt="Contact Point entity relationships in CIM Market",width=42%]
+image::accelerators-cim::accel-cim-contact-point.png["Contact Point entity relationships in CIM Market",width=42%]
 
 === Lead
 
-image::accelerators-cim::accel-cim-lead.png[alt="Lead entity relationships in CIM Market",width=79%]
+image::accelerators-cim::accel-cim-lead.png["Lead entity relationships in CIM Market",width=79%]
 
 === Party
 
-image::accelerators-cim::accel-cim-party.png[alt="Party entity relationships in CIM Market",width=100%]
+image::accelerators-cim::accel-cim-party.png["Party entity relationships in CIM Market",width=100%]
 
 == Implementation
 

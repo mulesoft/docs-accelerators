@@ -8,19 +8,19 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Contract
 
-image::accelerators-cim::accel-cim-contract.png[alt="Contract entity relationships in CIM Sell",width=80%]
+image::accelerators-cim::accel-cim-contract.png["Contract entity relationships in CIM Sell",width=80%]
 
 === Opportunity
 
-image::accelerators-cim::accel-cim-opportunity.png[alt="Opportunity entity relationships in CIM Sell",width=66%]
+image::accelerators-cim::accel-cim-opportunity.png["Opportunity entity relationships in CIM Sell",width=66%]
 
 === Price Book
 
-image::accelerators-cim::accel-cim-price-book.png[alt="Price Book entity relationships in CIM Sell",width=41%]
+image::accelerators-cim::accel-cim-price-book.png["Price Book entity relationships in CIM Sell",width=41%]
 
 === Sales Order
 
-image::accelerators-cim::accel-cim-sales-order.png[alt="Sales Order entity relationships in CIM Sell",width=100%]
+image::accelerators-cim::accel-cim-sales-order.png["Sales Order entity relationships in CIM Sell",width=100%]
 
 == Implementation
 

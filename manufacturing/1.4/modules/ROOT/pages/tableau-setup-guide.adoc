@@ -21,13 +21,13 @@
 . Click on *File* tab, select *Import Workbook* and browse `mfg-tableau-workorders-exp-api/src/main/resources/workbook/FactoryEquipmentDashboard.twbx` file and click on the *Open* button.
 . Edit Amazon Redshift connection details.
 
-image::manufacturing::mfg-edit-redshift.png[alt="Tableau dialog for editing an Amazon Redshift connection"]
+image::manufacturing::mfg-edit-redshift.png["Tableau dialog for editing an Amazon Redshift connection"]
 
 == Steps to create work order
 
 . In the *Submit a Work Order* dialogue box, the user can manage the Priority, Machine Id and provide a Reason to submit a work order. +
  +
- image::manufacturing::mfg-submit-work-order.png[alt="Tableau Submit a Work Order dialog",width=599] +
+ image::manufacturing::mfg-submit-work-order.png["Tableau Submit a Work Order dialog",width=599] +
 . Click on *Create Work Order* which will create a case in Service Cloud.
 
 == Steps to Publish Workbook into Tableau Online.
@@ -35,7 +35,7 @@ image::manufacturing::mfg-edit-redshift.png[alt="Tableau dialog for editing an A
 . Click on *Server* and select *Publish Workbook*.
 . Click on *Connect*, enter email address and password to sign in. +
  +
-image::manufacturing::mfg-tableau-online-publish.png[alt="Tableau Online Publish Workbook dialog",width=599] +
+image::manufacturing::mfg-tableau-online-publish.png["Tableau Online Publish Workbook dialog",width=599] +
  +
 . In the *Publish Workbook to Tableau Online* window, complete the *Name* and *Description* fields.
 . Click on the *Publish* button.
@@ -45,14 +45,14 @@ image::manufacturing::mfg-tableau-online-publish.png[alt="Tableau Online Publish
 . Login into https://sso.online.tableau.com/public/idp/SSO[Tableau Online]
 . Click on *Watch* and select *Alerts* +
  +
-image::manufacturing::mfg-tableau-online-alert.png[alt="Tableau Online alert configuration",width=599] +
+image::manufacturing::mfg-tableau-online-alert.png["Tableau Online alert configuration",width=599] +
  +
 . Click on the *Create* button on the right side which opens the 'Create Alert' dialogue box.
 . Users can select the condition and threshold and users can provide the subject details and select the alert condition (for example, daily).
 . Users can provide the recipient details in the *Recipients* field and click on *Create Alert*.
 . An alert will be sent to the recipient.
 
-image::manufacturing::mfg-email-alert.png[alt="Email notification for a Tableau alert"]
+image::manufacturing::mfg-email-alert.png["Email notification for a Tableau alert"]
 
 == See Also
 

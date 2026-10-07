@@ -8,11 +8,11 @@ The following diagrams show the entities and relationships in this subject area,
 
 === Fulfillment Order
 
-image::accelerators-cim::accel-cim-fulfillment-order.png[alt="Fulfillment Order entity relationships in CIM Fulfill",width=82%]
+image::accelerators-cim::accel-cim-fulfillment-order.png["Fulfillment Order entity relationships in CIM Fulfill",width=82%]
 
 === Shipment
 
-image::accelerators-cim::accel-cim-shipment.png[alt="Shipment entity relationships in CIM Fulfill",width=100%]
+image::accelerators-cim::accel-cim-shipment.png["Shipment entity relationships in CIM Fulfill",width=100%]
 
 == Implementation
 

@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-ccda-to-fhir-sy
 
 == Functional diagram
 
-image::healthcare::hls-ccda-fhir-fx-diagram.svg[alt="C-CDA to FHIR converter functional architecture",width=900,align="center"]
+image::healthcare::hls-ccda-fhir-fx-diagram.svg["C-CDA to FHIR converter functional architecture",width=900,align="center"]
 
 == Advantages
 
