@@ -4,7 +4,7 @@ The https://anypoint.mulesoft.com/exchange/org.mule.examples/hls-fhir-to-x12-sys
 
 == Functional Diagram
 
-image::healthcare::hls-x12-fhir-fx-diagram.svg["X12 to FHIR converter functional architecture",width=900,align="center"]
+image::hls-x12-fhir-fx-diagram.svg["X12 to FHIR converter functional architecture",width=900,align="center"]
 
 == Advantages
 
