@@ -48,7 +48,7 @@ This section talks about configuration items which are supported but not configu
 | Basic Auth config
 | * Select AuthenticationMethods +
 * Value field click on String Array +
-* Type Basic in value and click on Add +
+* Type Basic in value and click on Add+
 * Click on Check-In button
 | Needed to authenticate and connect client to Web API.
 
